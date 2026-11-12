@@ -39,6 +39,36 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 | `.gitignore` | Tells Git which files *not* to save (temporary files, secret keys) | Keeps junk and passwords out of the public repo |
 | `PROJECT_NOTES.md` | This file | My study guide |
 | `README.md` | The project's front page on GitHub: what it is, how it works, roadmap | First thing a recruiter sees |
+| `detect_changes.py` | Compares each policy to its last committed version and saves what changed to `changes/<date>.json` | Turns a downloader into a *tracker*. Its output feeds the AI step |
+| `test_detect_changes.py` | 18 automatic checks that change detection catches real edits and ignores formatting noise | Proves the code works, and catches it if a future edit breaks something |
+| `changes/` | One JSON report per day that had changes, e.g. `changes/2026-11-20.json` | A permanent log of every change found. Later becomes the website's data |
+
+### Inside `detect_changes.py`
+
+| Function | What it does |
+|---|---|
+| `get_old_version(path)` | Asks Git for the file as it was in the last commit (`git show HEAD:<file>`). Returns nothing for a brand-new policy |
+| `simplify(text)` | Makes a stripped-down copy (lowercase, no punctuation, single spaces) used *only for comparing*, never saved |
+| `is_meaningful_change(old, new)` | True only if the simplified versions differ, meaning the actual words changed |
+| `find_changes(old, new)` | Lines up the two versions paragraph by paragraph and returns each spot that changed (a "hunk"): removed paragraphs, added paragraphs, and 1 unchanged paragraph before and after for context |
+| `count_changed_words(...)` | Roughly how many words were added or removed. Helps judge how big a change is |
+| `main()` | Runs the steps above for every policy file and writes the day's report |
+
+### What a change report looks like
+```json
+{
+  "date": "2026-11-20",
+  "changes": [{
+    "company": "spotify", "doc": "privacy", "changed_words": 8,
+    "hunks": [{
+      "removed": ["We use your data to run the service."],
+      "added":   ["We use your data to run the service and to train our AI models."],
+      "context_before": ["We collect your email."],
+      "context_after":  ["Contact us at privacy@spotify.com."]
+    }]
+  }]
+}
+```
 | `.git/` (hidden) | Git's storage for every saved version | Created by `git init`; never edit it by hand |
 
 ### Inside `scraper.py`
@@ -67,6 +97,13 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 - **Commit:** one saved snapshot in Git, with a timestamp and message.
 - **Diff:** the list of differences between two versions of a file.
 - **Repository (repo):** a project folder tracked by Git, usually stored on GitHub.
+- **Diff algorithm / difflib:** Python's built-in tool for lining up two versions of a text and finding what was removed, added, or kept. We use its `SequenceMatcher`.
+- **Hunk:** one spot in a diff where something changed, plus a little surrounding context.
+- **`HEAD`:** Git's name for the most recent commit. `git show HEAD:file` means "this file as of my last save."
+- **subprocess:** how a Python script runs another program (here, Git) and reads its output.
+- **Automated test:** code that checks other code by feeding it known inputs and verifying the outputs. "18 passed, 0 failed" means every check matched.
+- **End-to-end test:** a test of the whole process at once (here: builds a throwaway Git project, makes changes, runs the real script, checks the report), instead of one function at a time.
+- **ISO date:** the `2026-11-12` (year-month-day) format. Files named this way sort in date order automatically.
 - **Git vs. GitHub:** Git is the program on your computer that saves versions. GitHub is the website you upload those versions to so others can see them.
 - **`git init`:** turns a normal folder into a Git repo (creates a hidden `.git` folder where all history is kept).
 - **`git add`:** picks which changed files go into the next save ("staging"). `git add .` means everything.
@@ -104,6 +141,12 @@ These are the "why did you do it this way?" answers.
 8. **Only add line breaks after block tags.** Why: the first version broke a line at *every* tag, so links split sentences into 3 lines. That would make diffs noisy later. Now each paragraph stays on one line, so a changed paragraph shows up as one changed line.
 9. **Date filter matches lines that *start* with a date word** ("Last updated", "Effective", "Published", "Updated"), but only if the line is short (under 80 characters). Why: catches all the date stamps sites use, while keeping real sentences like "These terms are effective when you sign up…".
 10. **Flaky sites are expected.** A site can work one day and fail the next. The scraper never overwrites a good copy with a failed one, so a bad day just means "no update today," not fake data.
+11. **Compare against Git's last commit, not a separate "old" folder.** Why: Git already stores the previous version, so we don't duplicate data. The rule is simple: whatever was last committed is "old," whatever the scraper just saved is "new."
+12. **Compare paragraph by paragraph, not word by word.** Why: the scraper puts each paragraph on its own line (decision #8), so a reworded paragraph shows up as one clean "before vs. after" pair, which is easy for the AI and for people to read.
+13. **Use a simplified copy only for comparing.** Why: lowercasing and removing punctuation means a fixed typo or a swapped quote mark doesn't count as a change. But the *saved* text and the *report* keep the real wording, so nothing is lost.
+14. **Include one paragraph of context around each change.** Why: "We may share it with partners" means nothing unless you know what "it" is. Context lets the AI explain the change correctly.
+15. **Don't report brand-new policies as changes.** Why: the first copy of a policy is the starting point (baseline), not a change.
+16. **Write automated tests.** Why: checks 18 situations in about a second, including the tricky ones (Windows line endings, curly quotes). If a future edit breaks something, the tests catch it.
 
 ---
 
@@ -143,11 +186,12 @@ These are the "why did you do it this way?" answers.
 ```
 cd "C:\Users\owen moran\Documents\tos-tracker"
 python scraper.py
+python detect_changes.py
 git add .
 git commit -m "describe what changed"
 git push
 ```
-- [ ] **Phase 4:** Change detection
+- [x] **Phase 4:** Change detection: `detect_changes.py` + 18 passing tests. *Order matters: run it after the scraper and before committing.*
 - [ ] **Phase 5:** AI summaries
 - [ ] **Phase 6:** Run automatically every day (GitHub Actions)
 - [ ] **Phase 7:** Website: feed of change cards (severity badge, AI summary, tags, before/after diff) plus a page per company. *Plan: possibly add UI plugins/libraries to make it look especially good and clean.*
@@ -164,5 +208,8 @@ git push
 - How do you avoid false alarms when only a date changes?
 - What happens if a website is down or blocks you?
 - What's the difference between a normal page and a JavaScript-rendered page, and how do you handle each?
+- How do you know a change is real and not just formatting? *(Compare a simplified copy: lowercase, no punctuation, single spaces. Only different words count.)*
+- Why does the order "scraper → detect_changes → commit" matter? *(detect_changes compares to the last commit. If you commit first, old and new are the same and nothing is found.)*
+- How do you know your code works? *(18 automated tests, including an end-to-end test with a real Git repo.)*
 - How did you use AI tools while building this?
   - *Answer: I designed the system and made the decisions; I used Claude to write the code faster, and I kept notes on how every part works.*
