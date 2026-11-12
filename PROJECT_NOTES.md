@@ -38,6 +38,8 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 | `requirements.txt` | List of Python libraries the project needs | Anyone can install everything with one command: `pip install -r requirements.txt` |
 | `.gitignore` | Tells Git which files *not* to save (temporary files, secret keys) | Keeps junk and passwords out of the public repo |
 | `PROJECT_NOTES.md` | This file | My study guide |
+| `README.md` | The project's front page on GitHub: what it is, how it works, roadmap | First thing a recruiter sees |
+| `.git/` (hidden) | Git's storage for every saved version | Created by `git init`; never edit it by hand |
 
 ### Inside `scraper.py`
 
@@ -65,6 +67,16 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 - **Commit:** one saved snapshot in Git, with a timestamp and message.
 - **Diff:** the list of differences between two versions of a file.
 - **Repository (repo):** a project folder tracked by Git, usually stored on GitHub.
+- **Git vs. GitHub:** Git is the program on your computer that saves versions. GitHub is the website you upload those versions to so others can see them.
+- **`git init`:** turns a normal folder into a Git repo (creates a hidden `.git` folder where all history is kept).
+- **`git add`:** picks which changed files go into the next save ("staging"). `git add .` means everything.
+- **`git commit -m "message"`:** saves a snapshot of the staged files with a description. Each commit gets an ID like `8fd6f76`.
+- **`git push`:** uploads your commits to GitHub.
+- **Remote / origin:** a remote is a copy of the repo stored somewhere else; `origin` is the nickname for the GitHub one.
+- **Branch / main:** a branch is a line of history. `main` is the default one.
+- **Noreply email:** a private stand-in address GitHub provides so your real email isn't public on every commit.
+- **README.md:** the file GitHub shows on the repo's front page. It's the project's first impression.
+- **Markdown (.md):** a simple text format where `#` makes a heading and `**text**` makes bold. Used for README and these notes.
 - **JavaScript-rendered page:** a page that loads its text *after* opening, using JavaScript. `requests` only sees the empty shell, so these need a real browser tool (Playwright).
 - **Playwright:** a tool that controls a real browser from code. Used later for JavaScript-heavy sites.
 - **Encoding (UTF-8):** the rule for turning a file's raw bytes into letters. Read it with the wrong rule and special characters turn into junk like `â` (this junk is called *mojibake*).
@@ -125,7 +137,16 @@ These are the "why did you do it this way?" answers.
 
 - [x] **Phase 1:** Pick companies and URLs (`sources.json`): 17 pages from 12 companies (added X, Meta, Apple)
 - [x] **Phase 2:** Scraper working; 3 bugs fixed. Saved copies for 14 of 17 pages. *Later: Playwright for Reddit and Meta (need JavaScript) and for flaky sites (Snapchat, OpenAI).*
-- [ ] **Phase 3:** Put the project on GitHub and save first versions
+- [x] **Phase 3:** On GitHub at github.com/deweyzx/tos-tracker. Commit 1 (`8fd6f76`): scraper + 14 policies. Commit 2 (`ed0888b`): README.
+
+### Everyday workflow (after any change)
+```
+cd "C:\Users\owen moran\Documents\tos-tracker"
+python scraper.py
+git add .
+git commit -m "describe what changed"
+git push
+```
 - [ ] **Phase 4:** Change detection
 - [ ] **Phase 5:** AI summaries
 - [ ] **Phase 6:** Run automatically every day (GitHub Actions)
