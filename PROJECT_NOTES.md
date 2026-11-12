@@ -42,6 +42,24 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 | `detect_changes.py` | Compares each policy to its last committed version and saves what changed to `changes/<date>.json` | Turns a downloader into a *tracker*. Its output feeds the AI step |
 | `test_detect_changes.py` | 18 automatic checks that change detection catches real edits and ignores formatting noise | Proves the code works, and catches it if a future edit breaks something |
 | `changes/` | One JSON report per day that had changes, e.g. `changes/2026-11-20.json` | A permanent log of every change found. Later becomes the website's data |
+| `summarize.py` | Sends each change to Claude Haiku 5.5 and saves back a summary, severity, categories, and "what you can do" | The AI part: turns a diff into something a normal person understands |
+| `test_summarize.py` | 17 automatic checks using a *fake* AI client | Free and instant, no API key needed. Tests our code, not the AI |
+| `examples/sample_change.json` | A made-up policy change for trying the AI | Lets you see real AI output before any real policy changes |
+| `.env` | Holds the secret API key: `ANTHROPIC_API_KEY=sk-ant-...` | Keeps the key out of the code. **Never uploaded** (blocked by `.gitignore`) |
+| `.env.example` | Same as `.env` but with a fake placeholder | Shows others what settings the project needs, without exposing my key |
+
+### Inside `summarize.py`
+
+| Piece | What it does |
+|---|---|
+| `MODEL` | Which AI model to use. Changing this one line switches models |
+| `SEVERITIES`, `CATEGORIES` | The only allowed answers. Keeps the data consistent for the website's colors and filters |
+| `SUMMARY_TOOL` | A "form" the AI is forced to fill in, so we always get the same clean fields back |
+| `INSTRUCTIONS` | The system prompt: rules the AI follows (only use the given text, plain English, not alarmist, never invent settings) |
+| `format_change_for_ai(change)` | Turns a change into readable text: company, removed wording, added wording, context |
+| `summarize_change(client, change)` | Sends one change to Claude and returns the filled-in form |
+| `summarize_report(client, path)` | Does every change in a report, skips ones already done, saves after each one |
+| `make_client()` | Loads the key from `.env` and connects to Anthropic |
 
 ### Inside `detect_changes.py`
 
@@ -104,6 +122,19 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 - **Automated test:** code that checks other code by feeding it known inputs and verifying the outputs. "18 passed, 0 failed" means every check matched.
 - **End-to-end test:** a test of the whole process at once (here: builds a throwaway Git project, makes changes, runs the real script, checks the report), instead of one function at a time.
 - **ISO date:** the `2026-11-12` (year-month-day) format. Files named this way sort in date order automatically.
+- **API (Application Programming Interface):** a way for code to talk to another service. Our script talks to Anthropic's API to use Claude.
+- **API key:** a secret password that identifies your account to an API, so usage gets billed to you. Anyone with it can spend your credits.
+- **Environment variable / `.env`:** a setting stored outside the code. `python-dotenv` loads the `.env` file so the code can read the key without the key being written in the code.
+- **LLM (large language model):** the kind of AI behind Claude and ChatGPT.
+- **Model (e.g. Claude Haiku 5.5):** a specific version of an AI. Bigger models are smarter but cost more; Haiku is the small, cheap, fast one.
+- **Token:** the unit AI usage is measured and billed in, roughly ¾ of a word. Haiku 5.5 costs about $0.10 per million input tokens and $0.50 per million output tokens.
+- **System prompt:** standing instructions that shape how the AI responds (our `INSTRUCTIONS`).
+- **Structured output / tool use:** making the AI answer by filling in a defined form (a JSON schema) instead of writing free text. Our code can rely on the answer having exactly the fields it expects.
+- **JSON schema:** a description of what a piece of JSON must look like: which fields, what types, which values are allowed.
+- **Enum:** a fixed list of allowed values, like `major` / `moderate` / `minor`.
+- **Hallucination:** when an AI states something that isn't true or isn't in its source. Our prompt limits this by saying "only use the text provided" and "never invent settings."
+- **Mock / fake object:** a stand-in used in tests that pretends to be the real thing (our `FakeClient` pretends to be Claude), so tests are free and predictable.
+- **Idempotent:** safe to run twice. `summarize.py` skips changes it already summarized, so rerunning never double-charges.
 - **Git vs. GitHub:** Git is the program on your computer that saves versions. GitHub is the website you upload those versions to so others can see them.
 - **`git init`:** turns a normal folder into a Git repo (creates a hidden `.git` folder where all history is kept).
 - **`git add`:** picks which changed files go into the next save ("staging"). `git add .` means everything.
@@ -147,6 +178,16 @@ These are the "why did you do it this way?" answers.
 14. **Include one paragraph of context around each change.** Why: "We may share it with partners" means nothing unless you know what "it" is. Context lets the AI explain the change correctly.
 15. **Don't report brand-new policies as changes.** Why: the first copy of a policy is the starting point (baseline), not a change.
 16. **Write automated tests.** Why: checks 18 situations in about a second, including the tricky ones (Windows line endings, curly quotes). If a future edit breaks something, the tests catch it.
+17. **Claude Haiku 5.5 for summaries.** Why: cheapest Anthropic model, more than smart enough for 1–2 sentence summaries. At this volume $5 of credit lasts a very long time. (Considered: OpenAI and Gemini. ChatGPT Plus doesn't include API credits.)
+18. **Force structured output with a "tool."** Why: free-form AI text is unpredictable. Forcing a form with fixed fields and fixed severity choices means the website can always rely on `summary`, `severity`, `categories`, and `what_you_can_do` being there and valid.
+19. **Prompt rules against hallucination.** Why: a tracker that invents claims about companies would be worse than useless. The AI may only use the provided text, must be neutral, and may only suggest an opt-out if the policy itself mentions one.
+20. **Save summaries inside the change report, and skip ones already done.** Why: everything about a change stays in one place, and rerunning never pays for the same summary twice.
+21. **Record which model wrote each summary.** Why: if we upgrade models later, we can tell old summaries from new ones.
+22. **API key in `.env`, never in code.** Why: bots scan public GitHub repos for leaked keys within minutes. `.gitignore` blocks `.env`; `.env.example` shows the format without the secret.
+23. **Key with no expiration, but auto-reload off.** Why: simpler to manage, and the worst case if it ever leaked is losing the $5 balance. If I stop using the project, delete the key in the Claude Console (Settings → API Keys). *Later idea: in Phase 6, switch to identity federation with GitHub Actions so there's no stored key at all.*
+24. **Fake AI client in tests.** Why: tests run instantly, cost nothing, and don't need a key, and they can simulate errors (like a network failure) that are hard to trigger for real.
+25. **AI training on users' content is always MAJOR, even with an opt-out.** *(My call, Nov 12.)* Why: the first live test rated it "moderate" because an opt-out existed. But most people never find opt-outs, and AI training is exactly what this tracker exists to catch. Added as a rule in the prompt and the severity description, plus a test.
+26. **Proper company names in summaries.** Why: the first live test wrote "exampleapp" (the folder name). The prompt now tells the AI to capitalize names normally ("openai" → "OpenAI").
 
 ---
 
@@ -172,6 +213,11 @@ These are the "why did you do it this way?" answers.
 
 **Still need a real browser (Playwright):** Reddit, Meta privacy, Meta terms.
 
+**First live AI test (Nov 12, 2026):** `python summarize.py examples\sample_change.json`
+- Summary was accurate, and the opt-out tip was quoted from the policy, not invented. ✅
+- Rated it MODERATE. I decided AI training should always be MAJOR → changed the rules (decision #25).
+- Wrote "exampleapp" in lowercase → fixed (decision #26).
+
 *Lesson:* real websites are messy. Testing on real data found two bugs that the fake test page didn't.
 
 ---
@@ -187,12 +233,13 @@ These are the "why did you do it this way?" answers.
 cd "C:\Users\owen moran\Documents\tos-tracker"
 python scraper.py
 python detect_changes.py
+python summarize.py
 git add .
 git commit -m "describe what changed"
 git push
 ```
 - [x] **Phase 4:** Change detection: `detect_changes.py` + 18 passing tests. *Order matters: run it after the scraper and before committing.*
-- [ ] **Phase 5:** AI summaries
+- [ ] **Phase 5:** AI summaries: `summarize.py` + 17 passing tests written. *To do: install new libraries, paste key into `.env`, try it on the example.*
 - [ ] **Phase 6:** Run automatically every day (GitHub Actions)
 - [ ] **Phase 7:** Website: feed of change cards (severity badge, AI summary, tags, before/after diff) plus a page per company. *Plan: possibly add UI plugins/libraries to make it look especially good and clean.*
 - [ ] **Phase 8:** Alerts and launch
@@ -211,5 +258,8 @@ git push
 - How do you know a change is real and not just formatting? *(Compare a simplified copy: lowercase, no punctuation, single spaces. Only different words count.)*
 - Why does the order "scraper → detect_changes → commit" matter? *(detect_changes compares to the last commit. If you commit first, old and new are the same and nothing is found.)*
 - How do you know your code works? *(18 automated tests, including an end-to-end test with a real Git repo.)*
+- How do you make sure the AI's output is reliable? *(Forced structured output with fixed allowed values, prompt rules against inventing things, and the original before/after text is always shown next to the summary so readers can check it.)*
+- How do you keep your API key safe? *(In `.env`, blocked by `.gitignore`, never in code; no auto-reload so the worst case is $5.)*
+- How much does it cost to run? *(Fractions of a cent per change with Haiku 5.5. Only changed paragraphs are sent, not whole policies.)*
 - How did you use AI tools while building this?
   - *Answer: I designed the system and made the decisions; I used Claude to write the code faster, and I kept notes on how every part works.*

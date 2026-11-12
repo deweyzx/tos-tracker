@@ -1,0 +1,21 @@
+{
+  "date": "example",
+  "note": "A made-up change for trying summarize.py. Not a real company or policy.",
+  "changes": [
+    {
+      "company": "exampleapp",
+      "doc": "privacy",
+      "file": "policies/exampleapp/privacy.txt",
+      "changed_words": 31,
+      "hunks": [
+        {
+          "removed": ["We use the content you post, such as photos and comments, to provide and improve the Services."],
+          "added": ["We use the content you post, such as photos and comments, to provide and improve the Services, including to develop and train our artificial intelligence models. You can opt out of AI training at any time under Settings > Privacy > AI Data."],
+          "context_before": ["Information you provide to us"],
+          "context_after": ["We do not sell your personal information."],
+          "changed_words": 31
+        }
+      ]
+    }
+  ]
+}
