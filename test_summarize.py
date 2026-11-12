@@ -70,6 +70,17 @@ check("forces the AI to fill in the form", sent["tool_choice"]["name"] == "recor
 check("rule: AI training is always major", "train AI is always major" in sm.INSTRUCTIONS)
 check("severity choices are limited to the fixed list", sm.SUMMARY_TOOL["input_schema"]["properties"]["severity"]["enum"] == ["major", "moderate", "minor"])
 
+print("\nSize limits (protects against huge prompts):")
+many = [{"removed": [f"old {i}"], "added": [f"new {i}"], "context_before": [], "context_after": [], "changed_words": i} for i in range(40)]
+picked = sm.biggest_hunks(many)
+check("sends at most 15 changed spots", len(picked) == 15)
+check("keeps the 15 biggest", sorted(h["changed_words"] for h in picked) == list(range(25, 40)))
+check("keeps them in document order", [h["changed_words"] for h in picked] == list(range(25, 40)))
+big_text = sm.format_change_for_ai({"company": "acme", "doc": "terms", "hunks": many})
+check("tells the AI it's seeing part of a large update", "showing the 15 biggest of 40" in big_text)
+huge = {"company": "acme", "doc": "terms", "hunks": [{"removed": ["x " * 5000], "added": ["y"], "context_before": [], "context_after": [], "changed_words": 5000}]}
+check("trims a giant paragraph", len(sm.format_change_for_ai(huge)) < 3500)
+
 print("\nWhat we do with the answer:")
 check("returns the summary", result["summary"].startswith("ExampleApp"))
 check("returns the severity", result["severity"] == "major")

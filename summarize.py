@@ -85,19 +85,43 @@ Rules:
 - "Removed" text is the old wording; "Added" text is the new wording. Compare them carefully.
 - Plain English, no legal jargon. Be accurate and neutral, not alarmist.
 - If the change is just rewording with the same meaning, say so and rate it minor.
+- If the changes look like the page was reorganized (same content moved around, menus or headings changed) rather than new rules, say that and rate it minor.
 - Any NEW use of users' data or content to train AI is always major, even if there's an opt-out.
 - Write company names with normal capitalization (e.g. "spotify" -> "Spotify", "openai" -> "OpenAI", "x" -> "X")."""
 
 
+# Safety limits on how much text goes to the AI in one request. A whole-policy
+# rewrite can have hundreds of changed spots; sending all of them would be slow,
+# and past 100,000 tokens Haiku's price jumps 5x for the whole request.
+MAX_HUNKS_FOR_AI = 15     # send only the 15 biggest changed spots
+MAX_CHARS_PER_SIDE = 2500 # trim any single huge "removed"/"added" block
+
+
+def biggest_hunks(hunks, limit=MAX_HUNKS_FOR_AI):
+    """The `limit` largest changed spots, kept in their original document order."""
+    if len(hunks) <= limit:
+        return hunks
+    keep = sorted(range(len(hunks)), key=lambda i: hunks[i]["changed_words"], reverse=True)[:limit]
+    return [hunks[i] for i in sorted(keep)]
+
+
+def trim(text):
+    return text if len(text) <= MAX_CHARS_PER_SIDE else text[:MAX_CHARS_PER_SIDE] + " [...]"
+
+
 def format_change_for_ai(change):
     """Turn one change from the report into readable text for the AI."""
-    parts = [f"Company: {change['company']}", f"Document: {change['doc']}", ""]
-    for number, hunk in enumerate(change["hunks"], start=1):
+    parts = [f"Company: {change['company']}", f"Document: {change['doc']}"]
+    hunks = biggest_hunks(change["hunks"])
+    if len(hunks) < len(change["hunks"]):
+        parts.append(f"(Large update: showing the {len(hunks)} biggest of {len(change['hunks'])} changed spots.)")
+    parts.append("")
+    for number, hunk in enumerate(hunks, start=1):
         parts.append(f"--- Change spot {number} ---")
         if hunk["context_before"]:
             parts.append("Context before: " + " ".join(hunk["context_before"]))
-        parts.append("Removed: " + (" ".join(hunk["removed"]) or "(nothing)"))
-        parts.append("Added: " + (" ".join(hunk["added"]) or "(nothing)"))
+        parts.append("Removed: " + (trim(" ".join(hunk["removed"])) or "(nothing)"))
+        parts.append("Added: " + (trim(" ".join(hunk["added"])) or "(nothing)"))
         if hunk["context_after"]:
             parts.append("Context after: " + " ".join(hunk["context_after"]))
         parts.append("")
@@ -158,7 +182,8 @@ def make_client():
 
 def main():
     # Use the file(s) given on the command line, or every report in changes/.
-    paths = [Path(p) for p in sys.argv[1:]] or sorted(CHANGES_DIR.glob("*.json"))
+    # rglob also looks in subfolders, like changes/archive/ from backfill.py.
+    paths = [Path(p) for p in sys.argv[1:]] or sorted(CHANGES_DIR.rglob("*.json"))
     if not paths:
         print("No change reports to summarize. (Run detect_changes.py first.)")
         return

@@ -55,6 +55,24 @@ def simplify(text):
     return " ".join(text.split())  # collapse all whitespace
 
 
+# Websites often show a banner like "As of 5 December, we've updated our Privacy
+# Policy..." that comes and goes. It's an announcement, not part of the policy,
+# so we ignore short lines like that when comparing (found in Spotify's history).
+NOTICE_LINE = re.compile(
+    r"\b(we|we've|we’ve|we have)\s+(recently\s+)?(updated|changed|revised)\s+(our|this|the)\s+"
+    r"(privacy\s+policy|privacy\s+notice|policy|terms|user\s+agreement)",
+    re.IGNORECASE,
+)
+
+
+def remove_notices(text):
+    """Drop short 'we've updated our policy' announcement lines before comparing."""
+    return "\n".join(
+        line for line in text.splitlines()
+        if not (len(line) < 300 and NOTICE_LINE.search(line))
+    )
+
+
 def is_meaningful_change(old_text, new_text):
     """True only if the actual wording changed (not just formatting/punctuation)."""
     return simplify(old_text) != simplify(new_text)
@@ -120,6 +138,8 @@ def main():
             new_policies.append(f"{company}/{doc}")
             continue  # first time we've seen it: nothing to compare yet
 
+        old_text, new_text = remove_notices(old_text), remove_notices(new_text)
+
         if not is_meaningful_change(old_text, new_text):
             continue  # identical, or only formatting noise
 
@@ -131,6 +151,8 @@ def main():
         all_changes.append({
             "company": company,
             "doc": doc,
+            "date": today,
+            "source": "daily",   # vs. "archive" from backfill.py
             "file": path.as_posix(),
             "changed_words": total_words,
             "hunks": hunks,

@@ -62,6 +62,15 @@ mixed = OLD.replace("email.", "email").replace("Contact us", "Email us")
 hunks = dc.find_changes(OLD, mixed)
 check("real change kept, punctuation-only spot dropped", len(hunks) == 1 and "Email us" in hunks[0]["added"][0])
 
+print("\n'We've updated our policy' banners should be IGNORED:")
+banner_old = "Your privacy is important. As of 30 December, we've updated our Privacy Policy to make it easier to read.\n" + OLD
+banner_new = "Your privacy is important. As of 5 December, we’ve updated our Privacy Policy to include additional detail.\n" + OLD
+check("banner changing is not a change", not dc.is_meaningful_change(dc.remove_notices(banner_old), dc.remove_notices(banner_new)))
+check("banner disappearing is not a change", not dc.is_meaningful_change(dc.remove_notices(banner_old), dc.remove_notices(OLD)))
+long_rule = "We have updated this policy to explain that " + "we may share your data with partners for advertising " * 6
+check("a long real paragraph mentioning an update is kept", long_rule in dc.remove_notices(long_rule + "\n" + OLD))
+check("normal policy text is untouched", dc.remove_notices(OLD).splitlines() == OLD.splitlines())
+
 print("\nEnd-to-end test with a real Git repo:")
 start_dir = os.getcwd()
 # ignore_cleanup_errors: on Windows, Git marks some files read-only, which can block

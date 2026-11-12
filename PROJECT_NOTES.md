@@ -40,13 +40,17 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 | `PROJECT_NOTES.md` | This file | My study guide |
 | `README.md` | The project's front page on GitHub: what it is, how it works, roadmap | First thing a recruiter sees |
 | `detect_changes.py` | Compares each policy to its last committed version and saves what changed to `changes/<date>.json` | Turns a downloader into a *tracker*. Its output feeds the AI step |
-| `test_detect_changes.py` | 18 automatic checks that change detection catches real edits and ignores formatting noise | Proves the code works, and catches it if a future edit breaks something |
+| `test_detect_changes.py` | 22 automatic checks that change detection catches real edits and ignores formatting noise | Proves the code works, and catches it if a future edit breaks something |
 | `changes/` | One JSON report per day that had changes, e.g. `changes/2026-11-20.json` | A permanent log of every change found. Later becomes the website's data |
 | `summarize.py` | Sends each change to Claude Haiku 5.5 and saves back a summary, severity, categories, and "what you can do" | The AI part: turns a diff into something a normal person understands |
-| `test_summarize.py` | 17 automatic checks using a *fake* AI client | Free and instant, no API key needed. Tests our code, not the AI |
+| `test_summarize.py` | 22 automatic checks using a *fake* AI client | Free and instant, no API key needed. Tests our code, not the AI |
 | `examples/sample_change.json` | A made-up policy change for trying the AI | Lets you see real AI output before any real policy changes |
 | `.env` | Holds the secret API key: `ANTHROPIC_API_KEY=sk-ant-...` | Keeps the key out of the code. **Never uploaded** (blocked by `.gitignore`) |
 | `.env.example` | Same as `.env` but with a fake placeholder | Shows others what settings the project needs, without exposing my key |
+| `backfill.py` | Rebuilds each policy's *past* history from the Internet Archive's Wayback Machine | Fills the website with real history from day one instead of an empty page |
+| `test_backfill.py` | 24 checks using a *fake* Wayback Machine (including being refused and rate-limited) | Tests the backfill with no internet and no waiting |
+| `changes/archive/` | One history report per policy, e.g. `changes/archive/spotify-privacy.json` | The "Company history" tab's data for past years |
+| `archive_cache/` | Every archived copy downloaded, as cleaned text | Reruns are fast and don't re-download. **Not uploaded** (in `.gitignore`) |
 | `.github/workflows/daily.yml` | Instructions for GitHub Actions: every day, run tests → scrape → detect → summarize → commit results | Makes the tracker run itself, even with my laptop off |
 
 ### Inside `daily.yml`
@@ -80,10 +84,22 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 |---|---|
 | `get_old_version(path)` | Asks Git for the file as it was in the last commit (`git show HEAD:<file>`). Returns nothing for a brand-new policy |
 | `simplify(text)` | Makes a stripped-down copy (lowercase, no punctuation, single spaces) used *only for comparing*, never saved |
+| `remove_notices(text)` | Drops short "we've updated our Privacy Policy" banner lines before comparing (decision #42) |
 | `is_meaningful_change(old, new)` | True only if the simplified versions differ, meaning the actual words changed |
 | `find_changes(old, new)` | Lines up the two versions paragraph by paragraph and returns each spot that changed (a "hunk"): removed paragraphs, added paragraphs, and 1 unchanged paragraph before and after for context |
 | `count_changed_words(...)` | Roughly how many words were added or removed. Helps judge how big a change is |
 | `main()` | Runs the steps above for every policy file and writes the day's report |
+
+### Inside `backfill.py`
+
+| Function | What it does |
+|---|---|
+| `list_snapshots(url, since_year)` | Asks the Wayback Machine's **CDX API** which saved copies exist, at most one per month |
+| `polite_get(url)` | Every request to the archive goes through here. Backs off 60s when refused or rate-limited (429), and stops the run (`ArchiveBlocked`) after 3 failures in a row |
+| `fetch_snapshot_text(...)` | Downloads one archived copy (the `id_` version, without the archive's toolbar) and cleans it with **the scraper's own** `extract_text` + `normalize`. Saves it to `archive_cache/` |
+| `find_history(...)` | Compares each version to the previous good one with **the change detector's own** `find_changes`. Skips broken copies |
+| `save_report(...)` | Writes `changes/archive/<company>-<doc>.json`, carrying over any AI summaries already paid for |
+| `snapshot_link(...)` | Builds a public archive.org link so anyone can check the before/after themselves |
 
 ### What a change report looks like
 ```json
@@ -158,6 +174,16 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 - **CI (continuous integration):** automatically running tests whenever code runs or changes. Our workflow runs the tests before every daily check.
 - **Bot commit:** a commit made by automation (`github-actions[bot]`) instead of a person.
 - **`git pull`:** downloads commits from GitHub that you don't have yet (like the bot's daily updates). Run it before making your own changes.
+- **Wayback Machine / Internet Archive:** a nonprofit that has saved copies of websites since 1996 (archive.org).
+- **Snapshot:** one saved copy of a web page at a moment in time, identified by a timestamp like `20240315083000` (year, month, day, hour, minute, second).
+- **CDX API:** the Wayback Machine's search tool for listing which snapshots exist for a URL.
+- **Backfill:** filling in historical data that existed before your system started collecting it.
+- **Cache:** a saved local copy of something slow to get, so you don't fetch it again.
+- **Code reuse:** using the same functions in more than one place. backfill.py *imports* the scraper's cleaning code and the detector's comparison code instead of copying them, so a fix in one place fixes both.
+- **Rate limit:** the most requests a service allows in a time window. Go over it and you get slowed down or blocked.
+- **HTTP 429 "Too Many Requests":** the status code a server sends when you've hit its rate limit.
+- **Backoff:** waiting before retrying after a failure, so you don't make an overloaded service worse.
+- **Command-line arguments:** extra words after a command, like `python backfill.py spotify --since 2024`. `argparse` reads them.
 - **Git vs. GitHub:** Git is the program on your computer that saves versions. GitHub is the website you upload those versions to so others can see them.
 - **`git init`:** turns a normal folder into a Git repo (creates a hidden `.git` folder where all history is kept).
 - **`git add`:** picks which changed files go into the next save ("staging"). `git add .` means everything.
@@ -220,6 +246,16 @@ These are the "why did you do it this way?" answers.
     - *GitHub's computers may get blocked more often* than my home PC (sites distrust data-center traffic). That's safe, because the scraper keeps the last good copy (decision #4), but some pages may update less often.
     - *The first automatic run could flag "changes" that aren't real*, if a site shows slightly different text to a US data center than to my PC. Review the first run's report by hand.
     - *GitHub may pause scheduled workflows after 60 days with no repo activity.* If daily runs stop, re-enable them under Actions.
+33. **Backfill history from the Wayback Machine.** *(My idea, Nov 12: a "Company history" tab.)* Why: without it, the site would be empty until companies happen to change their policies. With it, each company gets years of real history on launch day.
+34. **One snapshot per month, starting in 2023.** Why: the archive may hold hundreds of copies of a page. Monthly is enough to catch policy changes and keeps a full run to minutes instead of hours. `--since` can go further back.
+35. **Reuse the scraper's and detector's code.** Why: archived and live copies get cleaned and compared *exactly* the same way, so results are consistent.
+36. **Date = when the archive first saw the new version.** Why: we can't know the exact day a company changed its policy, only that it happened between two snapshots. Both snapshot links are saved so anyone can verify it.
+37. **Cache every download.** Why: the archive is slow and free, and if a run stops halfway, the rerun picks up where it left off. Bad copies are cached as empty files so they're skipped next time; network errors aren't cached, so they get retried.
+38. **5-second pause between downloads** *(was 1.5s, see run log)*. Why: the Internet Archive is a nonprofit and temporarily blocks anyone going faster than roughly 15 requests a minute. 5 seconds is about 12 a minute, safely under.
+39. **Cap what goes to the AI: the 15 biggest changed spots, with giant paragraphs trimmed.** Why: an old archive copy vs. a redesigned page can produce hundreds of changed spots. Haiku's price jumps 5x for any request over 100,000 tokens, and a huge prompt summarizes worse anyway. The AI is told when it's seeing only part of a large update.
+40. **New prompt rule: a reorganized page is "minor."** Why: archived pages sometimes differ because of layout changes, not new rules. The AI should say so instead of inventing a big change.
+41. **Back off and stop when the archive pushes back.** Why: the first real run kept firing requests after being refused, which makes a block worse. Now a refused or "429 Too Many Requests" response means wait 60s and retry once, and 3 failures in a row means stop the whole run with a message. Successful downloads are cached and failures aren't, so the rerun resumes exactly where it stopped.
+42. **Ignore "we've updated our policy" banners.** Why: reviewing Spotify's real history showed 3 of 7 "changes" were just a website banner ("Your privacy is important. As of 5 December, we've updated our Privacy Policy...") appearing or disappearing. That's an announcement, not policy. Short lines (under 300 characters) like that are now dropped *before comparing*, in both the daily detector and the backfill. Saved files keep the full text. Tested on the real data: 7 changes became exactly the 4 real ones.
 
 ---
 
@@ -245,6 +281,25 @@ These are the "why did you do it this way?" answers.
 
 **Still need a real browser (Playwright):** Reddit, Meta privacy, Meta terms.
 
+**First backfill run (Nov 12, 2026):** `python backfill.py spotify`
+- 47 monthly copies of Spotify's privacy policy found (Jan 2023 → now). The first ~20 downloaded fine at ~3 seconds each.
+- Clue: the text drops from ~43,000 to ~36,000 characters in July 2023, so something big changed that month.
+- **Then the archive started refusing connections** (`WinError 10061: actively refused`). We were going faster than its limit (~15 requests/min), so it temporarily blocked my connection. The script made it worse by moving straight to the next download with no pause after each refusal.
+- Fix: 5s pause, back off 60s when refused, stop after 3 failures in a row (decisions #38, #41). 6 new tests.
+- *Lesson:* free public services have limits. Respect them, and design for "being told no."
+- **Reviewed the 7 changes it found (19 of 47 copies):** 4 real policy updates (Mar 2023, Jul 2023 rewrite with a new "Right to Opt-Out" of targeted ads, Jan 2024 data-retention criteria + tailored-ads age, Jul 2024 privacy-request statistics) and 3 fake ones caused by a "we've updated our policy" banner. Fixed (decision #42).
+- *Lesson:* always look at real output by hand before trusting it. Tests only catch the problems you thought of.
+
+**First automatic run on GitHub Actions (Nov 12, 2026):** ✅ succeeded in 47 seconds. "Nothing changed today."
+- 12 of 17 pages saved from GitHub's computers.
+- **OpenAI privacy + terms: 403 Forbidden.** OpenAI blocks data-center traffic but allows my home PC (predicted in decision #32). The saved copies stay safe; the robot just can't update them. Fix later: Playwright.
+- Reddit + Meta still need a real browser (same as on my PC).
+- **Proof the formatting filter works on real data:** Discord's word counts differed by 4 from my PC's copy (5670 vs 5674), but detect_changes correctly found no meaningful change.
+- The API key secret wasn't used yet (no changes to summarize). First real use will be the first day a policy changes.
+- Yellow warning: "Node.js 20 is deprecated" for `actions/checkout@v4` and `actions/setup-python@v5`. Harmless for now; bump to newer versions next time the workflow is edited.
+
+**Still need a real browser (Playwright):** Reddit, Meta privacy, Meta terms, and (from GitHub only) OpenAI privacy + terms.
+
 **First live AI test (Nov 12, 2026):** `python summarize.py examples\sample_change.json`
 - Summary was accurate, and the opt-out tip was quoted from the policy, not invented. ✅
 - Rated it MODERATE. I decided AI training should always be MAJOR → changed the rules (decision #25).
@@ -261,7 +316,7 @@ These are the "why did you do it this way?" answers.
 - [x] **Phase 3:** On GitHub at github.com/deweyzx/tos-tracker. Commit 1 (`8fd6f76`): scraper + 14 policies. Commit 2 (`ed0888b`): README.
 - [x] **Phase 4:** Change detection: `detect_changes.py` + 18 passing tests. *Order matters: run it after the scraper and before committing.*
 - [x] **Phase 5:** AI summaries with Claude Haiku 5.5: `summarize.py` + 17 passing tests. First live run worked; commit `8314a7e`. Verified `.env` (the key) was NOT uploaded.
-- [ ] **Phase 6:** Run automatically every day with GitHub Actions: `.github/workflows/daily.yml` written. *To do: add the API key as a GitHub secret, push, and do a first manual run.*
+- [x] **Phase 6:** Runs automatically every day at 11:23 UTC with GitHub Actions (`.github/workflows/daily.yml`, commit `59e9c92`). API key stored as a GitHub secret. First run ✅ in 47s. *Later: Playwright for OpenAI/Reddit/Meta; bump action versions; add `test_backfill.py` to the workflow's test step.*
 
 ### Everyday workflow (when I change code on my PC)
 Once Phase 6 is on, a robot also commits to the repo every day, so **always pull first**:
@@ -274,7 +329,11 @@ git commit -m "describe what changed"
 git push
 ```
 I no longer need to run the scraper myself. GitHub does it daily. To run it right now, go to the repo on GitHub, open **Actions → Daily policy check → Run workflow**.
-- [ ] **Phase 7:** Website: feed of change cards (severity badge, AI summary, tags, before/after diff) plus a page per company. *Plan: possibly add UI plugins/libraries to make it look especially good and clean.*
+- [ ] **Phase 7:** Website. *My plan (Nov 12):*
+    - **"Latest changes" tab:** newest changes across all companies, with severity badge, AI summary, date, and click-through to the before/after view. Data: `changes/*.json`.
+    - **"Company history" tab:** pick a company and see a timeline of every change to its privacy policy and terms, newest first. Data: our own reports, plus older changes marked "from archive."
+    - **Backfill history from the Wayback Machine (archive.org):** download past versions of each policy, run them through the same change detection + AI summaries. Gives each company years of history from day one, so the site isn't empty. *`backfill.py` + 18 tests written Nov 12. To do: run it on my PC, review results, summarize.*
+    - Possibly add UI plugins/libraries to make it look especially good and clean.
 - [ ] **Phase 8:** Alerts and launch
 
 ---
@@ -297,5 +356,9 @@ I no longer need to run the scraper myself. GitHub does it daily. To run it righ
 - How does it run automatically? *(A GitHub Actions workflow on a daily cron schedule: tests → scrape → detect → summarize → commit only if something changed.)*
 - How does the automated job get the API key without exposing it? *(It's stored as an encrypted GitHub secret and passed in as an environment variable. It's never in the code and hidden in logs.)*
 - What happens if you push a bug? *(The workflow runs the tests first and stops before touching any data.)*
+- Tell me about a time an external service limited you. *(The Internet Archive blocked my backfill for going too fast. I added a slower pace, backoff on refusals, a stop-after-3-failures rule, and caching so the run resumes where it left off.)*
+- How did you get historical data? *(The Wayback Machine's CDX API: one snapshot a month since 2023, cleaned and compared with the same code as the live tracker, with archive links for verification.)*
+- How do you know *when* a past change happened? *(Only that it happened between two snapshots. I date it by the first snapshot that shows it and link both.)*
+- How do you keep AI costs predictable on a huge change? *(Cap it at the 15 biggest changed spots and trim giant paragraphs, which stays far below the 100K-token price cliff.)*
 - How did you use AI tools while building this?
   - *Answer: I designed the system and made the decisions; I used Claude to write the code faster, and I kept notes on how every part works.*
