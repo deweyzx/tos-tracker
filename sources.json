@@ -1,0 +1,19 @@
+[
+  {"company": "spotify",   "doc": "privacy", "url": "https://www.spotify.com/us/legal/privacy-policy/"},
+  {"company": "spotify",   "doc": "terms",   "url": "https://www.spotify.com/us/legal/end-user-agreement/"},
+  {"company": "discord",   "doc": "privacy", "url": "https://discord.com/privacy"},
+  {"company": "discord",   "doc": "terms",   "url": "https://discord.com/terms"},
+  {"company": "reddit",    "doc": "privacy", "url": "https://www.reddit.com/policies/privacy-policy"},
+  {"company": "openai",    "doc": "privacy", "url": "https://openai.com/policies/privacy-policy/"},
+  {"company": "openai",    "doc": "terms",   "url": "https://openai.com/policies/terms-of-use/"},
+  {"company": "anthropic", "doc": "privacy", "url": "https://www.anthropic.com/legal/privacy"},
+  {"company": "google",    "doc": "privacy", "url": "https://policies.google.com/privacy"},
+  {"company": "tiktok",    "doc": "privacy", "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en"},
+  {"company": "snapchat",  "doc": "privacy", "url": "https://values.snap.com/privacy/privacy-policy"},
+  {"company": "zoom",      "doc": "privacy", "url": "https://www.zoom.com/en/trust/privacy/privacy-statement/"},
+  {"company": "x",         "doc": "privacy", "url": "https://x.com/en/privacy"},
+  {"company": "x",         "doc": "terms",   "url": "https://x.com/en/tos"},
+  {"company": "meta",      "doc": "privacy", "url": "https://www.facebook.com/privacy/policy/"},
+  {"company": "meta",      "doc": "terms",   "url": "https://www.facebook.com/terms.php"},
+  {"company": "apple",     "doc": "privacy", "url": "https://www.apple.com/legal/privacy/en-ww/"}
+]
