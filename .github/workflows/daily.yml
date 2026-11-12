@@ -1,0 +1,73 @@
+# daily.yml — Phase 6: run the whole tracker automatically on GitHub's computers.
+#
+# Every day (and whenever you click "Run workflow" on GitHub), this:
+#   1. Gets a fresh copy of the repo
+#   2. Installs Python and the libraries
+#   3. Runs the tests (stops if anything is broken)
+#   4. Scrapes, detects changes, and writes AI summaries
+#   5. Commits and pushes any new policy versions and change reports
+
+name: Daily policy check
+
+on:
+  schedule:
+    # Every day at 11:23 UTC (6:23 AM Eastern in winter). Cron format:
+    # minute hour day-of-month month day-of-week. An odd minute avoids the
+    # busy top of the hour, when GitHub delays scheduled jobs.
+    - cron: "23 11 * * *"
+  workflow_dispatch: # adds a "Run workflow" button to run it by hand
+
+permissions:
+  contents: write # lets the job push its commits back to the repo
+
+concurrency:
+  group: daily-policy-check # never run two copies at the same time
+  cancel-in-progress: false
+
+jobs:
+  check-policies:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install libraries
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          git config --global user.email "test@example.com"
+          git config --global user.name "Test"
+          python test_detect_changes.py
+          python test_summarize.py
+
+      - name: Scrape policies
+        run: python scraper.py
+
+      - name: Detect changes
+        run: python detect_changes.py
+
+      - name: Summarize changes with AI
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # from GitHub's secret storage
+        run: python summarize.py
+
+      - name: Save results to the repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add policies
+          if [ -d changes ]; then git add changes; fi  # changes/ only exists once something has changed
+          if git diff --staged --quiet; then
+            echo "Nothing changed today."
+          else
+            git commit -m "Daily update: $(date -u +%Y-%m-%d)"
+            git push
+          fi

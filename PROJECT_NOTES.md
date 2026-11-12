@@ -47,6 +47,19 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 | `examples/sample_change.json` | A made-up policy change for trying the AI | Lets you see real AI output before any real policy changes |
 | `.env` | Holds the secret API key: `ANTHROPIC_API_KEY=sk-ant-...` | Keeps the key out of the code. **Never uploaded** (blocked by `.gitignore`) |
 | `.env.example` | Same as `.env` but with a fake placeholder | Shows others what settings the project needs, without exposing my key |
+| `.github/workflows/daily.yml` | Instructions for GitHub Actions: every day, run tests → scrape → detect → summarize → commit results | Makes the tracker run itself, even with my laptop off |
+
+### Inside `daily.yml`
+
+| Part | What it does |
+|---|---|
+| `on: schedule: cron: "23 11 * * *"` | Run every day at 11:23 UTC (6:23 AM Eastern in winter) |
+| `on: workflow_dispatch` | Adds a "Run workflow" button for running it by hand |
+| `permissions: contents: write` | Allows the job to push its commits back to the repo |
+| `concurrency` | Never lets two runs overlap and fight over the same files |
+| `Run tests` step | Runs both test files first. If anything is broken, the run stops before touching data |
+| `Summarize` step | Gets the API key from GitHub's secret storage (`secrets.ANTHROPIC_API_KEY`) |
+| `Save results` step | Commits only if something actually changed, as the `github-actions[bot]` user |
 
 ### Inside `summarize.py`
 
@@ -135,6 +148,16 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 - **Hallucination:** when an AI states something that isn't true or isn't in its source. Our prompt limits this by saying "only use the text provided" and "never invent settings."
 - **Mock / fake object:** a stand-in used in tests that pretends to be the real thing (our `FakeClient` pretends to be Claude), so tests are free and predictable.
 - **Idempotent:** safe to run twice. `summarize.py` skips changes it already summarized, so rerunning never double-charges.
+- **GitHub Actions:** GitHub's free service for running code on its own computers, triggered by a schedule, a push, or a button.
+- **Workflow:** one automated job defined in a `.yml` file inside `.github/workflows/`.
+- **Runner:** the temporary computer GitHub spins up to run a workflow. It starts fresh every time and is deleted afterward.
+- **YAML (.yml):** a settings-file format where indentation shows structure. Spaces matter, and tabs aren't allowed.
+- **Cron:** a 5-part code for "when to run": minute, hour, day of month, month, day of week. `23 11 * * *` = 11:23 every day (`*` means "every").
+- **UTC:** the world's reference time zone. Eastern is UTC−5 in winter and UTC−4 in summer.
+- **GitHub secret:** an encrypted setting stored in the repo's settings. Workflows can use it, but nobody can view it again, and it's hidden in logs.
+- **CI (continuous integration):** automatically running tests whenever code runs or changes. Our workflow runs the tests before every daily check.
+- **Bot commit:** a commit made by automation (`github-actions[bot]`) instead of a person.
+- **`git pull`:** downloads commits from GitHub that you don't have yet (like the bot's daily updates). Run it before making your own changes.
 - **Git vs. GitHub:** Git is the program on your computer that saves versions. GitHub is the website you upload those versions to so others can see them.
 - **`git init`:** turns a normal folder into a Git repo (creates a hidden `.git` folder where all history is kept).
 - **`git add`:** picks which changed files go into the next save ("staging"). `git add .` means everything.
@@ -188,6 +211,15 @@ These are the "why did you do it this way?" answers.
 24. **Fake AI client in tests.** Why: tests run instantly, cost nothing, and don't need a key, and they can simulate errors (like a network failure) that are hard to trigger for real.
 25. **AI training on users' content is always MAJOR, even with an opt-out.** *(My call, Nov 12.)* Why: the first live test rated it "moderate" because an opt-out existed. But most people never find opt-outs, and AI training is exactly what this tracker exists to catch. Added as a rule in the prompt and the severity description, plus a test.
 26. **Proper company names in summaries.** Why: the first live test wrote "exampleapp" (the folder name). The prompt now tells the AI to capitalize names normally ("openai" → "OpenAI").
+27. **GitHub Actions instead of my own computer.** Why: free for public repos, runs with my laptop off, and every run is logged publicly. It's the standard tool, so it's good to know for jobs.
+28. **Run the tests before every daily check.** Why: if a code change broke something, the run stops *before* it can save bad data or send junk to the AI.
+29. **Commit only when something changed.** Why: no empty daily commits cluttering the history. Each bot commit means a real policy change (or a newly fixed page).
+30. **API key stored as a GitHub secret.** Why: the runner needs the key, but `.env` never leaves my PC. Secrets are encrypted, hidden in logs, and can't be viewed after saving.
+31. **Odd time (11:23 UTC).** Why: GitHub's scheduled jobs pile up at the top of the hour and get delayed. An odd minute runs closer to on time.
+32. **Known risks:**
+    - *GitHub's computers may get blocked more often* than my home PC (sites distrust data-center traffic). That's safe, because the scraper keeps the last good copy (decision #4), but some pages may update less often.
+    - *The first automatic run could flag "changes" that aren't real*, if a site shows slightly different text to a US data center than to my PC. Review the first run's report by hand.
+    - *GitHub may pause scheduled workflows after 60 days with no repo activity.* If daily runs stop, re-enable them under Actions.
 
 ---
 
@@ -227,20 +259,21 @@ These are the "why did you do it this way?" answers.
 - [x] **Phase 1:** Pick companies and URLs (`sources.json`): 17 pages from 12 companies (added X, Meta, Apple)
 - [x] **Phase 2:** Scraper working; 3 bugs fixed. Saved copies for 14 of 17 pages. *Later: Playwright for Reddit and Meta (need JavaScript) and for flaky sites (Snapchat, OpenAI).*
 - [x] **Phase 3:** On GitHub at github.com/deweyzx/tos-tracker. Commit 1 (`8fd6f76`): scraper + 14 policies. Commit 2 (`ed0888b`): README.
+- [x] **Phase 4:** Change detection: `detect_changes.py` + 18 passing tests. *Order matters: run it after the scraper and before committing.*
+- [x] **Phase 5:** AI summaries with Claude Haiku 5.5: `summarize.py` + 17 passing tests. First live run worked; commit `8314a7e`. Verified `.env` (the key) was NOT uploaded.
+- [ ] **Phase 6:** Run automatically every day with GitHub Actions: `.github/workflows/daily.yml` written. *To do: add the API key as a GitHub secret, push, and do a first manual run.*
 
-### Everyday workflow (after any change)
+### Everyday workflow (when I change code on my PC)
+Once Phase 6 is on, a robot also commits to the repo every day, so **always pull first**:
 ```
 cd "C:\Users\owen moran\Documents\tos-tracker"
-python scraper.py
-python detect_changes.py
-python summarize.py
+git pull
+(make changes / run things)
 git add .
 git commit -m "describe what changed"
 git push
 ```
-- [x] **Phase 4:** Change detection: `detect_changes.py` + 18 passing tests. *Order matters: run it after the scraper and before committing.*
-- [ ] **Phase 5:** AI summaries: `summarize.py` + 17 passing tests written. *To do: install new libraries, paste key into `.env`, try it on the example.*
-- [ ] **Phase 6:** Run automatically every day (GitHub Actions)
+I no longer need to run the scraper myself. GitHub does it daily. To run it right now, go to the repo on GitHub, open **Actions → Daily policy check → Run workflow**.
 - [ ] **Phase 7:** Website: feed of change cards (severity badge, AI summary, tags, before/after diff) plus a page per company. *Plan: possibly add UI plugins/libraries to make it look especially good and clean.*
 - [ ] **Phase 8:** Alerts and launch
 
@@ -261,5 +294,8 @@ git push
 - How do you make sure the AI's output is reliable? *(Forced structured output with fixed allowed values, prompt rules against inventing things, and the original before/after text is always shown next to the summary so readers can check it.)*
 - How do you keep your API key safe? *(In `.env`, blocked by `.gitignore`, never in code; no auto-reload so the worst case is $5.)*
 - How much does it cost to run? *(Fractions of a cent per change with Haiku 5.5. Only changed paragraphs are sent, not whole policies.)*
+- How does it run automatically? *(A GitHub Actions workflow on a daily cron schedule: tests → scrape → detect → summarize → commit only if something changed.)*
+- How does the automated job get the API key without exposing it? *(It's stored as an encrypted GitHub secret and passed in as an environment variable. It's never in the code and hidden in logs.)*
+- What happens if you push a bug? *(The workflow runs the tests first and stops before touching any data.)*
 - How did you use AI tools while building this?
   - *Answer: I designed the system and made the decisions; I used Claude to write the code faster, and I kept notes on how every part works.*

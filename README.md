@@ -25,6 +25,7 @@ sources.json ──> scraper.py ──> policies/<company>/<doc>.txt ──> Git
 3. **Version:** each policy is a plain text file tracked by Git. Git's history *is* the database. Every change is dated and diffable.
 4. **Detect:** `detect_changes.py` compares each policy to its last committed version, ignores formatting-only differences (spacing, punctuation, capitalization), and saves the changed paragraphs with surrounding context to `changes/`.
 5. **Explain:** `summarize.py` sends each change to Claude Haiku 5.5, which must fill in a fixed form: a plain-English summary, a severity (major / moderate / minor), topic categories, and an opt-out tip only if the policy itself mentions one. The prompt restricts the AI to the provided text to prevent made-up claims.
+6. **Automate:** a [GitHub Actions workflow](.github/workflows/daily.yml) runs the whole pipeline every day: tests, then scrape, detect, summarize. It commits any new versions and change reports, so this repo updates itself.
 
 ### Design choices
 - **Git as the database:** free version history and diffs, and a transparent public record.
@@ -37,7 +38,7 @@ sources.json ──> scraper.py ──> policies/<company>/<doc>.txt ──> Git
 - [x] Version history with Git
 - [x] Change detection (meaningful edits only, ignoring formatting noise), with automated tests
 - [x] AI summaries: plain-English explanation plus a severity rating (major / moderate / minor), using Claude Haiku 5.5 with structured output
-- [ ] Automatic daily runs with GitHub Actions
+- [x] Automatic daily runs with GitHub Actions (tests run first, results committed by a bot)
 - [ ] Public website with a change feed, before/after views, and per-company history
 - [ ] Email/RSS alerts
 - [ ] Browser-based scraping for JavaScript-heavy sites (Reddit, Meta)
