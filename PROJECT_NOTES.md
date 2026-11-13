@@ -48,10 +48,19 @@ Git history ──> change detection ──> AI summary ──> website + alerts
 | `.env` | Holds the secret API key: `ANTHROPIC_API_KEY=sk-ant-...` | Keeps the key out of the code. **Never uploaded** (blocked by `.gitignore`) |
 | `.env.example` | Same as `.env` but with a fake placeholder | Shows others what settings the project needs, without exposing my key |
 | `backfill.py` | Rebuilds each policy's *past* history from the Internet Archive's Wayback Machine | Fills the website with real history from day one instead of an empty page |
-| `test_backfill.py` | 24 checks using a *fake* Wayback Machine (including being refused and rate-limited) | Tests the backfill with no internet and no waiting |
+| `test_backfill.py` | 26 checks using a *fake* Wayback Machine (including being refused and rate-limited, and saving word counts) | Tests the backfill with no internet and no waiting |
 | `changes/archive/` | One history report per policy, e.g. `changes/archive/spotify-privacy.json` | The "Company history" tab's data for past years |
 | `archive_cache/` | Every archived copy downloaded, as cleaned text | Reruns are fast and don't re-download. **Not uploaded** (in `.gitignore`) |
 | `.github/workflows/daily.yml` | Instructions for GitHub Actions: every day, run tests → scrape → detect → summarize → commit results | Makes the tracker run itself, even with my laptop off |
+| `site/` | The public website, built with **Astro**. It reads `sources.json`, `policies/` and `changes/` when it's built, so every number on it is real | The project's front door for recruiters and regular people |
+| `site/src/lib/data.js` | Loads and shapes all the data: company list, statuses, changes, headlines, the quote on the featured card, chart data | The only place that knows the file formats. Pages just display what it returns |
+| `site/src/pages/index.astro` | The main page with its four tabs (Overview, Latest, Companies, History) plus Alerts | Most of what people see |
+| `site/src/pages/change/[id].astro` | One page per change: summary, "what you can do", stats, source links, and the exact wording before/after | "Read the change" goes here. Lets anyone check the AI against the real text |
+| `site/src/layouts/Base.astro` | The frame every page shares: background, top bar, pinned bar, search | Write it once, use it everywhere |
+| `site/src/scripts/app.js` | Everything interactive: tabs, pins, Ctrl+K search, filter menu, charts, animations | The page still shows all content without it |
+| `site/src/styles/site.css` | All the styling, as CSS variables + components | Matches `DESIGN.md` |
+| `DESIGN.md` | The design rules: colors and what each is for, font, glass panels, buttons, motion | Keeps every page consistent, and explains the look in an interview |
+| `.github/workflows/pages.yml` | Builds the site and publishes it to GitHub Pages after every push and after each daily check | The site updates itself the same morning a change is found |
 
 ### Inside `daily.yml`
 
@@ -256,6 +265,16 @@ These are the "why did you do it this way?" answers.
 40. **New prompt rule: a reorganized page is "minor."** Why: archived pages sometimes differ because of layout changes, not new rules. The AI should say so instead of inventing a big change.
 41. **Back off and stop when the archive pushes back.** Why: the first real run kept firing requests after being refused, which makes a block worse. Now a refused or "429 Too Many Requests" response means wait 60s and retry once, and 3 failures in a row means stop the whole run with a message. Successful downloads are cached and failures aren't, so the rerun resumes exactly where it stopped.
 42. **Ignore "we've updated our policy" banners.** Why: reviewing Spotify's real history showed 3 of 7 "changes" were just a website banner ("Your privacy is important. As of 5 December, we've updated our Privacy Policy...") appearing or disappearing. That's an announcement, not policy. Short lines (under 300 characters) like that are now dropped *before comparing*, in both the daily detector and the backfill. Saved files keep the full text. Tested on the real data: 7 changes became exactly the 4 real ones.
+43. **Website built with Astro, as a static site.** Why: the data only changes once a day, so there's no need for a server or database. Astro builds plain HTML pages ahead of time, which are fast, free to host on GitHub Pages, and can't be hacked like a server can. It's also a well-known modern framework.
+44. **The site reads the tracker's own files at build time.** Why: one source of truth. Adding a company to `sources.json` adds it to the site; a new change in `changes/` shows up on the next build. Nothing is typed in by hand.
+45. **Rebuild the site right after the daily check.** Why: commits pushed by a GitHub Actions job don't trigger other workflows (GitHub prevents loops), so `pages.yml` listens for "Daily policy check finished" instead.
+46. **A page for every change, with the exact wording.** Why: AI can be wrong. Showing the original before/after text and links to the archived copies lets anyone verify the summary. Credibility matters more than looks.
+47. **Order the wording by relevance, not size.** Why: on Spotify's July 2024 change, the biggest "change" was a reordered statistics table. Ranking spots by how many words they share with the AI summary puts the age/advertising change first, which is what the summary is about.
+48. **Featured quote picked automatically.** Why: policy "lines" are whole paragraphs, so the site compares *sentences*: a removed sentence vs. an added one in the same spot, preferring pairs that match the summary's topic and share some wording. It found the "Younger users may have tailored advertising turned off by default" line on its own.
+49. **Backfill now saves each archived copy's word count** (`versions` in the archive report). Why: the History chart ("policy length over time") needs it, and `archive_cache/` isn't uploaded, so the build machine can't count words itself. 2 new tests.
+50. **Design: dark navy glass, one blue accent, red only for "Major."** *(My call after ~17 rounds of mockups.)* Why: I wanted it to look like a real product, not AI-generated: macOS-style glass, Inter (the font Linear and Raycast use), no letter-tile logos, and one tab per job so a page never shows everything at once. Details in `DESIGN.md`.
+51. **Pins are saved in the visitor's browser only.** Why: no accounts or database needed. Your pins stay on your device.
+52. **The alerts form is honest about not working yet.** Why: a static site can't store emails. It says so instead of pretending, until Phase 8.
 
 ---
 
@@ -329,12 +348,21 @@ git commit -m "describe what changed"
 git push
 ```
 I no longer need to run the scraper myself. GitHub does it daily. To run it right now, go to the repo on GitHub, open **Actions → Daily policy check → Run workflow**.
-- [ ] **Phase 7:** Website. *My plan (Nov 12):*
+- [x] **Phase 7:** Website, built Nov 12 with Astro in `site/` (decisions #43–52, design in `DESIGN.md`). Publishes to **https://deweyzx.github.io/tos-tracker/** via `.github/workflows/pages.yml`. *Original plan:*
     - **"Latest changes" tab:** newest changes across all companies, with severity badge, AI summary, date, and click-through to the before/after view. Data: `changes/*.json`.
     - **"Company history" tab:** pick a company and see a timeline of every change to its privacy policy and terms, newest first. Data: our own reports, plus older changes marked "from archive."
     - **Backfill history from the Wayback Machine (archive.org):** download past versions of each policy, run them through the same change detection + AI summaries. Gives each company years of history from day one, so the site isn't empty. *`backfill.py` + 18 tests written Nov 12. To do: run it on my PC, review results, summarize.*
     - Possibly add UI plugins/libraries to make it look especially good and clean.
 - [ ] **Phase 8:** Alerts and launch
+
+### Where we left off (Nov 12, 2026, handoff)
+Built in a Claude chat; continuing in **Claude Code** on my PC. What's done and what's next:
+1. **Done (files already in this folder, not yet committed):** `site/` (the website), `DESIGN.md`, `setup/pages.yml`, updated `backfill.py` + `test_backfill.py` (word counts for the chart, 26 tests), `changes/archive/spotify-privacy.json` (now includes word counts), this file, `README.md`.
+2. **Next:** move `setup/pages.yml` to `.github/workflows/pages.yml` (and delete the empty `setup/` folder), then `git pull`, `git add .`, commit, `git push`.
+3. On GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions.** Then **Actions → Publish website → Run workflow** (or just push). Site: https://deweyzx.github.io/tos-tracker/
+4. Test it locally anytime: `cd site`, `npm install`, `npm run dev`, open the address it prints. (Needs Node.js 22.)
+5. Then: `python backfill.py <company>` for the other 11 companies (one at a time, the archive rate-limits), then `python summarize.py`, commit, push. Each one fills in the History chart and the Latest tab.
+6. Later: add `python test_backfill.py` to `daily.yml`'s test step and bump the action versions; Playwright for Reddit/Meta/OpenAI; an AI-written short `headline` field in `summarize.py` (the site currently uses the summary's first sentence); real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
 
 ---
 
@@ -360,5 +388,8 @@ I no longer need to run the scraper myself. GitHub does it daily. To run it righ
 - How did you get historical data? *(The Wayback Machine's CDX API: one snapshot a month since 2023, cleaned and compared with the same code as the live tracker, with archive links for verification.)*
 - How do you know *when* a past change happened? *(Only that it happened between two snapshots. I date it by the first snapshot that shows it and link both.)*
 - How do you keep AI costs predictable on a huge change? *(Cap it at the 15 biggest changed spots and trim giant paragraphs, which stays far below the 100K-token price cliff.)*
+- Why a static site instead of a web app with a database? *(Data changes once a day; prebuilt HTML is faster, free to host, and has nothing to hack. The "database" is the Git repo.)*
+- How does the website stay up to date? *(A second workflow rebuilds and republishes it whenever the daily check finishes.)*
+- How can someone trust an AI summary? *(Every change has its own page with the exact removed/added wording and links to the archived copies, so you can check it yourself.)*
 - How did you use AI tools while building this?
   - *Answer: I designed the system and made the decisions; I used Claude to write the code faster, and I kept notes on how every part works.*

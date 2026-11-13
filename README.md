@@ -4,7 +4,7 @@
 
 Companies update their policies all the time, often quietly, and the changes can be big, like starting to use your posts to train AI models. Almost nobody rereads a 10,000-word policy to find out. This project watches those policies automatically and flags what changed.
 
-> 🚧 **Work in progress.** Data collection is working. Change detection, AI summaries, and a public website are next.
+**Website: [deweyzx.github.io/tos-tracker](https://deweyzx.github.io/tos-tracker/)**, updated automatically every morning.
 
 ## What it tracks
 
@@ -26,7 +26,8 @@ sources.json ──> scraper.py ──> policies/<company>/<doc>.txt ──> Git
 4. **Detect:** `detect_changes.py` compares each policy to its last committed version, ignores formatting-only differences (spacing, punctuation, capitalization), and saves the changed paragraphs with surrounding context to `changes/`.
 5. **Explain:** `summarize.py` sends each change to Claude Haiku 5.5, which must fill in a fixed form: a plain-English summary, a severity (major / moderate / minor), topic categories, and an opt-out tip only if the policy itself mentions one. The prompt restricts the AI to the provided text to prevent made-up claims.
 6. **Backfill history:** `backfill.py` rebuilds each policy's past from the Internet Archive's Wayback Machine (one snapshot per month), cleaning and comparing archived copies with the same code as the live tracker. Every historical change links to the archived copies so it can be verified.
-7. **Automate:** a [GitHub Actions workflow](.github/workflows/daily.yml) runs the whole pipeline every day: tests, then scrape, detect, summarize. It commits any new versions and change reports, so this repo updates itself.
+7. **Publish:** an [Astro](https://astro.build) website in [`site/`](site/) is built from the same files (`sources.json`, `policies/`, `changes/`) and published to GitHub Pages after every daily run. Each change gets its own page with the AI summary next to the exact before/after wording and links to the archived copies.
+8. **Automate:** a [GitHub Actions workflow](.github/workflows/daily.yml) runs the whole pipeline every day: tests, then scrape, detect, summarize. It commits any new versions and change reports, so this repo updates itself.
 
 ### Design choices
 - **Git as the database:** free version history and diffs, and a transparent public record.
@@ -41,7 +42,7 @@ sources.json ──> scraper.py ──> policies/<company>/<doc>.txt ──> Git
 - [x] AI summaries: plain-English explanation plus a severity rating (major / moderate / minor), using Claude Haiku 5.5 with structured output
 - [x] Automatic daily runs with GitHub Actions (tests run first, results committed by a bot)
 - [x] Historical backfill from the Internet Archive's Wayback Machine (monthly snapshots since 2023, with archive links)
-- [ ] Public website with a change feed, before/after views, and per-company history
+- [x] Public website with a change feed, before/after views, and policy history charts
 - [ ] Email/RSS alerts
 - [ ] Browser-based scraping for JavaScript-heavy sites (Reddit, Meta)
 
@@ -58,6 +59,8 @@ python test_detect_changes.py   # run the automated tests
 python test_summarize.py
 python test_backfill.py
 python backfill.py          # rebuild past history from the Wayback Machine (slow; cached)
+
+cd site && npm install && npm run dev   # preview the website locally (needs Node.js 22)
 ```
 
 ## About

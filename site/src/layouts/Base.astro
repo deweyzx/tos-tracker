@@ -1,0 +1,80 @@
+---
+// Base.astro: the frame every page shares: background, top bar, pinned bar, search.
+import "@fontsource-variable/inter/opsz.css";
+import "../styles/site.css";
+import { loadData } from "../lib/data.js";
+
+const { title = "ToS Tracker", description = "Plain-English alerts when big tech companies change their privacy policies and terms of service.", home = false } = Astro.props;
+const data = loadData();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const latestCount = data.changes.length;
+// What the browser script needs (kept small: no policy text).
+const client = {
+  base,
+  builtAt: data.builtAt,
+  companies: data.companies,
+  defaultPins: data.companies.filter((c) => c.changes).map((c) => c.name),
+  charts: data.charts,
+};
+const tabs = [
+  ["overview", "Overview"],
+  ["latest", "Latest"],
+  ["companies", "Companies"],
+  ["history", "History"],
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="theme-color" content="#04070E" />
+  <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+</head>
+<body data-home={home ? "1" : "0"}>
+  <div class="sky" aria-hidden="true"><div class="glow"></div><div class="glow2"></div><div class="arc"></div><div class="lines"></div></div>
+
+  <div class="page">
+    <header class="top in" style="--d:0">
+      <a class="brand" href={`${base}/`}><span class="mark" aria-hidden="true"></span>ToS Tracker<small id="today"></small></a>
+      <nav class="nav" aria-label="Sections" id="nav">
+        <span class="pillx" id="pillx" aria-hidden="true"></span>
+        {tabs.map(([id, label], i) => (
+          <a href={`${base}/#${id}`} data-view={id} aria-current={home && i === 0 ? "page" : undefined}>
+            {label}{id === "latest" && latestCount > 0 && <sup>{latestCount}</sup>}
+          </a>
+        ))}
+      </nav>
+      <div class="right">
+        <span class="live"><i aria-hidden="true"></i><span id="checked">Checked daily</span></span>
+        <button class="search" id="openSpot" aria-label="Search companies"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Search</span><kbd id="kh">Ctrl K</kbd></button>
+        <a class="cta" id="alertsBtn" href={`${base}/#alerts`}><span>Get alerts</span></a>
+      </div>
+    </header>
+
+    <slot />
+  </div>
+
+  <footer class="site-foot">
+    <span>Built by Owen Moran. Summaries are written by AI from the exact policy text, and every change links to its source.</span>
+    <a href="https://github.com/deweyzx/tos-tracker">Code on GitHub</a>
+  </footer>
+  <div style="height:90px"></div>
+
+  <nav class="pinbar" id="pinbar" aria-label="Pinned companies"></nav>
+
+  <div class="veil" id="veil"></div>
+  <div class="spot" id="spot" role="dialog" aria-modal="true" aria-label="Find a company">
+    <div class="spot-in"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input id="spotIn" type="text" placeholder="Find a company" autocomplete="off" aria-label="Find a company" /></div>
+    <div class="spot-list" id="spotList" role="listbox"></div>
+    <div class="spot-foot"><span>Arrow keys move, Enter pins or unpins</span><span>Esc to close</span></div>
+  </div>
+
+  <script type="application/json" id="tos-data" set:html={JSON.stringify(client)} />
+  <script>
+    import "../scripts/app.js";
+  </script>
+</body>
+</html>

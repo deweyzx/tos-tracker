@@ -1,0 +1,70 @@
+# pages.yml — Phase 7: build the website and publish it on GitHub Pages.
+#
+# It runs:
+#   - whenever you push changes to the site or the data
+#   - right after the daily policy check finishes (so new changes show up the same morning)
+#   - when you click "Run workflow" on GitHub
+# The site ends up at https://deweyzx.github.io/tos-tracker/
+
+name: Publish website
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "changes/**", "policies/**", "sources.json", ".github/workflows/pages.yml"]
+  workflow_run:
+    # Commits pushed by the daily job don't trigger "push" (GitHub prevents
+    # workflows from triggering each other that way), so we listen for it here.
+    workflows: ["Daily policy check"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write     # allowed to publish to GitHub Pages
+  id-token: write  # proves to Pages that this workflow is really from this repo
+
+concurrency:
+  group: pages
+  cancel-in-progress: true  # a newer build replaces an older one still running
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Get the code (and the latest data)
+        uses: actions/checkout@v4
+        with:
+          ref: main  # after the daily run, build from the commit it just pushed
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install the site's tools
+        working-directory: site
+        run: npm ci
+
+      - name: Build the site from sources.json, policies/ and changes/
+        working-directory: site
+        run: npm run build
+
+      - name: Package it for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

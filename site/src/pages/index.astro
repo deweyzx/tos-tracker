@@ -1,0 +1,139 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadData, CATEGORY_LABELS } from "../lib/data.js";
+
+const data = loadData();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const { featured: f, changes, companies, policies, perYear, categoryCounts, historyPending, charts } = data;
+
+const fmt = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+const fmtLong = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+const SEV = { major: "major", moderate: "mod" };
+const sevLabel = (s) => (s === "pending" ? "Summary pending" : s.charAt(0).toUpperCase() + s.slice(1));
+
+const readable = policies.filter((p) => p.readable).length;
+const majors = changes.filter((c) => c.severity === "major").length;
+const maxYear = Math.max(1, ...perYear.map((y) => y.count));
+const cats = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]);
+const pct = f?.percent ?? 0;
+---
+<Base home>
+  <main class="grid" id="main" data-view="overview">
+    <header class="viewhead in" data-v="latest"><h1>Latest changes</h1><p>Every rule change found so far, newest first, with a plain-English summary of what changed.</p></header>
+    <header class="viewhead in" data-v="companies"><h1>Companies</h1><p>The {companies.length} companies being watched. Pin the ones you care about to keep them in your bar.</p></header>
+    <header class="viewhead in" data-v="history"><h1>History</h1><p>How a policy has changed over time, built from copies saved by the Internet Archive.</p></header>
+    <header class="viewhead in" data-v="alerts"><h1>Alerts</h1><p>Hear about a change the day it's found.</p></header>
+
+    {f ? (
+      <article class="feature glass in" style="--d:1" data-v="overview">
+        <span class="beam" aria-hidden="true"></span>
+        <div>
+          <p class="tagrow"><span class={`sev ${SEV[f.severity] ?? ""}`}>{sevLabel(f.severity)}</span>{f.companyName} {f.docName}, {fmtLong(f.date)}</p>
+          <h1>{f.headline}</h1>
+          {f.quote ? (
+            <p class="quote"><del>{f.quote.before}</del> <ins>{f.quote.after}</ins></p>
+          ) : (
+            <p class="noquote">{f.summary}</p>
+          )}
+          <div class="acts">
+            <a class="cta" href={`${base}/change/${f.id}/`}><span>Read the change</span></a>
+            {f.archiveBefore && <a class="ghost" href={f.archiveBefore} target="_blank" rel="noopener">See the old version</a>}
+          </div>
+        </div>
+        {f.percent !== null && (
+          <div class="gauge">
+            <svg viewBox="0 0 168 168" role="img" aria-label={`${pct} percent of the policy was rewritten`}>
+              <defs>
+                <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#62D2FF"/><stop offset=".5" stop-color="var(--v1)"/><stop offset="1" stop-color="var(--v2)"/></linearGradient>
+                <filter id="gl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <circle cx="84" cy="84" r="68" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="11"/>
+              <circle id="arc" data-pct={pct} cx="84" cy="84" r="68" fill="none" stroke="url(#gg)" stroke-width="11" stroke-linecap="round" stroke-dasharray="427.3" stroke-dashoffset="427.3" transform="rotate(-90 84 84)" filter="url(#gl)" style="transition:stroke-dashoffset 1.8s .7s cubic-bezier(.2,.8,.2,1)"/>
+              <text x="84" y="88" text-anchor="middle" class="big" id="pct" data-to={pct}>{pct}%</text>
+              <text x="84" y="107" text-anchor="middle" class="sm">rewritten</text>
+            </svg>
+            <p>{f.changedWords.toLocaleString("en-US")} of about {(Math.round(f.sizeAfter / 100) * 100).toLocaleString("en-US")} words</p>
+          </div>
+        )}
+      </article>
+    ) : (
+      <article class="feature glass in" style="--d:1" data-v="overview">
+        <div><p class="tagrow">Watching {policies.length} pages</p><h1>No changes found yet</h1><p class="noquote">The tracker reads every page each morning. The first change will show up here.</p></div>
+      </article>
+    )}
+
+    <aside class="week card glass in" style="--d:2" data-v="overview">
+      <div class="h"><h2>This week</h2><span class="m">Checks run every morning</span></div>
+      <div class="days" id="days"></div>
+      <div class="meter"><div class="row1"><span>Pages the tracker can read</span>{readable} of {policies.length}</div><div class="track"><i id="readbar" data-w={Math.round((readable / policies.length) * 100)}></i></div></div>
+      <div class="facts">
+        <div><span>Last change found</span>{changes[0] ? fmt(changes[0].date) : "None yet"}</div>
+        <div><span>Next check</span><span id="nextcheck" style="color:var(--text)">Tomorrow, 6:23 AM</span></div>
+      </div>
+    </aside>
+
+    <div class="stats" data-v="overview">
+      <section class="stat glass in" style="--d:4"><div><div class="n" data-to={policies.length}>{policies.length}</div><div class="l">pages watched</div></div><div class="segs" style={`grid-template-columns:repeat(${policies.length},1fr)`} title={`${readable} of ${policies.length} readable`}>{policies.map((p) => <i class={p.readable ? "on" : ""}></i>)}</div></section>
+      <section class="stat glass in" style="--d:5"><div><div class="n" data-to={companies.length}>{companies.length}</div><div class="l">companies</div></div><div class="dots" title="Orange needs a browser to read">{companies.map((c) => <i class={c.status === "need" ? "need" : ""}></i>)}</div></section>
+      <section class="stat glass in" style="--d:6"><div><div class="n" data-to={changes.length}>{changes.length}</div><div class="l">changes found</div></div><div><div class="bars" id="bars">{perYear.map((y) => y.count ? <i style={`height:${Math.max(18, (y.count / maxYear) * 100)}%`} data-h="1" title={`${y.count} in ${y.year}`}></i> : <i class="zero"></i>)}</div><div class="bars-l">{perYear.map((y) => <span>{y.year}</span>)}</div></div></section>
+      <section class="stat glass alert in" style="--d:7"><div><div class="n" data-to={majors}>{majors}</div><div class="l">rated major</div></div><div class="mini"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="3"/><circle cx="11" cy="11" r="8" fill="none" stroke="#FF6B8A" stroke-width="3" stroke-linecap="round" stroke-dasharray={`${changes.length ? (majors / changes.length) * 50.3 : 0} 50.3`} transform="rotate(-90 11 11)"/></svg>{majors} of {changes.length} changes</div></section>
+    </div>
+
+    <section class="list glass in" style="--d:8" data-v="latest">
+      <div class="h">
+        <h2 id="lcount">{changes.length} change{changes.length === 1 ? "" : "s"}</h2>
+        <div class="pop">
+          <button class="popbtn" id="fBtn" aria-haspopup="listbox" aria-expanded="false" aria-controls="fMenu"><span id="fLabel">All changes</span><svg viewBox="0 0 9 12" aria-hidden="true"><path d="M1.5 4 4.5 1 7.5 4M1.5 8l3 3 3-3"/></svg></button>
+          <ul class="menu" id="fMenu" role="listbox" aria-label="Filter changes" tabindex="-1">
+            <li class="cap" role="presentation">Show</li>
+            <li class="mi" role="option" data-f="all" aria-selected="true"><svg class="ck" viewBox="0 0 12 12"><path d="M2 6.5 5 9.5 10 2.5"/></svg>All changes<span class="n">{changes.length}</span></li>
+            <li class="mi" role="option" data-f="major" aria-selected="false"><svg class="ck" viewBox="0 0 12 12"><path d="M2 6.5 5 9.5 10 2.5"/></svg>Major only<span class="n">{majors}</span></li>
+            <li role="presentation"><hr /></li>
+            {cats.map(([cat, n]) => (
+              <li class="mi" role="option" data-f={cat} aria-selected="false"><svg class="ck" viewBox="0 0 12 12"><path d="M2 6.5 5 9.5 10 2.5"/></svg>{CATEGORY_LABELS[cat] ?? cat}<span class="n">{n}</span></li>
+            ))}
+            {!categoryCounts.ai_training && (
+              <li class="mi" role="option" data-f="ai_training" aria-selected="false"><svg class="ck" viewBox="0 0 12 12"><path d="M2 6.5 5 9.5 10 2.5"/></svg>AI training<span class="n">0</span></li>
+            )}
+          </ul>
+        </div>
+      </div>
+      {changes.map((c) => (
+        <a class="row" href={`${base}/change/${c.id}/`} data-tags={[c.severity, ...c.categories, `co:${c.company}`].join(" ")}>
+          <span class="when">{fmt(c.date)}</span>
+          <span class="who"><b>{c.companyName}</b><span>{c.docName}</span></span>
+          <p>{c.summary ?? "The AI summary for this change hasn't been written yet."}</p>
+          <span class={`sev ${SEV[c.severity] ?? ""}`}>{sevLabel(c.severity)}</span>
+        </a>
+      ))}
+      <div class="empty" id="empty" style={changes.length ? "" : "display:block"}><b>Nothing here yet</b>No tracked policy has changed its rules on this topic. It will appear here the day one does.</div>
+      <div class="foot">Changes from the Internet Archive are dated when the archive first saw the new version.</div>
+      {historyPending.length > 0 && (
+        <div class="pending"><div><b>History still loading for {historyPending.length} {historyPending.length === 1 ? "company" : "companies"}</b>Their older versions get read from the Internet Archive next.</div><div class="names">{historyPending.map((n) => <span>{n}</span>)}</div></div>
+      )}
+    </section>
+
+    <section class="watch glass in" style="--d:9" aria-label="Companies" data-v="companies">
+      <div class="h"><h2>All companies</h2><span class="m">Pin to keep in your bar</span></div>
+      <div id="watch"></div>
+    </section>
+
+    {charts.length ? charts.map((ch) => (
+      <section data-v="history" class="chart card glass in" style="--d:3" aria-label={`${ch.title}, length over time`}>
+        <div class="h"><h2>{ch.title}, length over time</h2><div class="legend"><span><i></i>Archived copies</span><span><i class="dash"></i>Gap until today's copy</span></div></div>
+        <div style="position:relative" class="chartwrap" data-chart={ch.key}><svg aria-hidden="true"></svg><div class="tipbox"></div></div>
+      </section>
+    )) : (
+      <section data-v="history" class="chart card glass in"><div class="h"><h2>No history loaded yet</h2></div><p style="color:var(--soft);margin:0">Run backfill.py to read older versions from the Internet Archive.</p></section>
+    )}
+
+    <section class="alerts glass in" data-v="alerts">
+      <h2>Get an email when a policy changes</h2>
+      <p>One short email the day a change is found, with the plain-English summary and a link to the exact wording.</p>
+      <form class="field" id="alertForm"><input type="email" required placeholder="you@example.com" aria-label="Email address" /><button class="cta" type="submit"><span>Get alerts</span></button></form>
+      <p class="picks-l">You'll hear about the companies you've pinned:</p>
+      <div class="picks" id="picks"></div>
+      <p class="sent" id="sent" role="status"></p>
+    </section>
+  </main>
+</Base>

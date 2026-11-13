@@ -105,6 +105,11 @@ with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
         bf.save_report("acme", "privacy", fresh)
         resaved = json.loads(path.read_text(encoding="utf-8"))
         check("rerunning keeps AI summaries already paid for", resaved["changes"][0].get("ai", {}).get("summary") == "already paid for")
+        check("old reports without word counts still save fine", "versions" not in resaved)
+
+        bf.save_report("acme", "privacy", fresh, [{"date": "2024-01-15", "words": 812, "archive": "x"}])
+        with_lengths = json.loads(path.read_text(encoding="utf-8"))
+        check("saves each copy's word count for the website's chart", with_lengths.get("versions", [{}])[0].get("words") == 812)
         print("\nBeing polite when the archive pushes back:")
         attempts = []
 

@@ -2134,5 +2134,102 @@
         "model": "claude-haiku-5-5"
       }
     }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-01",
+      "words": 6998,
+      "archive": "https://web.archive.org/web/20230101005146/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-02-01",
+      "words": 6973,
+      "archive": "https://web.archive.org/web/20230201143433/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-03-01",
+      "words": 6888,
+      "archive": "https://web.archive.org/web/20230301001109/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-04-01",
+      "words": 6888,
+      "archive": "https://web.archive.org/web/20230401140520/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 6888,
+      "archive": "https://web.archive.org/web/20230501084509/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-06-01",
+      "words": 6888,
+      "archive": "https://web.archive.org/web/20230601060733/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-07-01",
+      "words": 5812,
+      "archive": "https://web.archive.org/web/20230701184314/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-08-01",
+      "words": 5812,
+      "archive": "https://web.archive.org/web/20230801015416/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-09-01",
+      "words": 5787,
+      "archive": "https://web.archive.org/web/20230901101409/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-10-01",
+      "words": 5787,
+      "archive": "https://web.archive.org/web/20231001103805/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-11-03",
+      "words": 5787,
+      "archive": "https://web.archive.org/web/20231103102428/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2023-12-01",
+      "words": 5787,
+      "archive": "https://web.archive.org/web/20231201040305/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-01-01",
+      "words": 5905,
+      "archive": "https://web.archive.org/web/20240101060331/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-02-01",
+      "words": 5882,
+      "archive": "https://web.archive.org/web/20240201000640/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 5882,
+      "archive": "https://web.archive.org/web/20240301051813/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 5882,
+      "archive": "https://web.archive.org/web/20240401003131/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 5882,
+      "archive": "https://web.archive.org/web/20240501104602/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-06-01",
+      "words": 5882,
+      "archive": "https://web.archive.org/web/20240601034515/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-07-01",
+      "words": 6082,
+      "archive": "https://web.archive.org/web/20240701001846/https://www.spotify.com/us/legal/privacy-policy/"
+    }
   ]
 }

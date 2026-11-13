@@ -177,8 +177,12 @@ def find_history(company, doc, url, versions):
     return changes
 
 
-def save_report(company, doc, changes):
-    """Write one company/document's history, keeping any AI summaries already done."""
+def save_report(company, doc, changes, versions=None):
+    """Write one company/document's history, keeping any AI summaries already done.
+
+    versions (optional): the date and word count of every usable archived copy,
+    so the website can draw a "policy length over time" chart.
+    """
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     path = OUTPUT_DIR / f"{company}-{doc}.json"
 
@@ -191,6 +195,8 @@ def save_report(company, doc, changes):
                 change["ai"] = done[change["archive_after"]]
 
     report = {"date": "archive", "company": company, "doc": doc, "changes": changes}
+    if versions is not None:
+        report["versions"] = versions
     path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     return path
 
@@ -228,7 +234,11 @@ def main():
 
         missing = sum(1 for _, text in versions if text is None)
         changes = find_history(company, doc, url, versions)
-        path = save_report(company, doc, changes)
+        lengths = [
+            {"date": to_date(ts), "words": len(remove_notices(text).split()), "archive": snapshot_link(ts, url)}
+            for ts, text in versions if text is not None
+        ]
+        path = save_report(company, doc, changes, lengths)
         print(f"    {len(versions) - missing} usable copies -> {len(changes)} change(s) found -> {path}")
 
     print("\nDone. Next: python summarize.py  (adds AI summaries)")

@@ -1,0 +1,78 @@
+---
+// One page per change: the AI summary, what you can do, and the exact wording before and after.
+import Base from "../../layouts/Base.astro";
+import { loadData, CATEGORY_LABELS } from "../../lib/data.js";
+
+export function getStaticPaths() {
+  return loadData().changes.map((change) => ({ params: { id: change.id }, props: { change } }));
+}
+
+const { change: c } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const fmtLong = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+const SEV = { major: "major", moderate: "mod" };
+const sevLabel = (s) => (s === "pending" ? "Summary pending" : s.charAt(0).toUpperCase() + s.slice(1));
+
+const hunks = c.hunks; // already ordered: spots related to the summary first
+const SHOWN = 3;
+---
+<Base title={`${c.companyName} ${c.docName}, ${fmtLong(c.date)} | ToS Tracker`} description={c.summary ?? undefined}>
+  <div class="detail">
+    <a class="back in" style="--d:1" href={`${base}/#latest`}><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2 3.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>All changes</a>
+
+    <article class="dhead glass in" style="--d:2">
+      <p class="tagrow"><span class={`sev ${SEV[c.severity] ?? ""}`}>{sevLabel(c.severity)}</span>{c.companyName} {c.docName}, {fmtLong(c.date)}</p>
+      <h1>{c.headline}</h1>
+      <p class="sum">{c.summary ?? "The AI summary for this change hasn't been written yet. The exact wording is below."}</p>
+      {c.whatYouCanDo && (
+        <div class="todo"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" style="flex:none;margin-top:2px"><circle cx="10" cy="10" r="8.5" fill="none" stroke="var(--v1)" stroke-width="1.6"/><path d="M6.5 10.2 9 12.6l4.6-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>What you can do</b><p>{c.whatYouCanDo}</p></div></div>
+      )}
+      {c.categories.length > 0 && <div class="cats">{c.categories.map((cat) => <span>{CATEGORY_LABELS[cat] ?? cat}</span>)}</div>}
+    </article>
+
+    <div class="dgrid">
+      <section class="card glass in" style="--d:3"><div class="n">{c.changedWords.toLocaleString("en-US")}</div><div class="l">words added or removed</div></section>
+      <section class="card glass in" style="--d:4"><div class="n">{c.percent !== null ? `${c.percent}%` : "Unknown"}</div><div class="l">of the policy rewritten</div></section>
+      <section class="card glass in" style="--d:5"><div class="n">{c.hunks.length}</div><div class="l">spot{c.hunks.length === 1 ? "" : "s"} in the text changed</div></section>
+    </div>
+
+    <section class="card glass in" style="--d:6">
+      <div class="h"><h2>Where this came from</h2></div>
+      <p style="margin:0;color:var(--soft);max-width:70ch">
+        {c.source === "archive"
+          ? "Found by comparing two copies of the page saved by the Internet Archive. The change happened somewhere between them."
+          : "Found by the daily check, which compares today's copy of the page with yesterday's."}
+      </p>
+      <div class="links">
+        {c.archiveBefore && <a class="ghost" href={c.archiveBefore} target="_blank" rel="noopener">Copy before the change</a>}
+        {c.archiveAfter && <a class="ghost" href={c.archiveAfter} target="_blank" rel="noopener">Copy after the change</a>}
+        {c.url && <a class="ghost" href={c.url} target="_blank" rel="noopener">Today's {c.docName}</a>}
+      </div>
+    </section>
+
+    <section class="card glass in" style="--d:7">
+      <div class="h"><h2>The exact wording</h2><span class="m">Most relevant spots first. Struck-through text was removed.</span></div>
+      {hunks.slice(0, SHOWN).map((h) => (
+        <div class="hunk">
+          {h.context_before.map((t) => <p class="ctx">{t}</p>)}
+          {h.removed.map((t) => <p class="rem">{t}</p>)}
+          {h.added.map((t) => <p class="add"><span>{t}</span></p>)}
+          {h.context_after.map((t) => <p class="ctx">{t}</p>)}
+        </div>
+      ))}
+      {hunks.length > SHOWN && (
+        <details class="more">
+          <summary>Show the other {hunks.length - SHOWN} spots</summary>
+          {hunks.slice(SHOWN).map((h) => (
+            <div class="hunk">
+              {h.context_before.map((t) => <p class="ctx">{t}</p>)}
+              {h.removed.map((t) => <p class="rem">{t}</p>)}
+              {h.added.map((t) => <p class="add"><span>{t}</span></p>)}
+              {h.context_after.map((t) => <p class="ctx">{t}</p>)}
+            </div>
+          ))}
+        </details>
+      )}
+    </section>
+  </div>
+</Base>
