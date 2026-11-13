@@ -63,6 +63,20 @@ python backfill.py          # rebuild past history from the Wayback Machine (slo
 cd site && npm install && npm run dev   # preview the website locally (needs Node.js 22)
 ```
 
+### Add a company
+
+Nothing is hard-coded: the tracker and the website both read from [`sources.json`](sources.json).
+
+1. Add one entry per page to `sources.json`:
+   ```json
+   { "company": "netflix", "doc": "privacy", "url": "https://help.netflix.com/legal/privacy" }
+   ```
+2. Check it scrapes cleanly: `python scraper.py` should save more than 300 words to `policies/netflix/privacy.txt`. (Pages that only load with JavaScript need browser-based scraping, which is on the roadmap.)
+3. Optional, to give it a history from day one: `python backfill.py netflix`, then `python summarize.py`.
+4. Commit and push. The website rebuilds itself, and the daily check watches the new page from the next morning on.
+
+The site turns the ID into a display name by capitalizing the first letter (`netflix` becomes "Netflix"). For names with unusual capitalization, add them to `NAMES` in [`site/src/lib/data.js`](site/src/lib/data.js).
+
 ## About
 
 Built by Owen Moran, a student at the University of Maryland, with Claude as an AI coding assistant. I designed the system and made the decisions; Claude helped write the code. [`PROJECT_NOTES.md`](PROJECT_NOTES.md) documents how every part works and why.

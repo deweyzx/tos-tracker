@@ -335,7 +335,7 @@ These are the "why did you do it this way?" answers.
 - [x] **Phase 3:** On GitHub at github.com/deweyzx/tos-tracker. Commit 1 (`8fd6f76`): scraper + 14 policies. Commit 2 (`ed0888b`): README.
 - [x] **Phase 4:** Change detection: `detect_changes.py` + 18 passing tests. *Order matters: run it after the scraper and before committing.*
 - [x] **Phase 5:** AI summaries with Claude Haiku 5.5: `summarize.py` + 17 passing tests. First live run worked; commit `8314a7e`. Verified `.env` (the key) was NOT uploaded.
-- [x] **Phase 6:** Runs automatically every day at 11:23 UTC with GitHub Actions (`.github/workflows/daily.yml`, commit `59e9c92`). API key stored as a GitHub secret. First run ✅ in 47s. *Later: Playwright for OpenAI/Reddit/Meta; bump action versions; add `test_backfill.py` to the workflow's test step.*
+- [x] **Phase 6:** Runs automatically every day at 11:23 UTC with GitHub Actions (`.github/workflows/daily.yml`, commit `59e9c92`). API key stored as a GitHub secret. First run ✅ in 47s. *Later: Playwright for OpenAI/Reddit/Meta. (Action versions bumped and `test_backfill.py` added to the test step on Nov 13.)*
 
 ### Everyday workflow (when I change code on my PC)
 Once Phase 6 is on, a robot also commits to the repo every day, so **always pull first**:
@@ -348,6 +348,16 @@ git commit -m "describe what changed"
 git push
 ```
 I no longer need to run the scraper myself. GitHub does it daily. To run it right now, go to the repo on GitHub, open **Actions → Daily policy check → Run workflow**.
+
+### Adding a company (any time)
+The scraper, the daily job and the website all read `sources.json`, so adding a company is a data change, not a code change.
+1. `git pull`, then add one entry per page to `sources.json`: `{ "company": "netflix", "doc": "privacy", "url": "..." }`. The `company` ID is lowercase with no spaces, and `doc` is `privacy` or `terms`.
+2. Run `python scraper.py` and open `policies/netflix/privacy.txt`. It needs **more than 300 words** of real policy text (the 300-word rule). If it's tiny or a bot-check page, the site needs JavaScript and has to wait for Playwright.
+3. Optional history: `python backfill.py netflix`, then `python summarize.py` (costs a few cents).
+4. Odd capitalization in the name (like "OpenAI" or "TikTok")? Add it to `NAMES` in `site/src/lib/data.js`. Otherwise the site just capitalizes the first letter.
+5. Optional logo: `site/public/logos/` (see "Later" below).
+6. `git add .`, commit, `git push`. **Publish website** rebuilds automatically, and the daily check picks it up the next morning.
+7. Update "What it tracks" in `README.md` (the page/company counts).
 - [x] **Phase 7:** Website, built Nov 12 with Astro in `site/` (decisions #43–52, design in `DESIGN.md`). Publishes to **https://deweyzx.github.io/tos-tracker/** via `.github/workflows/pages.yml`. *Original plan:*
     - **"Latest changes" tab:** newest changes across all companies, with severity badge, AI summary, date, and click-through to the before/after view. Data: `changes/*.json`.
     - **"Company history" tab:** pick a company and see a timeline of every change to its privacy policy and terms, newest first. Data: our own reports, plus older changes marked "from archive."
@@ -361,8 +371,10 @@ Built in a Claude chat; continuing in **Claude Code** on my PC. What's done and 
 2. **Done (Nov 12, in Claude Code):** moved `setup/pages.yml` to `.github/workflows/pages.yml` and deleted `setup/`; all 26 backfill tests passed; committed and pushed (`3b9af3e`).
 3. **Done (Nov 12):** Pages enabled and "Publish website" ran successfully (runs #1 and #2). **The site is live** at https://deweyzx.github.io/tos-tracker/. How it was set up: **Settings → Pages → Build and deployment → Source: GitHub Actions.** Then **Actions → Publish website → Run workflow** (or just push). Site: https://deweyzx.github.io/tos-tracker/
 4. Test it locally anytime: `cd site`, `npm install`, `npm run dev`, open the address it prints. (Needs Node.js 22.)
-5. Then: `python backfill.py <company>` for the other 11 companies (one at a time, the archive rate-limits), then `python summarize.py`, commit, push. Each one fills in the History chart and the Latest tab.
-6. Later: add `python test_backfill.py` to `daily.yml`'s test step and bump the action versions; Playwright for Reddit/Meta/OpenAI; an AI-written short `headline` field in `summarize.py` (the site currently uses the summary's first sentence); real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
+5. **In progress (Nov 13, Claude Code):** `python backfill.py <company>` for the other 11 companies, one at a time (the archive rate-limits), plus Spotify again because its **terms** page was never backfilled (rerunning keeps the existing AI summaries). Then `python summarize.py`, commit, push. Each one fills in the History chart and the Latest tab.
+   - Added "How to add a company" to `README.md` and to "Adding a company" above.
+6. **Done (Nov 13):** added `python test_backfill.py` to `daily.yml`'s test step (it fakes the archive, so it's offline and instant). Updated the GitHub action versions in both workflows: checkout v4→v7, setup-python v5→v7, setup-node v4→v7, upload-pages-artifact v3→v5, deploy-pages v4→v5. Checked the release notes for breaking changes first: no breaking changes for us (they all now run on Node 24, which GitHub's servers support; upload-pages-artifact v4+ skips dotfiles, and the site has none). All 70 tests pass locally (22 + 22 + 26).
+7. Later: Playwright for Reddit/Meta/OpenAI; an AI-written short `headline` field in `summarize.py` (the site currently uses the summary's first sentence); real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
 
 ---
 

@@ -34,12 +34,12 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Get the code (and the latest data)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main  # after the daily run, build from the commit it just pushed
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "22"
           cache: npm
@@ -54,7 +54,7 @@ jobs:
         run: npm run build
 
       - name: Package it for GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site/dist
 
@@ -67,4 +67,4 @@ jobs:
     steps:
       - name: Publish
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

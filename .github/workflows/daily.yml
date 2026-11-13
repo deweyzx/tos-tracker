@@ -31,10 +31,10 @@ jobs:
 
     steps:
       - name: Get the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -47,6 +47,7 @@ jobs:
           git config --global user.name "Test"
           python test_detect_changes.py
           python test_summarize.py
+          python test_backfill.py  # offline: the archive is faked, nothing is downloaded
 
       - name: Scrape policies
         run: python scraper.py
