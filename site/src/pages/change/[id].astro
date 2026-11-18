@@ -6,7 +6,7 @@ import { loadData, CATEGORY_LABELS } from "../../lib/data.js";
 import { renames } from "../../lib/redline.js";
 
 export function getStaticPaths() {
-  return loadData().changes.map((change) => ({ params: { id: change.id }, props: { change } }));
+  return loadData().allChanges.map((change) => ({ params: { id: change.id }, props: { change } }));
 }
 
 const { change: c } = Astro.props;
@@ -33,6 +33,7 @@ const q = (s) => `“${s}”`;
       <h1 class={c.id === loadData().featured?.id ? "vt-head" : undefined}>{c.summary ? c.headline : `${c.companyName} rewrote part of its ${c.docName}`}</h1>
       <p class={`meta-line ${age}${c.severity === "major" ? " is-major" : ""}`}><span class="dot" aria-hidden="true"></span>{rated && <span class={`sev ${SEV[c.severity] ?? ""}`}>{c.severity.charAt(0).toUpperCase() + c.severity.slice(1)}</span>}<span>{c.companyName} {c.docName}, found {fmtLong(c.date)}. {plural(c.changedWords, "word")} added or removed in {plural(c.hunks.length, "spot")}{c.percent !== null && `, about ${c.percent}% of the policy`}.</span></p>
       <p class="sum">{c.summary ?? "The plain-English summary hasn't been written yet. The exact wording is below."}</p>
+      {c.repeatOf && <p class="sum caveat">The Internet Archive saved two versions of this page in turn, so this edit shows up more than once. Only the latest time is in the change list and counts, because it matches the policy today. <a href={`${base}/change/${c.repeatOf}/`}>See the latest time</a>.</p>}
       {c.likelyLayout && <p class="sum caveat">About {c.percent}% of the page changed at once. That usually means the page was redesigned or the archive saved a different version of it, not that the rules changed. Check the wording below before relying on it.</p>}
       {c.whatYouCanDo && (
         <div class="todo"><h2>What you can do</h2><p>{c.whatYouCanDo}</p></div>

@@ -17,6 +17,22 @@ const exists = (p) => fs.existsSync(path.join(ROOT, p));
 const NAMES = { openai: "OpenAI", tiktok: "TikTok", x: "X" };
 export const companyName = (id) => NAMES[id] ?? id.charAt(0).toUpperCase() + id.slice(1);
 
+// What people type when they mean a company: its products and old names.
+export const ALIASES = {
+  openai: ["ChatGPT", "GPT", "Sora", "DALL-E"],
+  meta: ["Facebook", "Instagram", "WhatsApp", "Messenger", "Threads"],
+  x: ["Twitter", "Grok"],
+  google: ["Gmail", "YouTube", "Gemini", "Android", "Chrome", "Google Photos", "Google Drive"],
+  anthropic: ["Claude"],
+  apple: ["iPhone", "iCloud", "App Store", "Siri"],
+  tiktok: ["ByteDance"],
+  snapchat: ["Snap"],
+  discord: ["Nitro"],
+  spotify: ["Podcasts"],
+  zoom: ["Zoom Meetings"],
+  reddit: ["Subreddits"],
+};
+
 const DOCS = { privacy: "Privacy Policy", terms: "Terms of Service" };
 export const docName = (doc) => DOCS[doc] ?? doc.charAt(0).toUpperCase() + doc.slice(1);
 
@@ -134,7 +150,7 @@ function buildData() {
   });
   const byKey = Object.fromEntries(policies.map((p) => [p.key, p]));
 
-  const changes = [];
+  const all = [];
   for (const file of allJsonFiles("changes")) {
     const report = JSON.parse(read(file));
     if (report.versions && byKey[`${report.company}-${report.doc}`]) {
@@ -146,7 +162,7 @@ function buildData() {
         report.versions?.find((v) => v.date === c.date)?.words ?? policy?.words ?? null;
       const percent = sizeAfter ? Math.min(100, Math.round((c.changed_words / sizeAfter) * 100)) : null;
       const hunks = byRelevance(c);
-      changes.push({
+      all.push({
         id: `${c.company}-${c.doc}-${c.date}${c.source === "daily" ? "-d" : ""}`,
         company: c.company,
         companyName: companyName(c.company),
@@ -174,7 +190,28 @@ function buildData() {
       });
     }
   }
-  changes.sort((a, b) => b.date.localeCompare(a.date));
+  all.sort((a, b) => b.date.localeCompare(a.date));
+
+  // Repeats: the Internet Archive sometimes saves two versions of a page in turn
+  // (A, B, A, B...), so the same edit shows up again and again, or undone and redone.
+  // When two changes to the same page touch nearly the same lines (80%+ overlap, either
+  // direction), only the latest one is kept: it matches what the policy says today (e.g.
+  // OpenAI's arbitration clause went out and came back; today it's in). Earlier ones keep
+  // their own page, with a note, but are left out of the feed, the counts and the charts.
+  const lineSet = (c) => new Set(c.hunks.flatMap((h) => [...h.removed, ...h.added]).map((l) => l.trim()).filter(Boolean));
+  const seen = [];
+  for (const c of all) { // newest first
+    const mine = lineSet(c);
+    const earlier = seen.find((e) => {
+      if (e.c.company !== c.company || e.c.doc !== c.doc || !mine.size || !e.lines.size) return false;
+      let shared = 0;
+      for (const l of mine) if (e.lines.has(l)) shared++;
+      return shared / (mine.size + e.lines.size - shared) >= 0.8;
+    });
+    c.repeatOf = earlier ? earlier.c.id : null;
+    seen.push({ c, lines: mine });
+  }
+  const changes = all.filter((c) => !c.repeatOf);
 
   const companyIds = [...new Set(sources.map((s) => s.company))].sort((a, b) =>
     companyName(a).localeCompare(companyName(b)),
@@ -186,6 +223,7 @@ function buildData() {
     return {
       id,
       name: companyName(id),
+      aliases: ALIASES[id] ?? [],
       docs: docs.map((p) => p.name),
       changes: count,
       status: count ? "has" : readable ? "none" : "need",
@@ -226,6 +264,8 @@ function buildData() {
     policies,
     companies,
     changes,
+    allChanges: all,
+    repeats: all.length - changes.length,
     featured,
     historyPending,
     categoryCounts,

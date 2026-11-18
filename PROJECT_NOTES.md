@@ -502,7 +502,13 @@ Built in a Claude chat; continuing in **Claude Code** on my PC. What's done and 
 
    Pushed together with the earlier unpushed design commits. The site rebuilt and is live at https://deweyzx.github.io/tos-tracker/ (checked: new featured change, og.png loads). The Impeccable program files (`.claude/skills`, `.claude/agents`) and my local `settings.local.json` stay uncommitted on purpose.
    - **Next ideas:** spot-check OpenAI's arbitration flip-flop; hide or down-rank layout-only changes in Latest; an RSS feed; a page per company.
-18. Later: Playwright for Reddit/Meta/OpenAI; real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
+18. **QA fixes and a keep-alive (Nov 18).** From a quick check of the live site:
+   - **Repeats set aside:** the Internet Archive sometimes saves two versions of a page in turn (Meta's EU and US pages, X's "new terms coming" banner), so the same edit appeared 2–3 times. When two changes to a page touch nearly the same lines (80%+ overlap, either direction), only the **latest** is kept in the feed, counts and charts, because it matches the policy today. Example: OpenAI's terms dropped mandatory arbitration (Mar 2026) and brought it back (Jun 2026), and today's terms have it, so June is the one shown. Earlier repeats keep their page, with a note and a link to the latest one. 14 set aside, 193 changes shown.
+   - **Search by product:** "ChatGPT", "Instagram", "Twitter", "Claude", "Gmail" and others now find the company ("covers Instagram").
+   - **Overview shows what matters:** "More recent changes" lists Moderate and Major changes first. Minor edits (a heading word, a link label) stay in Latest.
+   - **Custom 404 page** in the site's style, with links back, instead of GitHub's generic one.
+   - **Keep-alive:** GitHub pauses scheduled jobs in public repos after 60 days without commits. The daily workflow now leaves an empty "Keep the daily check running" commit if the last commit is 50+ days old.
+19. Later: Playwright for Reddit/Meta/OpenAI; real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
 
 ---
 

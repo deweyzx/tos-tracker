@@ -42,7 +42,7 @@ Every change is shown word for word next to its AI summary, with links to the ar
 
 ## Evidence on Hand
 
-- Real data: 206 detected changes across 17 pages (2023 to now), all with AI summaries (55 rated major, Nov 18), each linked to Internet Archive copies.
+- Real data: 207 detected changes across 17 pages (2023 to now), all with AI summaries; 193 shown after archive repeats are set aside (Nov 18), each linked to Internet Archive copies.
 - No testimonials, user counts, press or partners exist. Never invent them, or any other numbers.
 
 ## Product Principles

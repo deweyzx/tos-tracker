@@ -33,7 +33,11 @@ const unreadable = companies.filter((c) => policies.some((p) => p.company === c.
 const listNames = (names) => names.length < 2 ? names.join("") : `${names.slice(0, -1).join(", ")} and ${names.at(-1)}`;
 
 // "Found this month": the newest changes, so the Overview answers "what changed recently?"
-const newest = changes.filter((c) => c.id !== f?.id).slice(0, 5);
+// The overview lists the newest changes that matter (Moderate and Major); Minor edits
+// (a heading, a link label, spacing) stay in Latest and only fill in if there aren't five.
+const others = changes.filter((c) => c.id !== f?.id);
+const newest = [...others.filter((c) => c.severity === "major" || c.severity === "moderate"), ...others.filter((c) => c.severity !== "major" && c.severity !== "moderate")].slice(0, 5)
+  .sort((a, b) => b.date.localeCompare(a.date));
 
 
 // The Latest feed, grouped under month headings (newest first). Months after the

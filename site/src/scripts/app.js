@@ -490,13 +490,15 @@ const spot = $("#spot"), veil = $("#veil"), spotIn = $("#spotIn"), spotList = $(
 let results = [], si = 0, returnFocus = null;
 function renderSpot(q = "", keep) {
   q = q.trim().toLowerCase();
-  results = COS.filter((c) => c.name.toLowerCase().includes(q));
+  // match the company or one of its products ("Instagram" finds Meta, "ChatGPT" finds OpenAI)
+  const via = (c) => q && !c.name.toLowerCase().includes(q) ? (c.aliases ?? []).find((a) => a.toLowerCase().includes(q)) : null;
+  results = COS.filter((c) => c.name.toLowerCase().includes(q) || via(c));
   if (keep) { const k = results.findIndex((c) => c.name === keep); if (k >= 0) si = k; }
   si = Math.min(si, Math.max(0, results.length - 1));
   spotList.innerHTML = results.length
     ? `<div class="spot-grp">${q ? "Matches" : "Companies"}</div>` + results.map((c, i) =>
-        `<div class="sr${i === si ? " focus" : ""}" role="option" id="sr-${i}" aria-selected="${i === si}" data-i="${i}"><span class="sd ${c.status}" style="width:7px;height:7px;border-radius:50%"></span><b>${c.name}</b><span class="s">${c.label}</span>${pinBtn(c, true)}</div>`).join("")
-    : '<div class="spot-grp">No company matches that name. Try just the company, like "Spotify".</div>';
+        `<div class="sr${i === si ? " focus" : ""}" role="option" id="sr-${i}" aria-selected="${i === si}" data-i="${i}"><span class="sd ${c.status}" style="width:7px;height:7px;border-radius:50%"></span><b>${c.name}</b>${via(c) ? `<span class="s">covers ${via(c)}</span>` : ""}<span class="s">${c.label}</span>${pinBtn(c, true)}</div>`).join("")
+    : '<div class="spot-grp">No company or product matches that. Try a company, like "Spotify", or a product, like "Instagram".</div>';
   spotIn.setAttribute("aria-activedescendant", results.length ? `sr-${si}` : "");
 }
 function openSpot() {

@@ -1,0 +1,18 @@
+---
+// 404.astro: shown by GitHub Pages for any address on the site that doesn't exist,
+// usually an old or mistyped change link. Same masthead as every page, and a way back.
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<Base title="Page not found | ToS Tracker" description="This page isn't on ToS Tracker.">
+  <div class="detail">
+    <header class="viewhead">
+      <h1>This page isn't here</h1>
+      <p>The link may be mistyped, or the change it pointed to has a new address. Every change is still listed in Latest.</p>
+    </header>
+    <div class="links">
+      <a class="cta" href={`${base}/#latest`}>See all changes</a>
+      <a class="ghost" href={`${base}/`}>Go to the overview</a>
+    </div>
+  </div>
+</Base>
