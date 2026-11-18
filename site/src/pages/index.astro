@@ -108,7 +108,7 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
         <div><dt>Summarized so far</dt><dd>{summarized}{majors > 0 && ` (${majors} rated major)`}</dd></div>
         <div><dt>Pages it can read today</dt><dd>{readable} of {policies.length}</dd></div>
       </dl>
-      {unreadable.length > 0 && <p class="meter-note">{listNames(unreadable)} {unreadable.length === 1 ? "loads its" : "load their"} text with JavaScript, so {unreadable.length === 1 ? "it needs" : "they need"} a real browser. Their history still comes from the Internet Archive.</p>}
+      {unreadable.length > 0 && <p class="meter-note">{listNames(unreadable)} {unreadable.length === 1 ? "blocks" : "block"} automated readers, so {unreadable.length === 1 ? "it isn't" : "they aren't"} checked daily. {unreadable.length === 1 ? "Its" : "Their"} history still comes from the Internet Archive.</p>}
     </aside>
 
     {newest.length > 0 && (

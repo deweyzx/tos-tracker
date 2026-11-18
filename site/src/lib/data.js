@@ -227,7 +227,7 @@ function buildData() {
       docs: docs.map((p) => p.name),
       changes: count,
       status: count ? "has" : readable ? "none" : "need",
-      label: count ? `${count} change${count === 1 ? "" : "s"}` : readable ? "No changes yet" : "Needs a browser",
+      label: count ? `${count} change${count === 1 ? "" : "s"}` : readable ? "No changes yet" : "Archive only",
     };
   });
 

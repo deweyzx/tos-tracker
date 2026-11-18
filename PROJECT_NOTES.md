@@ -373,7 +373,7 @@ I no longer need to run the scraper myself. GitHub does it daily. To run it righ
 ### Adding a company (any time)
 The scraper, the daily job and the website all read `sources.json`, so adding a company is a data change, not a code change.
 1. `git pull`, then add one entry per page to `sources.json`: `{ "company": "netflix", "doc": "privacy", "url": "..." }`. The `company` ID is lowercase with no spaces, and `doc` is `privacy` or `terms`.
-2. Run `python scraper.py` and open `policies/netflix/privacy.txt`. It needs **more than 300 words** of real policy text (the 300-word rule). If it's tiny or a bot-check page, the site needs JavaScript and has to wait for Playwright.
+2. Run `python scraper.py` and open `policies/netflix/privacy.txt`. It needs **more than 300 words** of real policy text (the 300-word rule). If it's tiny, the page probably needs JavaScript: add `"browser": true` to its line in `sources.json` and try again. If it's a bot-check page even in the browser, the site blocks automated readers; it can still get history from the archive.
 3. Optional history: `python backfill.py netflix`, then `python summarize.py` (costs a few cents).
 4. Odd capitalization in the name (like "OpenAI" or "TikTok")? Add it to `NAMES` in `site/src/lib/data.js`. Otherwise the site just capitalizes the first letter.
 5. Optional logo: `site/public/logos/` (see "Later" below).
@@ -508,7 +508,18 @@ Built in a Claude chat; continuing in **Claude Code** on my PC. What's done and 
    - **Overview shows what matters:** "More recent changes" lists Moderate and Major changes first. Minor edits (a heading word, a link label) stay in Latest.
    - **Custom 404 page** in the site's style, with links back, instead of GitHub's generic one.
    - **Keep-alive:** GitHub pauses scheduled jobs in public repos after 60 days without commits. The daily workflow now leaves an empty "Keep the daily check running" commit if the last commit is 50+ days old.
-19. Later: Playwright for Reddit/Meta/OpenAI; real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
+19. **Playwright for JavaScript pages (Nov 18).** Pages marked `"browser": true` in `sources.json` are now read in a hidden Chrome (Playwright). That's Meta privacy, Meta terms and Reddit. The scraper's `BrowserFetcher` opens one browser per run, loads the page, lets its JavaScript run and waits for the text. Everything after that (cleaning, comparing, summarizing) is unchanged.
+   - **Wall check (`looks_blocked`):** a browser page is skipped for the day, keeping the last good copy, when:
+     - it has under 300 words, or
+     - it's a short page with wall wording ("log in to continue", "you've been blocked"...), or
+     - it has under half the words of the last saved copy.
+
+     The scraper doesn't try to get around bot checks.
+   - **Results on my PC:** Meta privacy 7,456 words and Meta terms 5,289, matching the archive copies (7,405 / 5,424). **Reddit blocks automated browsers** ("You've been blocked by network security"), so it stays archive-only and the scraper notes that each day. Getting past it would mean disguising the bot, which I decided not to do. The site now says Reddit "blocks automated readers" instead of "needs a real browser".
+   - **Daily workflow:** installs Chromium (`python -m playwright install --with-deps chromium`) and runs the new `test_scraper.py` (13 offline tests, fake browser). `playwright` is added to `requirements.txt`. All 102 tests pass.
+   - **First run on GitHub:** Meta's first copies are saved as "new" (not reported as changes); from then on they're compared daily. Facebook may treat GitHub's servers differently from my PC. If so, the wall check skips it and the Actions log says why.
+   - **Still open:** OpenAI blocks GitHub's servers (403), so its daily copies only update when I run the scraper on my PC.
+20. Later: real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
 
 ---
 

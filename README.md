@@ -44,7 +44,7 @@ sources.json ──> scraper.py ──> policies/<company>/<doc>.txt ──> Git
 - [x] Historical backfill from the Internet Archive's Wayback Machine (monthly snapshots since 2023, with archive links)
 - [x] Public website with a change feed, before/after views, and policy history charts
 - [ ] Email/RSS alerts
-- [ ] Browser-based scraping for JavaScript-heavy sites (Reddit, Meta)
+- [x] Browser-based scraping for JavaScript-heavy sites: Meta works (Playwright, `"browser": true` in `sources.json`); Reddit blocks automated browsers, so it stays archive-only
 
 ## Run it yourself
 
@@ -71,7 +71,7 @@ Nothing is hard-coded: the tracker and the website both read from [`sources.json
    ```json
    { "company": "netflix", "doc": "privacy", "url": "https://help.netflix.com/legal/privacy" }
    ```
-2. Check it scrapes cleanly: `python scraper.py` should save more than 300 words to `policies/netflix/privacy.txt`. (Pages that only load with JavaScript need browser-based scraping, which is on the roadmap.)
+2. Check it scrapes cleanly: `python scraper.py` should save more than 300 words to `policies/netflix/privacy.txt`. (If a page only loads with JavaScript, add `"browser": true` to its entry in `sources.json` so it's read in a hidden browser, and run `pip install playwright` and `python -m playwright install chromium` once.)
 3. Optional, to give it a history from day one: `python backfill.py netflix`, then `python summarize.py`.
 4. Commit and push. The website rebuilds itself, and the daily check watches the new page from the next morning on.
 
