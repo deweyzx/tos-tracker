@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "site/src/styles/site.css"
+        ],
+        "createdAt": "2026-11-18T01:17:59.589Z",
+        "reason": "user confirmed: owner asked for the glow back and chose the afterglow rule plus circling light (PRODUCT.md Brand Commitments, Nov 17 2026)"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "site/src/styles/site.css"
+        ],
+        "createdAt": "2026-11-18T01:17:59.713Z",
+        "reason": "user confirmed: owner asked for the glow back and chose the afterglow rule plus circling light (PRODUCT.md Brand Commitments, Nov 17 2026)"
+      }
+    ]
+  }
+}

@@ -86,6 +86,23 @@ function quoteFrom(change) {
   return best;
 }
 
+// One line of the company's own changed wording for the Latest feed, so every row
+// shows what changed even before the AI summary exists. Prefers a new sentence
+// (what the policy says now); falls back to a removed one.
+const clip = (s, n = 150) => (s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, "") + "…");
+function excerptFrom(change, hunks) {
+  for (const kind of ["add", "rem"]) {
+    for (const h of hunks) {
+      const mine = kind === "add" ? h.added : h.removed;
+      const other = new Set(kind === "add" ? h.removed : h.added);
+      // a real sentence (8+ words, ends like one), not a section heading
+      const s = sentences(mine).find((x) => !other.has(x) && x.split(/\s+/).length >= 8 && /[.!?:;)"”]$/.test(x));
+      if (s) return { kind, text: clip(s) };
+    }
+  }
+  return null;
+}
+
 // Order the changed spots so the ones about what the summary describes come
 // first (a reordered stats table can be "big" without mattering).
 function byRelevance(change) {
@@ -125,6 +142,8 @@ function buildData() {
       const policy = byKey[`${c.company}-${c.doc}`];
       const sizeAfter =
         report.versions?.find((v) => v.date === c.date)?.words ?? policy?.words ?? null;
+      const percent = sizeAfter ? Math.min(100, Math.round((c.changed_words / sizeAfter) * 100)) : null;
+      const hunks = byRelevance(c);
       changes.push({
         id: `${c.company}-${c.doc}-${c.date}${c.source === "daily" ? "-d" : ""}`,
         company: c.company,
@@ -134,7 +153,11 @@ function buildData() {
         date: c.date,
         source: c.source ?? "daily",
         changedWords: c.changed_words,
-        percent: sizeAfter ? Math.min(100, Math.round((c.changed_words / sizeAfter) * 100)) : null,
+        percent,
+        // Most of the page "changed" at once: usually a redesign of the page or an
+        // archive capture of a different version, not new rules. Shown with a caveat.
+        likelyLayout: percent !== null && percent >= 80,
+        excerpt: excerptFrom(c, hunks),
         sizeAfter,
         summary: c.ai?.summary ?? null,
         severity: c.ai?.severity ?? "pending",
@@ -142,7 +165,7 @@ function buildData() {
         whatYouCanDo: c.ai?.what_you_can_do ?? null,
         headline: c.ai?.headline ?? headlineFrom(c),
         quote: quoteFrom(c),
-        hunks: byRelevance(c),
+        hunks,
         archiveBefore: c.archive_before ?? null,
         archiveAfter: c.archive_after ?? null,
         url: policy?.url ?? null,
@@ -168,7 +191,19 @@ function buildData() {
     };
   });
 
-  const featured = changes.find((c) => c.severity === "major") ?? changes[0] ?? null;
+  // The featured change is the newest significant one, so the circling light always
+  // sits on something fresh: from the last 3 months, a rated change first (major,
+  // then moderate); otherwise the newest change, preferring one with quotable wording
+  // and edits in several places (one giant block is usually a page or region swap).
+  // Layout-sized changes never lead. Falls back to the newest change overall.
+  const built = Date.now();
+  const recent = changes.filter((c) => (built - Date.parse(c.date + "T00:00:00Z")) / 864e5 <= 92 && !c.likelyLayout);
+  const rank = { major: 3, moderate: 2, minor: 1, pending: 0 };
+  const featured =
+    [...recent].sort((a, b) => rank[b.severity] - rank[a.severity] || b.date.localeCompare(a.date) || !!b.quote - !!a.quote || b.hunks.length - a.hunks.length)[0] ??
+    changes.find((c) => c.severity === "major") ??
+    changes[0] ??
+    null;
 
   // Which companies have no history loaded yet (no archive report).
   const withHistory = new Set(policies.filter((p) => p.versions.length).map((p) => p.company));
@@ -202,7 +237,13 @@ function buildData() {
         today: p.words,
         changes: changes
           .filter((c) => c.company === p.company && c.doc === p.doc)
-          .map((c) => ({ date: c.date, severity: c.severity, id: c.id, label: c.headline })),
+          // Unsummarized changes are labelled by size, not "X changed its Y" over and over.
+          .map((c) => ({
+            date: c.date,
+            severity: c.severity,
+            id: c.id,
+            label: c.summary ? c.headline : `${c.changedWords.toLocaleString("en-US")} words changed${c.likelyLayout ? ", mostly layout" : ""}`,
+          })),
       }))
       // Most recently changed policy first, so it's the one the History tab opens on.
       .sort((a, b) => (b.changes[0]?.date ?? "").localeCompare(a.changes[0]?.date ?? "")),

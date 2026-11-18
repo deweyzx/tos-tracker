@@ -42,7 +42,7 @@ const tabs = [
         <span class="pillx" id="pillx" aria-hidden="true"></span>
         {tabs.map(([id, label], i) => (
           <a href={`${base}/#${id}`} data-view={id} aria-current={home && i === 0 ? "page" : undefined}>
-            {label}{id === "latest" && latestCount > 0 && <sup>{latestCount}</sup>}
+            {label}{id === "latest" && latestCount > 0 && <span class="count"><span class="sr-only">, </span>{latestCount}<span class="sr-only"> changes</span></span>}
           </a>
         ))}
       </nav>
@@ -63,9 +63,9 @@ const tabs = [
 
   <div class="veil" id="veil"></div>
   <div class="spot" id="spot" role="dialog" aria-modal="true" aria-label="Find a company">
-    <div class="spot-in"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input id="spotIn" type="text" placeholder="Find a company" autocomplete="off" aria-label="Find a company" /></div>
+    <div class="spot-in"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input id="spotIn" type="text" role="combobox" aria-expanded="true" aria-controls="spotList" aria-autocomplete="list" placeholder="Find a company" autocomplete="off" aria-label="Find a company" /></div>
     <div class="spot-list" id="spotList" role="listbox"></div>
-    <div class="spot-foot"><span>Arrow keys move, Enter pins or unpins</span><span>Esc to close</span></div>
+    <div class="spot-foot"><span>Enter shows that company's changes. The circle pins it.</span><span>Esc to close</span></div>
   </div>
 
   <script type="application/json" id="tos-data" set:html={JSON.stringify(client)} />

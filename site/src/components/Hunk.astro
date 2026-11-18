@@ -1,18 +1,31 @@
 ---
-// One changed spot: context in grey, removed text struck through, added text highlighted.
-// Long spots (like a table that was added) show their first lines and fold the rest.
+// One changed spot, as a word-level redline. A sentence that was edited shows once,
+// with only the changed words struck (removed) or lit (added); sentences that were
+// only removed or only added show whole, marked − or +. Removed/added text uses
+// <del>/<ins> with hidden "removed"/"added" labels so screen readers hear the
+// difference, and visible markers so it never depends on color.
+// Long spots show their first lines and fold the rest.
+import { segments } from "../lib/redline.js";
 const { hunk: h } = Astro.props;
 const LIMIT = 8;
-const lines = [...h.removed.map((t) => ["rem", t]), ...h.added.map((t) => ["add", t])];
-const shown = lines.slice(0, LIMIT), rest = lines.slice(LIMIT);
+const segs = segments(h);
+const shown = segs.slice(0, LIMIT), rest = segs.slice(LIMIT);
 ---
 <div class="hunk">
   {h.context_before.map((t) => <p class="ctx">{t}</p>)}
-  {shown.map(([kind, t]) => <p class={kind}>{t}</p>)}
+  {shown.map((s) => s.kind === "pair"
+    ? <p class="mod"><span class="mk" aria-hidden="true">±</span><span>{s.ops.map((o) => o.t === "eq" ? o.text : o.t === "del" ? <del><span class="sr-only">[removed: </span>{o.text}<span class="sr-only">]</span></del> : <ins><span class="sr-only">[added: </span>{o.text}<span class="sr-only">]</span></ins>)}</span></p>
+    : s.kind === "rem"
+      ? <p class="rem"><span class="mk" aria-hidden="true">−</span><del><span class="sr-only">Removed: </span>{s.text}</del></p>
+      : <p class="add"><span class="mk" aria-hidden="true">+</span><ins><span class="sr-only">Added: </span>{s.text}</ins></p>)}
   {rest.length > 0 && (
     <details class="more">
       <summary>Show {rest.length} more changed line{rest.length === 1 ? "" : "s"} here</summary>
-      {rest.map(([kind, t]) => <p class={kind}>{t}</p>)}
+      {rest.map((s) => s.kind === "pair"
+        ? <p class="mod"><span class="mk" aria-hidden="true">±</span><span>{s.ops.map((o) => o.t === "eq" ? o.text : o.t === "del" ? <del><span class="sr-only">[removed: </span>{o.text}<span class="sr-only">]</span></del> : <ins><span class="sr-only">[added: </span>{o.text}<span class="sr-only">]</span></ins>)}</span></p>
+        : s.kind === "rem"
+          ? <p class="rem"><span class="mk" aria-hidden="true">−</span><del><span class="sr-only">Removed: </span>{s.text}</del></p>
+          : <p class="add"><span class="mk" aria-hidden="true">+</span><ins><span class="sr-only">Added: </span>{s.text}</ins></p>)}
     </details>
   )}
   {h.context_after.map((t) => <p class="ctx">{t}</p>)}

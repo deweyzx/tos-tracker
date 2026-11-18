@@ -3,6 +3,7 @@
 import Base from "../../layouts/Base.astro";
 import Hunk from "../../components/Hunk.astro";
 import { loadData, CATEGORY_LABELS } from "../../lib/data.js";
+import { renames } from "../../lib/redline.js";
 
 export function getStaticPaths() {
   return loadData().changes.map((change) => ({ params: { id: change.id }, props: { change } }));
@@ -12,21 +13,25 @@ const { change: c } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const fmtLong = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
 const SEV = { major: "major", moderate: "mod" };
-const sevLabel = (s) => (s === "pending" ? "Summary pending" : s.charAt(0).toUpperCase() + s.slice(1));
+const rated = c.severity && c.severity !== "pending";
 
 const hunks = c.hunks; // already ordered: spots related to the summary first
 const SHOWN = 3;
+// The same small edit made in many places, listed once above the wording.
+const repeated = renames(hunks);
+const q = (s) => `“${s}”`;
 ---
-<Base title={`${c.companyName} ${c.docName}, ${fmtLong(c.date)} | ToS Tracker`} description={c.summary ?? undefined}>
+<Base title={`${c.companyName} ${c.docName}, ${fmtLong(c.date)} | ToS Tracker`} description={c.summary ?? `What changed in the ${c.companyName} ${c.docName}, word for word.`}>
   <div class="detail">
-    <a class="back" href={`${base}/#latest`}><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2 3.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>All changes</a>
+    <a class="back" href={`${base}/#latest`}><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2 3.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to all changes</a>
 
     <article class="dhead panel">
-      <p class="tagrow"><span class={`sev ${SEV[c.severity] ?? ""}`}>{sevLabel(c.severity)}</span>{c.companyName} {c.docName}, {fmtLong(c.date)}</p>
-      <h1>{c.headline}</h1>
-      <p class="sum">{c.summary ?? "The AI summary for this change hasn't been written yet. The exact wording is below."}</p>
+      <p class="tagrow">{rated && <span class={`sev ${SEV[c.severity] ?? ""}`}>{c.severity.charAt(0).toUpperCase() + c.severity.slice(1)}</span>}<span>{c.companyName} {c.docName}, found {fmtLong(c.date)}</span></p>
+      <h1>{c.summary ? c.headline : `${c.companyName} rewrote part of its ${c.docName}`}</h1>
+      <p class="sum">{c.summary ?? "The plain-English summary hasn't been written yet. The exact wording is below."}</p>
+      {c.likelyLayout && <p class="sum caveat">About {c.percent}% of the page changed at once. That usually means the page was redesigned or the archive saved a different version of it, not that the rules changed. Check the wording below before relying on it.</p>}
       {c.whatYouCanDo && (
-        <div class="todo"><div><b>What you can do</b><p>{c.whatYouCanDo}</p></div></div>
+        <div class="todo"><h2>What you can do</h2><p>{c.whatYouCanDo}</p></div>
       )}
       {c.categories.length > 0 && <div class="cats">{c.categories.map((cat) => <span>{CATEGORY_LABELS[cat] ?? cat}</span>)}</div>}
       <div class="facts-row">
@@ -36,22 +41,20 @@ const SHOWN = 3;
       </div>
     </article>
 
-    <section class="card panel">
-      <div class="h"><h2>Where this came from</h2></div>
-      <p style="margin:0;color:var(--soft);max-width:70ch">
-        {c.source === "archive"
-          ? "Found by comparing two copies of the page saved by the Internet Archive. The change happened somewhere between them."
-          : "Found by the daily check, which compares today's copy of the page with yesterday's."}
-      </p>
-      <div class="links">
-        {c.archiveBefore && <a class="ghost" href={c.archiveBefore} target="_blank" rel="noopener">Archived version before</a>}
-        {c.archiveAfter && <a class="ghost" href={c.archiveAfter} target="_blank" rel="noopener">Archived version after</a>}
-        {c.url && <a class="ghost" href={c.url} target="_blank" rel="noopener">Today's version</a>}
-      </div>
-    </section>
-
-    <section class="card panel">
-      <div class="h"><h2>The exact wording</h2><span class="m">Most relevant spots first. Struck-through text was removed.</span></div>
+    <section class="card panel" aria-labelledby="wording-title">
+      <div class="h"><h2 id="wording-title">The exact wording</h2><span class="m">Most relevant spots first. Struck words were removed, underlined words were added.</span></div>
+      {repeated.length > 0 && (
+        <div class="repeats">
+          <h3>Repeated throughout</h3>
+          <ul>
+            {repeated.map((r) => (
+              <li><span class="doc">{r.from && r.to
+                ? <><del><span class="sr-only">[removed: </span>{q(r.from)}<span class="sr-only">]</span></del> became <ins><span class="sr-only">[added: </span>{q(r.to)}<span class="sr-only">]</span></ins></>
+                : r.to ? <>Added <ins>{q(r.to)}</ins></> : <>Removed <del>{q(r.from)}</del></>}</span> <span class="n">in {r.count} places</span></li>
+            ))}
+          </ul>
+        </div>
+      )}
       {hunks.slice(0, SHOWN).map((h) => (
         <Hunk hunk={h} />
       ))}
@@ -63,6 +66,20 @@ const SHOWN = 3;
           ))}
         </details>
       )}
+    </section>
+
+    <section class="card panel" aria-labelledby="source-title">
+      <div class="h"><h2 id="source-title">Where this came from</h2></div>
+      <p class="source-note">
+        {c.source === "archive"
+          ? "Found by comparing two copies of the page saved by the Internet Archive. The change happened somewhere between them."
+          : "Found by the daily check, which compares today's copy of the page with yesterday's."}
+      </p>
+      <div class="links">
+        {c.archiveBefore && <a class="ghost" href={c.archiveBefore} target="_blank" rel="noopener">Archived version before</a>}
+        {c.archiveAfter && <a class="ghost" href={c.archiveAfter} target="_blank" rel="noopener">Archived version after</a>}
+        {c.url && <a class="ghost" href={c.url} target="_blank" rel="noopener">Today's version</a>}
+      </div>
     </section>
   </div>
 </Base>
