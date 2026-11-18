@@ -2,3 +2,6 @@ __pycache__/
 .venv/
 .env
 archive_cache/
+
+# browser-test scratch files
+.playwright-mcp/

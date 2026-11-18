@@ -423,7 +423,80 @@ Built in a Claude chat; continuing in **Claude Code** on my PC. What's done and 
    - **Word-level redlines (done, Nov 17):** I picked this next. New `site/src/lib/redline.js` pairs each removed sentence with the added sentence it became, diffs them word by word, and tidies the result so it reads like a person's markup ("if you ask ~~AI at Meta~~ Meta AI to write a joke"). Change pages show one merged sentence (±) instead of two near-identical paragraphs; on Meta's Nov 2 change 54 of 66 changed lines merge. A "Repeated throughout" list sums up edits made in many places ("Added 'our features that are part of' in 14 places"). Huge blocks (over ~600×600 words) fall back to whole lines. Checked: 371 text elements pass contrast, works at 375px, detector finds only the intended glow, build passes.
    - **Major-tag glow:** I chose to keep the red glow on every Major tag, even old ones (DESIGN.md records it as the one exception to "glow = fresh").
    - **Still open from the re-critique:** (2) a machine-written "what's different" line (e.g. "'AI at Meta' renamed to 'Meta AI' in 31 places") for changes with no AI summary; (3) a page per company.
-11. Later: Playwright for Reddit/Meta/OpenAI; real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
+11. **"Glossy, done right" (Nov 17, Claude Code + Impeccable + the frontend design skill), local only, not committed.** I felt the flat version looked a bit off and generic, and chose to go back to glossy but with discipline. Impeccable would flag glass and glow as AI tells, but "the brief wins": my choice is recorded and it helped do glossy well instead.
+   - **The idea ("a pane of glass over the fine print"):** the featured change is a frosted glass lens floating over that policy's own wording, which shows sharp and faint around the lens and blurred inside it, so the redline is literally "brought into focus". Glass only on things that float (top bar, the lens, menus, search, pinned bar, tooltips); everything on the page stays solid. One light from above, the circling light on the lens, gloss = a bright top edge on the main button and selected tab. No shine sweeps, count-ups or entrance animations. People who turn on "reduce transparency" get solid surfaces and no fine print.
+   - **Process:** direction contract in `.impeccable/surfaces/site-src-pages-index-astro.md` (pinned by me, so no random direction roll), built code-led, then Impeccable's independent **finish reviewer** checked it from screenshots: first verdict "fix" (8 fixes: the glass didn't read as glass yet, a label above the headline, big-number tiles on change pages, a "+" typed character as an icon, a box inside the Latest panel, contract wording, a stale comment). All 8 fixed; second verdict found 2 regressions (fine-print letters cut at the page edge, contract wording) → fixed → **verdict: ship** (covers those fixes, not a fresh full-site review). Then Impeccable's documenter merged `DESIGN.md` (my choice: merge) and wrote `.impeccable/design.json`.
+   - **Checked:** lens text ≥4.5:1 even over a ghost letter, exactly 1 animation (the circling light), no sideways scroll at 390px or 1440px, source detector scan clean, build passes. The remaining detector notes are the deliberate glow and the decorative fine print (hidden from screen readers).
+   - **Still open (my call):** self-hosting a serif font for the redline so it looks the same on every device (it currently uses whatever serif the device has: Cambria/Sitka on Windows, Iowan on Mac); a machine-written "what's different" headline for unsummarized changes; a page per company.
+12. **"The corrections column" (Nov 17, Claude Code + Impeccable + frontend design skill), local only, not committed or pushed.** The glossy version didn't look good to me, and I let Claude override earlier requests if the result was better. It replaces the glossy world.
+   - **The idea:** a newspaper corrections column, where wording changes are marked like an editor's proof. Newsprint background (#F4F5F2), ink (#16181D), a **red pencil** for removed words and Major changes (#C1121F) and a **blue pencil** for added words and links (#1D4ED8). No cards: each section starts with a heavy ink rule. The only box is the featured "correction". References: newspaper corrections boxes, editors' proof marks, Wikipedia's diff view, GitHub's changelog and Open Terms Archive. Impeccable's direction roll (seed `5b26a800bed02090`, layout option 7) is recorded in `.impeccable/surfaces/site-src-pages-index-astro.md`.
+   - **My earlier requests, translated (not dropped):** the "afterglow" is now **fresh ink**. A change's dot is solid when it's new, then fades to a tint, then an outline, then a hairline over a year. The "circling light" is now **one red pencil stroke travelling around the featured correction's border** (7s per lap). It's the only thing that moves by itself and it turns off with "reduce motion". `PRODUCT.md` records this.
+   - **Fonts (self-hosted now, so it looks the same on every device):** Archivo (condensed headlines, all of our own words) and Source Serif 4 (only for the companies' own wording). Added as `@fontsource-variable/archivo` and `@fontsource-variable/source-serif-4` in `site/package.json`.
+   - **New things:**
+     - word-level redlines (one struck word and one underlined word, not two near-identical paragraphs)
+     - a "Repeated throughout" list on change pages (e.g. "share" became "disclose" in 10 places); bullet and punctuation-only entries are skipped
+     - a "You were last here on …, everything above is new" line in Latest, saved in the visitor's browser
+     - feed rows show a real sentence of the new wording
+     - the masthead says "Checked today, 9:27 PM", and the daily run time is shown correctly through daylight saving
+     - the featured change is the most important recent one (Meta, Nov 2)
+   - **Removed:** the glass, glow and halos, plus the detector exceptions I had added for them (`.impeccable/config.json` now ignores nothing).
+   - **Process:** Impeccable's finish reviewer checked it from screenshots. First verdict "fix", with 8 items:
+     - the pencil should be a real stroke, not a sweep
+     - no halos
+     - remove the exceptions
+     - our words in the sans-serif
+     - a column rule and 8px spacing
+     - keep the wordmark on phones
+     - correct times and visitor-facing empty text
+     - a cleaner chart
+
+     All were fixed, plus a phone sideways-scroll bug, a too-wide summary line and the bullet entries. The second pass resolved them, and the last open items were shown fixed in fresh screenshots (`.impeccable/review/final-*.png`). Impeccable's documenter then rewrote `DESIGN.md` and `.impeccable/design.json` for this world. My earlier "merge" choice carried over, but most of the glossy system is replaced.
+   - **Checked:** design detector 0 findings with no exceptions. All text passes the 4.5:1 contrast ratio (Overview, Latest, change pages). Exactly 1 animation. No sideways scroll at 375px. Build passes.
+   - **Still open:** run `python summarize.py` (about $0.10) and commit the backfill work; X terms "spikes" in the data (mostly layout); a machine-written "what's different" headline; a page per company; commit + push the design when I'm happy with it.
+13. **Final polish: "the editor marks it up" (Nov 18, Claude Code + Impeccable animate/delight/craft floor + frontend design skill), local only, not committed or pushed.** I loved the corrections-column style but felt it lacked uniqueness, and asked for special animations that aren't clunky or weird. The rule: **every motion is a pencil doing its job**, so nothing just floats or slides in.
+   - **When the page opens:** the featured correction gets marked up. A red line strikes the removed words, then the blue pencil underlines the added words, then the pencil starts its lap. It takes about 1.5 seconds and runs once. Technical note: strikes and underlines are now painted backgrounds (a CSS `@property --d`), so the pencil draws them across wrapped lines in reading order.
+   - **Change pages:** each changed spot further down is struck and underlined once, when you scroll to it. The words are always visible; only the marks wait. Printing shows everything.
+   - **History:** the pen draws the chart line the first time it opens, and each change dot appears as the pen passes it.
+   - **Smaller touches:**
+     - the logo's red strike redraws when you point at it
+     - clicking the featured change carries its headline into the change page (a browser "view transition"; Chrome and Edge, other browsers just load the page)
+   - **Proofreader's marks:** the typed − / + / ± markers became hand-drawn proofreader's marks: a blue caret for added, a red "dele" loop for removed, and a slash plus caret for an edited sentence.
+   - **"Reduce motion":** all marks show fully drawn and nothing moves. High-contrast (forced colors) mode falls back to real strike-through and underline.
+   - **Cleanup:** removed leftover glossy colors and an unused glossy script, named the struck-text color (`--struck`), made changed-spot text lines shorter (36em, a detector finding) and made the "Show all changes" button 44px on phones.
+   - **Process:** Impeccable's finish reviewer flagged 4 fixes:
+     - the headline morphed into the wrong page when opening other changes (now it only happens for the featured change)
+     - the caret looked like a "collapse" chevron (redrawn tall and narrow)
+     - `DESIGN.md` and the direction contract still said "only one thing moves" (both updated to the new motion rules)
+     - printing a change page before scrolling lost the marks (fixed)
+
+     All 4 are fixed. A second round caught two more:
+     - the print fix was in the wrong place in the CSS, so it lost to the animation rule (moved, and it now skips the animation)
+     - a few leftover "one moving thing" lines in `DESIGN.md` and `.impeccable/design.json` (updated)
+
+     Then a last note was fixed: the marks' drawings were added to the design record so its preview shows them. Detector: 0 findings on the overview and two change pages; no sideways scroll at 375px; build passes.
+14. **Quick fixes after an honest review (Nov 18, Claude Code), local only, not committed or pushed.** I asked what an employer or a normal person would see as flaws; the biggest ones were content, not design. Fixed:
+   - **Ran `python summarize.py`:** all 206 changes now have an AI headline and summary (0 failures): 55 Major, 33 Moderate, 115 Minor, plus headlines added to the 4 older Spotify summaries. The featured change is now a real Major story ("Meta broadens AI data use to cover all its AI features, not just one chat").
+   - **Feed rows show the short AI headline** instead of the long summary cut off mid-sentence. The full summary is on each change page.
+   - **Honest page description:** it said "Plain-English alerts…", but alerts don't exist. It now says what the site does.
+   - **Link previews:** Open Graph and Twitter tags plus a canonical link, so links pasted into LinkedIn, Slack, iMessage or X show a title, description and image. The image is `site/public/og.png` (1200×630), drawn in the site's own fonts with a real redline from Meta's Nov 2 change.
+   - **Worth a spot-check:** OpenAI's terms "remove mandatory arbitration" (Mar 2026) and then "add" it back (Jun 2026). That's probably the archive capturing different page versions, not two real changes. A few Minor ones are scraper noise (e.g. "(opens in a new window)" link labels).
+   - **Note:** the local dev server reads the data once when it starts, so restart it (`npm run dev`) after running `summarize.py`.
+   - **Still open:** hide or down-rank layout-only changes; an RSS feed; per-company pages; commit and push all of this.
+15. **History chart redesign (Nov 18, Claude Code + dataviz skill + Impeccable), local only, not committed or pushed.** The blue line looked off, and X's chart was dominated by three huge fake spikes.
+   - **Step line:** a policy's length only changes when a new version appears, so the line is flat ink between versions. Each jump is a pencil stroke: blue = grew, red = shrank.
+   - **Spikes skipped:** X's archived page sometimes shows the old and the new terms together while a change is pending, so its length briefly doubles. A copy that jumps more than 40% and comes back within 25% the next month, with the jump flagged as layout, is left out of the line and shown as a faint dashed ring. Its tooltip explains why. X's chart now shows the real story: about 7k → 8.1k → 9.2k → 9.8k words.
+   - **Labels:** the three biggest jumps get a direct label like "+1,170", placed only where it doesn't overlap a dot, the edge, another label or "Today".
+   - **Dots and legend:** small solid ink dots; fresh = blue, Major = red. The legend now reads "Length in words / Grew / Shrank / Layout-only copy, skipped".
+   - **Animation:** the pen still draws the line, and the jumps and labels appear as it passes.
+   - **Checked:** X, OpenAI and Meta charts at desktop width and on a phone (375px, no sideways scroll); with reduce motion, nothing animates. The detector is clean and the build passes. `DESIGN.md` describes the chart.
+16. **History chart, more unique (Nov 18): the policy as a column of type.** I asked for a more distinctive look.
+   - **Column of type:** the area under the length line is filled with rows of "greeked" type (short dashes like lines of printed words), so a policy literally looks like a column of text, and a longer policy is a taller column. The axis now starts at 0 (a filled area has to, to be honest about size).
+   - **Added and cut lines:** after each change, the lines that were added are set in blue type, and lines that were cut show as faint red type above the column, until the next change. It's the same red/blue pencil idea as the redlines.
+   - **Cleaner scale:** no grid lines, just short ticks; the type rows give the scale its texture.
+   - **Legend:** now shows small type swatches for "Lines added" and "Lines cut".
+   - **Animation:** the column fills in behind the pen as it draws.
+   - **Checked:** desktop and phone (no sideways scroll); the detector is clean; the build passes.
+17. Later: Playwright for Reddit/Meta/OpenAI; real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
 
 ---
 

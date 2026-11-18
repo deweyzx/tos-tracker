@@ -38,11 +38,11 @@ Every change is shown word for word next to its AI summary, with links to the ar
 
 - Name: ToS Tracker. Built by Owen Moran.
 - Voice: plain English, sentence case, no hype; say what something is or does.
-- Binding visual commitments (owner's explicit choice, Nov 17, 2026): the "afterglow" rule in DESIGN.md (light marks fresh change and fades over a year) and the slow light circling the featured change's border. Glow findings from the detector on these are intended, not mistakes.
+- Binding visual commitments (owner's choice, Nov 17, 2026): fresh changes are marked more strongly than old ones, fading over a year (the "afterglow" rule), and the featured change carries one slow moving line around its border. In the current newspaper "corrections column" world these are drawn as fresh ink marks and a red pencil line, not as glow (the owner allowed earlier requests to be overridden for a better result, Nov 17).
 
 ## Evidence on Hand
 
-- Real data: 206 detected changes across 17 pages (2023 to now), 4 with AI summaries so far, each linked to Internet Archive copies.
+- Real data: 206 detected changes across 17 pages (2023 to now), all with AI summaries (55 rated major, Nov 18), each linked to Internet Archive copies.
 - No testimonials, user counts, press or partners exist. Never invent them, or any other numbers.
 
 ## Product Principles

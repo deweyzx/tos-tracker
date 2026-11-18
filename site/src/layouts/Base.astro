@@ -1,10 +1,16 @@
 ---
 // Base.astro: the frame every page shares: background, top bar, pinned bar, search.
-import "@fontsource-variable/inter/opsz.css";
+import "@fontsource-variable/archivo/wdth.css";
+import "@fontsource-variable/source-serif-4/opsz.css";
+import "@fontsource-variable/source-serif-4/opsz-italic.css";
 import "../styles/site.css";
 import { loadData } from "../lib/data.js";
 
-const { title = "ToS Tracker", description = "Plain-English alerts when big tech companies change their privacy policies and terms of service.", home = false } = Astro.props;
+// The default description says only what the site does today (no alerts yet: see PRODUCT.md).
+const { title = "ToS Tracker", description = "See what changed in the privacy policies and terms of service of 12 big tech companies, word for word, with a plain-English summary of each change.", home = false } = Astro.props;
+// Absolute URLs for link previews (LinkedIn, Slack, iMessage need the full address).
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const shareImage = new URL(`${import.meta.env.BASE_URL.replace(/\/$/, "")}/og.png`, Astro.site).href;
 const data = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const latestCount = data.changes.length;
@@ -29,15 +35,32 @@ const tabs = [
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
-  <meta name="theme-color" content="#06090F" />
+  <meta name="theme-color" content="#F4F5F2" />
+  <link rel="canonical" href={pageUrl} />
+  <meta property="og:site_name" content="ToS Tracker" />
+  <meta property="og:type" content={home ? "website" : "article"} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={pageUrl} />
+  <meta property="og:image" content={shareImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ToS Tracker: a policy sentence struck through in red, with the new wording underlined in blue." />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
 </head>
 <body data-home={home ? "1" : "0"}>
+    <!-- proofreader's marks for the margin of every redline: caret = inserted, dele = removed, slash + caret = edited -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <symbol id="pm-ins" viewBox="0 0 16 16"><path d="M4.6 15c1.3-2.6 2.4-6 3.4-10.4.8 4.3 1.8 7.6 3.5 10.1" fill="none" stroke="#1D4ED8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="pm-del" viewBox="0 0 16 16"><path d="M1.5 12.5c3 0 5.6-1.6 6.6-4.6.8-2.4-.6-4.4-2.3-3.6-1.6.8-.9 3.6 1.4 5.6 2 1.8 4.6 2.6 7.3 2" fill="none" stroke="#C1121F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="pm-mod" viewBox="0 0 16 16"><path d="M3 14 8.5 2" fill="none" stroke="#C1121F" stroke-width="1.7" stroke-linecap="round"/><path d="M8.8 15c.9-1.6 1.6-3.7 2.3-6.4.6 2.6 1.3 4.6 2.5 6.2" fill="none" stroke="#1D4ED8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
   <a class="skip" href="#content">Skip to content</a>
 
   <div class="page" id="content" tabindex="-1">
     <header class="top">
-      <a class="brand" href={`${base}/`}><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect x=".5" y=".5" width="23" height="23" rx="6" fill="#141B26" stroke="#2A3344"/><path class="m-del" d="M6 9h12" stroke="#FF6B8A" stroke-width="2" stroke-linecap="round"/><path class="m-add" d="M6 15h8.5" stroke="#4A8CFF" stroke-width="2" stroke-linecap="round"/></svg>ToS Tracker</a>
+      <a class="brand" href={`${base}/`}><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path class="m-add" d="M4 15.5h16" stroke-width="2.6" stroke-linecap="round"/><path class="m-del" d="M3 9.5h18" pathLength="1" stroke-width="2.6" stroke-linecap="round"/><path d="M4 9.5h16" stroke="#16181D" stroke-width="1" stroke-linecap="round" opacity=".35"/></svg>ToS Tracker</a>
       <nav class="nav" aria-label="Sections" id="nav">
         <span class="pillx" id="pillx" aria-hidden="true"></span>
         {tabs.map(([id, label], i) => (
@@ -47,7 +70,7 @@ const tabs = [
         ))}
       </nav>
       <div class="right">
-        <span class="live"><i aria-hidden="true"></i><span id="checked">Checked daily</span></span>
+        <span class="live"><span id="checked">Checked daily</span></span>
         <button class="search" id="openSpot" aria-label="Find a company"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Find a company</span><kbd id="kh">Ctrl K</kbd></button>
       </div>
     </header>

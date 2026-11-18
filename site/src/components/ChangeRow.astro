@@ -1,8 +1,8 @@
 ---
 // One change in a list (the Latest feed and "More recent changes").
-// Leads with what changed: the AI summary when there is one (strongest text in the
-// row), otherwise one line of the company's own changed wording in the serif with a
-// visible − / + marker, so it reads as a quote rather than a link.
+// Leads with what changed: the AI's short headline when there is one (the full
+// summary is on the change page), otherwise one line of the company's own changed wording in the serif with a
+// proofreader's mark (caret or dele), so it reads as a quote rather than a link.
 const { change: c, base, ageClass } = Astro.props;
 const SEV = { major: "major", moderate: "mod" };
 const rated = c.severity && c.severity !== "pending";
@@ -15,9 +15,9 @@ const size = `${plural(c.changedWords, "word")} changed in ${plural(c.hunks.leng
   <span class="who"><b>{c.companyName}</b><span>{c.docName}</span>{rated && <span class={`sev ${SEV[c.severity] ?? ""}`}>{c.severity.charAt(0).toUpperCase() + c.severity.slice(1)}</span>}</span>
   <span class="what">
     {c.summary ? (
-      <span class="sum-line">{c.summary}</span>
+      <span class="sum-line">{c.headline}</span>
     ) : c.excerpt && !c.likelyLayout ? (
-      <span class={`ex ${c.excerpt.kind}`}><span class="mk" aria-hidden="true">{c.excerpt.kind === "add" ? "+" : "−"}</span>{c.excerpt.kind === "add"
+      <span class={`ex ${c.excerpt.kind}`}><span class="mk" aria-hidden="true"><svg class="pm"><use href={c.excerpt.kind === "add" ? "#pm-ins" : "#pm-del"} /></svg></span>{c.excerpt.kind === "add"
         ? <ins><span class="sr-only">Added: </span>{c.excerpt.text}</ins>
         : <del><span class="sr-only">Removed: </span>{c.excerpt.text}</del>}</span>
     ) : null}

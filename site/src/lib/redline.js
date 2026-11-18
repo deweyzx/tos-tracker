@@ -127,6 +127,8 @@ export function renames(hunks, min = 3) {
         else to = o.text.trim();
         const short = (s) => !s || s.split(/\s+/).length <= 8;
         if ((!from && !to) || !short(from) || !short(to)) continue;
+        // a bullet, a dash or punctuation on its own is formatting, not a change in wording
+        if (!/[A-Za-z0-9]{2,}/.test(`${from} ${to}`)) continue;
         const key = `${from}\u0000${to}`;
         counts.set(key, (counts.get(key) ?? 0) + 1);
       }

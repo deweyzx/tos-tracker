@@ -89,7 +89,9 @@ function quoteFrom(change) {
 // One line of the company's own changed wording for the Latest feed, so every row
 // shows what changed even before the AI summary exists. Prefers a new sentence
 // (what the policy says now); falls back to a removed one.
-const clip = (s, n = 150) => (s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, "") + "…");
+// Link labels the scraper picked up ("(opens in a new window)") are not policy wording.
+const tidyText = (s) => s.replace(/\s*\(opens in a new (window|tab)\)/gi, "").replace(/\s{2,}/g, " ").trim();
+const clip = (s, n = 150) => { s = tidyText(s); return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, "") + "…"; };
 function excerptFrom(change, hunks) {
   for (const kind of ["add", "rem"]) {
     for (const h of hunks) {
@@ -242,6 +244,7 @@ function buildData() {
             date: c.date,
             severity: c.severity,
             id: c.id,
+            layout: c.likelyLayout,
             label: c.summary ? c.headline : `${c.changedWords.toLocaleString("en-US")} words changed${c.likelyLayout ? ", mostly layout" : ""}`,
           })),
       }))

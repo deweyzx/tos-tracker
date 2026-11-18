@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T00:00:00Z",
+  "title": "Design System: ToS Tracker",
+  "extensions": {
+    "colorMeta": {
+      "bg": { "role": "neutral", "displayName": "Newsprint", "canonical": "#F4F5F2", "tonalRamp": ["#16181D", "#2D3139", "#4C525C", "#80857D", "#B4B8B1", "#D5D8D2", "#E8EAE5", "#F4F5F2"] },
+      "panel": { "role": "neutral", "displayName": "Proof Sheet", "canonical": "#FBFBF9" },
+      "inset": { "role": "neutral", "displayName": "Inset", "canonical": "#EEF0EC" },
+      "raise": { "role": "neutral", "displayName": "Raise", "canonical": "#E8EAE5" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#16181D", "tonalRamp": ["#121418", "#16181D", "#24282F", "#2D3139", "#4C525C", "#646A74", "#80857D", "#B4B8B1"] },
+      "accent-fill-hover": { "role": "neutral", "displayName": "Pressed Ink", "canonical": "#2D3139" },
+      "strong": { "role": "neutral", "displayName": "Strong", "canonical": "#121418" },
+      "text": { "role": "neutral", "displayName": "Text", "canonical": "#24282F" },
+      "soft": { "role": "neutral", "displayName": "Soft", "canonical": "#4C525C" },
+      "faint": { "role": "neutral", "displayName": "Faint", "canonical": "#646A74" },
+      "struck-text": { "role": "secondary", "displayName": "Struck Ink", "canonical": "#6B4048" },
+      "edge": { "role": "neutral", "displayName": "Hairline", "canonical": "#D5D8D2" },
+      "edge-hi": { "role": "neutral", "displayName": "Control edge", "canonical": "#B4B8B1" },
+      "edge-hover": { "role": "neutral", "displayName": "Hover edge", "canonical": "#80857D" },
+      "major": { "role": "secondary", "displayName": "Red Pencil", "canonical": "#C1121F", "tonalRamp": ["#3A0509", "#6B4048", "#8E0D17", "#C1121F", "#DB4A54", "#EC8A90", "#F6C4C7", "#FBE7E8"] },
+      "accent": { "role": "primary", "displayName": "Blue Pencil", "canonical": "#1D4ED8", "tonalRamp": ["#0B1D52", "#132F87", "#1D4ED8", "#3F6CE6", "#7193EE", "#A6BCF5", "#D3DEFA", "#EDF1FD"] },
+      "amber": { "role": "tertiary", "displayName": "Needs-a-browser Amber", "canonical": "#8A5300" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The one opening sentence on the overview (50px below 1080px, 40px on phones)." },
+      "headline": { "displayName": "Headline", "purpose": "Tab titles and change-page headlines (38px / 36px on phones)." },
+      "headline-correction": { "displayName": "Correction headline", "purpose": "Headline inside the correction box, max 22ch (28px on phones)." },
+      "nameplate": { "displayName": "Nameplate", "purpose": "\"ToS Tracker\" in the masthead (24px on phones)." },
+      "title": { "displayName": "Section title", "purpose": "Section headings under the 3px ink rule." },
+      "name": { "displayName": "Name", "purpose": "Company names in rows, the Companies list and search." },
+      "lead": { "displayName": "Standfirst", "purpose": "Intro paragraph, max 38em (18px under tab and change headlines, 17px on phones)." },
+      "body": { "displayName": "Body", "purpose": "Everything else the site says; tabular figures for numbers." },
+      "label": { "displayName": "Label", "purpose": "Dates, hints, notes." },
+      "tag": { "displayName": "Tag", "purpose": "Severity tags." },
+      "redline": { "displayName": "Redline", "purpose": "The quote in the correction, the companies' words (19px on phones)." },
+      "document": { "displayName": "Document", "purpose": "Exact wording on change pages and the Repeated throughout list (16px on phones)." },
+      "excerpt": { "displayName": "Excerpt", "purpose": "Summaries and changed wording in feed rows, clamped to two lines." }
+    },
+    "rules": [
+      { "name": "section-rule", "value": "border-top:3px solid var(--ink); padding-top:12px", "purpose": "Opens every section; replaces cards." },
+      { "name": "sub-rule", "value": "1.5px solid var(--ink)", "purpose": "Month headings, timeline top, Repeated throughout, What you can do, boxed floating surfaces." },
+      { "name": "hairline", "value": "1px solid var(--edge)", "purpose": "Between rows, facts and passages." },
+      { "name": "masthead-double-rule", "value": "3px ink rule, 4px newsprint gap, 1px ink rule", "purpose": "Closes the sticky masthead." }
+    ],
+    "shadows": [
+      { "name": "float", "value": "0 18px 40px -16px rgba(22,24,29,.35)", "purpose": "Menus and the pinned bar: things that float above the page." },
+      { "name": "dialog", "value": "0 30px 70px -24px rgba(22,24,29,.5)", "purpose": "The Find a company panel, over a rgba(22,24,29,.35) veil." }
+    ],
+    "freshInk": [
+      { "name": "age-0", "value": "solid var(--accent), scale 1.15", "purpose": "Found within 31 days." },
+      { "name": "age-1", "value": "rgba(var(--glow),.55) fill, var(--accent) ring", "purpose": "Within 92 days." },
+      { "name": "age-2", "value": "transparent fill, var(--accent) ring", "purpose": "Within a year." },
+      { "name": "age-3", "value": "transparent fill, 1.5px var(--edge-hi) ring", "purpose": "Older; Major keeps a red ring." },
+      { "name": "major", "value": "same steps in var(--major) / rgba(var(--glow-red),.55)", "purpose": "Major changes at every age." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.2,.8,.2,1)", "purpose": "Current-section bar slide (.35s) and menu open (.15s)." },
+      { "name": "pencil", "value": "7s linear infinite; SVG rect pathLength=1, stroke-dasharray .07 .93, 2.5px var(--major)", "purpose": "The red pencil stroke around the correction; the only loop (all other motion is a pencil marking something once); hidden under reduced motion." },
+      { "name": "hover", "value": ".15s-.2s", "purpose": "Hover color, border and row-fill changes." },
+      { "name": "reduced-motion", "value": "@media (prefers-reduced-motion:reduce)", "purpose": "Pencil hidden; all animations and transitions off." }
+    ],
+    "breakpoints": [
+      { "name": "sidebar-rule", "value": "min-width 1081px" },
+      { "name": "stack", "value": "1080px" },
+      { "name": "search-icon", "value": "1000px" },
+      { "name": "companies-2col", "value": "900px" },
+      { "name": "phone", "value": "760px" },
+      { "name": "small-phone", "value": "400px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Main Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one main action per screen: solid ink, white text, square-ish 3px corner.",
+      "html": "<a class=\"ds-cta\" href=\"#\">Read the whole change</a>",
+      "css": ".ds-cta{display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:3px;font:700 15px var(--ui);color:#fff;background:var(--ink);border:1.5px solid var(--ink);text-decoration:none;transition:background-color .2s}.ds-cta:hover{background:var(--accent-fill-hover)}.ds-cta:focus-visible{outline:2px solid var(--accent);outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Ink outline; fills with ink on hover.",
+      "html": "<a class=\"ds-ghost\" href=\"#\">See the old version</a>",
+      "css": ".ds-ghost{display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:3px;font:700 15px var(--ui);color:var(--ink);background:transparent;border:1.5px solid var(--ink);text-decoration:none;transition:background-color .2s,color .2s}.ds-ghost:hover{background:var(--ink);color:#fff}.ds-ghost:focus-visible{outline:2px solid var(--accent);outline-offset:2px}"
+    },
+    {
+      "name": "Masthead Nav",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Four section links; an ink bar sits under the current one. Closed by the masthead double rule.",
+      "html": "<nav class=\"ds-nav\"><a aria-current=\"page\" href=\"#\">Overview</a><a href=\"#\">Latest<span class=\"ds-count\">42</span></a><a href=\"#\">Companies</a><a href=\"#\">History</a></nav>",
+      "css": ".ds-nav{display:flex;gap:4px;border-bottom:3px solid var(--ink);box-shadow:0 4px 0 var(--bg),0 5px 0 var(--ink);background:var(--bg)}.ds-nav a{position:relative;padding:8px 12px 10px;font:650 15px var(--ui);font-stretch:88%;color:var(--soft);text-decoration:none;transition:color .2s}.ds-nav a:hover,.ds-nav a[aria-current=page]{color:var(--ink)}.ds-nav a[aria-current=page]::after{content:\"\";position:absolute;left:0;right:0;bottom:-4px;height:4px;background:var(--ink)}.ds-count{font-size:12px;font-weight:700;margin-left:6px;color:var(--accent)}.ds-nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}"
+    },
+    {
+      "name": "Severity Tags",
+      "kind": "chip",
+      "refersTo": "tag-major",
+      "description": "Major is solid red pencil; Moderate a blue outline; Minor plain.",
+      "html": "<span class=\"ds-sev major\">Major</span> <span class=\"ds-sev mod\">Moderate</span> <span class=\"ds-sev\">Minor</span>",
+      "css": ".ds-sev{display:inline-flex;align-items:center;font:750 12px var(--ui);font-stretch:90%;padding:2px 8px;border-radius:2px;color:var(--soft);border:1px solid var(--edge-hi)}.ds-sev.major{color:#fff;background:var(--major);border-color:var(--major)}.ds-sev.mod{color:var(--accent);border-color:var(--accent)}"
+    },
+    {
+      "name": "Search Trigger",
+      "kind": "input",
+      "refersTo": "search-trigger",
+      "description": "Opens Find a company (Ctrl K); a 44px icon below 1000px.",
+      "html": "<button class=\"ds-search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"6.5\"/><path d=\"m20 20-4.2-4.2\"/></svg><span>Find a company</span><kbd class=\"ds-kbd\">Ctrl K</kbd></button>",
+      "css": ".ds-search{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;border:1px solid var(--edge-hi);border-radius:3px;cursor:pointer;color:var(--soft);font:14px var(--ui);background:var(--panel);transition:border-color .2s,color .2s}.ds-search svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}.ds-search:hover{color:var(--ink);border-color:var(--ink)}.ds-search:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.ds-kbd{font:700 11px var(--ui);padding:2px 6px;border-radius:2px;color:var(--soft);background:var(--inset);border:1px solid var(--edge)}"
+    },
+    {
+      "name": "Ruled Section",
+      "kind": "card",
+      "refersTo": "section",
+      "description": "No cards: a 3px ink rule opens the section and hairlines divide inside.",
+      "html": "<section class=\"ds-section\"><h2>How it works</h2><dl class=\"ds-facts\"><div><dt>Watching</dt><dd>34 pages from 18 companies</dd></div><div><dt>Changes found since 2023</dt><dd>112</dd></div></dl></section>",
+      "css": ".ds-section{border-top:3px solid var(--ink);padding-top:12px;color:var(--text);font:15px/1.5 var(--ui)}.ds-section h2{margin:0 0 12px;font-size:22px;line-height:1.1;font-weight:780;font-stretch:72%;color:var(--strong)}.ds-facts{margin:0;font-size:14px}.ds-facts div{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid var(--edge)}.ds-facts dt{color:var(--soft)}.ds-facts dd{margin:0;color:var(--strong);font-weight:650;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Correction",
+      "kind": "custom",
+      "refersTo": "correction",
+      "description": "The one box on the site, with a single red pencil stroke travelling its border (off under reduced motion).",
+      "html": "<article class=\"ds-correction\"><svg class=\"ds-pencil\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" pathLength=\"1\"/></svg><h2>Spotify now shares listening data with advertisers</h2><p class=\"ds-quote\"><del>We do not sell your data.</del> <ins>We share your data with advertising partners.</ins></p><p class=\"ds-size\">Spotify privacy policy, found November 12, 2026. 41 words changed in 3 places.</p></article>",
+      "css": ".ds-correction{position:relative;padding:32px;background:var(--panel);border:1.5px solid var(--ink)}.ds-correction h2{margin:0 0 16px;font:820 34px/1.02 var(--ui);font-stretch:70%;color:var(--ink);max-width:22ch}.ds-pencil{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);overflow:visible;pointer-events:none}.ds-pencil rect{fill:none;stroke:var(--major);stroke-width:2.5px;stroke-linecap:square;stroke-dasharray:.07 .93;stroke-dashoffset:1;animation:ds-pencil 7s linear infinite;vector-effect:non-scaling-stroke}@keyframes ds-pencil{to{stroke-dashoffset:0}}@media (prefers-reduced-motion:reduce){.ds-pencil{display:none}}.ds-quote{font:22px/1.55 var(--doc);margin:0 0 16px;color:var(--text);max-width:34em}.ds-quote del{color:#6B4048;text-decoration-color:var(--major);text-decoration-thickness:2px}.ds-quote ins{color:var(--strong);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2.5px;text-underline-offset:5px;background:rgba(29,78,216,.07)}.ds-size{margin:0;padding-top:16px;border-top:1px solid var(--edge);font:14px var(--ui);color:var(--soft)}"
+    },
+    {
+      "name": "Word-level Redline",
+      "kind": "custom",
+      "refersTo": "redline",
+      "description": "One changed passage: proofreader's marks in the margin (slash and caret for an edited sentence, dele loop for a removal, caret for an addition); only changed words struck red or underlined blue, drawn by the pencil when the passage is reached.",
+      "html": "<div class=\"ds-hunk\"><p class=\"ds-mod\"><span class=\"ds-mk\"><svg class=\"pm\" viewBox=\"0 0 16 16\"><path d=\"M3 14 8.5 2\" fill=\"none\" stroke=\"#C1121F\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><path d=\"M8.8 15c.9-1.6 1.6-3.7 2.3-6.4.6 2.6 1.3 4.6 2.5 6.2\" fill=\"none\" stroke=\"#1D4ED8\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><span>We may share <del>limited</del><ins>your</ins> data with partners.</span></p><p class=\"ds-rem\"><span class=\"ds-mk\"><svg class=\"pm\" viewBox=\"0 0 16 16\"><path d=\"M1.5 12.5c3 0 5.6-1.6 6.6-4.6.8-2.4-.6-4.4-2.3-3.6-1.6.8-.9 3.6 1.4 5.6 2 1.8 4.6 2.6 7.3 2\" fill=\"none\" stroke=\"#C1121F\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><del>You can opt out at any time.</del></p><p class=\"ds-add\"><span class=\"ds-mk\"><svg class=\"pm\" viewBox=\"0 0 16 16\"><path d=\"M4.6 15c1.3-2.6 2.4-6 3.4-10.4.8 4.3 1.8 7.6 3.5 10.1\" fill=\"none\" stroke=\"#1D4ED8\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><ins>This includes advertising partners.</ins></p></div>",
+      "css": ".ds-hunk{padding:18px 0;border-top:1px solid var(--edge);font:17px/1.65 var(--doc);color:var(--text)}.ds-hunk p{margin:0;display:grid;grid-template-columns:20px minmax(0,1fr);padding:2px 0;max-width:40em}.ds-mk{font:800 14px/1.9 var(--ui)}.ds-mod .ds-mk{color:var(--soft)}.ds-rem .ds-mk{color:var(--major)}.ds-add .ds-mk{color:var(--accent)}.ds-hunk del{color:#6B4048;text-decoration-color:var(--major);text-decoration-thickness:1.5px}.ds-hunk ins{color:var(--strong);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px;background:rgba(29,78,216,.07)}.ds-mod del+ins{margin-left:.3em}.ds-add ins{background:none;text-decoration-thickness:1.5px;text-decoration-color:rgba(29,78,216,.5)}"
+    },
+    {
+      "name": "Fresh Ink Dots",
+      "kind": "custom",
+      "refersTo": "fresh-ink",
+      "description": "Recency: solid, 55% tint, outline, hairline over a year; red for Major. The date is always written too.",
+      "html": "<span class=\"ds-dot a0\"></span> <span class=\"ds-dot a1\"></span> <span class=\"ds-dot a2\"></span> <span class=\"ds-dot\"></span> <span class=\"ds-dot a0 major\"></span> <span class=\"ds-dot a2 major\"></span>",
+      "css": ".ds-dot{display:inline-block;width:9px;height:9px;border-radius:50%;box-sizing:border-box;background:transparent;border:1.5px solid var(--edge-hi);margin:0 6px}.ds-dot.a0{background:var(--accent);border-color:var(--accent);transform:scale(1.15)}.ds-dot.a1{background:rgba(29,78,216,.55);border-color:var(--accent)}.ds-dot.a2{border-color:var(--accent)}.ds-dot.a0.major{background:var(--major);border-color:var(--major)}.ds-dot.a1.major{background:rgba(193,18,31,.55);border-color:var(--major)}.ds-dot.a2.major{background:transparent;border-color:var(--major)}"
+    },
+    {
+      "name": "Floating Menu",
+      "kind": "custom",
+      "refersTo": "menu-item-focus",
+      "description": "Menus, search and the pinned bar float: proof-sheet fill, 1.5px ink border, one soft shadow; focused item is ink.",
+      "html": "<ul class=\"ds-menu\"><li class=\"ds-mi focus\">Spotify<span>12</span></li><li class=\"ds-mi\">Discord<span>4</span></li></ul>",
+      "css": ".ds-menu{list-style:none;margin:0;padding:6px;min-width:240px;background:var(--panel);border:1.5px solid var(--ink);box-shadow:0 18px 40px -16px rgba(22,24,29,.35);color:var(--text)}.ds-mi{display:flex;justify-content:space-between;padding:8px 10px;font:14px var(--ui)}.ds-mi span{font-size:12.5px;color:var(--faint)}.ds-mi:hover,.ds-mi.focus{background:var(--ink);color:#fff}.ds-mi:hover span,.ds-mi.focus span{color:rgba(255,255,255,.8)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The corrections column",
+    "overview": "The site is a newspaper's corrections column for the documents you agreed to. Every change is printed as a correction: what was removed is struck through in red pencil, what was added is underlined in blue pencil. The page is cool newsprint with true-ink rules, a masthead with a double rule, condensed newspaper-gothic headlines for everything we say, and a book serif for every word the companies wrote. It refuses both category defaults: the dark glowing dashboard and the cream \"editorial\" page.\n\nNothing is enclosed in cards. Sections open with a heavy ink rule and divide inside with hairlines, columns and whitespace. The one box on the page is the correction notice that prints the newest significant change, and one red pencil stroke travels slowly around its border. That stroke is the only thing that moves by itself. Recency is shown with fresh ink: a dot beside each date is solid when the change is new and fades to an outline over a year.\n\nDensity is a reading density: generous type, an 8px module under every gap and rule, and one plain sentence of purpose at the top.",
+    "keyCharacteristics": [
+      "Cool newsprint ground, true ink rules, no cards.",
+      "Two editor's pencils: red strikes removed wording and marks Major; blue underlines added wording, links and fresh marks.",
+      "Archivo condensed (width axis) for our words; Source Serif 4 only for the companies' words.",
+      "One box (the correction), one moving thing (the red pencil stroke around it).",
+      "Fresh ink dots encode recency; the date is always written too.",
+      "Word-level redlines with real <del>/<ins> and hidden labels."
+    ],
+    "rules": [
+      { "name": "The Two Pencils Rule", "body": "Red means removed or Major; blue means added, clickable or fresh. Everything else is ink and grey. Filled buttons and \"current\" markers are ink, not blue.", "section": "colors" },
+      { "name": "The Lightest Ink Rule", "body": "faint (4.9:1 on newsprint) is the lightest text colour allowed. All text is at least 4.5:1 against its ground.", "section": "colors" },
+      { "name": "The Whose Words Rule", "body": "Our words are Archivo; the companies' words are Source Serif 4. Never the other way round, and no third family.", "section": "typography" },
+      { "name": "The Sentence Case Rule", "body": "Sentence case everywhere. No all-caps labels and no small label above a heading: the heading says it.", "section": "typography" },
+      { "name": "The Condensed Means Headline Rule", "body": "Width tracks rank: 66% for page headlines, 70–72% for correction and section headings, 80–90% for names, tags and nav, 100% for reading text.", "section": "typography" },
+      { "name": "The 8px Module Rule", "body": "Gaps, padding and rule positions are multiples or clean halves of 8px (4, 8, 12, 16, 24, 32, 40).", "section": "layout" },
+      { "name": "The Rules Not Cards Rule", "body": "Sections open with a 3px ink rule and group inside with hairlines and whitespace. No cards, no tinted section backgrounds.", "section": "elevation" },
+      { "name": "The One Box Rule", "body": "The correction is the only enclosed block on the page. Floating things (menus, search, tooltip, pinned bar) are boxed because they are not on the page.", "section": "elevation" },
+      { "name": "The Fresh Ink Rule", "body": "A dot by each date shows how recent a change is: solid blue (scaled 1.15) within a month, a 55% tint within three months, a blue outline within a year, a grey hairline ring after that. Major changes use red at every step and keep a red outline when old. The date is always written beside it, and the feed footer explains the marks.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do open every section with a 3px ink rule and divide inside with 1px hairlines.",
+      "Do keep the correction the only box on the page, with its single red pencil stroke.",
+      "Do set the companies' words in Source Serif 4 and ours in condensed Archivo.",
+      "Do mark removed wording with <del> struck red and added wording with <ins> underlined blue, each with a hidden label and a proofreader's mark in the margin (blue caret, red dele loop, or slash and caret for an edited sentence).",
+      "Do show recency with fresh-ink dots and always write the date beside them.",
+      "Do keep tap targets at least 44px on phones, text at least 4.5:1, and stop all motion under reduced motion."
+    ],
+    "donts": [
+      "Don't wrap content in cards, tinted panels or shadowed boxes; only floating menus, search, tooltips and the pinned bar are boxed.",
+      "Don't add motion that isn't a pencil marking something: no fades, slides or lifts for their own sake, and only one loop (the pencil around the correction).",
+      "Don't use red for anything but removed wording and Major, or blue for anything but added wording, links, fresh marks and pins.",
+      "Don't use dark glowing surfaces, glass, gradients or a cream \"editorial\" ground; the paper is cool newsprint.",
+      "Don't put a small label above a heading or use all-caps labels.",
+      "Don't use stat tiles or big numbers; say the size of a change in a sentence."
+    ]
+  }
+}

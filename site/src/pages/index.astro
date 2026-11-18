@@ -35,6 +35,7 @@ const listNames = (names) => names.length < 2 ? names.join("") : `${names.slice(
 // "Found this month": the newest changes, so the Overview answers "what changed recently?"
 const newest = changes.filter((c) => c.id !== f?.id).slice(0, 5);
 
+
 // The Latest feed, grouped under month headings (newest first). Months after the
 // first ~30 changes fold behind a button (the script folds them; without it, all show).
 const months = [];
@@ -71,10 +72,9 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
     </header>
 
     {f ? (
-      <article class={`feature panel ${ageClass(f.date)}`} data-v="overview" aria-labelledby="f-title">
-        <span class="beam" aria-hidden="true"></span>
-        <p class="tagrow">{rated(f) && <span class={`sev ${SEV[f.severity] ?? ""}`}>{sevLabel(f.severity)}</span>}<span>{f.companyName} {f.docName}, found {fmtLong(f.date)}</span></p>
-        <h2 id="f-title">{f.summary ? f.headline : `${f.companyName} rewrote part of its ${f.docName}`}</h2>
+      <article class={`correction ${ageClass(f.date)}`} data-v="overview" aria-labelledby="f-title">
+        <svg class="pencil" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" pathLength="1" /></svg>
+        <h2 id="f-title" class="vt-head">{f.summary ? f.headline : `${f.companyName} rewrote part of its ${f.docName}`}</h2>
         {f.quote ? (
           <p class="quote"><del><span class="sr-only">Removed: </span>{f.quote.before}</del> <ins><span class="sr-only">Added: </span>{f.quote.after}</ins></p>
         ) : f.excerpt ? (
@@ -82,20 +82,20 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
         ) : (
           <p class="noquote">{f.summary}</p>
         )}
-        <p class="size">{plural(f.changedWords, "word")} changed in {plural(f.hunks.length, "place")}{f.percent !== null && `, about ${f.percent}% of the policy`}.{!f.summary && " The plain-English summary hasn't been written yet."}</p>
+        <p class="size">{rated(f) && <span class={`sev ${SEV[f.severity] ?? ""}`}>{sevLabel(f.severity)}</span>}{f.companyName} {f.docName}, found {fmtLong(f.date)}. {plural(f.changedWords, "word")} changed in {plural(f.hunks.length, "place")}{f.percent !== null && `, about ${f.percent}% of the policy`}.{!f.summary && " The plain-English summary hasn't been written yet."}</p>
         <div class="acts">
           <a class="cta" href={`${base}/change/${f.id}/`}>Read the whole change</a>
           {f.archiveBefore && <a class="ghost" href={f.archiveBefore} target="_blank" rel="noopener">See the old version</a>}
         </div>
       </article>
     ) : (
-      <article class="feature panel" data-v="overview">
+      <article class="correction" data-v="overview">
         <h2>No changes found yet</h2>
         <p class="noquote">The tracker reads every page each morning. The first change will show up here.</p>
       </article>
     )}
 
-    <aside class="week card panel" data-v="overview" aria-labelledby="how-title">
+    <aside class="week" data-v="overview" aria-labelledby="how-title">
       <h2 id="how-title">How it works</h2>
       <p class="lead">Every morning at <b id="runtime">6:23 AM Eastern</b> it saves a fresh copy of each page and compares it with the last one. Only real wording changes count, not formatting or dates.</p>
       <dl class="facts">
@@ -144,7 +144,7 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
       ))}
       {olderCount > 0 && <button class="ghost show-older" id="showOlder" type="button" hidden>Show {plural(olderCount, "older change")}</button>}
       <div class="empty" id="empty" style={changes.length ? "" : "display:block"}><b>No changes match this filter</b>Pick "All changes" to see everything. New changes appear here the morning they're found.</div>
-      <p class="foot">A lit dot means the change was found in the last month; it fades over the following year. Changes from the Internet Archive are dated when the archive first saw the new version.</p>
+      <p class="foot">A solid dot means the change was found in the last month; over the following year it fades to an outline. Changes from the Internet Archive are dated when the archive first saw the new version.</p>
       {historyPending.length > 0 && (
         <div class="pending"><div><b>History still loading for {historyPending.length} {historyPending.length === 1 ? "company" : "companies"}</b>Their older versions get read from the Internet Archive next.</div><div class="names">{historyPending.map((n) => <span>{n}</span>)}</div></div>
       )}
@@ -157,7 +157,7 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
 
     {charts.length ? charts.map((ch) => (
       <section data-v="history" data-chart-key={ch.key} class="chart card panel" aria-label={`${ch.title}, length over time`}>
-        <div class="h"><h2>{ch.title}, length over time</h2><div class="legend"><span><i></i>Archived copies</span><span><i class="dash"></i>Gap until today's copy</span></div></div>
+        <div class="h"><h2>{ch.title}, length over time</h2><div class="legend"><span><i></i>Length in words</span><span><i class="lg-add"></i>Lines added</span><span><i class="lg-cut"></i>Lines cut</span><span><i class="lg-skip"></i>Layout-only copy, skipped</span></div></div>
         <div style="position:relative" class="chartwrap" data-chart={ch.key}><svg aria-hidden="true"></svg><div class="tipbox"></div></div>
         <ol class="timeline" aria-label={`Changes to the ${ch.title}`}>
           {ch.changes.map((c) => (
@@ -171,7 +171,7 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
         </ol>
       </section>
     )) : (
-      <section data-v="history" class="chart card panel"><div class="h"><h2>No history loaded yet</h2></div><p class="noquote">Run backfill.py to read older versions from the Internet Archive.</p></section>
+      <section data-v="history" class="chart card panel"><div class="h"><h2>No history loaded yet</h2></div><p class="noquote">Older versions of these pages haven't been loaded yet. They will appear here once they are.</p></section>
     )}
   </main>
 </Base>

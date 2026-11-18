@@ -16,12 +16,13 @@ const built = new Date(DATA.builtAt);
 const sameDay = built.toDateString() === now.toDateString();
 const time = (d) => d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 $("#checked").textContent = sameDay
-  ? `Updated ${time(built)}`
-  : `Updated ${built.toLocaleDateString("en-US", { month: "short", day: "numeric" })}`;
+  ? `Checked today, ${time(built)}`
+  : `Checked ${built.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })}`;
 
 // The daily check runs at 11:23 UTC (see daily.yml). Show it in the viewer's own time.
 const runtime = $("#runtime");
-if (runtime) runtime.textContent = time(new Date(Date.UTC(2026, 0, 1, 11, 23)));
+// Today's date, so the shown time follows daylight saving (7:23 AM Eastern in summer, 6:23 in winter).
+if (runtime) { const d = new Date(); runtime.textContent = time(new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 11, 23))); }
 
 /* ---------- charts: policy length over time ---------- */
 // Colors come from the design tokens in site.css, so the chart follows DESIGN.md.
@@ -29,70 +30,156 @@ const css = getComputedStyle(document.documentElement);
 const tok = (name) => css.getPropertyValue(name).trim();
 const monthIndex = (iso, first) => (+iso.slice(0, 4) - first.y) * 12 + (+iso.slice(5, 7) - 1 - first.m);
 
+// When each chart was first drawn: the pen draws it then (a redraw in the same moment,
+// e.g. after the fonts load, keeps drawing; later redraws on resize don't replay it).
+const penStart = new Map();
 function drawChart(wrap) {
   const ch = DATA.charts.find((c) => c.key === wrap.dataset.chart);
   if (!ch) return;
+  if (!penStart.has(ch.key)) penStart.set(ch.key, performance.now());
+  const firstTime = performance.now() - penStart.get(ch.key) < 250;
   const svg = $("svg", wrap), tip = $(".tipbox", wrap);
-  const W = Math.max(300, Math.round(wrap.clientWidth)), H = W < 600 ? 210 : 230;
+  const W = Math.max(300, Math.round(wrap.clientWidth)), H = W < 600 ? 240 : 280;
   const L = 46, R = 14, T = 14, B = 30;
   const first = { y: +ch.versions[0].date.slice(0, 4), m: +ch.versions[0].date.slice(5, 7) - 1 };
   const nowIso = now.toISOString().slice(0, 10);
   const lastM = Math.max(monthIndex(nowIso, first), monthIndex(ch.versions.at(-1).date, first), 1);
-  const values = ch.versions.map((v) => v.words).concat(ch.today ?? []);
-  // An even, readable step (500, 1k, 2k, 2.5k, 5k...) with at most about 6 labels.
-  const span = Math.max(...values) - Math.min(...values) + 500;
-  const stepV = [500, 1000, 2000, 2500, 5000, 10000].find((v) => span / v <= 5) ?? 20000;
-  let y0 = Math.floor((Math.min(...values) - 250) / stepV) * stepV;
-  let y1 = Math.ceil((Math.max(...values) + 250) / stepV) * stepV;
+  // Spikes: an archive copy far longer or shorter than the copies on both sides of it,
+  // where the jump in or out was flagged as mostly page layout. (X's page, for one, shows
+  // the old and the new terms together while a change is pending, so it briefly doubles.)
+  // Its word count isn't the policy's length, so the line holds its level there and the
+  // copy gets a faint marker instead.
+  const layoutOn = new Set(ch.changes.filter((c) => c.layout).map((c) => c.date));
+  const level = [];
+  const spike = ch.versions.map((v, i) => {
+    const before = level[i - 1];
+    const nextV = ch.versions[i + 1];
+    const next = nextV?.words ?? ch.today;
+    const isSpike = i > 0 && next != null
+      && Math.abs(v.words - before) / before > 0.4
+      && Math.abs(next - before) / before < 0.25
+      && (layoutOn.has(v.date) || (nextV ? layoutOn.has(nextV.date) : true));
+    level.push(isSpike ? before : v.words);
+    return isSpike;
+  });
+  const values = level.concat(ch.today ?? []);
+  // An even, readable step (500, 1k, 2k, 2.5k, 5k...) with at most about 5 labels.
+  // The column of text starts at zero words, so its height is honest: a policy twice
+  // as long is a column twice as tall. Even steps (1k, 2k, 2.5k, 5k...), about 4 labels.
+  const top = Math.max(...values);
+  const stepV = [1000, 2000, 2500, 5000, 10000].find((v) => top / v <= 4) ?? 20000;
+  const y0 = 0;
+  const y1 = Math.ceil((top * 1.1) / stepV) * stepV;
   const X = (m) => L + ((W - L - R) * m) / lastM;
   const Y = (v) => T + (H - T - B) * (1 - (v - y0) / (y1 - y0));
-  const pts = ch.versions.map((v) => [X(monthIndex(v.date, first)), Y(v.words), v]);
-  const line = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
-  const area = `${line} L${pts.at(-1)[0]} ${H - B} L${pts[0][0]} ${H - B} Z`;
+  const pts = ch.versions.map((v, i) => [X(monthIndex(v.date, first)), Y(level[i]), v]);
+  // A step line, because a policy's length only changes when a new version appears:
+  // flat ink while the text stays the same, then a jump drawn as a pencil stroke:
+  // blue when the policy grew, red when it shrank (like added and removed words).
+  // The ink is only the flat stretches, so the pencil marks never sit on top of it.
+  const f1 = (n) => n.toFixed(1);
+  const line = pts.map((p, i) => `M${f1(p[0])} ${f1(p[1])} H${f1(i < pts.length - 1 ? pts[i + 1][0] : p[0])}`).join(" ");
+  // Only the biggest few jumps get a number, so the line stays readable.
+  const jumps = level.slice(1).map((v, k) => Math.abs(v - level[k]));
+  const labelled = new Set(jumps.map((d, k) => [d, k]).filter(([d]) => d >= 300).sort((a, b) => b[0] - a[0]).slice(0, 3).map(([, k]) => k));
+  // boxes already taken by text, starting with the "Today" label (drawn later, right-aligned)
+  const taken = [];
+  if (ch.today) {
+    const tx = X(lastM), ty = Y(ch.today), tw = `Today ${ch.today.toLocaleString("en-US")}`.length * 7;
+    taken.push([tx - 10 - tw, ty - 24, tx - 10, ty - 8]);
+  }
+  const risers = pts.slice(1).map(([x, y], k) => {
+    const prevY = pts[k][1];
+    if (Math.abs(y - prevY) < 1) return "";
+    const at = ((x - L) / (W - L - R)).toFixed(3);
+    // a direct label for the biggest jumps ("+1,170"), placed where no dot or edge is in the way:
+    // right of the jump above the new level, else left of it above the old level, else none
+    const delta = level[k + 1] - level[k];
+    const text = `${delta > 0 ? "+" : "−"}${Math.abs(delta).toLocaleString("en-US")}`;
+    const w = text.length * 7 + 4;
+    const clear = (x0, yb) => x0 >= L && x0 + w <= W - R &&
+      !pts.some(([px, py]) => px > x0 - 6 && px < x0 + w + 6 && py > yb - 18 && py < yb + 8) &&
+      !taken.some(([a, b, c, d]) => x0 < c + 4 && x0 + w > a - 4 && yb - 14 < d + 2 && yb > b - 2);
+    let label = "";
+    if (labelled.has(k)) {
+      const right = [x + 10, y - 10], left = [x - 10 - w, prevY - 10];
+      const spot = clear(...right) ? right : clear(...left) ? left : null;
+      if (spot) taken.push([spot[0], spot[1] - 14, spot[0] + w, spot[1]]);
+      if (spot) label = `<text class="delta label-on-line" style="--at:${at}" x="${f1(spot[0])}" y="${f1(spot[1])}">${text}</text>`;
+    }
+    return `<path class="riser" style="--at:${at}" d="M${f1(x)} ${f1(prevY)} V${f1(y)}" stroke="${y < prevY ? tok("--accent") : tok("--major")}"/>${label}`;
+  }).join("");
 
+  // The policy drawn as a column of printed text: greeked "lines of type" fill the area
+  // under the length line, so a longer policy is literally a taller column.
+  const base = Y(0), colEnd = ch.today ? X(lastM) : pts.at(-1)[0];
+  const column = `M${f1(pts[0][0])} ${f1(base)} V${f1(pts[0][1])} ` +
+    pts.slice(1).map(([x, y]) => `H${f1(x)} V${f1(y)}`).join(" ") + ` H${f1(colEnd)} V${f1(base)} Z`;
+  const pat = `type-${ch.key}`;
+  const ink = tok("--ink");
+  const rows = (id, color, op) => `<pattern id="${id}" width="96" height="12" patternUnits="userSpaceOnUse">
+      <path d="M2 3H26M31 3H40M45 3H70M75 3H94M2 9H15M20 9H47M52 9H59M64 9H88" stroke="${color}" stroke-width="2.2" stroke-opacity="${op}"/></pattern>`;
+  const typeRows = rows(pat, ink, ".18") + rows(`${pat}-add`, tok("--accent"), ".55") + rows(`${pat}-cut`, tok("--major"), ".35");
+  // After each jump, the band that changed keeps its pencil colour until the next jump:
+  // new lines of type in blue, cut lines in faint red above the column.
+  const bands = pts.slice(1).map(([x, y], k) => {
+    const prevY = pts[k][1];
+    if (Math.abs(y - prevY) < 1) return "";
+    let j = k + 2;
+    while (j < pts.length && Math.abs(pts[j][1] - y) < 1) j++;
+    const x2 = j < pts.length ? pts[j][0] : colEnd;
+    const at = ((x - L) / (W - L - R)).toFixed(3);
+    const grew = y < prevY;
+    return `<rect class="band" style="--at:${at}" x="${f1(x)}" y="${f1(Math.min(y, prevY))}" width="${f1(x2 - x)}" height="${f1(Math.abs(prevY - y))}" fill="url(#${pat}-${grew ? "add" : "cut"})"/>`;
+  }).join("");
   const ticks = [];
   for (let v = y0; v <= y1; v += stepV) ticks.push(v);
   const gridY = ticks.map((v) =>
-    `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text class="axis" x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${(v / 1000).toFixed(1)}k</text>`).join("");
+    // no grid lines: the rows of type give the scale its texture; a short tick marks each value
+    `<line class="grid-l" x1="${L - 4}" x2="${L}" y1="${Y(v)}" y2="${Y(v)}"/><text class="axis" x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v ? `${(v / 1000).toFixed(v % 1000 ? 1 : 0)}k` : "0"}</text>`).join("");
   let years = "";
   for (let y = first.y + (first.m ? 1 : 0); ; y++) {
     const m = (y - first.y) * 12 - first.m;
     if (m > lastM) break;
     years += `<text class="axis" x="${X(m)}" y="${H - 8}">${y}</text>`;
   }
-  const gid = "g" + ch.key.replace(/\W/g, ""); // id of the soft-light filter
   const marks = ch.changes.map((c) => {
     const i = ch.versions.findIndex((v) => v.date === c.date);
     if (i < 0) return "";
     const [x, y] = pts[i];
     const maj = c.severity === "major";
+    const ghost = spike[i];
     // Afterglow: changes from the last 3 months still give off light.
     const fresh = (built - new Date(c.date + "T00:00:00Z")) / 864e5 <= 92;
-    const rgb = maj ? tok("--glow-red") : tok("--glow");
     // Not in the tab order: the timeline list under the chart links every change.
-    return `<a href="${BASE}/change/${c.id}/" class="pt" tabindex="-1" data-i="${i}" data-label="${c.label.replace(/"/g, "&quot;")}" data-sev="${c.severity}" aria-label="${c.label.replace(/"/g, "&quot;")}">
+    // the dot lands as the pen passes it
+    return `<a href="${BASE}/change/${c.id}/" class="pt" style="--at:${((x - L) / (W - L - R)).toFixed(3)}" tabindex="-1" data-i="${i}" data-ghost="${ghost ? 1 : ""}" data-label="${c.label.replace(/"/g, "&quot;")}" data-sev="${c.severity}" aria-label="${c.label.replace(/"/g, "&quot;")}">
       <circle cx="${x}" cy="${y}" r="14" fill="transparent"/>
-      ${fresh ? `<circle cx="${x}" cy="${y}" r="11" fill="rgba(${rgb},.25)" filter="url(#${gid})"/>` : ""}
-      <circle cx="${x}" cy="${y}" r="4.5" fill="${maj ? tok("--major") : fresh ? tok("--glow-hi") : tok("--bg")}" stroke="${maj ? tok("--major") : tok("--accent")}" stroke-width="2"/></a>`;
+      ${ghost
+        ? `<circle cx="${x}" cy="${y}" r="4" fill="${tok("--bg")}" stroke="${tok("--edge-hover")}" stroke-width="1.5" stroke-dasharray="2 2"/>`
+        : `<circle cx="${x}" cy="${y}" r="${maj || fresh ? 4.5 : 3.5}" fill="${maj ? tok("--major") : fresh ? tok("--accent") : tok("--ink")}" stroke="${tok("--bg")}" stroke-width="2"/>`}</a>`;
   }).join("");
   let todayMark = "";
   if (ch.today) {
     const [lx, ly] = pts.at(-1), tx = X(lastM), ty = Y(ch.today);
-    todayMark = `<path d="M${lx} ${ly} L${tx} ${ty}" fill="none" stroke="${tok("--faint")}" stroke-width="1.6" stroke-dasharray="4 5"/>
-      <circle cx="${tx}" cy="${ty}" r="4.5" fill="${tok("--bg")}" stroke="${tok("--soft")}" stroke-width="2"/>
-      <text class="axis" x="${tx - 8}" y="${ty - 12}" text-anchor="end" style="fill:${tok("--text")}">Today ${ch.today.toLocaleString("en-US")}</text>`;
+    todayMark = `<g class="pen-today"><path d="M${lx} ${ly} H${tx} V${ty}" fill="none" stroke="${tok("--soft")}" stroke-width="1.5" stroke-dasharray="1 4" stroke-linecap="round"/>
+      <rect x="${tx - 4}" y="${ty - 4}" width="8" height="8" fill="${tok("--bg")}" stroke="${tok("--ink")}" stroke-width="2"/>
+      <text class="axis label-on-line" x="${tx - 10}" y="${ty - 12}" text-anchor="end" style="fill:${tok("--text")}">Today ${ch.today.toLocaleString("en-US")}</text></g>`;
   }
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  svg.innerHTML = `<defs><filter id="${gid}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter></defs>
-    ${gridY}${years}
-    <path d="${area}" fill="rgba(${tok("--glow")},.08)"/>
-    <path d="${line}" fill="none" stroke="rgba(${tok("--glow")},.55)" stroke-width="4" stroke-linejoin="round" filter="url(#${gid})"/>
-    <path d="${line}" fill="none" stroke="${tok("--accent")}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-    ${todayMark}${marks}`;
+  svg.classList.toggle("pen", firstTime);
+  svg.innerHTML = `<defs>${typeRows}</defs>${gridY}${years}
+    <path class="column" d="${column}" fill="url(#${pat})"/>${bands}
+    <line x1="${L}" x2="${W - R}" y1="${f1(base)}" y2="${f1(base)}" stroke="${ink}" stroke-width="1.5"/>
+    <path class="pen-line" pathLength="1" d="${line}" fill="none" stroke="${tok("--ink")}" stroke-width="2.5" stroke-linecap="butt"/>
+    ${risers}${todayMark}${marks}`;
   const show = (g) => {
     const v = ch.versions[+g.dataset.i];
     const sc = svg.getBoundingClientRect().width / W;
-    tip.innerHTML = `<b>${g.dataset.label}</b><span>${MONTHS[+v.date.slice(5, 7) - 1]} ${v.date.slice(0, 4)}, ${v.words.toLocaleString("en-US")} words</span>`;
+    const when = `${MONTHS[+v.date.slice(5, 7) - 1]} ${v.date.slice(0, 4)}`;
+    tip.innerHTML = `<b>${g.dataset.label}</b><span>${g.dataset.ghost
+      ? `${when}: this archive copy was mostly page layout (${v.words.toLocaleString("en-US")} words), so the line skips it`
+      : `${when}, ${v.words.toLocaleString("en-US")} words`}</span>`;
     const [x, y] = pts[+g.dataset.i];
     tip.style.left = x * sc + "px";
     tip.style.top = y * sc + "px";
@@ -109,12 +196,20 @@ const drawVisibleCharts = () => $$(".chartwrap").forEach((w) => { if (w.offsetPa
 let resizeTimer;
 addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(drawVisibleCharts, 150); });
 
-/* ---------- the featured change's border lights up under your pointer ---------- */
-$(".feature")?.addEventListener("pointermove", (e) => {
-  const f = e.currentTarget, r = f.getBoundingClientRect();
-  f.style.setProperty("--mx", e.clientX - r.left + "px");
-  f.style.setProperty("--my", e.clientY - r.top + "px");
-}, { passive: true });
+/* ---------- marking up: a changed spot is struck and underlined when you reach it ----------
+   Only spots below the first screen wait; the text is always there, only the pencil marks
+   are drawn. Each spot is inked once. Skipped entirely with reduced motion. */
+const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!calm && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+    if (!e.isIntersecting) return;
+    e.target.classList.remove("to-ink");
+    io.unobserve(e.target);
+  }), { rootMargin: "0px 0px -15% 0px" });
+  $$(".hunk, .repeats").forEach((el) => {
+    if (el.getBoundingClientRect().top > innerHeight * 0.85) { el.classList.add("to-ink"); io.observe(el); }
+  });
+}
 
 /* ---------- tabs ---------- */
 const nav = $("#nav"), pill = $("#pillx"), tabs = $$("a", nav);
@@ -329,6 +424,26 @@ if (backLink && back?.hash) {
   backLink.lastChild.textContent = co ? `Back to ${co.name} changes` : back.hash.startsWith("#latest") ? "Back to all changes" : back.hash.startsWith("#history") ? "Back to history" : "Back to the overview";
 }
 
+/* ---------- "you were last here": a mark in the feed where your previous visit ended ---------- */
+// The feed is newest first, so the flag goes above the first change older than
+// your last visit. Saved in this browser only; shown only when something is new.
+if (feed) {
+  let lastSeen = null;
+  try { lastSeen = localStorage.getItem("tos-last-visit"); } catch {}
+  const today = new Date().toISOString().slice(0, 10);
+  if (lastSeen && lastSeen < today) {
+    const rows = $$(".row", feed);
+    const firstOld = rows.find((r) => (r.getAttribute("href").match(/(\d{4}-\d{2}-\d{2})/) || [])[1] <= lastSeen);
+    if (firstOld && firstOld !== rows[0]) {
+      const flag = document.createElement("p");
+      flag.className = "last-visit";
+      flag.textContent = `You were last here on ${new Date(lastSeen + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })}. Everything above is new.`;
+      firstOld.before(flag);
+    }
+  }
+  try { localStorage.setItem("tos-last-visit", today); } catch {}
+}
+
 /* ---------- pins (saved in this browser only) ---------- */
 const COS = DATA.companies;
 let pins = []; // nothing pinned until the visitor picks
@@ -354,7 +469,7 @@ function renderBar() {
   bar.innerHTML = '<span class="lab">Pinned</span>' + pins.map((n) => {
     const c = COS.find((x) => x.name === n);
     return c ? `<a class="chip" href="${BASE}/#latest/${c.id}" aria-label="${n}, ${c.changes} changes">${n}${c.changes ? `<span class="c">${c.changes}</span>` : ""}</a>` : "";
-  }).join("") + '<button class="addchip" id="addPin" aria-label="Pin another company">+</button>';
+  }).join("") + '<button class="addchip" id="addPin" aria-label="Pin another company"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>';
   $("#addPin").onclick = openSpot;
 }
 function toggle(name) {

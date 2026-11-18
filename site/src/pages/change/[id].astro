@@ -14,6 +14,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const fmtLong = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
 const SEV = { major: "major", moderate: "mod" };
 const rated = c.severity && c.severity !== "pending";
+// Afterglow on the change page too: the dot by the date fades as the change gets older.
+const days = (Date.now() - Date.parse(c.date + "T00:00:00Z")) / 864e5;
+const age = days <= 31 ? "age-0" : days <= 92 ? "age-1" : days <= 365 ? "age-2" : "age-3";
+const plural = (n, word) => `${n.toLocaleString("en-US")} ${word}${n === 1 ? "" : "s"}`;
 
 const hunks = c.hunks; // already ordered: spots related to the summary first
 const SHOWN = 3;
@@ -26,19 +30,14 @@ const q = (s) => `“${s}”`;
     <a class="back" href={`${base}/#latest`}><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2 3.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to all changes</a>
 
     <article class="dhead panel">
-      <p class="tagrow">{rated && <span class={`sev ${SEV[c.severity] ?? ""}`}>{c.severity.charAt(0).toUpperCase() + c.severity.slice(1)}</span>}<span>{c.companyName} {c.docName}, found {fmtLong(c.date)}</span></p>
-      <h1>{c.summary ? c.headline : `${c.companyName} rewrote part of its ${c.docName}`}</h1>
+      <h1 class={c.id === loadData().featured?.id ? "vt-head" : undefined}>{c.summary ? c.headline : `${c.companyName} rewrote part of its ${c.docName}`}</h1>
+      <p class={`meta-line ${age}${c.severity === "major" ? " is-major" : ""}`}><span class="dot" aria-hidden="true"></span>{rated && <span class={`sev ${SEV[c.severity] ?? ""}`}>{c.severity.charAt(0).toUpperCase() + c.severity.slice(1)}</span>}<span>{c.companyName} {c.docName}, found {fmtLong(c.date)}. {plural(c.changedWords, "word")} added or removed in {plural(c.hunks.length, "spot")}{c.percent !== null && `, about ${c.percent}% of the policy`}.</span></p>
       <p class="sum">{c.summary ?? "The plain-English summary hasn't been written yet. The exact wording is below."}</p>
       {c.likelyLayout && <p class="sum caveat">About {c.percent}% of the page changed at once. That usually means the page was redesigned or the archive saved a different version of it, not that the rules changed. Check the wording below before relying on it.</p>}
       {c.whatYouCanDo && (
         <div class="todo"><h2>What you can do</h2><p>{c.whatYouCanDo}</p></div>
       )}
       {c.categories.length > 0 && <div class="cats">{c.categories.map((cat) => <span>{CATEGORY_LABELS[cat] ?? cat}</span>)}</div>}
-      <div class="facts-row">
-        <div><b>{c.changedWords.toLocaleString("en-US")}</b><span>words added or removed</span></div>
-        {c.percent !== null && <div><b>{c.percent}%</b><span>of the policy rewritten</span></div>}
-        <div><b>{c.hunks.length}</b><span>spot{c.hunks.length === 1 ? "" : "s"} in the text changed</span></div>
-      </div>
     </article>
 
     <section class="card panel" aria-labelledby="wording-title">

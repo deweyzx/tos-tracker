@@ -1,7 +1,8 @@
 ---
 // One changed spot, as a word-level redline. A sentence that was edited shows once,
 // with only the changed words struck (removed) or lit (added); sentences that were
-// only removed or only added show whole, marked − or +. Removed/added text uses
+// only removed or only added show whole, with a proofreader's mark in the margin
+// (a caret for added, a dele loop for removed, slash and caret for an edited sentence). Removed/added text uses
 // <del>/<ins> with hidden "removed"/"added" labels so screen readers hear the
 // difference, and visible markers so it never depends on color.
 // Long spots show their first lines and fold the rest.
@@ -14,18 +15,18 @@ const shown = segs.slice(0, LIMIT), rest = segs.slice(LIMIT);
 <div class="hunk">
   {h.context_before.map((t) => <p class="ctx">{t}</p>)}
   {shown.map((s) => s.kind === "pair"
-    ? <p class="mod"><span class="mk" aria-hidden="true">±</span><span>{s.ops.map((o) => o.t === "eq" ? o.text : o.t === "del" ? <del><span class="sr-only">[removed: </span>{o.text}<span class="sr-only">]</span></del> : <ins><span class="sr-only">[added: </span>{o.text}<span class="sr-only">]</span></ins>)}</span></p>
+    ? <p class="mod"><span class="mk" aria-hidden="true"><svg class="pm"><use href="#pm-mod" /></svg></span><span>{s.ops.map((o) => o.t === "eq" ? o.text : o.t === "del" ? <del><span class="sr-only">[removed: </span>{o.text}<span class="sr-only">]</span></del> : <ins><span class="sr-only">[added: </span>{o.text}<span class="sr-only">]</span></ins>)}</span></p>
     : s.kind === "rem"
-      ? <p class="rem"><span class="mk" aria-hidden="true">−</span><del><span class="sr-only">Removed: </span>{s.text}</del></p>
-      : <p class="add"><span class="mk" aria-hidden="true">+</span><ins><span class="sr-only">Added: </span>{s.text}</ins></p>)}
+      ? <p class="rem"><span class="mk" aria-hidden="true"><svg class="pm"><use href="#pm-del" /></svg></span><span><del><span class="sr-only">Removed: </span>{s.text}</del></span></p>
+      : <p class="add"><span class="mk" aria-hidden="true"><svg class="pm"><use href="#pm-ins" /></svg></span><span><ins><span class="sr-only">Added: </span>{s.text}</ins></span></p>)}
   {rest.length > 0 && (
     <details class="more">
       <summary>Show {rest.length} more changed line{rest.length === 1 ? "" : "s"} here</summary>
       {rest.map((s) => s.kind === "pair"
-        ? <p class="mod"><span class="mk" aria-hidden="true">±</span><span>{s.ops.map((o) => o.t === "eq" ? o.text : o.t === "del" ? <del><span class="sr-only">[removed: </span>{o.text}<span class="sr-only">]</span></del> : <ins><span class="sr-only">[added: </span>{o.text}<span class="sr-only">]</span></ins>)}</span></p>
+        ? <p class="mod"><span class="mk" aria-hidden="true"><svg class="pm"><use href="#pm-mod" /></svg></span><span>{s.ops.map((o) => o.t === "eq" ? o.text : o.t === "del" ? <del><span class="sr-only">[removed: </span>{o.text}<span class="sr-only">]</span></del> : <ins><span class="sr-only">[added: </span>{o.text}<span class="sr-only">]</span></ins>)}</span></p>
         : s.kind === "rem"
-          ? <p class="rem"><span class="mk" aria-hidden="true">−</span><del><span class="sr-only">Removed: </span>{s.text}</del></p>
-          : <p class="add"><span class="mk" aria-hidden="true">+</span><ins><span class="sr-only">Added: </span>{s.text}</ins></p>)}
+          ? <p class="rem"><span class="mk" aria-hidden="true"><svg class="pm"><use href="#pm-del" /></svg></span><span><del><span class="sr-only">Removed: </span>{s.text}</del></span></p>
+          : <p class="add"><span class="mk" aria-hidden="true"><svg class="pm"><use href="#pm-ins" /></svg></span><span><ins><span class="sr-only">Added: </span>{s.text}</ins></span></p>)}
     </details>
   )}
   {h.context_after.map((t) => <p class="ctx">{t}</p>)}
