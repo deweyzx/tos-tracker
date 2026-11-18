@@ -496,7 +496,13 @@ Built in a Claude chat; continuing in **Claude Code** on my PC. What's done and 
    - **Legend:** now shows small type swatches for "Lines added" and "Lines cut".
    - **Animation:** the column fills in behind the pen as it draws.
    - **Checked:** desktop and phone (no sideways scroll); the detector is clean; the build passes.
-17. Later: Playwright for Reddit/Meta/OpenAI; real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
+17. **Pushed and live (Nov 18).** All tests pass (41 + 22 + 26). Committed as:
+   - `66c235c`: history for all 12 companies, plus all 206 AI summaries
+   - `a69ea47`: the corrections-column redesign, the motion pass, the column-of-type chart, link previews and these notes
+
+   Pushed together with the earlier unpushed design commits. The site rebuilt and is live at https://deweyzx.github.io/tos-tracker/ (checked: new featured change, og.png loads). The Impeccable program files (`.claude/skills`, `.claude/agents`) and my local `settings.local.json` stay uncommitted on purpose.
+   - **Next ideas:** spot-check OpenAI's arbitration flip-flop; hide or down-rank layout-only changes in Latest; an RSS feed; a page per company.
+18. Later: Playwright for Reddit/Meta/OpenAI; real email alerts (Phase 8); optional company logos from simpleicons.org in `site/public/logos/`.
 
 ---
 
