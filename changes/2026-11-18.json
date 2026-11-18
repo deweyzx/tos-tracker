@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-18",
+  "changes": [
+    {
+      "company": "snapchat",
+      "doc": "privacy",
+      "date": "2026-11-18",
+      "source": "daily",
+      "file": "policies/snapchat/privacy.txt",
+      "changed_words": 1,
+      "hunks": [
+        {
+          "removed": [
+            "Privacy"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "Privacy Policy"
+          ],
+          "changed_words": 1
+        }
+      ],
+      "ai": {
+        "headline": "Snapchat removes the word \"Privacy\" from a page heading",
+        "summary": "Snapchat removed the word \"Privacy\" from a heading that reads \"Privacy Policy,\" leaving just \"Privacy Policy\" in the text. This appears to be a wording or layout change only, and no new rules about users' data are described.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ]
+}
