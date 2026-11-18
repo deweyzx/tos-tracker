@@ -7,7 +7,7 @@
   {"company": "openai",    "doc": "privacy", "url": "https://openai.com/policies/privacy-policy/"},
   {"company": "openai",    "doc": "terms",   "url": "https://openai.com/policies/terms-of-use/"},
   {"company": "anthropic", "doc": "privacy", "url": "https://www.anthropic.com/legal/privacy"},
-  {"company": "google",    "doc": "privacy", "url": "https://policies.google.com/privacy"},
+  {"company": "google",    "doc": "privacy", "url": "https://policies.google.com/privacy", "archive_must_contain": "U.S. state law requirements"},
   {"company": "tiktok",    "doc": "privacy", "url": "https://www.tiktok.com/legal/page/us/privacy-policy/en"},
   {"company": "snapchat",  "doc": "privacy", "url": "https://values.snap.com/privacy/privacy-policy"},
   {"company": "zoom",      "doc": "privacy", "url": "https://www.zoom.com/en/trust/privacy/privacy-statement/"},

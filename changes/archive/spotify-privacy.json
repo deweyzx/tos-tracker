@@ -211,7 +211,8 @@
           "other"
         ],
         "what_you_can_do": null,
-        "model": "claude-haiku-5-5"
+        "model": "claude-haiku-5-5",
+        "headline": "Spotify clarifies wording on service fixes, fraud checks, and contract use of data"
       }
     },
     {
@@ -1376,7 +1377,8 @@
           "data_sharing"
         ],
         "what_you_can_do": "Opt out of tailored advertising in your account Privacy Settings under 'Tailored Ads', or click the 'Your Privacy Choices' link in the website footer if you do not have an account or are not logged in.",
-        "model": "claude-haiku-5-5"
+        "model": "claude-haiku-5-5",
+        "headline": "Spotify updates privacy policy: new opt-out path, removed voice data and rights details"
       }
     },
     {
@@ -1473,7 +1475,8 @@
           "children"
         ],
         "what_you_can_do": "Use the link in the in-app message (once you reach the appropriate age) to the Privacy Settings to change your preferences or opt out of Tailored Ads at any time.",
-        "model": "claude-haiku-5-5"
+        "model": "claude-haiku-5-5",
+        "headline": "Spotify adds age rules for when tailored ads begin"
       }
     },
     {
@@ -2131,6 +2134,2310 @@
           "your_rights"
         ],
         "what_you_can_do": "Visit the Privacy Settings in the Spotify Service to change your tailored advertising preferences or opt out of tailored advertising at any time.",
+        "model": "claude-haiku-5-5",
+        "headline": "Spotify expands data it collects on users, including age, gender, and inferences"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2024-08-01",
+      "source": "archive",
+      "changed_words": 10,
+      "hunks": [
+        {
+          "removed": [
+            "• name",
+            "• date of birth",
+            "• payment method type (e.g. credit or debit card)",
+            "• if using a debit or credit card, the card type, expiration date, and certain digits of your card number",
+            "Note: For security, we never store your full card number",
+            "• ZIP/postal code",
+            "• mobile phone number",
+            "• details of your purchase and payment history"
+          ],
+          "added": [
+            "name",
+            "date of birth",
+            "payment method type (e.g. credit or debit card)",
+            "if using a debit or credit card, the card type, expiration date, and certain digits of your card numberNote: For security, we never store your full card number",
+            "ZIP/postal code",
+            "mobile phone number",
+            "details of your purchase and payment history"
+          ],
+          "context_before": [
+            "The exact personal data collected and used will vary depending on the payment method. It will include information such as:"
+          ],
+          "context_after": [
+            "Survey and Research Data"
+          ],
+          "changed_words": 10
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240701001846/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20240801044012/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify's privacy policy list of payment data items looks reformatted, not changed",
+        "summary": "Spotify's privacy policy lists the same payment-related information as before (name, date of birth, payment method type, card details, ZIP/postal code, mobile number, and purchase history). The only difference is formatting: the bullet points were removed, so this is not a new kind of data collection.",
+        "severity": "minor",
+        "categories": [
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2024-09-01",
+      "source": "archive",
+      "changed_words": 18,
+      "hunks": [
+        {
+          "removed": [
+            "• User Data",
+            "• Usage Data",
+            "• Survey and Research Data",
+            "• User Data",
+            "• Usage Data",
+            "• Survey and Research Data"
+          ],
+          "added": [
+            "User Data",
+            "Usage Data",
+            "Survey and Research Data"
+          ],
+          "context_before": [
+            "• we analyze how our users react to a particular new feature and see whether we should make any changes"
+          ],
+          "context_after": [
+            "For marketing or advertising purposes."
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "With respect to Spotify Service users under the age of 16, we do not disclose personal data to advertising partners by default."
+          ],
+          "added": [
+            "With respect to Spotify Service users under the age of 18, we do not disclose personal data to advertising partners by default."
+          ],
+          "context_before": [
+            "For example, our ad partners help us facilitate tailored advertising."
+          ],
+          "context_after": [
+            "Marketing Partners"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "With respect to Spotify Service users under the age of 16, we do not disclose personal data to marketing partners by default."
+          ],
+          "added": [
+            "With respect to Spotify Service users under the age of 18, we do not disclose personal data to marketing partners by default."
+          ],
+          "context_before": [
+            "Our partners may also combine the personal data we disclose to them with other data they collect about you, e.g. your use of their services. We and our partners may use this information to present you with offers, promotions, or other marketing that we think you’ll find relevant."
+          ],
+          "context_after": [
+            "Ticketing and event partners"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240801044012/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20240901015619/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify raises the age below which it withholds data from ad and marketing partners to 18",
+        "summary": "Spotify now says it does not share personal data with advertising or marketing partners by default for users under 18, up from under 16 before. Spotify also reworded a list of data types (User Data, Usage Data, Survey and Research Data) that it uses to analyze how users react to features, with no clear change in meaning.",
+        "severity": "moderate",
+        "categories": [
+          "children",
+          "advertising",
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2024-11-01",
+      "source": "archive",
+      "changed_words": 32,
+      "hunks": [
+        {
+          "removed": [
+            "Privacy Settings: Control the processing of certain personal data, including tailored advertising."
+          ],
+          "added": [
+            "Account Privacy: Control the processing of certain personal data, including tailored advertising."
+          ],
+          "context_before": [
+            "Safety & Privacy Center: A user-friendly hub with summaries of key topics and helpful videos. It includes the ‘Your Privacy Controls’ video which shows you how to exercise your user rights and make choices about the way we process your data. See Section 2 ‘Your personal data rights and controls’ for more on user rights."
+          ],
+          "context_after": [
+            "Notification Settings Set which marketing communications you get from Spotify."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "use the ‘Download your data’ tool in your account Privacy Settings, or"
+          ],
+          "added": [
+            "use the ‘Download your data’ tool on your Account Privacy page, or"
+          ],
+          "context_before": [
+            "To request a copy of your personal data from Spotify, either:"
+          ],
+          "context_after": [
+            "contact us"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "You can exercise your right to opt out in your account Privacy Settings under ‘Tailored Ads’."
+          ],
+          "added": [
+            "You can exercise your right to opt out on your Account Privacy page under ‘Tailored Ads’."
+          ],
+          "context_before": [
+            "For more information about our processing for these purposes, see the section ‘Tailored advertising controls’ below."
+          ],
+          "context_after": [
+            "If you do not have an account or are not logged in, you can also opt-out by clicking the 'Your Privacy Choices' link at the footer of our website."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "This is when we use information about your use of our services and other websites and mobile apps to tailor ads to be more relevant to you. This is also known as interest based advertising, targeted advertising, or ‘sharing’ for purposes of cross-context behavioral advertising."
+          ],
+          "added": [
+            "This is when we use information about your use of our services and other websites and mobile apps to tailor ads to be more relevant to you. This is also known as interest based advertising, targeted advertising, or ‘sharing’ for purposes of cross-context behavioural advertising."
+          ],
+          "context_before": [
+            "What is tailored advertising?"
+          ],
+          "context_after": [
+            "An example of tailored advertising is when an advertising partner provides us with information indicating that you may be interested in cars. This could enable us to show you ads about cars."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "You can control tailored advertising in your account Privacy Settings under ‘Tailored Ads’."
+          ],
+          "added": [
+            "You can control tailored advertising on your Account Privacy page under ‘Tailored Ads’."
+          ],
+          "context_before": [
+            "How to control tailored advertising:"
+          ],
+          "context_after": [
+            "If you do not have an account or are not logged in, you can also opt-out by clicking the 'Your Privacy Choices' link at the footer of our website."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "If you are ‘opted out’ of tailored advertising in your Privacy Settings, you will receive less relevant advertising, including on our free Service Option, as well as our paid Service Option, as applicable (for example, advertising in podcasts). This type of advertising is based on your registration information and what you are currently listening to on our services. For example, if you are listening to a cooking podcast, you may hear an ad for a food processor."
+          ],
+          "added": [
+            "If you are ‘opted out’ of tailored advertising on your Account Privacy page, you will receive less relevant advertising, including on our free Service Option, as well as our paid Service Option, as applicable (for example, advertising in podcasts). This type of advertising is based on your registration information and what you are currently listening to on our services. For example, if you are listening to a cooking podcast, you may hear an ad for a food processor."
+          ],
+          "context_before": [
+            "You can also visit our services via a browser with a recognized opt-out preference signal enabled, such as the Global Privacy Control (GPC). If you use a preference signal you may need to renew your preferences if you visit the Spotify Service with another device or browser, or if you clear your cookies."
+          ],
+          "context_after": [
+            "Appropriate age for tailored advertising:"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Younger users may have tailored advertising turned off by default. When you reach the appropriate age, you will start to receive tailored advertising . When this happens, you will receive a message within the Spotify Service to let you know. This message will contain a link to the Privacy Settings where you can change your preferences or ‘opt-out’ of tailored advertising at any time under Tailored Ads."
+          ],
+          "added": [
+            "Younger users may have tailored advertising turned off by default. When you reach the appropriate age, you will start to receive tailored advertising . When this happens, you will receive a message within the Spotify Service to let you know. This message will contain a link to the Account Privacy page where you can change your preferences or ‘opt-out’ of tailored advertising at any time under Tailored Ads."
+          ],
+          "context_before": [
+            "Appropriate age for tailored advertising:"
+          ],
+          "context_after": [
+            "3. Personal data we collect about you"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241001035349/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20241101044300/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify renames its Privacy Settings page to Account Privacy",
+        "summary": "Spotify has renamed the \"Privacy Settings\" page to \"Account Privacy\" throughout its privacy policy, and the instructions for downloading your data, opting out of tailored ads, and managing ad preferences now point to that new page. The controls and rights described appear unchanged, so this is a naming and navigation update rather than a new rule.",
+        "severity": "minor",
+        "categories": [
+          "advertising",
+          "your_rights"
+        ],
+        "what_you_can_do": "Find the Account Privacy page in your Spotify account to manage tailored ads and download your data.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2025-01-01",
+      "source": "archive",
+      "changed_words": 133,
+      "hunks": [
+        {
+          "removed": [
+            "This Privacy Policy describes how we process your personal data at Spotify USA Inc. From now on, we’ll call it the ‘Policy’."
+          ],
+          "added": [
+            "This Privacy Policy describes how we at Spotify USA Inc. process personal data of U.S. residents. From now on, we’ll call it the ‘Policy’."
+          ],
+          "context_before": [
+            "1. About this Policy"
+          ],
+          "context_after": [
+            "It applies to your use of:"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "From time to time, we may develop new or offer additional services. They’ll also be subject to this Policy, unless stated otherwise when we introduce them. IIf you reside in California, our supplemental California Notice at Collection, applies in addition to this Policy."
+          ],
+          "added": [
+            "From time to time, we may develop new or offer additional services. They’ll also be subject to this Policy, unless stated otherwise when we introduce them. Our California Notice at Collection as required by the California Consumer Privacy Act applies to residents of California. If you are a resident of California, you should read this notice together with this Policy."
+          ],
+          "context_before": [
+            "From now on, we’ll collectively call these the ‘Spotify Service’."
+          ],
+          "context_after": [
+            "This Policy is not..."
+          ],
+          "changed_words": 37
+        },
+        {
+          "removed": [
+            "Privacy laws give certain rights to individuals over their personal data."
+          ],
+          "added": [
+            "Certain U.S. states have adopted privacy laws that give certain rights to individuals over their personal data. We provide these rights to all residents of the U.S., regardless of where they live."
+          ],
+          "context_before": [
+            "2. Your personal data rights and controls"
+          ],
+          "context_after": [
+            "The table below explains:"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [
+            "circumstances when they apply",
+            "how to use them"
+          ],
+          "added": [
+            "how to exercise them"
+          ],
+          "context_before": [
+            "your rights"
+          ],
+          "context_after": [
+            "You can also watch our video about Your Privacy Controls. You will not receive discriminatory treatment for exercising any of your privacy rights."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Categories under CCPA"
+          ],
+          "added": [],
+          "context_before": [
+            "Categories"
+          ],
+          "context_after": [
+            "Description"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Identifiers; and",
+            "Characteristics of protected classifications under California or U.S. law (i.e., your age and gender)"
+          ],
+          "added": [],
+          "context_before": [
+            "User Data"
+          ],
+          "context_after": [
+            "Personal data that we need to create your Spotify account and that enables you to use the Spotify Service."
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [
+            "Geolocation data"
+          ],
+          "added": [],
+          "context_before": [
+            "Street Address Data"
+          ],
+          "context_after": [
+            "We may ask for and process your street address for the following reasons:"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Categories under CCPA"
+          ],
+          "added": [],
+          "context_before": [
+            "Categories"
+          ],
+          "context_after": [
+            "Description"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Internet or other electronic network activity information;",
+            "Geolocation data (i.e.,your non-precise location as derived from your IP address);",
+            "Commercial information; and",
+            "Inferences"
+          ],
+          "added": [],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Personal data collected and processed about you when you’re accessing or using the Spotify Service."
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [
+            "Categories under CCPA"
+          ],
+          "added": [],
+          "context_before": [
+            "Categories"
+          ],
+          "context_after": [
+            "Description"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Commercial information"
+          ],
+          "added": [],
+          "context_before": [
+            "Payment and Purchase Data"
+          ],
+          "context_after": [
+            "If you make any purchases from Spotify or sign up for a paid Service Option or a trial, we will need to process your payment data."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Identifiers; and",
+            "other information you share"
+          ],
+          "added": [],
+          "context_before": [
+            "Survey and Research Data"
+          ],
+          "context_after": [
+            "When you respond to a survey or take part in user research, we collect and use the personal data you provide as described in the survey or research."
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241201005555/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20250101013212/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify limits privacy policy scope to U.S. residents and drops some CCPA category labels",
+        "summary": "Spotify's privacy policy now says it covers personal data of U.S. residents and extends state privacy rights to all U.S. users, regardless of location. Several data category descriptions also lost their legal-category labels (such as \"Identifiers,\" \"Geolocation data,\" \"Commercial information,\" and \"Inferences\"), but the descriptions of the data types themselves were not shown as changing in substance.",
+        "severity": "minor",
+        "categories": [
+          "your_rights",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2025-06-02",
+      "source": "archive",
+      "changed_words": 178,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Voice Data",
+            "If voice features are available in your market and where you’ve chosen to use a voice feature, we collect and process voice data. Voice data means audio recordings of your voice and transcripts of those recordings."
+          ],
+          "context_before": [
+            "Description"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 38
+        },
+        {
+          "removed": [
+            "if using a debit or credit card, the card type, expiration date, and certain digits of your card numberNote: For security, we never store your full card number"
+          ],
+          "added": [
+            "if using a debit or credit card, the card type, expiration date, and certain digits of your card number. Note: For security, we never store your full card number"
+          ],
+          "context_before": [
+            "payment method type (e.g. credit or debit card)"
+          ],
+          "context_after": [
+            "ZIP/postal code"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "To evaluate and develop new features, technologies, and improvements to the Spotify Service."
+          ],
+          "added": [
+            "Voice Data",
+            "To evaluate and develop new features, technologies, and improvements to the Spotify Service. This includes development and training of algorithmic and machine learning models, which help us to keep our service safe and enhance our users’ experience. For example:"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "For example:"
+          ],
+          "changed_words": 28
+        },
+        {
+          "removed": [
+            "• we use personal data to develop and improve our personalized recommendation algorithms",
+            "• we analyze how our users react to a particular new feature and see whether we should make any changes"
+          ],
+          "added": [
+            "• to help us develop and improve our personalized recommendations",
+            "• to help analyze how our users react to a particular new feature and see whether we should make any changes",
+            "• so we can build AI features such as AI DJ and AI playlist",
+            "• to help us enforce our User Guidelines, Platform Rules and Spotify for Creators Community Guidelines."
+          ],
+          "context_before": [
+            "For example:"
+          ],
+          "context_after": [
+            "User Data"
+          ],
+          "changed_words": 42
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Survey and Research Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Voice Data"
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Survey and Research Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "• Voice Data"
+          ],
+          "context_before": [
+            "• Usage Data"
+          ],
+          "context_after": [
+            "To share information about your use of the Spotify Service with other Spotify users. These could include your followers on Spotify."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "• Voice Data"
+          ],
+          "context_before": [
+            "• Usage Data"
+          ],
+          "context_after": [
+            "• Payment and Purchase Data"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "• Voice Data"
+          ],
+          "context_before": [
+            "• Usage Data"
+          ],
+          "context_after": [
+            "• Payment and Purchase Data"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "• Street Address Data"
+          ],
+          "context_before": [
+            "• User Data"
+          ],
+          "context_after": [
+            "• Usage Data"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [],
+          "added": [
+            "• Voice Data",
+            "•Payment and Purchase Data",
+            "•Survey and Research Data"
+          ],
+          "context_before": [
+            "• Usage Data"
+          ],
+          "context_after": [
+            "When we believe in good faith it’s necessary for us to do so, for example:"
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [],
+          "added": [
+            "• Voice Data"
+          ],
+          "context_before": [
+            "• Usage Data"
+          ],
+          "context_after": [
+            "• Payment and Purchase Data"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "The following chart contains statistics about global requests we received from users between 1 January and 31 December 2023:"
+          ],
+          "added": [
+            "The following chart contains statistics about global requests we received from users between 1 January and 31 December 2024:"
+          ],
+          "context_before": [
+            "10. Privacy Request Metrics"
+          ],
+          "context_after": [
+            "Type of request"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "2,375,576",
+            "2,375,576"
+          ],
+          "added": [
+            "2,284,441",
+            "2,284,441"
+          ],
+          "context_before": [
+            "Right to Know / Access"
+          ],
+          "context_after": [
+            "0"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "9.88 days"
+          ],
+          "added": [
+            "8.83 days"
+          ],
+          "context_before": [
+            "0"
+          ],
+          "context_after": [
+            "Request to Delete"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "6,367,692",
+            "6,367,692"
+          ],
+          "added": [
+            "7,542,315",
+            "7,542,315"
+          ],
+          "context_before": [
+            "Request to Delete"
+          ],
+          "context_after": [
+            "0"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "38",
+            "32",
+            "6",
+            "13.84 days"
+          ],
+          "added": [
+            "34",
+            "4",
+            "30",
+            "12.32 days"
+          ],
+          "context_before": [
+            "Request to Correct*"
+          ],
+          "context_after": [
+            "Request to Opt-Out of Data Sharing for Tailored Ads"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "78,145,777",
+            "78,145,777"
+          ],
+          "added": [
+            "29,213,601",
+            "29,213,601"
+          ],
+          "context_before": [
+            "Request to Opt-Out of Data Sharing for Tailored Ads"
+          ],
+          "context_after": [
+            "0"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250502080442/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20250602120520/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify now collects voice recordings and uses them to train AI models",
+        "summary": "Spotify's privacy policy now says it collects voice data (audio recordings of your voice and their transcripts) when you use voice features where available. The updated policy also says this data, along with usage data, may be used to develop and train machine learning models, including AI features like AI DJ and AI playlist, and to help enforce its guidelines. It also adds street address data to the categories of user data it may collect.",
+        "severity": "major",
+        "categories": [
+          "ai_training",
+          "data_collection",
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2025-09-01",
+      "source": "archive",
+      "changed_words": 248,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "turn off messaging with other users (if messaging is available in your market)"
+          ],
+          "context_before": [
+            "choose whether to show your recently played artists on your public profile"
+          ],
+          "context_after": [
+            "On the ‘Explicit Content’ setting you can control whether explicit-rated content can be played on your Spotify account."
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "estimated or confirmed age from an Age Check by a third party provider"
+          ],
+          "context_before": [
+            "university/college (for Spotify Premium Student)"
+          ],
+          "context_after": [
+            "We receive some of this data from you e.g. from the sign up form or account page."
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "inferences (i.e., our understanding) of your interests and preferences based on your usage of the Spotify Service"
+          ],
+          "added": [
+            "inferences (i.e., our understanding) of your age, interests and preferences based on your usage of the Spotify Service"
+          ],
+          "context_before": [
+            "your use of third party services, devices and applications in connection with the Spotify Service"
+          ],
+          "context_after": [
+            "content you provide when participating in Spotify promotions, such as contests or sweepstakes"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data",
+            "If messaging is available in your market and where you’ve chosen to use messaging, we collect and process message data. Message data means text or other content you send directly to another user.",
+            "Age Check Data",
+            "Age Check Data is the data you provide if you use an Age Check powered by a third party provider on Spotify (“Age Check”). This includes:",
+            "Facial age estimation: a photo of your face which is used to estimate your age",
+            "Identity document verification: photos of your face and ID which are used to confirm your age and to verify that the ID belongs to you",
+            "Where Age Check Data is collected, we will obtain your consent and provide notice of the third party policies that apply to the processing of such data. All Age Check Data is deleted immediately after the Age Check."
+          ],
+          "context_before": [
+            "If voice features are available in your market and where you’ve chosen to use a voice feature, we collect and process voice data. Voice data means audio recordings of your voice and transcripts of those recordings."
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 142
+        },
+        {
+          "removed": [],
+          "added": [
+            "• provide an age-appropriate experience, or"
+          ],
+          "context_before": [
+            "• enable you to share a link to Spotify content with someone else, or"
+          ],
+          "context_after": [
+            "• provide various optional features of the Spotify Service"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data"
+          ],
+          "context_before": [
+            "Voice Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Age Check Data"
+          ],
+          "context_before": [
+            "Survey and Research Data"
+          ],
+          "context_after": [
+            "To diagnose, troubleshoot, and fix issues with the Spotify Service."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data"
+          ],
+          "context_before": [
+            "Voice Data"
+          ],
+          "context_after": [
+            "To evaluate and develop new features, technologies, and improvements to the Spotify Service. This includes development and training of algorithmic and machine learning models, which help us to keep our service safe and enhance our users’ experience. For example:"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data"
+          ],
+          "context_before": [
+            "Voice Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data"
+          ],
+          "context_before": [
+            "Voice Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data"
+          ],
+          "context_before": [
+            "Voice Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data"
+          ],
+          "context_before": [
+            "Voice Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Message Data"
+          ],
+          "context_before": [
+            "Street Address Data"
+          ],
+          "context_after": [
+            "Usage Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "• User Data",
+            "• Usage Data",
+            "• Voice Data"
+          ],
+          "added": [
+            "User Data",
+            "Usage Data",
+            "Voice Data",
+            "Message Data"
+          ],
+          "context_before": [
+            "Other Spotify users"
+          ],
+          "context_after": [
+            "To share information about your use of the Spotify Service with other Spotify users. These could include your followers on Spotify."
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "• User Data",
+            "• Street Address Data",
+            "• Usage Data",
+            "• Voice Data",
+            "• Payment and Purchase Data",
+            "• Survey and Research Data"
+          ],
+          "added": [
+            "User Data",
+            "Street Address Data",
+            "Usage Data",
+            "Voice Data",
+            "Message Data",
+            "Payment and Purchase Data",
+            "Survey and Research Data",
+            "Age Check Data"
+          ],
+          "context_before": [
+            "Service providers"
+          ],
+          "context_after": [
+            "So they can provide their services to Spotify."
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "• User Data",
+            "• Street Address Data",
+            "• Usage Data",
+            "• Voice Data",
+            "• Payment and Purchase Data",
+            "• Survey and Research Data"
+          ],
+          "added": [
+            "User Data",
+            "Street Address Data",
+            "Usage Data",
+            "Voice Data",
+            "Message Data",
+            "Payment and Purchase Data",
+            "Survey and Research Data"
+          ],
+          "context_before": [
+            "Other Spotify group companies, including companies that Spotify acquires"
+          ],
+          "context_after": [
+            "To carry out our daily business operations and so we can maintain, improve and provide the Spotify Service and acquired companies’ services to you."
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "• User Data",
+            "• Street Address Data",
+            "• Usage Data",
+            "• Voice Data",
+            "•Payment and Purchase Data",
+            "•Survey and Research Data"
+          ],
+          "added": [
+            "User Data",
+            "Street Address Data",
+            "Usage Data",
+            "Voice Data",
+            "Payment and Purchase Data",
+            "Survey and Research Data",
+            "Message Data"
+          ],
+          "context_before": [
+            "Law enforcement and other authorities, or other parties to litigation"
+          ],
+          "context_after": [
+            "When we believe in good faith it’s necessary for us to do so, for example:"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "• User Data",
+            "• Street Address Data",
+            "• Usage Data",
+            "• Voice Data",
+            "• Payment and Purchase Data",
+            "• Survey and Research Data"
+          ],
+          "added": [
+            "User Data",
+            "Street Address Data",
+            "Usage Data",
+            "Voice Data",
+            "Message Data",
+            "Message Data",
+            "Payment and Purchase Data",
+            "Survey and Research Data"
+          ],
+          "context_before": [
+            "Purchasers of our business"
+          ],
+          "context_after": [
+            "If we were to sell or negotiate to sell our business to a buyer or possible buyer."
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [],
+          "added": [
+            "Age Check Data is deleted immediately after your Age Check is complete."
+          ],
+          "context_before": [
+            "to protect against harmful content on our platform."
+          ],
+          "context_after": [
+            "This helps us investigate potential breaches of our User Guidelines and Platform Rules. On the other hand, we will remove unlawful content if the law requires us to do so."
+          ],
+          "changed_words": 12
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250801214603/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20250901121246/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify adds message and age-verification data to its privacy policy",
+        "summary": "Spotify now collects messages you send to other users (where messaging is available) and may collect age-check data, such as a face photo for age estimation or ID photos for verification, through a third-party provider. Message and age-check data are also covered by the sharing and AI/machine learning development uses in the policy, including training of machine learning models. Age-check data is said to be deleted immediately after the check.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "data_sharing",
+          "children",
+          "ai_training"
+        ],
+        "what_you_can_do": "Turn off messaging with other users in your settings (if messaging is available in your market).",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2026-05-01",
+      "source": "archive",
+      "changed_words": 794,
+      "hunks": [
+        {
+          "removed": [
+            "Account Privacy: Control the processing of certain personal data, including tailored advertising.",
+            "Notification Settings Set which marketing communications you get from Spotify."
+          ],
+          "added": [
+            "Account Privacy: Control the processing of certain personal data.",
+            "Notification Settings: Set which marketing communications you get from Spotify."
+          ],
+          "context_before": [
+            "Safety & Privacy Center: A user-friendly hub with summaries of key topics and helpful videos. It includes the ‘Your Privacy Controls’ video which shows you how to exercise your user rights and make choices about the way we process your data. See Section 2 ‘Your personal data rights and controls’ for more on user rights."
+          ],
+          "context_after": [
+            "Settings (found in the Desktop and Mobile versions of Spotify): Control certain aspects of the Spotify Service such as ‘Social’ or ‘Explicit Content’. On the ‘Social’ setting, you can:"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Know/",
+            "Access"
+          ],
+          "added": [
+            "Know/Access"
+          ],
+          "context_before": [
+            "by answering your specific questions and requests when you contact us"
+          ],
+          "context_after": [
+            "Request to know and access the personal data we process about you."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "You can exercise your right to opt out on your Account Privacy page under ‘Tailored Ads’."
+          ],
+          "added": [
+            "You can exercise your right to opt out through the ‘Tailored Ads’ setting."
+          ],
+          "context_before": [
+            "For more information about our processing for these purposes, see the section ‘Tailored advertising controls’ below."
+          ],
+          "context_after": [
+            "If you do not have an account or are not logged in, you can also opt-out by clicking the 'Your Privacy Choices' link at the footer of our website."
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "This is when we use information about your use of our services and other websites and mobile apps to tailor ads to be more relevant to you. This is also known as interest based advertising, targeted advertising, or ‘sharing’ for purposes of cross-context behavioural advertising."
+          ],
+          "added": [
+            "This is when we use information about your use of our services and other websites and mobile apps to tailor ads to be more relevant to you. This is also known as interest based advertising, targeted advertising, or ‘sharing’ for purposes of cross-context behavioral advertising."
+          ],
+          "context_before": [
+            "What is tailored advertising?"
+          ],
+          "context_after": [
+            "An example of tailored advertising is when an advertising partner provides us with information indicating that you may be interested in cars. This could enable us to show you ads about cars."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "You can control tailored advertising on your Account Privacy page under ‘Tailored Ads’."
+          ],
+          "added": [
+            "You can control tailored advertising through the ‘Tailored Ads’ setting."
+          ],
+          "context_before": [
+            "How to control tailored advertising:"
+          ],
+          "context_after": [
+            "If you do not have an account or are not logged in, you can also opt-out by clicking the 'Your Privacy Choices' link at the footer of our website."
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "If you are ‘opted out’ of tailored advertising on your Account Privacy page, you will receive less relevant advertising, including on our free Service Option, as well as our paid Service Option, as applicable (for example, advertising in podcasts). This type of advertising is based on your registration information and what you are currently listening to on our services. For example, if you are listening to a cooking podcast, you may hear an ad for a food processor."
+          ],
+          "added": [
+            "If you are ‘opted out’ of tailored advertising, you will receive less relevant advertising, including on our free Service Option, as well as our paid Service Option, as applicable (for example, advertising in podcasts). This type of advertising is based on your registration information and what you are currently listening to on our services. For example, if you are listening to a cooking podcast, you may hear an ad for a food processor."
+          ],
+          "context_before": [
+            "You can also visit our services via a browser with a recognized opt-out preference signal enabled, such as the Global Privacy Control (GPC). If you use a preference signal you may need to renew your preferences if you visit the Spotify Service with another device or browser, or if you clear your cookies."
+          ],
+          "context_after": [
+            "Appropriate age for tailored advertising:"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Younger users may have tailored advertising turned off by default. When you reach the appropriate age, you will start to receive tailored advertising . When this happens, you will receive a message within the Spotify Service to let you know. This message will contain a link to the Account Privacy page where you can change your preferences or ‘opt-out’ of tailored advertising at any time under Tailored Ads."
+          ],
+          "added": [
+            "Younger users may have tailored advertising turned off by default. When you reach the appropriate age, you will start to receive tailored advertising. When this happens, you will receive a message within the Spotify Service to let you know. This message will contain a link to the Tailored Ads setting where you can change your preferences or ‘opt-out’ of tailored advertising at any time."
+          ],
+          "context_before": [
+            "Appropriate age for tailored advertising:"
+          ],
+          "context_after": [
+            "3. Personal data we collect about you"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "profile name"
+          ],
+          "added": [
+            "display name"
+          ],
+          "context_before": [
+            "The type of data collected and used depends on the type of Service Option you have. It also depends on how you create your account, the country you are in, and if you use third party services to sign in. This may include your:"
+          ],
+          "context_after": [
+            "email address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "to deliver physical goods or gifts which you have requested"
+          ],
+          "added": [
+            "to deliver physical goods or gifts which you have purchased or requested"
+          ],
+          "context_before": [
+            "for billing and tax administration"
+          ],
+          "context_after": [
+            "In some cases, we may use a third party application to help you verify your address, such as Google Maps."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "There are a few types of information this includes, listed in the following sections."
+          ],
+          "added": [
+            "This includes information such as:"
+          ],
+          "context_before": [
+            "Personal data collected and processed about you when you’re accessing or using the Spotify Service."
+          ],
+          "context_after": [
+            "Information about how you use Spotify"
+          ],
+          "changed_words": 17
+        },
+        {
+          "removed": [
+            "Examples include:"
+          ],
+          "added": [
+            "Examples:"
+          ],
+          "context_before": [
+            "Information about how you use Spotify"
+          ],
+          "context_after": [
+            "information about your Spotify Service Option"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "prompts in AI powered features",
+            "transcripts",
+            "engagement with ads"
+          ],
+          "context_before": [
+            "interactions with other Spotify users"
+          ],
+          "context_after": [
+            "your use of third party services, devices and applications in connection with the Spotify Service"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Your general location includes country, region or state. We may learn this from technical data (e.g. your IP address, language setting of your device) or payment currency."
+          ],
+          "added": [
+            "Your general location includes country, region, state or city. We may learn this from technical data (e.g. your IP address, language setting of your device) or payment currency."
+          ],
+          "context_before": [
+            "Your general (non-precise) location"
+          ],
+          "context_after": [
+            "We need this to:"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "deliver content and advertising that’s relevant to you"
+          ],
+          "added": [
+            "deliver content, advertising and recommendations that are relevant to you"
+          ],
+          "context_before": [
+            "meet geographic requirements in our agreements with the owners of content on the Spotify Service"
+          ],
+          "context_after": [
+            "Your device sensor data"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "If voice features are available in your market and where you’ve chosen to use a voice feature, we collect and process voice data. Voice data means audio recordings of your voice and transcripts of those recordings."
+          ],
+          "added": [
+            "If voice features are available in your market and you’ve chosen to use a voice feature, we collect and process voice data. Voice data means audio recordings of your voice."
+          ],
+          "context_before": [
+            "Voice Data"
+          ],
+          "context_after": [
+            "Message Data"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Age Check Data is the data you provide if you use an Age Check powered by a third party provider on Spotify (“Age Check”). This includes:",
+            "Facial age estimation: a photo of your face which is used to estimate your age",
+            "Identity document verification: photos of your face and ID which are used to confirm your age and to verify that the ID belongs to you",
+            "Where Age Check Data is collected, we will obtain your consent and provide notice of the third party policies that apply to the processing of such data. All Age Check Data is deleted immediately after the Age Check."
+          ],
+          "added": [
+            "Age Check Data is the data you provide if you (i) choose to use a feature that is subject to an Age Check or (ii) are a parent or legal guardian providing parental consent for a Managed Account (“Age Check”). Examples of Age Check methods we use, which are powered by a third party provider, are:",
+            "identity document verification: a photo of your identity document is used to confirm your age. In some cases, we may also use a photo of your face to verify that your ID belongs to you",
+            "facial age estimation: a photo of your face which is used to estimate your age",
+            "All Age Check Data is deleted immediately after the Age Check."
+          ],
+          "context_before": [
+            "Age Check Data"
+          ],
+          "context_after": [
+            "Payment and Purchase Data"
+          ],
+          "changed_words": 133
+        },
+        {
+          "removed": [
+            "If you make any purchases from Spotify or sign up for a paid Service Option or a trial, we will need to process your payment data."
+          ],
+          "added": [
+            "If you make any purchases from Spotify or sign up for certain Service Options or a trial, we will need to process your payment data."
+          ],
+          "context_before": [
+            "Payment and Purchase Data"
+          ],
+          "context_after": [
+            "The exact personal data collected and used will vary depending on the payment method. It will include information such as:"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "if using a debit or credit card, the card type, expiration date, and certain digits of your card number. Note: For security, we never store your full card number"
+          ],
+          "added": [
+            "if using a debit or credit card, the card type, expiry date and certain digits of your card number. Note: For security, Spotify never stores your full card number"
+          ],
+          "context_before": [
+            "payment method type (e.g. credit or debit card)"
+          ],
+          "context_after": [
+            "ZIP/postal code"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "We receive inferences from certain advertising or marketing partners. These inferences are the partners’ understanding of your interests and preferences.",
+            "This allows us to deliver more relevant ads and marketing."
+          ],
+          "added": [
+            "We receive data about you from certain advertising or marketing partners, including device identifiers such as hashed contact information. They also provide us with inferences, which are the partners’ understanding of your interests and preferences.",
+            "This allows us to deliver more relevant ads and marketing, and measure their performance."
+          ],
+          "context_before": [
+            "Advertising and marketing partners"
+          ],
+          "context_after": [
+            "Usage Data"
+          ],
+          "changed_words": 29
+        },
+        {
+          "removed": [
+            "• personalize your account",
+            "• provide the Spotify app when you download it onto your device,",
+            "• enable you to share a link to Spotify content with someone else, or",
+            "• provide an age-appropriate experience, or",
+            "• provide various optional features of the Spotify Service"
+          ],
+          "added": [
+            "personalize your account including your content recommendations, or",
+            "provide the Spotify app when you download it onto your device,",
+            "enable you to share a link to Spotify content with someone else, or",
+            "provide an age-appropriate experience, or",
+            "provide various optional features of the Spotify Service"
+          ],
+          "context_before": [
+            "set up an account for you"
+          ],
+          "context_after": [
+            "User Data"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "• an obligation under the law of the country / region you are in",
+            "• Swedish law (because of our headquarters in Sweden), or",
+            "• EU law that applies to us",
+            "For example, when we use your date of birth when required for age verification purposes.",
+            "User Data",
+            "Street Address Data",
+            "Usage Data",
+            "Voice Data",
+            "Message Data",
+            "Payment and Purchase Data",
+            "Survey and Research Data",
+            "To comply with a request from law enforcement, courts, or other competent authorities."
+          ],
+          "added": [
+            "an obligation under the law of the country/region you are in",
+            "Swedish law (because of our headquarters in Sweden), or",
+            "EU law that applies to us",
+            "For example, when we use your date of birth when required for age assurance purposes."
+          ],
+          "context_before": [
+            "This might be:"
+          ],
+          "context_after": [
+            "User Data"
+          ],
+          "changed_words": 41
+        },
+        {
+          "removed": [
+            "Voice Data"
+          ],
+          "added": [],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Message Data"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "With respect to Spotify Service users under the age of 18, we do not disclose personal data to advertising partners by default."
+          ],
+          "added": [],
+          "context_before": [
+            "For example, our ad partners help us facilitate tailored advertising."
+          ],
+          "context_after": [
+            "Marketing Partners"
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [
+            "• enabling our employees who work for different group companies to develop and improve features for the Spotify Service",
+            "• disclosing data to our measurement companies to measure the effectiveness of ad campaigns that run on the Spotify Service",
+            "• disclosing data to our podcast companies to better understand user listening trends",
+            "Law enforcement and other authorities, or other parties to litigation",
+            "User Data",
+            "Street Address Data",
+            "Usage Data",
+            "Voice Data",
+            "Payment and Purchase Data",
+            "Survey and Research Data",
+            "Message Data",
+            "When we believe in good faith it’s necessary for us to do so, for example:",
+            "to comply with a legal obligation",
+            "to respond to a valid legal process (such as a search warrant, court order, or subpoena)",
+            "for our own or a third party’s justifiable interest, relating to:",
+            "national security",
+            "law enforcement",
+            "litigation (a court case)",
+            "criminal investigation",
+            "protecting someone’s safety",
+            "preventing death or imminent bodily harm"
+          ],
+          "added": [
+            "enabling our employees who work for different group companies to develop and improve features for the Spotify Service",
+            "disclosing data to our measurement companies to measure the effectiveness of ad campaigns that run on the Spotify Service",
+            "disclosing data to our podcast companies to better understand user listening trends"
+          ],
+          "context_before": [
+            "For example:"
+          ],
+          "context_after": [
+            "Purchasers of our business"
+          ],
+          "changed_words": 99
+        },
+        {
+          "removed": [],
+          "added": [
+            "Courts and Authorities: We may process and share your personal data to comply with a request from courts, authorities, parties to litigation, or other authorized third parties. We will do so when we believe in good faith it is necessary, including:",
+            "to comply with a legal obligation",
+            "to respond to a valid legal process (such as a search warrant, court order, or subpoena)",
+            "for our own or a third party's justifiable interest such as criminal investigations, litigation, protecting someone’s safety, or preventing death or imminent bodily harm",
+            "The categories of personal data processed or shared will depend on the nature of the specific request."
+          ],
+          "context_before": [
+            "In this case, we may transfer your personal data to a successor or affiliate as part of that transaction."
+          ],
+          "context_after": [
+            "6. Data retention"
+          ],
+          "changed_words": 104
+        },
+        {
+          "removed": [
+            "This helps us investigate potential breaches of our User Guidelines and Platform Rules. On the other hand, we will remove unlawful content if the law requires us to do so."
+          ],
+          "added": [],
+          "context_before": [
+            "Age Check Data is deleted immediately after your Age Check is complete."
+          ],
+          "context_after": [
+            "7. Transfer to other countries"
+          ],
+          "changed_words": 30
+        },
+        {
+          "removed": [
+            "Note: This Policy doesn't apply to Spotify Kids except where the Spotify Kids Privacy Policy says so. Spotify Kids is a separate Spotify application.",
+            "The Spotify Service has a minimum ‘Age Limit’ in each country or region. The Spotify Service is not directed to children whose age:",
+            "is under the age of 13 years",
+            "makes it illegal to process their personal data, or",
+            "requires parental consent to process their personal data",
+            "We do not knowingly collect or use personal data from children under the applicable Age Limit. If you’re under the Age Limit, do not use the Spotify Service, and do not provide any personal data to us. Instead, we recommend using a Spotify Kids account.",
+            "If you’re a parent of a child under the Age Limit and become aware that your child has provided personal data to Spotify, contact us.",
+            "If we learn that we’ve collected the personal data of a child under the applicable Age Limit, we’ll take reasonable steps to delete the personal data. This may require us to delete the Spotify account for that child.",
+            "When using a shared device on the main Spotify Service, be cautious about playing or recommending any inappropriate content to individuals under 18 years old."
+          ],
+          "added": [
+            "Note: This Policy doesn't apply to Managed Accounts or Spotify Kids except where those respective privacy notices say so.",
+            "The Spotify Service (outside of Managed Accounts or Spotify Kids) that is tied to this privacy policy has a minimum age limit in each country or region (the “Age Limit”).",
+            "If you’re under the Age Limit, do not create or use the standard Spotify Service. Instead, we recommend asking a parent or guardian to create a Managed Account for you, where available. If you are above the Age Limit but under the age of majority in your country (a “Minor”), you may use the Spotify Service only with the consent of your parent or legal guardian.",
+            "We do not knowingly collect or use personal data from children under the applicable Age Limit outside of Managed Accounts or Spotify Kids. If you are a parent or guardian and become aware that your child, who is under the application Age Limit, has provided personal data to Spotify in any other context, contact us. If we learn that we’ve collected the personal data of a child under the applicable Age Limit, we’ll take reasonable steps to delete the personal data. This may require us to delete the Spotify account for that child.",
+            "When using a shared device on the Spotify Service, be cautious about playing or recommending any inappropriate content to individuals to Minors."
+          ],
+          "context_before": [
+            "9. Children"
+          ],
+          "context_after": [
+            "10. Privacy Request Metrics"
+          ],
+          "changed_words": 202
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260401045712/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20260501003531/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify now uses AI prompts, transcripts and ad engagement as personal data sources",
+        "summary": "Spotify's privacy policy now says it collects data such as prompts in AI-powered features, transcripts, and how you engage with ads, and that it gets data from advertising partners including hashed contact information. It also says this data is used to recommend content and to measure ad performance. The policy also now says that users under 18 are no longer kept from having their personal data shared with advertising partners by default, as the old wording said, and it has changed the Age Check and minor-consent rules.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "data_sharing",
+          "advertising",
+          "children"
+        ],
+        "what_you_can_do": "You can opt out of tailored advertising through the 'Tailored Ads' setting, or via the 'Your Privacy Choices' link at the footer of the website if you do not have an account or are not logged in.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2026-07-01",
+      "source": "archive",
+      "changed_words": 491,
+      "hunks": [
+        {
+          "removed": [
+            "10. Privacy Request Metrics",
+            "11. Changes to this Policy",
+            "12. How to contact us"
+          ],
+          "added": [
+            "10. Third-Party Links",
+            "11. Privacy Request Metrics",
+            "12. Changes to this Policy",
+            "13. How to contact us"
+          ],
+          "context_before": [
+            "9. Children"
+          ],
+          "context_after": [
+            "1. About this Policy"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "both our free or paid streaming options (each a ‘Service Option’)",
+            "other Spotify services which include a link to this Policy. These include Spotify websites, Customer Service and the Community Site."
+          ],
+          "added": [
+            "our free or paid streaming options (each a ‘Service Option’)",
+            "other Spotify services which include a link to this Policy. These include Spotify websites, Customer Service, and the Community Site."
+          ],
+          "context_before": [
+            "connection of your Spotify account with another application"
+          ],
+          "context_after": [
+            "From now on, we’ll collectively call these the ‘Spotify Service’."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "the Spotify Terms of Use, which is a separate document. The Terms of Use outline the legal contract between you and Spotify for using the Spotify Service. It also describes the rules of Spotify and your user rights"
+          ],
+          "added": [
+            "the Spotify Terms of Use, which is a separate document. The Terms of Use outline the legal contract between you and Spotify for using the Spotify Service. It also describes the rules of Spotify and your rights under your agreement."
+          ],
+          "context_before": [
+            "This Policy is not..."
+          ],
+          "context_after": [
+            "about your use of other Spotify services which have their own privacy policy, such as Megaphone."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "When you download your data you will receive the information about your data that Spotify has to provide under applicable laws. If you would like more information about how we process your personal data, you can contact us."
+          ],
+          "added": [
+            "When you download your data you will receive the information about your data that Spotify has to provide under applicable laws. If you would like more details about how we process your personal data, you can contact us."
+          ],
+          "context_before": [
+            "contact us"
+          ],
+          "context_after": [
+            "Correction"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "for any other deletion requests, you can contact us or reach out to customer support via our chat bot"
+          ],
+          "added": [
+            "for any other deletion requests, you can contact us"
+          ],
+          "context_before": [
+            "to request deletion of your account data from Spotify and close your account, follow the steps on our support page. This data includes your User Data, Usage Data and other data listed in Section 3 ‘Personal data we collect about you’"
+          ],
+          "context_after": [
+            "Opt-out of tailored advertising"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "You may designate, in writing or through a power of attorney (in accordance with local law), an authorized agent to make requests on your behalf to exercise your rights. Before accepting such a request from an agent, we will require the agent to provide proof you have authorized it to act on your behalf, and we may need you to verify your identity directly with us."
+          ],
+          "added": [
+            "You may designate, in writing or through a power of attorney (in accordance with local law), an authorized agent to make requests on your behalf to exercise your rights. Before accepting such a request, we will require the agent to provide proof you have authorized it to act on your behalf, and we may need you to verify your identity directly with us."
+          ],
+          "context_before": [
+            "Requests made through agents"
+          ],
+          "context_after": [
+            "Appeals process"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "This is when we use information about your use of our services and other websites and mobile apps to tailor ads to be more relevant to you. This is also known as interest based advertising, targeted advertising, or ‘sharing’ for purposes of cross-context behavioral advertising.",
+            "An example of tailored advertising is when an advertising partner provides us with information indicating that you may be interested in cars. This could enable us to show you ads about cars."
+          ],
+          "added": [
+            "This is when we use information about you to personalize ads to be more relevant. This is also known as interest based advertising, targeted advertising, or what some states may define as, ‘sharing or selling’ for purposes of cross-context behavioural advertising.",
+            "An example of tailored advertising is when an advertising partner provides us with information about topics you may be interested in, such as suggesting you might enjoy cooking. This could enable us to show you ads about blenders."
+          ],
+          "context_before": [
+            "What is tailored advertising?"
+          ],
+          "context_after": [
+            "How to control tailored advertising:"
+          ],
+          "changed_words": 46
+        },
+        {
+          "removed": [
+            "If you are ‘opted out’ of tailored advertising, you will receive less relevant advertising, including on our free Service Option, as well as our paid Service Option, as applicable (for example, advertising in podcasts). This type of advertising is based on your registration information and what you are currently listening to on our services. For example, if you are listening to a cooking podcast, you may hear an ad for a food processor."
+          ],
+          "added": [
+            "If you are ‘opted out’ of tailored advertising, you will receive less relevant advertising, including on our free Service Option, as well as our paid Service Option, as applicable (for example, advertising in podcasts). This type of advertising is based on your registration information and information about your real-time usage of Spotify, such as what you are currently listening to on our services. For example, if you are listening to a cooking podcast, you may hear an ad for a food processor."
+          ],
+          "context_before": [
+            "You can also visit our services via a browser with a recognized opt-out preference signal enabled, such as the Global Privacy Control (GPC). If you use a preference signal you may need to renew your preferences if you visit the Spotify Service with another device or browser, or if you clear your cookies."
+          ],
+          "context_after": [
+            "Appropriate age for tailored advertising:"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [],
+          "added": [
+            "Precise Location Data",
+            "Spotify will only use your precise location data with your permission. You can grant this access through the in-app pop-up and in your device settings. This information allows Spotify to offer a number of features such as better recommendations for nearby concerts and events."
+          ],
+          "context_before": [
+            "details of your purchase and payment history"
+          ],
+          "context_after": [
+            "Survey and Research Data"
+          ],
+          "changed_words": 47
+        },
+        {
+          "removed": [],
+          "added": [
+            "Customer Service Data",
+            "Information about your contacts with our Customer Service, such as chat conversations and email correspondence."
+          ],
+          "context_before": [
+            "When you respond to a survey or take part in user research, we collect and use the personal data you provide as described in the survey or research."
+          ],
+          "context_after": [
+            "We receive some of the data mentioned above from third parties. The below table describes the categories of those third parties."
+          ],
+          "changed_words": 18
+        },
+        {
+          "removed": [
+            "smart watches"
+          ],
+          "added": [
+            "wearables (e.g., smart watches)"
+          ],
+          "context_before": [
+            "audio (e.g. speakers and headphones)"
+          ],
+          "context_after": [
+            "televisions"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "We also work with security service providers who help us protect user accounts."
+          ],
+          "added": [
+            "We also work with technical service partners who help us protect user accounts."
+          ],
+          "context_before": [
+            "This makes it possible for Spotify to provide the Spotify Service, content, and features."
+          ],
+          "context_after": [
+            "User Data"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "If you choose to pay through third parties (e.g. telco carriers) or by invoice, we may get data from our payment partners."
+          ],
+          "added": [
+            "If you choose to pay through third parties or by invoice, we may get data from our payment partners."
+          ],
+          "context_before": [
+            "Payment partners and Merchants"
+          ],
+          "context_after": [
+            "This allows us to:"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "To improve our personalized recommendations and to improve the Spotify experience for all users, based on precise location data (where available and explicitly permitted by you).",
+            "For example, we can provide better personalized concert and event recommendations or let you know what is trending at your specific location. What we learn from your streaming at one location, could be used to suggest similar content to other users close to that location.",
+            "Precise Location Data"
+          ],
+          "context_before": [
+            "Age Check Data"
+          ],
+          "context_after": [
+            "To diagnose, troubleshoot, and fix issues with the Spotify Service."
+          ],
+          "changed_words": 74
+        },
+        {
+          "removed": [],
+          "added": [
+            "Customer Service Data"
+          ],
+          "context_before": [
+            "Message Data"
+          ],
+          "context_after": [
+            "To evaluate and develop new features, technologies, and improvements to the Spotify Service. This includes development and training of algorithmic and machine learning models, which help us to keep our service safe and enhance our users’ experience. For example:"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Customer Service Data"
+          ],
+          "context_before": [
+            "Survey and Research Data"
+          ],
+          "context_after": [
+            "For marketing or advertising purposes."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Precise Location Data",
+            "Customer Service Data"
+          ],
+          "context_before": [
+            "Survey and Research Data"
+          ],
+          "context_after": [
+            "To fulfill contractual obligations with third parties."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "To take appropriate action with reports of intellectual property infringement and inappropriate content."
+          ],
+          "added": [
+            "To detect, investigate and take appropriate action on reports of possible inappropriate content or violation of our Terms of Use or other Spotify terms, policies, rules or guidelines."
+          ],
+          "context_before": [
+            "Payment and Purchase Data"
+          ],
+          "context_after": [
+            "User Data"
+          ],
+          "changed_words": 27
+        },
+        {
+          "removed": [],
+          "added": [
+            "Customer Service Data"
+          ],
+          "context_before": [
+            "Payment and Purchase Data"
+          ],
+          "context_after": [
+            "To establish, exercise, or defend legal claims."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Customer Service Data"
+          ],
+          "context_before": [
+            "Survey and Research Data"
+          ],
+          "context_after": [
+            "To conduct business planning, reporting, and forecasting."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Customer Service Data"
+          ],
+          "context_before": [
+            "Payment and Purchase Data"
+          ],
+          "context_after": [
+            "To conduct research and surveys."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Publicly available information",
+            "The following personal data will always be publicly available on the Spotify Service (except to any user you have blocked):"
+          ],
+          "added": [
+            "Information available to other Spotify users",
+            "The following personal data is available to other Spotify users:"
+          ],
+          "context_before": [
+            "This section sets out who receives personal data which is collected or generated through your use of the Spotify Service."
+          ],
+          "context_after": [
+            "your profile name"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "your profile photo",
+            "your public playlists"
+          ],
+          "added": [
+            "your profile photo, if you choose to upload one",
+            "your public playlists, and any associated titles, descriptions and images"
+          ],
+          "context_before": [
+            "your profile name"
+          ],
+          "context_after": [
+            "other content you post on the Spotify Service, and any associated titles, descriptions and images"
+          ],
+          "changed_words": 17
+        },
+        {
+          "removed": [],
+          "added": [
+            "the number of people who you follow and the number of people who follow you on the Spotify Service (the profiles of those people may be visible depending on your settings)"
+          ],
+          "context_before": [
+            "other content you post on the Spotify Service, and any associated titles, descriptions and images"
+          ],
+          "context_after": [
+            "You or another user can share certain information on third party services, like social media or messaging platforms. This includes:"
+          ],
+          "changed_words": 31
+        },
+        {
+          "removed": [
+            "These service providers include those we hire to:"
+          ],
+          "added": [
+            "Examples of such service providers include those we hire to:"
+          ],
+          "context_before": [
+            "So they can provide their services to Spotify."
+          ],
+          "context_after": [
+            "give customer support"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "So they can help us deliver more relevant advertising to you on the Spotify Service, and help measure the effectiveness of ads.",
+            "For example, our ad partners help us facilitate tailored advertising."
+          ],
+          "added": [
+            "So Spotify and our advertising partners can deliver more relevant advertising to you on the Spotify Service and online, and help measure the effectiveness of ads.",
+            "We do not disclose personal data to advertising partners for users under the age of 18."
+          ],
+          "context_before": [
+            "Usage Data"
+          ],
+          "context_after": [
+            "Marketing Partners"
+          ],
+          "changed_words": 36
+        },
+        {
+          "removed": [
+            "If we were to sell or negotiate to sell our business to a buyer or possible buyer."
+          ],
+          "added": [
+            "If we were to sell or negotiate to sell any part of our business to a buyer or possible buyer."
+          ],
+          "context_before": [
+            "Survey and Research Data"
+          ],
+          "context_after": [
+            "In this case, we may transfer your personal data to a successor or affiliate as part of that transaction."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "We have set certain retention periods so that some data expires after a specific period of time. For example, personal data you may input as part of search queries is generally deleted after 90 days."
+          ],
+          "added": [
+            "Subject to other applicable retention rules listed in this Section 6, we have set certain retention periods so that data expires after a specific period of time. For example, personal data you may input as part of search queries is deleted after 90 days."
+          ],
+          "context_before": [
+            "Data that expires after a specific period of time"
+          ],
+          "context_after": [
+            "Data retained until your Spotify account is deleted"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [
+            "We keep some data until your Spotify account is deleted. Examples of this include your Spotify username and profile information. We also typically keep streaming history for the life of an account, for example, to provide retrospective playlists that users enjoy and personalized recommendations that take listening habits into account (for example, Your Time Capsule or Your Summer Rewind). When your Spotify account is deleted, this category of data is deleted or de-identified."
+          ],
+          "added": [
+            "We keep some data until your Spotify account is deleted. Examples of this include your Spotify username and profile information. We also keep streaming history for the life of an account, for example, to provide retrospective playlists that users enjoy and personalized recommendations that take listening habits into account (for example, Your Time Capsule or Your Summer Rewind). When your Spotify account is deleted, this category of data is deleted or de-identified."
+          ],
+          "context_before": [
+            "Data retained until your Spotify account is deleted"
+          ],
+          "context_after": [
+            "Data retained for extended time periods for limited purposes"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "If other individuals have access to your Spotify account, then they can access personal data, controls and the Spotify Service available in your account. For example, you might have allowed someone to use your account on a shared device.",
+            "It’s your responsibility to only allow individuals to use your account where you’re comfortable sharing this personal data with them. Anyone else’s use of your Spotify account may impact your personalized recommendations."
+          ],
+          "added": [
+            "If other individuals have access to your Spotify account, then they can access personal data, controls and the Spotify Service available in your account. For example, someone might use your account on a shared device.",
+            "It’s your responsibility to only allow this to happen if you’re comfortable sharing your personal data with them. Anyone else’s use of your Spotify account may impact your personalized recommendations."
+          ],
+          "context_before": [
+            "You can log out of Spotify in multiple places at once by using the ‘Sign out everywhere’ function on your account page."
+          ],
+          "context_after": [
+            "9. Children"
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [
+            "10. Privacy Request Metrics"
+          ],
+          "added": [
+            "10. Third-Party Links",
+            "The Spotify Service may include links to third-party websites, plug-ins and applications. Clicking on such links may allow third parties to collect or share data about you. Spotify does not control these third-party websites and is not responsible for their privacy practices.",
+            "11. Privacy Request Metrics"
+          ],
+          "context_before": [
+            "When using a shared device on the Spotify Service, be cautious about playing or recommending any inappropriate content to individuals to Minors."
+          ],
+          "context_after": [
+            "The following chart contains statistics about global requests we received from users between 1 January and 31 December 2024:"
+          ],
+          "changed_words": 45
+        },
+        {
+          "removed": [
+            "11. Changes to this Policy"
+          ],
+          "added": [
+            "12. Changes to this Policy"
+          ],
+          "context_before": [
+            "*Adjustments in the user account within the Service made either by the user themselves or aided by customer services are not counted as correction requests (e.g., user updated their display name)"
+          ],
+          "context_after": [
+            "We may occasionally make changes to this Policy."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "12. How to contact us"
+          ],
+          "added": [
+            "13. How to contact us"
+          ],
+          "context_before": [
+            "When we make material changes to this Policy, we’ll provide you with prominent notice as appropriate under the circumstances. For example, we may display a prominent notice within the Spotify Service or send you an email or device notification."
+          ],
+          "context_after": [
+            "For any questions or concerns about this Policy, contact our Data Protection Officer any one of these ways:"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "email privacy@spotify.com",
+            "write to us at: Spotify USA Inc., 150 Greenwich Street, Floor 62, New York, NY 10007, USA"
+          ],
+          "added": [
+            "Email us at privacy@spotify.com",
+            "write to us at: Spotify USA Inc., 150 Greenwich Street, Floor 62, New York, NY 10007, USA, Attn: Data Protection Officer"
+          ],
+          "context_before": [
+            "For any questions or concerns about this Policy, contact our Data Protection Officer any one of these ways:"
+          ],
+          "context_after": [
+            "Spotify USA Inc. is the data controller of personal data processed under this Policy."
+          ],
+          "changed_words": 10
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260601041041/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20260701034539/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify adds precise location data and customer service chats to its privacy policy",
+        "summary": "Spotify now says it collects precise location data (only with your permission) and customer service chats and emails, and uses precise location to improve recommendations for all users. Ads may now be based on your real-time listening, and Spotify says it does not share personal data with advertising partners for users under 18.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "advertising",
+          "data_sharing"
+        ],
+        "what_you_can_do": "Opt-out of tailored advertising",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "spotify",
+      "doc": "privacy",
+      "date": "2026-08-01",
+      "source": "archive",
+      "changed_words": 36,
+      "hunks": [
+        {
+          "removed": [
+            "The following chart contains statistics about global requests we received from users between 1 January and 31 December 2024:"
+          ],
+          "added": [
+            "The following chart contains statistics about global requests we received from users between 1 January and 31 December 2025:"
+          ],
+          "context_before": [
+            "11. Privacy Request Metrics"
+          ],
+          "context_after": [
+            "Type of request"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "2,284,441",
+            "2,284,441"
+          ],
+          "added": [
+            "1,498,726",
+            "1,498,724",
+            "2",
+            "3.89 days",
+            "Request to Delete",
+            "8,260,593",
+            "8,260,593"
+          ],
+          "context_before": [
+            "Right to Know / Access"
+          ],
+          "context_after": [
+            "0"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "8.83 days",
+            "Request to Delete",
+            "7,542,315",
+            "7,542,315",
+            "0",
+            "15.5 days"
+          ],
+          "added": [
+            "15.47 days"
+          ],
+          "context_before": [
+            "0"
+          ],
+          "context_after": [
+            "Request to Correct*"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "34",
+            "4",
+            "30",
+            "12.32 days"
+          ],
+          "added": [
+            "512",
+            "428",
+            "84",
+            "23.4 days"
+          ],
+          "context_before": [
+            "Request to Correct*"
+          ],
+          "context_after": [
+            "Request to Opt-Out of Data Sharing for Tailored Ads"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "29,213,601",
+            "29,213,601"
+          ],
+          "added": [
+            "3,379,178",
+            "3,379,178"
+          ],
+          "context_before": [
+            "Request to Opt-Out of Data Sharing for Tailored Ads"
+          ],
+          "context_after": [
+            "0"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260701034539/https://www.spotify.com/us/legal/privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20260801022611/https://www.spotify.com/us/legal/privacy-policy/",
+      "ai": {
+        "headline": "Spotify updates its privacy request statistics from 2024 to 2025",
+        "summary": "Spotify replaced its 2024 chart of user privacy requests (such as access, deletion, correction, and opt-out requests) with updated figures for 2025. The numbers show the volume and response times for each type of request, and the policy wording itself does not add or remove any user rights.",
+        "severity": "minor",
+        "categories": [
+          "your_rights"
+        ],
+        "what_you_can_do": null,
         "model": "claude-haiku-5-5"
       }
     }
@@ -2138,98 +4445,238 @@
   "versions": [
     {
       "date": "2023-01-01",
-      "words": 6998,
+      "words": 6985,
       "archive": "https://web.archive.org/web/20230101005146/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-02-01",
-      "words": 6973,
+      "words": 6985,
       "archive": "https://web.archive.org/web/20230201143433/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-03-01",
-      "words": 6888,
+      "words": 6889,
       "archive": "https://web.archive.org/web/20230301001109/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-04-01",
-      "words": 6888,
+      "words": 6889,
       "archive": "https://web.archive.org/web/20230401140520/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-05-01",
-      "words": 6888,
+      "words": 6889,
       "archive": "https://web.archive.org/web/20230501084509/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-06-01",
-      "words": 6888,
+      "words": 6889,
       "archive": "https://web.archive.org/web/20230601060733/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-07-01",
-      "words": 5812,
+      "words": 5788,
       "archive": "https://web.archive.org/web/20230701184314/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-08-01",
-      "words": 5812,
+      "words": 5788,
       "archive": "https://web.archive.org/web/20230801015416/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-09-01",
-      "words": 5787,
+      "words": 5788,
       "archive": "https://web.archive.org/web/20230901101409/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-10-01",
-      "words": 5787,
+      "words": 5788,
       "archive": "https://web.archive.org/web/20231001103805/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-11-03",
-      "words": 5787,
+      "words": 5788,
       "archive": "https://web.archive.org/web/20231103102428/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2023-12-01",
-      "words": 5787,
+      "words": 5788,
       "archive": "https://web.archive.org/web/20231201040305/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2024-01-01",
-      "words": 5905,
+      "words": 5883,
       "archive": "https://web.archive.org/web/20240101060331/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2024-02-01",
-      "words": 5882,
+      "words": 5883,
       "archive": "https://web.archive.org/web/20240201000640/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2024-03-01",
-      "words": 5882,
+      "words": 5883,
       "archive": "https://web.archive.org/web/20240301051813/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2024-04-01",
-      "words": 5882,
+      "words": 5883,
       "archive": "https://web.archive.org/web/20240401003131/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2024-05-01",
-      "words": 5882,
+      "words": 5883,
       "archive": "https://web.archive.org/web/20240501104602/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2024-06-01",
-      "words": 5882,
+      "words": 5883,
       "archive": "https://web.archive.org/web/20240601034515/https://www.spotify.com/us/legal/privacy-policy/"
     },
     {
       "date": "2024-07-01",
-      "words": 6082,
+      "words": 6264,
       "archive": "https://web.archive.org/web/20240701001846/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 6175,
+      "archive": "https://web.archive.org/web/20240801044012/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 6117,
+      "archive": "https://web.archive.org/web/20240901015619/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-10-01",
+      "words": 6117,
+      "archive": "https://web.archive.org/web/20241001035349/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-11-01",
+      "words": 6119,
+      "archive": "https://web.archive.org/web/20241101044300/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 6119,
+      "archive": "https://web.archive.org/web/20241201005555/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-01-01",
+      "words": 6098,
+      "archive": "https://web.archive.org/web/20250101013212/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-02-01",
+      "words": 6098,
+      "archive": "https://web.archive.org/web/20250201002919/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-03-02",
+      "words": 6098,
+      "archive": "https://web.archive.org/web/20250302082540/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 6098,
+      "archive": "https://web.archive.org/web/20250401022004/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-05-02",
+      "words": 6098,
+      "archive": "https://web.archive.org/web/20250502080442/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-06-02",
+      "words": 6236,
+      "archive": "https://web.archive.org/web/20250602120520/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-07-02",
+      "words": 6236,
+      "archive": "https://web.archive.org/web/20250702071935/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 6236,
+      "archive": "https://web.archive.org/web/20250801214603/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20250901121246/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20251001000343/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-11-01",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20251101140145/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20251201083747/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-01-02",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20260102055436/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20260201160058/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20260301141332/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 6429,
+      "archive": "https://web.archive.org/web/20260401045712/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 6343,
+      "archive": "https://web.archive.org/web/20260501003531/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 6343,
+      "archive": "https://web.archive.org/web/20260601041041/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-07-01",
+      "words": 6624,
+      "archive": "https://web.archive.org/web/20260701034539/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 6624,
+      "archive": "https://web.archive.org/web/20260801022611/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 6624,
+      "archive": "https://web.archive.org/web/20260901000630/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 6624,
+      "archive": "https://web.archive.org/web/20261001070438/https://www.spotify.com/us/legal/privacy-policy/"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 6624,
+      "archive": "https://web.archive.org/web/20261101014053/https://www.spotify.com/us/legal/privacy-policy/"
     }
   ]
 }

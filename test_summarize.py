@@ -37,6 +37,7 @@ class FakeClient:
         self.calls = []
         self.fail = fail
         self.answer = answer or {
+            "headline": "ExampleApp will train AI on your posts",
             "summary": "ExampleApp will now use your posts to train AI.",
             "severity": "major",
             "categories": ["ai_training", "your_content"],
@@ -84,6 +85,8 @@ check("trims a giant paragraph", len(sm.format_change_for_ai(huge)) < 3500)
 print("\nWhat we do with the answer:")
 check("returns the summary", result["summary"].startswith("ExampleApp"))
 check("returns the severity", result["severity"] == "major")
+check("returns a short headline for the website", result["headline"] == "ExampleApp will train AI on your posts")
+check("headline is a required part of the form", "headline" in sm.SUMMARY_TOOL["input_schema"]["required"])
 check("records which model wrote it", result["model"] == sm.MODEL)
 
 with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
@@ -100,6 +103,16 @@ with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
     client2 = FakeClient()
     count2 = sm.summarize_report(client2, report_path)
     check("already-summarized changes are skipped (no paying twice)", count2 == 0 and client2.calls == [])
+
+    # A change summarized before headlines existed gets only a headline added.
+    old = json.loads(report_path.read_text(encoding="utf-8"))
+    old["changes"][0]["ai"] = {"summary": "Reviewed summary.", "severity": "moderate", "categories": ["other"], "what_you_can_do": None}
+    report_path.write_text(json.dumps(old), encoding="utf-8")
+    client3 = FakeClient()
+    count_h = sm.summarize_report(client3, report_path)
+    saved_h = json.loads(report_path.read_text(encoding="utf-8"))["changes"][0]["ai"]
+    check("older summaries get a headline added", count_h == 1 and saved_h["headline"] == "ExampleApp will train AI on your posts")
+    check("adding a headline keeps the reviewed summary and severity", saved_h["summary"] == "Reviewed summary." and saved_h["severity"] == "moderate")
 
     shutil.copy("examples/sample_change.json", report_path)
     failing = FakeClient(fail=True)

@@ -14,7 +14,7 @@ What it does, in order:
   1. Loads your API key from the .env file (never from the code)
   2. Opens each change report in changes/
   3. For each change that doesn't have a summary yet, sends it to Claude (summarize_change)
-  4. Forces the answer into a fixed shape: summary, severity, categories, what_you_can_do
+  4. Forces the answer into a fixed shape: headline, summary, severity, categories, what_you_can_do
   5. Saves the summary back into the same report file
 """
 
@@ -55,6 +55,10 @@ SUMMARY_TOOL = {
     "input_schema": {
         "type": "object",
         "properties": {
+            "headline": {
+                "type": "string",
+                "description": "A short news-style headline for the website, at most 10 words, saying what changed for users. Plain and specific, not clickbait. Start with the company name. Example: 'Spotify now lists age and gender among the data it collects'.",
+            },
             "summary": {
                 "type": "string",
                 "description": "1-2 plain-English sentences a regular person understands: what changed and what it means for users. Start with the company name.",
@@ -74,7 +78,7 @@ SUMMARY_TOOL = {
                 "description": "One concrete action a user can take (e.g. an opt-out setting) ONLY if the policy text itself says so. Otherwise null. Never invent settings.",
             },
         },
-        "required": ["summary", "severity", "categories", "what_you_can_do"],
+        "required": ["headline", "summary", "severity", "categories", "what_you_can_do"],
     },
 }
 
@@ -154,16 +158,23 @@ def summarize_report(client, report_path, save=True):
     report = json.loads(report_path.read_text(encoding="utf-8"))
     done = 0
     for change in report["changes"]:
-        if "ai" in change:
+        if change.get("ai", {}).get("headline"):
             continue  # already summarized on an earlier run, don't pay twice
         name = f"{change['company']} / {change['doc']}"
         try:
-            change["ai"] = summarize_change(client, change)
+            answer = summarize_change(client, change)
         except Exception as error:  # one failure shouldn't stop the rest
             print(f"  ! {name}: could not summarize ({error})")
             continue
+        if "ai" in change:
+            # Summarized before headlines existed: add just the headline and keep
+            # the summary and severity that were already written (and reviewed).
+            change["ai"]["headline"] = answer["headline"]
+            print(f"  [HEADLINE ADDED] {name}: {answer['headline']}")
+        else:
+            change["ai"] = answer
+            print(f"  [{answer['severity'].upper()}] {name}: {answer['headline']}")
         done += 1
-        print(f"  [{change['ai']['severity'].upper()}] {name}: {change['ai']['summary']}")
         if save:
             # Save after each one, so nothing is lost if something fails midway.
             report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")

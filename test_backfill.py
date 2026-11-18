@@ -70,6 +70,30 @@ check("lists the archived copies, oldest first", bf.list_snapshots(URL, 2024) ==
 check("turns timestamps into dates", bf.to_date("20240315083000") == "2024-03-15")
 check("builds a public link to an archived copy", bf.snapshot_link("20240315000000", URL) == "https://web.archive.org/web/20240315000000/https://example.com/privacy")
 
+print("\nOnly English copies count:")
+CZECH = "Ochrana soukromí a smluvní podmínky. Jaké údaje Google shromažďuje a proč je shromažďuje. " * 40
+TURKISH = "Gizlilik ve Şartlar. Google'ın topladığı bilgiler ve bilgilerinizi güvende tutma. " * 40
+check("an English policy looks English", bf.looks_english(FILLER + " We collect your email and use it to run the service."))
+check("a Czech copy does not", not bf.looks_english(CZECH))
+check("a Turkish copy does not", not bf.looks_english(TURKISH))
+check("an empty copy does not", not bf.looks_english(""))
+
+print("\nSkipping blips (a version that shows up and then disappears again):")
+A, B, C, EU = FILLER + " Version A.", FILLER + " Version B.", FILLER + " Version C.", FILLER + " Version A. Europe-only section."
+texts = lambda vs: [t for _, t in vs]
+check("one odd copy between two matching ones is skipped", texts(bf.drop_blips([("1", A), ("2", EU), ("3", A)])) == [A, None, A])
+check("two odd copies in a row are skipped too", texts(bf.drop_blips([("1", A), ("2", EU), ("3", EU), ("4", A)])) == [A, None, None, A])
+check("a real change that sticks is kept", texts(bf.drop_blips([("1", A), ("2", B), ("3", B)])) == [A, B, B])
+check("a change followed by another change is kept", texts(bf.drop_blips([("1", A), ("2", B), ("3", C)])) == [A, B, C])
+check("broken copies don't confuse it", texts(bf.drop_blips([("1", A), ("2", None), ("3", EU), ("4", A)])) == [A, None, None, A])
+check("three odd copies in a row count as a real change (kept)", texts(bf.drop_blips([("1", A), ("2", B), ("3", B), ("4", B), ("5", A)])) == [A, B, B, B, A])
+check("the history then shows no change at all", bf.find_history("acme", "privacy", URL, bf.drop_blips([("20240101000000", A), ("20240201000000", EU), ("20240301000000", A)])) == [])
+
+print("\nKeeping only the US version when a page has regional versions:")
+US, EUV = FILLER + " U.S. state law requirements apply.", FILLER + " European requirements apply."
+check("copies without the US-only phrase are skipped", texts(bf.keep_us_version([("1", US), ("2", EUV), ("3", None)], "U.S. state law requirements")) == [US, None, None])
+check("pages without the setting are untouched", texts(bf.keep_us_version([("1", US), ("2", EUV)], None)) == [US, EUV])
+
 start_dir = os.getcwd()
 with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
     os.chdir(tmp)
@@ -82,6 +106,11 @@ with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
         again = [bf.fetch_snapshot_text("acme", "privacy", ts, URL) for ts in SNAPSHOTS]
         check("second run uses the cache (no new downloads)", len(downloads) == 5)
         check("cached copies match", again == [text for _, text in versions])
+
+        foreign = Path("archive_cache") / "acme" / "privacy" / "20240615000000.txt"
+        foreign.write_text(CZECH, encoding="utf-8")
+        check("a foreign-language copy in the cache is skipped, not compared", bf.fetch_snapshot_text("acme", "privacy", "20240615000000", URL) is None)
+        check("...and stays in the cache untouched", foreign.read_text(encoding="utf-8") == CZECH)
 
         print("\nFinding the history:")
         changes = bf.find_history("acme", "privacy", URL, versions)

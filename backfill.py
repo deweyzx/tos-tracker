@@ -44,6 +44,15 @@ BACKOFF_SECONDS = 60     # after a refused/rate-limited request, wait this long 
 MAX_FAILURES_IN_A_ROW = 3  # this many failures in a row = we're blocked: stop and try later
 MIN_WORDS = 300          # same rule as scraper.py: fewer words = broken/blocked page
 MIN_CHANGED_WORDS = 3    # ignore tiny one-word wobbles between archive copies
+# The archive saves pages from computers in different countries, so some copies are
+# in Czech, Turkish, etc. (Google, Meta, OpenAI, TikTok). Comparing those to an
+# English copy looks like the whole policy was rewritten. In real English policies
+# about a third of the words are common words like "the" and "you" (0.32+ in every
+# English copy we have); foreign copies score under 0.08. 0.2 splits them cleanly.
+MIN_ENGLISH_SHARE = 0.2
+COMMON_ENGLISH_WORDS = set(
+    "the and of to you your we our in for or with that this is are be by on as information may use from".split()
+)
 
 
 class ArchiveBlocked(Exception):
@@ -111,15 +120,30 @@ def snapshot_link(timestamp, url):
     return f"https://web.archive.org/web/{timestamp}/{url}"
 
 
+def looks_english(text):
+    """True if the text reads like English (see MIN_ENGLISH_SHARE above)."""
+    words = text.lower().split()
+    if not words:
+        return False
+    common = sum(1 for w in words if w.strip(".,;:()\"'") in COMMON_ENGLISH_WORDS)
+    return common / len(words) >= MIN_ENGLISH_SHARE
+
+
+def usable(text):
+    """The copy we compare, or None if it's broken, too short, or not in English."""
+    return text if text and looks_english(text) else None
+
+
 def fetch_snapshot_text(company, doc, timestamp, url):
     """Get the cleaned policy text of one archived copy (from cache if we have it).
 
-    Returns None if the copy is broken or too short.
+    Returns None if the copy is broken, too short, or not in English.
+    The cache keeps foreign-language copies as downloaded, so the English check
+    can be tuned later without downloading anything again.
     """
     cache_path = CACHE_DIR / company / doc / f"{timestamp}.txt"
     if cache_path.exists():
-        text = cache_path.read_text(encoding="utf-8")
-        return text or None  # an empty cached file means "known bad copy"
+        return usable(cache_path.read_text(encoding="utf-8"))  # empty file = known bad copy
 
     # "id_" after the timestamp asks for the original page, without the archive's toolbar.
     raw_url = f"https://web.archive.org/web/{timestamp}id_/{url}"
@@ -137,7 +161,57 @@ def fetch_snapshot_text(company, doc, timestamp, url):
 
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache_path.write_text(text, encoding="utf-8")
-    return text or None
+    return usable(text)
+
+
+MAX_BLIP_COPIES = 2  # a "change" undone within this many monthly copies is a blip, not a real edit
+
+
+def drop_blips(versions):
+    """Skip archived copies that are odd ones out, not real policy changes.
+
+    Some months the archive saves a different VERSION of the same page: Europe's
+    terms instead of the US ones (OpenAI), the policy without its U.S. state law
+    section (Google), an extra page stuck on (Apple), or a menu/banner glitch.
+    The next month it's back to normal. Compared in order, that looks like two
+    changes: one adding the stray text, one taking it away again.
+
+    Rule: if one or two copies in a row differ from the copies right before AND
+    right after them, and those two match each other, the ones in between are
+    blips. They're marked unusable (None), like broken copies.
+
+    versions: list of (timestamp, text or None), oldest first. Returns a new list.
+    """
+    result = list(versions)
+    good = [i for i, (_, text) in enumerate(result) if text is not None]
+    same = lambda a, b: not is_meaningful_change(remove_notices(a), remove_notices(b))
+    k = 1
+    while k < len(good) - 1:
+        before = result[good[k - 1]][1]
+        for size in range(1, MAX_BLIP_COPIES + 1):
+            if k + size >= len(good):
+                break
+            middle = [result[good[j]][1] for j in range(k, k + size)]
+            if same(before, result[good[k + size]][1]) and not any(same(before, m) for m in middle):
+                for j in range(k, k + size):
+                    result[good[j]] = (result[good[j]][0], None)
+                k += size
+                break
+        k += 1
+    return result
+
+
+def keep_us_version(versions, must_contain):
+    """Skip archived copies that are another country's version of the page.
+
+    Some sites (Google) show visitors in Europe a different policy, and the
+    archive saves whichever one its crawler got that month. If sources.json gives
+    the page an "archive_must_contain" phrase that only the US version has, copies
+    without it are marked unusable (None). Pages without the setting are untouched.
+    """
+    if not must_contain:
+        return list(versions)
+    return [(ts, text if text and must_contain in text else None) for ts, text in versions]
 
 
 def to_date(timestamp):
@@ -232,6 +306,8 @@ def main():
             print("Wait about an hour, then run the same command again. It will pick up where it left off.")
             return
 
+        versions = keep_us_version(versions, source.get("archive_must_contain"))  # e.g. Google's EU version
+        versions = drop_blips(versions)  # skip one-off regional versions and glitches
         missing = sum(1 for _, text in versions if text is None)
         changes = find_history(company, doc, url, versions)
         lengths = [

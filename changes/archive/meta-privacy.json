@@ -1,0 +1,3370 @@
+{
+  "date": "archive",
+  "company": "meta",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2023-09-01",
+      "source": "archive",
+      "changed_words": 531,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Read the United States Regional Privacy Notice for more details about how we handle Personal Information and how to exercise your rights.",
+            "Highlights"
+          ],
+          "context_before": [
+            "What is the Privacy Policy and what does it cover?"
+          ],
+          "context_after": [
+            "We at Meta want you to understand what information we collect, and how we use and share it. That’s why we encourage you to read our Privacy Policy. This helps you use Meta Products in the way that’s right for you."
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Highlights"
+          ],
+          "context_before": [
+            "What information do we collect?"
+          ],
+          "context_after": [
+            "The information we collect and process about you depends on how you use our Products. For example, we collect different information if you sell furniture on Marketplace than if you post a reel on Instagram. When you use our Products, we collect some information about you even if you don't have an account."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Information from Partners, vendors and third parties"
+          ],
+          "added": [
+            "Information from partners, vendors and other third parties"
+          ],
+          "context_before": [
+            "App, browser and device information"
+          ],
+          "context_after": [
+            "What if you don’t let us collect certain information?"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Take control in Privacy Center",
+            "Manage the information we collect about you"
+          ],
+          "added": [
+            "What if the information we collect doesn’t identify individuals?",
+            "In some cases information is de-identified, aggregated, or anonymized by third parties so that it no longer identifies individuals before it’s made available to us. We use this information as described below without trying to re-identify individuals.",
+            "Take control",
+            "Manage the information we collect about youPrivacy Center"
+          ],
+          "context_before": [
+            "Learn more"
+          ],
+          "context_after": [
+            "How do we use your information?"
+          ],
+          "changed_words": 52
+        },
+        {
+          "removed": [],
+          "added": [
+            "Highlights"
+          ],
+          "context_before": [
+            "How do we use your information?"
+          ],
+          "context_after": [
+            "We use information we collect to provide a personalized experience to you, including ads, along with the other purposes we explain in detail below."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "To use less information that’s connected to individual users, in some cases we de-identify or aggregate information. We might also anonymize it so that it no longer identifies you. We use this information in the same ways we use your information as described in this section."
+          ],
+          "added": [
+            "To use less information that’s connected to individual users, in some cases we de-identify or aggregate information or anonymize it so that it no longer identifies you. We use this information in the same ways we use your information as described in this section."
+          ],
+          "context_before": [
+            "For some of these purposes, we use information across our Products and across your devices. The information we use for these purposes is automatically processed by our systems. But in some cases, we also use manual review to access and review your information."
+          ],
+          "context_after": [
+            "Here are the ways we use your information:"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Lots of people rely on our Products to run or promote their businesses. We help them measure how well their ads and other content are working."
+          ],
+          "added": [
+            "Lots of people rely on our Products to run or promote their businesses. We help them measure how well their ads and other content, products and services are working."
+          ],
+          "context_before": [
+            "To provide measurement, analytics and business services"
+          ],
+          "context_after": [
+            "Learn more"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "How is your information shared on Meta Products or with Integrated Partners?"
+          ],
+          "added": [
+            "How is your information shared on Meta Products or with integrated partners?",
+            "Highlights"
+          ],
+          "context_before": [
+            "Why and how we process your information"
+          ],
+          "context_after": [
+            "On Meta Products"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Learn more about audiences in Privacy Center"
+          ],
+          "added": [
+            "Learn more about audiencesPrivacy Center"
+          ],
+          "context_before": [
+            "Take control"
+          ],
+          "context_after": [
+            "Manage apps and websites"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "How do we share information with Partners, vendors, service providers and third parties?",
+            "We don't sell any of your information to anyone, and we never will. We also require Partners and third parties to follow rules about how they can and cannot use and disclose the information we provide."
+          ],
+          "added": [
+            "How do we share information with third parties?",
+            "Highlights",
+            "We don't sell any of your information to anyone, and we never will. We also require partners and other third parties to follow rules about how they can and cannot use and disclose the information we provide."
+          ],
+          "context_before": [
+            "Manage apps and websites"
+          ],
+          "context_after": [
+            "Here’s more detail about who we share information with:"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Measurement and marketing vendors"
+          ],
+          "added": [
+            "Measurement vendors",
+            "Marketing vendors"
+          ],
+          "context_before": [
+            "Vendors"
+          ],
+          "context_after": [
+            "Service providers"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Other times we share with third parties",
+            "We also share information with third parties in response to legal requests, to comply with applicable law or to prevent harm. Read the policy.",
+            "And if we sell or transfer all or part of our business to someone else, then we may give the new owner your information as part of that transaction, in line with applicable law."
+          ],
+          "added": [
+            "Other third parties",
+            "We also share information with other third parties in response to legal requests, to comply with applicable law or to prevent harm. Read the policy.",
+            "And if we sell or transfer all or part of our business to someone else, in some cases we’ll give the new owner your information as part of that transaction, but only as the law allows."
+          ],
+          "context_before": [
+            "External researchers"
+          ],
+          "context_after": [
+            "How do the Meta Companies work together?"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Highlights"
+          ],
+          "context_before": [
+            "How do the Meta Companies work together?"
+          ],
+          "context_after": [
+            "We are part of the Meta Companies that provide Meta Company Products. Meta Company Products include all the Meta Products covered by this Policy, plus other products like WhatsApp, Novi and more."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "Highlights"
+          ],
+          "context_before": [
+            "How can you manage or delete your information and exercise your rights?"
+          ],
+          "context_after": [
+            "We offer you a variety of tools to view, manage, download and delete your information below. You can also manage your information by visiting the settings of the Products you use. You may also have other privacy rights under applicable laws."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "Highlights"
+          ],
+          "context_before": [
+            "How long do we keep your information?"
+          ],
+          "context_after": [
+            "We keep information as long as we need it to provide our Products, comply with legal obligations or protect our or other’s interests. We decide how long we need information on a case-by-case basis. Here’s what we consider when we decide:"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "Highlights"
+          ],
+          "context_before": [
+            "How do we transfer information?"
+          ],
+          "context_after": [
+            "Why is information transferred to other countries?"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "Highlights"
+          ],
+          "context_before": [
+            "How do we respond to legal requests, comply with applicable law and prevent harm?"
+          ],
+          "context_after": [
+            "We access, preserve, use and share your information:"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Personalizing the Meta Products: Our systems automatically process information we collect and store associated with you and others to assess and understand your interests and your preferences and provide you personalized experiences across the Meta Products in accordance with our terms. This is how we:"
+          ],
+          "added": [
+            "Personalizing the Meta Products (other than ads, see below): Our systems automatically process information we collect and store associated with you and others to assess and understand your interests and your preferences and provide you personalized experiences across the Meta Products in accordance with our terms. This is how we:"
+          ],
+          "context_before": [
+            "The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_after": [
+            "Personalize features and content (such as your News Feed, Instagram Feed and Stories);"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Personalize the ads people see; and"
+          ],
+          "added": [],
+          "context_before": [
+            "Personalize features and content (such as your News Feed, Instagram Feed and Stories);"
+          ],
+          "context_after": [
+            "Make suggestions for you (such as people you may know, groups or events that you may be interested in or topics that you may want to follow) on and off our products."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings (like GPS location)"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Information from Partners, vendors and third parties. (You have control over Meta’s use of Partner data to tailor ads to you.)"
+          ],
+          "added": [
+            "Information from partners, vendors and third parties",
+            "Providing ads on the Meta Products: Our systems automatically process limited categories of information that we've collected and stored to provide you with ads on the Meta Products in accordance with our terms.",
+            "Your activity and information you provide:Age",
+            "The gender you provide",
+            "Information about ads we show you and how you engage with those ads",
+            "App, browser and device information:Location information",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Information from cookies and similar technologies"
+          ],
+          "context_after": [
+            "Providing and improving our Meta Products: The provision of the Meta Products includes collecting, storing, and, where relevant, sharing, profiling, reviewing and curating, and in some instances not only automated processing but also manual (human) reviewing, to:"
+          ],
+          "changed_words": 79
+        },
+        {
+          "removed": [],
+          "added": [
+            "Connect your Meta Products account, including your public profile information, to an integrated partner to sign in or share your information,"
+          ],
+          "context_before": [
+            "Create and maintain your account and profile,"
+          ],
+          "context_after": [
+            "Facilitate the sharing of content and status,"
+          ],
+          "changed_words": 21
+        },
+        {
+          "removed": [
+            "Provide advertising products, and"
+          ],
+          "added": [
+            "Provide advertising products,",
+            "Understand and enable creation of content like text, images and videos, and"
+          ],
+          "context_before": [
+            "Provide messaging services, the ability to make voice and video calls and connect with others,"
+          ],
+          "context_after": [
+            "Undertake analytics."
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [],
+          "added": [
+            "Your public profile information (including your name, username and profile picture)"
+          ],
+          "context_before": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your advice apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:",
+            "Any information with special protections that you choose to provide in your profile fields (such as your religious views, political views, or who you are \"interested in\"), or as part of surveys you choose to participate in"
+          ],
+          "added": [
+            "Your activity and information you provide:Any information with special protections that you choose to provide, such as your religious views, your sexual orientation, political views, health, racial or ethnic origin, philosophical beliefs or trade union membership, or as part of surveys you choose to participate in, and where you have given your explicit consent"
+          ],
+          "context_before": [
+            "Processing information subject to special protections under applicable laws that you provide so we can share it with those you choose, to provide, personalize and improve our Products and to undertake analytics. We’ll collect, store, publish and apply automated, or sometimes manual (human), processing for these purposes."
+          ],
+          "context_after": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Products that we have associated with you to personalize ads that we show you on Meta Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information."
+          ],
+          "changed_words": 39
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like your contact, profile or other information, like posts or comments"
+          ],
+          "added": [
+            "Your activity and information you provide:Information such as your contact or profile information",
+            "Content you create, like posts or comments"
+          ],
+          "context_before": [
+            "If you choose to integrate other apps, games or websites with Meta Products and log in, we’ll share your information with the app, game or website to log you in."
+          ],
+          "context_after": [
+            "Providing measurement, analytics and business services:"
+          ],
+          "changed_words": 17
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users'"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users'"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users'"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Information from Partners, vendors and third parties",
+            "Share information with others, including law enforcement and to respond to legal requests."
+          ],
+          "added": [
+            "Information from partners, vendors and third parties",
+            "Sharing information with others, including law enforcement and to respond to legal requests."
+          ],
+          "context_before": [
+            "Information from cookies and similar technologies"
+          ],
+          "context_after": [
+            "See the \"How do we respond to legal requests, prevent harm and promote safety and integrity?\" section of the Meta Privacy Policy for more for information on when we share information with law enforcement and others."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "app, browser and device information:Device characteristics and device software",
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "App, browser and device information:Device characteristics and device software",
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "What you’re doing on your device (like whether our app is in the foreground or if your mouse is moving)"
+          ],
+          "added": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_before": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "context_after": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Location-related information"
+          ],
+          "context_before": [
+            "Information you’ve shared through your device settings"
+          ],
+          "context_after": [
+            "Information about the network you connect your device to, including your IP address"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230401021524/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20230901045013/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta now collects sexual orientation, health, and other sensitive details, with explicit consent",
+        "summary": "Meta's privacy policy now lists more kinds of sensitive information you may choose to share, including sexual orientation, health, racial or ethnic origin, and union membership, and says this is used only where you have given explicit consent. The policy also now mentions age, gender, and location among the information used to show ads, and says device activity can help tell humans from bots.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "advertising",
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2024-08-01",
+      "source": "archive",
+      "changed_words": 232,
+      "hunks": [
+        {
+          "removed": [
+            "Manage the information we collect about youPrivacy Center"
+          ],
+          "added": [
+            "Manage the information we collect about you",
+            "Privacy Center"
+          ],
+          "context_before": [
+            "Take control"
+          ],
+          "context_after": [
+            "How do we use your information?"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Learn more about audiencesPrivacy Center"
+          ],
+          "added": [
+            "Learn more about audiences",
+            "Privacy Center"
+          ],
+          "context_before": [
+            "Take control"
+          ],
+          "context_after": [
+            "Manage apps and websites"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Meta Products share information with other Meta Companies:To promote safety, security and integrity and comply with applicable laws"
+          ],
+          "added": [
+            "Meta Products share information with other Meta Companies:",
+            "To promote safety, security and integrity and comply with applicable laws"
+          ],
+          "context_before": [
+            "Why we share across the Meta Companies"
+          ],
+          "context_after": [
+            "To personalize offers, ads and other sponsored or commercial content"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Review the privacy policies of the other Meta CompaniesFacebook Help Center"
+          ],
+          "added": [
+            "Review the privacy policies of the other Meta Companies",
+            "Facebook Help Center"
+          ],
+          "context_before": [
+            "More resources"
+          ],
+          "context_after": [
+            "How can you manage or delete your information and exercise your rights?"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Take a privacy checkupBe guided through Facebook privacy settings"
+          ],
+          "added": [
+            "Take a privacy checkup",
+            "Be guided through Facebook privacy settings"
+          ],
+          "context_before": [
+            "Take a privacy checkup"
+          ],
+          "context_after": [
+            "View and manage your information"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Off-Facebook activity"
+          ],
+          "added": [
+            "Off-Meta activity"
+          ],
+          "context_before": [
+            "Access your information"
+          ],
+          "context_after": [
+            "Ad preferences"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "Learn more about how we use information about you to personalize your experience on and across Meta Products and how we choose the ads that you see."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Providing ads on the Meta Products: Our systems automatically process limited categories of information that we've collected and stored to provide you with ads on the Meta Products in accordance with our terms.",
+            "Your activity and information you provide:Age"
+          ],
+          "added": [
+            "Providing ads on the Meta Products:",
+            "Our ads system automatically processes information that we’ve collected and stored associated with you. Our ads system uses this information to understand your interests and your preferences and personalize your ads across the Meta Products.",
+            "Our ads system prioritizes what ad to show you based on what audience advertisers want to reach. Then we match the ad to people who might be interested. Learn more about how our ads system works",
+            "Your activity and information you provide:",
+            "Age"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "The gender you provide"
+          ],
+          "changed_words": 77
+        },
+        {
+          "removed": [
+            "App, browser and device information:Location information"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Location information"
+          ],
+          "context_before": [
+            "Information about ads we show you and how you engage with those ads"
+          ],
+          "context_after": [
+            "Device characteristics and device software"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Understand and enable creation of content like text, images and videos, and",
+            "Undertake analytics."
+          ],
+          "added": [
+            "Understand and enable creation of content like text, audio, images and videos, including through artificial intelligence technology we provide",
+            "Undertake analytics, and",
+            "Facilitate your purchases and payments on Meta Pay or other Meta checkout experiences."
+          ],
+          "context_before": [
+            "Provide advertising products,"
+          ],
+          "context_after": [
+            "We also use information to develop, research and test improvements to our Products. We use information we have to:"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "Conduct surveys and other research about what you like about our Products and brands and what we can do better."
+          ],
+          "context_after": [
+            "Your public profile information (including your name, username and profile picture)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide::Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide::",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "For more information on safety, integrity and security generally on Meta Products, visit the Facebook Security Help Center and Instagram Security Tips."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Contact information on your profile and your communications with us"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Contact information on your profile and your communications with us"
+          ],
+          "context_before": [
+            "We also use contact information like your email address to respond when you contact us."
+          ],
+          "context_after": [
+            "Content you create, like posts, comments or audio"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "For more information, see the \"How do we transfer information?\" section of the Meta Privacy Policy."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Identifiers that tell your advice apart from other users’"
+          ],
+          "added": [
+            "Identifiers that tell your device apart from other users’"
+          ],
+          "context_before": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "context_after": [
+            "Device signals"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Any information with special protections that you choose to provide, such as your religious views, your sexual orientation, political views, health, racial or ethnic origin, philosophical beliefs or trade union membership, or as part of surveys you choose to participate in, and where you have given your explicit consent"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Any information with special protections that you choose to provide, such as your religious views, your sexual orientation, political views, health, racial or ethnic origin, philosophical beliefs or trade union membership, or as part of surveys you choose to participate in, and where you have given your explicit consent"
+          ],
+          "context_before": [
+            "Processing information subject to special protections under applicable laws that you provide so we can share it with those you choose, to provide, personalize and improve our Products and to undertake analytics. We’ll collect, store, publish and apply automated, or sometimes manual (human), processing for these purposes."
+          ],
+          "context_after": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Products that we have associated with you to personalize ads that we show you on Meta Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Information and content you provide, such as your name or email address"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Information and content you provide, such as your name or email address"
+          ],
+          "context_before": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Products that we have associated with you to personalize ads that we show you on Meta Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information."
+          ],
+          "context_after": [
+            "Information from partners, vendors and third parties"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Information such as your contact or profile information"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Information such as your contact or profile information"
+          ],
+          "context_before": [
+            "If you choose to integrate other apps, games or websites with Meta Products and log in, we’ll share your information with the app, game or website to log you in."
+          ],
+          "context_after": [
+            "Content you create, like posts or comments"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "Provide aggregated user analytics and insights reports that help businesses, advertisers and other partners better understand the audiences with whom they may want to connect, as well as the types of people who use their services and how people interact with their websites, apps and services."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "To provide a seamless, consistent and richer, innovative experience across the Meta Company Products to enable cross app interactions, sharing, viewing and engaging with content, including posts and videos."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "To validate metrics directly related to these, in order to inform and improve product direction and development and to adhere to (shareholder/earning) reporting obligations."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Information you provide"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Information you provide"
+          ],
+          "context_before": [
+            "When we show you ads through Meta Audience Network when you visit other apps, our systems automatically process the information we have collected and stored about you and others to identify you as a Meta Product user and tailor the ads you see."
+          ],
+          "context_after": [
+            "Content you create, like posts, comments or audio"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide: Information and content you provide, including your contact information like email address",
+            "App, browser and device information:Device identifiers"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Information and content you provide, including your contact information like email address",
+            "App, browser and device information:",
+            "Device identifiers"
+          ],
+          "context_before": [
+            "We’ll collect and store your information and use it to send marketing communications to you, like an email, subject to applicable laws."
+          ],
+          "context_after": [
+            "Research and innovate for social good:"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "We collect, store, combine, analyze and apply automatic processing techniques like aggregation of information as well as manual (human) review, and share information, as necessary to research and innovate for social good in this way. We do this to do things like create COVID-19 forecasting models."
+          ],
+          "added": [
+            "We collect, store, combine, analyze and apply automatic processing techniques like aggregation of information as well as manual (human) review, and share information, as necessary to research and innovate for social good in this way.",
+            "We support research in areas like artificial intelligence and machine learning."
+          ],
+          "context_before": [
+            "For example, we analyze information that we have about migration patterns during crises. This helps relief organizations get aid to the right places."
+          ],
+          "context_after": [
+            "Learn more about our research programs."
+          ],
+          "changed_words": 18
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "Learn more about our research programs."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "In some cases, we anonymize information we have associated with you, such as your activity on and off our Products, and use the resulting information, for example, to provide and improve our Meta Products, including ads."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "Learn more about how we promote safety, security and integrity."
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Your activity and information you provide:Content you create, like posts, comments or audio"
+          ],
+          "added": [
+            "Your activity and information you provide:",
+            "Content you create, like posts, comments or audio"
+          ],
+          "context_before": [
+            "The categories of information depend on the specific circumstances of each mandatory request or obligation. Only the information necessary to comply with the relevant legal obligation will be shared or otherwise processed. For example, for civil matters, this will typically include limited information (such as contact details and login information). However, depending on the circumstances it could include the following:"
+          ],
+          "context_after": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "App, browser and device information:Device characteristics and device software"
+          ],
+          "added": [
+            "App, browser and device information:",
+            "Device characteristics and device software"
+          ],
+          "context_before": [
+            "Friends, followers and other connections"
+          ],
+          "context_after": [
+            "What you’re doing on your device, like whether our app is in the foreground or if your mouse is moving (which can help tell humans from bots)"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231001020713/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20240801024716/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta adds AI content creation and AI research to how it uses your information",
+        "summary": "Meta's privacy policy now says it uses information to understand and enable creation of content like text, audio, images and videos, including through the AI technology it provides. It also now lists AI and machine learning research among its social good research areas, replacing the COVID-19 forecasting example, and adds Meta Pay and checkout purchases to its uses of information.",
+        "severity": "major",
+        "categories": [
+          "ai_training",
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2024-11-01",
+      "source": "archive",
+      "changed_words": 51,
+      "hunks": [
+        {
+          "removed": [
+            "Read the United States Regional Privacy Notice for more details about how we handle Personal Information and how to exercise your rights."
+          ],
+          "added": [],
+          "context_before": [
+            "What is the Privacy Policy and what does it cover?"
+          ],
+          "context_after": [
+            "Highlights"
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [
+            "Privacy notice for United States residents",
+            "You can learn more about the consumer privacy rights that may be available to you by reviewing the United States Regional Privacy Notice."
+          ],
+          "added": [],
+          "context_before": [
+            "We'll notify you before we make material changes to this Policy. You’ll have the opportunity to review the revised Policy before you choose to continue using our Products."
+          ],
+          "context_after": [
+            "How to contact Meta with questions"
+          ],
+          "changed_words": 29
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240901003515/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20241101000011/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta removes its separate privacy notice for United States residents",
+        "summary": "Meta removed the links and references to its United States Regional Privacy Notice, which explained consumer privacy rights for US users. The removed text only pointed to that separate notice; it does not show any new rules about how your data is used, though the rights described in that notice are no longer referenced in this policy.",
+        "severity": "minor",
+        "categories": [
+          "your_rights",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2024-12-01",
+      "source": "archive",
+      "changed_words": 147,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Read the United States Regional Privacy Notice for more details about how we handle Personal Information and how to exercise your rights."
+          ],
+          "context_before": [
+            "What is the Privacy Policy and what does it cover?"
+          ],
+          "context_after": [
+            "Highlights"
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [
+            "In the Privacy Policy, we explain how we collect, use, share, retain and transfer information. We also let you know your rights. Each section of the Policy includes helpful examples and simpler language to make our practices easier to understand. We’ve also added links to resources where you can learn more about the privacy topics that interest you."
+          ],
+          "added": [
+            "In the Privacy Policy, we explain how we collect, use, share, retain and transfer information. We also let you know your rights. Each section of this Policy includes helpful examples and simpler language to make our practices easier to understand. We’ve also added links to resources where you can learn more about the privacy topics that interest you."
+          ],
+          "context_before": [
+            "We at Meta want you to understand what information we collect, and how we use and share it. That’s why we encourage you to read our Privacy Policy. This helps you use Meta Products in the way that’s right for you."
+          ],
+          "context_after": [
+            "It's important to us that you know how to control your privacy, so we also show you where you can manage your information in the settings of the Meta Products you use. You can update these settings to shape your experience."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Lots of people rely on our Products to run or promote their businesses. We help them measure how well their ads and other content, products and services are working."
+          ],
+          "added": [
+            "Lots of people rely on our Products to run or promote their businesses or share content. We help them measure how well their ads and other content, products and services are working."
+          ],
+          "context_before": [
+            "To provide measurement, analytics and business services"
+          ],
+          "context_after": [
+            "Learn more"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [],
+          "added": [
+            "AI integrations"
+          ],
+          "context_before": [
+            "External researchers"
+          ],
+          "context_after": [
+            "Other third parties"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "We are part of the Meta Companies that provide Meta Company Products. Meta Company Products include all the Meta Products covered by this Policy, plus other products like WhatsApp, Novi and more."
+          ],
+          "added": [
+            "We are part of the Meta Companies that provide Meta Company Products. Meta Company Products include all the Meta Products covered by this Policy, plus other products like WhatsApp and more."
+          ],
+          "context_before": [
+            "Highlights"
+          ],
+          "context_after": [
+            "We share information we collect, infrastructure, systems and technology with the other Meta Companies. Learn more about how we transfer information to other countries."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Privacy notice for United States residents",
+            "You can learn more about the consumer privacy rights that may be available to you by reviewing the United States Regional Privacy Notice."
+          ],
+          "context_before": [
+            "We'll notify you before we make material changes to this Policy. You’ll have the opportunity to review the revised Policy before you choose to continue using our Products."
+          ],
+          "context_after": [
+            "How to contact Meta with questions"
+          ],
+          "changed_words": 29
+        },
+        {
+          "removed": [
+            "Personalize features and content (such as your News Feed, Instagram Feed and Stories);"
+          ],
+          "added": [
+            "Personalize features and content (such as your Facebook Feed, Instagram Feed and Stories);"
+          ],
+          "context_before": [
+            "Personalizing the Meta Products (other than ads, see below): Our systems automatically process information we collect and store associated with you and others to assess and understand your interests and your preferences and provide you personalized experiences across the Meta Products in accordance with our terms. This is how we:"
+          ],
+          "context_after": [
+            "Make suggestions for you (such as people you may know, groups or events that you may be interested in or topics that you may want to follow) on and off our products."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Your photo or video selfie if you provide it when you contact us for account support"
+          ],
+          "context_before": [
+            "The time, frequency and duration of your activities on our Products"
+          ],
+          "context_after": [
+            "Friends, followers and other connections"
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [],
+          "added": [
+            "Your photo or video selfie if you provide it when you contact us for account support"
+          ],
+          "context_before": [
+            "The time, frequency and duration of your activities on our Products"
+          ],
+          "context_after": [
+            "Friends, followers and other connections"
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [],
+          "added": [
+            "Your photo or video selfie if you provide it when you contact us for account support"
+          ],
+          "context_before": [
+            "The time, frequency and duration of your activities on our Products"
+          ],
+          "context_after": [
+            "Friends, followers and other connections"
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [
+            "Provide aggregated user analytics and insights reports that help businesses, advertisers and other partners better understand the audiences with whom they may want to connect, as well as the types of people who use their services and how people interact with their websites, apps and services."
+          ],
+          "added": [
+            "Provide aggregated user analytics and insights reports that help users, businesses, advertisers and other partners better understand the audiences with whom they may want to connect, as well as the types of people who use their services and how people interact with their content, websites, apps and services."
+          ],
+          "context_before": [
+            "Provide insights and measurement reports to businesses, advertisers and other partners to help them measure the effectiveness and distribution of their or their clients’ ads, content and services, to understand the kinds of people who are seeing their content and ads, and how their content and ads are performing on and off Meta Products, and"
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Your photo or video selfie if you provide it when you contact us for account support"
+          ],
+          "context_before": [
+            "Hashtags you use"
+          ],
+          "context_after": [
+            "Friends, followers and other connections"
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [],
+          "added": [
+            "Your photo or video selfie if you provide it when you contact us for account support"
+          ],
+          "context_before": [
+            "The time, frequency and duration of your activities on our Products"
+          ],
+          "context_after": [
+            "Friends, followers and other connections"
+          ],
+          "changed_words": 16
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241101000011/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20241201015106/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta now collects selfies you send for account support",
+        "summary": "Meta's privacy policy now says it may collect a photo or video selfie if you provide one when contacting account support. Other changes are mostly wording: \"News Feed\" became \"Facebook Feed\", WhatsApp is no longer listed alongside \"Novi\", \"AI integrations\" was added as a type of third party information is shared with, and a new US privacy notice is linked.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "data_sharing",
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2025-07-02",
+      "source": "archive",
+      "changed_words": 83,
+      "hunks": [
+        {
+          "removed": [
+            "Providing ads on the Meta Products:",
+            "Our ads system automatically processes information that we’ve collected and stored associated with you. Our ads system uses this information to understand your interests and your preferences and personalize your ads across the Meta Products."
+          ],
+          "added": [
+            "Providing ads on the Meta Company Products:",
+            "Our ads system automatically processes information that we’ve collected and stored associated with you. Our ads system uses this information to understand your interests and your preferences and personalize your ads across the Meta Company Products."
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Our ads system prioritizes what ad to show you based on what audience advertisers want to reach. Then we match the ad to people who might be interested. Learn more about how our ads system works"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "If you decide to add a WhatsApp account to an Accounts Center with other accounts on Meta Company Products:",
+            "To associate your accounts on Meta Company Products with your WhatsApp account in the same Accounts Center and share your information with WhatsApp.",
+            "Note: the list below is about information from Meta. For information that WhatsApp shares with Meta see the WhatsApp Help Center article.",
+            "Your activity and information you provide",
+            "Friends, followers and other connections",
+            "App, browser and device information"
+          ],
+          "context_before": [
+            "Device characteristics and device software"
+          ],
+          "context_after": [
+            "Providing and improving our Meta Products: The provision of the Meta Products includes collecting, storing, and, where relevant, sharing, profiling, reviewing and curating, and in some instances not only automated processing but also manual (human) reviewing, to:"
+          ],
+          "changed_words": 80
+        },
+        {
+          "removed": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Products that we have associated with you to personalize ads that we show you on Meta Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information."
+          ],
+          "added": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Company Products that we have associated with you to personalize ads that we show you on Meta Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information."
+          ],
+          "context_before": [
+            "Any information with special protections that you choose to provide, such as your religious views, your sexual orientation, political views, health, racial or ethnic origin, philosophical beliefs or trade union membership, or as part of surveys you choose to participate in, and where you have given your explicit consent"
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 1
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250601173931/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20250702162815/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta's privacy policy now covers \"Meta Company Products\" in ads and data use",
+        "summary": "Meta changed \"Meta Products\" to \"Meta Company Products\" in several places, and added a section explaining that if you link a WhatsApp account to an Accounts Center with other Meta accounts, your Meta account information is associated with and shared with WhatsApp. The ads and third-party data wording otherwise stays the same in meaning, since the same ad personalization and partner-data uses are described under the new term.",
+        "severity": "moderate",
+        "categories": [
+          "advertising",
+          "data_sharing",
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2025-08-01",
+      "source": "archive",
+      "changed_words": 51,
+      "hunks": [
+        {
+          "removed": [
+            "Read the United States Regional Privacy Notice for more details about how we handle Personal Information and how to exercise your rights."
+          ],
+          "added": [],
+          "context_before": [
+            "What is the Privacy Policy and what does it cover?"
+          ],
+          "context_after": [
+            "Highlights"
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [
+            "Privacy notice for United States residents",
+            "You can learn more about the consumer privacy rights that may be available to you by reviewing the United States Regional Privacy Notice."
+          ],
+          "added": [],
+          "context_before": [
+            "We'll notify you before we make material changes to this Policy. You’ll have the opportunity to review the revised Policy before you choose to continue using our Products."
+          ],
+          "context_after": [
+            "How to contact Meta with questions"
+          ],
+          "changed_words": 29
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250702162815/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20250801010304/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta removes its separate privacy notice for United States residents",
+        "summary": "Meta removed the links and references to its United States Regional Privacy Notice, which described consumer privacy rights for US users. The removal only takes away the pointer to that notice; the text provided does not say whether the rights it described have changed.",
+        "severity": "minor",
+        "categories": [
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2025-11-01",
+      "source": "archive",
+      "changed_words": 29,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Updating on Dec 16, 2025",
+            "We’ll start using interactions with AIs to personalize experiences and ads. This update goes into effect on December 16, 2025.",
+            "Read the new policy."
+          ],
+          "context_before": [
+            "Privacy Policy"
+          ],
+          "context_after": [
+            "What is the Privacy Policy and what does it cover?"
+          ],
+          "changed_words": 29
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251001005411/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20251101211106/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta will use your conversations with its AI to personalize ads",
+        "summary": "Meta says that starting December 16, 2025, it will use your interactions with its AIs to personalize your experiences and the ads you see. This means your chats with Meta AI can shape what Meta shows you.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "advertising",
+          "ai_training"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2026-02-01",
+      "source": "archive",
+      "changed_words": 1601,
+      "hunks": [
+        {
+          "removed": [
+            "Updating on Dec 16, 2025",
+            "We’ll start using interactions with AIs to personalize experiences and ads. This update goes into effect on December 16, 2025.",
+            "Read the new policy."
+          ],
+          "added": [],
+          "context_before": [
+            "Privacy Policy"
+          ],
+          "context_after": [
+            "What is the Privacy Policy and what does it cover?"
+          ],
+          "changed_words": 29
+        },
+        {
+          "removed": [
+            "The information we collect and process about you depends on how you use our Products. For example, we collect different information if you sell furniture on Marketplace than if you post a reel on Instagram. When you use our Products, we collect some information about you even if you don't have an account."
+          ],
+          "added": [
+            "The information we collect and process about you depends on how you use our Products. For example, we collect different information if you sell furniture on Marketplace than if you ask AI at Meta to write a joke for you. When you use our Products, we collect some information about you even if you don't have an account."
+          ],
+          "context_before": [
+            "Highlights"
+          ],
+          "context_after": [
+            "Here's the information we collect:"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "We use information we have to provide and improve our Products. This includes personalizing features, content and recommendations, such as your Facebook Feed, Instagram Feed, Stories and ads. We use information with special protections you choose to provide for these purposes, but not to show you ads."
+          ],
+          "added": [
+            "We use information we have to provide and improve our Products. This includes:",
+            "Seeing if our Products are working correctly, such as troubleshooting, and fixing it when it’s not working",
+            "Personalizing features, content and recommendations, such as your Facebook Feed, Instagram Feed, AI at Meta, Stories and ads.",
+            "We use information with special protections you choose to provide for these purposes, but not to show you ads."
+          ],
+          "context_before": [
+            "To provide, personalize and improve our Products"
+          ],
+          "context_after": [
+            "Read more about how we use information to provide, personalize and improve our Products:"
+          ],
+          "changed_words": 24
+        },
+        {
+          "removed": [
+            "How we use information to improve our Products"
+          ],
+          "added": [
+            "How we use information to improve Meta Products"
+          ],
+          "context_before": [
+            "How we show ads and other sponsored or commercial content"
+          ],
+          "context_after": [
+            "How we use location-related information"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "To develop and provide features and integrations"
+          ],
+          "added": [
+            "To develop, provide and personalize features and integrations"
+          ],
+          "context_before": [
+            "To personalize offers, ads and other sponsored or commercial content"
+          ],
+          "context_after": [
+            "To understand how people use and interact with Meta Company Products"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "1601 Willow Road"
+          ],
+          "added": [
+            "1 Meta Way"
+          ],
+          "context_before": [
+            "ATTN: Privacy Operations"
+          ],
+          "context_after": [
+            "Menlo Park, CA 94025"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Why and how we process your information",
+            "Information categories we use (see 'What Information do we collect?' for more information on each information category)",
+            "The actual information we use depends on your factual circumstances, but could include any of the following:",
+            "Personalizing the Meta Products (other than ads, see below): Our systems automatically process information we collect and store associated with you and others to assess and understand your interests and your preferences and provide you personalized experiences across the Meta Products in accordance with our terms. This is how we:",
+            "Personalize features and content (such as your Facebook Feed, Instagram Feed and Stories);",
+            "Make suggestions for you (such as people you may know, groups or events that you may be interested in or topics that you may want to follow) on and off our products.",
+            "Learn more about how we use information about you to personalize your experience on and across Meta Products and how we choose the ads that you see."
+          ],
+          "added": [
+            "Personalizing Meta Products",
+            "Why and how we process your information:",
+            "Personalizing the Meta Products: Our systems automatically process information we've collected and stored associated with you and others to assess and understand your interests and your preferences and provide you personalized experiences on and across the Meta Company Products in accordance with our terms. This is how we:",
+            "Personalize features and content (such as your Facebook Feed, Instagram Feed, AI at Meta and Stories);",
+            "Personalize the ads people see, and",
+            "Make suggestions for you (such as people you may know, groups or events that you may be interested in or topics that you may want to follow) on and off our Products.",
+            "Our ads system prioritizes what ad to show you based on what audience advertisers want to reach. Then we match the ad to people who might be interested. Learn more about how our ads system works.",
+            "Learn more about how we choose the ads that you see.",
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "The categories of information we use, and why and how information is processed, are set out below:"
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 150
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [
+            "Providing ads on the Meta Company Products:",
+            "Our ads system automatically processes information that we’ve collected and stored associated with you. Our ads system uses this information to understand your interests and your preferences and personalize your ads across the Meta Company Products.",
+            "Our ads system prioritizes what ad to show you based on what audience advertisers want to reach. Then we match the ad to people who might be interested. Learn more about how our ads system works",
+            "Your activity and information you provide:",
+            "Age",
+            "The gender you provide",
+            "Information about ads we show you and how you engage with those ads",
+            "App, browser and device information:",
+            "Location information",
+            "Device characteristics and device software"
+          ],
+          "added": [
+            "For WhatsApp users, learn more about what information is shared with Meta.",
+            "Associating your accounts",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "If you decide to add a WhatsApp account to an Accounts Center with other accounts on Meta Company Products:"
+          ],
+          "changed_words": 125
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "To associate your accounts on Meta Company Products with your WhatsApp account in the same Accounts Center and share your information with WhatsApp."
+          ],
+          "context_after": [
+            "Note: the list below is about information from Meta. For information that WhatsApp shares with Meta see the WhatsApp Help Center article."
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Providing and improving Meta Products",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "App, browser and device information"
+          ],
+          "context_after": [
+            "Providing and improving our Meta Products: The provision of the Meta Products includes collecting, storing, and, where relevant, sharing, profiling, reviewing and curating, and in some instances not only automated processing but also manual (human) reviewing, to:"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "Understand and enable creation of content like text, audio, images and videos, including through artificial intelligence technology we provide,",
+            "Undertake analytics, and",
+            "Facilitate your purchases and payments on Meta Pay or other Meta checkout experiences.",
+            "We also use information to develop, research and test improvements to our Products. We use information we have to:",
+            "See if a product is working correctly,",
+            "Troubleshoot and fix it when it’s not,",
+            "Test out new products and features to see if they work,"
+          ],
+          "added": [
+            "Understand and enable creation of content like text, audio, images and videos, including through AI at Meta,",
+            "Undertake analytics,",
+            "Facilitate your purchases and payments on Meta Pay or other Meta checkout experiences, and",
+            "See if our Products are working correctly, such as troubleshooting, and fixing it when it’s not working.",
+            "We also use information to develop, research and test improvements to Meta Products. We use information we have to:",
+            "Develop and improve products and features,",
+            "Build and test out new products and features to see if they work,"
+          ],
+          "context_before": [
+            "Provide advertising products,"
+          ],
+          "context_after": [
+            "Get feedback on our ideas for products or features, and"
+          ],
+          "changed_words": 53
+        },
+        {
+          "removed": [
+            "Conduct surveys and other research about what you like about our Products and brands and what we can do better."
+          ],
+          "added": [
+            "Conduct surveys and other research about what you like about our Products and brands and on what we can do better for Meta Products and brands.",
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "Get feedback on our ideas for products or features, and"
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 42
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Developing and improving AI at Meta",
+            "Why and how we process your information:",
+            "Develop and improve AI at Meta for Meta Products and for third parties.",
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:",
+            "Your activity and information you provide:",
+            "Public content you or others create or share, like posts, comments or audio on Meta Products",
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages.",
+            "Information from partners, vendors and third parties",
+            "Promoting safety, integrity and security",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Promoting safety, integrity and security on and across the Meta Products: The Meta Products are designed to research and help ensure the safety, integrity and security of those services and those people who enjoy them, on and off Meta Products. We process information we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:"
+          ],
+          "changed_words": 124
+        },
+        {
+          "removed": [
+            "Your activity and information you provide::"
+          ],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:",
+            "Your activity and information you provide:"
+          ],
+          "context_before": [
+            "For more information on safety, integrity and security generally on Meta Products, visit the Facebook Security Help Center and Instagram Security Tips."
+          ],
+          "context_after": [
+            "Content you create, like posts, comments or audio"
+          ],
+          "changed_words": 36
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Communicating with you",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "To communicate with you: We use information you’ve given us (like contact information on your profile) to send you a communication, like an e-mail or in-product notice, for example:"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "We also use contact information like your email address to respond when you contact us."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Transferring, storing or processing your information globally",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from cookies and similar technologies."
+          ],
+          "context_after": [
+            "Transferring, storing or processing your information across borders, including from and to the United States and other countries: We share information we collect globally, both internally across our offices and data centers and externally with our partners, third parties and service providers. Because Meta is global, with users, partners, vendors and employees around the world, transfers are necessary:"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "For more information, see the \"How do we transfer information?\" section of the Meta Privacy Policy."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Processing information with special protections",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Processing information subject to special protections under applicable laws that you provide so we can share it with those you choose, to provide, personalize and improve our Products and to undertake analytics. We’ll collect, store, publish and apply automated, or sometimes manual (human), processing for these purposes."
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "Processing information subject to special protections under applicable laws that you provide so we can share it with those you choose, to provide, personalize and improve our Products and to undertake analytics. We’ll collect, store, publish and apply automated, or sometimes manual (human), processing for these purposes."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Company Products that we have associated with you to personalize ads that we show you on Meta Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information."
+          ],
+          "added": [
+            "Using information from third parties for personalizing ads",
+            "Why and how we process your information:",
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Company Products that we have associated with you to personalize ads that we show you on our Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information.",
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "Any information with special protections that you choose to provide, such as your religious views, your sexual orientation, political views, health, racial or ethnic origin, philosophical beliefs or trade union membership, or as part of surveys you choose to participate in, and where you have given your explicit consent"
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [],
+          "added": [
+            "Sharing information with third parties at your request",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Sharing your contact, profile or other information with third parties upon your request: The type of third party and categories of information shared depend on the circumstances of what you ask us to share. For example:"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "If you choose to integrate other apps, games or websites with Meta Products and log in, we’ll share your information with the app, game or website to log you in."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Providing measurement, analytics and business services",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Content you create, like posts or comments"
+          ],
+          "context_after": [
+            "Providing measurement, analytics and business services:"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "Provide aggregated user analytics and insights reports that help users, businesses, advertisers and other partners better understand the audiences with whom they may want to connect, as well as the types of people who use their services and how people interact with their content, websites, apps and services."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Providing a seamless experience",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from cookies and similar technologies"
+          ],
+          "context_after": [
+            "Sharing of information across the Meta Companies:"
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "To provide a seamless, consistent and richer, innovative experience across the Meta Company Products to enable cross app interactions, sharing, viewing and engaging with content, including posts and videos."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "For WhatsApp users, learn more about what information is shared with Meta.",
+            "Business intelligence and analytics",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from cookies and similar technologies"
+          ],
+          "context_after": [
+            "Business intelligence and analytics:"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "To validate metrics directly related to these, in order to inform and improve product direction and development and to adhere to (shareholder/earning) reporting obligations."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Personalizing ads on Meta Audience Network",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Identifying you as a Meta Product user and personalizing the ads we show you through Meta Audience Network when you visit other apps:"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "When we show you ads through Meta Audience Network when you visit other apps, our systems automatically process the information we have collected and stored about you and others to identify you as a Meta Product user and tailor the ads you see."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Providing marketing communications",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from cookies and similar technologies"
+          ],
+          "context_after": [
+            "Providing marketing communications to you:"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "We’ll collect and store your information and use it to send marketing communications to you, like an email, subject to applicable laws."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Undertaking research and innovation for social good",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Device identifiers"
+          ],
+          "context_after": [
+            "Research and innovate for social good:"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "Learn more about our research programs."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Why and how we process your information:",
+            "Anonymizing your information"
+          ],
+          "context_before": [
+            "Anonymizing your information"
+          ],
+          "context_after": [
+            "In some cases, we anonymize information we have associated with you, such as your activity on and off our Products, and use the resulting information, for example, to provide and improve our Meta Products, including ads."
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "In some cases, we anonymize information we have associated with you, such as your activity on and off our Products, and use the resulting information, for example, to provide and improve our Meta Products, including ads."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Sharing information with others including law enforcement to respond to legal requests",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Sharing information with others, including law enforcement and to respond to legal requests."
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "Learn more about how we promote safety, security and integrity."
+          ],
+          "context_after": [
+            "Your activity and information you provide:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [],
+          "added": [
+            "Processing information when required by law",
+            "Why and how we process your information:"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "For processing information when the law requires it: Where we are under an obligation to disclose information such as, for example, if we receive a valid legal request for certain information such as a search warrant, we will access, preserve and/or share your information with regulators, law enforcement or others."
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "context_before": [
+            "The way in which the information will be processed depends on the specific circumstances. See the \"How do we respond to legal requests, prevent harm and promote safety and integrity?\" section of the Meta Privacy Policy for more. \"Information for Law Enforcement Authorities\" provides information on the operational guidelines law enforcement needs to follow."
+          ],
+          "context_after": [
+            "The categories of information depend on the specific circumstances of each mandatory request or obligation. Only the information necessary to comply with the relevant legal obligation will be shared or otherwise processed. For example, for civil matters, this will typically include limited information (such as contact details and login information). However, depending on the circumstances it could include the following:"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251201025600/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20260201061542/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta adds new AI training use of user posts and AI chats",
+        "summary": "Meta's privacy policy now says it uses public posts, comments, audio, and your interactions with Meta AI to develop and improve AI at Meta for Meta Products and for third parties. This is a new use of user content for AI development, and the policy text provided does not describe an opt-out.",
+        "severity": "major",
+        "categories": [
+          "ai_training",
+          "your_content",
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2026-11-02",
+      "source": "archive",
+      "changed_words": 491,
+      "hunks": [
+        {
+          "removed": [
+            "The information we collect and process about you depends on how you use our Products. For example, we collect different information if you sell furniture on Marketplace than if you ask AI at Meta to write a joke for you. When you use our Products, we collect some information about you even if you don't have an account."
+          ],
+          "added": [
+            "The information we collect and process about you depends on how you use our Products. For example, we collect different information if you sell furniture on Marketplace than if you ask Meta AI to write a joke for you. When you use our Products, we collect some information about you even if you don't have an account."
+          ],
+          "context_before": [
+            "Highlights"
+          ],
+          "context_after": [
+            "Here's the information we collect:"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Personalizing features, content and recommendations, such as your Facebook Feed, Instagram Feed, AI at Meta, Stories and ads."
+          ],
+          "added": [
+            "Personalizing features, content and recommendations, such as your Facebook Feed, Instagram Feed, Meta AI, Stories and ads."
+          ],
+          "context_before": [
+            "Seeing if our Products are working correctly, such as troubleshooting, and fixing it when it’s not working"
+          ],
+          "context_after": [
+            "We use information with special protections you choose to provide for these purposes, but not to show you ads."
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [],
+          "added": [
+            "How we use information to personalize our features that are part of AI at Meta"
+          ],
+          "context_before": [
+            "How we use information to improve Meta Products"
+          ],
+          "context_after": [
+            "How we use location-related information"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [
+            "Off-Meta activity"
+          ],
+          "added": [
+            "Your information and permissions"
+          ],
+          "context_before": [
+            "Access your information"
+          ],
+          "context_after": [
+            "Ad preferences"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Personalizing the Meta Products: Our systems automatically process information we've collected and stored associated with you and others to assess and understand your interests and your preferences and provide you personalized experiences on and across the Meta Company Products in accordance with our terms. This is how we:",
+            "Personalize features and content (such as your Facebook Feed, Instagram Feed, AI at Meta and Stories);"
+          ],
+          "added": [
+            "Our systems automatically process information we've collected and stored associated with you and others to assess and understand your interests and your preferences and provide you personalized experiences on and across the Meta Company Products in accordance with our terms. This is how we:",
+            "Personalize features and content (such as your Facebook Feed, Instagram Feed, our features that are part of AI at Meta and Stories);"
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "Personalize the ads people see, and"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "Metadata about content",
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Metadata about content and messages, subject to applicable law",
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "If you decide to add a WhatsApp account to an Accounts Center with other accounts on Meta Company Products:",
+            "To associate your accounts on Meta Company Products with your WhatsApp account in the same Accounts Center and share your information with WhatsApp."
+          ],
+          "added": [
+            "If you add a WhatsApp account to an Accounts Center with other accounts on Meta Company Products: To associate your accounts on Meta Company Products with your WhatsApp account in the same Accounts Center and share your information with WhatsApp."
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Providing and improving our Meta Products: The provision of the Meta Products includes collecting, storing, and, where relevant, sharing, profiling, reviewing and curating, and in some instances not only automated processing but also manual (human) reviewing, to:",
+            "Create and maintain your account and profile,",
+            "Connect your Meta Products account, including your public profile information, to an integrated partner to sign in or share your information,",
+            "Facilitate the sharing of content and status,",
+            "Provide and curate features,",
+            "Provide messaging services, the ability to make voice and video calls and connect with others,",
+            "Provide advertising products,",
+            "Understand and enable creation of content like text, audio, images and videos, including through AI at Meta,",
+            "Undertake analytics,",
+            "Facilitate your purchases and payments on Meta Pay or other Meta checkout experiences, and",
+            "See if our Products are working correctly, such as troubleshooting, and fixing it when it’s not working."
+          ],
+          "added": [
+            "The provision of the Meta Products includes collecting, storing, and, where relevant, sharing, profiling, reviewing and curating, and in some instances not only automated processing but also manual (human) reviewing, to:",
+            "Create and maintain your account and profile",
+            "Connect your Meta Products account, including your public profile information, to an integrated partner to sign in or share your information",
+            "Facilitate the sharing of content and status",
+            "Provide and curate features",
+            "Provide messaging services, the ability to make voice and video calls and connect with others",
+            "Provide advertising products",
+            "Provide our features that are part of AI at Meta that do things like create and understand content (like text, audio, images and videos) and perform actions",
+            "Undertake analytics",
+            "Facilitate your purchases and payments on Meta Pay or other Meta checkout experiences",
+            "See if our Products are working correctly, such as troubleshooting, and fixing it when it’s not working"
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "We also use information to develop, research and test improvements to Meta Products. We use information we have to:"
+          ],
+          "changed_words": 57
+        },
+        {
+          "removed": [
+            "Develop and improve products and features,",
+            "Build and test out new products and features to see if they work,",
+            "Get feedback on our ideas for products or features, and",
+            "Conduct surveys and other research about what you like about our Products and brands and on what we can do better for Meta Products and brands."
+          ],
+          "added": [
+            "Develop and improve products and features",
+            "Build and test out new products and features to see if they work",
+            "Get feedback on our ideas for products or features",
+            "Conduct surveys and other research about what you like about our Products and brands and on what we can do better for Meta Products and brands"
+          ],
+          "context_before": [
+            "We also use information to develop, research and test improvements to Meta Products. We use information we have to:"
+          ],
+          "context_after": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages."
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features."
+          ],
+          "context_before": [
+            "Public content you or others create or share, like posts, comments or audio on Meta Products"
+          ],
+          "context_after": [
+            "Information from partners, vendors and third parties"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "Promoting safety, integrity and security"
+          ],
+          "added": [
+            "Promoting safety, integrity and security on and across the Meta Products"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Why and how we process your information:"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Promoting safety, integrity and security on and across the Meta Products: The Meta Products are designed to research and help ensure the safety, integrity and security of those services and those people who enjoy them, on and off Meta Products. We process information we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
+            "Verify accounts and activity,",
+            "Find and address violations of our terms or policies. In some cases, the decisions we make about violations are reviewed by the Oversight Board,",
+            "Investigate suspicious activity,",
+            "Detect, prevent and combat harmful or unlawful behavior, such as to review and, in some cases, remove content reported to us,",
+            "Identify and combat disparities and racial bias against historically marginalized communities,",
+            "Protect the life, physical or mental health, well-being or integrity of our users or others,",
+            "Detect and prevent spam, other security matters and other bad experiences,",
+            "Detect and stop threats to our personnel and property, and",
+            "Maintain the integrity of our Products."
+          ],
+          "added": [
+            "The Meta Products are designed to research and help ensure the safety, integrity and security of those services and those people who enjoy them, on and off Meta Products. We process information we have associated with you and apply automated processing techniques and, in some instances, conduct manual (human) review to:",
+            "Verify accounts and activity",
+            "Find and address violations of our terms or policies. In some cases, the decisions we make about violations are reviewed by the Oversight Board",
+            "Investigate suspicious activity",
+            "Detect, prevent and combat harmful or unlawful behavior, such as to review and, in some cases, remove content reported to us",
+            "Identify and combat disparities and racial bias against historically marginalized communities",
+            "Protect the life, physical or mental health, well-being or integrity of our users or others",
+            "Detect and prevent spam, other security matters and other bad experiences",
+            "Detect and stop threats to our personnel and property",
+            "Maintain the integrity of our Products"
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "For more information on safety, integrity and security generally on Meta Products, visit the Facebook Security Help Center and Instagram Security Tips."
+          ],
+          "changed_words": 30
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "To communicate with you: We use information you’ve given us (like contact information on your profile) to send you a communication, like an e-mail or in-product notice, for example:"
+          ],
+          "added": [
+            "We use information you’ve given us (like contact information on your profile) to send you a communication, like an e-mail or in-product notice, for example:"
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "We’ll contact you via email or in-product notifications in relation to the Meta Products, product-related issues, research or to let you know about our terms and policies."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "Any information with special protections that you choose to provide, such as your religious views, your sexual orientation, political views, health, racial or ethnic origin, philosophical beliefs or trade union membership, or as part of surveys you choose to participate in, and where you have given your explicit consent"
+          ],
+          "added": [
+            "Any information with special protections that you choose to provide, such as your religious views, your sexual orientation, political views, health, racial or ethnic origin, philosophical beliefs or trade union membership, or as part of surveys you choose to participate in, or where you have given your explicit consent"
+          ],
+          "context_before": [
+            "Your activity and information you provide:"
+          ],
+          "context_after": [
+            "Using information from third parties for personalizing ads"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off Meta Company Products that we have associated with you to personalize ads that we show you on our Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products. See the Cookies Policy for more information."
+          ],
+          "added": [
+            "Receiving and using information from third parties to tailor the ads you see: We’ll use information that advertisers, businesses and other partners provide us about activity off the Meta Company Products that we have associated with you to personalize ads that we show you on our Products, and on websites, apps and devices that use our advertising services. We receive this information whether or not you’re logged in or have an account on our Products, see the Cookies Policy for more information."
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "Information categories we use (see 'What Information do we collect?' for more detail on each information category). The actual information we use depends on your factual circumstances, but could include any of the following:"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Sharing your contact, profile or other information with third parties upon your request: The type of third party and categories of information shared depend on the circumstances of what you ask us to share. For example:"
+          ],
+          "added": [
+            "The type of third party and categories of information shared depend on the circumstances of what you ask us to share. For example:"
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "We share your email (or other contact information) or other information you might choose when you direct us to share it with an advertiser so they can contact you with additional information about a promoted product, and"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "Providing measurement, analytics and business services:"
+          ],
+          "added": [],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "Our systems automatically, as well as with some manual (human) processing, process information we have collected and stored about you and others. We use this information to:"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "Metadata about content",
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Metadata about content and messages, subject to applicable law",
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "Business intelligence and analytics:"
+          ],
+          "added": [],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "To understand, in aggregate, your usage of and across our Products, to accurately count people and businesses; and"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "Metadata about content",
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Metadata about content and messages, subject to applicable law",
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "Providing marketing communications to you:"
+          ],
+          "added": [],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "Depending on your settings and subject to applicable law, we’ll share marketing communications with you."
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Research and innovate for social good:"
+          ],
+          "added": [],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "We carry out surveys and use information (including from researchers we collaborate with) to conduct and support research and innovation on topics of general social welfare, technological advancement, public interest, health and well-being."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "Anonymizing your information"
+          ],
+          "added": [],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "In some cases, we anonymize information we have associated with you, such as your activity on and off our Products, and use the resulting information, for example, to provide and improve our Meta Products, including ads."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Metadata about content",
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Metadata about content and messages, subject to applicable law",
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "Sharing information with others including law enforcement to respond to legal requests"
+          ],
+          "added": [
+            "Sharing information with others including law enforcement and responding to legal requests"
+          ],
+          "context_before": [
+            "Information from partners, vendors and third parties"
+          ],
+          "context_after": [
+            "Why and how we process your information:"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Sharing information with others, including law enforcement and to respond to legal requests."
+          ],
+          "added": [],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "See the \"How do we respond to legal requests, prevent harm and promote safety and integrity?\" section of the Meta Privacy Policy for more for information on when we share information with law enforcement and others."
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "Metadata about content, subject to applicable law",
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Metadata about content and messages, subject to applicable law",
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Content you provide through our camera feature or your camera roll settings, or through our voice-enabled features"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [
+            "For processing information when the law requires it: Where we are under an obligation to disclose information such as, for example, if we receive a valid legal request for certain information such as a search warrant, we will access, preserve and/or share your information with regulators, law enforcement or others."
+          ],
+          "added": [
+            "Where we are under an obligation to disclose information such as, for example, if we receive a valid legal request for certain information such as a search warrant, we will access, preserve and/or share your information with regulators, law enforcement or others."
+          ],
+          "context_before": [
+            "Why and how we process your information:"
+          ],
+          "context_after": [
+            "The way in which the information will be processed depends on the specific circumstances. See the \"How do we respond to legal requests, prevent harm and promote safety and integrity?\" section of the Meta Privacy Policy for more. \"Information for Law Enforcement Authorities\" provides information on the operational guidelines law enforcement needs to follow."
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Interactions with AI at Meta and related metadata. For example, information you or others exchange with AI at Meta like content and messages"
+          ],
+          "added": [
+            "Interactions with our features that are part of AI at Meta and related metadata. For example, information like content and messages you or others exchange with these features"
+          ],
+          "context_before": [
+            "Metadata about content and messages, subject to applicable law"
+          ],
+          "context_after": [
+            "Types of content you view or interact with, and how you interact with it"
+          ],
+          "changed_words": 19
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260601194337/https://www.facebook.com/privacy/policy/",
+      "archive_after": "https://web.archive.org/web/20261102010711/https://www.facebook.com/privacy/policy/",
+      "ai": {
+        "headline": "Meta broadens AI data use to cover all its AI features, not just one chat",
+        "summary": "Meta's privacy policy now refers to \"our features that are part of AI at Meta\" instead of only \"AI at Meta,\" and says content, messages, and interactions with these features are collected and used to provide those features, including creating and understanding content and performing actions. Because the wording covers more features and the policy says these interactions are collected and used, the scope of what Meta treats as AI-related data is wider, though the excerpts do not state whether this data is used to train AI.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "ai_training",
+          "your_content"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-04-01",
+      "words": 5691,
+      "archive": "https://web.archive.org/web/20230401021524/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2023-09-01",
+      "words": 5984,
+      "archive": "https://web.archive.org/web/20230901045013/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2023-10-01",
+      "words": 5984,
+      "archive": "https://web.archive.org/web/20231001020713/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 6086,
+      "archive": "https://web.archive.org/web/20240801024716/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 6086,
+      "archive": "https://web.archive.org/web/20240901003515/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2024-11-01",
+      "words": 6035,
+      "archive": "https://web.archive.org/web/20241101000011/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 6172,
+      "archive": "https://web.archive.org/web/20241201015106/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-01-01",
+      "words": 6172,
+      "archive": "https://web.archive.org/web/20250101041354/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-05-02",
+      "words": 6172,
+      "archive": "https://web.archive.org/web/20250502071711/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-06-01",
+      "words": 6172,
+      "archive": "https://web.archive.org/web/20250601173931/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-07-02",
+      "words": 6255,
+      "archive": "https://web.archive.org/web/20250702162815/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 6204,
+      "archive": "https://web.archive.org/web/20250801010304/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 6204,
+      "archive": "https://web.archive.org/web/20250901043334/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 6204,
+      "archive": "https://web.archive.org/web/20251001005411/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-11-01",
+      "words": 6233,
+      "archive": "https://web.archive.org/web/20251101211106/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 6233,
+      "archive": "https://web.archive.org/web/20251201025600/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 7364,
+      "archive": "https://web.archive.org/web/20260201061542/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 7364,
+      "archive": "https://web.archive.org/web/20260401093015/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 7364,
+      "archive": "https://web.archive.org/web/20260601194337/https://www.facebook.com/privacy/policy/"
+    },
+    {
+      "date": "2026-11-02",
+      "words": 7405,
+      "archive": "https://web.archive.org/web/20261102010711/https://www.facebook.com/privacy/policy/"
+    }
+  ]
+}
