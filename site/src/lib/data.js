@@ -46,7 +46,8 @@ function allJsonFiles(dir) {
 }
 
 // A short headline from the AI summary: the first sentence, cut at a colon or
-// a comma if it runs long. (New summaries could carry their own headline later.)
+// a comma if it runs long. Only used for changes summarized before the AI
+// started writing its own short headline (summarize.py fills those in).
 function headlineFrom(change) {
   const summary = change.ai?.summary;
   if (!summary) return `${companyName(change.company)} changed its ${docName(change.doc)}`;
@@ -97,7 +98,7 @@ function byRelevance(change) {
   return [...(change.hunks ?? [])].sort((a, b) => score(b) - score(a));
 }
 
-export function loadData() {
+function buildData() {
   const sources = JSON.parse(read("sources.json"));
 
   const policies = sources.map((s) => {
@@ -139,7 +140,7 @@ export function loadData() {
         severity: c.ai?.severity ?? "pending",
         categories: c.ai?.categories ?? [],
         whatYouCanDo: c.ai?.what_you_can_do ?? null,
-        headline: headlineFrom(c),
+        headline: c.ai?.headline ?? headlineFrom(c),
         quote: quoteFrom(c),
         hunks: byRelevance(c),
         archiveBefore: c.archive_before ?? null,
@@ -197,11 +198,19 @@ export function loadData() {
       .map((p) => ({
         key: p.key,
         title: `${companyName(p.company)} ${p.name}`,
-        versions: p.versions,
+        versions: p.versions.map((v) => ({ date: v.date, words: v.words })),
         today: p.words,
         changes: changes
           .filter((c) => c.company === p.company && c.doc === p.doc)
           .map((c) => ({ date: c.date, severity: c.severity, id: c.id, label: c.headline })),
-      })),
+      }))
+      // Most recently changed policy first, so it's the one the History tab opens on.
+      .sort((a, b) => (b.changes[0]?.date ?? "").localeCompare(a.changes[0]?.date ?? "")),
   };
+}
+
+// Every page calls loadData(); read and shape the files only once per build.
+let cache;
+export function loadData() {
+  return (cache ??= buildData());
 }

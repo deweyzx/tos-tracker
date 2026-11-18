@@ -1,0 +1,19 @@
+---
+// One changed spot: context in grey, removed text struck through, added text highlighted.
+// Long spots (like a table that was added) show their first lines and fold the rest.
+const { hunk: h } = Astro.props;
+const LIMIT = 8;
+const lines = [...h.removed.map((t) => ["rem", t]), ...h.added.map((t) => ["add", t])];
+const shown = lines.slice(0, LIMIT), rest = lines.slice(LIMIT);
+---
+<div class="hunk">
+  {h.context_before.map((t) => <p class="ctx">{t}</p>)}
+  {shown.map(([kind, t]) => <p class={kind}>{t}</p>)}
+  {rest.length > 0 && (
+    <details class="more">
+      <summary>Show {rest.length} more changed line{rest.length === 1 ? "" : "s"} here</summary>
+      {rest.map(([kind, t]) => <p class={kind}>{t}</p>)}
+    </details>
+  )}
+  {h.context_after.map((t) => <p class="ctx">{t}</p>)}
+</div>

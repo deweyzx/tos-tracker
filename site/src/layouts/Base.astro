@@ -13,8 +13,7 @@ const client = {
   base,
   builtAt: data.builtAt,
   companies: data.companies,
-  defaultPins: data.companies.filter((c) => c.changes).map((c) => c.name),
-  charts: data.charts,
+  charts: home ? data.charts : [], // only the main page draws charts
 };
 const tabs = [
   ["overview", "Overview"],
@@ -30,15 +29,15 @@ const tabs = [
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
-  <meta name="theme-color" content="#04070E" />
+  <meta name="theme-color" content="#06090F" />
   <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
 </head>
 <body data-home={home ? "1" : "0"}>
-  <div class="sky" aria-hidden="true"><div class="glow"></div><div class="glow2"></div><div class="arc"></div><div class="lines"></div></div>
+  <a class="skip" href="#content">Skip to content</a>
 
-  <div class="page">
-    <header class="top in" style="--d:0">
-      <a class="brand" href={`${base}/`}><span class="mark" aria-hidden="true"></span>ToS Tracker<small id="today"></small></a>
+  <div class="page" id="content" tabindex="-1">
+    <header class="top">
+      <a class="brand" href={`${base}/`}><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect x=".5" y=".5" width="23" height="23" rx="6" fill="#141B26" stroke="#2A3344"/><path class="m-del" d="M6 9h12" stroke="#FF6B8A" stroke-width="2" stroke-linecap="round"/><path class="m-add" d="M6 15h8.5" stroke="#4A8CFF" stroke-width="2" stroke-linecap="round"/></svg>ToS Tracker</a>
       <nav class="nav" aria-label="Sections" id="nav">
         <span class="pillx" id="pillx" aria-hidden="true"></span>
         {tabs.map(([id, label], i) => (
@@ -49,8 +48,7 @@ const tabs = [
       </nav>
       <div class="right">
         <span class="live"><i aria-hidden="true"></i><span id="checked">Checked daily</span></span>
-        <button class="search" id="openSpot" aria-label="Search companies"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Search</span><kbd id="kh">Ctrl K</kbd></button>
-        <a class="cta" id="alertsBtn" href={`${base}/#alerts`}><span>Get alerts</span></a>
+        <button class="search" id="openSpot" aria-label="Find a company"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Find a company</span><kbd id="kh">Ctrl K</kbd></button>
       </div>
     </header>
 
@@ -61,8 +59,6 @@ const tabs = [
     <span>Built by Owen Moran. Summaries are written by AI from the exact policy text, and every change links to its source.</span>
     <a href="https://github.com/deweyzx/tos-tracker">Code on GitHub</a>
   </footer>
-  <div style="height:90px"></div>
-
   <nav class="pinbar" id="pinbar" aria-label="Pinned companies"></nav>
 
   <div class="veil" id="veil"></div>

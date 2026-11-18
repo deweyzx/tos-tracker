@@ -1,6 +1,6 @@
 // app.js: everything that moves or reacts on the page.
 // The page works without it (all content is in the HTML); this adds tabs,
-// pins, search, the filter menu, the charts and the intro animations.
+// pins, search, the filter menu and the charts.
 
 const DATA = JSON.parse(document.getElementById("tos-data").textContent);
 const BASE = DATA.base;
@@ -8,29 +8,10 @@ const HOME = document.body.dataset.home === "1";
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-const ease = (p) => 1 - Math.pow(1 - p, 3);
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-function countUp(el, to, suffix, ms, delay) {
-  if (reduce) { el.textContent = to + suffix; return; }
-  el.textContent = "0" + suffix;
-  setTimeout(() => {
-    let start;
-    const step = (t) => {
-      start ??= t;
-      const p = Math.min((t - start) / ms, 1);
-      el.textContent = Math.round(to * ease(p)) + suffix;
-      if (p < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }, delay);
-}
-
-/* ---------- dates in the top bar and week card ---------- */
+/* ---------- times in the top bar and the "How it works" panel ---------- */
 const now = new Date();
-const todayEl = $("#today");
-if (todayEl) todayEl.textContent = now.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
-
 const built = new Date(DATA.builtAt);
 const sameDay = built.toDateString() === now.toDateString();
 const time = (d) => d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
@@ -38,43 +19,14 @@ $("#checked").textContent = sameDay
   ? `Updated ${time(built)}`
   : `Updated ${built.toLocaleDateString("en-US", { month: "short", day: "numeric" })}`;
 
-const days = $("#days");
-if (days) {
-  const sunday = new Date(now);
-  sunday.setDate(now.getDate() - now.getDay());
-  days.innerHTML = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(sunday);
-    d.setDate(sunday.getDate() + i);
-    const isToday = d.toDateString() === now.toDateString();
-    return `<div class="${isToday ? "now" : ""}">${"SMTWTFS"[i]}<b>${d.getDate()}</b></div>`;
-  }).join("");
-}
-const next = $("#nextcheck");
-if (next) {
-  // The daily check runs at 11:23 UTC (see daily.yml). Show it in the viewer's time.
-  const run = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 11, 23));
-  if (run <= now) run.setUTCDate(run.getUTCDate() + 1);
-  const isToday = run.toDateString() === now.toDateString();
-  next.textContent = `${isToday ? "Today" : "Tomorrow"}, ${time(run)}`;
-}
-
-/* ---------- intro numbers ---------- */
-$$(".stat .n").forEach((n, i) => countUp(n, +n.dataset.to, "", 1000, 600 + i * 90));
-const arc = $("#arc");
-if (arc) {
-  const pct = +arc.dataset.pct;
-  setTimeout(() => { arc.style.strokeDashoffset = 427.3 * (1 - pct / 100); }, reduce ? 0 : 60);
-  countUp($("#pct"), pct, "%", 1800, 700);
-}
-const readbar = $("#readbar");
-if (readbar) setTimeout(() => { readbar.style.width = readbar.dataset.w + "%"; }, reduce ? 0 : 60);
-setTimeout(() => $$(".bars i[data-h]").forEach((b) => { b.style.transform = "scaleY(1)"; }), reduce ? 0 : 900);
+// The daily check runs at 11:23 UTC (see daily.yml). Show it in the viewer's own time.
+const runtime = $("#runtime");
+if (runtime) runtime.textContent = time(new Date(Date.UTC(2026, 0, 1, 11, 23)));
 
 /* ---------- charts: policy length over time ---------- */
 const monthIndex = (iso, first) => (+iso.slice(0, 4) - first.y) * 12 + (+iso.slice(5, 7) - 1 - first.m);
-const charted = new Set();
 
-function drawChart(wrap, animate) {
+function drawChart(wrap) {
   const ch = DATA.charts.find((c) => c.key === wrap.dataset.chart);
   if (!ch) return;
   const svg = $("svg", wrap), tip = $(".tipbox", wrap);
@@ -94,7 +46,7 @@ function drawChart(wrap, animate) {
 
   const ticks = [];
   for (let v = y0; v <= y1; v += 500) ticks.push(v);
-  const step = ticks.length > 5 ? 2 : 1;
+  const step = Math.ceil(ticks.length / 6); // at most about 6 labels on the side
   const gridY = ticks.filter((_, i) => i % step === 0).map((v) =>
     `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text class="axis" x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${(v / 1000).toFixed(1)}k</text>`).join("");
   let years = "";
@@ -103,43 +55,34 @@ function drawChart(wrap, animate) {
     if (m > lastM) break;
     years += `<text class="axis" x="${X(m)}" y="${H - 8}">${y}</text>`;
   }
+  const gid = "g" + ch.key.replace(/\W/g, ""); // id of the soft-light filter
   const marks = ch.changes.map((c) => {
     const i = ch.versions.findIndex((v) => v.date === c.date);
     if (i < 0) return "";
     const [x, y] = pts[i];
     const maj = c.severity === "major";
+    // Afterglow: changes from the last 3 months still give off light.
+    const fresh = (built - new Date(c.date + "T00:00:00Z")) / 864e5 <= 92;
+    const rgb = maj ? "255,107,138" : "74,140,255";
     return `<a href="${BASE}/change/${c.id}/" class="pt" data-i="${i}" data-label="${c.label.replace(/"/g, "&quot;")}" data-sev="${c.severity}" aria-label="${c.label.replace(/"/g, "&quot;")}">
       <circle cx="${x}" cy="${y}" r="14" fill="transparent"/>
-      <circle cx="${x}" cy="${y}" r="9" fill="${maj ? "rgba(255,107,138,.18)" : "rgba(90,150,255,.2)"}"/>
-      <circle cx="${x}" cy="${y}" r="4.5" fill="${maj ? "#FF6B8A" : "#fff"}" stroke="${maj ? "#FFD0DA" : "var(--v1)"}" stroke-width="2"/></a>`;
+      ${fresh ? `<circle cx="${x}" cy="${y}" r="11" fill="rgba(${rgb},.25)" filter="url(#${gid})"/>` : ""}
+      <circle cx="${x}" cy="${y}" r="4.5" fill="${maj || fresh ? (maj ? "#FF6B8A" : "#9CC1FF") : "#06090F"}" stroke="${maj ? "#FF6B8A" : "#4A8CFF"}" stroke-width="2"/></a>`;
   }).join("");
   let todayMark = "";
   if (ch.today) {
     const [lx, ly] = pts.at(-1), tx = X(lastM), ty = Y(ch.today);
-    todayMark = `<path d="M${lx} ${ly} L${tx} ${ty}" fill="none" stroke="#6A7090" stroke-width="1.6" stroke-dasharray="4 5"/>
-      <circle cx="${tx}" cy="${ty}" r="4.5" fill="var(--bg)" stroke="#62D2FF" stroke-width="2"/>
-      <text class="axis" x="${tx}" y="${ty - 12}" text-anchor="end" style="fill:#C9D8FF">Today ${ch.today.toLocaleString("en-US")}</text>`;
+    todayMark = `<path d="M${lx} ${ly} L${tx} ${ty}" fill="none" stroke="#8389A7" stroke-width="1.6" stroke-dasharray="4 5"/>
+      <circle cx="${tx}" cy="${ty}" r="4.5" fill="#06090F" stroke="#A3A8C3" stroke-width="2"/>
+      <text class="axis" x="${tx}" y="${ty - 12}" text-anchor="end" style="fill:#BFCDE8">Today ${ch.today.toLocaleString("en-US")}</text>`;
   }
-  const id = "c" + ch.key.replace(/\W/g, "");
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  svg.innerHTML = `<defs>
-      <linearGradient id="${id}l" x1="0" x2="1"><stop offset="0" stop-color="#62D2FF"/><stop offset=".55" stop-color="var(--v1)"/><stop offset="1" stop-color="var(--v2)"/></linearGradient>
-      <linearGradient id="${id}a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(74,140,255,.35)"/><stop offset="1" stop-color="rgba(74,140,255,0)"/></linearGradient>
-      <filter id="${id}g" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-      <clipPath id="${id}r"><rect width="0" height="${H}"/></clipPath>
-    </defs>${gridY}${years}
-    <g clip-path="url(#${id}r)">
-      <path d="${area}" fill="url(#${id}a)"/>
-      <path d="${line}" fill="none" stroke="url(#${id}l)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" filter="url(#${id}g)"/>
-      ${todayMark}${marks}
-    </g>`;
-  const rect = $("clipPath rect", svg);
-  if (!animate || reduce) rect.setAttribute("width", W);
-  else {
-    let s;
-    const f = (t) => { s ??= t; const p = Math.min((t - s) / 1600, 1); rect.setAttribute("width", W * ease(p)); if (p < 1) requestAnimationFrame(f); };
-    setTimeout(() => requestAnimationFrame(f), 250);
-  }
+  svg.innerHTML = `<defs><filter id="${gid}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+    ${gridY}${years}
+    <path d="${area}" fill="rgba(74,140,255,.08)"/>
+    <path d="${line}" fill="none" stroke="rgba(74,140,255,.55)" stroke-width="4" stroke-linejoin="round" filter="url(#${gid})"/>
+    <path d="${line}" fill="none" stroke="#4A8CFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${todayMark}${marks}`;
   const show = (g) => {
     const v = ch.versions[+g.dataset.i];
     const sc = svg.getBoundingClientRect().width / W;
@@ -156,18 +99,15 @@ function drawChart(wrap, animate) {
     g.addEventListener("blur", () => tip.classList.remove("on"));
   });
 }
-const drawVisibleCharts = (animate) =>
-  $$(".chartwrap").forEach((w) => { if (w.offsetParent) { drawChart(w, animate && !charted.has(w)); charted.add(w); } });
+const drawVisibleCharts = () => $$(".chartwrap").forEach((w) => { if (w.offsetParent) drawChart(w); });
 let resizeTimer;
-addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => drawVisibleCharts(false), 150); });
+addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(drawVisibleCharts, 150); });
 
-/* ---------- pointer glow on glass ---------- */
-document.addEventListener("pointermove", (e) => {
-  const g = e.target.closest?.(".glass");
-  if (!g) return;
-  const r = g.getBoundingClientRect();
-  g.style.setProperty("--mx", e.clientX - r.left + "px");
-  g.style.setProperty("--my", e.clientY - r.top + "px");
+/* ---------- the featured change's border lights up under your pointer ---------- */
+$(".feature")?.addEventListener("pointermove", (e) => {
+  const f = e.currentTarget, r = f.getBoundingClientRect();
+  f.style.setProperty("--mx", e.clientX - r.left + "px");
+  f.style.setProperty("--my", e.clientY - r.top + "px");
 }, { passive: true });
 
 /* ---------- tabs ---------- */
@@ -187,7 +127,7 @@ const placePill = () => {
 document.fonts.ready.then(placePill);
 addEventListener("resize", placePill);
 
-const VIEWS = ["overview", "latest", "companies", "history", "alerts"];
+const VIEWS = ["overview", "latest", "companies", "history"];
 let firstView = true;
 
 function showView(view, company) {
@@ -197,21 +137,9 @@ function showView(view, company) {
   main.dataset.view = view;
   tabs.forEach((a) => a.dataset.view === view ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
   movePill(tabs.find((a) => a.dataset.view === view));
-  $$("[data-v]").forEach((el) => {
-    const on = el.dataset.v === view;
-    el.hidden = !on;
-    if (on && !firstView) {
-      [el, ...$$(".in", el)].forEach((c, k) => {
-        c.classList.remove("in");
-        c.style.setProperty("--d", k * 0.6);
-        void c.offsetWidth;
-        c.classList.add("in");
-      });
-    }
-  });
-  if (view === "history") drawVisibleCharts(true);
+  $$("[data-v]").forEach((el) => { el.hidden = el.dataset.v !== view; });
+  if (view === "history") { showChart(); drawVisibleCharts(); }
   if (view === "latest") applyFilter(company ? `co:${company}` : currentFilter);
-  if (view === "alerts" && !firstView) setTimeout(() => $("#alertForm input")?.focus({ preventScroll: true }), 400);
   if (!firstView) scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
   firstView = false;
 }
@@ -234,6 +162,61 @@ if (HOME) {
   });
   addEventListener("popstate", fromHash);
 }
+
+/* ---------- History: one policy's chart at a time ---------- */
+let chartKey = DATA.charts[0]?.key;
+function showChart() {
+  $$("[data-chart-key]").forEach((sec) => { sec.style.display = sec.dataset.chartKey === chartKey ? "" : "none"; });
+}
+showChart();
+
+// A small popup menu: arrow keys, Enter, Esc, click outside to close.
+function popupMenu(btn, menu, onChoose) {
+  if (!btn || !menu) return;
+  const items = $$(".mi", menu);
+  let fi = 0;
+  const focusItem = () => items.forEach((o, i) => o.classList.toggle("focus", i === fi));
+  const place = () => {
+    menu.classList.remove("up");
+    const r = btn.getBoundingClientRect();
+    if (r.bottom + menu.offsetHeight + 16 > innerHeight && r.top > menu.offsetHeight + 80) menu.classList.add("up");
+  };
+  const open = () => {
+    place();
+    menu.classList.add("open");
+    btn.setAttribute("aria-expanded", "true");
+    fi = Math.max(0, items.findIndex((o) => o.getAttribute("aria-selected") === "true"));
+    focusItem();
+    menu.focus();
+  };
+  const close = (ret) => {
+    menu.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+    items.forEach((o) => o.classList.remove("focus"));
+    if (ret) btn.focus();
+  };
+  const choose = (o) => {
+    items.forEach((x) => x.setAttribute("aria-selected", x === o));
+    onChoose(o);
+    setTimeout(() => close(true), reduce ? 0 : 150);
+  };
+  btn.onclick = () => (menu.classList.contains("open") ? close() : open());
+  btn.onkeydown = (e) => { if (e.key === "ArrowDown") { open(); e.preventDefault(); } };
+  items.forEach((o, i) => { o.onmouseenter = () => { fi = i; focusItem(); }; o.onclick = () => choose(o); });
+  menu.onkeydown = (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { fi = (fi + (e.key === "ArrowDown" ? 1 : -1) + items.length) % items.length; focusItem(); e.preventDefault(); }
+    else if (e.key === "Enter" || e.key === " ") { choose(items[fi]); e.preventDefault(); }
+    else if (e.key === "Escape" || e.key === "Tab") close(e.key === "Escape");
+  };
+  document.addEventListener("click", (e) => { if (!e.composedPath().includes(btn.parentElement)) close(); });
+}
+
+popupMenu($("#hBtn"), $("#hMenu"), (o) => {
+  chartKey = o.dataset.key;
+  $("#hLabel").textContent = o.childNodes[1].textContent.trim();
+  showChart();
+  drawVisibleCharts();
+});
 
 /* ---------- filter menu ---------- */
 let currentFilter = "all";
@@ -261,6 +244,12 @@ function applyFilter(f) {
     const ok = f === "all" || tags.includes(f);
     r.style.display = ok ? "" : "none";
     if (ok) n++;
+  });
+  // hide a month heading when none of its changes match
+  $$(".month").forEach((h) => {
+    let el = h.nextElementSibling, any = false;
+    while (el && el.classList.contains("row")) { if (el.style.display !== "none") any = true; el = el.nextElementSibling; }
+    h.style.display = any ? "" : "none";
   });
   $("#empty").style.display = n ? "none" : "block";
   $("#lcount").textContent = n === 1 ? "1 change" : `${n} changes`;
@@ -301,7 +290,7 @@ if (fMenu) {
 
 /* ---------- pins (saved in this browser only) ---------- */
 const COS = DATA.companies;
-let pins = DATA.defaultPins;
+let pins = []; // nothing pinned until the visitor picks
 try {
   const saved = JSON.parse(localStorage.getItem("tos-pins") || "null");
   if (Array.isArray(saved)) pins = saved.filter((n) => COS.some((c) => c.name === n));
@@ -315,26 +304,24 @@ const pinBtn = (c, inSpot) => {
 
 function renderWatch() {
   const w = $("#watch");
-  if (w) w.innerHTML = COS.map((c) => `<div class="w"><span class="sd ${c.status}"></span><b>${c.name}</b><span class="s ${c.status}">${c.label}</span>${pinBtn(c)}</div>`).join("");
+  if (w) w.innerHTML = COS.map((c) => `<div class="w"><span class="sd ${c.status}"></span><span class="nm"><b>${c.name}</b><span class="docs">${c.docs.join(" and ")}</span></span><span class="s ${c.status}">${c.label}</span>${pinBtn(c)}</div>`).join("");
 }
-function renderBar(added) {
+// The bar only appears once something is pinned (CSS hides it while empty).
+function renderBar() {
   const bar = $("#pinbar");
+  if (!pins.length) { bar.innerHTML = ""; return; }
   bar.innerHTML = '<span class="lab">Pinned</span>' + pins.map((n) => {
     const c = COS.find((x) => x.name === n);
-    return c ? `<a class="chip${n === added ? " new" : ""}" href="${BASE}/#latest/${c.id}"><span class="o"></span>${n}${c.changes ? `<span class="c">${c.changes}</span>` : ""}</a>` : "";
-  }).join("") + '<button class="addchip" id="addPin" aria-label="Pin a company">+</button>';
+    return c ? `<a class="chip" href="${BASE}/#latest/${c.id}" aria-label="${n}, ${c.changes} changes">${n}${c.changes ? `<span class="c">${c.changes}</span>` : ""}</a>` : "";
+  }).join("") + '<button class="addchip" id="addPin" aria-label="Pin another company">+</button>';
   $("#addPin").onclick = openSpot;
-  const picks = $("#picks");
-  if (picks) picks.innerHTML = pins.length
-    ? pins.map((n) => `<span class="chip"><span class="o"></span>${n}</span>`).join("")
-    : '<span style="color:var(--faint);font-size:13px">Nothing pinned yet. Use + in your bar to add some.</span>';
 }
 function toggle(name) {
   const was = pins.includes(name);
   pins = was ? pins.filter((x) => x !== name) : [...pins, name];
   savePins();
   renderWatch();
-  renderBar(was ? null : name);
+  renderBar();
   renderSpot(spotIn.value, name);
 }
 $("#watch")?.addEventListener("click", (e) => {
@@ -393,12 +380,6 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     spot.classList.contains("open") ? closeSpot() : openSpot();
   }
-});
-
-/* ---------- alerts form (not connected to email yet) ---------- */
-$("#alertForm")?.addEventListener("submit", (e) => {
-  e.preventDefault();
-  $("#sent").textContent = "Email alerts aren't switched on yet, so this address wasn't saved.";
 });
 
 renderWatch();
