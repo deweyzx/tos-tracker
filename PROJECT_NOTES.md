@@ -519,7 +519,7 @@ Built in a Claude chat; continuing in **Claude Code** on my PC. What's done and 
    - **Daily workflow:** installs Chromium (`python -m playwright install --with-deps chromium`) and runs the new `test_scraper.py` (13 offline tests, fake browser). `playwright` is added to `requirements.txt`. All 102 tests pass.
    - **First run on GitHub:** Meta's first copies are saved as "new" (not reported as changes); from then on they're compared daily. Facebook may treat GitHub's servers differently from my PC. If so, the wall check skips it and the Actions log says why.
    - **Still open:** OpenAI blocks GitHub's servers (403), so its daily copies only update when I run the scraper on my PC.
-20. **Small polish (Nov 18), local only, not committed or pushed.** Four leftovers from the QA list:
+20. **Small polish (Nov 18), pushed (`d5b6a27`).** Four leftovers from the QA list:
    - **Company dots mean something:** they were all the same blue. They now use the same afterglow as the change list, showing how recent each company's latest change is: solid for the last month, fading to an outline over a year, and red if that change was rated Major. Each company also shows "latest Nov 2", and a line under the list explains the dots. The same dots appear in search.
    - **Pin button:** it was a plain circle that looked like a radio button. It's now a pushpin with the word "Pin" (turns blue and says "Pinned").
    - **Honest dates for archive gaps:** the Internet Archive only saves a page now and then, so "found Nov 2" for Meta hid that the change happened sometime after June 1. When the copy before an archive change is over 45 days older, the site now says "changed sometime between June 1 and November 2, 2026" (`since` in `data.js`, wording from `whenFound()`).
