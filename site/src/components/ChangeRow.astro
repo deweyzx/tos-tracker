@@ -3,12 +3,15 @@
 // Leads with what changed: the AI's short headline when there is one (the full
 // summary is on the change page), otherwise one line of the company's own changed wording in the serif with a
 // proofreader's mark (caret or dele), so it reads as a quote rather than a link.
+import { whenFound } from "../lib/data.js";
 const { change: c, base, ageClass } = Astro.props;
 const SEV = { major: "major", moderate: "mod" };
 const rated = c.severity && c.severity !== "pending";
 const plural = (n, word) => `${n.toLocaleString("en-US")} ${word}${n === 1 ? "" : "s"}`;
 const day = new Date(c.date + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 const size = `${plural(c.changedWords, "word")} changed in ${plural(c.hunks.length, "place")}`;
+// An archive gap: say so, since the date alone suggests we caught it that day.
+const gap = c.since ? `${whenFound(c, "short").replace(/^changed s/, "S")}. ` : "";
 ---
 <a class={`row ${ageClass(c.date)}${c.severity === "major" ? " is-major" : ""}`} href={`${base}/change/${c.id}/`} data-tags={[c.severity, ...c.categories, `co:${c.company}`].join(" ")}>
   <span class="when">{day}</span>
@@ -23,6 +26,6 @@ const size = `${plural(c.changedWords, "word")} changed in ${plural(c.hunks.leng
     ) : null}
     <span class="note">{c.likelyLayout
       ? `Mostly a page-layout or archive change (${c.percent}% of the page), probably not new rules.`
-      : c.summary ? size : `${size}. No summary yet.`}</span>
+      : c.summary ? gap + size : `${gap}${size}. No summary yet.`}</span>
   </span>
 </a>

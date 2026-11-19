@@ -149,6 +149,11 @@ function buildData() {
     };
   });
   const byKey = Object.fromEntries(policies.map((p) => [p.key, p]));
+  const sinceFor = (versions, c) => {
+    if (c.source === "daily" || !versions?.length) return null;
+    const prev = versions.map((v) => v.date).filter((d) => d < c.date).sort().at(-1);
+    return prev && (Date.parse(c.date) - Date.parse(prev)) / 864e5 > 45 ? prev : null;
+  };
 
   const all = [];
   for (const file of allJsonFiles("changes")) {
@@ -169,6 +174,10 @@ function buildData() {
         doc: c.doc,
         docName: docName(c.doc),
         date: c.date,
+        // The archive only saves a page now and then, so an archive change happened
+        // sometime after the copy before it. When that copy is over 45 days older, the
+        // page says "between" the two dates instead of pretending we know the day.
+        since: sinceFor(report.versions, c),
         source: c.source ?? "daily",
         changedWords: c.changed_words,
         percent,
@@ -220,6 +229,8 @@ function buildData() {
     const docs = policies.filter((p) => p.company === id);
     const count = changes.filter((c) => c.company === id).length;
     const readable = docs.some((p) => p.readable);
+    const latest = changes.find((c) => c.company === id); // changes are newest first
+    const days = latest ? (Date.now() - Date.parse(latest.date + "T00:00:00Z")) / 864e5 : null;
     return {
       id,
       name: companyName(id),
@@ -227,6 +238,11 @@ function buildData() {
       docs: docs.map((p) => p.name),
       changes: count,
       status: count ? "has" : readable ? "none" : "need",
+      // The dot uses the same afterglow as the change list: solid when the company's
+      // latest change is under a month old, fading to an outline over the year.
+      age: days === null ? "" : days <= 31 ? "age-0" : days <= 92 ? "age-1" : days <= 365 ? "age-2" : "age-3",
+      major: latest?.severity === "major",
+      latest: latest?.date ?? null,
       label: count ? `${count} change${count === 1 ? "" : "s"}` : readable ? "No changes yet" : "Archive only",
     };
   });
@@ -295,6 +311,15 @@ function buildData() {
 
 // Every page calls loadData(); read and shape the files only once per build.
 let cache;
+// "found November 2, 2026", or, when the archive had no copy for a while before it,
+// "changed sometime between June 1 and November 2, 2026". month: "long" or "short".
+export function whenFound(c, month = "long") {
+  const f = (d, year) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month, day: "numeric", ...(year ? { year: "numeric" } : {}), timeZone: "UTC" });
+  if (!c.since) return `found ${f(c.date, true)}`;
+  const sameYear = c.since.slice(0, 4) === c.date.slice(0, 4);
+  return `changed sometime between ${f(c.since, !sameYear)} and ${f(c.date, true)}`;
+}
+
 export function loadData() {
   return (cache ??= buildData());
 }

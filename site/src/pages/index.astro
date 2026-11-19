@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import ChangeRow from "../components/ChangeRow.astro";
-import { loadData, CATEGORY_LABELS } from "../lib/data.js";
+import { loadData, CATEGORY_LABELS, whenFound } from "../lib/data.js";
 
 const data = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -86,7 +86,7 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
         ) : (
           <p class="noquote">{f.summary}</p>
         )}
-        <p class="size">{rated(f) && <span class={`sev ${SEV[f.severity] ?? ""}`}>{sevLabel(f.severity)}</span>}{f.companyName} {f.docName}, found {fmtLong(f.date)}. {plural(f.changedWords, "word")} changed in {plural(f.hunks.length, "place")}{f.percent !== null && `, about ${f.percent}% of the policy`}.{!f.summary && " The plain-English summary hasn't been written yet."}</p>
+        <p class="size">{rated(f) && <span class={`sev ${SEV[f.severity] ?? ""}`}>{sevLabel(f.severity)}</span>}{f.companyName} {f.docName}, {whenFound(f)}. {plural(f.changedWords, "word")} changed in {plural(f.hunks.length, "place")}{f.percent !== null && `, about ${f.percent}% of the policy`}.{!f.summary && " The plain-English summary hasn't been written yet."}</p>
         <div class="acts">
           <a class="cta" href={`${base}/change/${f.id}/`}>Read the whole change</a>
           {f.archiveBefore && <a class="ghost" href={f.archiveBefore} target="_blank" rel="noopener">See the old version</a>}
@@ -157,6 +157,7 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
     <section class="watch panel" aria-label="Companies" data-v="companies">
       <div class="h"><h2>All companies</h2><span class="m">Pin to keep in your bar</span></div>
       <div id="watch"></div>
+      <p class="foot">The dot shows how recent each company's latest change is: solid if it was in the last month, fading to an outline over a year. Red means that change was rated Major.</p>
     </section>
 
     {charts.length ? charts.map((ch) => (

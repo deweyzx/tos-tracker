@@ -452,15 +452,19 @@ try {
   if (Array.isArray(saved)) pins = saved.filter((n) => COS.some((c) => c.name === n));
 } catch {}
 const savePins = () => { try { localStorage.setItem("tos-pins", JSON.stringify(pins)); } catch {} };
-const bead = '<span class="bead" aria-hidden="true"></span>';
-const pinBtn = (c, inSpot) => {
+// A pushpin and a word, so it reads as "pin this" rather than a radio button.
+const pinIcon = '<svg viewBox="0 0 16 16" aria-hidden="true"><path class="head" d="M5.5 1.75h5l-.6 4.1 2.35 2.4v1.25h-8.5V8.25l2.35-2.4z"/><path d="M8 9.5v4.75"/></svg>';
+const pinBtn = (c) => {
   const on = pins.includes(c.name);
-  return `<button class="pin" aria-pressed="${on}" aria-label="${on ? "Unpin" : "Pin"} ${c.name}" data-n="${c.name}">${bead}</button>`;
+  return `<button class="pin" aria-pressed="${on}" aria-label="Pin ${c.name}" data-n="${c.name}">${pinIcon}<span>${on ? "Pinned" : "Pin"}</span></button>`;
 };
+// Same dot as the change list: how fresh the company's latest change is.
+const shortDay = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: d.slice(0, 4) === String(new Date().getUTCFullYear()) ? undefined : "numeric", timeZone: "UTC" });
+const coDot = (c) => c.latest ? `<span class="tl-dot ${c.age}${c.major ? " sev-major" : ""}"></span>` : `<span class="sd ${c.status}"></span>`;
 
 function renderWatch() {
   const w = $("#watch");
-  if (w) w.innerHTML = COS.map((c) => `<div class="w"><span class="sd ${c.status}"></span><span class="nm">${c.changes ? `<a href="${BASE}/#latest/${c.id}">${c.name}</a>` : `<b>${c.name}</b>`}<span class="docs">${c.docs.join(" and ")}</span></span><span class="s ${c.status}">${c.label}</span>${pinBtn(c)}</div>`).join("");
+  if (w) w.innerHTML = COS.map((c) => `<div class="w">${coDot(c)}<span class="nm">${c.changes ? `<a href="${BASE}/#latest/${c.id}">${c.name}</a>` : `<b>${c.name}</b>`}<span class="docs">${c.docs.join(" and ")}</span></span><span class="s ${c.status}">${c.label}${c.latest ? `<small>latest ${shortDay(c.latest)}</small>` : ""}</span>${pinBtn(c)}</div>`).join("");
 }
 // The bar only appears once something is pinned (CSS hides it while empty).
 function renderBar() {
@@ -497,7 +501,7 @@ function renderSpot(q = "", keep) {
   si = Math.min(si, Math.max(0, results.length - 1));
   spotList.innerHTML = results.length
     ? `<div class="spot-grp">${q ? "Matches" : "Companies"}</div>` + results.map((c, i) =>
-        `<div class="sr${i === si ? " focus" : ""}" role="option" id="sr-${i}" aria-selected="${i === si}" data-i="${i}"><span class="sd ${c.status}" style="width:7px;height:7px;border-radius:50%"></span><b>${c.name}</b>${via(c) ? `<span class="s">covers ${via(c)}</span>` : ""}<span class="s">${c.label}</span>${pinBtn(c, true)}</div>`).join("")
+        `<div class="sr${i === si ? " focus" : ""}" role="option" id="sr-${i}" aria-selected="${i === si}" data-i="${i}">${coDot(c)}<b>${c.name}</b>${via(c) ? `<span class="s">covers ${via(c)}</span>` : ""}<span class="s">${c.label}</span>${pinBtn(c)}</div>`).join("")
     : '<div class="spot-grp">No company or product matches that. Try a company, like "Spotify", or a product, like "Instagram".</div>';
   spotIn.setAttribute("aria-activedescendant", results.length ? `sr-${si}` : "");
 }
