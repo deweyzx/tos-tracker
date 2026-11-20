@@ -1,0 +1,465 @@
+{
+  "date": "archive",
+  "company": "github",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "github",
+      "doc": "privacy",
+      "date": "2026-02-01",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "View page as Markdown"
+          ],
+          "context_before": [
+            "GitHub General Privacy Statement"
+          ],
+          "context_after": [
+            "In this article"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260101001644/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "archive_after": "https://web.archive.org/web/20260201042203/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "ai": {
+        "headline": "GitHub adds a \"View page as Markdown\" link to its privacy statement page",
+        "summary": "GitHub added a \"View page as Markdown\" link to the top of its General Privacy Statement web page. This is a display change only and does not change how GitHub collects, uses, or shares your data.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "github",
+      "doc": "privacy",
+      "date": "2026-04-01",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [
+            "View page as Markdown"
+          ],
+          "added": [
+            "Copy as Markdown"
+          ],
+          "context_before": [
+            "GitHub General Privacy Statement"
+          ],
+          "context_after": [
+            "In this article"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260301080932/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "archive_after": "https://web.archive.org/web/20260401004854/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "ai": {
+        "headline": "GitHub renames \"View page as Markdown\" button to \"Copy as Markdown\"",
+        "summary": "GitHub changed the label of a page option from \"View page as Markdown\" to \"Copy as Markdown.\" This is a wording change on the page and does not affect how your data is handled.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "github",
+      "doc": "privacy",
+      "date": "2026-05-01",
+      "source": "archive",
+      "changed_words": 264,
+      "hunks": [
+        {
+          "removed": [
+            "User Content and Files: When you use our Services, we collect Personal Data included as part of the information you provide such as code, inputs, text, documents, images, or feedback."
+          ],
+          "added": [
+            "User Content and Files: When you use our Services, we collect Personal Data included as part of the information you provide such as code, inputs, AI outputs, text, documents, images, or feedback."
+          ],
+          "context_before": [
+            "Account Data: We collect certain information when you open an account such as your GitHub handle, name, email address, password, payment information and transaction information."
+          ],
+          "context_after": [
+            "Demographic information: In some cases, you provide us with ethnicity, gender, or similar demographic details."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Publicly Available Sources: We may acquire information about you from publicly available sources like public GitHub repositories."
+          ],
+          "added": [
+            "Publicly Available Sources: We may acquire information about you from publicly available sources."
+          ],
+          "context_before": [
+            "Information from Other Users of the Services: Other users may share information about you when they submit issues and comments. We may also receive information about you if you are identified as a representative or administrator on your company's account."
+          ],
+          "context_after": [
+            "Services you linked to your GitHub account: When you or your administrator integrate third-party apps or services with our Services, we receive information based on your settings with those services. This can include details like your name and email from services like Google for authentication. The information we receive depends on the third-party's settings and privacy policies. Always review these to understand what data is shared with our Services."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [],
+          "added": [
+            "Product Development and Improvement: We use Personal Data to develop and improve our products, services, and technologies, including artificial intelligence and machine learning technologies. This includes improving features, developing new offerings, enhancing safety and security capabilities, and training models. We apply appropriate technical safeguards, including aggregation and de-identification techniques where feasible, to protect your privacy while enabling these improvements."
+          ],
+          "context_before": [
+            "Ongoing Service Performance: Personal Data helps us keep the Services up to date and performant, and meet user productivity, reliability, efficacy, quality, privacy, accessibility and security needs."
+          ],
+          "context_after": [
+            "Complying with and resolving legal obligations: including responding to Data Subject Requests for Personal Data processed by GitHub as Controller (for example website data), tax requirements, agreements and disputes."
+          ],
+          "changed_words": 59
+        },
+        {
+          "removed": [
+            "Affiliates: Personal Data may be shared with GitHub affiliates, including Microsoft, to facilitate customer service, marketing and advertising, order fulfillment, billing, technical support, and legal and compliance obligations. Our affiliates may only use the Personal Data in a manner consistent with this Privacy Statement."
+          ],
+          "added": [
+            "Affiliates: Personal Data may be shared with GitHub affiliates, including Microsoft, to facilitate customer service, marketing and advertising, order fulfillment, billing, technical support, legal and compliance obligations, product development and improvement (including training and improving artificial intelligence and machine learning technologies), and for other purposes described in their respective privacy statements. When we share data with affiliates, they will process it in accordance with applicable law and their privacy commitments."
+          ],
+          "context_before": [
+            "Abuse and Fraud Prevention Entities: We may disclose Personal Data based on a good faith belief it is needed to prevent fraud, abuse, or attacks on our Services, or to protect the safety of GitHub and our users."
+          ],
+          "context_after": [
+            "GitHub Organization Accounts: If an organization adds you to their GitHub account, we might share Personal Data with that organization to fulfill the commercial relationship. In such a case, your use of the Services is protected by a data protection agreement and terms between your organization and GitHub"
+          ],
+          "changed_words": 58
+        },
+        {
+          "removed": [
+            "If your GitHub account has private repositories, you control the access to that information. GitHub personnel does not access private repository information without your consent except as provided in this Privacy Statement and for:",
+            "security purposes",
+            "automated scanning or manual review for known vulnerabilities, active malware, or other content known to violate our Terms of Service",
+            "to assist the repository owner with a support matter",
+            "to maintain the integrity of the Services, or",
+            "to comply with our legal obligations if we have reason to believe the contents are in violation of the law.",
+            "GitHub will provide you with notice regarding private repository access unless doing so is prohibited by law or if GitHub acted in response to a security threat or other risk to security."
+          ],
+          "added": [
+            "If your GitHub account has private repositories, our ability and rights to access private repository information is set forth in Section E (Private Repositories) of the GitHub Terms of Service."
+          ],
+          "context_before": [
+            "Private repositories: GitHub Access"
+          ],
+          "context_after": [
+            "Lawful Bases for Processing Personal Data (Applicable to EEA and UK End Users)"
+          ],
+          "changed_words": 125
+        },
+        {
+          "removed": [
+            "Legitimate Interests: We process data for purposes that are in our legitimate interests, such as securing our Services, communicating with you, and improving our Services. This is done only when these interests are not overridden by your data protection rights or your fundamental rights and freedoms."
+          ],
+          "added": [
+            "Legitimate Interests: We process data for purposes that are in our legitimate interests, such as securing our Services, communicating with you, and developing and improving our Services, which include artificial intelligence and machine learning technologies. This is done only when these interests are not overridden by your data protection rights or your fundamental rights and freedoms."
+          ],
+          "context_before": [
+            "Legal Obligation: We process data when it's necessary to comply with applicable laws or to protect the rights, safety, and property of GitHub, our affiliates, users, or third parties."
+          ],
+          "context_after": [
+            "Consent: We process data when you have explicitly consented to such processing. When we rely on consent as the legal basis, you have the right to withdraw your consent for data processing at any time. The procedures for withdrawal are detailed in this Statement and available on our website."
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "Any GitHub page that serves non-essential cookies will have a link in the page’s footer to cookie settings. You can express your preferences at any time by clicking on that linking and updating your settings."
+          ],
+          "added": [
+            "Any GitHub page that serves non-essential cookies will have a link in the page’s footer to cookie settings. You can express your preferences at any time by clicking on that link and updating your settings."
+          ],
+          "context_before": [
+            "Specifically on GitHub Enterprise Marketing Pages"
+          ],
+          "context_after": [
+            "Some users will also be able to manage non-essential cookies via a cookie consent banner, including the options to accept, manage, and reject all non-essential cookies."
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260401004854/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "archive_after": "https://web.archive.org/web/20260501003937/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "ai": {
+        "headline": "GitHub now uses your data, including code and AI outputs, to train AI models",
+        "summary": "GitHub's privacy statement now says it uses Personal Data to develop and improve its products and technologies, including training artificial intelligence and machine learning models, and may share data with Microsoft and other affiliates for AI training as well. AI outputs are also now listed among the content it collects, and the legal basis for processing now covers AI development.",
+        "severity": "major",
+        "categories": [
+          "ai_training",
+          "data_collection",
+          "data_sharing",
+          "your_content"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "github",
+      "doc": "privacy",
+      "date": "2026-10-01",
+      "source": "archive",
+      "changed_words": 6,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "In this article"
+          ],
+          "context_before": [],
+          "context_after": [
+            "GitHub General Privacy Statement"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Copy as Markdown"
+          ],
+          "added": [
+            "Copy markdown"
+          ],
+          "context_before": [
+            "GitHub General Privacy Statement"
+          ],
+          "context_after": [
+            "In this article"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260901044825/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "archive_after": "https://web.archive.org/web/20261001003939/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "ai": {
+        "headline": "GitHub changed menu labels on its privacy statement page",
+        "summary": "GitHub added an \"In this article\" heading and renamed a \"Copy as Markdown\" button to \"Copy markdown\" on its privacy statement page. These are page layout and wording changes only, with no new rules about how your data is used.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "github",
+      "doc": "privacy",
+      "date": "2026-11-01",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [
+            "Subprocessors and Service Providers: We may use vendors to provide services on our behalf, including hosting, marketing, advertising, social, analytics, support ticketing, credit card processing, or security services. They are bound by contractual obligations to ensure the security, privacy, and confidentiality of your information. Please visit https://docs.github.com/en/site-policy/privacy-policies/github-subprocessors to see our list of Subprocessors."
+          ],
+          "added": [
+            "Subprocessors and Service Providers: We may use vendors to provide services on our behalf, including hosting, marketing, advertising, social, analytics, support ticketing, credit card processing, or security services. They are bound by contractual obligations to ensure the security, privacy, and confidentiality of your information. Please visit GitHub Subprocessors to see our list of Subprocessors."
+          ],
+          "context_before": [
+            "Partners and Resellers: We cooperate with third-parties that offer sales, consulting, support, and technical services for our Services. We may share your data with these partners and resellers where allowed, and with your consent when required."
+          ],
+          "context_after": [
+            "Visual Studio Code (GitHub Codespaces): GitHub Codespaces and github.dev offer Visual Studio Code in a web browser, where some telemetry is collected by default. Details on telemetry collection are on the VS Code website. To opt out, go to File > Preferences > Settings in the top left menu of VS Code. Opting out will sync this preference across all future web sessions in GitHub Codespaces and github.dev."
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20261001003939/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "archive_after": "https://web.archive.org/web/20261101004404/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "ai": {
+        "headline": "GitHub changes subprocessor list link wording, no new data uses",
+        "summary": "GitHub only changed the wording of the link to its list of subprocessors (vendors that help provide its services); the URL text was replaced with a plain name. The vendor list and the description of how vendors handle your information are unchanged.",
+        "severity": "minor",
+        "categories": [
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2024-02-02",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240202220606/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240301003403/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240401073434/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240501004251/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-06-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240601004314/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-07-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240701034742/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240801101817/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20240901053331/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-10-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20241001025923/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-11-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20241101101509/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20241201002939/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-01-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250101173641/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-02-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250201005248/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-03-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250301161736/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250401000914/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-05-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250501021929/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-06-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250601140302/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-07-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250701012542/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250801011508/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20250901134107/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20251001050855/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-11-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20251101005533/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20251201041643/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-01-01",
+      "words": 6050,
+      "archive": "https://web.archive.org/web/20260101001644/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 6054,
+      "archive": "https://web.archive.org/web/20260201042203/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 6054,
+      "archive": "https://web.archive.org/web/20260301080932/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 6053,
+      "archive": "https://web.archive.org/web/20260401004854/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 6051,
+      "archive": "https://web.archive.org/web/20260501003937/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 6051,
+      "archive": "https://web.archive.org/web/20260601000034/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-07-01",
+      "words": 6051,
+      "archive": "https://web.archive.org/web/20260701014825/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 6051,
+      "archive": "https://web.archive.org/web/20260801044944/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 6051,
+      "archive": "https://web.archive.org/web/20260901044825/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 6053,
+      "archive": "https://web.archive.org/web/20261001003939/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 6054,
+      "archive": "https://web.archive.org/web/20261101004404/https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    }
+  ]
+}

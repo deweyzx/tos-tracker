@@ -1,0 +1,349 @@
+{
+  "date": "archive",
+  "company": "slack",
+  "doc": "terms",
+  "changes": [
+    {
+      "company": "slack",
+      "doc": "terms",
+      "date": "2023-03-02",
+      "source": "archive",
+      "changed_words": 23,
+      "hunks": [
+        {
+          "removed": [
+            "To the extent prohibited by applicable law, the Services are not intended for and should not be used by anyone under the age of sixteen. You represent that you are over the legal age and are the intended recipient of Customer’s invitation to the Services. You may not access or use the Services for any purpose if either of the representations in the preceding sentence is not true. Without limiting the foregoing, you must be of legal working age."
+          ],
+          "added": [
+            "To the extent prohibited by applicable law, the Services are not intended for and should not be used by (a) anyone under the age of sixteen or (b) anyone under the applicable age of majority according to the data protection laws and regulations in your jurisdiction. You represent that you are over the legal age and are the intended recipient of Customer’s invitation to the Services. You may not access or use the Services for any purpose if either of the representations in the preceding sentence is not true. Without limiting the foregoing, you must be of legal working age."
+          ],
+          "context_before": [
+            "You Must be Over the Legal Age"
+          ],
+          "context_after": [
+            "While You Are Here, You Must Follow the Rules"
+          ],
+          "changed_words": 23
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230128105642/https://slack.com/terms-of-service/user",
+      "archive_after": "https://web.archive.org/web/20230302141927/https://slack.com/terms-of-service/user",
+      "ai": {
+        "headline": "Slack raises minimum age to local age of majority where required by law",
+        "summary": "Slack's terms now also bar anyone under the age of majority set by the data protection laws in their jurisdiction, on top of the existing age-16 limit. For users in places where that age is higher than 16, this adds a stricter minimum age for using the Services.",
+        "severity": "minor",
+        "categories": [
+          "children",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "slack",
+      "doc": "terms",
+      "date": "2023-04-06",
+      "source": "archive",
+      "changed_words": 15,
+      "hunks": [
+        {
+          "removed": [
+            "Level 1, Block A",
+            "Nova Atria North",
+            "Sandyford Business District",
+            "Dublin 18"
+          ],
+          "added": [
+            "Salesforce Tower",
+            "60 R801, North Dock",
+            "Dublin"
+          ],
+          "context_before": [
+            "Slack Technologies Limited"
+          ],
+          "context_after": [
+            "Ireland"
+          ],
+          "changed_words": 15
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230302141927/https://slack.com/terms-of-service/user",
+      "archive_after": "https://web.archive.org/web/20230406084341/https://slack.com/terms-of-service/user",
+      "ai": {
+        "headline": "Slack updates its Irish company address in the terms",
+        "summary": "Slack Technologies Limited's listed address in its terms has changed from Level 1, Block A Nova Atria in Sandyford to Salesforce Tower in North Dock, Dublin. This is only an address update and does not change any rights or obligations for users.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "slack",
+      "doc": "terms",
+      "date": "2024-04-01",
+      "source": "archive",
+      "changed_words": 10,
+      "hunks": [
+        {
+          "removed": [
+            "500 Howard Street"
+          ],
+          "added": [
+            "Salesforce Tower,",
+            "415 Mission Street, 3rd Floor,"
+          ],
+          "context_before": [
+            "Slack Technologies"
+          ],
+          "context_after": [
+            "San Francisco, CA 94105"
+          ],
+          "changed_words": 10
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240303184522/https://slack.com/terms-of-service/user",
+      "archive_after": "https://web.archive.org/web/20240401201212/https://slack.com/terms-of-service/user",
+      "ai": {
+        "headline": "Slack updates its San Francisco mailing address in terms",
+        "summary": "Slack's terms now list a new San Francisco office address (Salesforce Tower, 415 Mission Street) in place of 500 Howard Street. This is a contact detail change and does not affect users' rights or data.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-28",
+      "words": 2134,
+      "archive": "https://web.archive.org/web/20230128105642/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-03-02",
+      "words": 2155,
+      "archive": "https://web.archive.org/web/20230302141927/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-04-06",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20230406084341/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-05-24",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20230524133230/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-06-02",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20230602075015/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-07-19",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20230719203045/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-08-16",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20230816073406/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-09-11",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20230911064355/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-10-04",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20231004013523/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-11-27",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20231127163145/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2023-12-08",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20231208081039/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-01-05",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20240105185620/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-02-05",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20240205225158/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-03-03",
+      "words": 2150,
+      "archive": "https://web.archive.org/web/20240303184522/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20240401201212/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-05-05",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20240505235724/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-06-10",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20240610082619/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-07-03",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20240703034221/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-08-22",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20240822152145/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-09-17",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20240917143210/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-10-09",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20241009160014/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-11-07",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20241107063240/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2024-12-02",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20241202141958/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-01-09",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250109213057/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-02-06",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250206223542/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-03-12",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250312173610/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-04-04",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250404022533/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-05-16",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250516233749/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-06-12",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250612124330/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-07-01",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250701104315/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-08-08",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250808014537/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-09-12",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20250912032501/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-11-10",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20251110232129/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2025-12-15",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20251215183637/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-01-18",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260118074725/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260201023227/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-03-03",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260303070002/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-04-06",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260406125507/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-05-26",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260526152546/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-06-08",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260608134114/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-07-08",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260708140604/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-08-08",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260808013832/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-09-10",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20260910014233/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-10-10",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20261010163819/https://slack.com/terms-of-service/user"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 2154,
+      "archive": "https://web.archive.org/web/20261101013511/https://slack.com/terms-of-service/user"
+    }
+  ]
+}

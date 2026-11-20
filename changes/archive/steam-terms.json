@@ -1,0 +1,1245 @@
+{
+  "date": "archive",
+  "company": "steam",
+  "doc": "terms",
+  "changes": [
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2023-05-01",
+      "source": "archive",
+      "changed_words": 8,
+      "hunks": [
+        {
+          "removed": [
+            "The AAA will administer the arbitration. Outside the U.S., Valve will select a neutral arbitration provider that uses these or similar rules. It may be conducted through the submission of documents, by phone, or in person in the country where you live or at another mutually agreed location."
+          ],
+          "added": [
+            "The AAA will administer the arbitration. Outside the U.S., Valve will select a neutral arbitration provider that uses these or similar rules. It may be conducted through the submission of documents, by phone, or in person in the county where you live or at another mutually agreed location."
+          ],
+          "context_before": [
+            "The U.S. Federal Arbitration Act applies to this Section 11 as far as your country’s laws permit. The arbitration will be governed by the Consumer Arbitration Rules (or the Commercial Arbitration Rules, if the Consumer Arbitration rules are inapplicable) of the American Arbitration Association (\"AAA\") as modified by this Agreement. Rules are available at http://www.adr.org. The arbitrator is bound by the terms of this Agreement."
+          ],
+          "context_after": [
+            "If you seek $10,000 or less, Valve agrees to promptly reimburse your filing fee and your share if any of AAA’s arbitration costs, including arbitrator compensation, unless the arbitrator determines your claims are frivolous or were filed for harassment. Valve agrees not to seek its attorneys’ fees or costs unless the arbitrator determines your claims are frivolous or were filed for harassment. If you seek more than $10,000 and the AAA Consumer Arbitration Rules do not apply, the AAA’s arbitration costs, including arbitrator compensation, will be split between you and Valve according to the AAA Commercial Arbitration Rules."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "This Agreement was last updated on December 2, 2022 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "added": [
+            "This Agreement was last updated on April 25, 2023 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "context_before": [
+            "You agree to comply with all applicable import/export laws and regulations. You agree not to export the Content and Services or Hardware or allow use of your Account by individuals of any terrorist supporting countries to which encryption exports are at the time of exportation restricted by the U.S. Bureau of Export Administration. You represent and warrant that you are not located in, under the control of, or a national or resident of any such prohibited country."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230401055232/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20230501031455/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam changes its arbitration wording and updates its revision date to April 2023",
+        "summary": "Steam's terms make two small changes: the word \"country\" is corrected to \"county\" in the arbitration location wording, and the agreement's \"last updated\" date moves from December 2, 2022 to April 25, 2023. Neither change alters your rights, fees, or obligations.",
+        "severity": "minor",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2023-09-01",
+      "source": "archive",
+      "changed_words": 5,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Bahasa Indonesia (Indonesian)"
+          ],
+          "context_before": [
+            "Italiano (Italian)"
+          ],
+          "context_after": [
+            "Magyar (Hungarian)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "| Recycling"
+          ],
+          "added": [],
+          "context_before": [
+            "| Support"
+          ],
+          "context_after": [
+            "| Gift Cards"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230801023147/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20230901002714/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam adds Indonesian language option and removes Recycling menu link",
+        "summary": "Steam added Bahasa Indonesia (Indonesian) to its list of available languages and removed a \"Recycling\" item from a site menu. These are menu and language list changes only; no rules about user data, money, or legal rights are affected.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2024-01-01",
+      "source": "archive",
+      "changed_words": 9,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Get the Steam Mobile App"
+          ],
+          "context_before": [
+            "Change language"
+          ],
+          "context_after": [
+            "View desktop website"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "© 2023 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "added": [
+            "© 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "context_before": [
+            "Privacy Feedback"
+          ],
+          "context_after": [
+            "VAT included in all prices where applicable."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "| Recycling"
+          ],
+          "context_before": [
+            "| Support"
+          ],
+          "context_after": [
+            "| Gift Cards"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231201025607/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20240101080052/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam updates footer copyright year and adds website links",
+        "summary": "Steam's terms page footer changed: the copyright year moved from 2023 to 2024, a \"Get the Steam Mobile App\" link was added, and a \"Recycling\" link was added to the site menu. None of these changes affect user data, money, or legal rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2024-06-01",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "About"
+          ],
+          "context_before": [
+            "Broadcasts"
+          ],
+          "context_after": [
+            "Support"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "| Recycling"
+          ],
+          "added": [],
+          "context_before": [
+            "| Support"
+          ],
+          "context_after": [
+            "| Gift Cards"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240501012641/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20240601002543/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam's terms page menu now has an \"About\" link and no \"Recycling\" link",
+        "summary": "Steam added an \"About\" link to the navigation menu between \"Broadcasts\" and \"Support,\" and removed a \"Recycling\" link from the menu. These look like navigation menu changes only, with no new rules about users' data, money, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2024-10-01",
+      "source": "archive",
+      "changed_words": 1306,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Valve has updated the Steam Subscriber Agreement. The updates affect your legal rights, including how disputes and claims between you and Valve are resolved. Among other things, the new dispute resolution provisions in Section 10 require that all disputes and claims proceed in court and not in arbitration. Please review carefully."
+          ],
+          "context_before": [
+            "Report a translation problem"
+          ],
+          "context_after": [
+            "Home"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [
+            "Applicable law/mediation/jurisdiction/attorney’s fees",
+            "Dispute resolution/binding arbitration/class action waiver"
+          ],
+          "added": [
+            "Applicable law/jurisdiction"
+          ],
+          "context_before": [
+            "Term and termination"
+          ],
+          "context_after": [
+            "Miscellaneous"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "SECTION 11 CONTAINS A BINDING ARBITRATION AGREEMENT AND CLASS ACTION WAIVER. IT AFFECTS HOW DISPUTES ARE RESOLVED. PLEASE READ IT. IF YOU ARE A CONSUMER AND LIVE IN THE PROVINCE OF QUEBEC (CANADA), THE EUROPEAN UNION, OR THE UNITED KINGDOM, SECTION 11 DOES NOT APPLY TO YOU."
+          ],
+          "added": [],
+          "context_before": [
+            "This Steam Subscriber Agreement (\"Agreement\") is a legal document that explains your rights and obligations as a subscriber of Steam from Valve Corporation, a corporation under the laws of the State of Washington, with its registered office at 10400 NE 4th St., Bellevue, WA 98004, United States, registered with the Washington Secretary of State under number 60 22 90 773, VAT ID No. EU 8260 00671 (\"Valve\"). Please read it carefully."
+          ],
+          "context_after": [
+            "1. REGISTRATION AS A SUBSCRIBER; APPLICATION OF TERMS TO YOU; YOUR ACCOUNT, ACCEPTANCE OF AGREEMENTS ⏶"
+          ],
+          "changed_words": 47
+        },
+        {
+          "removed": [
+            "Sections 2.C., 2.D., 2.F., 2.G., 3.A., 3.B., 3.D., 3.H., and 5 - 12 will survive any expiration or termination of this Agreement.",
+            "10. APPLICABLE LAW/MEDIATION/JURISDICTION/ATTORNEYS’ FEES ⏶"
+          ],
+          "added": [
+            "Sections 2.C., 2.D., 2.F., 2.G., 3.A., 3.B., 3.D., 3.H., and 5 - 11 will survive any expiration or termination of this Agreement.",
+            "10. APPLICABLE LAW/JURISDICTION ⏶",
+            "Most user concerns can be resolved by use of our Steam support site at https://support.steampowered.com/. If Valve is unable to resolve your concerns and a dispute remains between you and Valve, this Section explains how the parties have agreed to resolve it."
+          ],
+          "context_before": [
+            "D. Survival of Terms"
+          ],
+          "context_after": [
+            "For All Subscribers Outside the European Union and United Kingdom:"
+          ],
+          "changed_words": 47
+        },
+        {
+          "removed": [
+            "You and Valve agree that this Agreement shall be deemed to have been made and executed in the State of Washington, U.S.A., and Washington law, excluding conflict of laws principles and the Convention on Contracts for the International Sale of Goods, governs all claims arising out of or relating to: (i) any aspect of the relationship between us; (ii) this Agreement; or (iii) your use of Steam, your Account or the Content and Services; except that the U.S. Federal Arbitration Act governs arbitration as far as your country’s laws permit. Subject to Section 11 (Dispute Resolution/Binding Arbitration/Class Action Waiver) below, you and Valve agree that any claim asserted in any legal proceeding shall be commenced and maintained exclusively in any state or federal court located in King County, Washington, having subject matter jurisdiction. You and Valve hereby consent to the exclusive jurisdiction of such courts. In any dispute arising out of or relating to this Agreement, your use of Steam, your account, or the Content and Services, the prevailing party will be entitled to attorneys’ fees and expenses (except arbitration -- see Section 11.C.)"
+          ],
+          "added": [
+            "You and Valve agree that this Agreement shall be deemed to have been made and executed in the State of Washington, U.S.A., and Washington law, excluding conflict of laws principles and the Convention on Contracts for the International Sale of Goods, governs all disputes and claims arising out of or relating to: (i) any aspect of the relationship between us; (ii) this Agreement; or (iii) your use of Steam, your Account or the Content and Services. You and Valve agree that all disputes and claims between you and Valve (including any dispute or claim that arose before the existence of this or any prior agreement) shall be commenced and maintained exclusively in any state or federal court located in King County, Washington, having subject matter jurisdiction. You and Valve hereby consent to the exclusive jurisdiction of such courts and waive any objections as to personal jurisdiction or venue in such courts.",
+            "If the laws where you live mandate alternative dispute resolution options, you may seek a remedy under those options. If you are a consumer who lives in Russia, you may also seek a remedy with local Russian state courts."
+          ],
+          "context_before": [
+            "For All Subscribers Outside the European Union and United Kingdom:"
+          ],
+          "context_after": [
+            "For EU and UK Subscribers:"
+          ],
+          "changed_words": 146
+        },
+        {
+          "removed": [
+            "11. DISPUTE RESOLUTION/BINDING ARBITRATION/CLASS ACTION WAIVER ⏶",
+            "This Section 11 shall apply to the maximum extent permitted by applicable law. IN PARTICULAR, IF YOU ARE A CONSUMER WHO LIVES IN A EUROPEAN UNION MEMBER COUNTRY, THE UNITED KINGDOM, THE PROVINCE OF QUEBEC (CANADA), AUSTRALIA, OR NEW ZEALAND, THIS SECTION 11 DOES NOT APPLY TO YOU. IF YOU ARE A CONSUMER WHO LIVES IN RUSSIA,YOU MAY UTILIZE THE ARBITRATION PROCESS IDENTIFIED IN THIS SECTION 11 OR YOU MAY USE LOCAL RUSSIAN STATE COURTS TO RESOLVE YOUR DISPUTE.",
+            "Most user concerns can be resolved by use of our Steam support site at https://support.steampowered.com/. If Valve is unable to resolve your concerns and a dispute remains between you and Valve, this Section explains how the parties have agreed to resolve it.",
+            "A. Must Arbitrate All Claims Except Intellectual Property, Unauthorized Use, Piracy, or Theft",
+            "YOU AND VALVE AGREE TO RESOLVE ALL DISPUTES AND CLAIMS BETWEEN US IN INDIVIDUAL BINDING ARBITRATION. THAT INCLUDES, BUT IS NOT LIMITED TO, ANY CLAIMS ARISING OUT OF OR RELATING TO: (i) ANY ASPECT OF THE RELATIONSHIP BETWEEN US; (ii) THIS AGREEMENT; OR (iii) YOUR USE OF STEAM, YOUR ACCOUNT, HARDWARE OR THE CONTENT AND SERVICES. IT APPLIES REGARDLESS OF WHETHER SUCH CLAIMS ARE BASED IN CONTRACT, TORT, STATUTE, FRAUD, UNFAIR COMPETITION, MISREPRESENTATION OR ANY OTHER LEGAL THEORY, AND INCLUDES ALL CLAIMS BROUGHT ON BEHALF OF ANOTHER PARTY.",
+            "However, this Section 11 does not apply to the following types of claims or disputes, which you or Valve may bring in any court with jurisdiction: (i) claims of infringement or other misuse of intellectual property rights, including such claims seeking injunctive relief; and (ii) claims related to or arising from any alleged unauthorized use, piracy, or theft.",
+            "This Section 11 does not prevent you from bringing your dispute to the attention of any federal, state, or local government agencies that can, if the law allows, seek relief from us for you.",
+            "An arbitration is a proceeding before a neutral arbitrator, instead of before a judge or jury. Arbitration is less formal than a lawsuit in court, and provides more limited discovery. It follows different rules than court proceedings, and is subject to very limited review by courts. The arbitrator will issue a written decision and provide a statement of reasons if requested by either party. YOU UNDERSTAND THAT YOU AND VALVE ARE GIVING UP THE RIGHT TO SUE IN COURT AND TO HAVE A TRIAL BEFORE A JUDGE OR JURY.",
+            "B. Try to Resolve Dispute Informally First",
+            "You and Valve agree to make reasonable, good faith efforts to informally resolve any dispute before initiating arbitration. A party who intends to seek arbitration must first send the other a written notice that describes the nature and basis of the claim or dispute and sets forth the relief sought. If you and Valve do not reach an agreement to resolve that claim or dispute within thirty (30) calendar days after the notice is received, you or Valve may commence an arbitration. Written notice to Valve must be sent via postal mail to: ATTN: Arbitration Notice, Valve Corporation, P.O. Box 1688, Bellevue, WA 98004.",
+            "C. Arbitration Rules and Fees",
+            "The U.S. Federal Arbitration Act applies to this Section 11 as far as your country’s laws permit. The arbitration will be governed by the Consumer Arbitration Rules (or the Commercial Arbitration Rules, if the Consumer Arbitration rules are inapplicable) of the American Arbitration Association (\"AAA\") as modified by this Agreement. Rules are available at http://www.adr.org. The arbitrator is bound by the terms of this Agreement.",
+            "The AAA will administer the arbitration. Outside the U.S., Valve will select a neutral arbitration provider that uses these or similar rules. It may be conducted through the submission of documents, by phone, or in person in the county where you live or at another mutually agreed location.",
+            "If you seek $10,000 or less, Valve agrees to promptly reimburse your filing fee and your share if any of AAA’s arbitration costs, including arbitrator compensation, unless the arbitrator determines your claims are frivolous or were filed for harassment. Valve agrees not to seek its attorneys’ fees or costs unless the arbitrator determines your claims are frivolous or were filed for harassment. If you seek more than $10,000 and the AAA Consumer Arbitration Rules do not apply, the AAA’s arbitration costs, including arbitrator compensation, will be split between you and Valve according to the AAA Commercial Arbitration Rules.",
+            "D. Individual Binding Arbitration Only",
+            "YOU AND VALVE AGREE NOT TO BRING OR PARTICIPATE IN A CLASS OR REPRESENTATIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION, WHISTLE BLOWER ACTION, OR CLASS, COLLECTIVE, OR REPRESENTATIVE ARBITRATION, EVEN IF AAA’s RULES WOULD OTHERWISE ALLOW ONE. THE ARBITRATOR MAY AWARD RELIEF ONLY IN FAVOR OF THE INDIVIDUAL PARTY SEEKING RELIEF AND ONLY TO THE EXTENT OF THAT PARTY’S INDIVIDUAL CLAIM. You and Valve also agree not to seek to combine any action or arbitration with any other action or arbitration without the consent of all parties to this Agreement and all other actions or arbitrations.",
+            "This Agreement does not permit class, collective, or representative arbitration. A court has exclusive authority to rule on any assertion that it does.",
+            "E. What Happens if Part of Section 11 Is Found Illegal or Unenforceable",
+            "If any part of Section 11 (Dispute Resolution/Binding Arbitration/Class Action Waiver) is found to be illegal or unenforceable, the rest will remain in effect (with an arbitration award issued before any court proceeding begins), except that if a finding of partial illegality or unenforceability would allow class, collective, or representative arbitration, all of Section 11 will be unenforceable and the claim or dispute will be resolved in court.",
+            "12. MISCELLANEOUS ⏶",
+            "Except as otherwise expressly set forth in this Agreement, in the event that any provision of this Agreement shall be held by an arbitrator, court, or other tribunal of competent jurisdiction to be illegal or unenforceable, such provision will be enforced to the maximum extent permissible and the remaining portions of this Agreement shall remain in full force and effect. Section 11.E. governs if some parts of Section 11 (Dispute Resolution/Binding Arbitration/Class Action Waiver) are held to be illegal or unenforceable. This Agreement, including any Subscription Terms, Rules of Use, the Valve Privacy Policy, and the Valve Hardware Limited Warranty Policy, constitutes and contains the entire agreement between the parties with respect to the subject matter hereof and supersedes any prior oral or written agreements. You agree that this Agreement is not intended to confer and does not confer any rights or remedies upon any person other than the parties to this Agreement."
+          ],
+          "added": [
+            "11. MISCELLANEOUS ⏶",
+            "In the event that any provision of this Agreement is held by a court to be invalid or unenforceable, such provision will be deemed severable and the remaining provisions of this Agreement shall remain in full force and effect.",
+            "This Agreement, including any Subscription Terms, Rules of Use, the Valve Privacy Policy, and the Valve Hardware Limited Warranty Policy, constitutes and contains the entire agreement between the parties with respect to the subject matter hereof and supersedes any prior oral or written agreements. You agree that this Agreement is not intended to confer and does not confer any rights or remedies upon any person other than the parties to this Agreement."
+          ],
+          "context_before": [
+            "In the event that an Alternative Dispute Resolution Procedure fails, or if either Valve or you prefer not to resort to Alternative Dispute Resolution, you may bring proceedings in the courts of the place where you are domiciled."
+          ],
+          "context_after": [
+            "Valve’s obligations are subject to existing laws and legal process and Valve may comply with law enforcement or regulatory requests or requirements notwithstanding any contrary term."
+          ],
+          "changed_words": 999
+        },
+        {
+          "removed": [
+            "This Agreement was last updated on April 25, 2023 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "added": [
+            "This Agreement was last updated on September 26, 2024 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "context_before": [
+            "You agree to comply with all applicable import/export laws and regulations. You agree not to export the Content and Services or Hardware or allow use of your Account by individuals of any terrorist supporting countries to which encryption exports are at the time of exportation restricted by the U.S. Bureau of Export Administration. You represent and warrant that you are not located in, under the control of, or a national or resident of any such prohibited country."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 8
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240901011847/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20241001001809/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam removes mandatory arbitration and class action waiver, requires court disputes",
+        "summary": "Valve has removed the binding arbitration and class action waiver from the Steam Subscriber Agreement. Under the new terms, all disputes and claims between you and Valve must go to a court in King County, Washington, and you can no longer be required to resolve them through individual arbitration.",
+        "severity": "major",
+        "categories": [
+          "legal",
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2024-11-07",
+      "source": "archive",
+      "changed_words": 51,
+      "hunks": [
+        {
+          "removed": [
+            "Valve has updated the Steam Subscriber Agreement. The updates affect your legal rights, including how disputes and claims between you and Valve are resolved. Among other things, the new dispute resolution provisions in Section 10 require that all disputes and claims proceed in court and not in arbitration. Please review carefully."
+          ],
+          "added": [],
+          "context_before": [
+            "Report a translation problem"
+          ],
+          "context_after": [
+            "Home"
+          ],
+          "changed_words": 51
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241001001809/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20241107132952/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam drops arbitration, requires court for disputes and claims",
+        "summary": "Valve has removed the earlier wording about how disputes are handled and now says in Section 10 that all disputes and claims with Valve must go to court rather than arbitration. This affects your legal rights if you have a dispute with Valve.",
+        "severity": "major",
+        "categories": [
+          "legal",
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2025-03-01",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [
+            "| Steam",
+            "| @steam"
+          ],
+          "added": [
+            "|",
+            "|",
+            "|"
+          ],
+          "context_before": [
+            "| Gift Cards"
+          ],
+          "context_after": [],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250201022113/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20250301022725/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam removes its @steam handle from a table in its terms",
+        "summary": "Steam's terms page had a row listing \"Steam\" with the handle \"@steam\" in a table near \"Gift Cards,\" and that row was removed, leaving an empty row. The change only affects a listed social media handle and does not appear to change any user rights or obligations.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2025-10-01",
+      "source": "archive",
+      "changed_words": 512,
+      "hunks": [
+        {
+          "removed": [
+            "Online conduct, cheating and illegal behavior"
+          ],
+          "added": [
+            "Online conduct, cheating and automation"
+          ],
+          "context_before": [
+            "Billing, payment and other subscriptions"
+          ],
+          "context_after": [
+            "Third-party content"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "For any interaction with Steam your contractual relationship is with Valve. Except as otherwise indicated herein or at the time of the transaction (such as in the case of purchases from another Subscriber in a Subscription Marketplace), any transactions for Subscriptions (as defined below) you make on Steam are being made from Valve."
+          ],
+          "added": [
+            "For any interaction with Steam your contractual relationship is with Valve. Except as otherwise indicated herein or at the time of the transaction (such as in the case of a transaction with another Subscriber in a Subscription Marketplace), any transactions for Subscriptions (as defined below) you make on Steam are being made from Valve."
+          ],
+          "context_before": [
+            "A. Contracting Party"
+          ],
+          "context_after": [
+            "B. Hardware, Subscriptions; Content and Services"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "As a Subscriber you may obtain access to certain services, software and content available to Subscribers or purchase certain Hardware (as defined below) on Steam. The Steam client software and any other software, content, and updates you download or access via Steam, including but not limited to Valve or third-party video games and in-game content, software associated with Hardware and any virtual items you trade, sell or purchase in a Steam Subscription Marketplace are referred to in this Agreement as \"Content and Services;\" the rights to access and/or use any Content and Services accessible through Steam are referred to in this Agreement as \"Subscriptions.\""
+          ],
+          "added": [
+            "As a Subscriber you may obtain access to certain services, software and content available to Subscribers or purchase certain Hardware (as defined below) on Steam. The Steam client software and any other software, content, and updates you download or access via Steam, including but not limited to Valve or third-party video games and in-game content, software associated with Hardware and any virtual items you may acquire in a Subscription Marketplace are referred to in this Agreement as \"Content and Services;\" the rights to access and/or use any Content and Services accessible through Steam are referred to in this Agreement as \"Subscriptions.\""
+          ],
+          "context_before": [
+            "B. Hardware, Subscriptions; Content and Services"
+          ],
+          "context_after": [
+            "Each Subscription allows you to access particular Content and Services. Some Subscriptions may impose additional terms specific to that Subscription (\"Subscription Terms\") (for example, an end user license agreement specific to a particular game, or terms of use specific to a particular product or feature of Steam). Also, additional terms (for example, payment and billing procedures) may be posted on http://www.steampowered.com or within the Steam service (\"Rules of Use\"). Rules of Use include the Steam Online Conduct Rules http://steampowered.com/index.php?area=online_conduct and the Steam Refund Policy http://store.steampowered.com/steam_refunds. The Subscription Terms, the Rules of Use, and the Valve Privacy Policy (which can be found at http://www.valvesoftware.com/privacy.htm) are binding on you once you indicate your acceptance of them or of this Agreement, or otherwise become bound by them as described in Section 8 (Amendments to this Agreement)."
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Your Account, including any information pertaining to it (e.g.: contact information, billing information, Account history and Subscriptions, etc.), is strictly personal. You may therefore not sell or charge others for the right to use your Account, or otherwise transfer your Account, nor may you sell, charge others for the right to use, or transfer any Subscriptions other than if and as expressly permitted by this Agreement (including any Subscription Terms or Rules of Use) or as otherwise specifically permitted by Valve."
+          ],
+          "added": [
+            "Your Account, including any information pertaining to it (e.g.: contact information, billing information, Account history and Subscriptions, etc.), is strictly personal. You may therefore not sell or charge others for the right to use your Account, or otherwise transfer your Account, nor may you sell, charge others for the right to use, or transfer any Subscriptions other than if and as expressly permitted by this Agreement (including any Subscription Terms or Rules of Use) or as otherwise specifically permitted by Valve. Furthermore, you must not use your Account to enable a violation of this Agreement by others, such as through their commercial use of Steam Content and Services."
+          ],
+          "context_before": [
+            "When you complete Steam’s registration process, you create a Steam account (\"Account\"). Your Account may also include billing information you provide to Valve for transactions concerning Subscriptions, Content and Services and the purchase of any physical goods through Steam (“Hardware”). You may not reveal, share or otherwise allow others to use your password or Account except as otherwise specifically authorized by Valve. You are responsible for the confidentiality of your login and password and for the security of your computer system. Valve is not responsible for the use of your password and Account or for all of the communication and activity on Steam that results from use of your login name and password by you, or by any person to whom you may have intentionally or by negligence disclosed your login and/or password in violation of this confidentiality provision. Unless it results from Valve’s negligence or fault, Valve is not responsible for the use of your Account by a person who fraudulently used your login and password without your permission. If you believe that the confidentiality of your login and/or password may have been compromised, you must notify Valve via the support form (https://support.steampowered.com/newticket.php) without any delay."
+          ],
+          "context_after": [
+            "D. Acceptance of Agreements"
+          ],
+          "changed_words": 27
+        },
+        {
+          "removed": [
+            "Steam may include one or more features or sites that allow Subscribers to trade, offer or order certain types of Subscriptions (for example, license rights to virtual items) with, to or from other Subscribers (\"Subscription Marketplaces\"). An example of a Subscription Marketplace is the Steam Community Market. By using or participating in Subscription Marketplaces, you authorize Valve, on its own behalf or as an agent or licensee of any third-party creator or publisher of the applicable Subscriptions in your Account, to transfer those Subscriptions from your Account in order to give effect to any trade or sale you make.",
+            "Valve may charge a fee for trades or sales in a Subscription Marketplace. Any fees will be disclosed to you prior to the completion of the trade or sale.",
+            "If you complete a trade, sale or order in a Subscription Marketplace, you acknowledge and agree that you are responsible for taxes, if any, which may be due with respect to your transactions, including sales or use taxes, and for compliance with applicable tax laws. Proceeds from sales you make in a Subscription Marketplace may be considered income to you for income tax purposes. You should consult with a tax specialist to determine your tax liability in connection with your activities in any Subscription Marketplace."
+          ],
+          "added": [
+            "Steam may include one or more features or sites that allow Subscribers to acquire or dispose of certain types of Subscriptions (for example, license rights to virtual items) with, to or from other Subscribers (\"Subscription Marketplaces\"). The Steam Community Market and the Steam Trading functionality are both examples of Subscription Marketplaces. By using or participating in Subscription Marketplaces, you authorize Valve, on its own behalf or as an agent or licensee of any third-party creator or publisher of the applicable Subscriptions in your Account, to transfer those Subscriptions from your Account in order to give effect to any transaction you make.",
+            "Valve may charge a fee for transactions in a Subscription Marketplace. Any fees will be disclosed to you prior to the completion of the transaction.",
+            "Valve collects sales tax/VAT/GST/etc. for transactions in a Subscription Marketplace as required by law. You should consult with a tax specialist to determine your tax liability in connection with your activities in any Subscription Marketplace."
+          ],
+          "context_before": [
+            "D. Trading and Transactions of Subscriptions Between Subscribers"
+          ],
+          "context_after": [
+            "You understand and acknowledge that Valve does not have any obligation to provide or maintain any Subscription Marketplace. Valve may decide to cease operation of any Subscription Marketplace, change the fees that it charges or change the terms or features of the Steam Subscription Marketplace. You will be notified of any substantial change to the terms or availability of the Subscription Marketplace in a timely fashion before the entry into force of the change, except in cases of force majeure, Subscriber's fault or third party event outside of Valve's control."
+          ],
+          "changed_words": 108
+        },
+        {
+          "removed": [
+            "You also understand and acknowledge that Subscriptions traded, sold or ordered in any Subscription Marketplace are license rights, that you have no ownership interest in such Subscriptions, and that Valve does not recognize any transfers of Subscriptions (including transfers by operation of law) that are made outside of Steam."
+          ],
+          "added": [
+            "You also understand and acknowledge that Subscriptions acquired in any Subscription Marketplace are license rights, that you have no ownership interest in such Subscriptions, and that Valve does not recognize any transfers of Subscriptions (including transfers by operation of law) that are made outside of Steam."
+          ],
+          "context_before": [
+            "You understand and acknowledge that Valve does not have any obligation to provide or maintain any Subscription Marketplace. Valve may decide to cease operation of any Subscription Marketplace, change the fees that it charges or change the terms or features of the Steam Subscription Marketplace. You will be notified of any substantial change to the terms or availability of the Subscription Marketplace in a timely fashion before the entry into force of the change, except in cases of force majeure, Subscriber's fault or third party event outside of Valve's control."
+          ],
+          "context_after": [
+            "E. Retail Purchase"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "4. ONLINE CONDUCT, CHEATING AND PROCESS TAMPERING ⏶"
+          ],
+          "added": [
+            "4. ONLINE CONDUCT, CHEATING AND AUTOMATION ⏶",
+            "A. Online Conduct"
+          ],
+          "context_before": [
+            "EU and UK law provides a statutory right to withdraw from certain contracts for physical merchandise and for the order of digital content. You can find more information about the extent of your statutory right to withdraw and the ways you can exercise it on this page: https://support.steampowered.com/kb_article.php?ref=8620-QYAL-4516."
+          ],
+          "context_after": [
+            "Your online conduct and interaction with other Subscribers must comply with the Steam Online Conduct Rules, to be found at http://steampowered.com/index.php?area=online_conduct. Depending on terms of use imposed by third parties who host particular games or other services, additional requirements may also be provided in the Subscription Terms applicable to a particular Subscription."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [],
+          "added": [
+            "B. Cheating"
+          ],
+          "context_before": [
+            "Your online conduct and interaction with other Subscribers must comply with the Steam Online Conduct Rules, to be found at http://steampowered.com/index.php?area=online_conduct. Depending on terms of use imposed by third parties who host particular games or other services, additional requirements may also be provided in the Subscription Terms applicable to a particular Subscription."
+          ],
+          "context_after": [
+            "Steam and the Content and Services may include functionality designed to identify software or hardware processes or functionality that may give a player an unfair competitive advantage when playing multiplayer versions of any Content and Services or modifications of Content and Services (\"Cheats\"). You agree that you will not create Cheats or assist third parties in any way to create or use Cheats. You agree that you will not directly or indirectly disable, circumvent, or otherwise interfere with the operation of software designed to prevent or report the use of Cheats."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "You agree that you will not tamper with the execution of Steam or Content and Services unless otherwise authorized by Valve. You acknowledge and agree that either Valve or any host of an online multiplayer game distributed through Steam (\"External Host\") may refuse to allow you to participate in certain online multiplayer games if you use Cheats or tamper with the execution of Steam or the Content and Services.",
+            "Further, you acknowledge and agree that External Hosts may report your use of Cheats or unauthorized process tampering to Valve, and Valve may communicate your history of use thereof to External Hosts within the boundaries of the Steam Privacy Policy.",
+            "Valve may restrict or terminate your Account or a particular Subscription for any conduct or activity that is illegal, constitutes a Cheat, or breaches the Steam Online Conduct Rules. You acknowledge that Valve is not required to provide you notice before terminating your Subscription(s) and/or Account.",
+            "You may not use Cheats, automation software (bots), mods, hacks, or any other unauthorized third-party software, to modify or automate any Subscription Marketplace process, the process of Steam account creation or otherwise in interacting with or controlling the processes or user interface of Steam, except to the degree expressly permitted."
+          ],
+          "added": [
+            "You agree that you will not tamper with the execution of Steam or Content and Services unless otherwise authorized by Valve.",
+            "You may not use Cheats, mods, hacks, or any other unauthorized third-party software, to modify any Subscription Marketplace process, the process of Steam account creation or otherwise in interacting with or controlling the processes or user interface of Steam Content and Services, except to the degree expressly permitted.",
+            "C. Automation",
+            "You may not use any form of scripts, bots, macros, or other non-human-controlled systems (“Automation”) to interact with Content and Services on Steam in any manner, including but not limited to:",
+            "Automating the Steam account creation process,",
+            "Faking gameplay statistics (e.g., inflated wins or losses, XP, playtime),",
+            "Earning rewards or progress without genuine user input,",
+            "Participating in adjudication systems (like peer reviews or “overwatch”) through automated means, including influencing outcomes or reporting users by scripted action rather than informed judgment.",
+            "D. Enforcement",
+            "We may enforce this provision using both automated detection methods and human review, in accordance with our policies and applicable law.",
+            "Further, you acknowledge and agree that any host of an online multiplayer game distributed through Steam (\"External Host\") may report your use of Cheats, unauthorized process tampering or Automation to Valve, and Valve may communicate your history of use thereof to External Hosts within the boundaries of the Steam Privacy Policy.",
+            "Valve may restrict or terminate your Account(s) or a particular Subscription for any conduct or activity that is illegal, constitutes a Cheat or Automation or breaches the Steam Online Conduct Rules. You acknowledge that Valve is not required to provide you notice before terminating your Subscription(s) and/or Account."
+          ],
+          "context_before": [
+            "Steam and the Content and Services may include functionality designed to identify software or hardware processes or functionality that may give a player an unfair competitive advantage when playing multiplayer versions of any Content and Services or modifications of Content and Services (\"Cheats\"). You agree that you will not create Cheats or assist third parties in any way to create or use Cheats. You agree that you will not directly or indirectly disable, circumvent, or otherwise interfere with the operation of software designed to prevent or report the use of Cheats."
+          ],
+          "context_after": [
+            "5. THIRD-PARTY CONTENT ⏶"
+          ],
+          "changed_words": 254
+        },
+        {
+          "removed": [
+            "In the event of a dispute relating to the interpretation, the performance or the validity of the Subscriber Agreement, an amicable solution may be sought before any legal action. You can file your complaint at http://help.steampowered.com. The European Commission provides an Online Dispute Resolution website for EU consumers at https://ec.europa.eu/consumers/odr. Participation in this website is not available to US companies, which is why Valve is not registered there. However, insofar as your complaint concerns the behavior of Valve’s data protection representative Valve GmbH you can file your complaint there.",
+            "In the event that an Alternative Dispute Resolution Procedure fails, or if either Valve or you prefer not to resort to Alternative Dispute Resolution, you may bring proceedings in the courts of the place where you are domiciled."
+          ],
+          "added": [
+            "In the event of a dispute relating to the interpretation, the performance or the validity of the Subscriber Agreement, an amicable solution may be sought before any legal action. You can file your complaint at http://help.steampowered.com."
+          ],
+          "context_before": [
+            "This Agreement is governed by the law of the country where you have your habitual residence."
+          ],
+          "context_after": [
+            "11. MISCELLANEOUS ⏶"
+          ],
+          "changed_words": 91
+        },
+        {
+          "removed": [
+            "This Agreement was last updated on September 26, 2024 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "added": [
+            "This Agreement was last updated on September 18, 2025 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "context_before": [
+            "You agree to comply with all applicable import/export laws and regulations. You agree not to export the Content and Services or Hardware or allow use of your Account by individuals of any terrorist supporting countries to which encryption exports are at the time of exportation restricted by the U.S. Bureau of Export Administration. You represent and warrant that you are not located in, under the control of, or a national or resident of any such prohibited country."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250901010626/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20251001004124/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam adds rules banning automation tools and bots, and expands cheating rules",
+        "summary": "Steam's terms now have a new section banning scripts, bots, and other automated systems from interacting with Steam content and services, including faking gameplay stats and earning rewards without genuine input. Users are also barred from using their account to enable others' violations, and Steam says it may enforce these rules with automated detection and human review. Valve can restrict or terminate accounts for automation, and it no longer says that conduct \"illegal\" is grounds for action in the cheating section, and the EU/UK dispute-resolution and court-venue language was removed.",
+        "severity": "moderate",
+        "categories": [
+          "account",
+          "your_content",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2025-11-04",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "| Accessibility"
+          ],
+          "context_before": [
+            "| Legal"
+          ],
+          "context_after": [
+            "| Steam Subscriber Agreement"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Accessibility",
+            "|"
+          ],
+          "context_before": [
+            "|"
+          ],
+          "context_after": [
+            "Steam Subscriber Agreement"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251001004124/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20251104020432/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam adds an \"Accessibility\" entry to its terms page menu",
+        "summary": "Steam added an \"Accessibility\" heading to the navigation list of its Steam Subscriber Agreement terms page. The change only appears to alter the page's menu layout, not any rules about users' data, money, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2026-01-08",
+      "source": "archive",
+      "changed_words": 6,
+      "hunks": [
+        {
+          "removed": [
+            "Stats"
+          ],
+          "added": [
+            "Charts"
+          ],
+          "context_before": [
+            "News"
+          ],
+          "context_after": [
+            "Community"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Stats"
+          ],
+          "added": [
+            "Charts"
+          ],
+          "context_before": [
+            "News"
+          ],
+          "context_after": [
+            "COMMUNITY"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "© 2025 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "added": [
+            "© 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "context_before": [
+            "Privacy Feedback"
+          ],
+          "context_after": [
+            "VAT included in all prices where applicable."
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251201013929/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20260108155439/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam renames \"Stats\" menu link to \"Charts\" and updates copyright year",
+        "summary": "Steam renamed a \"Stats\" navigation link to \"Charts\" in the site menu and updated the copyright year from 2025 to 2026. These are cosmetic wording changes that do not change any rules about users' data, money, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2026-02-01",
+      "source": "archive",
+      "changed_words": 8,
+      "hunks": [
+        {
+          "removed": [
+            "Login"
+          ],
+          "added": [
+            "Sign in"
+          ],
+          "context_before": [],
+          "context_after": [
+            "Store"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "| Cookies"
+          ],
+          "context_before": [
+            "| Refunds"
+          ],
+          "context_after": [
+            "STORE"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "login"
+          ],
+          "added": [
+            "sign in"
+          ],
+          "context_before": [
+            "Install Steam"
+          ],
+          "context_after": [
+            "|"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260108155439/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20260201032202/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam changes \"Login\" wording to \"Sign in\" and adds a Cookies menu link",
+        "summary": "Steam's terms page mostly swaps the word \"Login\" for \"Sign in\" in menu and text, and adds a \"Cookies\" item to the navigation menu. These look like wording and menu changes only, with no new rules about users' data, money, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2026-04-04",
+      "source": "archive",
+      "changed_words": 64,
+      "hunks": [
+        {
+          "removed": [
+            "© 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.",
+            "VAT included in all prices where applicable.",
+            "Privacy Policy",
+            "|",
+            "Legal",
+            "|",
+            "Accessibility",
+            "|",
+            "Steam Subscriber Agreement",
+            "|",
+            "Refunds",
+            "|",
+            "Cookies",
+            "View mobile website",
+            "About Valve",
+            "| Jobs",
+            "| Steamworks",
+            "| Steam Distribution",
+            "| Support",
+            "| Recycling",
+            "| Gift Cards",
+            "|",
+            "|",
+            "|"
+          ],
+          "added": [],
+          "context_before": [
+            "Privacy Feedback"
+          ],
+          "context_after": [],
+          "changed_words": 64
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260301032004/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20260404204426/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam removes footer copyright and site links from its terms page",
+        "summary": "Steam removed the footer text from its terms page, including the copyright notice, VAT note, and links to the privacy policy, legal pages, refunds, support, and other sections. No new rules or obligations were added, so this appears to be a page layout or footer cleanup rather than a change to your rights or data use.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2026-05-01",
+      "source": "archive",
+      "changed_words": 58,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "For Japanese Subscribers:",
+            "Any funds added to your Steam Wallet that you have not used within six (6) months following the date you added them will expire, as required by Japanese law. You can review your funds, and the expiration dates for your funds, in your Steam Wallet in your Steam account."
+          ],
+          "context_before": [
+            "You may use Steam Wallet funds to order Subscriptions, including by making in-game orders where Steam Wallet transactions are enabled, and purchase Hardware. Subject to Section 3.I, funds added to the Steam Wallet are non-refundable and non-transferable. Steam Wallet funds do not constitute a personal property right, have no value outside Steam and can only be used to order Subscriptions and related content via Steam (including but not limited to games and other applications offered through the Steam Store, or in a Steam Subscription Marketplace) and Hardware. Steam Wallet funds have no cash value and are not exchangeable for cash. Steam Wallet funds that are deemed unclaimed property may be turned over to the applicable authority."
+          ],
+          "context_after": [
+            "D. Trading and Transactions of Subscriptions Between Subscribers"
+          ],
+          "changed_words": 52
+        },
+        {
+          "removed": [
+            "This Agreement was last updated on September 18, 2025 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "added": [
+            "This Agreement was last updated on April 20, 2026 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "context_before": [
+            "You agree to comply with all applicable import/export laws and regulations. You agree not to export the Content and Services or Hardware or allow use of your Account by individuals of any terrorist supporting countries to which encryption exports are at the time of exportation restricted by the U.S. Bureau of Export Administration. You represent and warrant that you are not located in, under the control of, or a national or resident of any such prohibited country."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260404204426/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20260501022339/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam adds six-month expiry for unused Wallet funds for Japanese users",
+        "summary": "Steam now says that, for Japanese Subscribers, funds added to the Steam Wallet expire if not used within six months of being added, as required by Japanese law. Users can check their funds and expiry dates in their Steam Wallet.",
+        "severity": "major",
+        "categories": [
+          "account",
+          "your_rights"
+        ],
+        "what_you_can_do": "You can review your Steam Wallet funds and their expiration dates in your Steam account's Steam Wallet.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2026-07-02",
+      "source": "archive",
+      "changed_words": 10,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Bahasa Indonesia (Indonesian)",
+            "Bahasa Melayu (Malay) BETA"
+          ],
+          "context_before": [
+            "ไทย (Thai)"
+          ],
+          "context_after": [
+            "Български (Bulgarian)"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Bahasa Indonesia (Indonesian)"
+          ],
+          "added": [],
+          "context_before": [
+            "Italiano (Italian)"
+          ],
+          "context_after": [
+            "Magyar (Hungarian)"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260601160812/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20260702180255/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam adds Malay as a beta language and moves Indonesian in its language list",
+        "summary": "Steam's terms now list Bahasa Melayu (Malay) as a beta language option and Bahasa Indonesia (Indonesian) appears in a new spot in the language list, while the old Indonesian entry near Italian was removed. These changes only affect which language versions are offered and do not change any rights or data use.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "terms",
+      "date": "2026-10-01",
+      "source": "archive",
+      "changed_words": 106,
+      "hunks": [
+        {
+          "removed": [
+            "E. Payment Processing",
+            "Payment processing related to Content and Services and/or Hardware purchased on Steam is performed by either Valve Corporation directly or by Valve’s fully owned subsidiary Valve GmbH i.L. on behalf of Valve Corporation depending on the type of payment method used. If your card was issued outside the United States, your payment may be processed via a European acquirer by Valve GmbH i.L. on behalf of Valve Corporation. For any other type of purchases, payment will be collected by Valve Corporation directly. In any case, delivery of Content and Services as well as Hardware is performed by Valve Corporation."
+          ],
+          "added": [],
+          "context_before": [
+            "You consent to receiving sales invoices electronically."
+          ],
+          "context_after": [
+            "2. LICENSES ⏶"
+          ],
+          "changed_words": 102
+        },
+        {
+          "removed": [
+            "This Agreement was last updated on April 20, 2026 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "added": [
+            "This Agreement was last updated on September 10, 2026 (\"Revision Date\"). If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above."
+          ],
+          "context_before": [
+            "You agree to comply with all applicable import/export laws and regulations. You agree not to export the Content and Services or Hardware or allow use of your Account by individuals of any terrorist supporting countries to which encryption exports are at the time of exportation restricted by the U.S. Bureau of Export Administration. You represent and warrant that you are not located in, under the control of, or a national or resident of any such prohibited country."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260901090639/https://store.steampowered.com/subscriber_agreement/",
+      "archive_after": "https://web.archive.org/web/20261001195340/https://store.steampowered.com/subscriber_agreement/",
+      "ai": {
+        "headline": "Steam removes payment processing section and updates revision date",
+        "summary": "Steam removed a section explaining that payments are processed by Valve Corporation or its subsidiary Valve GmbH i.L. depending on payment method and card origin, and that delivery is always handled by Valve Corporation. The only other change is an updated \"last updated\" date to September 10, 2026, with no new rules added.",
+        "severity": "moderate",
+        "categories": [
+          "legal",
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-01",
+      "words": 8851,
+      "archive": "https://web.archive.org/web/20230101020831/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-02-01",
+      "words": 8851,
+      "archive": "https://web.archive.org/web/20230201082252/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-03-01",
+      "words": 8851,
+      "archive": "https://web.archive.org/web/20230301053846/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-04-01",
+      "words": 8853,
+      "archive": "https://web.archive.org/web/20230401055232/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 8853,
+      "archive": "https://web.archive.org/web/20230501031455/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-07-01",
+      "words": 8853,
+      "archive": "https://web.archive.org/web/20230701012154/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-08-01",
+      "words": 8853,
+      "archive": "https://web.archive.org/web/20230801023147/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-09-01",
+      "words": 8854,
+      "archive": "https://web.archive.org/web/20230901002714/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2023-12-01",
+      "words": 8854,
+      "archive": "https://web.archive.org/web/20231201025607/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-01-01",
+      "words": 8861,
+      "archive": "https://web.archive.org/web/20240101080052/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-02-01",
+      "words": 8861,
+      "archive": "https://web.archive.org/web/20240201023651/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 8861,
+      "archive": "https://web.archive.org/web/20240301022459/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 8861,
+      "archive": "https://web.archive.org/web/20240401041659/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 8861,
+      "archive": "https://web.archive.org/web/20240501012641/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-06-01",
+      "words": 8860,
+      "archive": "https://web.archive.org/web/20240601002543/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-07-01",
+      "words": 8862,
+      "archive": "https://web.archive.org/web/20240701011616/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 8862,
+      "archive": "https://web.archive.org/web/20240801011543/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 8862,
+      "archive": "https://web.archive.org/web/20240901011847/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-10-01",
+      "words": 7926,
+      "archive": "https://web.archive.org/web/20241001001809/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-11-07",
+      "words": 7875,
+      "archive": "https://web.archive.org/web/20241107132952/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 7875,
+      "archive": "https://web.archive.org/web/20241201021535/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-01-01",
+      "words": 7875,
+      "archive": "https://web.archive.org/web/20250101000301/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-02-01",
+      "words": 7875,
+      "archive": "https://web.archive.org/web/20250201022113/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-03-01",
+      "words": 7874,
+      "archive": "https://web.archive.org/web/20250301022725/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 7874,
+      "archive": "https://web.archive.org/web/20250401010304/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-05-01",
+      "words": 7874,
+      "archive": "https://web.archive.org/web/20250501005713/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-06-01",
+      "words": 7874,
+      "archive": "https://web.archive.org/web/20250601013515/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-07-01",
+      "words": 7874,
+      "archive": "https://web.archive.org/web/20250701011009/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 7874,
+      "archive": "https://web.archive.org/web/20250801010757/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 7874,
+      "archive": "https://web.archive.org/web/20250901010626/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 7823,
+      "archive": "https://web.archive.org/web/20251001004124/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-11-04",
+      "words": 7827,
+      "archive": "https://web.archive.org/web/20251104020432/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 7827,
+      "archive": "https://web.archive.org/web/20251201013929/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-01-08",
+      "words": 7827,
+      "archive": "https://web.archive.org/web/20260108155439/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 7831,
+      "archive": "https://web.archive.org/web/20260201032202/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 7833,
+      "archive": "https://web.archive.org/web/20260301032004/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-04-04",
+      "words": 7769,
+      "archive": "https://web.archive.org/web/20260404204426/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 7821,
+      "archive": "https://web.archive.org/web/20260501022339/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 7821,
+      "archive": "https://web.archive.org/web/20260601160812/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-07-02",
+      "words": 7825,
+      "archive": "https://web.archive.org/web/20260702180255/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 7825,
+      "archive": "https://web.archive.org/web/20260801012254/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 7825,
+      "archive": "https://web.archive.org/web/20260901090639/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 7723,
+      "archive": "https://web.archive.org/web/20261001195340/https://store.steampowered.com/subscriber_agreement/"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 7723,
+      "archive": "https://web.archive.org/web/20261101004438/https://store.steampowered.com/subscriber_agreement/"
+    }
+  ]
+}

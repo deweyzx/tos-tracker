@@ -145,6 +145,13 @@ def summarize_change(client, change):
     for block in response.content:
         if block.type == "tool_use":
             result = dict(block.input)
+            # Now and then the form comes back half filled in; treat that as a failure
+            # (skipped this run, retried on the next) rather than saving a broken summary.
+            # (An empty "what you can do" is a real answer: the policy names no action.)
+            result.setdefault("what_you_can_do", None)
+            missing = [f for f in SUMMARY_TOOL["input_schema"]["required"] if f != "what_you_can_do" and result.get(f) is None]
+            if missing:
+                raise ValueError(f"the AI left out {', '.join(missing)}")
             result["model"] = MODEL  # record which AI wrote it
             return result
     raise ValueError("The AI didn't return a summary.")

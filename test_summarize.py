@@ -121,5 +121,18 @@ with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
     check("an AI error doesn't crash the run", count3 == 0)
     check("a failed change is left unsummarized, to retry next time", "ai" not in saved3["changes"][0])
 
+    shutil.copy("examples/sample_change.json", report_path)
+    half = FakeClient(answer={"headline": "ExampleApp changes its policy", "summary": "Something changed."})
+    count4 = sm.summarize_report(half, report_path)
+    saved4 = json.loads(report_path.read_text(encoding="utf-8"))
+    check("a half-filled answer doesn't crash the run", count4 == 0)
+    check("a half-filled answer isn't saved", "ai" not in saved4["changes"][0])
+
+    shutil.copy("examples/sample_change.json", report_path)
+    no_action = FakeClient(answer={"headline": "ExampleApp rewords its policy", "summary": "Just rewording.", "severity": "minor", "categories": ["other"]})
+    count5 = sm.summarize_report(no_action, report_path)
+    saved5 = json.loads(report_path.read_text(encoding="utf-8"))["changes"][0].get("ai", {})
+    check("an answer with no action to take is saved", count5 == 1 and saved5.get("what_you_can_do") is None)
+
 print(f"\n{passed} passed, {failed} failed")
 sys.exit(1 if failed else 0)

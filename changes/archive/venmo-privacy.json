@@ -1,0 +1,79 @@
+{
+  "date": "archive",
+  "company": "venmo",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "venmo",
+      "doc": "privacy",
+      "date": "2026-10-04",
+      "source": "archive",
+      "changed_words": 31,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Privacy Statement",
+            "User Agreement",
+            "Venmo Long Form Disclosure",
+            "Licenses",
+            "Consent",
+            "Cookies",
+            "Helpful Information",
+            "Approved Business Account Addendum",
+            "Mastercard Cardholder Agreement",
+            "Venmo Mastercard Privacy Policy",
+            "Cryptocurrency Terms & Conditions",
+            "Open Source Attribution"
+          ],
+          "context_before": [
+            "Venmo Legal Agreements"
+          ],
+          "context_after": [
+            "DATE EFFECTIVE: November 17, 2025"
+          ],
+          "changed_words": 31
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260903023903/https://venmo.com/legal/us-privacy-policy/",
+      "archive_after": "https://web.archive.org/web/20261004160701/https://venmo.com/legal/us-privacy-policy/",
+      "ai": {
+        "headline": "Venmo adds a list of related legal agreements to its privacy page",
+        "summary": "Venmo's privacy policy page now includes a list of its related legal agreements, such as the User Agreement, Cryptocurrency Terms, and Venmo Mastercard Privacy Policy. The text provided shows only this list of links and no new rules about how your data or money is handled.",
+        "severity": "minor",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-06-06",
+      "words": 7594,
+      "archive": "https://web.archive.org/web/20260606142347/https://venmo.com/legal/us-privacy-policy/"
+    },
+    {
+      "date": "2026-08-04",
+      "words": 7594,
+      "archive": "https://web.archive.org/web/20260804034956/https://venmo.com/legal/us-privacy-policy/"
+    },
+    {
+      "date": "2026-09-03",
+      "words": 7594,
+      "archive": "https://web.archive.org/web/20260903023903/https://venmo.com/legal/us-privacy-policy/"
+    },
+    {
+      "date": "2026-10-04",
+      "words": 7625,
+      "archive": "https://web.archive.org/web/20261004160701/https://venmo.com/legal/us-privacy-policy/"
+    },
+    {
+      "date": "2026-11-12",
+      "words": 7625,
+      "archive": "https://web.archive.org/web/20261112063052/https://venmo.com/legal/us-privacy-policy/"
+    }
+  ]
+}

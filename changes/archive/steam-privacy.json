@@ -1,0 +1,1610 @@
+{
+  "date": "archive",
+  "company": "steam",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2023-02-01",
+      "source": "archive",
+      "changed_words": 593,
+      "hunks": [
+        {
+          "removed": [
+            "ń«ĆõĮōõĖŁµ¢ć (Simplified Chinese)",
+            "ń╣üķ½öõĖŁµ¢ć (Traditional Chinese)",
+            "µŚźµ£¼Ķ¬× (Japanese)",
+            "ĒĢ£ĻĄŁņ¢┤ (Korean)",
+            "Ó╣äÓĖŚÓĖó (Thai)",
+            "ąæčŖą╗ą│ą░čĆčüą║ąĖ (Bulgarian)",
+            "─īe┼Ītina (Czech)"
+          ],
+          "added": [
+            "简体中文 (Simplified Chinese)",
+            "繁體中文 (Traditional Chinese)",
+            "日本語 (Japanese)",
+            "한국어 (Korean)",
+            "ไทย (Thai)",
+            "Български (Bulgarian)",
+            "Čeština (Czech)"
+          ],
+          "context_before": [
+            "language"
+          ],
+          "context_after": [
+            "Dansk (Danish)"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "Espa├▒ol - Espa├▒a (Spanish - Spain)",
+            "Espa├▒ol - Latinoam├®rica (Spanish - Latin America)",
+            "╬Ģ╬╗╬╗╬Ę╬Į╬╣╬║╬¼ (Greek)",
+            "Fran├¦ais (French)"
+          ],
+          "added": [
+            "Español - España (Spanish - Spain)",
+            "Español - Latinoamérica (Spanish - Latin America)",
+            "Ελληνικά (Greek)",
+            "Français (French)"
+          ],
+          "context_before": [
+            "Deutsch (German)"
+          ],
+          "context_after": [
+            "Italiano (Italian)"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "Portugu├¬s (Portuguese - Portugal)",
+            "Portugu├¬s - Brasil (Portuguese - Brazil)",
+            "Rom├ón─ā (Romanian)",
+            "ąĀčāčüčüą║ąĖą╣ (Russian)"
+          ],
+          "added": [
+            "Português (Portuguese - Portugal)",
+            "Português - Brasil (Portuguese - Brazil)",
+            "Română (Romanian)",
+            "Русский (Russian)"
+          ],
+          "context_before": [
+            "Polski (Polish)"
+          ],
+          "context_after": [
+            "Suomi (Finnish)"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "T├╝rk├¦e (Turkish)",
+            "Tiß║┐ng Viß╗ćt (Vietnamese)",
+            "ąŻą║čĆą░čŚąĮčüčīą║ą░ (Ukrainian)"
+          ],
+          "added": [
+            "Türkçe (Turkish)",
+            "Tiếng Việt (Vietnamese)",
+            "Українська (Ukrainian)"
+          ],
+          "context_before": [
+            "Svenska (Swedish)"
+          ],
+          "context_after": [
+            "Report a translation problem"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Valve respects the privacy of its online visitors and customers of its products and services and complies with applicable laws for the protection of your privacy, including, without limitation, the California Consumer Privacy Act (\"CCPA\"), the European Union General Data Protection Regulation (\"GDPR\"), the UK GDPR, and the Swiss and EU Privacy Shield Frameworks."
+          ],
+          "added": [
+            "Valve respects the privacy of its online visitors and customers of its products and services and complies with applicable laws for the protection of your privacy, including, without limitation, the California Consumer Privacy Act (\"CCPA\"), the European Union General Data Protection Regulation (\"GDPR\") and the UK GDPR."
+          ],
+          "context_before": [
+            "Privacy Policy Agreement"
+          ],
+          "context_after": [
+            "1. Definitions"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "We use \"Cookies\", which are text files placed on your computer, and similar technologies (e.g. web beacons, pixels, ad tags and device identifiers) to help us analyze how users use our services, as well as to improve the services we are offering, to improve marketing, analytics or website functionality. The use of Cookies is standard on the internet. Although most web browsers automatically accept cookies, the decision of whether to accept or not is yours. You may adjust your browser settings to prevent the reception of cookies, or to provide notification whenever a cookie is sent to you. You may refuse the use of cookies by selecting the appropriate settings on your browser. The management of the use of cookies for each browser is further detailed on the following help page: https://support.steampowered.com/kb_article.php?ref=9076-QYOJ-0930. However, please note that if you do this, you may not be able to access the full functionality of our websites."
+          ],
+          "added": [
+            "We use \"Cookies\", which are text files placed on your computer, and similar technologies (e.g. web beacons, pixels, ad tags and device identifiers) to help us analyze how users use our services, as well as to improve the services we are offering, to improve marketing, analytics or website functionality. The use of Cookies is standard on the internet. Although most web browsers automatically accept cookies, the decision of whether to accept or not is yours. You may adjust your browser settings to prevent the reception of cookies, or to provide notification whenever a cookie is sent to you.",
+            "You can manage the use of optional cookies by clicking on the \"Cookies setting\" page accessible via the cookie banner displayed when you first visit our website and at any time through the Cookie Settings page available here."
+          ],
+          "context_before": [
+            "3.6 Tracking Data and Cookies"
+          ],
+          "context_after": [
+            "When you visit any of our services, our servers log your IP address, which is a number that is automatically assigned to the network your computer is part of."
+          ],
+          "changed_words": 73
+        },
+        {
+          "removed": [
+            "Subject to your separate consent or where explicitly permitted under applicable laws on email marketing, Valve may send you marketing messages about products and services offered by Valve to your email address. In such a case we may also use your collected information to customize such marketing messages as well as collect information on whether you opened such messages and which links in their text you followed."
+          ],
+          "added": [
+            "Valve may send you marketing messages about products and services that are similar to goods and services you have previously requested from Valve to your email address or where you have given explicit consent. In such a case we may also use your collected information to customize such marketing messages as well as collect information on whether you opened such messages and which links in their text you followed."
+          ],
+          "context_before": [
+            "We may process information collected under this section 3 so that content, products and services shown on the pages of the Steam store and in update messages displayed when launching the Steam Client can be tailored to meet your needs and populated with relevant recommendations and offers. This is done to improve your customer experience. You can prevent the processing of your data in this way by turning off the automatic loading of the Steam store page and of Steam notifications in the \"Interface\" section of the Steam Client settings."
+          ],
+          "context_after": [
+            "You can opt out or withdraw your consent to receive marketing emails at any time by either withdrawing the consent on the same page where you previously provided it or clicking the \"unsubscribe\" link provided in every marketing email. Alternatively, you can select what kinds of emails you wish to receive on the email setting page."
+          ],
+          "changed_words": 38
+        },
+        {
+          "removed": [
+            "To allow you to exercise your data protection rights in a simple way we are providing a dedicated section on the Steam support page (the \"Privacy Dashboard\"). This gives you access to your Personal Data, allows you to rectify and delete it where necessary and to object to its use where you feel necessary. To access it, log into the Steam support page at http://help.steampowered.com and choose the menu items My Account -> Data Related to Your Steam Account. In most cases, you can access, manage, or delete Personal Data in the Privacy Dashboard, but you may also contact Valve with questions or requests via the contact processes described in sections 8 and 10 below."
+          ],
+          "added": [
+            "To allow you to exercise your data protection rights in a simple way we are providing a dedicated section on the Steam support page (the \"Privacy Dashboard\"). This gives you access to your Personal Data, allows you to rectify and delete it where necessary and to object to its use where you feel necessary. To access it, log into the Steam support page at https://help.steampowered.com and choose the menu items My Account -> Data Related to Your Steam Account. In most cases, you can access, manage, or delete Personal Data in the Privacy Dashboard, but you may also contact Valve with questions or requests via the contact processes described in sections 8 and 10 below.",
+            "As a visitor to the Steam Website without being logged in, you can control Cookies through the process described in section 3.6 above. You can also contact Valve or its European representative through the contact info provided in section 8. below to exercise your rights or use this web form."
+          ],
+          "context_before": [
+            "The data protection laws of the European Economic Area, United Kingdom, California, and other territories grant their residents certain rights in relation to their Personal Data. While other jurisdictions may provide fewer statutory rights, we make the tools designed to exercise such rights available to our customers worldwide. (When we talk about the GDPR in this section, we mean the version of the GDPR that applies to you in the EU or UK)."
+          ],
+          "context_after": [
+            "As a resident of the European Economic Area or United Kingdom you have the following rights in relation to your Personal Data:"
+          ],
+          "changed_words": 52
+        },
+        {
+          "removed": [
+            "We may transfer and store your personal information outside the European Economic Area or United Kingdom, in countries which may not have equivalent data protection law. If we do so, we will take steps to ensure your personal information is protected by appropriate legal safeguards, like EU or UK standard contractual clauses, and that it is treated securely and in accordance with this privacy policy.",
+            "Although the EU-U.S Privacy Shield and the Swiss-US Privacy Shield have been ruled invalid as a legal basis for data transfers to the U.S., Valve and TR Technical Services Inc., its wholly-owned U.S. subsidiary (collectively \"Valve\") continue to comply with the Privacy Shield Principles with respect to any Personal Data transferred from the EU, UK, and Switzerland to the United States in reliance on the Privacy Shield. If there is any conflict between the terms in this privacy policy and the Privacy Shield Principles, the Principles shall govern. To learn more about the Privacy Shield program, and to view our certification, please visit http://www.privacyshield.gov.",
+            "The Federal Trade Commission has jurisdiction over Valve's compliance with the Privacy Shield Principles. Under the Principles, Valve shall remain liable if third party agents process the personal information on our behalf in a manner inconsistent with the Principles, unless Valve proves it is not responsible for the event giving rise to the damage. EU, UK and Swiss individuals with inquiries or complaints regarding our compliance with the Principles should first contact Valve here. If we do not address your concern satisfactorily, please contact our U.S.-based third-party dispute resolution provider (free of charge) at https://feedback-form.truste.com/watchdog/request. As explained in the Privacy Shield documentation (https://www.privacyshield.gov/article?id=ANNEX-I-introduction) certain residual claims not resolved by other means may be subject to binding arbitration. In such event, an arbitration option will be made available to you."
+          ],
+          "added": [
+            "As a US-based company that operates a worldwide gaming service, we may transfer your personal data outside of the European Economic Area or the United Kingdom. In such case, we take additional steps to ensure your personal data is protected by appropriate legal safeguards, and that it is treated securely and in accordance with this Privacy Policy. In this respect, Valve has implemented appropriate contractual and organizational measures to ensure the confidentiality, security and integrity of user data in connection with its collection, processing and transfer. Measures we have taken include, among other things:",
+            "Minimization of data collection; in particular the possibility to set up and operate anonymous accounts",
+            "Pseudonymization of data",
+            "Industry-standard encryption",
+            "Provision of access to data on a need-to-know basis",
+            "The use of Standard Contractual Clauses in their version in force and approved by the European Commission and the UK ICO to safeguard transfers"
+          ],
+          "context_before": [
+            "9. Additional Information for Users from the European Economic Area, U.K., and Switzerland"
+          ],
+          "context_after": [
+            "10. Additional Information for Users from California"
+          ],
+          "changed_words": 367
+        },
+        {
+          "removed": [
+            "Revision Date: February 16, 2022"
+          ],
+          "added": [
+            "Revision Date: January 1, 2023"
+          ],
+          "context_before": [
+            "Categories, Sources, Purposes, and Recipients of the Data We Collect. Over the preceding 12 months, we have collected the categories of Personal Data described in section 3 of this Privacy Policy. The sources from which we collect Personal Data, and the purposes for which we collect and process it, are described in sections 2 and 3. Over the preceding 12 months, we have disclosed for business purposes each of the categories of Personal Data with the categories of third parties as described in section 5."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "© 2022 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "added": [
+            "© 2023 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "context_before": [
+            "Privacy Feedback"
+          ],
+          "context_after": [
+            "VAT included in all prices where applicable."
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230101052156/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20230201004358/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam updates privacy policy: cookie controls, marketing emails, and transfer safeguards",
+        "summary": "Steam's privacy policy was updated in January 2023. Most changes are rewording, updated language list and copyright year, but it now says Steam sends marketing emails only for products similar to ones you've requested or with your explicit consent, and it describes new cookie settings and data-transfer safeguards. Privacy Shield references were removed, and the policy now points to a cookie settings page for managing optional cookies.",
+        "severity": "moderate",
+        "categories": [
+          "advertising",
+          "data_collection",
+          "your_rights"
+        ],
+        "what_you_can_do": "Manage optional cookies through the \"Cookies setting\" page shown in the cookie banner or the Cookie Settings page linked in the policy, and withdraw consent or unsubscribe from marketing emails using the link in each email.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2023-08-01",
+      "source": "archive",
+      "changed_words": 252,
+      "hunks": [
+        {
+          "removed": [
+            "5.4 Google Analytics",
+            "Our website uses Google Analytics, a web analytics service provided by Google, Inc. (\"Google\"). Google Analytics uses cookies to help the website operators analyze how visitors use the site. The information generated by the cookie about the visitors' use of the website will generally be transmitted to and stored by Google on servers in the United States.",
+            "On this website, IP anonymization has been activated. The IP addresses of users visiting Steam will be shortened. Only in exceptional cases will a complete IP address be transferred to a Google server in the United States and shortened there. On behalf of the website operator, Google will use this information for the purpose of evaluating the website for its users, in order to compile reports on website activity, and to provide other services relating to website activity and internet usage for website operators.",
+            "Google will not associate the IP address transferred in the context of Google Analytics with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser. However, please note that in this case you may not be able to use the full functionality of this website. You can learn more about how Google Analytics collects and uses data at www.google.com/policies/privacy/partners.",
+            "Furthermore, you can prevent Google's collection and processing of data about your use of the website, by downloading and installing the browser plug-in through the following link: http://tools.google.com/dlpage/gaoptout?hl=en.",
+            "5.5 We make certain data related to your Steam User Account available to other players and our partners through the Steamworks API. This information can be accessed by anyone by querying your Steam ID. At a minimum, the public persona name you have chosen to represent you on Steam and your Avatar picture are accessible this way, as well as whether you have received a ban for cheating in a multiplayer game. The accessibility of any additional info about you can be controlled through your Steam Community user profile page; data publicly available on your profile page can be accessed automatically through the Steamworks API. In addition to the publicly available information, game developers and publishers have access to certain information from the Steamworks API directly relating to the users of the games they operate. This information includes as a minimum your ownership of the game in question. Depending on which Steamworks services are implemented in the game it may also include leaderboard information, your progress in the game, achievements you have completed, your multiplayer game matchmaking information, in-game items and other information needed to operate the game and provide support for it. For more information on what Steamworks services a specific game has implemented, please review its store page."
+          ],
+          "added": [
+            "5.4 We make certain data related to your Steam User Account available to other players and our partners through the Steamworks API. This information can be accessed by anyone by querying your Steam ID. At a minimum, the public persona name you have chosen to represent you on Steam and your Avatar picture are accessible this way, as well as whether you have received a ban for cheating in a multiplayer game. The accessibility of any additional info about you can be controlled through your Steam Community user profile page; data publicly available on your profile page can be accessed automatically through the Steamworks API. In addition to the publicly available information, game developers and publishers have access to certain information from the Steamworks API directly relating to the users of the games they operate. This information includes as a minimum your ownership of the game in question. Depending on which Steamworks services are implemented in the game it may also include leaderboard information, your progress in the game, achievements you have completed, your multiplayer game matchmaking information, in-game items and other information needed to operate the game and provide support for it. For more information on what Steamworks services a specific game has implemented, please review its store page."
+          ],
+          "context_before": [
+            "5.3 In accordance with internet standards, we may also share certain information (including your IP address and the identification of Steam content you wish to access) with our third party network providers that provide content delivery network services and game server services in connection with Steam. Our content delivery network providers enable the delivery of digital content you have requested, e.g. when using Steam, by using a system of distributed servers that deliver the content to you, based on your geographic location."
+          ],
+          "context_after": [
+            "While we do not knowingly share Personally Identifying Information about you through the Steamworks API such as your real name or your email address, any information you share about yourself on your public Steam Profile can be accessed through the Steamworks API, including information that may make you identifiable."
+          ],
+          "changed_words": 242
+        },
+        {
+          "removed": [
+            "5.6 The Steam community includes message boards, forums and/or chat areas, where users can exchange ideas and communicate with each other. When posting a message to a board, forum or chat area, please be aware that the information is being made publicly available online; therefore, you are doing so at your own risk. If your Personal Data is posted on one of our community forums against your will, please use the reporting function and the Steam help site to request its removal.",
+            "5.7 Valve may allow you to link your Steam User Account to an account offered by a third party. If you consent to link the accounts, Valve may collect and combine information you allowed Valve to receive from a third party with information of your Steam User Account to the degree allowed by your consent at the time."
+          ],
+          "added": [
+            "5.5 The Steam community includes message boards, forums and/or chat areas, where users can exchange ideas and communicate with each other. When posting a message to a board, forum or chat area, please be aware that the information is being made publicly available online; therefore, you are doing so at your own risk. If your Personal Data is posted on one of our community forums against your will, please use the reporting function and the Steam help site to request its removal.",
+            "5.6 Valve may allow you to link your Steam User Account to an account offered by a third party. If you consent to link the accounts, Valve may collect and combine information you allowed Valve to receive from a third party with information of your Steam User Account to the degree allowed by your consent at the time."
+          ],
+          "context_before": [
+            "While we do not knowingly share Personally Identifying Information about you through the Steamworks API such as your real name or your email address, any information you share about yourself on your public Steam Profile can be accessed through the Steamworks API, including information that may make you identifiable."
+          ],
+          "context_after": [
+            "If the linking of the accounts requires the transmission of information about your person from Valve to a third party, you will be informed about it before the linking takes place and you will be given the opportunity to consent to the linking and the transmission of your information. The third party's use of your information will be subject to the third party's privacy policy, which we encourage you to review."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "5.8 Valve may release Personal Data to comply with court orders or laws and regulations that require us to disclose such information."
+          ],
+          "added": [
+            "5.7 Valve may release Personal Data to comply with court orders or laws and regulations that require us to disclose such information."
+          ],
+          "context_before": [
+            "If the linking of the accounts requires the transmission of information about your person from Valve to a third party, you will be informed about it before the linking takes place and you will be given the opportunity to consent to the linking and the transmission of your information. The third party's use of your information will be subject to the third party's privacy policy, which we encourage you to review."
+          ],
+          "context_after": [
+            "6. Your Rights and Control Mechanisms"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Revision Date: January 1, 2023"
+          ],
+          "added": [
+            "Revision Date: July 13, 2023"
+          ],
+          "context_before": [
+            "Categories, Sources, Purposes, and Recipients of the Data We Collect. Over the preceding 12 months, we have collected the categories of Personal Data described in section 3 of this Privacy Policy. The sources from which we collect Personal Data, and the purposes for which we collect and process it, are described in sections 2 and 3. Over the preceding 12 months, we have disclosed for business purposes each of the categories of Personal Data with the categories of third parties as described in section 5."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230701012149/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20230801011942/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam removes Google Analytics section and adds new Steamworks data disclosure",
+        "summary": "Steam dropped its section describing its use of Google Analytics, including the cookie and IP-address details it had listed. It also added a clearer description of what game developers and publishers can access through the Steamworks API, including ownership, progress, achievements, matchmaking, and in-game item information, plus a note that information on your public profile can be accessed this way.",
+        "severity": "moderate",
+        "categories": [
+          "data_sharing",
+          "data_collection"
+        ],
+        "what_you_can_do": "Control how much information about you is accessible through the Steamworks API by adjusting your Steam Community user profile page settings.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2023-09-01",
+      "source": "archive",
+      "changed_words": 5,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Bahasa Indonesia (Indonesian)"
+          ],
+          "context_before": [
+            "Italiano (Italian)"
+          ],
+          "context_after": [
+            "Magyar (Hungarian)"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "| Recycling"
+          ],
+          "added": [],
+          "context_before": [
+            "| Support"
+          ],
+          "context_after": [
+            "| Gift Cards"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230801011942/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20230901124004/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam adds Bahasa Indonesia language option and changes a footer link",
+        "summary": "Steam's privacy policy page now lists Bahasa Indonesia (Indonesian) as a language option, and a \"Recycling\" link was removed from the page's navigation menu. These are page-presentation changes only; no new rules about how user data is collected, used, or shared appear in this text.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2024-01-01",
+      "source": "archive",
+      "changed_words": 5,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Get the Steam Mobile App"
+          ],
+          "context_before": [
+            "Change language"
+          ],
+          "context_after": [
+            "View desktop website"
+          ],
+          "changed_words": 5
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231201012110/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20240101072124/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam adds a link promoting its Steam Mobile App on the privacy page",
+        "summary": "Steam added a \"Get the Steam Mobile App\" link near the language and desktop website options on its privacy page. This is a navigation change only and does not alter how Steam handles your data.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2024-03-01",
+      "source": "archive",
+      "changed_words": 560,
+      "hunks": [
+        {
+          "removed": [
+            "简体中文 (Simplified Chinese)",
+            "繁體中文 (Traditional Chinese)",
+            "日本語 (Japanese)",
+            "한국어 (Korean)",
+            "ไทย (Thai)",
+            "Български (Bulgarian)",
+            "Čeština (Czech)"
+          ],
+          "added": [
+            "ń«ĆõĮōõĖŁµ¢ć (Simplified Chinese)",
+            "ń╣üķ½öõĖŁµ¢ć (Traditional Chinese)",
+            "µŚźµ£¼Ķ¬× (Japanese)",
+            "ĒĢ£ĻĄŁņ¢┤ (Korean)",
+            "Ó╣äÓĖŚÓĖó (Thai)",
+            "ąæčŖą╗ą│ą░čĆčüą║ąĖ (Bulgarian)",
+            "─īe┼Ītina (Czech)"
+          ],
+          "context_before": [
+            "language"
+          ],
+          "context_after": [
+            "Dansk (Danish)"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "Español - España (Spanish - Spain)",
+            "Español - Latinoamérica (Spanish - Latin America)",
+            "Ελληνικά (Greek)",
+            "Français (French)"
+          ],
+          "added": [
+            "Espa├▒ol - Espa├▒a (Spanish - Spain)",
+            "Espa├▒ol - Latinoam├®rica (Spanish - Latin America)",
+            "╬Ģ╬╗╬╗╬Ę╬Į╬╣╬║╬¼ (Greek)",
+            "Fran├¦ais (French)"
+          ],
+          "context_before": [
+            "Deutsch (German)"
+          ],
+          "context_after": [
+            "Italiano (Italian)"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "Português (Portuguese - Portugal)",
+            "Português - Brasil (Portuguese - Brazil)",
+            "Română (Romanian)",
+            "Русский (Russian)"
+          ],
+          "added": [
+            "Portugu├¬s (Portuguese - Portugal)",
+            "Portugu├¬s - Brasil (Portuguese - Brazil)",
+            "Rom├ón─ā (Romanian)",
+            "ąĀčāčüčüą║ąĖą╣ (Russian)"
+          ],
+          "context_before": [
+            "Polski (Polish)"
+          ],
+          "context_after": [
+            "Suomi (Finnish)"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Türkçe (Turkish)",
+            "Tiếng Việt (Vietnamese)",
+            "Українська (Ukrainian)"
+          ],
+          "added": [
+            "T├╝rk├¦e (Turkish)",
+            "Tiß║┐ng Viß╗ćt (Vietnamese)",
+            "ąŻą║čĆą░čŚąĮčüčīą║ą░ (Ukrainian)"
+          ],
+          "context_before": [
+            "Svenska (Swedish)"
+          ],
+          "context_after": [
+            "Report a translation problem"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [],
+          "added": [
+            "Valve and its subsidiary TR Technical Inc. comply with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce. Valve has certified to the U.S. Department of Commerce that it adheres to the EU-U.S. Data Privacy Framework Principles (EU-U.S. DPF Principles) with regard to the processing of personal data received from the European Union in reliance on the EU-U.S. DPF and from the United Kingdom (and Gibraltar) in reliance on the UK Extension to the EU-U.S. DPF. Valve has certified to the U.S. Department of Commerce that it adheres to the Swiss-U.S. Data Privacy Framework Principles (Swiss-U.S. DPF Principles) with regard to the processing of personal data received from Switzerland in reliance on the Swiss-U.S. DPF. If there is any conflict between the terms in this privacy policy and the EU-U.S. DPF Principles and/or the Swiss-U.S. DPF Principles, the Principles shall govern. To learn more about the Data Privacy Framework (DPF) program, and to view our certification, please visit https://www.dataprivacyframework.gov/."
+          ],
+          "context_before": [
+            "Valve respects the privacy of its online visitors and customers of its products and services and complies with applicable laws for the protection of your privacy, including, without limitation, the California Consumer Privacy Act (\"CCPA\"), the European Union General Data Protection Regulation (\"GDPR\") and the UK GDPR."
+          ],
+          "context_after": [
+            "1. Definitions"
+          ],
+          "changed_words": 181
+        },
+        {
+          "removed": [
+            "Wherever we talk about Personal Data below, we mean any information that can either itself identify you as an individual (\"Personally Identifying Information\") or that can be connected to you indirectly by linking it to Personally Identifying Information. Valve also processes anonymous data, aggregated or not, to analyze and produce statistics related to the habits, usage patterns, and demographics of customers as a group or as individuals. Such anonymous data does not allow the identification of the customers to which it relates. Valve may share anonymous data, aggregated or not, with third parties."
+          ],
+          "added": [
+            "Wherever we talk about personal data (\"Personal Data\") below, we mean any information that can either itself identify you as an individual (\"Personally Identifying Information\") or that can be connected to you indirectly by linking it to Personally Identifying Information. Valve also processes anonymous data, aggregated or not, to analyze and produce statistics related to the habits, usage patterns, and demographics of customers as a group or as individuals. Such anonymous data does not allow the identification of the customers to which it relates. Valve may share anonymous data, aggregated or not, with third parties."
+          ],
+          "context_before": [
+            "1. Definitions"
+          ],
+          "context_after": [
+            "Other capitalized terms in this Privacy Policy shall have the meanings defined in the Steam Subscriber Agreement (\"SSA\")."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "5.1 Valve and its subsidiaries may share your Personal Data with each other and use it to the degree necessary to achieve the purposes listed in section 2 above. In the event of a reorganization, sale or merger we may transfer Personal Data to the relevant third party subject to applicable laws.",
+            "5.2 We may also share your Personal Data with our third party service providers that provide customer support services in connection with goods, Content and Services distributed via Steam. Your Personal Data will be used in accordance with this Privacy Policy and only as far as this is necessary for performing customer support services."
+          ],
+          "added": [
+            "5.1 Valve and its subsidiaries may share your Personal Data with each other and use it to the degree necessary to achieve the purposes listed in section 2 above. In the event of a reorganization, sale or merger we may transfer Personal Data to the relevant third party subject to applicable laws, the Principles and liability requirements under the DPF.",
+            "5.2 We may also share your Personal Data with our third party service providers that provide customer support services in connection with goods, Content and Services distributed via Steam. Your Personal Data will be used in accordance with this Privacy Policy and only as far as this is necessary for performing customer support services. Valve complies with the Principles for all onward transfers of Personal Data from the EU, Switzerland, and the UK, including the provisions governing onward transfer liability."
+          ],
+          "context_before": [
+            "Valve does not sell Personal Data. However, we may share or provide access to each of the categories of Personal Data we collect as necessary for the following business purposes."
+          ],
+          "context_after": [
+            "5.3 In accordance with internet standards, we may also share certain information (including your IP address and the identification of Steam content you wish to access) with our third party network providers that provide content delivery network services and game server services in connection with Steam. Our content delivery network providers enable the delivery of digital content you have requested, e.g. when using Steam, by using a system of distributed servers that deliver the content to you, based on your geographic location."
+          ],
+          "changed_words": 36
+        },
+        {
+          "removed": [],
+          "added": [
+            "6.8 Arbitration",
+            "If Valve does not resolve any claimed violations of the Principles by any other DPF mechanism or by your rights under this section, you have ¢ in accordance with the requirements of Annex I to the DPF ¢ the possibility to invoke binding arbitration before the EU-U.S. Data Privacy Framework Panel."
+          ],
+          "context_before": [
+            "If French data protection legislation is applicable to you, you have the right to establish guidelines for the preservation, the deletion and the transmission of Personal Data after your death in accordance with article 40-1 of the Act No 78-17 of 6 January 1978 on Information, Technology, Data Files and Civil Liberties."
+          ],
+          "context_after": [
+            "7. Children"
+          ],
+          "changed_words": 53
+        },
+        {
+          "removed": [],
+          "added": [
+            "In compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Valve commits to resolve DPF Principles-related complaints about our collection and use of your personal information. EU, UK and Swiss individuals with inquiries or complaints regarding our handling of personal data received in reliance on the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF should first contact Valve at:"
+          ],
+          "context_before": [
+            "While we review any request sent by mail, please be aware that to combat fraud, harassment and identity theft, the only way to access, rectify or delete your data is through logging in with your Steam User Account at http://help.steampowered.com and selecting the menu items -> My Account -> View Account Data."
+          ],
+          "context_after": [
+            "Valve Corporation"
+          ],
+          "changed_words": 71
+        },
+        {
+          "removed": [
+            "EU representative for data protection questions:"
+          ],
+          "added": [
+            "EU and Switzerland representative for data protection questions:"
+          ],
+          "context_before": [
+            "Bellevue, WA 98009"
+          ],
+          "context_after": [
+            "Valve GmbH"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Certification and participation in the DPF, set out in the DPF List available at https://www.dataprivacyframework.gov/s/participant-search",
+            "In compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Valve commits, free of charge to the affected individual, to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information CommissionerÆs Office (ICO) and the Gibraltar Regulatory Authority (GRA) and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S. DPF., the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. DPF. Links to the website of each authority are available below.",
+            "EU DPAs: https://edpb.europa.eu/about-edpb/about-edpb/members_en",
+            "UK ICO: https://ico.org.uk/for-the-public/",
+            "GRA: https://www.gra.gi/data-protection",
+            "FDPIC: https://www.edoeb.admin.ch/edoeb/home.html",
+            "The Federal Trade Commission has jurisdiction over ValveÆs compliance with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF)."
+          ],
+          "context_before": [
+            "The use of Standard Contractual Clauses in their version in force and approved by the European Commission and the UK ICO to safeguard transfers"
+          ],
+          "context_after": [
+            "10. Additional Information for Users from California"
+          ],
+          "changed_words": 163
+        },
+        {
+          "removed": [
+            "Revision Date: July 13, 2023"
+          ],
+          "added": [
+            "Revision Date: February 14th, 2024"
+          ],
+          "context_before": [
+            "Categories, Sources, Purposes, and Recipients of the Data We Collect. Over the preceding 12 months, we have collected the categories of Personal Data described in section 3 of this Privacy Policy. The sources from which we collect Personal Data, and the purposes for which we collect and process it, are described in sections 2 and 3. Over the preceding 12 months, we have disclosed for business purposes each of the categories of Personal Data with the categories of third parties as described in section 5."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240201013812/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20240301022522/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam adds EU-U.S. Data Privacy Framework certification and complaint process",
+        "summary": "Steam's privacy policy now says Valve and TR Technical Inc. are certified under the EU-U.S., UK, and Swiss-U.S. Data Privacy Frameworks, which governs how personal data from those regions is handled. It adds a process for EU, UK, and Swiss users to raise complaints (first with Valve, then with data protection authorities or binding arbitration), and it names a new EU and Switzerland data protection contact. Other changes are mostly translated language names and a revised date.",
+        "severity": "moderate",
+        "categories": [
+          "data_sharing",
+          "your_rights",
+          "legal"
+        ],
+        "what_you_can_do": "Users from the EU, UK, or Switzerland who have a privacy inquiry or complaint can contact Valve first at the address listed in the policy, and can request binding arbitration before the EU-U.S. Data Privacy Framework Panel if the complaint is not resolved.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2024-07-01",
+      "source": "archive",
+      "changed_words": 48,
+      "hunks": [
+        {
+          "removed": [
+            "ń«ĆõĮōõĖŁµ¢ć (Simplified Chinese)",
+            "ń╣üķ½öõĖŁµ¢ć (Traditional Chinese)",
+            "µŚźµ£¼Ķ¬× (Japanese)",
+            "ĒĢ£ĻĄŁņ¢┤ (Korean)",
+            "Ó╣äÓĖŚÓĖó (Thai)",
+            "ąæčŖą╗ą│ą░čĆčüą║ąĖ (Bulgarian)",
+            "─īe┼Ītina (Czech)"
+          ],
+          "added": [
+            "简体中文 (Simplified Chinese)",
+            "繁體中文 (Traditional Chinese)",
+            "日本語 (Japanese)",
+            "한국어 (Korean)",
+            "ไทย (Thai)",
+            "Български (Bulgarian)",
+            "Čeština (Czech)"
+          ],
+          "context_before": [
+            "language"
+          ],
+          "context_after": [
+            "Dansk (Danish)"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "Espa├▒ol - Espa├▒a (Spanish - Spain)",
+            "Espa├▒ol - Latinoam├®rica (Spanish - Latin America)",
+            "╬Ģ╬╗╬╗╬Ę╬Į╬╣╬║╬¼ (Greek)",
+            "Fran├¦ais (French)"
+          ],
+          "added": [
+            "Español - España (Spanish - Spain)",
+            "Español - Latinoamérica (Spanish - Latin America)",
+            "Ελληνικά (Greek)",
+            "Français (French)"
+          ],
+          "context_before": [
+            "Deutsch (German)"
+          ],
+          "context_after": [
+            "Italiano (Italian)"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "Portugu├¬s (Portuguese - Portugal)",
+            "Portugu├¬s - Brasil (Portuguese - Brazil)",
+            "Rom├ón─ā (Romanian)",
+            "ąĀčāčüčüą║ąĖą╣ (Russian)"
+          ],
+          "added": [
+            "Português (Portuguese - Portugal)",
+            "Português - Brasil (Portuguese - Brazil)",
+            "Română (Romanian)",
+            "Русский (Russian)"
+          ],
+          "context_before": [
+            "Polski (Polish)"
+          ],
+          "context_after": [
+            "Suomi (Finnish)"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "T├╝rk├¦e (Turkish)",
+            "Tiß║┐ng Viß╗ćt (Vietnamese)",
+            "ąŻą║čĆą░čŚąĮčüčīą║ą░ (Ukrainian)"
+          ],
+          "added": [
+            "Türkçe (Turkish)",
+            "Tiếng Việt (Vietnamese)",
+            "Українська (Ukrainian)"
+          ],
+          "context_before": [
+            "Svenska (Swedish)"
+          ],
+          "context_after": [
+            "Report a translation problem"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [],
+          "added": [
+            "Privacy Policy"
+          ],
+          "context_before": [
+            "Privacy Policy Agreement"
+          ],
+          "context_after": [
+            "Valve respects the privacy of its online visitors and customers of its products and services and complies with applicable laws for the protection of your privacy, including, without limitation, the California Consumer Privacy Act (\"CCPA\"), the European Union General Data Protection Regulation (\"GDPR\") and the UK GDPR."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "In compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Valve commits, free of charge to the affected individual, to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information CommissionerÆs Office (ICO) and the Gibraltar Regulatory Authority (GRA) and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S. DPF., the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. DPF. Links to the website of each authority are available below."
+          ],
+          "added": [
+            "In compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Valve commits, free of charge to the affected individual, to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs), the UK Information Commissioner�s Office (ICO) and the Gibraltar Regulatory Authority (GRA) and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S. DPF., the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. DPF. Links to the website of each authority are available below."
+          ],
+          "context_before": [
+            "Certification and participation in the DPF, set out in the DPF List available at https://www.dataprivacyframework.gov/s/participant-search"
+          ],
+          "context_after": [
+            "EU DPAs: https://edpb.europa.eu/about-edpb/about-edpb/members_en"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "The Federal Trade Commission has jurisdiction over ValveÆs compliance with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF)."
+          ],
+          "added": [
+            "The Federal Trade Commission has jurisdiction over Valve�s compliance with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF)."
+          ],
+          "context_before": [
+            "FDPIC: https://www.edoeb.admin.ch/edoeb/home.html"
+          ],
+          "context_after": [
+            "10. Additional Information for Users from California"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240601011612/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20240701011533/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam privacy policy changes are encoding fixes and a renamed title",
+        "summary": "Steam's privacy policy changes only fix how characters and language names are displayed, such as accented letters and the list of supported languages, plus a retitled heading from \"Privacy Policy Agreement\" to \"Privacy Policy\". The rules about how Valve handles personal data are unchanged.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2025-02-01",
+      "source": "archive",
+      "changed_words": 8,
+      "hunks": [
+        {
+          "removed": [
+            "Rödingsmarkt 9",
+            "D-20459 Hamburg"
+          ],
+          "added": [
+            "Alstertwiete 3",
+            "D-20099 Hamburg"
+          ],
+          "context_before": [
+            "Att. Legal"
+          ],
+          "context_after": [
+            "Germany"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "© 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "added": [
+            "© 2025 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "context_before": [
+            "Privacy Feedback"
+          ],
+          "context_after": [
+            "VAT included in all prices where applicable."
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250101000333/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20250201022103/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam updates its German legal address and copyright year",
+        "summary": "Steam's privacy policy now lists a different street address for its German legal contact (Alstertwiete 3 in Hamburg, replacing Rödingsmarkt 9), and the copyright notice year is updated from 2024 to 2025. These are administrative changes and do not change how your data is handled or your rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2025-03-01",
+      "source": "archive",
+      "changed_words": 61,
+      "hunks": [
+        {
+          "removed": [
+            "The data protection laws of the European Economic Area, United Kingdom, California, and other territories grant their residents certain rights in relation to their Personal Data. While other jurisdictions may provide fewer statutory rights, we make the tools designed to exercise such rights available to our customers worldwide. (When we talk about the GDPR in this section, we mean the version of the GDPR that applies to you in the EU or UK)."
+          ],
+          "added": [
+            "The data protection laws of the European Economic Area, United Kingdom, Switzerland, California, and other territories grant their residents certain rights in relation to their Personal Data. While other jurisdictions may provide fewer statutory rights, we make the tools designed to exercise such rights available to our customers worldwide. (When we talk about the GDPR in this section, we mean the version of the GDPR that applies to you in the EU or UK)."
+          ],
+          "context_before": [
+            "6. Your Rights and Control Mechanisms"
+          ],
+          "context_after": [
+            "To allow you to exercise your data protection rights in a simple way we are providing a dedicated section on the Steam support page (the \"Privacy Dashboard\"). This gives you access to your Personal Data, allows you to rectify and delete it where necessary and to object to its use where you feel necessary. To access it, log into the Steam support page at https://help.steampowered.com and choose the menu items My Account -> Data Related to Your Steam Account. In most cases, you can access, manage, or delete Personal Data in the Privacy Dashboard, but you may also contact Valve with questions or requests via the contact processes described in sections 8 and 10 below."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "As a resident of the European Economic Area or United Kingdom you have the following rights in relation to your Personal Data:"
+          ],
+          "added": [
+            "As a resident of the European Economic Area, United Kingdom or Switzerland you have the following rights in relation to your Personal Data:"
+          ],
+          "context_before": [
+            "As a visitor to the Steam Website without being logged in, you can control Cookies through the process described in section 3.6 above. You can also contact Valve or its European representative through the contact info provided in section 8. below to exercise your rights or use this web form."
+          ],
+          "context_after": [
+            "6.1 Right of Access."
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "EU and Switzerland representative for data protection questions:"
+          ],
+          "added": [
+            "EU representative for data protection questions:"
+          ],
+          "context_before": [
+            "Bellevue, WA 98009"
+          ],
+          "context_after": [
+            "Valve GmbH"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "71, Warriner Gardens, Unit G1/G2",
+            "London, SW11 4DX",
+            "United Kingdom"
+          ],
+          "added": [
+            "St James' Hall",
+            "Mill Road",
+            "Lancing, West Sussex",
+            "England, BN15 0PT",
+            "Swiss representative for data protection questions:",
+            "RIVACY Switzerland GmbH",
+            "c/o epartners Rechtsanwälte AG",
+            "Piuls 5, Hardturmstrasse 11",
+            "8005 Zurich",
+            "Switzerland"
+          ],
+          "context_before": [
+            "RIVACY Ltd."
+          ],
+          "context_after": [
+            "9. Additional Information for Users from the European Economic Area, U.K., and Switzerland"
+          ],
+          "changed_words": 41
+        },
+        {
+          "removed": [
+            "As a US-based company that operates a worldwide gaming service, we may transfer your personal data outside of the European Economic Area or the United Kingdom. In such case, we take additional steps to ensure your personal data is protected by appropriate legal safeguards, and that it is treated securely and in accordance with this Privacy Policy. In this respect, Valve has implemented appropriate contractual and organizational measures to ensure the confidentiality, security and integrity of user data in connection with its collection, processing and transfer. Measures we have taken include, among other things:"
+          ],
+          "added": [
+            "As a US-based company that operates a worldwide gaming service, we may transfer your personal data outside of the European Economic Area, the United Kingdom or Switzerland. In such case, we take additional steps to ensure your personal data is protected by appropriate legal safeguards, and that it is treated securely and in accordance with this Privacy Policy. In this respect, Valve has implemented appropriate contractual and organizational measures to ensure the confidentiality, security and integrity of user data in connection with its collection, processing and transfer. Measures we have taken include, among other things:"
+          ],
+          "context_before": [
+            "9. Additional Information for Users from the European Economic Area, U.K., and Switzerland"
+          ],
+          "context_after": [
+            "Minimization of data collection; in particular the possibility to set up and operate anonymous accounts"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Revision Date: February 14th, 2024"
+          ],
+          "added": [
+            "Revision Date: February 14th, 2025"
+          ],
+          "context_before": [
+            "Categories, Sources, Purposes, and Recipients of the Data We Collect. Over the preceding 12 months, we have collected the categories of Personal Data described in section 3 of this Privacy Policy. The sources from which we collect Personal Data, and the purposes for which we collect and process it, are described in sections 2 and 3. Over the preceding 12 months, we have disclosed for business purposes each of the categories of Personal Data with the categories of third parties as described in section 5."
+          ],
+          "context_after": [
+            "Privacy Feedback"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "| Steam",
+            "| @steam"
+          ],
+          "added": [
+            "|",
+            "|",
+            "|"
+          ],
+          "context_before": [
+            "| Gift Cards"
+          ],
+          "context_after": [],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250201022103/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20250301005121/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam extends EEA and UK privacy rights to Swiss residents and adds a Swiss representative",
+        "summary": "Steam's privacy policy now covers residents of Switzerland alongside the EEA and UK, including their data rights, international transfer safeguards, and a new Swiss representative for data protection questions. The EU representative is now listed as only the EU representative, and the UK address was replaced with a new one in Lancing, West Sussex. The revision date was updated to February 14, 2025. Most of this is administrative, with the Swiss expansion being the substantive change.",
+        "severity": "moderate",
+        "categories": [
+          "your_rights",
+          "data_sharing"
+        ],
+        "what_you_can_do": "Swiss residents can exercise their data rights through the Privacy Dashboard at help.steampowered.com (My Account -> Data Related to Your Steam Account) or by contacting Valve.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2025-11-02",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "| Accessibility"
+          ],
+          "context_before": [
+            "| Legal"
+          ],
+          "context_after": [
+            "| Steam Subscriber Agreement"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Accessibility",
+            "|"
+          ],
+          "context_before": [
+            "|"
+          ],
+          "context_after": [
+            "Steam Subscriber Agreement"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251001004121/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20251102141506/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam adds an Accessibility entry to its privacy policy navigation menu",
+        "summary": "Steam added \"Accessibility\" to the table of contents or menu near the Legal and Steam Subscriber Agreement links. The change only affects how the page is organized; no new rules about user data, money, or rights appear in the changed text.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2026-01-01",
+      "source": "archive",
+      "changed_words": 6,
+      "hunks": [
+        {
+          "removed": [
+            "Stats"
+          ],
+          "added": [
+            "Charts"
+          ],
+          "context_before": [
+            "News"
+          ],
+          "context_after": [
+            "Community"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Stats"
+          ],
+          "added": [
+            "Charts"
+          ],
+          "context_before": [
+            "News"
+          ],
+          "context_after": [
+            "COMMUNITY"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "| Recycling"
+          ],
+          "added": [],
+          "context_before": [
+            "| Support"
+          ],
+          "context_after": [
+            "| Gift Cards"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251201014041/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20260101015817/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam renames \"Stats\" to \"Charts\" and drops a \"Recycling\" footer link",
+        "summary": "Steam's privacy page changed only menu and link labels: \"Stats\" became \"Charts\" in the navigation, and a \"Recycling\" link was removed from the footer. The changes do not alter any rules about users' data, rights, or content.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2026-02-01",
+      "source": "archive",
+      "changed_words": 12,
+      "hunks": [
+        {
+          "removed": [
+            "Login"
+          ],
+          "added": [
+            "Sign in"
+          ],
+          "context_before": [],
+          "context_after": [
+            "Store"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "| Cookies"
+          ],
+          "context_before": [
+            "| Refunds"
+          ],
+          "context_after": [
+            "STORE"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "login"
+          ],
+          "added": [
+            "sign in"
+          ],
+          "context_before": [
+            "Install Steam"
+          ],
+          "context_after": [
+            "|"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "© 2025 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "added": [
+            "© 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries."
+          ],
+          "context_before": [
+            "Privacy Feedback"
+          ],
+          "context_after": [
+            "VAT included in all prices where applicable."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "| Recycling"
+          ],
+          "context_before": [
+            "| Support"
+          ],
+          "context_after": [
+            "| Gift Cards"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260101015817/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20260201031928/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam relabels \"Login\" as \"Sign in\" and updates its copyright year",
+        "summary": "Steam's privacy page changed only its navigation and wording: the \"Login\" link and button now say \"Sign in,\" and the copyright year changed from 2025 to 2026. There are no new rules about how your data is collected, used, or shared, and the new menu items \"Cookies\" and \"Recycling\" are page navigation links rather than policy changes.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2026-03-01",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [
+            "Valve GmbH"
+          ],
+          "added": [
+            "Valve GmbH i.L."
+          ],
+          "context_before": [
+            "EU representative for data protection questions:"
+          ],
+          "context_after": [
+            "Att. Legal"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "| Recycling"
+          ],
+          "added": [],
+          "context_before": [
+            "| Support"
+          ],
+          "context_after": [
+            "| Gift Cards"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260201031928/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20260301110925/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam updates its EU data protection representative's company name",
+        "summary": "Steam's privacy policy now lists the EU data protection representative as \"Valve GmbH i.L.\" instead of \"Valve GmbH.\" The \"i.L.\" marks the company as being in liquidation, but this change doesn't alter how your data is used or your rights. A footer link labeled \"Recycling\" was also removed from the page's menu, which is a navigation change only.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2026-05-01",
+      "source": "archive",
+      "changed_words": 66,
+      "hunks": [
+        {
+          "removed": [
+            "Exercising Your Rights. The primary means of accessing, managing or deleting your Personal Data is through the Privacy Dashboard, as described in section 6 of this Policy. Customers may also delete their Steam Account and associated Personal Data as described in section 6.3 of this Privacy Policy. If you are unable to access or delete data through the Privacy Dashboard, you can also contact us with a request to exercise these rights by using the form found at https://help.steampowered.com/en/wizard/HelpAccountDataQuestion. To verify your identity, you will need to log in with your Steam User Account to use the form. Finally, you can contact us with a request at questions@valvesoftware.com, however, before providing access to, or deleting any, Personal Data, based on a request received via email, we will need to verify your identity utilizing the \"Proof of Ownership\" process described at https://support.steampowered.com/kb_article.php?ref=2268-EAFZ-9762."
+          ],
+          "added": [
+            "Exercising Your Rights. The primary means of accessing, managing or deleting your Personal Data is through the Privacy Dashboard, as described in section 6 of this Policy. Customers may also delete their Steam Account and associated Personal Data as described in section 6.3 of this Privacy Policy. If you are unable to access or delete data through the Privacy Dashboard, you can also contact us with a request to exercise these rights by using the form found at https://help.steampowered.com/wizard/HelpAccountDataQuestion. To verify your identity, you will need to log in with your Steam User Account to use the form. Finally, you can contact us with a request at questions@valvesoftware.com, however, before providing access to, or deleting any, Personal Data, based on a request received via email, we will need to verify your identity utilizing the \"Proof of Ownership\" process described at https://support.steampowered.com/kb_article.php?ref=2268-EAFZ-9762."
+          ],
+          "context_before": [
+            "Other Rights. The CCPA also gives California residents a right to opt-out from the sale of their Personal Data. As described in section 5, we do not sell Personal Data and have not done so in the past 12 months. You also have a right to receive notice of our practices at or before collection of your Personal Data. Finally, you have a right to not be discriminated against for exercising your rights under the CCPA."
+          ],
+          "context_after": [
+            "You may designate, in writing or through a power of attorney, an authorized agent to make requests on your behalf to exercise your rights under the CCPA. Before accepting such a request from an agent, we will require the agent to provide proof you have authorized it to act on your behalf, and we may need you to verify your identity directly with us."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "© 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.",
+            "VAT included in all prices where applicable.",
+            "Privacy Policy",
+            "|",
+            "Legal",
+            "|",
+            "Accessibility",
+            "|",
+            "Steam Subscriber Agreement",
+            "|",
+            "Refunds",
+            "|",
+            "Cookies",
+            "View mobile website",
+            "About Valve",
+            "| Jobs",
+            "| Steamworks",
+            "| Steam Distribution",
+            "| Support",
+            "| Recycling",
+            "| Gift Cards",
+            "|",
+            "|",
+            "|"
+          ],
+          "added": [],
+          "context_before": [
+            "Privacy Feedback"
+          ],
+          "context_after": [],
+          "changed_words": 64
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260401021917/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20260501021929/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam drops \"/en/\" from its data-request form link",
+        "summary": "Steam's privacy policy changed only the web address of its data request form, removing the \"/en/\" from the link; the instructions for exercising privacy rights are otherwise the same. A footer with copyright and site links was also removed from the page text, which does not change any user rights.",
+        "severity": "minor",
+        "categories": [
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2026-06-06",
+      "source": "archive",
+      "changed_words": 10,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Bahasa Indonesia (Indonesian)",
+            "Bahasa Melayu (Malay) BETA"
+          ],
+          "context_before": [
+            "ไทย (Thai)"
+          ],
+          "context_after": [
+            "Български (Bulgarian)"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Bahasa Indonesia (Indonesian)"
+          ],
+          "added": [],
+          "context_before": [
+            "Italiano (Italian)"
+          ],
+          "context_after": [
+            "Magyar (Hungarian)"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260501021929/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20260606031636/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam adds Malay as a beta language and moves Indonesian in its list",
+        "summary": "Steam's privacy policy language list now includes Bahasa Melayu (Malay) marked as BETA and shows Bahasa Indonesia (Indonesian) in a different spot in the list. The changes only affect which translations are offered and do not change how your data is handled.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "steam",
+      "doc": "privacy",
+      "date": "2026-09-01",
+      "source": "archive",
+      "changed_words": 11,
+      "hunks": [
+        {
+          "removed": [
+            "Valve GmbH i.L.",
+            "Att. Legal",
+            "Alstertwiete 3",
+            "D-20099 Hamburg"
+          ],
+          "added": [
+            "RIVACY GmbH",
+            "Mexikoring 33",
+            "22297 Hamburg"
+          ],
+          "context_before": [
+            "EU representative for data protection questions:"
+          ],
+          "context_after": [
+            "Germany"
+          ],
+          "changed_words": 11
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260806221924/https://store.steampowered.com/privacy_agreement/",
+      "archive_after": "https://web.archive.org/web/20260901090538/https://store.steampowered.com/privacy_agreement/"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-01",
+      "words": 4796,
+      "archive": "https://web.archive.org/web/20230101052156/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-02-01",
+      "words": 4673,
+      "archive": "https://web.archive.org/web/20230201004358/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-03-01",
+      "words": 4673,
+      "archive": "https://web.archive.org/web/20230301005352/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-04-01",
+      "words": 4675,
+      "archive": "https://web.archive.org/web/20230401004112/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 4675,
+      "archive": "https://web.archive.org/web/20230501031521/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-06-01",
+      "words": 4675,
+      "archive": "https://web.archive.org/web/20230601000243/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-07-01",
+      "words": 4675,
+      "archive": "https://web.archive.org/web/20230701012149/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-08-01",
+      "words": 4433,
+      "archive": "https://web.archive.org/web/20230801011942/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-09-01",
+      "words": 4434,
+      "archive": "https://web.archive.org/web/20230901124004/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-10-01",
+      "words": 4436,
+      "archive": "https://web.archive.org/web/20231001074038/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-11-01",
+      "words": 4436,
+      "archive": "https://web.archive.org/web/20231101131802/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2023-12-01",
+      "words": 4436,
+      "archive": "https://web.archive.org/web/20231201012110/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-01-01",
+      "words": 4441,
+      "archive": "https://web.archive.org/web/20240101072124/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-02-01",
+      "words": 4441,
+      "archive": "https://web.archive.org/web/20240201013812/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 4947,
+      "archive": "https://web.archive.org/web/20240301022522/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 4947,
+      "archive": "https://web.archive.org/web/20240401041707/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 4947,
+      "archive": "https://web.archive.org/web/20240501012626/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-06-01",
+      "words": 4948,
+      "archive": "https://web.archive.org/web/20240601011612/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-07-01",
+      "words": 4950,
+      "archive": "https://web.archive.org/web/20240701011533/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 4950,
+      "archive": "https://web.archive.org/web/20240801011555/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 4950,
+      "archive": "https://web.archive.org/web/20240901002955/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-10-01",
+      "words": 4950,
+      "archive": "https://web.archive.org/web/20241001011647/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 4950,
+      "archive": "https://web.archive.org/web/20241201020724/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-01-01",
+      "words": 4950,
+      "archive": "https://web.archive.org/web/20250101000333/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-02-01",
+      "words": 4950,
+      "archive": "https://web.archive.org/web/20250201022103/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-03-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20250301005121/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20250401010230/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-05-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20250501005119/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-06-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20250601013707/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-07-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20250701010800/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20250801005443/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20250901010628/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 4971,
+      "archive": "https://web.archive.org/web/20251001004121/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-11-02",
+      "words": 4975,
+      "archive": "https://web.archive.org/web/20251102141506/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 4975,
+      "archive": "https://web.archive.org/web/20251201014041/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-01-01",
+      "words": 4973,
+      "archive": "https://web.archive.org/web/20260101015817/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 4979,
+      "archive": "https://web.archive.org/web/20260201031928/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 4978,
+      "archive": "https://web.archive.org/web/20260301110925/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 4980,
+      "archive": "https://web.archive.org/web/20260401021917/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 4916,
+      "archive": "https://web.archive.org/web/20260501021929/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-06-06",
+      "words": 4920,
+      "archive": "https://web.archive.org/web/20260606031636/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-07-01",
+      "words": 4920,
+      "archive": "https://web.archive.org/web/20260701153422/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-08-06",
+      "words": 4920,
+      "archive": "https://web.archive.org/web/20260806221924/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 4917,
+      "archive": "https://web.archive.org/web/20260901090538/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-10-02",
+      "words": 4917,
+      "archive": "https://web.archive.org/web/20261002200213/https://store.steampowered.com/privacy_agreement/"
+    },
+    {
+      "date": "2026-11-02",
+      "words": 4917,
+      "archive": "https://web.archive.org/web/20261102094306/https://store.steampowered.com/privacy_agreement/"
+    }
+  ]
+}

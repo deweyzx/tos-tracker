@@ -174,6 +174,7 @@ function buildData() {
     if (report.versions && byKey[`${report.company}-${report.doc}`]) {
       byKey[`${report.company}-${report.doc}`].versions = report.versions;
     }
+    if (report.date === "archive" && byKey[`${report.company}-${report.doc}`]) byKey[`${report.company}-${report.doc}`].archiveRead = true;
     for (const c of report.changes ?? []) {
       const policy = byKey[`${c.company}-${c.doc}`];
       const sizeAfter =
@@ -274,9 +275,12 @@ function buildData() {
     changes[0] ??
     null;
 
-  // Which companies have no history loaded yet (no archive report).
+  // Which companies have no history loaded yet (the archive hasn't been read for them),
+  // and which were read but the archive holds no usable copies (so tracking starts today).
   const withHistory = new Set(policies.filter((p) => p.versions.length).map((p) => p.company));
-  const historyPending = companies.filter((c) => !withHistory.has(c.id)).map((c) => c.name);
+  const archiveRead = new Set(policies.filter((p) => p.archiveRead).map((p) => p.company));
+  const historyPending = companies.filter((c) => !withHistory.has(c.id) && !archiveRead.has(c.id)).map((c) => c.name);
+  const noArchive = companies.filter((c) => !withHistory.has(c.id) && archiveRead.has(c.id)).map((c) => c.name);
 
   const categoryCounts = {};
   for (const c of changes) for (const cat of c.categories) categoryCounts[cat] = (categoryCounts[cat] ?? 0) + 1;
@@ -297,6 +301,7 @@ function buildData() {
     repeats: all.length - changes.length,
     featured,
     historyPending,
+    noArchive,
     categoryCounts,
     perYear,
     charts: policies

@@ -1,0 +1,733 @@
+{
+  "date": "archive",
+  "company": "dropbox",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "dropbox",
+      "doc": "privacy",
+      "date": "2023-02-03",
+      "source": "archive",
+      "changed_words": 71,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Dropbox's Privacy Policy will be changing effective April 3, 2023. Click here to review."
+          ],
+          "context_before": [],
+          "context_after": [
+            "The DocSend Privacy Policy can be found here."
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "Dropbox",
+            "Desktop app",
+            "Mobile app",
+            "Integrations",
+            "Features",
+            "Solutions",
+            "Do more than store",
+            "Security",
+            "Advance access",
+            "Products",
+            "Plus",
+            "Professional",
+            "Business",
+            "Enterprise",
+            "Dropbox Sign",
+            "DocSend",
+            "Plans",
+            "Product updates",
+            "Support",
+            "Help center",
+            "Contact us",
+            "Privacy & terms",
+            "Cookie policy",
+            "Cookies & CCPA preferences",
+            "Sitemap",
+            "Learning resources",
+            "Community",
+            "Blog",
+            "Developers",
+            "Community forums",
+            "Referrals",
+            "Company",
+            "About us",
+            "Jobs",
+            "Investor relations",
+            "ESG",
+            "Partners"
+          ],
+          "added": [],
+          "context_before": [
+            "Have questions or concerns about Dropbox, our Services, and privacy? Contact our Data Protection Officer at privacy@dropbox.com. If they can’t answer your question, you have the right to contact your local data protection supervisory authority."
+          ],
+          "context_after": [],
+          "changed_words": 57
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230102133148/https://www.dropbox.com/privacy",
+      "archive_after": "https://web.archive.org/web/20230203033833/https://www.dropbox.com/privacy",
+      "ai": {
+        "headline": "Dropbox announces its Privacy Policy will change April 3, 2023",
+        "summary": "Dropbox says its Privacy Policy will be changing effective April 3, 2023, and links to a page to review it. The rest of the change visible here is a removed list of website navigation links (apps, products, company pages, and similar), which looks like a page layout change rather than a new rule.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "dropbox",
+      "doc": "privacy",
+      "date": "2023-05-01",
+      "source": "archive",
+      "changed_words": 331,
+      "hunks": [
+        {
+          "removed": [
+            "Dropbox's Privacy Policy will be changing effective April 3, 2023. Click here to review.",
+            "The DocSend Privacy Policy can be found here.",
+            "The Dropbox Sign Privacy Policy can be found here.",
+            "If your organization signed a Dropbox Business or Dropbox Enterprise Agreement with Dropbox, that Agreement may have modified the privacy policy below. Please contact your organization’s Admin for details."
+          ],
+          "added": [
+            "If your organization signed a Dropbox Business, Dropbox Services, or Dropbox Enterprise Agreement with Dropbox, that Agreement may have modified the privacy policy below. Please contact your organization’s Admin for details."
+          ],
+          "context_before": [],
+          "context_after": [
+            "Dropbox Privacy Policy"
+          ],
+          "changed_words": 35
+        },
+        {
+          "removed": [
+            "Posted: October 25, 2022"
+          ],
+          "added": [
+            "Posted: January 17, 2023"
+          ],
+          "context_before": [
+            "Dropbox Privacy Policy"
+          ],
+          "context_after": [
+            "You can see the previous Privacy Policy here."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Contacts. You may choose to give us access to your contacts to make it easy for you, and your Dropbox Business team (collectively, “Dropbox Business Team”), if you’re a Dropbox Business Team user, to do things like share and collaborate on Your Stuff, send messages, and invite others to use the Services. If you do, we’ll store those contacts on our servers.",
+            "Usage information. We collect information related to how you use the Services, including actions you take in your account (like sharing, editing, viewing, creating and moving files or folders). We use this information to provide, improve, and promote our Services, and protect Dropbox users. Please refer to our FAQ for more information about how we use this usage information."
+          ],
+          "added": [
+            "Contacts. You may choose to give us access to your contacts to make it easy for you, and your Dropbox Team if you’re a Dropbox Team user, to do things like share and collaborate on Your Stuff, send messages, and invite others to use the Services. If you do, we’ll store those contacts on our servers.",
+            "Usage information. We collect information related to how you use the Services, including actions you take in your account (like sharing, editing, viewing, creating and moving files or folders, and sending and receiving electronic signature requests and other transactions). We use this information to provide, improve, and promote our Services, and protect Dropbox users. Please refer to our FAQ for more information about how we use this usage information."
+          ],
+          "context_before": [
+            "Your Stuff. Our Services are designed as a simple and personalized way for you to store your files, documents, photos, comments, messages, and so on (“Your Stuff”), collaborate with others, and work across multiple devices and services. To make that possible, we store, process, and transmit Your Stuff as well as information related to it. This related information includes your profile information that makes it easier to collaborate and share Your Stuff with others, as well as things like the size of the file, the time it was uploaded, collaborators, and usage activity."
+          ],
+          "context_after": [
+            "Device information. We also collect information from and about the devices you use to access the Services. This includes things like IP addresses, the type of browser and device you use, the web page you visited before coming to our sites, and identifiers associated with your devices. Your devices (depending on their settings) may also transmit location information to the Services. For example, we use device information to detect abuse and identify and troubleshoot bugs."
+          ],
+          "changed_words": 20
+        },
+        {
+          "removed": [],
+          "added": [
+            "DocSend and Dropbox analytics. When you use the DocSend or Dropbox analytics portion of our Services to view content, we collect information including your identifying and device information, such as email addresses, IP addresses, and device identifiers of devices you use to view the content. We also collect information on how you interact with the viewed content, such as the date and time you view the content, the number of times and length of time you view the content, and which portions of the content you view."
+          ],
+          "context_before": [
+            "Cookies and other technologies. We use technologies like cookies and pixel tags to provide, improve, protect, and promote our Services. For example, cookies help us with things like remembering your username for your next visit, understanding how you are interacting with our Services, and improving them based on that information. You can set your browser to not accept cookies, but this may limit your ability to use the Services. If our systems receive a DNT:1 signal from your browser, we’ll respond to that signal as outlined here. We may also use third-party service providers that set cookies and similar technologies to promote Dropbox services. You can learn more about how cookies and similar technologies work, as well as how to opt out of the use of them for advertising purposes, here."
+          ],
+          "context_after": [
+            "Marketing. We give users the option to use some of our Services free of charge. These free Services are made possible by the fact that some users upgrade to one of our paid Services. If you register for our Services, we will, from time to time, send you information about upgrades when permissible. Users who receive these marketing materials can opt out at any time. If you don’t want to receive a particular type of marketing material from us, click the ‘unsubscribe’ link in the corresponding emails, or update your preferences in the Notifications section of your personal account."
+          ],
+          "changed_words": 87
+        },
+        {
+          "removed": [],
+          "added": [
+            "We may also collect information from you if you interact with Dropbox representatives at an event, download marketing or educational materials from our website, or contact a Dropbox representative. We may use the information you provide to send you additional marketing materials."
+          ],
+          "context_before": [
+            "Marketing. We give users the option to use some of our Services free of charge. These free Services are made possible by the fact that some users upgrade to one of our paid Services. If you register for our Services, we will, from time to time, send you information about upgrades when permissible. Users who receive these marketing materials can opt out at any time. If you don’t want to receive a particular type of marketing material from us, click the ‘unsubscribe’ link in the corresponding emails, or update your preferences in the Notifications section of your personal account."
+          ],
+          "context_after": [
+            "We sometimes contact people who don’t have a Dropbox account. For recipients in the EU, we or a third party will obtain consent before reaching out. If you receive an email and no longer wish to be contacted by Dropbox, you can unsubscribe and remove yourself from our contact list via the message itself."
+          ],
+          "changed_words": 42
+        },
+        {
+          "removed": [
+            "Other users. Our Services are designed to help you collaborate with others. If you register your Dropbox account with an email address on a domain owned by your employer or organization, join a Dropbox Business Team, or collaborate with other Dropbox users, we may suggest you or your team as a potential collaborator to other users or teams. For example, if you interact with a person at a company, and that person frequently works with one of their coworkers, we may suggest you as a potential collaborator for that coworker. Collaborators and potential collaborators may see some of your basic information, like your name, Dropbox Business Team name, profile picture, device, email address, and usage information. This helps you sync up with teams you can join and helps other users share files and folders with you.",
+            "Certain features let you make additional information available to others."
+          ],
+          "added": [
+            "Other users. Our Services are designed to help you collaborate with others. If you register your Dropbox account with an email address on a domain owned by your employer or organization, join a Dropbox Team, or collaborate with other Dropbox users, we may suggest you or your team as a potential collaborator to other users or teams. For example, if you interact with a person at a company, and that person frequently works with one of their coworkers, we may suggest you as a potential collaborator for that coworker. Collaborators and potential collaborators may see some of your basic information, like your name, Dropbox Team name, profile picture, device, email address, and usage information. This helps you sync up with teams you can join and helps other users share files and folders with you.",
+            "Certain features let you make additional information available to others. For example, if you view a file or folder shared from DocSend or Dropbox analytics, we will share your identifying information such as name and email address, information on the device you used to view the content, and for how long you viewed content and what portion of the content you viewed with the owner of the file or folder."
+          ],
+          "context_before": [
+            "Other Dropbox Companies. Dropbox shares infrastructure, systems, and technology with other Dropbox Companies to provide, improve, protect, and promote Dropbox Company Services. We process your information across the Dropbox Companies for these purposes, as permitted by applicable law and in accordance with their terms and policies. For more information on Dropbox Companies, Dropbox Company Services, and how your data is used, please see our FAQ."
+          ],
+          "context_after": [
+            "Other applications. You can choose to connect your Dropbox account with third-party services––for example, via Dropbox APIs. By doing so, you’re enabling Dropbox and those third parties to exchange information about you and data in your account so that Dropbox and those third parties can provide, improve, protect, and promote their services. Please remember that third parties’ use of your information will be governed by their own privacy policies and terms of service."
+          ],
+          "changed_words": 62
+        },
+        {
+          "removed": [
+            "Business Team Admins. If you are a user of a Dropbox Business Team, your administrator may have the ability to access and control your Dropbox Business Team account. Please refer to your organization’s internal policies if you have questions about this. If you aren’t a Dropbox Business Team user but interact with a Dropbox Business Team user (for example, by joining a shared folder or accessing stuff shared by that user), members of that organization may be able to view information about you (such as your name, email address, and profile picture) and your interaction with the Dropbox Business Team user (such as your IP address). If you share Your Stuff with a Dropbox Business Team user, the administrator of the team account may have the ability to access and edit what you share."
+          ],
+          "added": [
+            "Team Admins. If you are a user of a Dropbox Team, your administrator may have the ability to access and control your Dropbox Team account. Please refer to your organization’s internal policies if you have questions about this. If you aren’t a Dropbox Team user but interact with a Dropbox Team user (for example, by joining a shared folder or accessing stuff shared by that user), members of that organization may be able to view information about you (such as your name, email address, and profile picture) and your interaction with the Dropbox Team user (such as your IP address). If you share Your Stuff with a Dropbox Team user, the administrator of the team account may have the ability to access and edit what you share."
+          ],
+          "context_before": [
+            "Other applications. You can choose to connect your Dropbox account with third-party services––for example, via Dropbox APIs. By doing so, you’re enabling Dropbox and those third parties to exchange information about you and data in your account so that Dropbox and those third parties can provide, improve, protect, and promote their services. Please remember that third parties’ use of your information will be governed by their own privacy policies and terms of service."
+          ],
+          "context_after": [
+            "Law & Order and the Public Interest. We may disclose your information to third parties if we determine that such disclosure is reasonably necessary to: (a) comply with any applicable law, regulation, legal process, or appropriate government request; (b) protect any person from death or serious bodily injury; (c) prevent fraud or abuse of Dropbox or our users; (d) protect Dropbox’s rights, property, safety, or interest; or (e) perform a task carried out in the public interest."
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [],
+          "added": [
+            "Use of Data from Google APIs. Dropbox’s use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements."
+          ],
+          "context_before": [
+            "Retention. When you sign up for an account with us, we’ll retain information you store on our Services for as long as your account exists or as long as we need it to provide you the Services. If you delete your account, we’ll initiate deletion of this information after 30 days. Learn more here. But please note: (1) there might be some latency in deleting this information from our servers and back-up storage; and (2) we may retain this information if necessary to comply with our legal obligations, resolve disputes, or enforce our agreements."
+          ],
+          "context_after": [
+            "Where"
+          ],
+          "changed_words": 35
+        },
+        {
+          "removed": [
+            "EU-U.S. Privacy Shield and Swiss-U.S. Privacy Shield. Dropbox complies with the EU-U.S. and Swiss–U.S. Privacy Shield Frameworks as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal data transferred from the European Union, the European Economic Area, the United Kingdom, and Switzerland to the United States, although Dropbox does not rely on the EU-U.S. Privacy Shield or Swiss-U.S. Privacy Shield Frameworks as a legal basis for transfers of personal data. Dropbox has certified to the Department of Commerce that it adheres to the Privacy Shield Principles with respect to such data. You can also learn more about Privacy Shield at https://www.privacyshield.gov."
+          ],
+          "added": [
+            "EU-U.S. Privacy Shield and Swiss-U.S. Privacy Shield. Dropbox complies with the EU-U.S. and Swiss–U.S. Privacy Shield Frameworks as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal data transferred from the European Union, the European Economic Area, the United Kingdom, and Switzerland to the United States, although Dropbox does not rely on the EU-U.S. Privacy Shield or Swiss-U.S. Privacy Shield Frameworks as a legal basis for transfers of personal data. Dropbox has certified to the Department of Commerce that it adheres to the Privacy Shield Principles with respect to such data, but this does not include the DocSend portion of the Services. You can also learn more about Privacy Shield at https://www.privacyshield.gov."
+          ],
+          "context_before": [
+            "Data Transfers. When transferring data from the European Union, the European Economic Area, the United Kingdom, and Switzerland, Dropbox relies upon a variety of legal mechanisms, such as contracts with our customers and affiliates, Standard Contractual Clauses, and the European Commission's adequacy decisions about certain countries, as applicable."
+          ],
+          "context_after": [
+            "Dropbox is subject to oversight by the U.S. Federal Trade Commission. JAMS is the US-based independent organization responsible for reviewing and resolving complaints about our Privacy Shield compliance—free of charge to you. We ask that you first submit any such complaints directly to us via privacy@dropbox.com. If you aren’t satisfied with our response, please contact JAMS at https://www.jamsadr.com/eu-us-privacy-shield. In the event your concern still isn’t addressed by JAMS, you may be entitled to a binding arbitration under Privacy Shield and its principles."
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "Dropbox as controller or processor. If you reside in North America (the United States, Canada, and Mexico), Dropbox, Inc. acts as your service provider. For all other users, Dropbox International Unlimited Company acts as a controller of your personal data. If you are a Dropbox Business or Education customer outside of North America, Dropbox acts as a processor of your data."
+          ],
+          "added": [
+            "Dropbox as controller or processor. If you reside in North America (the United States, Canada, and Mexico), Dropbox, Inc. acts as your service provider. For all other users, Dropbox International Unlimited Company acts as a controller of your personal data. Outside of North America, if you are a Dropbox Team customer or use the Dropbox Sign or DocSend team portions of the Services, Dropbox acts as a processor of your data."
+          ],
+          "context_before": [
+            "If you would like to submit a data access request or object to the processing of your personal data, please email us at privacy@dropbox.com. To request that your personal data be deleted, please fill out this form. For more information on how to control and access your personal data, please see our FAQ."
+          ],
+          "context_after": [
+            "Changes"
+          ],
+          "changed_words": 24
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230403062517/https://www.dropbox.com/privacy",
+      "archive_after": "https://web.archive.org/web/20230501123322/https://www.dropbox.com/privacy",
+      "ai": {
+        "headline": "Dropbox adds DocSend viewer tracking and marketing contact collection to its privacy policy",
+        "summary": "Dropbox's updated privacy policy (posted January 17, 2023, replacing the October 2022 version) now says it collects detailed viewing data when people view files through DocSend or Dropbox analytics, including email address, IP address, device identifiers, how long they view content and which parts. When someone views a DocSend or Dropbox analytics file, the file owner also receives that viewer's name, email, device information, and viewing details. Dropbox also says it may collect information when people meet its representatives at events, download materials, or contact staff, and use it for marketing. Other changes mostly rename \"Dropbox Business\" to \"Dropbox Team,\" add e-signature activity to usage data, and update the Privacy Shield and Google API wording.",
+        "severity": "moderate",
+        "categories": [
+          "data_collection",
+          "data_sharing",
+          "advertising"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "dropbox",
+      "doc": "privacy",
+      "date": "2023-10-06",
+      "source": "archive",
+      "changed_words": 174,
+      "hunks": [
+        {
+          "removed": [
+            "Posted: January 17, 2023"
+          ],
+          "added": [
+            "Posted: September 26, 2023"
+          ],
+          "context_before": [
+            "Dropbox Privacy Policy"
+          ],
+          "context_after": [
+            "You can see the previous Privacy Policy here."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Data Transfers. When transferring data from the European Union, the European Economic Area, the United Kingdom, and Switzerland, Dropbox relies upon a variety of legal mechanisms, such as contracts with our customers and affiliates, Standard Contractual Clauses, and the European Commission's adequacy decisions about certain countries, as applicable.",
+            "EU-U.S. Privacy Shield and Swiss-U.S. Privacy Shield. Dropbox complies with the EU-U.S. and Swiss–U.S. Privacy Shield Frameworks as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal data transferred from the European Union, the European Economic Area, the United Kingdom, and Switzerland to the United States, although Dropbox does not rely on the EU-U.S. Privacy Shield or Swiss-U.S. Privacy Shield Frameworks as a legal basis for transfers of personal data. Dropbox has certified to the Department of Commerce that it adheres to the Privacy Shield Principles with respect to such data, but this does not include the DocSend portion of the Services. You can also learn more about Privacy Shield at https://www.privacyshield.gov.",
+            "Dropbox is subject to oversight by the U.S. Federal Trade Commission. JAMS is the US-based independent organization responsible for reviewing and resolving complaints about our Privacy Shield compliance—free of charge to you. We ask that you first submit any such complaints directly to us via privacy@dropbox.com. If you aren’t satisfied with our response, please contact JAMS at https://www.jamsadr.com/eu-us-privacy-shield. In the event your concern still isn’t addressed by JAMS, you may be entitled to a binding arbitration under Privacy Shield and its principles."
+          ],
+          "added": [
+            "Data Transfers. When transferring data from the European Union, the European Economic Area, the United Kingdom, and Switzerland, Dropbox relies upon a variety of legal mechanisms, such as contracts with our customers and affiliates, Standard Contractual Clauses, the EU-U.S. Data Privacy Framework, the UK Extension to the EU-U.S. Data Privacy Framework, the Swiss-U.S. Data Privacy Framework, and the European Commission's adequacy decisions about certain countries, as applicable.",
+            "Data Privacy Frameworks. Dropbox complies with the EU-U.S. and Swiss-U.S. Data Privacy Frameworks, as well as the UK Extension to the EU-U.S. Data Privacy Framework, as set forth by the U.S. Department of Commerce regarding the processing of personal data transferred from the European Union, the European Economic Area, the United Kingdom, and Switzerland to the United States. Dropbox has certified to the U.S. Department of Commerce that it adheres to the Principles of these Data Privacy Frameworks with respect to such data, but this does not include the DocSend or Formswift portions of the Services. If there is any conflict between this Privacy Policy and the Data Privacy Framework Principles, the Principles shall govern. In accordance with the Principles, Dropbox shall remain liable for onward transfers if a processor processes personal data in a manner inconsistent with the Principles. To learn more about the Data Privacy Framework, and to view our certification, visit https://www.dataprivacyframework.gov.",
+            "Dropbox is subject to oversight by the U.S. Federal Trade Commission. JAMS is the US-based independent organization responsible for reviewing and resolving complaints about our Data Privacy Framework compliance—free of charge to you. We ask that you first submit any such complaints directly to us via privacy@dropbox.com. If you aren’t satisfied with our response, please contact JAMS at https://www.jamsadr.com/eu-us-data-privacy-framework. In the event your concern still isn’t addressed by JAMS, you may be entitled to a binding arbitration as set forth in Annex I of the Data Privacy Framework Principles."
+          ],
+          "context_before": [
+            "Around the world. To provide you with the Services, we may store, process, and transmit data in the United States and locations around the world—including those outside your country. Data may also be stored locally on the devices you use to access the Services."
+          ],
+          "context_after": [
+            "Your Control and Access of Your Data"
+          ],
+          "changed_words": 170
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230901121624/https://www.dropbox.com/privacy",
+      "archive_after": "https://web.archive.org/web/20231006162219/https://www.dropbox.com/privacy",
+      "ai": {
+        "headline": "Dropbox updates its EU-U.S. data transfer section to the new Data Privacy Framework",
+        "summary": "Dropbox replaced references to the old Privacy Shield with the newer EU-U.S. Data Privacy Framework (including the UK extension and Swiss-U.S. framework) for transfers of personal data from Europe, the UK, and Switzerland. The company also adds that it remains liable for onward transfers handled by processors, and it names DocSend and Formswift as excluded from the certification. The data protection commitments themselves are not described as changing.",
+        "severity": "minor",
+        "categories": [
+          "data_sharing",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "dropbox",
+      "doc": "privacy",
+      "date": "2025-06-08",
+      "source": "archive",
+      "changed_words": 192,
+      "hunks": [
+        {
+          "removed": [
+            "Posted: September 26, 2023"
+          ],
+          "added": [
+            "Posted: May 30, 2025"
+          ],
+          "context_before": [
+            "Dropbox Privacy Policy"
+          ],
+          "context_after": [
+            "You can see the previous Privacy Policy here."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Your Stuff. Our Services are designed as a simple and personalized way for you to store your files, documents, photos, comments, messages, and so on (“Your Stuff”), collaborate with others, and work across multiple devices and services. To make that possible, we store, process, and transmit Your Stuff as well as information related to it. This related information includes your profile information that makes it easier to collaborate and share Your Stuff with others, as well as things like the size of the file, the time it was uploaded, collaborators, and usage activity."
+          ],
+          "added": [
+            "Your Stuff. Our Services are designed as a simple and personalized way for you to store your files, documents, photos, comments, messages, data from connected services, and so on (“Your Stuff”), collaborate with others, and work across multiple devices and services. To make that possible, we store, process, and transmit Your Stuff as well as information related to it. This related information includes your profile information that makes it easier to collaborate and share Your Stuff with others, as well as things like the size of the file, the time it was uploaded, collaborators, and usage activity."
+          ],
+          "context_before": [
+            "Account information. We collect, and associate with your account, the information you provide to us when you do things such as sign up for your account, upgrade to a paid plan, and set up two-factor authentication (like your name, email address, phone number, payment info, and physical address)."
+          ],
+          "context_after": [
+            "Contacts. You may choose to give us access to your contacts to make it easy for you, and your Dropbox Team if you’re a Dropbox Team user, to do things like share and collaborate on Your Stuff, send messages, and invite others to use the Services. If you do, we’ll store those contacts on our servers."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "DocSend and Dropbox analytics. When you use the DocSend or Dropbox analytics portion of our Services to view content, we collect information including your identifying and device information, such as email addresses, IP addresses, and device identifiers of devices you use to view the content. We also collect information on how you interact with the viewed content, such as the date and time you view the content, the number of times and length of time you view the content, and which portions of the content you view."
+          ],
+          "added": [
+            "Recipient and viewer analytics. When you view content included in portions of our Services that provide analytics to content owners, we collect information including your identifying and device information, such as email addresses, IP addresses, and device identifiers of devices you use to view the content. We also collect information on how you interact with the viewed content, such as the date and time you view the content, the number of times and length of time you view the content, and which portions of the content you view."
+          ],
+          "context_before": [
+            "Cookies and other technologies. We use technologies like cookies and pixel tags to provide, improve, protect, and promote our Services. For example, cookies help us with things like remembering your username for your next visit, understanding how you are interacting with our Services, and improving them based on that information. You can set your browser to not accept cookies, but this may limit your ability to use the Services. If our systems receive a DNT:1 signal from your browser, we’ll respond to that signal as outlined here. We may also use third-party service providers that set cookies and similar technologies to promote Dropbox services. You can learn more about how cookies and similar technologies work, as well as how to opt out of the use of them for advertising purposes, here."
+          ],
+          "context_after": [
+            "Marketing. We give users the option to use some of our Services free of charge. These free Services are made possible by the fact that some users upgrade to one of our paid Services. If you register for our Services, we will, from time to time, send you information about upgrades when permissible. Users who receive these marketing materials can opt out at any time. If you don’t want to receive a particular type of marketing material from us, click the ‘unsubscribe’ link in the corresponding emails, or update your preferences in the Notifications section of your personal account."
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [
+            "Bases for processing your data. We collect and use the personal data described above in order to provide you with the Services in a reliable and secure manner. We also collect and use personal data for our legitimate business needs. To the extent we process your personal data for other purposes, we ask for your consent in advance or require that our partners obtain such consent. For more information on the lawful bases for processing your data, please see our FAQ.",
+            "For more details on the categories of personal information that are included in the information above, please see our FAQ."
+          ],
+          "added": [
+            "Bases for processing your data. We collect and use the personal data described above in order to provide you with the Services in a reliable and secure manner. We also collect and use personal data for our legitimate business needs. To the extent we process your personal data for other purposes, we ask for your consent in advance or require that our partners obtain such consent. For more information on the lawful bases for processing your data, the categories of personal information included, and how we use artificial intelligence and machine learning, please see our FAQ."
+          ],
+          "context_before": [
+            "We sometimes contact people who don’t have a Dropbox account. For recipients in the EU, we or a third party will obtain consent before reaching out. If you receive an email and no longer wish to be contacted by Dropbox, you can unsubscribe and remove yourself from our contact list via the message itself."
+          ],
+          "context_after": [
+            "With Whom"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "Others working for and with Dropbox. Dropbox uses certain trusted third parties (for example, providers of customer support and IT services) for the business purposes of helping us provide, improve, protect, and promote our Services. These third parties will access your information to perform tasks on our behalf, and we’ll remain responsible for their handling of your information per our instructions. For a list of trusted third parties that we use to process your personal data and more details on the categories of personal information that we’ve disclosed, please see our FAQ."
+          ],
+          "added": [
+            "Others working for and with Dropbox. Dropbox uses certain trusted third parties (for example, providers of customer support and IT services) for the business purposes of helping us provide, improve, protect, and promote our Services. These third parties will access your information to perform tasks on our behalf, and we’ll remain responsible for their handling of your information per our instructions. For a list of categories of trusted third parties that we use to process your personal data and more details on the categories of personal information that we’ve disclosed, please see our FAQ."
+          ],
+          "context_before": [
+            "We may share information as discussed below, but we won’t sell it to advertisers or other third parties."
+          ],
+          "context_after": [
+            "Other Dropbox Companies. Dropbox shares infrastructure, systems, and technology with other Dropbox Companies to provide, improve, protect, and promote Dropbox Company Services. We process your information across the Dropbox Companies for these purposes, as permitted by applicable law and in accordance with their terms and policies. For more information on Dropbox Companies, Dropbox Company Services, and how your data is used, please see our FAQ."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Certain features let you make additional information available to others. For example, if you view a file or folder shared from DocSend or Dropbox analytics, we will share your identifying information such as name and email address, information on the device you used to view the content, and for how long you viewed content and what portion of the content you viewed with the owner of the file or folder."
+          ],
+          "added": [
+            "Certain features let you make additional information available to others. For example, if you view a file or folder shared from a feature that provides recipient or viewer analytics to content owners, we will share your identifying information such as name and email address, information on the device you used to view the content, and for how long you viewed content and what portion of the content you viewed with the owner of the file or folder. As another example, if you comment on a file, your name and email will be associated with your comment and visible to other people viewing that file, including logged-out viewers."
+          ],
+          "context_before": [
+            "Other users. Our Services are designed to help you collaborate with others. If you register your Dropbox account with an email address on a domain owned by your employer or organization, join a Dropbox Team, or collaborate with other Dropbox users, we may suggest you or your team as a potential collaborator to other users or teams. For example, if you interact with a person at a company, and that person frequently works with one of their coworkers, we may suggest you as a potential collaborator for that coworker. Collaborators and potential collaborators may see some of your basic information, like your name, Dropbox Team name, profile picture, device, email address, and usage information. This helps you sync up with teams you can join and helps other users share files and folders with you."
+          ],
+          "context_after": [
+            "Other applications. You can choose to connect your Dropbox account with third-party services––for example, via Dropbox APIs. By doing so, you’re enabling Dropbox and those third parties to exchange information about you and data in your account so that Dropbox and those third parties can provide, improve, protect, and promote their services. Please remember that third parties’ use of your information will be governed by their own privacy policies and terms of service."
+          ],
+          "changed_words": 43
+        },
+        {
+          "removed": [],
+          "added": [
+            "For more information about how we enforce our Acceptable Use Policy and detect abusive behavior and content, please see our FAQ."
+          ],
+          "context_before": [
+            "Security. We have a team dedicated to keeping your information secure and testing for vulnerabilities. We continue to work on features to keep your information safe in addition to things like two-factor authentication, encryption of files at rest, and alerts when new devices and apps are linked to your account. We deploy automated technologies to detect abusive behavior and content that may harm our Services, you, or other users."
+          ],
+          "context_after": [
+            "User Controls. You can access, amend, download, and delete your personal information by logging into your Dropbox account and going to your account settings page. Learn more here about managing your account information generally, or click here to learn how to change your profile information."
+          ],
+          "changed_words": 21
+        },
+        {
+          "removed": [
+            "Data Privacy Frameworks. Dropbox complies with the EU-U.S. and Swiss-U.S. Data Privacy Frameworks, as well as the UK Extension to the EU-U.S. Data Privacy Framework, as set forth by the U.S. Department of Commerce regarding the processing of personal data transferred from the European Union, the European Economic Area, the United Kingdom, and Switzerland to the United States. Dropbox has certified to the U.S. Department of Commerce that it adheres to the Principles of these Data Privacy Frameworks with respect to such data, but this does not include the DocSend or Formswift portions of the Services. If there is any conflict between this Privacy Policy and the Data Privacy Framework Principles, the Principles shall govern. In accordance with the Principles, Dropbox shall remain liable for onward transfers if a processor processes personal data in a manner inconsistent with the Principles. To learn more about the Data Privacy Framework, and to view our certification, visit https://www.dataprivacyframework.gov.",
+            "Dropbox is subject to oversight by the U.S. Federal Trade Commission. JAMS is the US-based independent organization responsible for reviewing and resolving complaints about our Data Privacy Framework compliance—free of charge to you. We ask that you first submit any such complaints directly to us via privacy@dropbox.com. If you aren’t satisfied with our response, please contact JAMS at https://www.jamsadr.com/dpf-dispute-resolution. In the event your concern still isn’t addressed by JAMS, you may be entitled to a binding arbitration as set forth in Annex I of the Data Privacy Framework Principles."
+          ],
+          "added": [
+            "Data Privacy Frameworks. Dropbox, Inc. complies with the EU-U.S. and Swiss-U.S. Data Privacy Frameworks, as well as the UK Extension to the EU-U.S. Data Privacy Framework, as set forth by the U.S. Department of Commerce regarding the processing of personal data transferred from the European Union, the European Economic Area, the United Kingdom, and Switzerland to the United States. Dropbox, Inc. has certified to the U.S. Department of Commerce that it adheres to the Principles of these Data Privacy Frameworks with respect to such data, but this does not include the FormSwift portion of the Services. If there is any conflict between this Privacy Policy and the Data Privacy Framework Principles, the Principles shall govern. In accordance with the Principles, Dropbox, Inc. shall remain liable for onward transfers if a processor processes personal data in a manner inconsistent with the Principles. To learn more about the Data Privacy Framework, and to view our certification, visit https://www.dataprivacyframework.gov.",
+            "Dropbox, Inc. is subject to oversight by the U.S. Federal Trade Commission. JAMS is the US-based independent organization responsible for reviewing and resolving complaints about our Data Privacy Framework compliance—free of charge to you. We ask that you first submit any such complaints directly to us via privacy@dropbox.com. If you aren’t satisfied with our response, please contact JAMS at https://www.jamsadr.com/dpf-dispute-resolution. In the event your concern still isn’t addressed by JAMS, you may be entitled to a binding arbitration as set forth in Annex I of the Data Privacy Framework Principles."
+          ],
+          "context_before": [
+            "Data Transfers. When transferring data from the European Union, the European Economic Area, the United Kingdom, and Switzerland, Dropbox relies upon a variety of legal mechanisms, such as contracts with our customers and affiliates, Standard Contractual Clauses, the EU-U.S. Data Privacy Framework, the UK Extension to the EU-U.S. Data Privacy Framework, the Swiss-U.S. Data Privacy Framework, and the European Commission's adequacy decisions about certain countries, as applicable."
+          ],
+          "context_after": [
+            "Your Control and Access of Your Data"
+          ],
+          "changed_words": 18
+        },
+        {
+          "removed": [
+            "If you would like to submit a data access request or object to the processing of your personal data, please email us at privacy@dropbox.com. To request that your personal data be deleted, please fill out this form. For more information on how to control and access your personal data, please see our FAQ."
+          ],
+          "added": [
+            "You can submit a data access request or request that your personal data be deleted by clicking here (if you have a Dropbox account) or here (if you don't have a Dropbox account). If you would like to object to the processing of your personal data, please email us at privacy@dropbox.com. For more information on how to control and access your personal data, please see our FAQ."
+          ],
+          "context_before": [
+            "Object to the processing of your personal data. Depending on the processing activity, you can request that we stop or limit processing of your personal data."
+          ],
+          "context_after": [
+            "Dropbox as controller or processor. If you reside in North America (the United States, Canada, and Mexico), Dropbox, Inc. acts as your service provider. For all other users, Dropbox International Unlimited Company acts as a controller of your personal data. Outside of North America, if you are a Dropbox Team customer or use the Dropbox Sign or DocSend team portions of the Services, Dropbox acts as a processor of your data."
+          ],
+          "changed_words": 50
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250502030819/https://www.dropbox.com/privacy",
+      "archive_after": "https://web.archive.org/web/20250608181418/https://www.dropbox.com/privacy",
+      "ai": {
+        "headline": "Dropbox updates privacy policy, adds recipient analytics and comment visibility details",
+        "summary": "Dropbox's privacy policy, dated May 30, 2025, replaces its September 2023 version. The main new points: \"Your Stuff\" now explicitly includes data from connected services; comments you make on a file are shown with your name and email to anyone viewing that file, including logged-out viewers; and the DocSend-specific analytics wording is generalized to any feature that gives content owners viewer analytics, which still shares your name, email, device, and viewing details with the owner.",
+        "severity": "moderate",
+        "categories": [
+          "data_collection",
+          "data_sharing",
+          "your_content",
+          "your_rights"
+        ],
+        "what_you_can_do": "Users can submit a data access or deletion request by clicking the links in the policy (one for users with a Dropbox account, one for those without), or object to processing by emailing privacy@dropbox.com.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "dropbox",
+      "doc": "privacy",
+      "date": "2026-09-02",
+      "source": "archive",
+      "changed_words": 14,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Dropbox’s Privacy Policy will be changing effective January 1, 2027. Click here to review."
+          ],
+          "context_before": [],
+          "context_after": [
+            "If your organization signed a Dropbox Business, Dropbox Services, or Dropbox Enterprise Agreement with Dropbox, that Agreement may have modified the privacy policy below. Please contact your organization’s Admin for details."
+          ],
+          "changed_words": 14
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260801004611/https://www.dropbox.com/privacy",
+      "archive_after": "https://web.archive.org/web/20260902121044/https://www.dropbox.com/privacy",
+      "ai": {
+        "headline": "Dropbox announces privacy policy changes taking effect January 1, 2027",
+        "summary": "Dropbox says its Privacy Policy will change effective January 1, 2027, and points users to a link to review the changes. The text provided does not say what the new rules are, so the impact on users can't be determined from this notice alone.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-02",
+      "words": 2539,
+      "archive": "https://web.archive.org/web/20230102133148/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-02-03",
+      "words": 2496,
+      "archive": "https://web.archive.org/web/20230203033833/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-03-01",
+      "words": 2496,
+      "archive": "https://web.archive.org/web/20230301020423/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-04-03",
+      "words": 2496,
+      "archive": "https://web.archive.org/web/20230403062517/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 2707,
+      "archive": "https://web.archive.org/web/20230501123322/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-06-01",
+      "words": 2707,
+      "archive": "https://web.archive.org/web/20230601032840/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-07-05",
+      "words": 2707,
+      "archive": "https://web.archive.org/web/20230705222101/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-08-01",
+      "words": 2707,
+      "archive": "https://web.archive.org/web/20230801073312/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-09-01",
+      "words": 2707,
+      "archive": "https://web.archive.org/web/20230901121624/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-10-06",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20231006162219/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-11-04",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20231104163508/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2023-12-02",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20231202192808/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-01-02",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240102153258/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-02-04",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240204164733/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240301034152/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240401154025/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-05-02",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240502031656/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-06-07",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240607022218/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-07-05",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240705045516/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-08-02",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240802153702/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20240901065803/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-11-02",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20241102001254/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2024-12-03",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20241203000242/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-01-03",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20250103054651/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-02-01",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20250201045911/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-03-03",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20250303073133/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-04-03",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20250403042803/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-05-02",
+      "words": 2769,
+      "archive": "https://web.archive.org/web/20250502030819/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-06-08",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20250608181418/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-07-01",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20250701221635/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20250801135437/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-09-04",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20250904152116/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-10-03",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20251003193619/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-11-02",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20251102123543/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2025-12-13",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20251213104723/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-02-09",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20260209094624/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-03-03",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20260303174038/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-04-03",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20260403100327/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-05-05",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20260505043341/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-06-05",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20260605050602/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-07-02",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20260702070322/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 2845,
+      "archive": "https://web.archive.org/web/20260801004611/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-09-02",
+      "words": 2859,
+      "archive": "https://web.archive.org/web/20260902121044/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-10-04",
+      "words": 2859,
+      "archive": "https://web.archive.org/web/20261004125742/https://www.dropbox.com/privacy"
+    },
+    {
+      "date": "2026-11-04",
+      "words": 2859,
+      "archive": "https://web.archive.org/web/20261104062114/https://www.dropbox.com/privacy"
+    }
+  ]
+}

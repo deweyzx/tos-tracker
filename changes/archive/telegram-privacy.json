@@ -1,0 +1,1460 @@
+{
+  "date": "archive",
+  "company": "telegram",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2023-02-03",
+      "source": "archive",
+      "changed_words": 95,
+      "hunks": [
+        {
+          "removed": [
+            "Telegram supports massive communities which we have to police against abuse and Terms of Service violations. Telegram also has more than 400 million users which makes it a lucrative target for spammers. To improve the security of your account, as well as to prevent spam, abuse, and other violations of our Terms of Service, we may collect metadata such as your IP address, devices and Telegram apps you've used, history of username changes, etc. If collected, this metadata can be kept for 12 months maximum."
+          ],
+          "added": [
+            "Telegram supports massive communities which we have to police against abuse and Terms of Service violations. Telegram also has more than 700 million users which makes it a lucrative target for spammers. To improve the security of your account, as well as to prevent spam, abuse, and other violations of our Terms of Service, we may collect metadata such as your IP address, devices and Telegram apps you've used, history of username changes, etc. If collected, this metadata can be kept for 12 months maximum."
+          ],
+          "context_before": [
+            "5.2. Safety and Security"
+          ],
+          "context_after": [
+            "5.3. Spam and Abuse"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "8.4. Translation of Messages at the Request of the User",
+            "Users can choose to translate a specific text message into a different language by tapping “Translate” in the action menu of the message (to enable this option, a user should first turn on Translation services in the Settings > Languages section of the Telegram application). Since Telegram may rely on a third-party, Google LLC, subsidiary of Alphabet Inc, for automatic translation of messages, the text of specific messages that users choose to translate may be shared with Google in order to obtain their translated versions. The third-party service owner (Google) may also receive the IP of the user requesting the translation – this is true for any equivalent translation service and the IP cannot be traced back to any Telegram user account or ID. Google will only access the data to provide a translation and will not use it for any other Google products, services, or advertising.",
+            "8.5. Transcription of Voice Messages at the Request of the User",
+            "Some users can choose to convert a voice message to text by tapping on the Voice-to-Text icon (“->A”) displayed in voice messages (to be able to use this option, users should subscribe to Telegram Premium in the Settings > Telegram Premium section of the Telegram application). Since Telegram may rely on a third party, Google LLC, subsidiary of Alphabet Inc, for voice-to-text conversion, the audio data of voice messages that users choose to convert to text may be shared with Google in order to obtain their transcribed versions. Only audio data may be shared for this purpose (no other data, such as the user's IP address or any information about their account is shared). According to the agreement between Telegram and Google, Telegram will pay for the transcriptions on behalf of its users and Google will only access the audio data to provide a transcribed version – it will not log audio data or transcripts, and will not use the data for any other Google products, services, or advertising."
+          ],
+          "added": [
+            "8.4. Translation of Chats, Channels and specific Messages at the Request of the User",
+            "Users can choose to translate a specific text message into a different language by tapping “Translate” in the action menu of the message (to enable this option, a user should first turn on Translation services in the Settings > Languages section of the Telegram application). Telegram Premium users can also optionally enable automatic live translation on any chat, group or channel.",
+            "Since Telegram may rely on a third-party, Google LLC, subsidiary of Alphabet Inc, for automatic translation of messages, the text of any message or set of messages that users choose to translate may be shared with Google in order to obtain their translated versions. Google will only access the data to provide a translation and will not use it for any other Google products, services, or advertising.",
+            "8.5. Transcription of Voice and Video Messages at the Request of the User",
+            "Some users can choose to convert a voice or video message to text by tapping on the Voice-to-Text icon (“->A”) displayed on eligible messages (to be able to use this option, users should subscribe to Telegram Premium in the Settings > Telegram Premium section of the Telegram application).",
+            "Since Telegram may rely on a third party, Google LLC, subsidiary of Alphabet Inc, for voice-to-text conversion, the audio data of voice and video messages that users choose to convert to text may be shared with Google in order to obtain their transcribed versions. Only audio data may be shared for this purpose (no other data, such as the user's IP address or any information about their account is shared). According to the agreement between Telegram and Google, Telegram will pay for the transcriptions on behalf of its users and Google will only access the audio data to provide a transcribed version – it will not log audio data or transcripts, and will not use the data for any other Google products, services, or advertising."
+          ],
+          "context_before": [
+            "If Telegram receives a court order that confirms you're a terror suspect, we may disclose your IP address and phone number to the relevant authorities. So far, this has never happened. When it does, we will include it in a semiannual transparency report published at: https://t.me/transparency."
+          ],
+          "context_after": [
+            "9. Your Rights Regarding the Personal Data You Provide to Us"
+          ],
+          "changed_words": 75
+        },
+        {
+          "removed": [],
+          "added": [
+            "February 3, 2022",
+            "Updated 8.4 and 8.5 to reflect the new premium feature that allows translating entire chats."
+          ],
+          "context_before": [
+            "Expanded 3.2. Your Email Address with information on login emails, available as of Telegram 9.0"
+          ],
+          "context_after": [
+            "Important changes made to this Privacy Policy will be notified to you via Telegram."
+          ],
+          "changed_words": 18
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230105102613/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20230203185758/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram raises its user count in safety section from 400 million to 700 million",
+        "summary": "Telegram updated the user count in its safety section from more than 400 million to more than 700 million. The rules on collecting metadata like IP addresses and device history for security, and keeping it for up to 12 months, are unchanged.",
+        "severity": "minor",
+        "categories": [
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2023-05-01",
+      "source": "archive",
+      "changed_words": 230,
+      "hunks": [
+        {
+          "removed": [
+            "If you live in a country in the European Economic Area (EEA), the Services are provided by Telegram, which for the purposes of applicable data protection legislation is the data controller responsible for your personal data when you use our Services. However, as Telegram is located outside the EEA, we have designated one of our EEA-based group companies, Telegram UK Holdings Ltd (71-75 Shelton Street, Covent Garden, London, England, WC2H 9JQ), as a representative to whom you may direct any issues you have relating to our processing of your personal data."
+          ],
+          "added": [
+            "If you live in a country in the European Economic Area (EEA), the Services are provided by Telegram, which for the purposes of applicable data protection legislation is the data controller responsible for your personal data when you use our Services. However, as Telegram is located outside the EEA, we have designated a third party, European Data Protection Office (EDPO), as our representative pursuant to Article 27 of the GDPR. You can direct to EDPO any of your GDPR-related queries:",
+            "by using EDPO’s online request form at https://edpo.com/gdpr-data-request/ or",
+            "by writing to EDPO at Avenue Huart Hamoir 71, 1030 Brussels, Belgium."
+          ],
+          "context_before": [
+            "1.4. EEA Representative"
+          ],
+          "context_after": [
+            "2. Legal Ground for Processing Your Personal Data"
+          ],
+          "changed_words": 78
+        },
+        {
+          "removed": [
+            "We may share your personal data with: (1) our parent company, Telegram Group Inc, located in the British Virgin Islands; and (2) Telegram FZ-LLC, a group member located in Dubai, to help provide, improve and support our Services. We will implement appropriate safeguards to protect the security and integrity of that personal data. This will take the form of standard contract clauses approved by the European Commission in an agreement between us and our relevant group companies. If you would like more information regarding these clauses, please contact us using the details in section 12 below."
+          ],
+          "added": [
+            "To provide, improve and support our Services, we may share your personal data with: (1) our parent company, Telegram Group Inc, located in the British Virgin Islands, (2) Telegraph Inc., a group member also located in the BVI; and (3) Telegram FZ-LLC, a group member located in Dubai, to help provide, improve and support our Services. We will implement appropriate safeguards to protect the security and integrity of that personal data. This will take the form of standard contract clauses approved by the European Commission in an agreement between us and our relevant group companies. If you would like more information regarding these clauses, please contact our EEA representative using the details in section 1.4 above."
+          ],
+          "context_before": [
+            "8.2. Telegram’s Group Companies"
+          ],
+          "context_after": [
+            "8.3. Law Enforcement Authorities"
+          ],
+          "changed_words": 32
+        },
+        {
+          "removed": [
+            "If you wish to exercise any of these rights, kindly contact us using the details in section 12 below."
+          ],
+          "added": [
+            "If you wish to exercise any of these rights, kindly use the contact details in section 12 below."
+          ],
+          "context_before": [
+            "9.2. Exercising Your Rights"
+          ],
+          "context_after": [
+            "9.3. Data Settings"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [],
+          "added": [
+            "April 24, 2023",
+            "Updated 1.4, 9.2 and 12 to update the details of Telegram’s EEA representative for GDPR matters.",
+            "Updated 8.2 to mention Telegraph Inc., a member of the Telegram group of companies."
+          ],
+          "context_before": [
+            "Updated 8.4 and 8.5 to reflect the new premium feature that allows translating entire chats."
+          ],
+          "context_after": [
+            "Important changes made to this Privacy Policy will be notified to you via Telegram."
+          ],
+          "changed_words": 33
+        },
+        {
+          "removed": [
+            "If you have any questions about privacy and our data policies, please contact our @GDPRbot. Use the /access command to learn how to get a copy of your Telegram data and use the /contact command to leave a request, which we will answer at the earliest opportunity."
+          ],
+          "added": [
+            "If you have any questions about privacy and our data policies, please contact EDPO, our representative in the EEA, at https://edpo.com/gdpr-data-request/ or by writing to Avenue Huart Hamoir 71, 1030 Brussels, Belgium."
+          ],
+          "context_before": [
+            "12. Questions and concerns"
+          ],
+          "context_after": [
+            "Telegram is an open source project. You can examine more information on our:"
+          ],
+          "changed_words": 47
+        },
+        {
+          "removed": [
+            "This policy has been expanded on August 14, 2018 to add information required by the EU data protection law."
+          ],
+          "added": [
+            "Confirm that Telegram apps downloaded from app stores are using the same code that we publish at: https://core.telegram.org/reproducible-builds"
+          ],
+          "context_before": [
+            "Source Code at: https://telegram.org/apps#source-code."
+          ],
+          "context_after": [
+            "Telegram"
+          ],
+          "changed_words": 35
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230401000240/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20230501041112/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram swaps its EEA privacy representative to third-party firm EDPO",
+        "summary": "Telegram replaced its UK-based group company as the point of contact for EEA GDPR privacy matters with an outside firm, European Data Protection Office (EDPO), which users can now contact via an online form or by mail. The policy also now names Telegraph Inc., another BVI-based group company, as a recipient of personal data used to provide, improve and support the Services, and adds a note about verifying app store builds against published source code.",
+        "severity": "moderate",
+        "categories": [
+          "data_sharing",
+          "your_rights"
+        ],
+        "what_you_can_do": "Contact EDPO, Telegram's EEA representative, via the online request form at https://edpo.com/gdpr-data-request/ or by writing to Avenue Huart Hamoir 71, 1030 Brussels, Belgium, for GDPR-related questions.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2023-06-01",
+      "source": "archive",
+      "changed_words": 70,
+      "hunks": [
+        {
+          "removed": [
+            "To provide, improve and support our Services, we may share your personal data with: (1) our parent company, Telegram Group Inc, located in the British Virgin Islands, (2) Telegraph Inc., a group member also located in the BVI; and (3) Telegram FZ-LLC, a group member located in Dubai, to help provide, improve and support our Services. We will implement appropriate safeguards to protect the security and integrity of that personal data. This will take the form of standard contract clauses approved by the European Commission in an agreement between us and our relevant group companies. If you would like more information regarding these clauses, please contact our EEA representative using the details in section 1.4 above."
+          ],
+          "added": [
+            "To provide, improve and support our Services, we may share your personal data with: (1) our parent company, Telegram Group Inc, located in the British Virgin Islands, (2) Telegraph Inc., a group member also located in the BVI; and (3) Telegram FZ-LLC, a group member located in Dubai. We will implement appropriate safeguards to protect the security and integrity of that personal data. This will take the form of standard contract clauses approved by the European Commission in an agreement between us and our relevant group companies. If you would like more information regarding these clauses, please contact our EEA representative using the details in section 1.4 above."
+          ],
+          "context_before": [
+            "8.2. Telegram’s Group Companies"
+          ],
+          "context_after": [
+            "8.3. Law Enforcement Authorities"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "12. Questions and concerns",
+            "If you have any questions about privacy and our data policies, please contact EDPO, our representative in the EEA, at https://edpo.com/gdpr-data-request/ or by writing to Avenue Huart Hamoir 71, 1030 Brussels, Belgium.",
+            "Telegram is an open source project. You can examine more information on our:"
+          ],
+          "added": [
+            "12. Further Information",
+            "If you have any questions please feel free to explore our FAQ or contact Telegram's Volunteer Support in-app via Settings > Ask a Question.",
+            "If you live in the EU and would like to submit a GDPR-related request, please see here.",
+            "Telegram is an open source project. You can find more information on our:"
+          ],
+          "context_before": [
+            "Important changes made to this Privacy Policy will be notified to you via Telegram."
+          ],
+          "context_after": [
+            "API at: https://core.telegram.org/api;"
+          ],
+          "changed_words": 60
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230501041112/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20230601003905/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram removes the mention of its EU representative for privacy questions",
+        "summary": "Telegram's privacy policy no longer names EDPO, its EU representative in Brussels, as the contact for privacy questions. Questions now go to in-app Volunteer Support, and EU residents are directed to a GDPR request page. The data-sharing terms with Telegram's group companies are otherwise the same, apart from removing a reference to European Commission-approved contract clauses for those transfers.",
+        "severity": "moderate",
+        "categories": [
+          "data_sharing",
+          "your_rights"
+        ],
+        "what_you_can_do": "If you live in the EU and want to make a GDPR-related request, use the GDPR request link in the policy's Further Information section.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2023-11-01",
+      "source": "archive",
+      "changed_words": 70,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [
+            "MS"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Home",
+            "FAQ",
+            "Apps"
+          ],
+          "added": [
+            "Utama",
+            "Soalan",
+            "Aplikasi"
+          ],
+          "context_before": [
+            "Twitter"
+          ],
+          "context_after": [
+            "API"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Protocol"
+          ],
+          "added": [
+            "Protokol"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Telegram Privacy Policy"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+            "About",
+            "FAQ",
+            "Privacy",
+            "Press",
+            "Mobile Apps"
+          ],
+          "added": [
+            "Telegram adalah aplikasi pemesejan mudah alih dan desktop berasaskan awan dengan fokus pada keselamatan dan kepantasan.",
+            "Mengenai",
+            "Soalan",
+            "Privasi",
+            "Tekan",
+            "Aplikasi Mudah Alih"
+          ],
+          "context_before": [
+            "Telegram"
+          ],
+          "context_after": [
+            "iPhone/iPad"
+          ],
+          "changed_words": 41
+        },
+        {
+          "removed": [
+            "Mobile Web",
+            "Desktop Apps"
+          ],
+          "added": [
+            "Web Mobil",
+            "Aplikasi Desktop"
+          ],
+          "context_before": [
+            "Android"
+          ],
+          "context_after": [
+            "PC/Mac/Linux"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Web-browser"
+          ],
+          "added": [
+            "Web browser"
+          ],
+          "context_before": [
+            "macOS"
+          ],
+          "context_after": [
+            "Platform"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Translations",
+            "Instant View",
+            "About"
+          ],
+          "added": [
+            "Terjemahan",
+            "Lihat Segera",
+            "Mengenai"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Blog"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Apps"
+          ],
+          "added": [
+            "Aplikasi"
+          ],
+          "context_before": [
+            "Blog"
+          ],
+          "context_after": [
+            "Platform"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Twitter"
+          ],
+          "added": [
+            "Tekan"
+          ],
+          "context_before": [
+            "Platform"
+          ],
+          "context_after": [],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231002103925/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20231101000505/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram's privacy page now appears in Malay instead of English",
+        "summary": "Telegram's privacy policy page text and navigation menu have been translated from English into Malay, with the same content kept. No new rules, data uses, or user rights are changed by these edits.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2023-12-01",
+      "source": "archive",
+      "changed_words": 72,
+      "hunks": [
+        {
+          "removed": [
+            "MS"
+          ],
+          "added": [
+            "EN"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Utama",
+            "Soalan",
+            "Aplikasi"
+          ],
+          "added": [
+            "Home",
+            "FAQ",
+            "Apps"
+          ],
+          "context_before": [
+            "Twitter"
+          ],
+          "context_after": [
+            "API"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Protokol"
+          ],
+          "added": [
+            "Protocol"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Telegram Privacy Policy"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "by using EDPO’s online request form at https://edpo.com/gdpr-data-request/ or"
+          ],
+          "added": [
+            "by using EDPO’s online request form at https://edpo.com/telegram-gdpr-data-request/ or"
+          ],
+          "context_before": [
+            "If you live in a country in the European Economic Area (EEA), the Services are provided by Telegram, which for the purposes of applicable data protection legislation is the data controller responsible for your personal data when you use our Services. However, as Telegram is located outside the EEA, we have designated a third party, European Data Protection Office (EDPO), as our representative pursuant to Article 27 of the GDPR. You can direct to EDPO any of your GDPR-related queries:"
+          ],
+          "context_after": [
+            "by writing to EDPO at Avenue Huart Hamoir 71, 1030 Brussels, Belgium."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Telegram adalah aplikasi pemesejan mudah alih dan desktop berasaskan awan dengan fokus pada keselamatan dan kepantasan.",
+            "Mengenai",
+            "Soalan",
+            "Privasi",
+            "Tekan",
+            "Aplikasi Mudah Alih"
+          ],
+          "added": [
+            "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+            "About",
+            "FAQ",
+            "Privacy",
+            "Press",
+            "Mobile Apps"
+          ],
+          "context_before": [
+            "Telegram"
+          ],
+          "context_after": [
+            "iPhone/iPad"
+          ],
+          "changed_words": 41
+        },
+        {
+          "removed": [
+            "Web Mobil",
+            "Aplikasi Desktop"
+          ],
+          "added": [
+            "Mobile Web",
+            "Desktop Apps"
+          ],
+          "context_before": [
+            "Android"
+          ],
+          "context_after": [
+            "PC/Mac/Linux"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Web browser"
+          ],
+          "added": [
+            "Web-browser"
+          ],
+          "context_before": [
+            "macOS"
+          ],
+          "context_after": [
+            "Platform"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Terjemahan",
+            "Lihat Segera",
+            "Mengenai"
+          ],
+          "added": [
+            "Translations",
+            "Instant View",
+            "About"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Blog"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Aplikasi"
+          ],
+          "added": [
+            "Apps"
+          ],
+          "context_before": [
+            "Blog"
+          ],
+          "context_after": [
+            "Platform"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Tekan"
+          ],
+          "added": [
+            "Press"
+          ],
+          "context_before": [
+            "Platform"
+          ],
+          "context_after": [],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231101000505/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20231201013937/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram's privacy page now shows English navigation and a new GDPR request link",
+        "summary": "Telegram mostly changed website menu labels and translations (for example, Malay labels were replaced with English ones), with no change to how user data is handled. The one substantive edit is a new EDPO online request form link for GDPR-related data requests, which replaces the old link.",
+        "severity": "minor",
+        "categories": [
+          "your_rights"
+        ],
+        "what_you_can_do": "Use the new EDPO online request form at https://edpo.com/telegram-gdpr-data-request/ to send GDPR-related privacy questions or requests.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2024-04-01",
+      "source": "archive",
+      "changed_words": 503,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "3.1.1. Optional Data",
+            "You can add your birthday (with or without the year) to your Telegram profile if you wish to do so. You can granularly choose which users are able to see it on your profile (by default, your Contacts), and they will be shown a reminder on the day. We may use data about your age to determine your eligibility for accessing age-specific content.",
+            "Telegram Business subscribers can add a fixed location and a list of opening hours to their profile, to help clients identify and engage with their business more efficiently on Telegram. If you choose to add it to your profile, this information is always public."
+          ],
+          "context_before": [
+            "We do not require your screen name to be your real name. Note that users who have you in their contacts will see you by the name they saved and not by your screen name. This way your mother can have the public name 'Johnny Depp' while appearing as 'Mom' to you and as 'Boss' to her underlings at work (or the other way around, depending on how these relationships are structured)."
+          ],
+          "context_after": [
+            "3.2. Your Email Address"
+          ],
+          "changed_words": 110
+        },
+        {
+          "removed": [],
+          "added": [
+            "By sending a join request to a group or channel.",
+            "By using Telegram Business features that connect a chatbot to your account.",
+            "By opening a chat with a Telegram Business account controlled by a chatbot (see section 6.5 below)."
+          ],
+          "context_before": [
+            "By paying for goods and services via bots (see section 7 below)."
+          ],
+          "context_after": [
+            "6.3. What Data Bots Receive"
+          ],
+          "changed_words": 39
+        },
+        {
+          "removed": [],
+          "added": [
+            "To facilitate text localization, bots you interact with (including via chats managed by Telegram Business Chatbots), may receive your interface language based on your app or operating system language settings. Note that if you update your language settings, bots may continue to receive your previous language for some time."
+          ],
+          "context_before": [
+            "Bots added to groups can operate in two modes: with access to messages in the group or without access. If the bot has access to messages, it can see everything that happens in the group. The interface clearly shows whether or not a bot has access to messages in groups."
+          ],
+          "context_after": [
+            "6.4. Bots Are Not Maintained by Telegram"
+          ],
+          "changed_words": 49
+        },
+        {
+          "removed": [],
+          "added": [
+            "6.5. Telegram Business Chatbots",
+            "Telegram Business subscribers can connect third-party bots to their Telegram account, to help them automatically process and respond to messages from users.",
+            "6.5.1. Communicating with a Business Chatbot",
+            "Telegram users have been able to communicate with bots, including bots run by businesses, since 2015. With the introduction of Telegram Business, users can also seamlessly interface with bots in private chats with Telegram Business users who have connected a chatbot to their account.",
+            "If you message a Business user who connected a chatbot to their account, depending on their settings, you may be effectively communicating with a bot, and it will receive basic data about you as detailed in section 6.3 above.",
+            "6.5.2. Using a Business Chatbot to Manage Your Chats",
+            "If you connect a third-party bot to your account via Telegram Business, the bot will have access to basic information about your account (see section 6.3 above), and will be able to message you privately. Additionally, the bot will have access to all messages, media and files contained in the private chats you allow it to manage. Lastly, if you grant it permission to do so (and only in the private chats you assigned to it), the bot will be able to send messages and perform other actions on your behalf.",
+            "You can alter or revoke the bot’s permissions, including the list of chats it can access, at any time from [PATH] on official Telegram clients."
+          ],
+          "context_before": [
+            "Other than our own bots, no other bots or third-party bot developers are affiliated with Telegram. They are completely independent from us. They should ask you for your permission before they access your data or you make it available to them."
+          ],
+          "context_after": [
+            "7. Third Party Payment Services"
+          ],
+          "changed_words": 240
+        },
+        {
+          "removed": [
+            "Other users of our Services with whom you choose to communicate with and share certain information, who may be located outside the EEA. Note that by entering into the Terms of Service and choosing to communicate with such other users of Telegram, you are instructing us to transfer your personal data, on your behalf, to those users in accordance with this Privacy Policy. We employ all appropriate technical and organizational measures (including encryption of your personal data) to ensure a level of security for your personal data that is appropriate to the risk."
+          ],
+          "added": [
+            "Other users of our Services with whom you choose to communicate with and share certain information, who may be located outside the EEA. Note that by entering into the Terms of Service and choosing to communicate with such other users of Telegram, you are instructing us to transfer your personal data, on your behalf, to those users in accordance with this Privacy Policy. We employ all appropriate technical and organizational measures (including encryption of your personal data) to ensure a level of security for your personal data that is appropriate to the risk. However, note that if you chat with others and share data with them, they become capable of sharing such data further with third parties without your knowledge or consent, and Telegram has no way to prevent this."
+          ],
+          "context_before": [
+            "8.1. Other Telegram Users"
+          ],
+          "context_after": [
+            "8.2. Telegram’s Group Companies"
+          ],
+          "changed_words": 37
+        },
+        {
+          "removed": [
+            "Expanded 3.2. Your Email Address with information on login emails, available as of Telegram 9.0"
+          ],
+          "added": [
+            "Expanded 3.2. Your Email Address with information on login emails."
+          ],
+          "context_before": [
+            "September 8, 2022"
+          ],
+          "context_after": [
+            "February 3, 2022"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [],
+          "added": [
+            "March 31, 2024",
+            "Added 3.1.1. Optional Data.",
+            "Added information about Telegram Buisness chatbots to the Bot Messages section (6.2, 6.3, 6.5)."
+          ],
+          "context_before": [
+            "Updated 8.2 to mention Telegraph Inc., a member of the Telegram group of companies."
+          ],
+          "context_after": [
+            "Important changes made to this Privacy Policy will be notified to you via Telegram."
+          ],
+          "changed_words": 21
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240301014653/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20240401001850/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram adds birthday field, Business chatbot data access, and language sharing with bots",
+        "summary": "Telegram now lets users optionally add a birthday to their profile, and Telegram Business users can connect third-party chatbots that can read all messages, media, and files in the private chats they're assigned, and send messages on the user's behalf. Bots you interact with may also receive your app or operating system language setting, and bots can receive basic account data when you join groups, channels, or chat with a business bot. The policy also now warns that people you chat with can pass your shared data to third parties without your knowledge, and Telegram cannot prevent this.",
+        "severity": "major",
+        "categories": [
+          "data_sharing",
+          "data_collection",
+          "account"
+        ],
+        "what_you_can_do": "You can alter or revoke a Business chatbot's permissions, including which chats it can access, at any time from the relevant settings on official Telegram clients (the policy text gives the location as a placeholder, [PATH]). You can also choose which users can see your optional birthday, which by default is your Contacts.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2024-05-01",
+      "source": "archive",
+      "changed_words": 7,
+      "hunks": [
+        {
+          "removed": [
+            "You can alter or revoke the bot’s permissions, including the list of chats it can access, at any time from [PATH] on official Telegram clients."
+          ],
+          "added": [
+            "You can alter or revoke the bot’s permissions, including the list of chats it can access, at any time from Settings > Telegram Business > Chatbots on official Telegram clients."
+          ],
+          "context_before": [
+            "If you connect a third-party bot to your account via Telegram Business, the bot will have access to basic information about your account (see section 6.3 above), and will be able to message you privately. Additionally, the bot will have access to all messages, media and files contained in the private chats you allow it to manage. Lastly, if you grant it permission to do so (and only in the private chats you assigned to it), the bot will be able to send messages and perform other actions on your behalf."
+          ],
+          "context_after": [
+            "7. Third Party Payment Services"
+          ],
+          "changed_words": 7
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240401001850/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20240501095644/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram adds exact menu path for managing Business chatbot permissions",
+        "summary": "Telegram replaced a placeholder with the specific settings path (Settings > Telegram Business > Chatbots) where users can change or revoke a third-party bot's permissions. The underlying rule is unchanged, so this only makes the instructions clearer.",
+        "severity": "minor",
+        "categories": [
+          "account"
+        ],
+        "what_you_can_do": "Change or revoke a third-party bot's permissions at any time from Settings > Telegram Business > Chatbots on official Telegram clients.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2024-07-02",
+      "source": "archive",
+      "changed_words": 75,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "3.3.5. Paid Posts",
+            "As of June 2024, creators are able to offer paid access to specific channel posts by accepting Telegram Stars. When users pay to unlock a channel post, a permanent copy is created which resides in the parties' transaction history. This copy remains accessible even if the post is later deleted or either party loses access to the channel."
+          ],
+          "context_before": [
+            "In addition to private messages, Telegram also supports public channels and public groups. All public chats are cloud chats (see section 3.3.1 above). Like everything on Telegram, the data you post in public communities is encrypted, both in storage and in transit — but everything you post in public will be accessible to everyone."
+          ],
+          "context_after": [
+            "3.4. Phone Number and Contacts"
+          ],
+          "changed_words": 61
+        },
+        {
+          "removed": [
+            "In supergroups and channels, deleting a message removes it for all participants. Note that deleted messages and original versions of edited messages from supergroups are stored for 48 hours after deletion in order to be shown in the admins log."
+          ],
+          "added": [
+            "In supergroups and channels, deleting a message removes it for all participants. Note that deleted messages and original versions of edited messages from supergroups are stored for 48 hours after deletion in order to be shown in admins' Recent Actions panel. For paid posts in channels, see 3.3.5."
+          ],
+          "context_before": [
+            "As of version 5.5, any party can choose to delete any messages in one-on-one chats, both sent and received, for both sides. There is no time limit. Any party can also opt to clear the entire chat history for both parties, in which case the apps will be instructed to remove all messages in that chat, regardless of how many messages are retained by either of the participants."
+          ],
+          "context_after": [
+            "10.3. Self-Destructing Messages"
+          ],
+          "changed_words": 14
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240604075731/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20240702173552/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram adds paid channel posts that stay accessible even after deletion",
+        "summary": "Telegram now lets channel creators sell access to specific posts for Telegram Stars. When someone pays, a permanent copy of the post is kept in both parties' transaction history, and that copy stays accessible even if the post is later deleted or the buyer loses access to the channel.",
+        "severity": "moderate",
+        "categories": [
+          "your_content",
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2024-10-01",
+      "source": "archive",
+      "changed_words": 74,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "If Telegram receives a court order that confirms you're a terror suspect, we may disclose your IP address and phone number to the relevant authorities. So far, this has never happened. When it does, we will include it in a semiannual transparency report published at: https://t.me/transparency."
+          ],
+          "added": [
+            "If Telegram receives a valid order from the relevant judicial authorities that confirms you're a suspect in a case involving criminal activities that violate the Telegram Terms of Service, we will perform a legal analysis of the request and may disclose your IP address and phone number to the relevant authorities. If any data is shared, we will include such occurrences in a quarterly transparency report published at: https://t.me/transparency."
+          ],
+          "context_before": [
+            "8.3. Law Enforcement Authorities"
+          ],
+          "context_after": [
+            "8.4. Translation of Chats, Channels and specific Messages at the Request of the User"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [
+            "By default, if you stop using Telegram and do not come online for at least 6 months, your account will be deleted along with all messages, media, contacts and every other piece of data you store in the Telegram cloud. You can go to Settings to change the exact period after which your inactive account will self-destruct."
+          ],
+          "added": [
+            "By default, if you stop using Telegram and do not come online for at least 18 months, your account will be deleted along with all messages, media, contacts and every other piece of data you store in the Telegram cloud. You can go to Settings to change the exact period after which your inactive account will self-destruct."
+          ],
+          "context_before": [
+            "10.4. Account Self-Destruction"
+          ],
+          "context_after": [
+            "11. Changes to this Privacy Policy"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Added information about Telegram Buisness chatbots to the Bot Messages section (6.2, 6.3, 6.5)."
+          ],
+          "added": [
+            "Added information about Telegram Business chatbots to the Bot Messages section (6.2, 6.3, 6.5).",
+            "September 23, 2024",
+            "September 29, 2024",
+            "Updated 10.4 to reflect the new default time period for Account Self-Destruction."
+          ],
+          "context_before": [
+            "Added 3.1.1. Optional Data."
+          ],
+          "context_after": [
+            "Important changes made to this Privacy Policy will be notified to you via Telegram."
+          ],
+          "changed_words": 20
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240901002603/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20241001095105/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram changes when it may share your IP address and phone number with authorities",
+        "summary": "Telegram now says it may disclose your IP address and phone number to authorities only after a valid court order about a suspect in a case involving criminal activity that violates its Terms of Service, and only after a legal review. Reports on such disclosures move from semiannual to quarterly, and the old wording about terror suspects is gone.",
+        "severity": "major",
+        "categories": [
+          "data_sharing",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2025-01-05",
+      "source": "archive",
+      "changed_words": 51,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Protocol"
+          ],
+          "added": [
+            "Moderation"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Telegram Privacy Policy"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Other than our own bots, no other bots or third-party bot developers are affiliated with Telegram. They are completely independent from us. They should ask you for your permission before they access your data or you make it available to them."
+          ],
+          "added": [
+            "The terms of use for certain bots are set by Telegram. No other bots or third-party bot developers are affiliated with Telegram. They are completely independent from us. They should ask you for your permission before they access your data or you make it available to them.",
+            "Your usage of the Bot and Mini App features is governed by the Terms of Service for Bots and the Terms of Services for Mini Apps, respectively."
+          ],
+          "context_before": [
+            "6.4. Bots Are Not Maintained by Telegram"
+          ],
+          "context_after": [
+            "6.5. Telegram Business Chatbots"
+          ],
+          "changed_words": 45
+        },
+        {
+          "removed": [
+            "Apps",
+            "Platform"
+          ],
+          "added": [],
+          "context_before": [
+            "Blog"
+          ],
+          "context_after": [
+            "Press"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Moderation"
+          ],
+          "context_before": [
+            "Press"
+          ],
+          "context_after": [],
+          "changed_words": 1
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241203071220/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20250105122249/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram updates its privacy policy wording, bot terms, and page links",
+        "summary": "Telegram made mostly small edits to its privacy policy: it removed the \"EN\" label, renamed a \"Protocol\" and \"Apps Platform\" reference, and added a \"Moderation\" link. Its bot section now says some bots' terms are set by Telegram and that bot and Mini App use is governed by separate Terms of Service, but the rules on data access and bot independence are otherwise unchanged.",
+        "severity": "minor",
+        "categories": [
+          "other",
+          "your_content"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2025-04-01",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [
+            "Telegram supports massive communities which we have to police against abuse and Terms of Service violations. Telegram also has more than 900 million users which makes it a lucrative target for spammers. To improve the security of your account, as well as to prevent spam, abuse, and other violations of our Terms of Service, we may collect metadata such as your IP address, devices and Telegram apps you've used, history of username changes, etc. If collected, this metadata can be kept for 12 months maximum."
+          ],
+          "added": [
+            "Telegram supports massive communities which we have to police against abuse and Terms of Service violations. Telegram also has more than 1 billion users which makes it a lucrative target for spammers. To improve the security of your account, as well as to prevent spam, abuse, and other violations of our Terms of Service, we may collect metadata such as your IP address, devices and Telegram apps you've used, history of username changes, etc. If collected, this metadata can be kept for 12 months maximum."
+          ],
+          "context_before": [
+            "5.2. Safety and Security"
+          ],
+          "context_after": [
+            "5.3. Spam and Abuse"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250301015150/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20250401055651/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram updates its user count from 900 million to 1 billion in security section",
+        "summary": "Telegram changed the user count in its safety section from more than 900 million to more than 1 billion. The rules for collecting security metadata, such as IP addresses and devices, and the 12-month retention limit are unchanged.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2025-08-02",
+      "source": "archive",
+      "changed_words": 19,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Since Telegram may rely on a third-party, Google LLC, subsidiary of Alphabet Inc, for automatic translation of messages, the text of any message or set of messages that users choose to translate may be shared with Google in order to obtain their translated versions. Google will only access the data to provide a translation and will not use it for any other Google products, services, or advertising."
+          ],
+          "added": [
+            "Since Telegram may rely on Google LLC or Microsoft Corporation for automatic translation of messages, the text of any message or set of messages that users choose to translate may be shared with Google or Microsoft in order to obtain their translated versions. These third-party companies will only access the data to provide a translation and will not use it for any other products, services, or advertising."
+          ],
+          "context_before": [
+            "Users can choose to translate a specific text message into a different language by tapping “Translate” in the action menu of the message (to enable this option, a user should first turn on Translation services in the Settings > Languages section of the Telegram application). Telegram Premium users can also optionally enable automatic live translation on any chat, group or channel."
+          ],
+          "context_after": [
+            "8.5. Transcription of Voice and Video Messages at the Request of the User"
+          ],
+          "changed_words": 18
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250702025018/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20250802191040/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram now names Microsoft as a message translation provider alongside Google",
+        "summary": "Telegram's privacy policy now says that text users choose to translate may be shared with either Google or Microsoft, not only Google. Both companies are described as only using the text to provide the translation and not for their own products, services, or advertising, which matches the previous wording for Google.",
+        "severity": "moderate",
+        "categories": [
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2026-06-02",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [
+            "Moderation"
+          ],
+          "added": [
+            "Safety"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Telegram Privacy Policy"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Moderation"
+          ],
+          "added": [
+            "Safety"
+          ],
+          "context_before": [
+            "Press"
+          ],
+          "context_after": [],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260502001230/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20260602064434/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram renames \"Moderation\" to \"Safety\" in its privacy policy",
+        "summary": "Telegram changed the word \"Moderation\" to \"Safety\" in two places in its privacy policy, including the page title area and a section heading near \"Press.\" The provided text shows only this wording swap, with no new rules about how user data is collected, used, or shared.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2026-07-01",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [
+            "Twitter"
+          ],
+          "added": [
+            "Follow on X"
+          ],
+          "context_before": [
+            "한국어"
+          ],
+          "context_after": [
+            "Home"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260602064434/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20260701113609/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram's privacy page link now says \"Follow on X\" instead of \"Twitter\"",
+        "summary": "Telegram renamed a navigation link on its privacy page from \"Twitter\" to \"Follow on X,\" reflecting the platform's new name. This is a wording change only and does not affect how your data is handled.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "privacy",
+      "date": "2026-09-01",
+      "source": "archive",
+      "changed_words": 364,
+      "hunks": [
+        {
+          "removed": [
+            "We don't use your data to show you ads."
+          ],
+          "added": [
+            "We don't use the contents of any of your chats or contact lists to show you ads."
+          ],
+          "context_before": [
+            "Telegram has two fundamental principles when it comes to collecting and processing private data:"
+          ],
+          "context_after": [
+            "We only store the data that Telegram needs to function as a secure and feature-rich messaging service."
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "5.6. No Ads Based on User Data",
+            "Unlike other services, we don't use your data for ad targeting or other commercial purposes. Telegram only stores the information it needs to function as a secure and feature-rich cloud service.",
+            "Telegram offers a tool for advertisers to promote their messages in public one-to-many channels, but these sponsored messages are based solely on the topic of the public channels in which they are shown. No user data is mined or analyzed to display ads or sponsored messages."
+          ],
+          "added": [
+            "5.6. No Ads Based on Contents of Chats or Contact Lists",
+            "Unlike other services, we don't use the contents of your private chats or contacts lists for ad targeting or other commercial purposes. Telegram only stores the information it needs to function as a secure and feature-rich cloud service.",
+            "Telegram offers a tool for advertisers to promote their messages in public one-to-many channels (with 1,000 subscribers or more), as well as in bots, stories, and Telegram’s public search. By default, these sponsored messages are based solely on the topic of the public channels or search terms in which they are shown. No contents of private chats or contacts lists are mined or analyzed to display ads or sponsored messages.",
+            "Telegram Premium users don’t see ads and are not affected by the Telegram Ad Platform.",
+            "5.6.1. Additional advertising tools",
+            "Non-intrusive advertising models help us sustain our Services. The data relied upon to serve ads is processed on the basis of Telegram’s legitimate interest of delivering effective and innovative Services to you. This data cannot be disclosed to any third parties – advertisers included.",
+            "Telegram Premium users don’t see ads and are not affected by the Ad Platform. Targeting-related data referenced in this section is not processed for such users.",
+            "In large public one-to-many channels (with 1,000 subscribers or more), and public search results, ads may be shown based on the language of the content – however, that language may be common to several different countries. To keep ads relevant, ads can be shown in a particular country and city, approximated based on the country and area code of a user's phone number or their IP address. This data is never passed to advertisers, no other geolocation data is used, and no precise location-tracking is involved for these purposes. This makes it possible for advertisers to restrict ad visibility to certain countries or regions – for instance, creating an ad for Spanish-speaking audiences but opting not to display it within Spain.",
+            "Users following a sufficient number of large public one-to-many channels (e.g., Finance, Business & Entrepreneurship, or Humor & Memes), may see ads from that category in other large public channels or in other bots as well. Users may also see ads selected on the basis of the channels they follow. This data is never passed to advertisers.",
+            "Your rights described in section 9 below remain unaffected."
+          ],
+          "context_before": [
+            "We may use some aggregated data about how you use Telegram to build useful features. For example, when you open the Search menu, Telegram displays the people you are more likely to message in a box at the top of the screen. To do this, we calculate a rating that shows which people you message frequently. A similar rating is calculated for inline bots so that the app can suggest the bots you are most likely to use in the attachment menu (or when you start a new message with “@”). To turn this feature off and delete the relevant data, go to Settings > Privacy & Security > Data Settings and disable “Suggest Frequent Contacts”."
+          ],
+          "context_after": [
+            "6. Bot Messages"
+          ],
+          "changed_words": 327
+        },
+        {
+          "removed": [
+            "February 3, 2022"
+          ],
+          "added": [
+            "February 3, 2023"
+          ],
+          "context_before": [
+            "Expanded 3.2. Your Email Address with information on login emails."
+          ],
+          "context_after": [
+            "Updated 8.4 and 8.5 to reflect the new premium feature that allows translating entire chats."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "August 21, 2026",
+            "The Privacy Policy was updated to describe geographic limitations and other advertising tools that may affect the ways how ads are displayed."
+          ],
+          "context_before": [
+            "Updated 10.4 to reflect the new default time period for Account Self-Destruction."
+          ],
+          "context_after": [
+            "Important changes made to this Privacy Policy will be notified to you via Telegram."
+          ],
+          "changed_words": 25
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260801004924/https://telegram.org/privacy",
+      "archive_after": "https://web.archive.org/web/20260901220820/https://telegram.org/privacy",
+      "ai": {
+        "headline": "Telegram now limits ad targeting to public channels, not private chats",
+        "summary": "Telegram's no-ads-based-on-data promise is narrowed: it now says private chat contents and contact lists are not used for ads, instead of saying no user data is used. The updated text adds new ad tools (in bots, stories, and public search), says ads may be shown by country and city based on phone number or IP address, and says ads may be based on channels a user follows.",
+        "severity": "major",
+        "categories": [
+          "advertising",
+          "data_collection"
+        ],
+        "what_you_can_do": "Telegram Premium users don't see ads and are not affected by the Telegram Ad Platform, per the policy text. Otherwise null.",
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-05",
+      "words": 4478,
+      "archive": "https://web.archive.org/web/20230105102613/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-02-03",
+      "words": 4487,
+      "archive": "https://web.archive.org/web/20230203185758/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-04-01",
+      "words": 4487,
+      "archive": "https://web.archive.org/web/20230401000240/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20230501041112/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-06-01",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20230601003905/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-07-01",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20230701001420/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-08-01",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20230801000135/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-10-02",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20231002103925/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-11-01",
+      "words": 4535,
+      "archive": "https://web.archive.org/web/20231101000505/https://telegram.org/privacy"
+    },
+    {
+      "date": "2023-12-01",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20231201013937/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-01-01",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20240101005617/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-02-02",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20240202124718/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 4533,
+      "archive": "https://web.archive.org/web/20240301014653/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 5024,
+      "archive": "https://web.archive.org/web/20240401001850/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 5029,
+      "archive": "https://web.archive.org/web/20240501095644/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-06-04",
+      "words": 5029,
+      "archive": "https://web.archive.org/web/20240604075731/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-07-02",
+      "words": 5098,
+      "archive": "https://web.archive.org/web/20240702173552/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-08-03",
+      "words": 5098,
+      "archive": "https://web.archive.org/web/20240803131218/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 5098,
+      "archive": "https://web.archive.org/web/20240901002603/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-10-01",
+      "words": 5138,
+      "archive": "https://web.archive.org/web/20241001095105/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-11-01",
+      "words": 5139,
+      "archive": "https://web.archive.org/web/20241101205941/https://telegram.org/privacy"
+    },
+    {
+      "date": "2024-12-03",
+      "words": 5139,
+      "archive": "https://web.archive.org/web/20241203071220/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-01-05",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20250105122249/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-03-01",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20250301015150/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20250401055651/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-05-01",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20250501105058/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-06-01",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20250601041145/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-07-02",
+      "words": 5171,
+      "archive": "https://web.archive.org/web/20250702025018/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-08-02",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20250802191040/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20250901074655/https://telegram.org/privacy"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 5170,
+      "archive": "https://web.archive.org/web/20251201012703/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-01-01",
+      "words": 5171,
+      "archive": "https://web.archive.org/web/20260101052242/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-03-02",
+      "words": 5171,
+      "archive": "https://web.archive.org/web/20260302012450/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-05-02",
+      "words": 5171,
+      "archive": "https://web.archive.org/web/20260502001230/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-06-02",
+      "words": 5171,
+      "archive": "https://web.archive.org/web/20260602064434/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-07-01",
+      "words": 5173,
+      "archive": "https://web.archive.org/web/20260701113609/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 5173,
+      "archive": "https://web.archive.org/web/20260801004924/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 5517,
+      "archive": "https://web.archive.org/web/20260901220820/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 5517,
+      "archive": "https://web.archive.org/web/20261001043703/https://telegram.org/privacy"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 5517,
+      "archive": "https://web.archive.org/web/20261101152220/https://telegram.org/privacy"
+    }
+  ]
+}

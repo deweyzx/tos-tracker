@@ -1,0 +1,222 @@
+{
+  "date": "archive",
+  "company": "zoom",
+  "doc": "terms",
+  "changes": [
+    {
+      "company": "zoom",
+      "doc": "terms",
+      "date": "2024-12-01",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [
+            "Please read these terms of service (“Terms of Service”) and the Zoom Services Description (collectively, this “Agreement”) carefully. This Agreement is between you and Zoom Video Communications, Inc. and its affiliates (“Zoom,” “we,” “us,” or “our”) and governs your access to and use of our Services and Software, unless you and Zoom have entered into a written Master Subscription Agreement (MSA), in which case such MSA will govern your access to and use of the Services and Software and not these Terms of Service. You may enter into this Agreement on behalf of yourself or on behalf of a legal entity. If you enter into this Agreement on behalf of a legal entity, you represent that you are a duly authorized representative with the authority to bind that legal entity to this Agreement. All references to “you” and “your” in this Agreement mean the person accepting this Agreement as an individual or the legal entity for which the representative is acting. Capitalized terms in this Agreement will have definitions as set forth in the applicable section where they are defined, in the Zoom Services Description, or in Section 34 below.",
+            "We may provide the Services and Software through Zoom Video Communications, Inc., our affiliate(s), or both. You may only use the Services and Software in accordance with the terms and subject to the conditions of this Agreement."
+          ],
+          "added": [
+            "Please read these terms of service (“Terms of Service”) and the Zoom Services Description (collectively, this “Agreement”) carefully. This Agreement is between you and Zoom Communications, Inc. and its affiliates (“Zoom,” “we,” “us,” or “our”) and governs your access to and use of our Services and Software, unless you and Zoom have entered into a written Master Subscription Agreement (MSA), in which case such MSA will govern your access to and use of the Services and Software and not these Terms of Service. You may enter into this Agreement on behalf of yourself or on behalf of a legal entity. If you enter into this Agreement on behalf of a legal entity, you represent that you are a duly authorized representative with the authority to bind that legal entity to this Agreement. All references to “you” and “your” in this Agreement mean the person accepting this Agreement as an individual or the legal entity for which the representative is acting. Capitalized terms in this Agreement will have definitions as set forth in the applicable section where they are defined, in the Zoom Services Description, or in Section 34 below.",
+            "We may provide the Services and Software through Zoom Communications, Inc., our affiliate(s), or both. You may only use the Services and Software in accordance with the terms and subject to the conditions of this Agreement."
+          ],
+          "context_before": [
+            "ZOOM TERMS OF SERVICE"
+          ],
+          "context_after": [
+            "READ THIS AGREEMENT CAREFULLY, AS IT PROVIDES, AMONG OTHER THINGS: (i) in Section 27, that you and Zoom will arbitrate certain claims instead of going to court and that you will not bring class-action claims against Zoom; (ii) in Sections 12 and 14, that certain terms and conditions apply with respect to recurring subscription Charges and automatic renewals; (iii) in Section 15, that Zoom may make modifications, deletions, and additions to these Terms of Service and our Service Description; and (iv) in Section 26, that you release Zoom from, and waive your right to recover from Zoom, certain damages. You acknowledge that you will only create an account or otherwise use the Services and Software if you agree to be legally bound by all terms and conditions herein. Your acceptance of this Agreement creates a legally binding contract between you and Zoom."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "27.3 Informal Dispute Resolution First. We want to address any Disputes without needing arbitration. If you have a Dispute with Zoom, prior to initiating arbitration, you agree to mail an individualized request (“Pre-Arbitration Demand”) to ATTN: Litigation Department, Zoom Video Communications, Inc., 55 Almaden Blvd., San Jose, CA 95113 so that we can work together to resolve the Dispute. A Pre-Arbitration Demand is only valid when it pertains to, and is on behalf of, a single individual. A Pre-Arbitration Demand brought on behalf of multiple individuals is invalid as to all. The Pre-Arbitration Demand must include: (i) your name, telephone number, mailing address, and email address associated with your account; (ii) the name, telephone number, mailing address and email address of your counsel, if any; (iii) a description of your Dispute; and (iv) your signature. Likewise, if Zoom has a Dispute with you, Zoom will send an email with its individualized Pre-Arbitration Demand, including the requirements listed above, to the email address associated with your Zoom account. If the Dispute is not resolved within sixty (60) calendar days of when either you or Zoom submitted a Pre-Arbitration Demand, an arbitration can be brought. If you or Zoom have a Dispute involving claims under the exception to arbitration in Section 27.2(2), then this Section 27.3 does not apply to such Dispute. You agree that compliance with this Section 27.3 is a condition precedent to commencing arbitration, and that the arbitrator shall dismiss any arbitration filed without fully and completely complying with these informal dispute resolution procedures."
+          ],
+          "added": [
+            "27.3 Informal Dispute Resolution First. We want to address any Disputes without needing arbitration. If you have a Dispute with Zoom, prior to initiating arbitration, you agree to mail an individualized request (“Pre-Arbitration Demand”) to ATTN: Litigation Department, Zoom Communications, Inc., 55 Almaden Blvd., San Jose, CA 95113 so that we can work together to resolve the Dispute. A Pre-Arbitration Demand is only valid when it pertains to, and is on behalf of, a single individual. A Pre-Arbitration Demand brought on behalf of multiple individuals is invalid as to all. The Pre-Arbitration Demand must include: (i) your name, telephone number, mailing address, and email address associated with your account; (ii) the name, telephone number, mailing address and email address of your counsel, if any; (iii) a description of your Dispute; and (iv) your signature. Likewise, if Zoom has a Dispute with you, Zoom will send an email with its individualized Pre-Arbitration Demand, including the requirements listed above, to the email address associated with your Zoom account. If the Dispute is not resolved within sixty (60) calendar days of when either you or Zoom submitted a Pre-Arbitration Demand, an arbitration can be brought. If you or Zoom have a Dispute involving claims under the exception to arbitration in Section 27.2(2), then this Section 27.3 does not apply to such Dispute. You agree that compliance with this Section 27.3 is a condition precedent to commencing arbitration, and that the arbitrator shall dismiss any arbitration filed without fully and completely complying with these informal dispute resolution procedures."
+          ],
+          "context_before": [
+            "27.2 Exceptions to Arbitration. This Arbitration Agreement shall not require arbitration of the following types of claims brought by either you or Zoom: (i) small claims court actions, if the requirements of the court are met and the claims are only on an individual basis; and (ii) claims pertaining to intellectual property rights, including trademarks, trade dress, domain names, trade secrets, copyrights and patents."
+          ],
+          "context_after": [
+            "27.4 Arbitration Procedure. If, after completing the informal dispute resolution process set out in Section 27.3, either you or Zoom wishes to initiate arbitration, the initiating party must serve the other party with a demand for arbitration. Any demand for arbitration by you shall be sent to the Zoom Litigation Department address in Section 27.3. Zoom will send any arbitration demand to the email address associated with your Zoom account or to your counsel, if any. You and Zoom agree that the Federal Arbitration Act (“FAA”) governs this Arbitration Agreement. If the FAA cannot apply for whatever reason, then the state laws governing arbitration procedures where you reside apply."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "33.8 Notice. We may give notice to you by (i) electronic mail to your email address on record in your account information, (ii) written communication sent by letter delivered by a nationally recognized overnight delivery service, or (iii) first-class postage prepaid mail to your address on record in your account information. You are responsible for ensuring that your email address and property address on record are current. You agree that any notice sent to the then-current email or property address in our systems is adequate and binding notice upon you. You will provide notice to us (such notice is deemed given when received by Zoom) by letter delivered by a nationally recognized overnight delivery service or first-class postage prepaid mail to Zoom at “Attention Legal Dept., Zoom Video Communications, Inc., 55 Almaden Blvd, San Jose, CA, 95113, Suite 600, USA.”"
+          ],
+          "added": [
+            "33.8 Notice. We may give notice to you by (i) electronic mail to your email address on record in your account information, (ii) written communication sent by letter delivered by a nationally recognized overnight delivery service, or (iii) first-class postage prepaid mail to your address on record in your account information. You are responsible for ensuring that your email address and property address on record are current. You agree that any notice sent to the then-current email or property address in our systems is adequate and binding notice upon you. You will provide notice to us (such notice is deemed given when received by Zoom) by letter delivered by a nationally recognized overnight delivery service or first-class postage prepaid mail to Zoom at “Attention Legal Dept., Zoom Communications, Inc., 55 Almaden Blvd, San Jose, CA, 95113, Suite 600, USA.”"
+          ],
+          "context_before": [
+            "33.7 No Third-Party Rights or Remedies. This Agreement does not and is not intended to confer any enforceable rights or remedies upon any person other than Zoom and you."
+          ],
+          "context_after": [
+            "33.9 Severability. If any provision of this Agreement is determined to be invalid, illegal, or unenforceable, the validity, legality, and enforceability of the remaining provisions of this Agreement are not affected or impaired in any way. You and Zoom intend that any invalid, illegal, or unenforceable portions of this Agreement will be interpreted to provide the greatest effect and intent of the original. If a construction of the invalid, illegal, or unenforceable portion is not possible, the invalid, illegal, or unenforceable portion will be severed from this Agreement and the rest of this Agreement will remain in full force and effect."
+          ],
+          "changed_words": 1
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241105213858/https://www.zoom.com/en/trust/terms/",
+      "archive_after": "https://web.archive.org/web/20241201235727/https://www.zoom.com/en/trust/terms/",
+      "ai": {
+        "headline": "Zoom drops \"Video\" from its legal name in terms of service",
+        "summary": "Zoom's terms now name the contracting party as Zoom Communications, Inc. instead of Zoom Video Communications, Inc., and the company's notice and arbitration address references were updated to match. The change is a name update only; the rights and obligations in the terms are unchanged.",
+        "severity": "minor",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2024-07-27",
+      "words": 13734,
+      "archive": "https://web.archive.org/web/20240727042308/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2024-08-04",
+      "words": 13734,
+      "archive": "https://web.archive.org/web/20240804181033/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 13734,
+      "archive": "https://web.archive.org/web/20240901184203/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2024-10-04",
+      "words": 13734,
+      "archive": "https://web.archive.org/web/20241004033149/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2024-11-05",
+      "words": 13734,
+      "archive": "https://web.archive.org/web/20241105213858/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20241201235727/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-01-08",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250108173109/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-02-02",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250202010039/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-03-02",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250302231846/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250401142611/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-05-09",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250509071923/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-06-04",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250604053101/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-07-02",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250702052804/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250801080519/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-09-02",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20250902011324/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-10-04",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20251004033627/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-11-05",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20251105221544/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2025-12-03",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20251203212150/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-01-08",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260108072650/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-02-02",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260202053837/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260301020051/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260401010433/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260501175019/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260601041046/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-07-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260701032111/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260801142957/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20260901114554/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20261001015002/https://www.zoom.com/en/trust/terms/"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 13730,
+      "archive": "https://web.archive.org/web/20261101010418/https://www.zoom.com/en/trust/terms/"
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "date": "archive",
+  "company": "slack",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "slack",
+      "doc": "privacy",
+      "date": "2023-02-01",
+      "source": "archive",
+      "changed_words": 221,
+      "hunks": [
+        {
+          "removed": [
+            "This section provides additional details about the personal information we collect about California consumers and the rights afforded to them under the California Consumer Privacy Act or “CCPA.”",
+            "In addition to the information provided above in the ‘Information We Collect And Receive’ section, we collect the following categories of personal information from you, your employer, data analytics providers, data brokers, and Third-Party Services: Identifiers/contact information;"
+          ],
+          "added": [
+            "This section provides additional details about the personal information we collect about California consumers and the rights afforded to them under the California Consumer Privacy Act or “CCPA,” as amended by the California Privacy Rights Act or “CPRA”.",
+            "California law requires that we detail the categories of personal information that we collect and disclose for certain “business purposes,” such as to service providers that assist us with securing our services or marketing our products, and to such other entities as described in earlier sections of Privacy Policy. In addition to the information provided above in the ‘Information We Collect And Receive’ section, we collect the following categories of personal information from you, your employer, data analytics providers, data brokers, and Third-Party Services for our business purposes:Identifiers/contact information;"
+          ],
+          "context_before": [
+            "Your California Privacy Rights"
+          ],
+          "context_after": [
+            "Commercial information;"
+          ],
+          "changed_words": 68
+        },
+        {
+          "removed": [
+            "Professional or employment-related information; and"
+          ],
+          "added": [
+            "Professional or employment-related information;",
+            "Audio and visual data;",
+            "In limited circumstances where allowed by law, information that may be protected under California or United States law; and"
+          ],
+          "context_before": [
+            "Geolocation information;"
+          ],
+          "context_after": [
+            "Inferences drawn from any of the above categories."
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [
+            "We collect this information for the business and commercial purposes described in the ‘How We Process your Information and our Legal Bases for Doing So’ section above. We share this information as described in the ‘How We Share and Disclose Information’ section above. Slack does not sell (as such term is defined in the CCPA or otherwise) the personal information we collect (and will not sell it without providing a right to opt out). Please note that we do use third-party cookies for our advertising purposes as further described in our Cookie Policy.",
+            "Subject to certain limitations, the CCPA provides California consumers the right to request to know more details about the categories or specific pieces of personal information we collect (including how we use, disclose, or may sell this information), to delete their personal information, to opt out of any “sales” that may be occurring, and to not be discriminated against for exercising these rights."
+          ],
+          "added": [
+            "We collect this information for the business and commercial purposes described in the ‘How We Process your Information and our Legal Bases for Doing So’ section above. We share this information as described in the ‘How We Share and Disclose Information’ section above. Slack does not sell (as such term is defined in the CCPA or otherwise) the personal information we collect (and will not sell it without providing a right to opt out). We may also share personal information (in the form of identifiers and internet activity information) with third party advertisers for purposes of targeting advertisements on non-Slack websites, applications, and services. In addition, we may allow third parties to collect personal information from our sites or services if those third parties are authorized service providers who have agreed to our contractual limitations as to their retention, use, and disclosure of such personal information, or if you use our sites or services to interact with third parties or direct us to disclose your personal information to third parties.",
+            "Subject to certain limitations, the CCPA provides California consumers the right to request to know more details about the categories or specific pieces of personal information we collect (including how we use, disclose, or may sell this information), to delete their personal information, to opt out of any “sales”, to know and opt out of sharing of personal information for delivering advertisements on non-Slack websites, and to not be discriminated against for exercising these rights."
+          ],
+          "context_before": [
+            "Inferences drawn from any of the above categories."
+          ],
+          "context_after": [
+            "California consumers may make a request pursuant to their rights under the CCPA by contacting us at privacy@slack.com or by filling out this form. We will verify your request using the information associated with your account, including email address. Government identification may be required. Consumers can also designate an authorized agent to exercise these rights on their behalf. Authorized agents must submit proof of authorization."
+          ],
+          "changed_words": 131
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230101015720/https://slack.com/trust/privacy/privacy-policy",
+      "archive_after": "https://web.archive.org/web/20230201002652/https://slack.com/trust/privacy/privacy-policy",
+      "ai": {
+        "headline": "Slack now shares some personal data with advertisers for targeting ads elsewhere",
+        "summary": "Slack says it may now share identifiers and internet activity information with third-party advertisers to target ads on non-Slack websites, apps, and services. California users gain a right to know about and opt out of this sharing, and the policy now states that some personal information is collected and disclosed for \"business purposes\" under California's CPRA amendment.",
+        "severity": "major",
+        "categories": [
+          "data_sharing",
+          "advertising",
+          "your_rights"
+        ],
+        "what_you_can_do": "California consumers can request to know about and opt out of the sharing of their personal information for delivering advertisements on non-Slack websites, using the request methods in the policy (privacy@slack.com or the linked form).",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "slack",
+      "doc": "privacy",
+      "date": "2023-04-01",
+      "source": "archive",
+      "changed_words": 15,
+      "hunks": [
+        {
+          "removed": [
+            "Level 1, Block A",
+            "Nova Atria North",
+            "Sandyford Business District",
+            "Dublin 18"
+          ],
+          "added": [
+            "Salesforce Tower",
+            "60 R801, North Dock",
+            "Dublin"
+          ],
+          "context_before": [
+            "Slack Technologies Limited"
+          ],
+          "context_after": [
+            "Ireland"
+          ],
+          "changed_words": 15
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230301135512/https://slack.com/trust/privacy/privacy-policy",
+      "archive_after": "https://web.archive.org/web/20230401044300/https://slack.com/trust/privacy/privacy-policy",
+      "ai": {
+        "headline": "Slack updates its Irish office address in privacy policy",
+        "summary": "Slack Technologies Limited's listed address in Ireland changed from Level 1, Block A Nova Atria in Sandyford to Salesforce Tower in North Dock, Dublin. This is only a contact address update and does not change how user data is handled.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "slack",
+      "doc": "privacy",
+      "date": "2023-08-01",
+      "source": "archive",
+      "changed_words": 94,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "If you would like to opt-out of sharing activity based on your cookie identifiers, turn on a Global Privacy Control in your web browser or browser extension. Please see the California Privacy Protection Agency’s website at https://oag.ca.gov/privacy/ccpa for more information on valid Global Privacy Controls. If you would like to opt-out of sharing activity based on other identifiers (like email address or phone number), contact us in accordance with the “Contacting Slack” section, below.",
+            "For more information on Slack’s role and obligations under the CCPA, please visit Slack’s California Consumer Privacy Act (CCPA) FAQ."
+          ],
+          "context_before": [
+            "California consumers may make a request pursuant to their rights under the CCPA by contacting us at privacy@slack.com or by filling out this form. We will verify your request using the information associated with your account, including email address. Government identification may be required. Consumers can also designate an authorized agent to exercise these rights on their behalf. Authorized agents must submit proof of authorization."
+          ],
+          "context_after": [
+            "Data Protection Authority"
+          ],
+          "changed_words": 94
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230701025221/https://slack.com/trust/privacy/privacy-policy",
+      "archive_after": "https://web.archive.org/web/20230801081915/https://slack.com/trust/privacy/privacy-policy",
+      "ai": {
+        "headline": "Slack adds ways for California users to opt out of data sharing",
+        "summary": "Slack now explains how California users can opt out of having their activity shared, either by turning on a Global Privacy Control in their browser or by contacting Slack using the email address or phone number linked to their account. This clarifies existing CCPA rights rather than adding new data uses.",
+        "severity": "minor",
+        "categories": [
+          "your_rights",
+          "data_sharing",
+          "legal"
+        ],
+        "what_you_can_do": "If you are a California resident, you can turn on a Global Privacy Control in your web browser or browser extension to opt out of sharing activity based on your cookie identifiers, or contact Slack via the \"Contacting Slack\" section to opt out based on other identifiers such as email address or phone number.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "slack",
+      "doc": "privacy",
+      "date": "2024-11-02",
+      "source": "archive",
+      "changed_words": 10,
+      "hunks": [
+        {
+          "removed": [
+            "Third-Party service providers and partners. We may engage third-party companies or individuals as service providers or business partners to process Information and support our business. These third parties may, for example, provide virtual computing and storage services, assist Slack with verifying Owners and Customers, or we may share business information to develop strategic partnerships with Third-Party service providers to support our common customers. In this respect, depending on the Third-Party service provided, Slack may share your Information. Additional information about the subprocessors we use to support delivery of our Services is set forth at Slack Subprocessors."
+          ],
+          "added": [
+            "Third-Party service providers and partners. We may engage third-party companies or individuals as service providers or business partners to process Information and support our business. These third parties may, for example, provide virtual computing and storage services, assist Slack with verifying Owners and Customers, or we may share business information to develop strategic partnerships with Third-Party service providers to support our common customers. In this respect, depending on the Third-Party service provided, Slack may share your Information. Additional information about the subprocessors we use to support delivery of our Services is set forth in the Salesforce Infrastructure & Sub-processors Documentation."
+          ],
+          "context_before": [
+            "Customer access. Owners, administrators, Authorized Users, and other Customer representatives and personnel may be able to access, modify, or restrict access to Information. This may include, for example, your employer using features of the Services to access or modify your profile details, or to export logs of Workspace activity. For information about your Workspace settings, please visit https://slack.com/account/settings."
+          ],
+          "context_after": [
+            "Third-Party Services. A Customer may enable, or permit Authorized Users to enable, Third-Party Services. We require each Third-Party Service provider to disclose all permissions for information accessible through the Services, but we do not guarantee that they do so. When Third-Party Services are enabled by a Customer or an Authorized User, Slack may share Information with Third-Party Services. Third-Party Services are not owned or controlled by Slack and third parties that have been granted access to Information may have their own policies and practices for its collection, use, and sharing. Please check the permissions, privacy settings, and notices for these Third-Party Services or contact the provider for any questions."
+          ],
+          "changed_words": 10
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241001023626/https://slack.com/trust/privacy/privacy-policy",
+      "archive_after": "https://web.archive.org/web/20241102124133/https://slack.com/trust/privacy/privacy-policy",
+      "ai": {
+        "headline": "Slack now points to a Salesforce document for its list of subprocessors",
+        "summary": "Slack's privacy policy now refers to a Salesforce Infrastructure & Sub-processors Documentation for the list of third-party subprocessors, instead of the Slack Subprocessors page. The rest of the sharing language is unchanged, so this does not change what data is shared or with whom.",
+        "severity": "minor",
+        "categories": [
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "slack",
+      "doc": "privacy",
+      "date": "2025-10-01",
+      "source": "archive",
+      "changed_words": 10,
+      "hunks": [
+        {
+          "removed": [
+            "Asia-Pacific Economic Cooperation Cross-Border Privacy Rules System And Privacy Recognition For Processors. Slack’s privacy practices, described in this Privacy Policy, comply with the Asia-Pacific Economic Cooperation (“APEC”) Cross Border Privacy Rules (“CBPR”) system and the Privacy Recognition for Processors (“PRP”). The APEC CBPR system provides a framework for organizations to ensure protection of personal data transferred among participating APEC economies and the PRP demonstrates an organization’s ability to provide effective implementation of a personal data controller’s privacy obligations related to the processing of personal information. More information about the APEC framework can be found here. If you have an unresolved privacy or data use concern related to our APEC CBPR or PRP certifications that we have not addressed satisfactorily, you may contact our third-party dispute resolution provider."
+          ],
+          "added": [
+            "Asia-Pacific Economic Cooperation Cross-Border Privacy Rules System And Privacy Recognition For Processors. Slack’s privacy practices, described in this Privacy Policy, comply with the Asia-Pacific Economic Cooperation (“APEC”) Cross Border Privacy Rules (“CBPR”) system and the Privacy Recognition for Processors (“PRP”). The APEC CBPR system provides a framework for organizations to ensure protection of personal data transferred among participating APEC economies and the PRP demonstrates an organization’s ability to provide effective implementation of a personal data controller’s privacy obligations related to the processing of personal information. If you have an unresolved privacy or data use concern related to our APEC CBPR or PRP certifications that we have not addressed satisfactorily, you may contact our third-party dispute resolution provider."
+          ],
+          "context_before": [
+            "European Commission’s Standard Contractual Clauses. Slack uses Standard Contractual Clauses approved by the European Commission (and the equivalent standard contractual clauses for the UK where appropriate) for transfers to, among others, Australia, Canada, India, Japan, South Korea, and the United States. Slack will transfer your Personal Data to facilitate the provision of the Services. A copy of our standard data processing addendum, incorporating the Standard Contractual Clauses, is available here, and a copy of the executed version of the Standard Contractual Clauses may be obtained by contacting us as described in the “Contacting Slack” section below."
+          ],
+          "context_after": [
+            "Data Protection Officer"
+          ],
+          "changed_words": 10
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250901043207/https://slack.com/trust/privacy/privacy-policy",
+      "archive_after": "https://web.archive.org/web/20251001041417/https://slack.com/trust/privacy/privacy-policy",
+      "ai": {
+        "headline": "Slack removes link to APEC privacy framework information",
+        "summary": "Slack deleted the sentence linking to more information about the APEC privacy framework it follows, but still says its practices comply with the APEC CBPR and PRP systems and keeps the dispute contact. This is a removed reference, not a change to how data is handled.",
+        "severity": "minor",
+        "categories": [
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-01",
+      "words": 5576,
+      "archive": "https://web.archive.org/web/20230101015720/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-02-01",
+      "words": 5749,
+      "archive": "https://web.archive.org/web/20230201002652/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-03-01",
+      "words": 5749,
+      "archive": "https://web.archive.org/web/20230301135512/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-04-01",
+      "words": 5744,
+      "archive": "https://web.archive.org/web/20230401044300/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 5744,
+      "archive": "https://web.archive.org/web/20230501170437/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-06-01",
+      "words": 5744,
+      "archive": "https://web.archive.org/web/20230601001707/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-07-01",
+      "words": 5744,
+      "archive": "https://web.archive.org/web/20230701025221/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-08-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20230801081915/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-09-02",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20230902011547/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-10-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20231001011909/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-11-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20231101002043/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2023-12-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20231201041038/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-01-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240101011702/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-02-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240201090522/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240301030500/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240401012610/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240501212131/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-06-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240601014513/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-07-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240701195513/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240801014942/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20240901151327/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-10-01",
+      "words": 5838,
+      "archive": "https://web.archive.org/web/20241001023626/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-11-02",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20241102124133/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20241201060341/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-01-03",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250103143721/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-02-03",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250203190036/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-03-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250301082452/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250401022518/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-05-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250501012451/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-06-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250601013630/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-07-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250701033248/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250801033035/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 5842,
+      "archive": "https://web.archive.org/web/20250901043207/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20251001041417/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-11-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20251101152710/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20251201033016/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-01-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260101011045/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260201012047/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260301012436/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260401075411/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260501062333/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260601004347/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-07-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260701084943/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260801035344/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20260901095326/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20261001070753/https://slack.com/trust/privacy/privacy-policy"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 5832,
+      "archive": "https://web.archive.org/web/20261101154917/https://slack.com/trust/privacy/privacy-policy"
+    }
+  ]
+}

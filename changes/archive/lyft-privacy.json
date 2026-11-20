@@ -1,0 +1,1654 @@
+{
+  "date": "archive",
+  "company": "lyft",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "lyft",
+      "doc": "privacy",
+      "date": "2024-01-02",
+      "source": "archive",
+      "changed_words": 232,
+      "hunks": [
+        {
+          "removed": [
+            "How We Share Your Information"
+          ],
+          "added": [
+            "How We Disclose Your Information"
+          ],
+          "context_before": [
+            "How We Use Your Information"
+          ],
+          "context_after": [
+            "How We Store and Protect Your Information"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "For users in California, Colorado, Connecticut, Utah, and Virginia: Additional",
+            "information regarding Lyft’s privacy practices under state-specific privacy laws is available",
+            "here."
+          ],
+          "added": [
+            "For users in California, Canada, Colorado, Connecticut, Montana, Oregon, Texas, Utah, and",
+            "Virginia:",
+            "Additional information regarding Lyft’s privacy practices under location-specific privacy laws is",
+            "available here."
+          ],
+          "context_before": [
+            "relevant to your use of those parts of the Lyft Platform."
+          ],
+          "context_after": [
+            "The Information We Collect"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "and websites, including the pages and content you view and the dates and times of your use. We",
+            "may also infer information from your use of or information you provide us in your interactions",
+            "with the Lyft Platform."
+          ],
+          "added": [
+            "and websites, including the pages and content you view and the dates and times of your use."
+          ],
+          "context_before": [
+            "data. We also collect information about your interactions with the Lyft Platform like our apps"
+          ],
+          "context_after": [
+            "Device Information. We collect information about the devices you use to access"
+          ],
+          "changed_words": 21
+        },
+        {
+          "removed": [
+            "features."
+          ],
+          "added": [
+            "features. Lyft will adhere to the applicable calendar provider policies, including",
+            "Google’s API Services User Data Policy, which impose certain limitations on the use of data collected from user’s calendar accounts.",
+            "You may remove Lyft’s access to your accounts at any time either in-app or through your account",
+            "provider settings."
+          ],
+          "context_before": [
+            "access and store information available in your calendar to use in providing you these optional"
+          ],
+          "context_after": [
+            "Cookies, Analytics, and Third-Party Technologies. We collect information"
+          ],
+          "changed_words": 49
+        },
+        {
+          "removed": [
+            "interact with Lyft advertisements, to make your Lyft experience safer, to learn what content is"
+          ],
+          "added": [
+            "interact with advertisements, to make your Lyft experience safer, to learn what content is"
+          ],
+          "context_before": [
+            "other third-party technologies to understand how you navigate through the Lyft Platform and"
+          ],
+          "context_after": [
+            "popular, to improve your site experience, to serve you better ads on other sites, and to save"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "Inferences. We may infer certain information from your interactions with the",
+            "Lyft Platform and other personal information available to us. For example, if you frequently",
+            "ride to or from airports, we may infer you are a frequent traveler. We may also draw inferences",
+            "from the information you provide to us, such as inferring your gender based on your first name."
+          ],
+          "context_before": [
+            "time you use the Lyft Platform."
+          ],
+          "context_after": [
+            "C. Information We Collect From Other Sources"
+          ],
+          "changed_words": 60
+        },
+        {
+          "removed": [
+            "Information about you provided by specific services, such as vehicle, demographic and market",
+            "segment information."
+          ],
+          "added": [
+            "Information about you provided by specific services, such as vehicle, demographic, and other",
+            "information that helps us provide services or to personalize our marketing."
+          ],
+          "context_before": [
+            "information about your use of such programs, applications, services, or features; and"
+          ],
+          "context_after": [
+            "Enterprise and Delivery Programs. If you use Lyft through your employer or"
+          ],
+          "changed_words": 17
+        },
+        {
+          "removed": [
+            "How We Share Your Information"
+          ],
+          "added": [
+            "How We Disclose Your Information"
+          ],
+          "context_before": [
+            "to those demands or obligations."
+          ],
+          "context_after": [
+            "We do not sell your personal information to third parties for money -- no one can buy the personal"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "to share your personal information with other users, third parties, and service providers to make",
+            "the Lyft Platform work and to deliver relevant personalized ads to you on and off the Lyft Platform.",
+            "Some of these disclosures may constitute “sharing” or “selling” of personal information under",
+            "certain U.S. state privacy laws, which we describe in more detail",
+            "here. This section otherwise explains when and",
+            "why we share your information."
+          ],
+          "added": [
+            "to share your personal information with third parties to deliver relevant personalized ads to you on",
+            "and off the Lyft Platform. Some of these disclosures may constitute “sharing” or the “sale” of",
+            "personal information for “targeted advertising” purposes under certain local (e.g., U.S. state)",
+            "privacy laws, which we describe in more detail",
+            "here. This section otherwise explains when, why,",
+            "and with whom we disclose your information."
+          ],
+          "context_before": [
+            "information we collect from and about you and we do not act as a data broker. However, we may need"
+          ],
+          "context_after": [
+            "A. Sharing Between Lyft Users"
+          ],
+          "changed_words": 33
+        },
+        {
+          "removed": [
+            "B. Sharing With Service Providers to Provide the Lyft Platform, and Other Parties",
+            "Depending on whether you’re a Rider or a Driver, Lyft may share the following categories of your",
+            "personal information to provide you with a variety of the Lyft Platform’s features and services:"
+          ],
+          "added": [
+            "B. Disclosures to Service Providers to Provide the Lyft Platform, and Other Parties",
+            "Depending on whether you’re a Rider or a Driver, Lyft may disclose the following categories of",
+            "your personal information to provide you with a variety of the Lyft Platform’s features and",
+            "services:"
+          ],
+          "context_before": [
+            "such information."
+          ],
+          "context_after": [
+            "Personal identifiers, such as your name, address, email address, phone number, date of"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "mobile advertising identifiers;"
+          ],
+          "added": [
+            "mobile and other forms of advertising identifiers;"
+          ],
+          "context_before": [
+            "browser, version of operating system, carrier and/or manufacturer, device identifiers, and"
+          ],
+          "context_after": [
+            "Location data; and"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "This and other information you may direct us to share with other parties, such as when you"
+          ],
+          "added": [
+            "This and other information you may direct us to disclose to other parties, such as when you"
+          ],
+          "context_before": [
+            "Location data; and"
+          ],
+          "context_after": [
+            "choose to link your Lyft account with a separate travel rewards program or when you choose"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Providing analytics services to Lyft; and"
+          ],
+          "added": [
+            "Providing analytics services to and by Lyft; and"
+          ],
+          "context_before": [
+            "Providing requested emergency services;"
+          ],
+          "context_after": [
+            "Undertaking research to develop and improve the Lyft Platform."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "We may share your personal information in response to a legal obligation, or if we have",
+            "determined that sharing your personal information is reasonably necessary or appropriate to:"
+          ],
+          "added": [
+            "We may disclose your personal information in response to a legal obligation, or if we have",
+            "determined that disclosing your personal information is reasonably necessary or appropriate to:"
+          ],
+          "context_before": [
+            "C. For Legal Reasons and to Protect the Lyft Platform"
+          ],
+          "context_after": [
+            "Comply with any applicable federal, state, or local law or regulation, civil, criminal or"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "We may share your personal information while negotiating or in relation to a change of corporate",
+            "control such as a restructuring, merger, or sale of our assets."
+          ],
+          "added": [
+            "We may disclose your personal information while negotiating or in relation to a change of",
+            "corporate control such as a restructuring, merger, or sale of our assets."
+          ],
+          "context_before": [
+            "D. In Connection with Sale or Merger"
+          ],
+          "context_after": [
+            "E. Upon Your Further Direction"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "B. State-Specific Rights",
+            "Some states such as California, Colorado, Connecticut, Utah, and Virginia provide specific",
+            "rights to residents of the state regarding personal information. To see more information about",
+            "these rights and how to exercise them, see"
+          ],
+          "added": [
+            "B. Location-Specific Rights",
+            "Some states such as California, Colorado, Connecticut, Montana, Oregon, Texas, Utah, and",
+            "Virginia provide specific rights to residents of the state regarding personal information.",
+            "Similarly, specific rights may be provided in Canada. To see more information about these rights",
+            "and how to exercise them, see"
+          ],
+          "context_before": [
+            "designed to prevent its use for other purposes."
+          ],
+          "context_after": [
+            "here."
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [
+            "under the age of 13. If we find out that a child under 13 has given us personal information, we will",
+            "take steps to delete that information. If you believe that a child under the age of 13 has given us"
+          ],
+          "added": [
+            "under the age of 16. If we find out that a child under 16 has given us personal information, we will",
+            "take steps to delete that information. If you believe that a child under the age of 16 has given us"
+          ],
+          "context_before": [
+            "Lyft is not directed to children, and we don’t knowingly collect personal information from children"
+          ],
+          "context_after": [
+            "personal information, please contact us at our Help Center."
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231204015551/https://www.lyft.com/privacy",
+      "archive_after": "https://web.archive.org/web/20240102223722/https://www.lyft.com/privacy",
+      "ai": {
+        "headline": "Lyft adds inferences, expands location-specific privacy rights, and raises its children's age limit to 16",
+        "summary": "Lyft now says it may infer things about you from your rides and information, such as whether you are a frequent traveler or your gender from your first name. It also extends state-specific privacy rights to more places (Canada, Montana, Oregon, and Texas added), and raises the age under which it does not knowingly collect personal information from children from 13 to 16. Lyft also removed its statement that it may infer information from your use, and it reworded many \"sharing\" sections as \"disclosing,\" with the sharing of data for personalized ads now described as going to third parties only.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "advertising",
+          "children"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "lyft",
+      "doc": "privacy",
+      "date": "2025-01-01",
+      "source": "archive",
+      "changed_words": 640,
+      "hunks": [
+        {
+          "removed": [
+            "For users in California, Canada, Colorado, Connecticut, Montana, Oregon, Texas, Utah, and"
+          ],
+          "added": [
+            "For users in California, Canada, Colorado, Connecticut, Delaware, Iowa, Maryland, Minnesota,",
+            "Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, and"
+          ],
+          "context_before": [
+            "relevant to your use of those parts of the Lyft Platform."
+          ],
+          "context_after": [
+            "Virginia:"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "Additional information regarding Lyft’s privacy practices under location-specific privacy laws is",
+            "available here."
+          ],
+          "added": [
+            "Additional information regarding Lyft’s privacy practices under jurisdiction-specific privacy laws",
+            "is available here."
+          ],
+          "context_before": [
+            "Virginia:"
+          ],
+          "context_after": [
+            "The Information We Collect"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Account Registration. When you create an account with Lyft, we collect the",
+            "information you provide us, such as your name, email address, phone number, birth date, profile",
+            "photo, and payment information. You may choose to share additional info with us for your Rider",
+            "profile, like saved addresses (e.g., home or work), and set up other preferences (such as your",
+            "preferred pronouns). We may ask that you provide additional information related to the identity",
+            "of your account, such as documents related to identification (e.g., driver’s license), a profile",
+            "picture, or “selfie” imagery. If you choose to engage in additional offerings on the Lyft",
+            "Platform (e.g., services for your vehicle or linking to other accounts like travel rewards), you",
+            "may provide us additional information relevant to those offerings."
+          ],
+          "added": [
+            "Your Account. When you create an account with Lyft, we collect the information",
+            "you provide us, such as your name, email address, phone number, birth date, profile photo, and",
+            "payment information. You may choose to share additional info with us for your profile, like",
+            "saved addresses (e.g., home or work) and gender, and set up other preferences (such as your",
+            "preferred pronouns). We may ask at the time you set up an account and thereafter that you",
+            "provide additional information related to the identity of your account, such as documents",
+            "related to identification (e.g., driver’s license), a profile picture, or “selfie” imagery. If",
+            "you choose to engage in additional offerings on the Lyft Platform (e.g., linking to other",
+            "accounts like travel rewards), you may provide us additional information relevant to those",
+            "offerings."
+          ],
+          "context_before": [
+            "A. Information You Provide to Us"
+          ],
+          "context_after": [
+            "Driver Information. If you apply to be a Driver, we will collect the"
+          ],
+          "changed_words": 24
+        },
+        {
+          "removed": [
+            "security number), driver’s license information, vehicle information, and car insurance",
+            "information. We collect the payment information you provide us, including your bank routing",
+            "numbers and tax information. Depending on where you want to drive, we may also ask for"
+          ],
+          "added": [
+            "security number), driver’s license information (including gender), vehicle information, and car",
+            "insurance information. We collect the payment information you provide us, including your bank",
+            "routing numbers and tax information. Depending on where you want to drive, we may also ask for"
+          ],
+          "context_before": [
+            "birth date, profile photo, physical address, government identification number (such as social"
+          ],
+          "context_after": [
+            "additional business license or permit information or other information to manage driving and"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "programs relevant to that location. We may need additional information from you at some point",
+            "after you become a Driver, including information to confirm your identity (like “selfie”",
+            "imagery).",
+            "Ratings and Feedback. When you rate and provide feedback about the Lyft",
+            "Platform (including about Riders or Drivers), we collect all of the information you provide in",
+            "your feedback.",
+            "Communications. When you contact us or we contact you, including through",
+            "surveys or research projects, we collect any information that you provide, including the",
+            "contents of the messages or attachments you send us."
+          ],
+          "added": [
+            "programs relevant to that location.",
+            "User Content. When you rate and provide feedback about the Lyft Platform",
+            "(including about Riders or Drivers), we collect all of the information you provide in your",
+            "feedback. When you contact us or we contact you, including through surveys or research projects,",
+            "we collect any information that you provide, including the contents of the messages or",
+            "attachments you send us. Users may choose to send us audio and video content, including in-ride",
+            "recordings that may be initiated through the Lyft app."
+          ],
+          "context_before": [
+            "additional business license or permit information or other information to manage driving and"
+          ],
+          "context_after": [
+            "B. Information We Collect When You Use the Lyft Platform"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [
+            "Location Information. Great rides start with an easy and accurate pickup. The",
+            "Lyft Platform collects location information (including GPS and WiFi data, IP address, and",
+            "Bluetooth data) differently depending on your Lyft app settings and device permissions as well",
+            "as whether you are using the platform as a Rider or Driver:"
+          ],
+          "added": [
+            "Location Information. The Lyft Platform collects location information. This",
+            "includes approximate and precise location through GPS and WiFi data, IP address, Bluetooth data,",
+            "and any other location information you choose to share with us. Our processing of this",
+            "information differs depending on your Lyft app settings, device permissions, and whether you are",
+            "using the platform as a Rider or Driver:"
+          ],
+          "context_before": [
+            "B. Information We Collect When You Use the Lyft Platform"
+          ],
+          "context_after": [
+            "Riders: We collect your device’s precise location when you open and use the Lyft app,"
+          ],
+          "changed_words": 49
+        },
+        {
+          "removed": [
+            "it ends. Lyft also tracks the precise location of scooters and e-bikes at all times."
+          ],
+          "added": [
+            "it ends. You may otherwise choose to allow Lyft to collect your device’s precise location if",
+            "you explicitly grant permission to enable certain products or features. Lyft also tracks the",
+            "precise location of scooters and e-bikes at all times."
+          ],
+          "context_before": [
+            "including while the app is running in the background from the time you request a ride until"
+          ],
+          "context_after": [
+            "Drivers: We collect your device’s precise location when you open and use the app, including"
+          ],
+          "changed_words": 24
+        },
+        {
+          "removed": [
+            "Lyft Platform device in or on your vehicle (e.g., a Lyft dashboard device or tablet), that"
+          ],
+          "added": [
+            "Lyft Platform device in or on your vehicle (e.g., a Lyft dashboard device or a tablet), that"
+          ],
+          "context_before": [
+            "it until a reported or detected incident is no longer active. If you choose to install a"
+          ],
+          "context_after": [
+            "device may collect precise location information when turned on."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "sensor data, such as speed, direction, height, acceleration, deceleration, and other technical"
+          ],
+          "added": [
+            "sensor data, such as speed, direction, altitude, acceleration, deceleration, and other technical"
+          ],
+          "context_before": [
+            "whether you used a promotional or referral code. Our e-bikes and scooters may collect mobile"
+          ],
+          "context_after": [
+            "data. We also collect information about your interactions with the Lyft Platform like our apps"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "like location, as described when you choose and set up such devices."
+          ],
+          "added": [
+            "like location, as described when you choose and set up such devices. If a Driver chooses to",
+            "register with Lyft that they use a dashboard recording device, we will receive the information",
+            "they provide to us about that device (e.g., device serial number)."
+          ],
+          "context_before": [
+            "dashboard device or tablet), that device may similarly collect sensor data and other information"
+          ],
+          "context_after": [
+            "Communications Between Riders and Drivers. We work with a third party to"
+          ],
+          "changed_words": 31
+        },
+        {
+          "removed": [
+            "Cookies, Analytics, and Third-Party Technologies. We collect information",
+            "through the use of “cookies”, tracking pixels, data analytics tools like"
+          ],
+          "added": [
+            "Cookies, Analytics, and Third-Party Technologies. We collect and use",
+            "information through the use of “cookies,” tracking pixels, data analytics tools like"
+          ],
+          "context_before": [
+            "provider settings."
+          ],
+          "context_after": [
+            "Google Analytics, SDKs, and"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "other third-party technologies to understand how you navigate through the Lyft Platform and",
+            "interact with advertisements, to make your Lyft experience safer, to learn what content is",
+            "popular, to improve your site experience, to serve you better ads on other sites, and to save",
+            "your preferences. Cookies are small text files that web servers place on your device; they are",
+            "designed to store basic information and to help websites and apps recognize your browser. We may",
+            "use both session cookies and persistent cookies. A session cookie disappears after you close",
+            "your browser. A persistent cookie remains after you close your browser and may be accessed every",
+            "time you use the Lyft Platform."
+          ],
+          "added": [
+            "other third-party tracking technologies on and off the Lyft Platform to understand how you",
+            "navigate through the Lyft Platform and interact with advertisements, to make your Lyft",
+            "experience safer, to learn what content is popular, to improve your experience with us, to serve",
+            "you or others better ads, and to save your preferences."
+          ],
+          "context_before": [
+            "Google Analytics, SDKs, and"
+          ],
+          "context_after": [
+            "Inferences. We may infer certain information from your interactions with the"
+          ],
+          "changed_words": 85
+        },
+        {
+          "removed": [
+            "ride to or from airports, we may infer you are a frequent traveler. We may also draw inferences",
+            "from the information you provide to us, such as inferring your gender based on your first name."
+          ],
+          "added": [
+            "ride to or from airports, we may infer you are a frequent traveler. We may infer your",
+            "approximate location from your precise location. We may also draw inferences from the",
+            "information you provide to us, such as inferring your gender based on your first name."
+          ],
+          "context_before": [
+            "Lyft Platform and other personal information available to us. For example, if you frequently"
+          ],
+          "context_after": [
+            "C. Information We Collect From Other Sources"
+          ],
+          "changed_words": 10
+        },
+        {
+          "removed": [
+            "Enterprise and Delivery Programs. If you use Lyft through your employer or",
+            "other organization that participates in one of our Lyft Business enterprise programs, we will",
+            "collect information about you from those parties, such as your name and contact information. If",
+            "an organization has utilized Lyft to fulfill a delivery to you, we may receive information like",
+            "your name and delivery address from the organization in order to fulfill the delivery."
+          ],
+          "added": [
+            "Enterprise Programs. If you use Lyft through your employer or other",
+            "organization that participates in one of our Lyft Business enterprise programs, we will collect",
+            "information about you from those parties, such as your name and contact information."
+          ],
+          "context_before": [
+            "information that helps us provide services or to personalize our marketing."
+          ],
+          "context_after": [
+            "Concierge Service. Sometimes another business or entity may order you a Lyft"
+          ],
+          "changed_words": 33
+        },
+        {
+          "removed": [
+            "Referral Programs. Friends help friends use the Lyft Platform. If someone",
+            "refers you to Lyft, we will collect information about you from that referral including your name",
+            "and contact information."
+          ],
+          "added": [
+            "Referral Programs. If someone refers you to Lyft, we will collect information",
+            "about you from that referral including your name and contact information."
+          ],
+          "context_before": [
+            "provide us your contact information and the pickup and drop-off location of your ride."
+          ],
+          "context_after": [
+            "Other Users and Sources. Other users or public or third-party sources such as"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Improve the Lyft Platform; and",
+            "Respond to legal proceedings and obligations."
+          ],
+          "added": [
+            "Improve the Lyft Platform;",
+            "Respond to legal proceedings and obligations; and",
+            "Provide marketing and advertising."
+          ],
+          "context_before": [
+            "Provide customer support;"
+          ],
+          "context_after": [
+            "Providing the Lyft Platform. We use your personal information to provide an"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Provide various Lyft Platform offerings to you, such as vehicles services and third party",
+            "promotional advertisements that may be personalized to you;",
+            "Calculate prices and process payments;"
+          ],
+          "added": [
+            "Provide various Lyft Platform offerings to you, such as third party promotional advertisements",
+            "that may be personalized to you;",
+            "Calculate fares and earnings and process payments;"
+          ],
+          "context_before": [
+            "Connect you to your rides and track their progress;"
+          ],
+          "context_after": [
+            "Allow Riders and Drivers to connect regarding their ride and to choose to share their location"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Investigate and resolve incidents, accidents, and insurance claims;"
+          ],
+          "added": [
+            "Prevent, investigate and resolve incidents, accidents, and insurance claims;",
+            "Prevent, investigate, and resolve theft, vandalism and misuse of the system;"
+          ],
+          "context_before": [
+            "Verify that Drivers and their vehicles meet safety requirements;"
+          ],
+          "context_after": [
+            "Encourage safe driving behavior and avoid unsafe activities;"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "Investigate and assist you in resolving questions or issues you have regarding the Lyft",
+            "Platform; and",
+            "Provide you support or respond to you.",
+            "Improving the Lyft Platform. We are always working to improve your experience and",
+            "provide you with new and helpful features. To do this, we use your personal information to:"
+          ],
+          "added": [
+            "Investigate and assist in resolving questions or issues regarding the Lyft Platform; and",
+            "Provide support or respond to requests and issues.",
+            "Improving the Lyft Platform. We are always working to improve the Lyft Platform and",
+            "provide new and helpful features. To do this, we use your personal information to:"
+          ],
+          "context_before": [
+            "including supporting you when you need it. To do this, we use your personal information to:"
+          ],
+          "context_after": [
+            "Perform research, testing, and analysis;"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [],
+          "added": [
+            "Marketing and Advertising. To grow the Lyft Platform and to share partner",
+            "opportunities that are relevant to you, we use your personal information, including information we",
+            "infer about you or receive from marketing parties, to provide Lyft and third party marketing,",
+            "advertising, and promotions that may be personalized to you. This may include, for example, your",
+            "observed or inferred approximate location and trip history. To learn more about your choices",
+            "regarding marketing and advertising, visit here."
+          ],
+          "context_before": [
+            "to those demands or obligations."
+          ],
+          "context_after": [
+            "How We Disclose Your Information"
+          ],
+          "changed_words": 76
+        },
+        {
+          "removed": [
+            "Rides Requested or Paid For by Others. Some rides you take may be requested or",
+            "paid for by others. If you take one of those rides using your Lyft Business Profile account; a",
+            "pass, code or coupon; a subsidized program (e.g., transit or government); a corporate credit",
+            "card linked to another account; or another user or entity otherwise requests or pays for a ride",
+            "(or portion of a ride) for you, we may share some or all of your ride details with that other",
+            "party, including your identity (e.g., name, phone number), the date, time, charge, rating given,",
+            "region of trip, and pick up and drop off location of your ride."
+          ],
+          "added": [
+            "Rides Requested or Paid For by Others. Some rides may be requested or paid for",
+            "by others. If a ride is requested or taken using a Lyft Business Profile account; a pass, code",
+            "or coupon; a subsidized program (e.g., transit or government); a corporate credit card linked to",
+            "another account; or another user or entity otherwise requests or pays for or portion of a ride,",
+            "we may share some or all of that ride’s details with that other party, including rider and",
+            "driver information (e.g., name, rider phone number), the date, time, charge, region of trip,",
+            "pick up and drop off location of the ride, feedback and rating regarding the ride, and",
+            "information related to incidents and accidents that may have occurred."
+          ],
+          "context_before": [
+            "locations as part of knowing the route while sharing the ride."
+          ],
+          "context_after": [
+            "Linked Accounts and Sharing Upon Your Request. If you use the Lyft Platform as"
+          ],
+          "changed_words": 59
+        },
+        {
+          "removed": [
+            "Personal identifiers, such as your name, address, email address, phone number, date of",
+            "birth, government identification number (such as social security number), driver’s license",
+            "information, vehicle information, and car insurance information;"
+          ],
+          "added": [
+            "Personal identifiers (such as your name, address, email address, phone number, date of",
+            "birth, government identification number (including social security number)), driver’s",
+            "license information and image, profile photo, “selfie” photos and imagery, vehicle",
+            "information, and car insurance information;"
+          ],
+          "context_before": [
+            "services:"
+          ],
+          "context_after": [
+            "Financial information, such as bank routing numbers, tax information, and any other payment"
+          ],
+          "changed_words": 19
+        },
+        {
+          "removed": [
+            "Driver/Rider transaction history;"
+          ],
+          "added": [
+            "Driver/Rider transaction and ride history;"
+          ],
+          "context_before": [
+            "Commercial information, such as ride information, Driver/Rider statistics and feedback, and"
+          ],
+          "context_after": [
+            "Internet or other electronic network activity information, such as your IP address, type of"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Location data; and"
+          ],
+          "added": [
+            "Location data;",
+            "Inferences we may make from your interactions with the Lyft Platform and other personal",
+            "information available to us; and"
+          ],
+          "context_before": [
+            "mobile and other forms of advertising identifiers;"
+          ],
+          "context_after": [
+            "This and other information you may direct us to disclose to other parties, such as when you"
+          ],
+          "changed_words": 18
+        },
+        {
+          "removed": [
+            "to engage with an offering from another company through the Lyft Platform, such as a vehicle",
+            "service."
+          ],
+          "added": [
+            "to engage with an offering from another company through the Lyft Platform."
+          ],
+          "context_before": [
+            "choose to link your Lyft account with a separate travel rewards program or when you choose"
+          ],
+          "context_after": [
+            "We disclose those categories of personal information to these other parties and service"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Providing marketing and advertising services to Lyft, including to provide targeted and",
+            "cross-contextual behavioral advertising personalized to you;"
+          ],
+          "added": [
+            "Providing marketing and advertising services, including targeted and cross-contextual",
+            "behavioral advertising, that you may receive on or off Lyft’s Platform;"
+          ],
+          "context_before": [
+            "Providing Driver loyalty and promotional programs;"
+          ],
+          "context_after": [
+            "Providing financing;"
+          ],
+          "changed_words": 20
+        },
+        {
+          "removed": [
+            "Cookie Tracking. You can modify your cookie settings on your browser. You may",
+            "also further control your cookie setting",
+            "here."
+          ],
+          "added": [
+            "Cookie Tracking and Personalized Advertising. Your browser and devices may",
+            "offer some controls regarding personalized advertising. You may also modify your personalized",
+            "advertising setting here. See also the",
+            "jurisdiction-specific rights as applicable."
+          ],
+          "context_before": [
+            "sharing your location with Lyft in your Lyft account settings."
+          ],
+          "context_after": [
+            "Accessing Your Information. If you would like to access your personal"
+          ],
+          "changed_words": 38
+        },
+        {
+          "removed": [
+            "information, please visit our privacy homepage.",
+            "You can also see information we have about you by logging into your account and viewing things",
+            "like your profile, settings, and preferences (like preferred pronouns and address shortcuts such",
+            "as home and work), ride history, or payment information. In addition, you may have some",
+            "information included in things we have sent to you, such as ride receipts."
+          ],
+          "added": [
+            "information, please visit here. You can also see",
+            "information we have about you by logging into your account and viewing things like your profile,",
+            "settings, and preferences (like preferred pronouns and address shortcuts such as home and work),",
+            "ride history, or payment information. In addition, you may have some information included in",
+            "things we have sent to you, such as ride receipts."
+          ],
+          "context_before": [
+            "Accessing Your Information. If you would like to access your personal"
+          ],
+          "context_after": [
+            "Deleting Your Account. If you would like to delete your Lyft account, please"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "visit our privacy homepage. In some cases, we",
+            "will be unable to delete your account, such as if there is an issue with your account related to",
+            "trust, safety, or fraud. When we delete your account, we may retain certain information for",
+            "legitimate business purposes or to comply with legal or regulatory obligations. For example, we",
+            "may retain your information to resolve open insurance claims, or we may be obligated to retain",
+            "your information as part of an open legal claim. When we retain such data, we do so in ways",
+            "designed to prevent its use for other purposes.",
+            "B. Location-Specific Rights",
+            "Some states such as California, Colorado, Connecticut, Montana, Oregon, Texas, Utah, and",
+            "Virginia provide specific rights to residents of the state regarding personal information.",
+            "Similarly, specific rights may be provided in Canada. To see more information about these rights",
+            "and how to exercise them, see",
+            "here."
+          ],
+          "added": [
+            "visit here. In some cases, we will be unable to",
+            "delete your account, such as if there is an issue with your account related to trust, safety, or",
+            "fraud. When we delete your account, we may retain certain information for legitimate business",
+            "purposes or to comply with legal or regulatory obligations. For example, we may retain your",
+            "information to resolve open insurance claims, or we may be obligated to retain your information",
+            "as part of an open legal claim. When we retain such data, we do so in ways designed to prevent",
+            "its use for other purposes.",
+            "B. Jurisdiction-Specific Rights",
+            "Some states such as California, Colorado, Connecticut, Delaware, Iowa, Maryland, Minnesota,",
+            "Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, and Virginia",
+            "provide specific rights to residents of the state regarding personal information. Similarly,",
+            "specific rights may be provided in Canada. To see more information about these rights and how to",
+            "exercise them, see here."
+          ],
+          "context_before": [
+            "Deleting Your Account. If you would like to delete your Lyft account, please"
+          ],
+          "context_after": [
+            "Children’s Data"
+          ],
+          "changed_words": 16
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241201135220/https://www.lyft.com/privacy",
+      "archive_after": "https://web.archive.org/web/20250101073620/https://www.lyft.com/privacy",
+      "ai": {
+        "headline": "Lyft expands data collection: in-ride recordings, selfies, gender, and ad targeting",
+        "summary": "Lyft's privacy policy now says it may collect gender, in-ride audio and video recordings, and more identity documents and selfie images, and it may use your location and trip history for personalized marketing and advertising both on and off Lyft's platform. It also adds more states to the list with specific privacy rights, and it now says Lyft may ask for identity verification at any time after you sign up.",
+        "severity": "major",
+        "categories": [
+          "data_collection",
+          "advertising",
+          "your_rights"
+        ],
+        "what_you_can_do": "Use the personalized advertising setting linked in the policy's cookie section, and check the marketing choices page the policy links to.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "lyft",
+      "doc": "privacy",
+      "date": "2026-01-01",
+      "source": "archive",
+      "changed_words": 118,
+      "hunks": [
+        {
+          "removed": [
+            "For users in California, Canada, Colorado, Connecticut, Delaware, Iowa, Maryland, Minnesota,",
+            "Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, and",
+            "Virginia:"
+          ],
+          "added": [
+            "For users in California, Canada, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky,",
+            "Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island,",
+            "Tennessee, Texas, Utah, and Virginia:"
+          ],
+          "context_before": [
+            "relevant to your use of those parts of the Lyft Platform."
+          ],
+          "context_after": [
+            "Additional information regarding Lyft’s privacy practices under jurisdiction-specific privacy laws"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "payment information. You may choose to share additional info with us for your profile, like",
+            "saved addresses (e.g., home or work) and gender, and set up other preferences (such as your"
+          ],
+          "added": [
+            "payment information. You may choose to share additional information with us for your profile,",
+            "like saved addresses (e.g., home or work) and gender, and set up other preferences (such as your"
+          ],
+          "context_before": [
+            "you provide us, such as your name, email address, phone number, birth date, profile photo, and"
+          ],
+          "context_after": [
+            "preferred pronouns). We may ask at the time you set up an account and thereafter that you"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "We may use on-device tools to provide you with location-based notifications without collecting",
+            "your precise location, such as when you land at an airport. In such cases, your location",
+            "information is processed locally on your device and Lyft only receives location information if",
+            "you tap the notification to engage with Lyft."
+          ],
+          "context_before": [
+            "device may collect precise location information when turned on."
+          ],
+          "context_after": [
+            "Usage Information. We collect information about your use of the Lyft Platform,"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [
+            "information about your use of such programs, applications, services, or features; and"
+          ],
+          "added": [
+            "information about your use of such programs, rewards points balance, applications, services,",
+            "or features; and"
+          ],
+          "context_before": [
+            "services, or features you choose to connect or link to your Lyft account, such as"
+          ],
+          "context_after": [
+            "Information about you provided by specific services, such as vehicle, demographic, and other"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "by others. If a ride is requested or taken using a Lyft Business Profile account; a pass, code",
+            "or coupon; a subsidized program (e.g., transit or government); a corporate credit card linked to",
+            "another account; or another user or entity otherwise requests or pays for or portion of a ride,",
+            "we may share some or all of that ride’s details with that other party, including rider and",
+            "driver information (e.g., name, rider phone number), the date, time, charge, region of trip,",
+            "pick up and drop off location of the ride, feedback and rating regarding the ride, and",
+            "information related to incidents and accidents that may have occurred."
+          ],
+          "added": [
+            "by others. If a ride is requested or taken using a Lyft Business Profile account; a Lyft Family",
+            "account; a pass, code or coupon; a subsidized program (e.g., transit or government); a corporate",
+            "credit card linked to another account; or another user or entity otherwise requests or pays for",
+            "or portion of a ride, we may share some or all of that ride’s details with that other party,",
+            "including rider and driver information (e.g., name, rider phone number), the date, time, charge,",
+            "region of trip, pick up and drop off location of the ride, feedback and rating regarding the",
+            "ride, and information related to incidents and accidents that may have occurred."
+          ],
+          "context_before": [
+            "Rides Requested or Paid For by Others. Some rides may be requested or paid for"
+          ],
+          "context_after": [
+            "Linked Accounts and Sharing Upon Your Request. If you use the Lyft Platform as"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "choose to link your Lyft account with a separate travel rewards program or when you choose",
+            "to engage with an offering from another company through the Lyft Platform."
+          ],
+          "added": [
+            "choose to link your Lyft account with a separate rewards program or when you choose to",
+            "engage with an offering from another company, party, or partner through the Lyft Platform."
+          ],
+          "context_before": [
+            "This and other information you may direct us to disclose to other parties, such as when you"
+          ],
+          "context_after": [
+            "We disclose those categories of personal information to these other parties and service"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Verifying the identity of users;"
+          ],
+          "added": [
+            "Verifying the identity or age of users;"
+          ],
+          "context_before": [
+            "Processing Driver applications;"
+          ],
+          "context_after": [
+            "Detecting and preventing fraud and unsafe activity;"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Facilitating and improving offerings from loyalty and rewards programs and partnerships;"
+          ],
+          "context_before": [
+            "Providing Driver loyalty and promotional programs;"
+          ],
+          "context_after": [
+            "Providing marketing and advertising services, including targeted and cross-contextual"
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "corporate control such as a restructuring, merger, or sale of our assets."
+          ],
+          "added": [
+            "corporate control such as a restructuring, merger, bankruptcy, or sale of our assets."
+          ],
+          "context_before": [
+            "We may disclose your personal information while negotiating or in relation to a change of"
+          ],
+          "context_after": [
+            "E. Upon Your Further Direction"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "With your permission or upon your direction, we may disclose your personal information to",
+            "interact with a third party or for other purposes."
+          ],
+          "added": [
+            "With your permission or at your direction, we may disclose your personal information to interact",
+            "with a third party or for other purposes."
+          ],
+          "context_before": [
+            "E. Upon Your Further Direction"
+          ],
+          "context_after": [
+            "How We Store and Protect Your Information"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "have chosen to add to your profile by logging in to your account settings and profile."
+          ],
+          "added": [
+            "have chosen to add to your profile or Family Account by logging in to your account settings and",
+            "profile."
+          ],
+          "context_before": [
+            "Profile Information. You can review and edit certain account information you"
+          ],
+          "context_after": [
+            "Location Information. You can prevent your device from sharing location"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Some states such as California, Colorado, Connecticut, Delaware, Iowa, Maryland, Minnesota,",
+            "Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, and Virginia",
+            "provide specific rights to residents of the state regarding personal information. Similarly,",
+            "specific rights may be provided in Canada. To see more information about these rights and how to",
+            "exercise them, see here."
+          ],
+          "added": [
+            "Some states, such as California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky,",
+            "Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island,",
+            "Tennessee, Texas, Utah, and Virginia provide specific rights to residents of the state regarding",
+            "personal information. Similarly, specific rights may be provided in Canada. To see more",
+            "information about these rights and how to exercise them, see",
+            "here."
+          ],
+          "context_before": [
+            "B. Jurisdiction-Specific Rights"
+          ],
+          "context_after": [
+            "Children’s Data"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Lyft is not directed to children, and we don’t knowingly collect personal information from children",
+            "under the age of 16. If we find out that a child under 16 has given us personal information, we will",
+            "take steps to delete that information. If you believe that a child under the age of 16 has given us",
+            "personal information, please contact us at our Help Center."
+          ],
+          "added": [
+            "Lyft is not directed to children under the age of 16. If we find out that a child under the age of",
+            "16 has given us personal information, we will take steps to delete that information. If you believe",
+            "that a child under the age of 16 has given us personal information, please contact us at our",
+            "Help Center."
+          ],
+          "context_before": [
+            "Children’s Data"
+          ],
+          "context_after": [
+            "Links to Third-Party Websites"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "the Lyft Platform or by some other method of communication like email. When you use Lyft, you are",
+            "agreeing to the most recent terms of this policy."
+          ],
+          "added": [
+            "the Lyft Platform or by some other method of communication like email and seek your consent where",
+            "required by applicable laws. When you use Lyft, you are agreeing to the most recent terms of this",
+            "policy."
+          ],
+          "context_before": [
+            "we update it, we will do so online, and if we make material changes, we will let you know through"
+          ],
+          "context_after": [
+            "Contact Us"
+          ],
+          "changed_words": 11
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251201120741/https://www.lyft.com/privacy",
+      "archive_after": "https://web.archive.org/web/20260101111834/https://www.lyft.com/privacy",
+      "ai": {
+        "headline": "Lyft adds Family accounts, rewards data, and age checks to its privacy policy",
+        "summary": "Lyft's updated privacy policy adds Lyft Family accounts and rewards points balances to the information it may share or track, and says it may use people's age to verify their identity. It also adds an on-device location feature that only sends Lyft your location if you tap a notification, and it expands the list of states with specific privacy rights. Several other changes are wording updates, such as adding bankruptcy to the list of business transactions where data may be shared and saying Lyft will seek consent where required by law.",
+        "severity": "moderate",
+        "categories": [
+          "data_sharing",
+          "data_collection",
+          "your_rights",
+          "children",
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "lyft",
+      "doc": "privacy",
+      "date": "2026-03-01",
+      "source": "archive",
+      "changed_words": 157,
+      "hunks": [
+        {
+          "removed": [
+            "Prevent, investigate, and resolve incidents, accidents, and insurance claims;",
+            "Prevent, investigate, and resolve theft, vandalism, and misuse of the system;"
+          ],
+          "added": [
+            "Prevent, investigate or cooperate in investigation, and resolve or cooperate in resolution of",
+            "incidents, accidents, and insurance claims;",
+            "Prevent, investigate or cooperate in investigation, and resolve or cooperate in resolution of",
+            "theft, vandalism, and misuse of the system;"
+          ],
+          "context_before": [
+            "Verify that Drivers and their vehicles meet safety requirements;"
+          ],
+          "context_after": [
+            "Encourage safe driving behavior and avoid unsafe activities;"
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [],
+          "added": [
+            "Automated Processes. We use personal information in connection with certain",
+            "automated processes to operate the Lyft Platform, for example, to match Riders and Drivers, detect",
+            "and prevent fraud, and enforce our Terms of Service."
+          ],
+          "context_before": [
+            "regarding marketing and advertising, visit here."
+          ],
+          "context_after": [
+            "How We Disclose Your Information"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [
+            "We do not sell your personal information to third parties for money -- no one can buy the personal"
+          ],
+          "added": [
+            "We do not sell your personal information to third parties for money–no one can buy the personal"
+          ],
+          "context_before": [
+            "How We Disclose Your Information"
+          ],
+          "context_after": [
+            "information we collect from and about you and we do not act as a data broker. However, we may need"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "or portion of a ride, we may share some or all of that ride’s details with that other party,"
+          ],
+          "added": [
+            "a portion of a ride, we may share some or all of that ride's details with that other party,"
+          ],
+          "context_before": [
+            "credit card linked to another account; or another user or entity otherwise requests or pays for"
+          ],
+          "context_after": [
+            "including rider and driver information (e.g., name, rider phone number), the date, time, charge,"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "part of a Lyft Family account linked with others or if you direct us to share your information",
+            "with trusted contacts, we will then share with those parties information about your use of the",
+            "Lyft Platform, such as the live location of your ride."
+          ],
+          "added": [
+            "part of an account linked with others, such as a Lyft Family Account or Lyft Teen account, or if",
+            "you direct us to share your information with trusted contacts, we will then share with those",
+            "parties information about your use of the Lyft Platform, such as the live location of your ride."
+          ],
+          "context_before": [
+            "Linked Accounts and Sharing Upon Your Request. If you use the Lyft Platform as"
+          ],
+          "context_after": [
+            "Referral Programs. If you refer someone to the Lyft Platform, we will let them"
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [
+            "messages by texting the word END to 46080 from the mobile device receiving the messages. You may",
+            "also opt out of receiving all texts from Lyft (including transactional or relational messages)",
+            "by texting the word STOPALL to 46080 from the mobile device receiving the messages. Note that",
+            "opting out of receiving all texts may impact your use of the Lyft Platform. Drivers can also opt",
+            "out of driver-specific messages by texting STOP in response to a driver SMS. To re-enable texts",
+            "you can text START in response to an unsubscribe confirmation SMS."
+          ],
+          "added": [
+            "messages by texting the word STOP to 46080 from the mobile device receiving the messages. You",
+            "may also opt out of receiving all texts from Lyft (including transactional or relational",
+            "messages) by texting the word STOPALL to 46080 from the mobile device receiving the messages.",
+            "Note that opting out of receiving all texts may impact your use of the Lyft Platform. Drivers",
+            "can also opt out of driver-specific messages by texting STOP in response to a driver SMS. To",
+            "re-enable texts, you can text START in response to an unsubscribe confirmation SMS."
+          ],
+          "context_before": [
+            "Text Messages. You can opt out of receiving commercial or promotional text"
+          ],
+          "context_after": [
+            "Push Notifications. You can opt out of receiving push notifications through"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Children’s Data",
+            "Lyft is not directed to children under the age of 16. If we find out that a child under the age of",
+            "16 has given us personal information, we will take steps to delete that information. If you believe",
+            "that a child under the age of 16 has given us personal information, please contact us at our"
+          ],
+          "added": [
+            "Children's Data",
+            "Lyft is not directed to children under the age of 13. If we find out that a child under the age of",
+            "13 has given us personal information, we will take steps to delete that information. If you believe",
+            "that a child under the age of 13 has given us personal information, please contact us at our"
+          ],
+          "context_before": [
+            "here."
+          ],
+          "context_after": [
+            "Help Center."
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [],
+          "added": [
+            "Lyft may process the personal information of teen users between the ages of 13 and 17, such as, for",
+            "example, Lyft Teen accounts in the context of a parent or guardian's Lyft Family account. Where Lyft",
+            "processes such personal information, it will do so in accordance with this policy, any applicable",
+            "service terms (see, for example, the",
+            "Lyft Teen Terms and Conditions), and applicable law."
+          ],
+          "context_before": [
+            "Help Center."
+          ],
+          "context_after": [
+            "Links to Third-Party Websites"
+          ],
+          "changed_words": 65
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260201111656/https://www.lyft.com/privacy",
+      "archive_after": "https://web.archive.org/web/20260301041744/https://www.lyft.com/privacy",
+      "ai": {
+        "headline": "Lyft adds Teen accounts and automated ride-matching processes to its privacy policy",
+        "summary": "Lyft now says it uses personal information in automated processes to match riders and drivers, detect fraud, and enforce its terms, and it adds a section covering teen users aged 13 to 17, including Lyft Teen accounts linked to a parent's Lyft Family account. The children's age threshold also changed from under 16 to under 13, and Lyft will share live ride location with people on linked accounts such as Lyft Teen accounts.",
+        "severity": "moderate",
+        "categories": [
+          "children",
+          "data_collection",
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "lyft",
+      "doc": "privacy",
+      "date": "2026-07-07",
+      "source": "archive",
+      "changed_words": 30,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "To learn more about the “Freenow by Lyft” autonomous vehicle program and the personal data processed",
+            "in connection with the operation of that program in the United Kingdom, visit",
+            "here."
+          ],
+          "context_before": [
+            "is available here."
+          ],
+          "context_after": [
+            "The Information We Collect"
+          ],
+          "changed_words": 30
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260605170029/https://www.lyft.com/privacy",
+      "archive_after": "https://web.archive.org/web/20260707092030/https://www.lyft.com/privacy",
+      "ai": {
+        "headline": "Lyft adds a link to privacy details for Freenow autonomous vehicle program in UK",
+        "summary": "Lyft added a pointer to a separate page explaining the \"Freenow by Lyft\" autonomous vehicle program in the United Kingdom and the personal data processed for it. This sentence only points to where those details are; it does not itself describe what data is collected or how it is used.",
+        "severity": "minor",
+        "categories": [
+          "data_collection",
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-01",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230101223027/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-02-05",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230205100627/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-03-03",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230303085240/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-04-02",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230402061438/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-05-04",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230504235409/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-06-01",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230601013111/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-07-03",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230703093130/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-08-04",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230804094928/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-09-02",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20230902154857/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-10-02",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20231002194206/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-11-01",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20231101131116/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2023-12-04",
+      "words": 4274,
+      "archive": "https://web.archive.org/web/20231204015551/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-01-02",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240102223722/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-02-04",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240204150355/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-03-05",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240305120108/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-04-02",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240402132817/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240501132410/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-06-02",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240602024856/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-07-02",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240702004031/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240801071454/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-09-02",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20240902014317/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-10-02",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20241002054552/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-11-05",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20241105221146/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 4388,
+      "archive": "https://web.archive.org/web/20241201135220/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-01-01",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250101073620/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-02-03",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250203025800/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-03-04",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250304020511/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250401132036/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-05-01",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250501092302/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-06-05",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250605053441/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-07-01",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250701142658/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-08-02",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250802023635/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20250901235946/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20251001150903/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-11-02",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20251102011825/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 4520,
+      "archive": "https://web.archive.org/web/20251201120741/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-01-01",
+      "words": 4608,
+      "archive": "https://web.archive.org/web/20260101111834/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 4608,
+      "archive": "https://web.archive.org/web/20260201111656/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 4731,
+      "archive": "https://web.archive.org/web/20260301041744/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 4731,
+      "archive": "https://web.archive.org/web/20260401085019/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-05-03",
+      "words": 4731,
+      "archive": "https://web.archive.org/web/20260503120640/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-06-05",
+      "words": 4731,
+      "archive": "https://web.archive.org/web/20260605170029/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-07-07",
+      "words": 4761,
+      "archive": "https://web.archive.org/web/20260707092030/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 4761,
+      "archive": "https://web.archive.org/web/20260801233128/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-09-09",
+      "words": 4761,
+      "archive": "https://web.archive.org/web/20260909055418/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-10-15",
+      "words": 4761,
+      "archive": "https://web.archive.org/web/20261015103141/https://www.lyft.com/privacy"
+    },
+    {
+      "date": "2026-11-02",
+      "words": 4761,
+      "archive": "https://web.archive.org/web/20261102215439/https://www.lyft.com/privacy"
+    }
+  ]
+}

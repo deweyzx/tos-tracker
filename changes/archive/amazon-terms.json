@@ -1,0 +1,2364 @@
+{
+  "date": "archive",
+  "company": "amazon",
+  "doc": "terms",
+  "changes": [
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-03-06",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Report Stolen Goods"
+          ],
+          "context_before": [
+            "Conditions of Use"
+          ],
+          "context_after": [
+            "Amazon.com Privacy Notice"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230206083106/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20230306000417/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon adds a \"Report Stolen Goods\" link near its Conditions of Use",
+        "summary": "Amazon added a \"Report Stolen Goods\" link to its terms page, placed between \"Conditions of Use\" and the \"Amazon.com Privacy Notice\" links. This appears to be a navigation addition only; the text provided does not describe any new rules for users.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-04-04",
+      "source": "archive",
+      "changed_words": 8,
+      "hunks": [
+        {
+          "removed": [
+            "Amazon Assistant"
+          ],
+          "added": [],
+          "context_before": [
+            "Your Recalls and Product Safety Alerts"
+          ],
+          "context_after": [
+            "Help"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Amazon Drive",
+            "Cloud storage",
+            "from Amazon"
+          ],
+          "added": [],
+          "context_before": [
+            "engage customers"
+          ],
+          "context_after": [
+            "6pm"
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230306000417/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20230404222435/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon removes Amazon Assistant and Amazon Drive references from its terms",
+        "summary": "Amazon dropped mentions of the Amazon Assistant link from a recalls and safety alerts section and removed Amazon Drive cloud storage from a list of services in its terms. The provided text shows only these deletions, with no new rules added, so it does not say whether these services have been discontinued or what that means for users.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-07-03",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [
+            "Amazon Rewards Visa Signature Cards"
+          ],
+          "added": [
+            "Amazon Visa"
+          ],
+          "context_before": [
+            "Amazon Payment Products"
+          ],
+          "context_after": [
+            "Amazon Store Card"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230404222435/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20230703023414/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon renames its Visa card from \"Amazon Rewards Visa Signature\" to \"Amazon Visa\"",
+        "summary": "Amazon changed the name of its co-branded credit card from \"Amazon Rewards Visa Signature Cards\" to \"Amazon Visa\" in its list of payment products. The change appears to be a naming update only; the text provided does not describe any change to card terms, rewards, or how your data is used.",
+        "severity": "minor",
+        "categories": [
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-08-17",
+      "source": "archive",
+      "changed_words": 20,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Communications with Amazon Employees"
+          ],
+          "context_before": [
+            "Conditions of Use"
+          ],
+          "context_after": [
+            "Report Stolen Goods"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Sell products on Amazon"
+          ],
+          "added": [
+            "Start Selling with Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [],
+          "added": [
+            "Gift Cards"
+          ],
+          "context_before": [
+            "Reload Your Balance"
+          ],
+          "context_after": [
+            "Amazon Currency Converter"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Amazon Ignite",
+            "Sell your original",
+            "Digital Educational",
+            "Resources"
+          ],
+          "added": [],
+          "context_before": [
+            "Happiness Guarantee"
+          ],
+          "context_after": [
+            "Amazon Web Services"
+          ],
+          "changed_words": 8
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230703023414/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20230817144423/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon reorganizes its terms page menu links and removes one seller program link",
+        "summary": "Amazon's terms page changes are mostly menu and link wording: a new \"Communications with Amazon Employees\" heading, \"Start Selling with Amazon\" replacing \"Sell products on Amazon,\" and a new \"Gift Cards\" link. One link to \"Amazon Ignite Sell your original Digital Educational Resources\" was removed, but no rules, data uses, or user rights are described as changing.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-09-19",
+      "source": "archive",
+      "changed_words": 44,
+      "hunks": [
+        {
+          "removed": [
+            "Report Stolen Goods"
+          ],
+          "added": [
+            "Report Suspicious Activity"
+          ],
+          "context_before": [
+            "Communications with Amazon Employees"
+          ],
+          "context_after": [
+            "Amazon.com Privacy Notice"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Start Selling with Amazon"
+          ],
+          "added": [
+            "Sell products on Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Amazon and COVID-19"
+          ],
+          "added": [],
+          "context_before": [
+            "Let Us Help You"
+          ],
+          "context_after": [
+            "Your Account"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amp",
+            "Host your own live radio show with",
+            "music you love"
+          ],
+          "context_before": [
+            "Your Business"
+          ],
+          "context_after": [
+            "Amazon Fresh"
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "Book Depository",
+            "Books With Free",
+            "Delivery Worldwide"
+          ],
+          "added": [],
+          "context_before": [
+            "Audio Performances"
+          ],
+          "context_after": [
+            "Box Office Mojo"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "ComiXology",
+            "Thousands of",
+            "Digital Comics",
+            "DPReview",
+            "Digital",
+            "Photography",
+            "Fabric",
+            "Sewing, Quilting",
+            "& Knitting"
+          ],
+          "added": [],
+          "context_before": [
+            "Box Office Data"
+          ],
+          "context_after": [
+            "Goodreads"
+          ],
+          "changed_words": 13
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230817144423/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20230919043824/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon updates its site footer links and menu labels",
+        "summary": "Amazon changed link names and removed some links in the footer of its Terms page, such as \"Report Stolen Goods\" becoming \"Report Suspicious Activity\" and \"Amazon and COVID-19\" being dropped. These are navigation changes only and do not change any rules about your data, money, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-10-18",
+      "source": "archive",
+      "changed_words": 6,
+      "hunks": [
+        {
+          "removed": [
+            "Sell products on Amazon"
+          ],
+          "added": [
+            "Start Selling with Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230919043824/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20231018224013/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon renames its \"Sell products on Amazon\" link to \"Start Selling with Amazon\"",
+        "summary": "Amazon changed the wording of a link under \"Make Money with Us\" from \"Sell products on Amazon\" to \"Start Selling with Amazon.\" This is a wording change only; the text provided shows no new rules or effects on users.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-11-07",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [
+            "Start Selling with Amazon"
+          ],
+          "added": [
+            "Sell more with Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231018224013/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20231107150540/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon renames \"Start Selling with Amazon\" link to \"Sell more with Amazon\"",
+        "summary": "Amazon changed the wording of a link under \"Make Money with Us\" from \"Start Selling with Amazon\" to \"Sell more with Amazon.\" This is a wording change only and does not alter any rights or obligations for users.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2023-12-11",
+      "source": "archive",
+      "changed_words": 27,
+      "hunks": [
+        {
+          "removed": [
+            "Sell more with Amazon"
+          ],
+          "added": [
+            "Start Selling with Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Amazon Advertising",
+            "Find, attract, and",
+            "engage customers"
+          ],
+          "added": [
+            "Amazon Ads",
+            "Reach customers",
+            "wherever they",
+            "spend their time"
+          ],
+          "context_before": [
+            "of songs"
+          ],
+          "context_after": [
+            "6pm"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "Amp",
+            "Host your own live radio show with",
+            "music you love"
+          ],
+          "added": [],
+          "context_before": [
+            "Your Business"
+          ],
+          "context_after": [
+            "Amazon Fresh"
+          ],
+          "changed_words": 11
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231107150540/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20231211141805/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon renames selling and advertising links and drops the Amp radio entry",
+        "summary": "Amazon changed the wording of links in its \"Make Money with Us\" menu: \"Sell more with Amazon\" became \"Start Selling with Amazon,\" and \"Amazon Advertising\" became \"Amazon Ads.\" It also removed the listing for Amp, its live radio show feature. These look like menu and naming updates, not new rules for users.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2024-01-17",
+      "source": "archive",
+      "changed_words": 7,
+      "hunks": [
+        {
+          "removed": [
+            "Start Selling with Amazon"
+          ],
+          "added": [
+            "Sell more with Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Your Recalls and Product Safety Alerts"
+          ],
+          "added": [
+            "Recalls and Product Safety Alerts"
+          ],
+          "context_before": [
+            "Manage Your Content and Devices"
+          ],
+          "context_after": [
+            "Help"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "© 1996-2023, Amazon.com, Inc. or its affiliates"
+          ],
+          "added": [
+            "© 1996-2024, Amazon.com, Inc. or its affiliates"
+          ],
+          "context_before": [
+            "Your Ads Privacy Choices"
+          ],
+          "context_after": [],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231211141805/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20240117193700/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon renames seller and recall links and updates copyright year",
+        "summary": "Amazon changed some link labels on its terms page: \"Start Selling with Amazon\" became \"Sell more with Amazon,\" \"Your Recalls and Product Safety Alerts\" became \"Recalls and Product Safety Alerts,\" and the copyright year was updated from 2023 to 2024. These are wording and navigation changes only, with no new rules affecting users' data, money, or legal rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2024-03-04",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [
+            "Sell more with Amazon"
+          ],
+          "added": [
+            "Start Selling with Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240117193700/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20240304140420/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon renames \"Sell more with Amazon\" link to \"Start Selling with Amazon\"",
+        "summary": "Amazon changed the wording of a link in its terms from \"Sell more with Amazon\" to \"Start Selling with Amazon.\" This is a wording change only and does not change any rights or obligations for users.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2024-04-04",
+      "source": "archive",
+      "changed_words": 14,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Consumer Health Data Privacy Disclosure"
+          ],
+          "context_before": [
+            "Legal Policies"
+          ],
+          "context_after": [
+            "3rd Party Licensing Notice"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Start Selling with Amazon"
+          ],
+          "added": [
+            "Sell more with Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [],
+          "added": [
+            "Consumer Health Data Privacy Disclosure"
+          ],
+          "context_before": [
+            "Privacy Notice"
+          ],
+          "context_after": [
+            "Your Ads Privacy Choices"
+          ],
+          "changed_words": 5
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240304140420/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20240404042225/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon adds a Consumer Health Data Privacy Disclosure link to its legal and privacy menus",
+        "summary": "Amazon added links to a new \"Consumer Health Data Privacy Disclosure\" under its Legal Policies and Privacy Notice sections. The change shown only adds these headings and links; the text provided does not describe any new rules for how health data is used.",
+        "severity": "minor",
+        "categories": [
+          "legal",
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2024-07-01",
+      "source": "archive",
+      "changed_words": 8,
+      "hunks": [
+        {
+          "removed": [
+            "Sell more with Amazon"
+          ],
+          "added": [
+            "Sell on Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Host an Amazon Hub"
+          ],
+          "added": [
+            "Become an Amazon Hub Partner"
+          ],
+          "context_before": [
+            "Self-Publish with Us"
+          ],
+          "context_after": [
+            "›See More Ways to Make Money"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Amazon Warehouse"
+          ],
+          "added": [
+            "Amazon Resale"
+          ],
+          "context_before": [
+            "Fashion Brands"
+          ],
+          "context_after": [
+            "Great Deals on"
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240404042225/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20240701231306/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon renames several seller and deals links in its site menus",
+        "summary": "Amazon changed the wording of several links in its \"Make Money with Us\" and \"Great Deals\" menus, such as \"Sell more with Amazon\" becoming \"Sell on Amazon\" and \"Amazon Warehouse\" becoming \"Amazon Resale.\" These are menu label changes only and do not appear to change any rules about user data, money, or legal rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2024-08-02",
+      "source": "archive",
+      "changed_words": 102,
+      "hunks": [
+        {
+          "removed": [
+            "Amazon Newsletter"
+          ],
+          "added": [
+            "Blog"
+          ],
+          "context_before": [
+            "Careers"
+          ],
+          "context_after": [
+            "About Amazon"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Accessibility",
+            "Sustainability",
+            "Press Center"
+          ],
+          "added": [],
+          "context_before": [
+            "About Amazon"
+          ],
+          "context_after": [
+            "Investor Relations"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Sell on Amazon"
+          ],
+          "added": [
+            "Sell products on Amazon",
+            "Sell on Amazon Business"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Supply to Amazon",
+            "Protect & Build Your Brand"
+          ],
+          "added": [],
+          "context_before": [
+            "Sell apps on Amazon"
+          ],
+          "context_after": [
+            "Become an Affiliate"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Become a Delivery Driver",
+            "Start a Package Delivery Business"
+          ],
+          "added": [],
+          "context_before": [
+            "Become an Affiliate"
+          ],
+          "context_after": [
+            "Advertise Your Products"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Become an Amazon Hub Partner",
+            "›See More Ways to Make Money"
+          ],
+          "added": [
+            "Host an Amazon Hub",
+            "›See More Make Money with Us"
+          ],
+          "context_before": [
+            "Self-Publish with Us"
+          ],
+          "context_after": [
+            "Amazon Payment Products"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "Amazon Visa",
+            "Amazon Store Card",
+            "Amazon Secured Card"
+          ],
+          "added": [],
+          "context_before": [
+            "Amazon Payment Products"
+          ],
+          "context_after": [
+            "Amazon Business Card"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Credit Card Marketplace"
+          ],
+          "added": [],
+          "context_before": [
+            "Shop with Points"
+          ],
+          "context_after": [
+            "Reload Your Balance"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Gift Cards"
+          ],
+          "added": [],
+          "context_before": [
+            "Reload Your Balance"
+          ],
+          "context_after": [
+            "Amazon Currency Converter"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amazon and COVID-19"
+          ],
+          "context_before": [
+            "Let Us Help You"
+          ],
+          "context_after": [
+            "Your Account"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Amazon Prime"
+          ],
+          "added": [],
+          "context_before": [
+            "Shipping Rates & Policies"
+          ],
+          "context_after": [
+            "Returns & Replacements"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Recalls and Product Safety Alerts"
+          ],
+          "added": [],
+          "context_before": [
+            "Manage Your Content and Devices"
+          ],
+          "context_after": [
+            "Help"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [],
+          "added": [
+            "$USD - U.S. Dollar"
+          ],
+          "context_before": [
+            "English"
+          ],
+          "context_after": [
+            "United States"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Amazon Fresh",
+            "Groceries & More",
+            "Right To Your Door"
+          ],
+          "added": [],
+          "context_before": [
+            "Your Business"
+          ],
+          "context_after": [
+            "AmazonGlobal"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Amazon Photos",
+            "Unlimited Photo Storage",
+            "Free With Prime"
+          ],
+          "added": [],
+          "context_before": [
+            "Made Easy"
+          ],
+          "context_after": [
+            "Prime Video Direct"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Amazon Resale",
+            "Great Deals on",
+            "Quality Used Products",
+            "Whole Foods Market",
+            "America’s Healthiest",
+            "Grocery Store"
+          ],
+          "added": [],
+          "context_before": [
+            "Fashion Brands"
+          ],
+          "context_after": [
+            "Woot!"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [
+            "Amazon Renewed",
+            "Like-new products",
+            "you can trust"
+          ],
+          "added": [],
+          "context_before": [
+            "Pharmacy Simplified"
+          ],
+          "context_after": [
+            "Conditions of Use"
+          ],
+          "changed_words": 7
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240701231306/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20240802202544/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon's terms page footer links and menu items changed, no new rules",
+        "summary": "Amazon's Terms page changed only its footer and site navigation links, such as swapping the newsletter link for a Blog link and dropping some product and service links like Amazon Visa, Amazon Fresh, and Amazon Renewed. None of the changes affect users' data, money, or legal rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2024-09-08",
+      "source": "archive",
+      "changed_words": 111,
+      "hunks": [
+        {
+          "removed": [
+            "Blog"
+          ],
+          "added": [
+            "Amazon Newsletter"
+          ],
+          "context_before": [
+            "Careers"
+          ],
+          "context_after": [
+            "About Amazon"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Accessibility",
+            "Sustainability",
+            "Press Center"
+          ],
+          "context_before": [
+            "About Amazon"
+          ],
+          "context_after": [
+            "Investor Relations"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Sell products on Amazon",
+            "Sell on Amazon Business"
+          ],
+          "added": [
+            "Sell on Amazon"
+          ],
+          "context_before": [
+            "Make Money with Us"
+          ],
+          "context_after": [
+            "Sell apps on Amazon"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [],
+          "added": [
+            "Supply to Amazon",
+            "Protect & Build Your Brand"
+          ],
+          "context_before": [
+            "Sell apps on Amazon"
+          ],
+          "context_after": [
+            "Become an Affiliate"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [],
+          "added": [
+            "Become a Delivery Driver",
+            "Start a Package Delivery Business"
+          ],
+          "context_before": [
+            "Become an Affiliate"
+          ],
+          "context_after": [
+            "Advertise Your Products"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Host an Amazon Hub",
+            "›See More Make Money with Us"
+          ],
+          "added": [
+            "Become an Amazon Hub Partner",
+            "›See More Ways to Make Money"
+          ],
+          "context_before": [
+            "Self-Publish with Us"
+          ],
+          "context_after": [
+            "Amazon Payment Products"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amazon Visa",
+            "Amazon Store Card",
+            "Amazon Secured Card"
+          ],
+          "context_before": [
+            "Amazon Payment Products"
+          ],
+          "context_after": [
+            "Amazon Business Card"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [],
+          "added": [
+            "Credit Card Marketplace"
+          ],
+          "context_before": [
+            "Shop with Points"
+          ],
+          "context_after": [
+            "Reload Your Balance"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Gift Cards"
+          ],
+          "context_before": [
+            "Reload Your Balance"
+          ],
+          "context_after": [
+            "Amazon Currency Converter"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Amazon and COVID-19"
+          ],
+          "added": [],
+          "context_before": [
+            "Let Us Help You"
+          ],
+          "context_after": [
+            "Your Account"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amazon Prime"
+          ],
+          "context_before": [
+            "Shipping Rates & Policies"
+          ],
+          "context_after": [
+            "Returns & Replacements"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Recalls and Product Safety Alerts",
+            "Registry & Gift List"
+          ],
+          "context_before": [
+            "Manage Your Content and Devices"
+          ],
+          "context_after": [
+            "Help"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "$USD - U.S. Dollar"
+          ],
+          "added": [],
+          "context_before": [
+            "English"
+          ],
+          "context_after": [
+            "United States"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [],
+          "added": [
+            "Veeqo",
+            "Shipping Software",
+            "Inventory Management"
+          ],
+          "context_before": [
+            "Start a Selling Account"
+          ],
+          "context_after": [
+            "Amazon Business"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amazon Fresh",
+            "Groceries & More",
+            "Right To Your Door"
+          ],
+          "context_before": [
+            "Your Business"
+          ],
+          "context_after": [
+            "AmazonGlobal"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amazon Photos",
+            "Unlimited Photo Storage",
+            "Free With Prime"
+          ],
+          "context_before": [
+            "Made Easy"
+          ],
+          "context_after": [
+            "Prime Video Direct"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amazon Resale",
+            "Great Deals on",
+            "Quality Used Products",
+            "Whole Foods Market",
+            "America’s Healthiest",
+            "Grocery Store"
+          ],
+          "context_before": [
+            "Fashion Brands"
+          ],
+          "context_after": [
+            "Woot!"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [],
+          "added": [
+            "Amazon Renewed",
+            "Like-new products",
+            "you can trust"
+          ],
+          "context_before": [
+            "Pharmacy Simplified"
+          ],
+          "context_after": [
+            "Conditions of Use"
+          ],
+          "changed_words": 7
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240802202544/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20240908121622/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon's terms page changes are site navigation and link updates only",
+        "summary": "The changed text is the website's footer and menu links: some links were renamed, moved, or added (such as a newsletter, Amazon Fresh, Amazon Renewed, and credit card links), and the currency option was removed. None of the changes describe new rules for users' data, money, or legal rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2025-01-15",
+      "source": "archive",
+      "changed_words": 6,
+      "hunks": [
+        {
+          "removed": [
+            "Skip to main content"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "Help & Customer Service"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "© 1996-2024, Amazon.com, Inc. or its affiliates"
+          ],
+          "added": [
+            "© 1996-2025, Amazon.com, Inc. or its affiliates"
+          ],
+          "context_before": [
+            "Your Ads Privacy Choices"
+          ],
+          "context_after": [],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241223232406/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20250115222618/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon updates site footer and removes a \"Skip to main content\" link",
+        "summary": "Amazon made only cosmetic changes to its terms page: a \"Skip to main content\" navigation link was removed and the copyright year in the footer changed from 2024 to 2025. No rules about user data, content, money, or legal rights were changed.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2025-06-20",
+      "source": "archive",
+      "changed_words": 517,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Shortcuts menu"
+          ],
+          "context_before": [],
+          "context_after": [
+            "Help & Customer Service"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Welcome to Amazon.com. Amazon.com Services LLC and/or its affiliates (\"Amazon\") provide website features and other products and services to you when you visit or shop at Amazon.com, use Amazon products or services, use Amazon applications for mobile, or use software provided by Amazon in connection with any of the foregoing (collectively, \"Amazon Services\"). By using the Amazon Services, you agree, on behalf of yourself and all members of your household and others who use any Service under your account, to the following conditions."
+          ],
+          "added": [
+            "Welcome to Amazon.com. Amazon.com Services LLC and/or its affiliates (\"Amazon\") provide website features and other products and services to you when you visit or shop at Amazon.com, use Amazon products or services, use Amazon applications for mobile, or use software provided by Amazon in connection with any of the foregoing (collectively, \"Amazon Services\"). By using the Amazon Services, you agree, on behalf of yourself and all members of your household and others who use any Amazon Service under your account, to the following conditions."
+          ],
+          "context_before": [
+            "Conditions of Use"
+          ],
+          "context_after": [
+            "Please read these conditions carefully."
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Click here to see a non-exhaustive list of Amazon trademarks. In addition, graphics, logos, page headers, button icons, scripts, and service names included in or made available through any Amazon Service are trademarks or trade dress of Amazon in the U.S. and other countries. Amazon's trademarks and trade dress may not be used in connection with any product or service that is not Amazon's, in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits Amazon. All other trademarks not owned by Amazon that appear in any Amazon Service are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by Amazon."
+          ],
+          "added": [
+            "Click here to see a non-exhaustive list of Amazon trademarks. In addition, graphics, logos, page headers, button icons, scripts, and service names included in or made available through any Amazon Service are trademarks or trade dress of Amazon in the U.S. and other countries. Amazon's trademarks and trade dress may not be used in connection with any product or service that is not Amazon's or in any manner that is likely to cause confusion among customers. All other trademarks not owned by Amazon that appear in any Amazon Service are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by Amazon."
+          ],
+          "context_before": [
+            "TRADEMARKS"
+          ],
+          "context_after": [
+            "LICENSE AND ACCESS"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "Subject to your compliance with these Conditions of Use and any Service Terms, and your payment of any applicable fees, Amazon or its content providers grant you a limited, non-exclusive, non-transferable, non-sublicensable license to access and make personal and non-commercial use of the Amazon Services. This license does not include any resale or commercial use of any Amazon Service, or its contents; any collection and use of any product listings, descriptions, or prices; any derivative use of any Amazon Service or its contents; any downloading, copying, or other use of account information for the benefit of any third party; or any use of data mining, robots, or similar data gathering and extraction tools. All rights not expressly granted to you in these Conditions of Use or any Service Terms are reserved and retained by Amazon or its licensors, suppliers, publishers, rightsholders, or other content providers. No Amazon Service, nor any part of any Amazon Service, may be reproduced, duplicated, copied, sold, resold, visited, or otherwise exploited for any commercial purpose without express written consent of Amazon. You may not frame or utilize framing techniques to enclose any trademark, logo, or other proprietary information (including images, text, page layout, or form) of Amazon without express written consent. You may not use any meta tags or any other \"hidden text\" utilizing Amazon's name or trademarks without the express written consent of Amazon. You may not misuse the Amazon Services. You may use the Amazon Services only as permitted by law. The licenses granted by Amazon terminate if you do not comply with these Conditions of Use or any Service Terms."
+          ],
+          "added": [
+            "Subject to your compliance with these Conditions of Use and any Service Terms, and your payment of any applicable fees, Amazon or its content providers grant you a limited, non-exclusive, non-transferable, non-sublicensable license to access and make personal and non-commercial use of the Amazon Services. This license does not include any resale or commercial use of any Amazon Service, or its contents; any collection and use of any product listings, descriptions, or prices; any derivative use of any Amazon Service or its contents; any downloading, copying, or other use of account information for the benefit of any third party; or any use of data mining, robots, or similar data gathering and extraction tools. You may not use the Amazon Services to infringe, misappropriate, or violate intellectual property or other legal rights. All rights not expressly granted to you in these Conditions of Use or any Service Terms are reserved and retained by Amazon or its licensors, suppliers, publishers, rightsholders, or other content providers. No Amazon Service, nor any part of any Amazon Service or its contents, may be reproduced, duplicated, copied, sold, resold, visited, or otherwise exploited for any commercial purpose without express written consent of Amazon. You will not, and will not allow any third party to, use AI-generated content from the Amazon Services to, directly or indirectly, develop or improve large language or multimodal models, machine learning models or related technology. You may not frame or utilize framing techniques to enclose any trademark, logo, or other proprietary information (including images, text, page layout, or form) of Amazon without express written consent. You may not use any meta tags or any other \"hidden text\" utilizing Amazon's name or trademarks without the express written consent of Amazon. You may not misuse the Amazon Services. You may use the Amazon Services only as permitted by law. The licenses granted by Amazon terminate if you do not comply with these Conditions of Use or any Service Terms."
+          ],
+          "context_before": [
+            "LICENSE AND ACCESS"
+          ],
+          "context_after": [
+            "YOUR ACCOUNT"
+          ],
+          "changed_words": 59
+        },
+        {
+          "removed": [
+            "\"List Price\" means the suggested retail price of a product as provided by a manufacturer, supplier, or seller. We regularly check List Prices against prices recently found on Amazon and other retailers. Certain products may have a \"Was Price\" displayed, which is determined using recent price history of the product on Amazon."
+          ],
+          "added": [],
+          "context_before": [
+            "PRICING"
+          ],
+          "context_after": [
+            "With respect to items sold by Amazon, we cannot confirm the price of an item until you order. Despite our best efforts, a small number of the items in our catalog may be mispriced. If the correct price of an item sold by Amazon is higher than our stated price, we will, at our discretion, either contact you for instructions before shipping or cancel your order and notify you of such cancellation. Other merchants may follow different policies in the event of a mispriced item."
+          ],
+          "changed_words": 52
+        },
+        {
+          "removed": [],
+          "added": [
+            "In addition to the stated purchase price, products may display other reference prices as a point of comparison to inform your purchase decisions. Click here for more information on reference prices and savings displays."
+          ],
+          "context_before": [
+            "We generally do not charge your credit card until after your order has entered the shipping process or, for digital products, until we make the digital product available to you."
+          ],
+          "context_after": [
+            "APP PERMISSIONS"
+          ],
+          "changed_words": 34
+        },
+        {
+          "removed": [],
+          "added": [
+            "Governing Language",
+            "It is the express wish of the parties that these Conditions of Use be drawn up in English. In the event of any inconsistency, discrepancy or conflict between the English version of these Conditions of Use and their translation in another language, the English version shall prevail."
+          ],
+          "context_before": [
+            "Please review our other policies, such as our pricing policy, posted on this site. These policies also govern your use of Amazon Services. We reserve the right to make changes to our site, policies, Service Terms, and these Conditions of Use at any time. If any of these conditions shall be deemed invalid, void, or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition."
+          ],
+          "context_after": [
+            "OUR ADDRESS"
+          ],
+          "changed_words": 49
+        },
+        {
+          "removed": [],
+          "added": [
+            "https://amazon.com"
+          ],
+          "context_before": [
+            "Seattle, WA 98108-1226"
+          ],
+          "context_after": [
+            "ADDITIONAL AMAZON SOFTWARE TERMS"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "No Reverse Engineering. You may not reverse engineer, decompile or disassemble, tamper with, or bypass any security associated with the Amazon Software, whether in whole or in part."
+          ],
+          "added": [
+            "No Reverse Engineering. You may not reverse engineer, decompile or disassemble, tamper with, apply any other process or procedure to derive the source code or other underlying components (such as a model, model parameters, or model weights), or bypass any security associated with the Amazon Software, whether in whole or in part."
+          ],
+          "context_before": [
+            "Use of Third Party Services. When you use the Amazon Software, you may also be using the services of one or more third parties, such as a wireless carrier or a mobile software provider. Your use of these third party services may be subject to the separate policies, terms of use, and fees of these third parties."
+          ],
+          "context_after": [
+            "Updates. We may offer automatic or manual updates to the Amazon Software at any time and without notice to you."
+          ],
+          "changed_words": 24
+        },
+        {
+          "removed": [
+            "Government End Users. If you are a U.S. Government end user, we are licensing the Amazon Software to you as a \"Commercial Item\" as that term is defined in the U.S. Code of Federal Regulations (see 48 C.F.R. § 2.101), and the rights we grant you to the Amazon Software are the same as the rights we grant to all others under these Conditions of Use."
+          ],
+          "added": [
+            "Government End Users. If you are a U.S. Government end user, we are licensing the Amazon Software to you as a \"Commercial Product\" as that term is defined in the U.S. Code of Federal Regulations (see 48 C.F.R. § 2.101), and the rights we grant you to the Amazon Software are the same as the rights we grant to all others under these Conditions of Use."
+          ],
+          "context_before": [
+            "Updates. We may offer automatic or manual updates to the Amazon Software at any time and without notice to you."
+          ],
+          "context_after": [
+            "Conflicts. In the event of any conflict between these Conditions of Use and any other Amazon or third-party terms applicable to any portion of Amazon Software, such as open-source license terms, such other terms will control as to that portion of the Amazon Software and to the extent of the conflict."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Agents",
+            "The terms in this section (\"Agent Terms\") apply if you use, allow, enable, or cause the deployment of an Agent to access, use, or interact with any Amazon Services. For the purposes of these Agent Terms, \"Agent” means any software or service that takes autonomous or semi-autonomous action on behalf of, or at the instruction of, any person or entity.",
+            "Transparency and Consent. No Agent may access, use, or interact with Amazon Services unless, at all times, it identifies itself and operates in strict accordance with the requirements in section 3 of these Agent Terms. In addition, no Agent may access, use, or interact with Amazon Services if we have requested that the Agent refrain from accessing, using, or interacting with any Amazon Service.",
+            "Limitation on Access. At our sole discretion, we may limit, including by technical measures, whether and how any Agent accesses, uses, and interacts with Amazon Services.",
+            "Technical Requirements. Agents must:In all HTTP/HTTPS requests, identify that the request is from an Agent and disclose the name of the Agent by including the following in the request's user agent string:",
+            "\"Agent/[agent name]\" (e.g., Agent/AmazonAgent)",
+            "Not conceal or obfuscate that any access, use, or interactions are from an Agent, such as by (a) mimicking the speed or pattern of human keystrokes, page navigation, or other interactions or (b) completing or circumventing CAPTCHAs or other measures intended to distinguish computers from humans.",
+            "Respond truthfully to any question or prompt seeking to determine if interactions are coming from a human or a computer.",
+            "Not circumvent or otherwise avoid any measure intended to block, limit, modify, or control whether and how Agents access, use, or interact with an Amazon Service."
+          ],
+          "context_before": [
+            "Conflicts. In the event of any conflict between these Conditions of Use and any other Amazon or third-party terms applicable to any portion of Amazon Software, such as open-source license terms, such other terms will control as to that portion of the Amazon Software and to the extent of the conflict."
+          ],
+          "context_after": [
+            "HOW TO SERVE A SUBPOENA OR OTHER LEGAL PROCESS"
+          ],
+          "changed_words": 279
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250513193656/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20250620144026/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon adds new AI-use ban and rules for AI agents to its terms",
+        "summary": "Amazon's Conditions of Use now bar users from using AI-generated content from Amazon services to develop or improve AI or machine learning models, and add a new section setting rules for \"Agents\" (automated AI software) that access Amazon services, including identifying themselves and not evading blocks. Other changes are mostly wording, plus a new governing-language clause and clarified reference-price language.",
+        "severity": "moderate",
+        "categories": [
+          "your_content",
+          "ai_training",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2025-07-07",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [
+            "Report Suspicious Activity"
+          ],
+          "added": [],
+          "context_before": [
+            "Communications with Amazon Employees"
+          ],
+          "context_after": [
+            "Amazon.com Privacy Notice"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250620144026/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20250707214915/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon removes \"Report Suspicious Activity\" heading from its terms",
+        "summary": "Amazon removed the \"Report Suspicious Activity\" heading from the section on communications with Amazon employees, with nothing added in its place. The text provided does not show any change to the rules themselves, so this appears to be a layout or wording change rather than a new obligation.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2026-01-14",
+      "source": "archive",
+      "changed_words": 18,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Generative AI Development Disclosure",
+            "Amazon Settlement"
+          ],
+          "context_before": [
+            "Amazon.com Gift Card and Electronic Message Customization Service Terms"
+          ],
+          "context_after": [
+            "Quick solutions"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [],
+          "added": [
+            "Information about the FTC Prime settlement"
+          ],
+          "context_before": [
+            "Recalls and Product Safety Alerts"
+          ],
+          "context_after": [
+            "Registry & Gift List"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Like-new products"
+          ],
+          "added": [
+            "Refurbished tech"
+          ],
+          "context_before": [
+            "Amazon Renewed"
+          ],
+          "context_after": [
+            "you can trust"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "© 1996-2025, Amazon.com, Inc. or its affiliates"
+          ],
+          "added": [
+            "© 1996-2026, Amazon.com, Inc. or its affiliates"
+          ],
+          "context_before": [
+            "Your Ads Privacy Choices"
+          ],
+          "context_after": [],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251022183820/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20260114214648/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon adds links to AI disclosure and FTC Prime settlement; other edits are cosmetic",
+        "summary": "The Amazon terms page now includes new links or headings for a Generative AI Development Disclosure, an Amazon settlement, and information about the FTC Prime settlement, plus wording changes to Amazon Renewed (\"refurbished tech\" replaces \"like-new products\") and an updated copyright year. The text provided does not explain what the AI disclosure says or what the settlements require, so this analysis cannot tell whether users' rights or data are affected.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2026-02-23",
+      "source": "archive",
+      "changed_words": 6,
+      "hunks": [
+        {
+          "removed": [
+            "Information about the FTC Prime settlement"
+          ],
+          "added": [],
+          "context_before": [
+            "Recalls and Product Safety Alerts"
+          ],
+          "context_after": [
+            "Registry & Gift List"
+          ],
+          "changed_words": 6
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260114214648/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20260223152510/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon removes information about the FTC Prime settlement from its terms",
+        "summary": "Amazon removed a reference to information about the FTC Prime settlement from its terms page, located between the Recalls and Product Safety Alerts and Registry & Gift List entries. No new wording was added, and the text provided does not say whether any user rights or obligations changed.",
+        "severity": "minor",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2026-03-09",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "California Device Protection Request"
+          ],
+          "context_before": [
+            "Amazon Settlement"
+          ],
+          "context_after": [
+            "Quick solutions"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260223152510/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20260309022739/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon adds a California device protection request option to its terms",
+        "summary": "Amazon added a heading called \"California Device Protection Request\" near the \"Amazon Settlement\" section and the \"Quick solutions\" section. The text provided shows only the heading, with no details of what the request does, so it is unclear what rights or obligations change for users.",
+        "severity": "minor",
+        "categories": [
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2026-05-19",
+      "source": "archive",
+      "changed_words": 11,
+      "hunks": [
+        {
+          "removed": [
+            "Amazon Subscription Boxes",
+            "Top subscription boxes – right to your door"
+          ],
+          "added": [],
+          "context_before": [
+            "& Safety Alerts"
+          ],
+          "context_after": [
+            "PillPack"
+          ],
+          "changed_words": 11
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260403015007/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20260519193047/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon removes Subscription Boxes mention from its terms page",
+        "summary": "Amazon removed a line promoting its Subscription Boxes service from the terms document, with no new wording added in its place. This appears to be a page-content update and does not appear to change any user rights or obligations.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "terms",
+      "date": "2026-08-14",
+      "source": "archive",
+      "changed_words": 1814,
+      "hunks": [
+        {
+          "removed": [
+            "Help & Customer Service",
+            "Find more solutions",
+            "Security and Privacy",
+            "›",
+            "Legal Policies",
+            "›"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "Conditions of Use"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "We offer a wide range of Amazon Services, and sometimes additional terms may apply. When you use an Amazon Service (for example, Your Profile, Gift Cards, Amazon Video, Your Media Library, Amazon devices, or Amazon applications) you also will be subject to the guidelines, terms and agreements applicable to that Amazon Service (\"Service Terms\"). If these Conditions of Use are inconsistent with the Service Terms, those Service Terms will control."
+          ],
+          "added": [
+            "We offer a wide range of Amazon Services that may be subject to additional terms.",
+            "When you use an Amazon Service (for example, Alexa, Amazon Music, Gift Cards, or Prime",
+            "Video) you also will be subject to the terms applicable to that Amazon Service (the",
+            "\"Service Terms\"). For example, if you use Alexa on any Amazon or third-party product",
+            "or service, you agree to the Alexa Terms of Use. If these Conditions of Use are inconsistent with the Service Terms, those Service",
+            "Terms will control."
+          ],
+          "context_before": [
+            "Please read these conditions carefully."
+          ],
+          "context_after": [
+            "PRIVACY"
+          ],
+          "changed_words": 57
+        },
+        {
+          "removed": [
+            "Click here to see a non-exhaustive list of Amazon trademarks. In addition, graphics, logos, page headers, button icons, scripts, and service names included in or made available through any Amazon Service are trademarks or trade dress of Amazon in the U.S. and other countries. Amazon's trademarks and trade dress may not be used in connection with any product or service that is not Amazon's or in any manner that is likely to cause confusion among customers. All other trademarks not owned by Amazon that appear in any Amazon Service are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by Amazon."
+          ],
+          "added": [
+            "Amazon's trademarks and trade dress may not be used in connection with any product",
+            "or service that is not Amazon's or in any manner that is likely to cause confusion",
+            "among customers. Trademarks not owned by Amazon that appear in any Amazon Service",
+            "are the property of their respective owners, who may or may not be affiliated with,",
+            "connected to, or sponsored by Amazon."
+          ],
+          "context_before": [
+            "TRADEMARKS"
+          ],
+          "context_after": [
+            "LICENSE AND ACCESS"
+          ],
+          "changed_words": 48
+        },
+        {
+          "removed": [
+            "Any dispute or claim relating in any way to your use of any Amazon Service will be adjudicated in the state or Federal courts in King County, Washington, and you consent to exclusive jurisdiction and venue in these courts. We each waive any right to a jury trial."
+          ],
+          "added": [
+            "YOU AND WE AGREE THAT ANY DISPUTE OR CLAIM RELATING IN ANY WAY TO YOUR USE OF ANY",
+            "AMAZON SERVICE, OR TO ANY PRODUCTS OR SERVICES SOLD OR DISTRIBUTED BY AMAZON OR THROUGH",
+            "AMAZON.COM, WILL BE RESOLVED BY BINDING ARBITRATION RATHER THAN IN COURT. The only",
+            "exceptions are: (i) if the dispute or claim qualifies for small claims court in the",
+            "jurisdiction in which you reside, then you or we may sue there instead; (ii) you or",
+            "we may seek injunctive relief in court to stop infringement or misuse of intellectual",
+            "property rights (like trademarks, copyrights, and patents), or to restrain future",
+            "violations of the law for the benefit of the general public as a whole, rather than",
+            "a subset of similarly situated persons; and (iii) all disputes about whether you or",
+            "we complied with the pre-arbitration dispute resolution procedure set forth below",
+            "(which is a condition precedent to filing arbitration) must be decided by a court",
+            "and not by an arbitrator. All other disputes, claims, and requests for relief must",
+            "be arbitrated, regardless of when they arose, which means you and we are each waiving",
+            "our right to sue in court and have a judge or jury trial. This arbitration agreement",
+            "is governed by the Federal Arbitration Act (“FAA”), federal arbitration law, and the",
+            "law of the State of Washington. There is no judge or jury in arbitration, and court",
+            "review of an arbitration award is limited. A neutral arbitrator will resolve the dispute",
+            "or claim and must follow the terms of this agreement as a court would.",
+            "Class Action Waiver. YOU AND WE AGREE THAT ANY ARBITRATION PROCEEDING WILL BE CONDUCTED ONLY ON AN INDIVIDUAL",
+            "BASIS AND NOT IN A CLASS OR REPRESENTATIVE ACTION. You and we may only seek or obtain",
+            "individualized relief in arbitration, and claims or requests for public injunctive",
+            "relief or relief where you or we act in a representative capacity are not allowed.",
+            "Mandatory Pre-Arbitration Dispute Resolution. If you have a dispute or claim subject to this arbitration agreement, you must first",
+            "contact customer service to try to resolve it. If customer service can’t resolve it",
+            "and you wish to pursue arbitration, you must complete the dispute resolution procedure",
+            "set forth here, including submitting a completed Notice of Dispute using this Claim Form and negotiating in good faith for 60 days. We will provide you the same information",
+            "via your Amazon account’s primary email address if we have an arbitrable dispute with",
+            "you and will follow the same dispute resolution procedure.",
+            "Arbitration Process and Procedure. If you and we do not reach a resolution within 60 days from receiving a notice of",
+            "dispute or after completing a timely requested settlement conference, whichever is",
+            "later, then you or we may initiate binding arbitration. Arbitration shall: (i) be",
+            "administered by JAMS pursuant to the JAMS Streamlined Arbitration Rules & Procedures;",
+            "(ii) be conducted by a single arbitrator; and (iii) take place virtually, in the county",
+            "where you reside, or in any other location mutually agreed upon. To the extent this",
+            "arbitration agreement conflicts with the JAMS Policy on Consumer Arbitrations Pursuant",
+            "to Pre-Dispute Clauses Minimum Standards for Procedural Fairness (the “Minimum Standards”),",
+            "then the Minimum Standards shall take precedence. The arbitrator shall issue a written",
+            "award that states the disposition of each claim and provides a concise statement of",
+            "the essential findings and conclusions on which it is based. You and we agree that",
+            "any awards issued in other arbitrations will have no precedential or preclusive effect",
+            "in any arbitration between us unless you and we were parties to the prior award.",
+            "Mass Arbitration. If 25 or more demands for arbitration are filed within six months relating to the",
+            "same or similar subject matter and sharing common issues of law or fact, and counsel",
+            "for the parties submitting the demands are the same or coordinated in any fashion,",
+            "you and we agree that this will constitute a “Mass Arbitration.” If a Mass Arbitration",
+            "is commenced by either party, you and we agree that (i) the JAMS Mass Arbitration",
+            "Procedures and Guidelines shall apply, and (ii) the Process Administrator appointed",
+            "by JAMS shall group the arbitration demands into batches of at least 25 and provide",
+            "for resolution of each batch with one set of administrative fees and a single arbitrator",
+            "assigned per batch. If more than 500 arbitration demands are filed in a Mass Arbitration,",
+            "then the Process Administrator shall group the arbitration demands into batches of",
+            "at least 100. If more than 2500 arbitration demands are filed in a Mass Arbitration,",
+            "then the Process Administrator shall group the arbitration demands into batches of",
+            "at least 500. You and we further agree to disclose to each other (i) all relationships",
+            "with third-party litigation funders related to the Mass Arbitration and copies of",
+            "all applicable litigation funding agreements; and (ii) any financial interest that",
+            "you or we have assigned or transferred to a third party (excluding either party's",
+            "counsel of record) in connection with the Mass Arbitration and any agreements governing",
+            "that assignment or transfer.",
+            "Appeal rights. You and we agree that the JAMS Optional Appeal Procedures will apply in any Mass",
+            "Arbitration and in any arbitration in which either you or we receive a final award",
+            "requiring payment of $250,000 or more. If multiple parties appeal from a final award",
+            "in a Mass Arbitration, the appeals shall be batched in the same or similar manner",
+            "as the underlying arbitrations.",
+            "Delegation and Severability. You and we each agree that the arbitrator shall have exclusive authority to resolve",
+            "all disputes relating in any way to the interpretation, applicability, enforceability,",
+            "or formation of this arbitration agreement, including disputes about whether a particular",
+            "claim or demand for relief is subject to arbitration and whether this arbitration",
+            "agreement is unconscionable, illusory, or otherwise unenforceable. If the arbitrator",
+            "determines that you and we are precluded from arbitrating any claim or demand for",
+            "relief, then that claim or demand for relief (and only that claim or demand for relief)",
+            "must be severed from the arbitration. You and we agree that any severed claim or demand",
+            "for relief, any request for public injunctive relief, and any dispute about whether",
+            "you or we complied with the pre-arbitration dispute resolution procedure may be brought",
+            "only in state or federal court in King County, Washington, where you and we consent",
+            "to personal jurisdiction and venue and waive any right to a jury trial. If any provision",
+            "in this arbitration agreement is held unenforceable, then that provision shall be",
+            "severed, with the remainder of the agreement remaining in full force and effect."
+          ],
+          "context_before": [
+            "DISPUTES"
+          ],
+          "context_after": [
+            "APPLICABLE LAW"
+          ],
+          "changed_words": 1080
+        },
+        {
+          "removed": [
+            "By using any Amazon Service, you agree that applicable federal law, and the laws of the state of Washington, without regard to principles of conflict of laws, will govern these Conditions of Use and any dispute of any sort that might arise between you and Amazon."
+          ],
+          "added": [
+            "By using any Amazon Service, you agree that applicable federal law, and the laws",
+            "of the state of Washington, without regard to principles of conflict of laws, will",
+            "govern these Conditions of Use and any dispute of any sort that might arise between",
+            "you and Amazon except for disputes arising from personal injury or physical harm to",
+            "property allegedly caused by products purchased using Amazon Services. Such disputes",
+            "will be governed by the law of the state in which the personal injury or physical",
+            "harm to property occurred."
+          ],
+          "context_before": [
+            "APPLICABLE LAW"
+          ],
+          "context_after": [
+            "SITE POLICIES, MODIFICATION, AND SEVERABILITY"
+          ],
+          "changed_words": 44
+        },
+        {
+          "removed": [
+            "Please review our other policies, such as our pricing policy, posted on this site. These policies also govern your use of Amazon Services. We reserve the right to make changes to our site, policies, Service Terms, and these Conditions of Use at any time. If any of these conditions shall be deemed invalid, void, or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition."
+          ],
+          "added": [
+            "Please review our other policies, such as our pricing policy, posted on this site. These policies also govern your use of Amazon Services. We",
+            "reserve the right to make changes to our site, policies, Service Terms, and these",
+            "Conditions of Use at any time. By using Amazon Services after such changes, you agree",
+            "to be bound by them. If any of these conditions shall be deemed invalid, void, or",
+            "for any reason unenforceable, that condition shall be deemed severable and shall not",
+            "affect the validity and enforceability of any remaining condition."
+          ],
+          "context_before": [
+            "SITE POLICIES, MODIFICATION, AND SEVERABILITY"
+          ],
+          "context_after": [
+            "Governing Language"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "https://amazon.com"
+          ],
+          "added": [
+            "https://www.amazon.com"
+          ],
+          "context_before": [
+            "Seattle, WA 98108-1226"
+          ],
+          "context_after": [
+            "ADDITIONAL AMAZON SOFTWARE TERMS"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "The terms in this section (\"Agent Terms\") apply if you use, allow, enable, or cause the deployment of an Agent to access, use, or interact with any Amazon Services. For the purposes of these Agent Terms, \"Agent” means any software or service that takes autonomous or semi-autonomous action on behalf of, or at the instruction of, any person or entity.",
+            "Transparency and Consent. No Agent may access, use, or interact with Amazon Services unless, at all times, it identifies itself and operates in strict accordance with the requirements in section 3 of these Agent Terms. In addition, no Agent may access, use, or interact with Amazon Services if we have requested that the Agent refrain from accessing, using, or interacting with any Amazon Service.",
+            "Limitation on Access. At our sole discretion, we may limit, including by technical measures, whether and how any Agent accesses, uses, and interacts with Amazon Services.",
+            "Technical Requirements. Agents must:In all HTTP/HTTPS requests, identify that the request is from an Agent and disclose the name of the Agent by including the following in the request's user agent string:"
+          ],
+          "added": [
+            "The terms in this section (\"Agent Terms\") apply if you use, allow, enable, or cause",
+            "the deployment of an Agent to access, use, or interact with any Amazon Services. For",
+            "the purposes of these Agent Terms, \"Agent\" means any software or service that takes",
+            "autonomous or semi-autonomous action on behalf of, or at the instruction of, any person",
+            "or entity.",
+            "Transparency and Consent. No Agent may access, use, or interact with Amazon Services unless, at all times,",
+            "it identifies itself and operates in strict accordance with the requirements in section",
+            "3 of these Agent Terms. In addition, no Agent may access, use, or interact with Amazon",
+            "Services if we have requested that the Agent refrain from accessing, using, or interacting",
+            "with any Amazon Service.",
+            "Limitation on Access. At our sole discretion, we may limit, including by technical measures, whether and",
+            "how any Agent accesses, uses, and interacts with Amazon Services.",
+            "Technical Requirements. Agents must:",
+            "i. In all HTTP/HTTPS requests, identify that the request is from an Agent and disclose",
+            "the name of the Agent by including the following in the request's user agent string:"
+          ],
+          "context_before": [
+            "Agents"
+          ],
+          "context_after": [
+            "\"Agent/[agent name]\" (e.g., Agent/AmazonAgent)"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Not conceal or obfuscate that any access, use, or interactions are from an Agent, such as by (a) mimicking the speed or pattern of human keystrokes, page navigation, or other interactions or (b) completing or circumventing CAPTCHAs or other measures intended to distinguish computers from humans.",
+            "Respond truthfully to any question or prompt seeking to determine if interactions are coming from a human or a computer.",
+            "Not circumvent or otherwise avoid any measure intended to block, limit, modify, or control whether and how Agents access, use, or interact with an Amazon Service."
+          ],
+          "added": [
+            "ii. Not conceal or obfuscate that any access, use, or interactions are from an Agent,",
+            "such as by (a) mimicking the speed or pattern of human keystrokes, page navigation,",
+            "or other interactions or (b) completing or circumventing CAPTCHAs or other measures",
+            "intended to distinguish computers from humans.",
+            "iii. Respond truthfully to any question or prompt seeking to determine if interactions",
+            "are coming from a human or a computer.",
+            "iv. Not circumvent or otherwise avoid any measure intended to block, limit, modify,",
+            "or control whether and how Agents access, use, or interact with an Amazon Service."
+          ],
+          "context_before": [
+            "\"Agent/[agent name]\" (e.g., Agent/AmazonAgent)"
+          ],
+          "context_after": [
+            "HOW TO SERVE A SUBPOENA OR OTHER LEGAL PROCESS"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "A statement by you that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and",
+            "A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.",
+            "Was this information helpful?",
+            "Yes",
+            "No",
+            "Thank you for your feedback.",
+            "Please select what best describes the information:",
+            "This information is confusing or wrong",
+            "This isn't the information I was looking for",
+            "I don't like this policy",
+            "Submit",
+            "Thanks! While we're unable to respond directly to your feedback,",
+            "we'll use this information to improve our online Help.",
+            "‹",
+            "All Help Topics",
+            "Legal Policies",
+            "Consumer Health Data Privacy Disclosure",
+            "3rd Party Licensing Notice",
+            "AMAZON INFLUENCER TERMS & CONDITIONS FOR SPONSORED CONTENT",
+            "Conditions of Use",
+            "Communications with Amazon Employees",
+            "Amazon.com Privacy Notice",
+            "Amazon Group Companies",
+            "Amazon Trademark Usage Guidelines",
+            "Non-Exhaustive List of Amazon Trademarks",
+            "Amazon.com Gift Card and Electronic Message Customization Service Terms",
+            "Generative AI Development Disclosure",
+            "Amazon Settlement",
+            "California Device Protection Request",
+            "Quick solutions",
+            "Your Orders",
+            "Track or cancel orders",
+            "Your Orders",
+            "Track or cancel orders",
+            "Returns & Refunds",
+            "Exchange or return items",
+            "Returns & Refunds",
+            "Exchange or return items",
+            "Manage Prime",
+            "Cancel or view benefits",
+            "Manage Prime",
+            "Cancel or view benefits",
+            "Payment Settings",
+            "Add or edit payment methods",
+            "Payment Settings",
+            "Add or edit payment methods",
+            "Carrier Info",
+            "Shipping carrier information",
+            "Carrier Info",
+            "Shipping carrier information",
+            "Account Settings",
+            "Change email or password",
+            "Account Settings",
+            "Change email or password",
+            "Back to top",
+            "Get to Know Us",
+            "Careers",
+            "Amazon Newsletter",
+            "About Amazon",
+            "Accessibility",
+            "Sustainability",
+            "Press Center",
+            "Investor Relations",
+            "Amazon Devices",
+            "Amazon Science",
+            "Make Money with Us",
+            "Sell on Amazon",
+            "Sell apps on Amazon",
+            "Supply to Amazon",
+            "Protect & Build Your Brand",
+            "Become an Affiliate",
+            "Become a Delivery Driver",
+            "Start a Package Delivery Business",
+            "Advertise Your Products",
+            "Self-Publish with Us",
+            "Become an Amazon Hub Partner",
+            "›See More Ways to Make Money",
+            "Amazon Payment Products",
+            "Amazon Visa",
+            "Amazon Store Card",
+            "Amazon Secured Card",
+            "Amazon Business Card",
+            "Shop with Points",
+            "Credit Card Marketplace",
+            "Reload Your Balance",
+            "Gift Cards",
+            "Amazon Currency Converter",
+            "Let Us Help You",
+            "Your Account",
+            "Your Orders",
+            "Shipping Rates & Policies",
+            "Amazon Prime",
+            "Returns & Replacements",
+            "Manage Your Content and Devices",
+            "Recalls and Product Safety Alerts",
+            "Registry & Gift List",
+            "Help",
+            "English",
+            "United States",
+            "Amazon Music",
+            "Stream millions",
+            "of songs",
+            "Amazon Ads",
+            "Reach customers",
+            "wherever they",
+            "spend their time",
+            "6pm",
+            "Score deals",
+            "on fashion brands",
+            "AbeBooks",
+            "Books, art",
+            "& collectibles",
+            "ACX",
+            "Audiobook Publishing",
+            "Made Easy",
+            "Sell on Amazon",
+            "Start a Selling Account",
+            "Veeqo",
+            "Shipping Software",
+            "Inventory Management",
+            "Amazon Business",
+            "Everything For",
+            "Your Business",
+            "Amazon Fresh",
+            "Groceries & More",
+            "Right To Your Door",
+            "AmazonGlobal",
+            "Ship Orders",
+            "Internationally",
+            "Home Services",
+            "Experienced Pros",
+            "Happiness Guarantee",
+            "Amazon Web Services",
+            "Scalable Cloud",
+            "Computing Services",
+            "Audible",
+            "Listen to Books & Original",
+            "Audio Performances",
+            "Box Office Mojo",
+            "Find Movie",
+            "Box Office Data",
+            "Goodreads",
+            "Book reviews",
+            "& recommendations",
+            "IMDb",
+            "Movies, TV",
+            "& Celebrities",
+            "IMDbPro",
+            "Get Info Entertainment",
+            "Professionals Need",
+            "Kindle Direct Publishing",
+            "Indie Digital & Print Publishing",
+            "Made Easy",
+            "Amazon Photos",
+            "Unlimited Photo Storage",
+            "Free With Prime",
+            "Prime Video Direct",
+            "Video Distribution",
+            "Made Easy",
+            "Shopbop",
+            "Designer",
+            "Fashion Brands",
+            "Amazon Resale",
+            "Great Deals on",
+            "Quality Used Products",
+            "Whole Foods Market",
+            "America’s Healthiest",
+            "Grocery Store",
+            "Woot!",
+            "Deals and",
+            "Shenanigans",
+            "Zappos",
+            "Shoes &",
+            "Clothing",
+            "Ring",
+            "Smart Home",
+            "Security Systems",
+            "eero WiFi",
+            "Stream 4K Video",
+            "in Every Room",
+            "Blink",
+            "Smart Security",
+            "for Every Home",
+            "Neighbors App",
+            "Real-Time Crime",
+            "& Safety Alerts",
+            "PillPack",
+            "Pharmacy Simplified",
+            "Amazon Renewed",
+            "Refurbished tech",
+            "you can trust",
+            "Conditions of Use",
+            "Privacy Notice",
+            "Consumer Health Data Privacy Disclosure",
+            "Your Ads Privacy Choices",
+            "© 1996-2026, Amazon.com, Inc. or its affiliates"
+          ],
+          "added": [
+            "A statement by you that you have a good-faith belief that the disputed use is not",
+            "authorized by the copyright owner, its agent, or the law; and",
+            "A statement by you, made under penalty of perjury, that the above information in your",
+            "notice is accurate and that you are the copyright owner or authorized to act on the",
+            "copyright owner's behalf."
+          ],
+          "context_before": [
+            "Your address, telephone number, and e-mail address;"
+          ],
+          "context_after": [],
+          "changed_words": 546
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260604195102/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "archive_after": "https://web.archive.org/web/20260814220521/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM",
+      "ai": {
+        "headline": "Amazon moves most disputes from court to binding arbitration, with class action waiver",
+        "summary": "Amazon now requires most disputes about its services, products, or sales to be settled through binding arbitration instead of court, and bars class actions, so individuals can only pursue individual claims. Small claims court, certain injunctive relief requests, and disputes over the required pre-arbitration process remain open to court, and the Washington state courts clause that previously governed disputes has been replaced.",
+        "severity": "major",
+        "categories": [
+          "legal",
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-25",
+      "words": 3622,
+      "archive": "https://web.archive.org/web/20230125173756/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-02-06",
+      "words": 3622,
+      "archive": "https://web.archive.org/web/20230206083106/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-03-06",
+      "words": 3625,
+      "archive": "https://web.archive.org/web/20230306000417/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-04-04",
+      "words": 3617,
+      "archive": "https://web.archive.org/web/20230404222435/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-07-03",
+      "words": 3614,
+      "archive": "https://web.archive.org/web/20230703023414/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-08-17",
+      "words": 3612,
+      "archive": "https://web.archive.org/web/20230817144423/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-09-19",
+      "words": 3600,
+      "archive": "https://web.archive.org/web/20230919043824/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-10-18",
+      "words": 3600,
+      "archive": "https://web.archive.org/web/20231018224013/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-11-07",
+      "words": 3600,
+      "archive": "https://web.archive.org/web/20231107150540/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2023-12-11",
+      "words": 3591,
+      "archive": "https://web.archive.org/web/20231211141805/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-01-17",
+      "words": 3590,
+      "archive": "https://web.archive.org/web/20240117193700/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-03-04",
+      "words": 3590,
+      "archive": "https://web.archive.org/web/20240304140420/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-04-04",
+      "words": 3600,
+      "archive": "https://web.archive.org/web/20240404042225/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-07-01",
+      "words": 3600,
+      "archive": "https://web.archive.org/web/20240701231306/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-08-02",
+      "words": 3530,
+      "archive": "https://web.archive.org/web/20240802202544/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-09-08",
+      "words": 3609,
+      "archive": "https://web.archive.org/web/20240908121622/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-10-14",
+      "words": 3609,
+      "archive": "https://web.archive.org/web/20241014090020/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-11-01",
+      "words": 3609,
+      "archive": "https://web.archive.org/web/20241101091014/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2024-12-23",
+      "words": 3609,
+      "archive": "https://web.archive.org/web/20241223232406/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-01-15",
+      "words": 3605,
+      "archive": "https://web.archive.org/web/20250115222618/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-03-03",
+      "words": 3605,
+      "archive": "https://web.archive.org/web/20250303230543/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-04-23",
+      "words": 3605,
+      "archive": "https://web.archive.org/web/20250423233834/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-05-13",
+      "words": 3605,
+      "archive": "https://web.archive.org/web/20250513193656/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-06-20",
+      "words": 3992,
+      "archive": "https://web.archive.org/web/20250620144026/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-07-07",
+      "words": 3989,
+      "archive": "https://web.archive.org/web/20250707214915/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-08-27",
+      "words": 3987,
+      "archive": "https://web.archive.org/web/20250827163123/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2025-10-22",
+      "words": 3987,
+      "archive": "https://web.archive.org/web/20251022183820/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-01-14",
+      "words": 3999,
+      "archive": "https://web.archive.org/web/20260114214648/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-02-23",
+      "words": 3993,
+      "archive": "https://web.archive.org/web/20260223152510/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-03-09",
+      "words": 3997,
+      "archive": "https://web.archive.org/web/20260309022739/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-04-03",
+      "words": 3997,
+      "archive": "https://web.archive.org/web/20260403015007/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-05-19",
+      "words": 3986,
+      "archive": "https://web.archive.org/web/20260519193047/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-06-04",
+      "words": 3986,
+      "archive": "https://web.archive.org/web/20260604195102/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-08-14",
+      "words": 4503,
+      "archive": "https://web.archive.org/web/20260814220521/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-09-12",
+      "words": 4503,
+      "archive": "https://web.archive.org/web/20260912014338/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-10-11",
+      "words": 4503,
+      "archive": "https://web.archive.org/web/20261011130014/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    },
+    {
+      "date": "2026-11-03",
+      "words": 4503,
+      "archive": "https://web.archive.org/web/20261103172801/https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM"
+    }
+  ]
+}

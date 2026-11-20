@@ -1,0 +1,969 @@
+{
+  "date": "archive",
+  "company": "amazon",
+  "doc": "privacy",
+  "changes": [
+    {
+      "company": "amazon",
+      "doc": "privacy",
+      "date": "2023-07-14",
+      "source": "archive",
+      "changed_words": 102,
+      "hunks": [
+        {
+          "removed": [
+            "third-party advertising at Amazon, including interest-based ads, please read our Interest-Based Ads notice. To adjust your advertising preferences, please go to the Advertising Preferences page."
+          ],
+          "added": [
+            "third-party advertising at Amazon, including interest-based ads, please read our Interest-Based Ads notice. To adjust your advertising preferences, please go to the Your Ads Privacy Choices page."
+          ],
+          "context_before": [
+            "interact with their content, advertising, and services. For more information about"
+          ],
+          "context_after": [
+            "Use of Third-Party Advertising Services: We provide ad companies with information that allows them to serve you with more"
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "the app again. Some ad companies also use this information to serve you relevant ads",
+            "from other advertisers. You can learn more about how to opt-out of interest-based",
+            "advertising by going to the Advertising Preferences page."
+          ],
+          "added": [
+            "the app again. While we do not share your specific shopping actions like purchases,",
+            "product views, or searches with ad companies, we may share an advertising identifier",
+            "and an estimate of the value of the ads they show you on our behalf so they can serve",
+            "you with more effective Amazon ads. Some ad companies also use this information to",
+            "serve you relevant ads from other advertisers. You can learn more about how to opt-out",
+            "of personalized advertising (such as cross-context behavioral advertising) by going",
+            "to the Your Ads Privacy Choices page."
+          ],
+          "context_before": [
+            "identifier and data about that event so that you will not be served an ad to download"
+          ],
+          "context_after": [
+            "What Information Can I Access?"
+          ],
+          "changed_words": 62
+        },
+        {
+          "removed": [
+            "If you do not want to see interest-based ads, please adjust your Advertising Preferences."
+          ],
+          "added": [
+            "You may adjust your personalized advertising preferences by visiting Your Ads Privacy Choices."
+          ],
+          "context_before": [
+            "settings in the app or device."
+          ],
+          "context_after": [
+            "The Help feature on most browsers and devices will tell you how to prevent your browser"
+          ],
+          "changed_words": 23
+        },
+        {
+          "removed": [
+            "please contact Customer Service. Depending on your data choices, certain services may be limited or unavailable."
+          ],
+          "added": [
+            "you may go to Data Privacy Queries. Depending on your data choices, certain services may be limited or unavailable."
+          ],
+          "context_before": [
+            "access to or delete your personal information. If you wish to do any of these things,"
+          ],
+          "context_after": [
+            "Are Children Allowed to Use Amazon Services?"
+          ],
+          "changed_words": 11
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230603061825/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "archive_after": "https://web.archive.org/web/20230714101836/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "ai": {
+        "headline": "Amazon now shares ad value estimates and identifiers with ad companies",
+        "summary": "Amazon's privacy policy now says it may share an advertising identifier and an estimate of the value of ads shown to you with ad companies, while stating it does not share your specific shopping actions such as purchases, product views, or searches. Several links were also renamed: ad preferences now point to a \"Your Ads Privacy Choices\" page, and data access or deletion requests now go through \"Data Privacy Queries\" instead of Customer Service.",
+        "severity": "major",
+        "categories": [
+          "advertising",
+          "data_sharing",
+          "your_rights"
+        ],
+        "what_you_can_do": "Visit the Your Ads Privacy Choices page to opt out of personalized advertising, including cross-context behavioral advertising.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "privacy",
+      "date": "2023-08-18",
+      "source": "archive",
+      "changed_words": 61,
+      "hunks": [
+        {
+          "removed": [
+            "EU-US and Swiss-US Privacy Shield"
+          ],
+          "added": [
+            "EU-US and Swiss-US Data Privacy Framework"
+          ],
+          "context_before": [
+            "Are Children Allowed to Use Amazon Services?"
+          ],
+          "context_after": [
+            "Additional State-Specific Privacy Disclosures"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "EU-US and Swiss-US Privacy Shield",
+            "Amazon.com, Inc. participates in the EU-US and Swiss-US Privacy Shield frameworks.",
+            "Click here to learn more."
+          ],
+          "added": [
+            "EU-US and Swiss-US Data Privacy Framework",
+            "Amazon.com, Inc. participates in the EU-US Data Privacy Framework, the UK Extension",
+            "to the EU-US Data Privacy Framework, and the Swiss-US Data Privacy Framework*. Click",
+            "here to learn more.",
+            "*We will not rely on the Swiss-US Data Privacy Framework or the UK Extension to the",
+            "EU-US Data Privacy Framework until they enter into force, but we adhere to their required",
+            "commitments in anticipation of their doing so."
+          ],
+          "context_before": [
+            "For more information, please see our Children's Privacy Disclosure."
+          ],
+          "context_after": [
+            "Additional State-Specific Privacy Disclosures"
+          ],
+          "changed_words": 58
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230714101836/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "archive_after": "https://web.archive.org/web/20230818021551/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "ai": {
+        "headline": "Amazon updates EU and Swiss data transfer framework references to Data Privacy Framework",
+        "summary": "Amazon replaced references to the old EU-US and Swiss-US Privacy Shield with the newer Data Privacy Framework, and now also mentions the UK Extension to that framework. This is a update to the name of the legal program Amazon relies on for transferring data from Europe, not a change to how Amazon handles data.",
+        "severity": "minor",
+        "categories": [
+          "data_sharing",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "privacy",
+      "date": "2024-04-24",
+      "source": "archive",
+      "changed_words": 54,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Please read our Additional State-Specific Privacy Disclosures and Consumer Health Data Privacy Disclosure for additional information about the processing of your personal data and your rights",
+            "under applicable U.S. state data privacy laws."
+          ],
+          "context_before": [
+            "Notice."
+          ],
+          "context_after": [
+            "What Personal Information About Customers Does Amazon Collect?"
+          ],
+          "changed_words": 33
+        },
+        {
+          "removed": [
+            "Additional State-Specific Privacy Disclosures"
+          ],
+          "added": [],
+          "context_before": [
+            "EU-US and Swiss-US Data Privacy Framework"
+          ],
+          "context_after": [
+            "Conditions of Use, Notices, and Revisions"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Additional State-Specific Privacy Disclosures",
+            "Click here to read additional state-specific privacy disclosures as required under applicable",
+            "laws."
+          ],
+          "added": [],
+          "context_before": [
+            "commitments in anticipation of their doing so."
+          ],
+          "context_after": [
+            "Conditions of Use, Notices, and Revisions"
+          ],
+          "changed_words": 17
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240301000953/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "archive_after": "https://web.archive.org/web/20240424164855/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "ai": {
+        "headline": "Amazon moves state privacy disclosures into a separate linked document",
+        "summary": "Amazon's privacy notice now points readers to separate \"Additional State-Specific Privacy Disclosures\" and a \"Consumer Health Data Privacy Disclosure\" for details on state privacy law rights and data processing. The state disclosure link was removed from the bottom section of the page, but the content it covered is now referenced in the main text instead.",
+        "severity": "minor",
+        "categories": [
+          "your_rights",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "privacy",
+      "date": "2025-02-26",
+      "source": "archive",
+      "changed_words": 48,
+      "hunks": [
+        {
+          "removed": [
+            "EU-US and Swiss-US Data Privacy Framework"
+          ],
+          "added": [
+            "EU-US Data Privacy Framework, UK Extension, and Swiss-US Data Privacy Framework"
+          ],
+          "context_before": [
+            "Are Children Allowed to Use Amazon Services?"
+          ],
+          "context_after": [
+            "Conditions of Use, Notices, and Revisions"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "EU-US and Swiss-US Data Privacy Framework"
+          ],
+          "added": [
+            "EU-US Data Privacy Framework, UK Extension, and Swiss-US Data Privacy Framework"
+          ],
+          "context_before": [
+            "For more information, please see our Children's Privacy Disclosure."
+          ],
+          "context_after": [
+            "Amazon.com, Inc. participates in the EU-US Data Privacy Framework, the UK Extension"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "*We will not rely on the Swiss-US Data Privacy Framework or the UK Extension to the",
+            "EU-US Data Privacy Framework until they enter into force, but we adhere to their required",
+            "commitments in anticipation of their doing so."
+          ],
+          "added": [],
+          "context_before": [
+            "here to learn more."
+          ],
+          "context_after": [
+            "Conditions of Use, Notices, and Revisions"
+          ],
+          "changed_words": 38
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250115222629/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "archive_after": "https://web.archive.org/web/20250226180118/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "ai": {
+        "headline": "Amazon now lists the UK Extension among its data transfer frameworks",
+        "summary": "Amazon now says it participates in the UK Extension to the EU-US Data Privacy Framework, alongside the EU-US and Swiss-US frameworks it already listed. Amazon also removed its earlier note that it would not rely on the Swiss-US framework or UK Extension until they took effect, so it now states participation without that caveat.",
+        "severity": "minor",
+        "categories": [
+          "data_sharing",
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "privacy",
+      "date": "2025-07-04",
+      "source": "archive",
+      "changed_words": 261,
+      "hunks": [
+        {
+          "removed": [
+            "personal information through Amazon websites, devices, products, services, online",
+            "and physical stores, and applications that reference this Privacy Notice (together",
+            "\"Amazon Services\"). By using Amazon Services, you are consenting to the practices described in this Privacy"
+          ],
+          "added": [
+            "personal information through Amazon products, services, stores, website and physical",
+            "locations, devices and applications that reference this Privacy Notice (together \"Amazon",
+            "Services\"). By using Amazon Services, you are consenting to the practices described in this Privacy"
+          ],
+          "context_before": [
+            "how Amazon.com and its affiliates (collectively \"Amazon\") collect and process your"
+          ],
+          "context_after": [
+            "Notice."
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "What Information Can I Access?"
+          ],
+          "added": [
+            "What Information Can I Access in My Account?"
+          ],
+          "context_before": [
+            "What About Advertising?"
+          ],
+          "context_after": [
+            "What Choices Do I Have?"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Click here to see examples of what we collect. You can choose not to provide certain information,",
+            "but then you might not be able to take advantage of many of our Amazon Services."
+          ],
+          "added": [
+            "You can choose not to provide certain information, but then you might not be able",
+            "to take advantage of many of our Amazon Services."
+          ],
+          "context_before": [
+            "Information You Give Us: We receive and store any information you provide in relation to Amazon Services."
+          ],
+          "context_after": [
+            "Automatic Information: We automatically collect and store certain types of information about your use of"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "such as the products and services you interact with. Click here to see examples of what we collect."
+          ],
+          "added": [
+            "such as the products and services you interact with."
+          ],
+          "context_before": [
+            "sensors, and other technology to gather information about your activity in the store,"
+          ],
+          "context_after": [
+            "Information from Other Sources: We might receive information about you from other sources, such as updated delivery"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "deliver your next purchase more easily. Click here to see additional examples of the information we receive."
+          ],
+          "added": [
+            "deliver your next purchase more easily.",
+            "See examples of information we collect or receive."
+          ],
+          "context_before": [
+            "and address information from our carriers, which we use to correct our records and"
+          ],
+          "context_after": [
+            "For What Purposes Does Amazon Use Your Personal Information?"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "service to you, and improve our services. For more information about Alexa voice services",
+            ", click here."
+          ],
+          "added": [
+            "service to you, and improve our services. You can read more about Alexa, Echo Devices, and Your Privacy."
+          ],
+          "context_before": [
+            "videos, and other personal information to respond to your requests, provide the requested"
+          ],
+          "context_after": [
+            "Comply with legal obligations. In certain cases, we collect and use your personal information to comply with laws."
+          ],
+          "changed_words": 17
+        },
+        {
+          "removed": [
+            "via different channels (e.g., by phone, email, chat)."
+          ],
+          "added": [
+            "via different channels (for example, by phone, email, chat)."
+          ],
+          "context_before": [
+            "Communicate with you. We use your personal information to communicate with you in relation to Amazon Services"
+          ],
+          "context_after": [
+            "Advertising. We use your personal information to display interest-based ads for features, products,"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [
+            "Click here for more information on how to manage the security settings of your device."
+          ],
+          "added": [
+            "Learn more about how to manage the security settings of your device at Digital Services and Device Support."
+          ],
+          "context_before": [
+            "loss of data. You can control these features and configure them based on your needs."
+          ],
+          "context_after": [
+            "It is important for you to protect against unauthorized access to your password and"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [
+            "for your Amazon account that is not used for other online accounts. Be sure to sign",
+            "off when finished using a shared computer. Click here for more information on how to sign off."
+          ],
+          "added": [
+            "for your Amazon account that is not used for other online accounts. Consider enhancing",
+            "your security by following the guidance at our Your Security page.",
+            "Be sure to sign off when finished using a shared computer. Read more information on",
+            "Signing Out of Your Amazon Account."
+          ],
+          "context_before": [
+            "to your computers, devices, and applications. We recommend using a unique password"
+          ],
+          "context_after": [
+            "What About Advertising?"
+          ],
+          "changed_words": 27
+        },
+        {
+          "removed": [
+            "third-party advertising at Amazon, including interest-based ads, please read our Interest-Based Ads notice. To adjust your advertising preferences, please go to the Your Ads Privacy Choices page."
+          ],
+          "added": [
+            "third-party advertising at Amazon, including interest-based ads, please read our Interest-Based Ads notice. To adjust your advertising preferences, please visit Your Ads Privacy Choices."
+          ],
+          "context_before": [
+            "interact with their content, advertising, and services. For more information about"
+          ],
+          "context_after": [
+            "Use of Third-Party Advertising Services: We provide ad companies with information that allows them to serve you with more"
+          ],
+          "changed_words": 7
+        },
+        {
+          "removed": [
+            "of personalized advertising (such as cross-context behavioral advertising) by going",
+            "to the Your Ads Privacy Choices page.",
+            "What Information Can I Access?"
+          ],
+          "added": [
+            "of personalized advertising (such as cross-context behavioral advertising) by visiting",
+            "Your Ads Privacy Choices.",
+            "What Information Can I Access in My Account?"
+          ],
+          "context_before": [
+            "serve you relevant ads from other advertisers. You can learn more about how to opt-out"
+          ],
+          "context_after": [
+            "You can access your information, including your name, address, payment options, profile"
+          ],
+          "changed_words": 12
+        },
+        {
+          "removed": [
+            "Account\" section of the website. Click here for a list of examples that you can access."
+          ],
+          "added": [
+            "Account\" section of the website."
+          ],
+          "context_before": [
+            "information, Prime membership, household settings, and purchase history in the \"Your"
+          ],
+          "context_after": [
+            "What Choices Do I Have?"
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "you may do so by logging out of your account here and blocking cookies on your browser.",
+            "You can manage the recommendations you receive in our store here, remove recommendations you don’t want to see here by selecting View All and Manage then selecting the Remove Items toggle that appears",
+            "at the top of the page, and edit your browsing history here."
+          ],
+          "added": [
+            "you may do so by signing out of your account and blocking cookies on your browser.",
+            "You can manage the recommendations you receive in our store at Improve Your Recommendations, and you can remove recommendations you don’t want to see by unchecking the “Use",
+            "this item for recommendations” toggle on the right side of the page for each item.",
+            "You can edit Your Browsing History, as well."
+          ],
+          "context_before": [
+            "If you want to browse our websites without linking the browsing history to your account,"
+          ],
+          "context_after": [
+            "You will also be able to opt out of certain other types of data usage by updating"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [
+            "your settings on the applicable Amazon website (e.g., in \"Manage Your Content and",
+            "Devices\"), device, or application. For more information click here. Most non-Amazon devices also provide users with the ability to change device permissions",
+            "(e.g., disable/access location services, contacts). For most devices, these controls",
+            "are located in the device's settings menu. If you have questions about how to change",
+            "your device permissions on devices manufactured by third parties, we recommend you",
+            "contact your mobile service carrier or your device manufacturer."
+          ],
+          "added": [
+            "your settings on the applicable Amazon website (for example, Manage Your Content and Devices), device, or application. Learn more about certain devices at our Privacy Settings FAQ page. Most non-Amazon devices also provide users with the ability to change device permissions",
+            "(for example, disable/access location services, contacts). For most devices, these",
+            "controls are located in the device's settings menu. If you have questions about how",
+            "to change your device permissions on devices manufactured by third parties, we recommend",
+            "you contact your mobile service carrier or your device manufacturer."
+          ],
+          "context_before": [
+            "You will also be able to opt out of certain other types of data usage by updating"
+          ],
+          "context_after": [
+            "If you are a seller, you can add or update certain information in Seller Central, update your account information by accessing your Seller Account Information, and adjust your email or other communications you receive from us by updating your"
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "If you shop in our physical stores, you can manage how certain data is used to analyze",
+            "the performance of our products and services, as well as learn more here."
+          ],
+          "added": [],
+          "context_before": [
+            "Author Portal and Author Central by accessing your accounts in the Author Portal and Author Central, respectively."
+          ],
+          "context_after": [
+            "In addition, to the extent required by applicable law, you may have the right to request"
+          ],
+          "changed_words": 30
+        },
+        {
+          "removed": [
+            "to the EU-US Data Privacy Framework, and the Swiss-US Data Privacy Framework. Click",
+            "here to learn more."
+          ],
+          "added": [
+            "to the EU-US Data Privacy Framework, and the Swiss-US Data Privacy Framework. Learn",
+            "more about the EU-US Data Privacy Framework, UK Extension, and Swiss-US Data Privacy Framework."
+          ],
+          "context_before": [
+            "Amazon.com, Inc. participates in the EU-US Data Privacy Framework, the UK Extension"
+          ],
+          "context_after": [
+            "Conditions of Use, Notices, and Revisions"
+          ],
+          "changed_words": 20
+        },
+        {
+          "removed": [
+            "Amazon Services metrics (e.g., the occurrences of technical errors, your interactions"
+          ],
+          "added": [
+            "Amazon Services metrics (for example, the occurrences of technical errors, your interactions"
+          ],
+          "context_before": [
+            "and any errors or event failures;"
+          ],
+          "context_after": [
+            "with service features and content, your settings preferences and backup information,"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20250624004332/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "archive_after": "https://web.archive.org/web/20250704022144/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "ai": {
+        "headline": "Amazon reorganizes privacy notice links and rewords wording, no new data uses",
+        "summary": "Amazon's privacy notice was mostly reworded and reorganized: \"click here\" links were replaced with descriptive page names, some headings were renamed (e.g., \"What Information Can I Access in My Account?\"), and a few sentences were shortened. The changes do not add new uses of your personal information, and the sentence about physical store data analysis opt-out was removed.",
+        "severity": "minor",
+        "categories": [
+          "your_rights",
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "privacy",
+      "date": "2026-01-12",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Generative AI Development Disclosure"
+          ],
+          "context_before": [
+            "Community Guidelines"
+          ],
+          "context_after": [
+            "Examples of Information Collected"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20251208001148/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "archive_after": "https://web.archive.org/web/20260112201329/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "ai": {
+        "headline": "Amazon adds a new section on generative AI development disclosure",
+        "summary": "Amazon added a new section titled \"Generative AI Development Disclosure\" between the Community Guidelines and Examples of Information Collected sections. The only change shown is the new heading, with no removed text and no body text provided, so the text alone does not show what new uses of data, if any, it describes.",
+        "severity": "moderate",
+        "categories": [
+          "ai_training",
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "amazon",
+      "doc": "privacy",
+      "date": "2026-07-04",
+      "source": "archive",
+      "changed_words": 151,
+      "hunks": [
+        {
+          "removed": [
+            "Information from Other Sources: We might receive information about you from other sources, such as updated delivery",
+            "and address information from our carriers, which we use to correct our records and",
+            "deliver your next purchase more easily."
+          ],
+          "added": [
+            "Information from Other Sources: We might receive information about you from other sources. For example, our carriers",
+            "may provide us with updated delivery and address information, which we use to keep",
+            "our records current and make delivery of your future purchases easier."
+          ],
+          "context_before": [
+            "such as the products and services you interact with."
+          ],
+          "context_after": [
+            "See examples of information we collect or receive."
+          ],
+          "changed_words": 31
+        },
+        {
+          "removed": [
+            "errors, and improve the usability and effectiveness of the Amazon Services."
+          ],
+          "added": [
+            "errors, and improve the usability and effectiveness of the Amazon Services. In so",
+            "doing, we use machine learning and artificial intelligence to support and enhance",
+            "the customer experience across our products and services. This includes using data",
+            "to develop or deploy our generative AI models and services. See our Generative AI Development Disclosure for more information."
+          ],
+          "context_before": [
+            "Provide, troubleshoot, and improve Amazon Services. We use your personal information to provide functionality, analyze performance, fix"
+          ],
+          "context_after": [
+            "Recommendations and personalization. We use your personal information to recommend features, products, and services that"
+          ],
+          "changed_words": 45
+        },
+        {
+          "removed": [
+            "via different channels (for example, by phone, email, chat)."
+          ],
+          "added": [
+            "via different channels (for example, by phone, email or chat)."
+          ],
+          "context_before": [
+            "Communicate with you. We use your personal information to communicate with you in relation to Amazon Services"
+          ],
+          "context_after": [
+            "Advertising. We use your personal information to display interest-based ads for features, products,"
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "use Login with Amazon or otherwise link your Amazon account to a third-party business;"
+          ],
+          "context_before": [
+            "offer your products or services on or through Amazon Services;"
+          ],
+          "context_after": [
+            "communicate with us by phone, email, or otherwise;"
+          ],
+          "changed_words": 14
+        },
+        {
+          "removed": [
+            "search results and links, including paid listings (such as Sponsored Links);"
+          ],
+          "added": [
+            "information about how you interact with ads served by Amazon on third-party websites and apps (learn more in our Interest-Based Ads notice);",
+            "content we receive from third parties to provide, develop, and improve Amazon Services,",
+            "such as advertising-related information and identifiers (as described in more detail",
+            "in our Interest-Based Ads notice);"
+          ],
+          "context_before": [
+            "information about your interactions with products and services offered by our subsidiaries;"
+          ],
+          "context_after": [
+            "information about internet-connected devices and services linked with Alexa; and"
+          ],
+          "changed_words": 58
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260601143111/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "archive_after": "https://web.archive.org/web/20260704025100/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+      "ai": {
+        "headline": "Amazon now uses customer data to develop and deploy its generative AI models",
+        "summary": "Amazon's privacy policy now says it uses your personal information, including data used to improve its services, to develop or deploy its generative AI models and services, and it points to a separate Generative AI Development Disclosure for details. The policy does not say whether an opt-out is available, so the change means your data may now help train Amazon's AI.",
+        "severity": "major",
+        "categories": [
+          "ai_training",
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-31",
+      "words": 3501,
+      "archive": "https://web.archive.org/web/20230131043540/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-02-08",
+      "words": 3501,
+      "archive": "https://web.archive.org/web/20230208160430/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-03-09",
+      "words": 3501,
+      "archive": "https://web.archive.org/web/20230309182436/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-04-04",
+      "words": 3501,
+      "archive": "https://web.archive.org/web/20230404222423/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 3501,
+      "archive": "https://web.archive.org/web/20230501090759/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-06-03",
+      "words": 3501,
+      "archive": "https://web.archive.org/web/20230603061825/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-07-14",
+      "words": 3561,
+      "archive": "https://web.archive.org/web/20230714101836/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-08-18",
+      "words": 3613,
+      "archive": "https://web.archive.org/web/20230818021551/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-09-12",
+      "words": 3613,
+      "archive": "https://web.archive.org/web/20230912183156/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-10-03",
+      "words": 3613,
+      "archive": "https://web.archive.org/web/20231003212521/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-11-13",
+      "words": 3613,
+      "archive": "https://web.archive.org/web/20231113040246/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2023-12-25",
+      "words": 3613,
+      "archive": "https://web.archive.org/web/20231225231059/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-01-08",
+      "words": 3613,
+      "archive": "https://web.archive.org/web/20240108065449/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 3613,
+      "archive": "https://web.archive.org/web/20240301000953/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-04-24",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20240424164855/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-05-14",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20240514043904/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-06-27",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20240627081226/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-07-08",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20240708022726/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-08-02",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20240802202537/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-09-03",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20240903084608/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-10-13",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20241013092341/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-11-08",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20241108131913/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2024-12-10",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20241210025628/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-01-15",
+      "words": 3626,
+      "archive": "https://web.archive.org/web/20250115222629/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-02-26",
+      "words": 3598,
+      "archive": "https://web.archive.org/web/20250226180118/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-03-03",
+      "words": 3598,
+      "archive": "https://web.archive.org/web/20250303230540/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-04-23",
+      "words": 3598,
+      "archive": "https://web.archive.org/web/20250423233837/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-05-13",
+      "words": 3598,
+      "archive": "https://web.archive.org/web/20250513161827/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-06-24",
+      "words": 3598,
+      "archive": "https://web.archive.org/web/20250624004332/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-07-04",
+      "words": 3575,
+      "archive": "https://web.archive.org/web/20250704022144/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-08-08",
+      "words": 3575,
+      "archive": "https://web.archive.org/web/20250808020856/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-09-08",
+      "words": 3575,
+      "archive": "https://web.archive.org/web/20250908182232/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-10-05",
+      "words": 3575,
+      "archive": "https://web.archive.org/web/20251005100220/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-11-14",
+      "words": 3575,
+      "archive": "https://web.archive.org/web/20251114021245/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2025-12-08",
+      "words": 3575,
+      "archive": "https://web.archive.org/web/20251208001148/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-01-12",
+      "words": 3579,
+      "archive": "https://web.archive.org/web/20260112201329/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-02-18",
+      "words": 3579,
+      "archive": "https://web.archive.org/web/20260218232638/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-03-03",
+      "words": 3579,
+      "archive": "https://web.archive.org/web/20260303100834/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-04-14",
+      "words": 3579,
+      "archive": "https://web.archive.org/web/20260414080505/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 3579,
+      "archive": "https://web.archive.org/web/20260501064807/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 3579,
+      "archive": "https://web.archive.org/web/20260601143111/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-07-04",
+      "words": 3684,
+      "archive": "https://web.archive.org/web/20260704025100/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-08-23",
+      "words": 3684,
+      "archive": "https://web.archive.org/web/20260823204158/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 3684,
+      "archive": "https://web.archive.org/web/20260901190605/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-10-02",
+      "words": 3684,
+      "archive": "https://web.archive.org/web/20261002060217/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 3684,
+      "archive": "https://web.archive.org/web/20261101060434/https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
+    }
+  ]
+}

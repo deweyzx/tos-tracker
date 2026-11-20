@@ -5,7 +5,7 @@ import { loadData, CATEGORY_LABELS, whenFound } from "../lib/data.js";
 
 const data = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-const { featured: f, changes, companies, policies, categoryCounts, historyPending, charts } = data;
+const { featured: f, changes, companies, policies, categoryCounts, historyPending, noArchive, charts } = data;
 
 const fmt = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 const fmtLong = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
@@ -150,6 +150,9 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
       {olderCount > 0 && <button class="ghost show-older" id="showOlder" type="button" hidden>Show {plural(olderCount, "older change")}</button>}
       <div class="empty" id="empty" style={changes.length ? "" : "display:block"}><b>No changes match this filter</b>Pick "All changes" to see everything. New changes appear here the morning they're found.</div>
       <p class="foot">A solid dot means the change was found in the last month; over the following year it fades to an outline. Changes from the Internet Archive are dated when the archive first saw the new version.</p>
+      {noArchive.length > 0 && (
+        <div class="pending"><div><b>No older history for {new Intl.ListFormat("en", { type: "disjunction" }).format(noArchive)}</b>The Internet Archive has no readable copies of {noArchive.length === 1 ? "its" : "their"} policies, so tracking starts from the first daily check.</div></div>
+      )}
       {historyPending.length > 0 && (
         <div class="pending"><div><b>History still loading for {historyPending.length} {historyPending.length === 1 ? "company" : "companies"}</b>Their older versions get read from the Internet Archive next.</div><div class="names">{historyPending.map((n) => <span>{n}</span>)}</div></div>
       )}

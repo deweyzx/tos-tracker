@@ -1,0 +1,1192 @@
+{
+  "date": "archive",
+  "company": "telegram",
+  "doc": "terms",
+  "changes": [
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2023-03-07",
+      "source": "archive",
+      "changed_words": 50,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "EN"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Telegram Premium is a subscription membership that unlocks exclusive features and improved functionality. By purchasing Telegram Premium, you agree that you are authorizing recurring monthly payments, which will be made to Telegram using the payment method you selected until the subscription is canceled by you or Telegram."
+          ],
+          "added": [
+            "Telegram Premium is a subscription membership that unlocks exclusive features and improved functionality. By purchasing Telegram Premium, you agree that you are authorizing recurring monthly or yearly payments, which will be made to Telegram using the payment method you selected until the subscription is canceled by you or Telegram."
+          ],
+          "context_before": [
+            "1. Introduction"
+          ],
+          "context_after": [
+            "Telegram uses third-party payment processors to securely facilitate purchases of Telegram Premium."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "7.4. Voice-to-text conversion",
+            "Premium Services include the optional ability to request the conversion of any voice message on Telegram to text. This technology is still evolving and there is no guarantee that every voice message you attempt to convert to text will be transcribed correctly or transcribed at all. The accuracy and availability of this technology depends on a third party (Google LLC, subsidiary of Alphabet Inc.), and we can not guarantee that it will always be accurate and available.",
+            "Read more about the privacy of this data in our Privacy Policy."
+          ],
+          "added": [
+            "7.4. Chat translation and Voice-to-text conversion",
+            "Premium Services include the optional ability to request the conversion of any video and voice message on Telegram to text. Additionally, the services include optional live translation for any chat, group or channel.",
+            "These technologies are still evolving and there is no guarantee that every message you attempt to either transcribe or translate will be processed correctly, or at all. The accuracy and availability of these technologies depend on a third party (Google LLC, subsidiary of Alphabet Inc.), and we can not guarantee that they will always be accurate and available.",
+            "Read more about the privacy of this data in our Privacy Policy"
+          ],
+          "context_before": [
+            "In general, users you interact with will not have to purchase a Telegram Premium subscription in order to view the content you share with them by the use of Premium Services."
+          ],
+          "context_after": [
+            "7.5. Increased Download Speed"
+          ],
+          "changed_words": 47
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230111000910/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20230307140538/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram Premium now offers yearly billing and live chat translation",
+        "summary": "Telegram Premium subscriptions can now be billed yearly as well as monthly, and the voice-to-text feature now also covers video messages. A new optional live translation feature for chats, groups, and channels has been added, and it is provided through Google, a third party, so accuracy and availability are not guaranteed.",
+        "severity": "moderate",
+        "categories": [
+          "account",
+          "data_sharing"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2023-06-05",
+      "source": "archive",
+      "changed_words": 3,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "EN"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "2.1 Refunds and Effective Cancellation"
+          ],
+          "added": [
+            "2.2 Refunds and Effective Cancellation"
+          ],
+          "context_before": [
+            "You can cancel Telegram Premium any time. To cancel your subscription, follow the instructions in the Telegram Premium section in the Settings of your Telegram account. If you purchased Telegram Premium using your Apple ID, you can cancel your subscription through your device's Account Settings or in the Manage Subscriptions section of the Apple App Store. If you purchased Telegram Premium using Google Play, you can cancel your subscriptions by visiting the Subscriptions section of Google Play."
+          ],
+          "context_after": [
+            "Your subscription will remain active from the time you cancel until the end of your current billing period, and you will not receive a refund or credit for any remaining days in your current billing period. At the end of your subscription you will lose access to all features associated with Telegram Premium."
+          ],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230512225838/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20230605131749/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram renumbers Premium refund section; cancellation terms unchanged",
+        "summary": "Telegram changed a section number from 2.1 to 2.2 for its Premium refunds and cancellation terms, and added a language label \"EN\" at the top of the page. The wording of the refund and cancellation rules itself is unchanged, so this does not change what users get or pay.",
+        "severity": "minor",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2023-11-02",
+      "source": "archive",
+      "changed_words": 73,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [
+            "RU"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Home"
+          ],
+          "added": [
+            "Главная"
+          ],
+          "context_before": [
+            "Twitter"
+          ],
+          "context_after": [
+            "FAQ"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Apps"
+          ],
+          "added": [
+            "Приложения"
+          ],
+          "context_before": [
+            "FAQ"
+          ],
+          "context_after": [
+            "API"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Protocol"
+          ],
+          "added": [
+            "Протокол"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Terms of Service"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+            "About"
+          ],
+          "added": [
+            "Telegram — это облачный мессенджер для мобильных устройств и компьютеров. Быстрый и безопасный.",
+            "О Telegram"
+          ],
+          "context_before": [
+            "Telegram"
+          ],
+          "context_after": [
+            "FAQ"
+          ],
+          "changed_words": 30
+        },
+        {
+          "removed": [
+            "Privacy",
+            "Press",
+            "Mobile Apps"
+          ],
+          "added": [
+            "Приватность",
+            "Для СМИ",
+            "Для мобильных"
+          ],
+          "context_before": [
+            "FAQ"
+          ],
+          "context_after": [
+            "iPhone/iPad"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Mobile Web",
+            "Desktop Apps"
+          ],
+          "added": [
+            "Мобильная веб-версия",
+            "Для компьютера"
+          ],
+          "context_before": [
+            "Android"
+          ],
+          "context_after": [
+            "PC/Mac/Linux"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Web-browser",
+            "Platform"
+          ],
+          "added": [
+            "Веб-версия",
+            "Платформы"
+          ],
+          "context_before": [
+            "macOS"
+          ],
+          "context_after": [
+            "API"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Translations"
+          ],
+          "added": [
+            "Переводы"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Instant View"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "About",
+            "Blog",
+            "Apps",
+            "Platform",
+            "Twitter"
+          ],
+          "added": [
+            "О Telegram",
+            "Блог",
+            "Приложения",
+            "Платформы",
+            "Для СМИ"
+          ],
+          "context_before": [
+            "Instant View"
+          ],
+          "context_after": [],
+          "changed_words": 12
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231004163222/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20231102234035/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram's terms page and site navigation now appear in Russian",
+        "summary": "Telegram's website text, including menus, headings, and the app description, has been translated from English into Russian. The changes are in language and labels only, and no new rules or user obligations appear in the text provided.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2023-12-02",
+      "source": "archive",
+      "changed_words": 597,
+      "hunks": [
+        {
+          "removed": [
+            "RU"
+          ],
+          "added": [
+            "EN"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Главная"
+          ],
+          "added": [
+            "Home"
+          ],
+          "context_before": [
+            "Twitter"
+          ],
+          "context_after": [
+            "FAQ"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Приложения"
+          ],
+          "added": [
+            "Apps"
+          ],
+          "context_before": [
+            "FAQ"
+          ],
+          "context_after": [
+            "API"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Протокол"
+          ],
+          "added": [
+            "Protocol"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Terms of Service"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "7.7. Boosts",
+            "Premium Services provide users with a number of “boosts” which they can assign to channels to contribute to increasing the level of these channels, with each level unlocking or extending certain features for the channel.",
+            "A purchased Telegram Premium subscription provides 4 boosts. Gifted subscriptions provide 1 boost to the gift recipient and 3 boosts to the gifter. Telegram Premium subscriptions distributed via giveaways in channels do not provide boosts to the accounts that activate them and instead boost the channel which organized the giveaway.",
+            "Leveling requirements, unlockable features and earned boosts may be altered or removed at any time.",
+            "7.8. Giveaways in Channels",
+            "Channel admins can organize giveaways at their expense, purchasing a number of premium subscriptions to be distributed among present or future subscribers and immediately gain 4 boosts per purchased subscription. The boosts received by the channel can’t be reassigned to another channel, they are activated the moment the giveaway is first launched and remain active for the purchased duration of the subscriptions distributed in the giveaway.",
+            "Telegram selects winners based on the criteria that channel administrators choose when setting up the giveaway. The results are final and cannot be altered or reversed. In the rare chance that a technical issue results in an unintended outcome, Telegram will attempt to rectify the situation but makes no guarantees to the organizers of a giveaway or its participants.",
+            "Winners of a giveaway will receive a shareable link that contains a unique gift code which confirms that they won and activates a Telegram Premium subscription, but does not provide any boosts for the user account that activated it.",
+            "Giveaways are available for purchase on Telegram’s store apps, direct and web versions and on Fragment. Prices may vary between each option. All purchases are nonrefundable. If there are not enough eligible participants to distribute all the prizes, the channel admins will receive all the undistributed premium activation links, to be used at the admins’ discretion. Undistributed prizes cannot be “rolled over” into other giveaways.",
+            "Admins who sponsored a giveaway are not entitled to a refund if they lose access to their channel. Reasons for losing access include but are not limited to being demoted, banned, transferring ownership, and the channel being deleted by its owner or restricted by Telegram due to violations of these Terms of Service or the terms of app stores.",
+            "Channels that mislead users into joining by means of giveaways that are later refunded with a third party (e.g., a bank) may be terminated or assigned a scam label and removed from Telegram search. Subscribers gained as a result of such actions may be removed from the channel sponsoring the giveaway, all channels listed in the selection criteria and other associated channels at our sole discretion.",
+            "Certain countries or jurisdictions may impose regulatory constraints on giveaways. If you run a giveaway, you are solely responsible for complying with applicable law. You explicitly acknowledge that Telegram is not liable in the event of sanctions, fees, and any form of legal or administrative action incurred as a result of or in relation to your use of the “Giveaway” feature provided by Telegram."
+          ],
+          "context_before": [
+            "In certain countries Telegram shows sponsored messages in one-to-many channels that have over 1000 subscribers. The subscribers of Telegram Premium won't see such sponsored messages displayed by Telegram. However, channels on Telegram are managed by other users, their administrators, who may publish their own content featuring third-party promotions or sponsorships. These ads are not part of the Telegram advertisement platform and subscribers of Telegram Premium may still see them."
+          ],
+          "context_after": [
+            "Telegram"
+          ],
+          "changed_words": 524
+        },
+        {
+          "removed": [
+            "Telegram — это облачный мессенджер для мобильных устройств и компьютеров. Быстрый и безопасный.",
+            "О Telegram"
+          ],
+          "added": [
+            "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+            "About"
+          ],
+          "context_before": [
+            "Telegram"
+          ],
+          "context_after": [
+            "FAQ"
+          ],
+          "changed_words": 30
+        },
+        {
+          "removed": [
+            "Приватность",
+            "Для СМИ",
+            "Для мобильных"
+          ],
+          "added": [
+            "Privacy",
+            "Press",
+            "Mobile Apps"
+          ],
+          "context_before": [
+            "FAQ"
+          ],
+          "context_after": [
+            "iPhone/iPad"
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [
+            "Мобильная веб-версия",
+            "Для компьютера"
+          ],
+          "added": [
+            "Mobile Web",
+            "Desktop Apps"
+          ],
+          "context_before": [
+            "Android"
+          ],
+          "context_after": [
+            "PC/Mac/Linux"
+          ],
+          "changed_words": 8
+        },
+        {
+          "removed": [
+            "Веб-версия",
+            "Платформы"
+          ],
+          "added": [
+            "Web-browser",
+            "Platform"
+          ],
+          "context_before": [
+            "macOS"
+          ],
+          "context_after": [
+            "API"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Переводы"
+          ],
+          "added": [
+            "Translations"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Instant View"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "О Telegram",
+            "Блог",
+            "Приложения",
+            "Платформы",
+            "Для СМИ"
+          ],
+          "added": [
+            "About",
+            "Blog",
+            "Apps",
+            "Platform",
+            "Press"
+          ],
+          "context_before": [
+            "Instant View"
+          ],
+          "context_after": [],
+          "changed_words": 12
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231102234035/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20231202123218/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram adds new Premium boost and giveaway terms and translates its site to English",
+        "summary": "Telegram's terms now add a section (7.7 and 7.8) explaining Premium boosts and channel giveaways, including that boosts can't be transferred, giveaway purchases are nonrefundable, and admins who lose channel access get no refund. Most other changes are translations of website menu and page labels from Russian to English, which don't change any rules.",
+        "severity": "moderate",
+        "categories": [
+          "account",
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2024-01-08",
+      "source": "archive",
+      "changed_words": 97,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "3.1 Refunding Services Obtained Through Third Parties",
+            "By issuing a chargeback or refund request for Premium subscriptions paid for through a third party, you agree to allow Telegram to release necessary data to that third party regarding your account status and Telegram Premium purchases."
+          ],
+          "context_before": [
+            "If you obtain a Telegram Premium subscription via a third party (e.g. Google Play, Apple App Store), your purchase may be further subject to the third party's terms as agreed between you and the third party. For paid services obtained via a third party, your billing relationship will be directly with the applicable third party."
+          ],
+          "context_after": [
+            "4. Termination"
+          ],
+          "changed_words": 44
+        },
+        {
+          "removed": [],
+          "added": [
+            "Channel admins can use the Giveaway feature to announce arbitrary prizes in addition to premium subscriptions. Should they choose to do so, they are solely responsible for delivering said prizes to giveaway winners. Telegram will not be liable if any disputes arise in relation to the prizes, their delivery or lack thereof."
+          ],
+          "context_before": [
+            "Certain countries or jurisdictions may impose regulatory constraints on giveaways. If you run a giveaway, you are solely responsible for complying with applicable law. You explicitly acknowledge that Telegram is not liable in the event of sanctions, fees, and any form of legal or administrative action incurred as a result of or in relation to your use of the “Giveaway” feature provided by Telegram."
+          ],
+          "context_after": [
+            "Telegram"
+          ],
+          "changed_words": 52
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20231202123218/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20240108171944/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram clarifies language, adds refund data sharing and giveaway prize terms",
+        "summary": "Telegram's terms now say that if you request a refund or chargeback for a Premium subscription bought through a third party such as Google Play or the Apple App Store, you agree Telegram may share your account status and Premium purchase data with that third party. The terms also now say channel admins can give away arbitrary prizes through Giveaways, not just Premium subscriptions, and that admins alone are responsible for delivering them and Telegram is not liable for disputes over them.",
+        "severity": "moderate",
+        "categories": [
+          "data_sharing",
+          "account",
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2024-04-16",
+      "source": "archive",
+      "changed_words": 95,
+      "hunks": [
+        {
+          "removed": [
+            "Citizens of EU countries and the United Kingdom must be at least 16 years old to sign up."
+          ],
+          "added": [
+            "Citizens of EU countries and the United Kingdom must be at least 18 years old to sign up.",
+            "If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Premium, Telegram Business, Bot Users, Mini App Users, Revenue Sharing with Content Creators, Telegram API Developers and Bot Developers."
+          ],
+          "context_before": [
+            "We reserve the right to update these Terms of Service later."
+          ],
+          "context_after": [
+            "Terms of Service for Telegram Premium"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [
+            "The services included in the Telegram Premium subscription (“Premium Services”) are listed in the Premium Section. From time to time, we may add new items into the Premium Services. We may also remove some of the existing Premium Services if we are no longer able to provide them for legal or technical reasons. In addition, some Premium Services may become free of charge for all Telegram users in the future."
+          ],
+          "added": [
+            "The services included in the Telegram Premium subscription (“Premium Services”) are listed in the Premium Section. From time to time, we may add new items into the Premium Services, including limited-time or promotional access to additional paid features and subscriptions, such as Telegram Business. In such cases, your access to those features is further subject to their specific Terms of Service.",
+            "We may also remove some of the existing Premium Services if we are no longer able to provide them for legal or technical reasons. In addition, some Premium Services may become free of charge for all Telegram users in the future or be offered as a separate membership tier."
+          ],
+          "context_before": [
+            "7.1. Included Services"
+          ],
+          "context_after": [
+            "7.2. Availability"
+          ],
+          "changed_words": 44
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240301204745/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20240416113120/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram raises minimum age for EU and UK users to 18",
+        "summary": "Telegram now requires users who are citizens of EU countries or the United Kingdom to be at least 18 years old to sign up, up from 16. The terms also now state that using optional features like Premium, Business, bots, or the API binds users to those features' separate terms.",
+        "severity": "moderate",
+        "categories": [
+          "children",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2024-07-20",
+      "source": "archive",
+      "changed_words": 55,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "EN"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Premium, Telegram Business, Bot Users, Mini App Users, Revenue Sharing with Content Creators, Telegram API Developers and Bot Developers."
+          ],
+          "added": [
+            "If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Stars, Telegram Premium, Telegram Business, Bot Users, Mini App Users, Content Creators, Telegram API Developers, and Bot Developers.",
+            "Terms of Service for Telegram Stars",
+            "Telegram users can acquire Telegram Stars, which are used to purchase digital goods and services from bots and mini-apps inside the Telegram app. Should you wish to use Telegram Stars, you in turn accept the Terms of Service for Telegram Stars."
+          ],
+          "context_before": [
+            "Citizens of EU countries and the United Kingdom must be at least 18 years old to sign up."
+          ],
+          "context_after": [
+            "Terms of Service for Telegram Premium"
+          ],
+          "changed_words": 54
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240604172342/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20240720002133/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram adds Stars terms covering in-app digital purchases",
+        "summary": "Telegram's terms now list a separate Terms of Service for Telegram Stars, a virtual currency users can buy and use to purchase digital goods and services from bots and mini-apps inside Telegram. Using Stars means accepting those separate terms, and the \"Revenue Sharing with Content Creators\" section has been renamed \"Content Creators.\"",
+        "severity": "moderate",
+        "categories": [
+          "your_content",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2024-10-04",
+      "source": "archive",
+      "changed_words": 30,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "EN"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [],
+          "added": [
+            "Engage in activities that are recognized as illegal in the majority of countries. This includes child abuse, selling or offering illegal goods and services (drugs, firearms, forged documents), etc."
+          ],
+          "context_before": [
+            "Post illegal pornographic content on publicly viewable Telegram channels, bots, etc."
+          ],
+          "context_after": [
+            "We reserve the right to update these Terms of Service later."
+          ],
+          "changed_words": 29
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20240901151759/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20241004202916/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram broadens its list of prohibited illegal activities in its Terms",
+        "summary": "Telegram's Terms now describe banned conduct as activities illegal in most countries, with examples including child abuse and selling drugs, firearms, or forged documents. Previously the rule focused on posting illegal pornographic content on public channels and bots. This is mainly a clarification of what users may not do, and it does not change what data Telegram collects or shares.",
+        "severity": "moderate",
+        "categories": [
+          "your_content",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2024-11-07",
+      "source": "archive",
+      "changed_words": 4,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Stars, Telegram Premium, Telegram Business, Bot Users, Mini App Users, Content Creators, Telegram API Developers, and Bot Developers."
+          ],
+          "added": [
+            "If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Stars, Telegram Premium, Telegram Business, Bot Users, Mini App Users, Content Creators, Telegram Gateway API, Telegram API Developers, and Bot Developers."
+          ],
+          "context_before": [
+            "Citizens of EU countries and the United Kingdom must be at least 18 years old to sign up."
+          ],
+          "context_after": [
+            "Terms of Service for Telegram Stars"
+          ],
+          "changed_words": 3
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241004202916/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20241107095148/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram adds Telegram Gateway API to list of optional service terms",
+        "summary": "Telegram's terms now list a Telegram Gateway API service among the optional features that come with their own additional terms, alongside the existing list. A stray \"EN\" language label was also removed from the page, which does not change any rules.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2025-01-01",
+      "source": "archive",
+      "changed_words": 6,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Protocol"
+          ],
+          "added": [
+            "Moderation"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Terms of Service"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Apps",
+            "Platform"
+          ],
+          "added": [],
+          "context_before": [
+            "Blog"
+          ],
+          "context_after": [
+            "Press"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [],
+          "added": [
+            "Moderation"
+          ],
+          "context_before": [
+            "Press"
+          ],
+          "context_after": [],
+          "changed_words": 1
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241201211349/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20250101171139/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram's terms page menu changed: \"Moderation\" link added, others removed",
+        "summary": "Telegram's terms page appears to have had its navigation links reshuffled: an \"EN\" language label and \"Apps Platform\" and \"Protocol\" links were removed, and a \"Moderation\" link was added. The provided text shows only menu and heading changes, not new rules about user data, content, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2026-02-03",
+      "source": "archive",
+      "changed_words": 36,
+      "hunks": [
+        {
+          "removed": [
+            "Citizens of EU countries and the United Kingdom must be at least 18 years old to sign up."
+          ],
+          "added": [
+            "Users in EU countries, the United Kingdom and Australia must be at least 18 years old to sign up."
+          ],
+          "context_before": [
+            "We reserve the right to update these Terms of Service later."
+          ],
+          "context_after": [
+            "If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Stars, Telegram Premium, Telegram Business, Bot Users, Mini App Users, Content Creators, Telegram Gateway API, Telegram API Developers, and Bot Developers."
+          ],
+          "changed_words": 9
+        },
+        {
+          "removed": [],
+          "added": [
+            "Telegram additionally prohibits data scraping as part of its Content Licensing and AI Scraping Terms, which apply to all users, businesses, and third-party services accessing the platform."
+          ],
+          "context_before": [
+            "If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Stars, Telegram Premium, Telegram Business, Bot Users, Mini App Users, Content Creators, Telegram Gateway API, Telegram API Developers, and Bot Developers."
+          ],
+          "context_after": [
+            "Terms of Service for Telegram Stars"
+          ],
+          "changed_words": 27
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260101074230/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20260203022048/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram raises minimum age in Australia to 18 and bans AI scraping",
+        "summary": "Telegram's terms now require users in Australia, as well as in the EU and UK, to be at least 18 to sign up, where before only EU and UK citizens were listed. The terms also now say that data scraping is prohibited under a Content Licensing and AI Scraping Terms document that applies to all users, businesses, and third-party services.",
+        "severity": "major",
+        "categories": [
+          "children",
+          "your_content",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2026-06-01",
+      "source": "archive",
+      "changed_words": 5,
+      "hunks": [
+        {
+          "removed": [
+            "EN"
+          ],
+          "added": [],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Moderation"
+          ],
+          "added": [
+            "Safety"
+          ],
+          "context_before": [
+            "API"
+          ],
+          "context_after": [
+            "Terms of Service"
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "Moderation"
+          ],
+          "added": [
+            "Safety"
+          ],
+          "context_before": [
+            "Press"
+          ],
+          "context_after": [],
+          "changed_words": 2
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260507103036/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20260601094849/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram renames \"Moderation\" to \"Safety\" and drops \"EN\" from its terms",
+        "summary": "Telegram's terms appear to have been relabeled: the word \"Moderation\" was replaced with \"Safety\" in the section headings and the \"EN\" label was removed. The changes shown do not add or remove any rules about user data, content, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "telegram",
+      "doc": "terms",
+      "date": "2026-07-05",
+      "source": "archive",
+      "changed_words": 5,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "EN"
+          ],
+          "context_before": [],
+          "context_after": [
+            "English"
+          ],
+          "changed_words": 1
+        },
+        {
+          "removed": [
+            "Twitter"
+          ],
+          "added": [
+            "Follow on X"
+          ],
+          "context_before": [
+            "한국어"
+          ],
+          "context_after": [
+            "Home"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260601094849/https://telegram.org/tos",
+      "archive_after": "https://web.archive.org/web/20260705175406/https://telegram.org/tos",
+      "ai": {
+        "headline": "Telegram updates its terms page language list and social link label",
+        "summary": "Telegram's terms page now shows an \"EN\" language label next to \"English,\" and the social media link previously labeled \"Twitter\" now reads \"Follow on X.\" These are display and labeling updates only; no rules about user data, content, or rights are changed.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-11",
+      "words": 1484,
+      "archive": "https://web.archive.org/web/20230111000910/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-03-07",
+      "words": 1504,
+      "archive": "https://web.archive.org/web/20230307140538/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-04-14",
+      "words": 1504,
+      "archive": "https://web.archive.org/web/20230414210644/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-05-12",
+      "words": 1503,
+      "archive": "https://web.archive.org/web/20230512225838/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-06-05",
+      "words": 1504,
+      "archive": "https://web.archive.org/web/20230605131749/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-07-07",
+      "words": 1504,
+      "archive": "https://web.archive.org/web/20230707184641/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-10-04",
+      "words": 1504,
+      "archive": "https://web.archive.org/web/20231004163222/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-11-02",
+      "words": 1505,
+      "archive": "https://web.archive.org/web/20231102234035/https://telegram.org/tos"
+    },
+    {
+      "date": "2023-12-02",
+      "words": 2028,
+      "archive": "https://web.archive.org/web/20231202123218/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-01-08",
+      "words": 2123,
+      "archive": "https://web.archive.org/web/20240108171944/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-02-07",
+      "words": 2124,
+      "archive": "https://web.archive.org/web/20240207192621/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-03-01",
+      "words": 2124,
+      "archive": "https://web.archive.org/web/20240301204745/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-04-16",
+      "words": 2213,
+      "archive": "https://web.archive.org/web/20240416113120/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-05-03",
+      "words": 2213,
+      "archive": "https://web.archive.org/web/20240503112909/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-06-04",
+      "words": 2212,
+      "archive": "https://web.archive.org/web/20240604172342/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-07-20",
+      "words": 2259,
+      "archive": "https://web.archive.org/web/20240720002133/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-08-04",
+      "words": 2259,
+      "archive": "https://web.archive.org/web/20240804015844/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 2258,
+      "archive": "https://web.archive.org/web/20240901151759/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-10-04",
+      "words": 2288,
+      "archive": "https://web.archive.org/web/20241004202916/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-11-07",
+      "words": 2290,
+      "archive": "https://web.archive.org/web/20241107095148/https://telegram.org/tos"
+    },
+    {
+      "date": "2024-12-01",
+      "words": 2291,
+      "archive": "https://web.archive.org/web/20241201211349/https://telegram.org/tos"
+    },
+    {
+      "date": "2025-01-01",
+      "words": 2289,
+      "archive": "https://web.archive.org/web/20250101171139/https://telegram.org/tos"
+    },
+    {
+      "date": "2025-02-05",
+      "words": 2289,
+      "archive": "https://web.archive.org/web/20250205010045/https://telegram.org/tos"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 2289,
+      "archive": "https://web.archive.org/web/20250401031312/https://telegram.org/tos"
+    },
+    {
+      "date": "2025-05-03",
+      "words": 2289,
+      "archive": "https://web.archive.org/web/20250503051702/https://telegram.org/tos"
+    },
+    {
+      "date": "2025-09-02",
+      "words": 2289,
+      "archive": "https://web.archive.org/web/20250902004258/https://telegram.org/tos"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 2289,
+      "archive": "https://web.archive.org/web/20251201213018/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-01-01",
+      "words": 2290,
+      "archive": "https://web.archive.org/web/20260101074230/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-02-03",
+      "words": 2318,
+      "archive": "https://web.archive.org/web/20260203022048/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-03-05",
+      "words": 2318,
+      "archive": "https://web.archive.org/web/20260305010745/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-04-06",
+      "words": 2318,
+      "archive": "https://web.archive.org/web/20260406115745/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-05-07",
+      "words": 2319,
+      "archive": "https://web.archive.org/web/20260507103036/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 2318,
+      "archive": "https://web.archive.org/web/20260601094849/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-07-05",
+      "words": 2321,
+      "archive": "https://web.archive.org/web/20260705175406/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-08-08",
+      "words": 2321,
+      "archive": "https://web.archive.org/web/20260808105225/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 2321,
+      "archive": "https://web.archive.org/web/20261001002358/https://telegram.org/tos"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 2320,
+      "archive": "https://web.archive.org/web/20261101224411/https://telegram.org/tos"
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+{
+  "date": "archive",
+  "company": "dropbox",
+  "doc": "terms",
+  "changes": [
+    {
+      "company": "dropbox",
+      "doc": "terms",
+      "date": "2023-02-03",
+      "source": "archive",
+      "changed_words": 72,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Dropbox's Terms of Service will be changing effective April 3, 2023. Click here to review."
+          ],
+          "context_before": [],
+          "context_after": [
+            "Dropbox Terms of Service"
+          ],
+          "changed_words": 15
+        },
+        {
+          "removed": [
+            "Dropbox",
+            "Desktop app",
+            "Mobile app",
+            "Integrations",
+            "Features",
+            "Solutions",
+            "Do more than store",
+            "Security",
+            "Advance access",
+            "Products",
+            "Plus",
+            "Professional",
+            "Business",
+            "Enterprise",
+            "Dropbox Sign",
+            "DocSend",
+            "Plans",
+            "Product updates",
+            "Support",
+            "Help center",
+            "Contact us",
+            "Privacy & terms",
+            "Cookie policy",
+            "Cookies & CCPA preferences",
+            "Sitemap",
+            "Learning resources",
+            "Community",
+            "Blog",
+            "Developers",
+            "Community forums",
+            "Referrals",
+            "Company",
+            "About us",
+            "Jobs",
+            "Investor relations",
+            "ESG",
+            "Partners"
+          ],
+          "added": [],
+          "context_before": [
+            "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Terms become effective. Where applicable, we’ll offer you a prorated refund based on the amounts you have prepaid for Services and your account cancellation date. By continuing to use or access the Services after the updates come into effect, you agree to be bound by the revised Terms."
+          ],
+          "context_after": [],
+          "changed_words": 57
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230104200956/https://www.dropbox.com/terms",
+      "archive_after": "https://web.archive.org/web/20230203043851/https://www.dropbox.com/terms",
+      "ai": {
+        "headline": "Dropbox updates its Terms of Service effective April 3, 2023",
+        "summary": "Dropbox says its Terms of Service will change effective April 3, 2023, and continuing to use the services after that date means you accept the revised terms. If you don't agree, you can cancel your account before the new terms take effect and may get a prorated refund for prepaid services.",
+        "severity": "minor",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": "If you don't agree to the updated terms, cancel your account and stop using the Services before the updated Terms take effect on April 3, 2023. Where applicable, you can receive a prorated refund for prepaid amounts.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "dropbox",
+      "doc": "terms",
+      "date": "2023-05-01",
+      "source": "archive",
+      "changed_words": 548,
+      "hunks": [
+        {
+          "removed": [
+            "Dropbox's Terms of Service will be changing effective April 3, 2023. Click here to review."
+          ],
+          "added": [
+            "For users with a separate DocSend or Dropbox Sign account, the DocSend Terms of Service can be found here, and the Dropbox Sign Terms of Service can be found here."
+          ],
+          "context_before": [],
+          "context_after": [
+            "Dropbox Terms of Service"
+          ],
+          "changed_words": 37
+        },
+        {
+          "removed": [
+            "Posted: October 29, 2021"
+          ],
+          "added": [
+            "Posted: January 17, 2023"
+          ],
+          "context_before": [
+            "Dropbox Terms of Service"
+          ],
+          "context_after": [
+            "You can see your previous Terms here."
+          ],
+          "changed_words": 6
+        },
+        {
+          "removed": [
+            "Thanks for using Dropbox! Our mission is to create a more enlightened way of working by providing an intuitive, unified platform to keep your content safe and accessible while helping you and those you work with stay coordinated and in sync. These terms of service (“Terms”) cover your use and access to our services, client software and websites (\"Services\"). If you reside outside of the United States of America, Canada and Mexico (“North America”) your agreement is with Dropbox International Unlimited Company. If you reside in North America your agreement is with Dropbox, Inc. Our Privacy Policy explains how we collect and use your information while our Acceptable Use Policy outlines your responsibilities when using our Services. By using our Services, you’re agreeing to be bound by these Terms, our Privacy Policy, and Acceptable Use Policy."
+          ],
+          "added": [
+            "Thanks for using Dropbox! Our mission is to create a more enlightened way of working, and help you and those you work with stay coordinated. We do so by providing an intuitive, unified platform and suite of apps and services that keep your content safe, accessible and in sync. These terms of service (“Terms”) cover your use and access to our services, client software and websites (\"Services\"). If you reside outside of the United States of America, Canada and Mexico (“North America”) your agreement is with Dropbox International Unlimited Company. If you reside in North America your agreement is with Dropbox, Inc. Our Privacy Policy explains how we collect and use your information while our Acceptable Use Policy outlines your responsibilities when using our Services. By using our Services, you’re agreeing to be bound by these Terms, our Privacy Policy, and Acceptable Use Policy."
+          ],
+          "context_before": [
+            "You can see your previous Terms here."
+          ],
+          "context_after": [
+            "Your Stuff & Your Permissions"
+          ],
+          "changed_words": 40
+        },
+        {
+          "removed": [],
+          "added": [
+            "You may need to register for an account to access the Services, and we may create an account for you so that you can interact with the Services.",
+            "Our Services include a suite of apps and websites. To help you stay productive, when you use the same account to access different parts of the suite, Your Stuff may come with you."
+          ],
+          "context_before": [
+            "When you use our Services, you provide us with things like your files, content, messages, contacts, and so on (“Your Stuff”). Your Stuff is yours. These Terms don’t give us any rights to Your Stuff except for the limited rights that enable us to offer the Services."
+          ],
+          "context_after": [
+            "We need your permission to do things like hosting Your Stuff, backing it up, and sharing it when you ask us to. Our Services also provide you with features like commenting, sharing, searching, image thumbnails, document previews, optical character recognition (OCR), easy sorting and organization, and personalization to help reduce busywork. To provide these and other features, Dropbox accesses, stores, and scans Your Stuff. You give us permission to do those things, and this permission extends to our affiliates and trusted third parties we work with."
+          ],
+          "changed_words": 61
+        },
+        {
+          "removed": [],
+          "added": [
+            "Electronic Signatures",
+            "By using a part of the Services that facilitates electronic signatures, you agree to do business electronically and to use electronic records and signatures. There may be laws where you reside governing what types of documents and transactions are appropriate for such signatures. It’s your responsibility to ensure that the electronic signature functionality provided by the Services is appropriate for your scenario. If the Services include sample documents (like a template NDA), these documents are for informational purposes only.",
+            "Fax Services",
+            "If you use a part of the Services that facilitates faxing, you may be required to provide information such as your name, billing address, physical address, payment information (including credit card number), and national ID number (where applicable). Failure to provide this information could result in suspension of your access.",
+            "You may not use our Services to send unsolicited fax advertisements or spam, and we may decide to not deliver any messages we consider unsolicited fax advertisements or spam.",
+            "We cannot guarantee that any particular fax number will be available for you to use. If you stop using our fax services, your number may be released or reassigned to another customer. In the US, UK, and Canada, we may support porting a fax number (both in and out) for an additional fee."
+          ],
+          "context_before": [
+            "Beta Services are confidential until official launch. If you use any Beta Services, you agree not to disclose any information about those Services to anyone else without our permission."
+          ],
+          "context_after": [
+            "Additional Features"
+          ],
+          "changed_words": 215
+        },
+        {
+          "removed": [],
+          "added": [
+            "Third-Party Features",
+            "The Services may give you the option to link to third-party features and integrations. Dropbox does not own or operate any such features or integrations. If you access or use any third-party features or integrations, you are responsible for this access and use, and Dropbox is not responsible for any act or omission of the third party or the availability, accuracy, the related content, products or services of third parties."
+          ],
+          "context_before": [
+            "From time to time, Dropbox will add additional features to enhance the user experience of our storage service at no additional charge. However, these free features may be withdrawn without further notice."
+          ],
+          "context_after": [
+            "Our Stuff"
+          ],
+          "changed_words": 72
+        },
+        {
+          "removed": [
+            "We respect the intellectual property of others and ask that you do too. We respond to notices of alleged copyright infringement if they comply with the law, and such notices should be reported using our Copyright Policy. We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat infringers. Our designated agent for notice of alleged copyright infringement on the Services is:"
+          ],
+          "added": [
+            "We respect the intellectual property of others and ask that you do too. We respond to notices of alleged copyright infringement if they comply with the law, and such notices should be reported using our Copyright Policy. We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat infringers. Copyright infringement claims should be submitted using our Copyright Complaint Form or submitted to our designated agent for our Services at:"
+          ],
+          "context_before": [
+            "Copyright"
+          ],
+          "context_after": [
+            "Copyright Agent"
+          ],
+          "changed_words": 26
+        },
+        {
+          "removed": [
+            "Cancellation. You may cancel your Dropbox Paid Account at any time. Refunds are only issued if required by law. For example, users living in the European Union have the right to cancel their Paid Account subscriptions within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here."
+          ],
+          "added": [
+            "Cancellation. You may cancel your Paid Account at any time. Refunds are only issued if required by law. For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here."
+          ],
+          "context_before": [
+            "Billing. You can increase your storage space and add paid features to your account (turning your account into a “Paid Account”). We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation. If you’re on an annual plan, we’ll send you a notice email reminding you that your plan is about to renew within a reasonable period of time prior to the renewal date. You’re responsible for all applicable taxes, and we’ll charge tax when required to do so. Some countries have mandatory local laws regarding your cancellation rights, and this paragraph doesn’t override these laws."
+          ],
+          "context_after": [
+            "Downgrades. Your Paid Account will remain in effect until it's cancelled or terminated under these Terms. If you’re on a Dropbox Family plan, the Family manager may be able to downgrade your account at any time. If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account features."
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "Dropbox Business Teams",
+            "Email address. If you sign up for a Dropbox account with an email address provisioned by your organization, your organization may be able to block your use of Dropbox until you transition to an account on a Dropbox Business or Education team (collectively, “Dropbox Business Team”) or you associate your Dropbox account with a personal email address.",
+            "Using Dropbox Business Teams. If you join a Dropbox Business Team, you must use it in compliance with your organization’s terms and policies. Please note that Dropbox Business Team accounts are subject to your organization's control. Your administrators may be able to access, disclose, restrict, or remove information in or from your Dropbox Business Team account. They may also be able to restrict or terminate your access to a Dropbox Business Team account. If you convert an existing Dropbox account into part of a Dropbox Business Team, your administrators may prevent you from later disassociating your account from the Dropbox Business Team."
+          ],
+          "added": [
+            "Dropbox Teams",
+            "Email address. If you sign up for a Dropbox account with an email address provisioned by your organization, your organization may be able to block your use of Dropbox until you transition to an account on a Dropbox Standard, Advanced, Enterprise, Education, or other team (collectively, “Dropbox Team”) or you associate your Dropbox account with a personal email address.",
+            "Using Dropbox Teams. If you join a Dropbox Team, you must use it in compliance with your organization’s terms and policies. Please note that Dropbox Team accounts are subject to your organization's control. Your administrators may be able to access, disclose, restrict, or remove information in or from your Dropbox Team account. They may also be able to restrict or terminate your access to a Dropbox Team account. If you convert an existing Dropbox account into part of a Dropbox Team, your administrators may prevent you from later disassociating your account from the Dropbox Team."
+          ],
+          "context_before": [
+            "Changes. We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions. We’ll give you no less than 30 days’ advance notice of these changes via a message to the email address associated with your account and you’ll have the opportunity to cancel your subscription before the new fee comes into effect."
+          ],
+          "context_after": [
+            "Termination"
+          ],
+          "changed_words": 16
+        },
+        {
+          "removed": [
+            "You’re free to stop using our Services at any time. We reserve the right to suspend or terminate your access to the Services with notice to you if:"
+          ],
+          "added": [
+            "You’re free to stop using our Services at any time. We reserve the right to suspend or terminate your access to the Services with notice to you if Dropbox reasonably believes:"
+          ],
+          "context_before": [
+            "Termination"
+          ],
+          "context_after": [
+            "you’re in breach of these Terms,"
+          ],
+          "changed_words": 5
+        },
+        {
+          "removed": [
+            "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where:",
+            "you’re in material breach of these Terms,"
+          ],
+          "added": [
+            "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:",
+            "you’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy,"
+          ],
+          "context_before": [
+            "We’ll provide you with reasonable advance notice via the email address associated with your account to remedy the activity that prompted us to contact you and give you the opportunity to export Your Stuff from our Services. If after such notice you fail to take the steps we ask of you, we’ll terminate or suspend your access to the Services."
+          ],
+          "context_after": [
+            "doing so would cause us legal liability or compromise our ability to provide the Services to our other users, or"
+          ],
+          "changed_words": 17
+        },
+        {
+          "removed": [],
+          "added": [
+            "Once we suspend or terminate your access to the Services, you will not be able to access or export Your Stuff. Dropbox does not provide refunds if we suspend or terminate your access to the Services, unless required by law."
+          ],
+          "context_before": [
+            "we're prohibited from doing so by law."
+          ],
+          "context_after": [
+            "Discontinuation of Services"
+          ],
+          "changed_words": 40
+        },
+        {
+          "removed": [
+            "We Both Agree to Arbitrate. You and Dropbox agree to resolve any claims relating to these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below. This includes disputes arising out of or relating to the interpretation or application of this “Mandatory Arbitration Provisions” section, including its scope, enforceability, revocability, or validity. The arbitrator may award relief only individually and only to the extent necessary to redress your individual claim(s); the arbitrator may not award relief on behalf of others or the general public."
+          ],
+          "added": [
+            "We Both Agree to Arbitrate. You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below. This includes disputes arising out of or relating to the interpretation or application of this “Mandatory Arbitration Provisions” section, including its scope, enforceability, revocability, or validity. The arbitrator may award relief only individually and only to the extent necessary to redress your individual claim(s); the arbitrator may not award relief on behalf of others or the general public."
+          ],
+          "context_before": [
+            "IF YOU’RE A U.S. RESIDENT, YOU ALSO AGREE TO THE FOLLOWING MANDATORY ARBITRATION PROVISIONS:"
+          ],
+          "context_after": [
+            "Opt out of Agreement to Arbitrate. You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms. However, if you agreed to a previous version of these Terms that allowed you to opt out of arbitration, your previous choice to opt out or not opt out remains binding."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "We may revise these Terms from time to time to better reflect:"
+          ],
+          "added": [
+            "We may revise these Terms to better reflect:"
+          ],
+          "context_before": [
+            "Modifications"
+          ],
+          "context_after": [
+            "changes to the law,"
+          ],
+          "changed_words": 4
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20230401005620/https://www.dropbox.com/terms",
+      "archive_after": "https://web.archive.org/web/20230501144644/https://www.dropbox.com/terms",
+      "ai": {
+        "headline": "Dropbox expands its terms to cover AI-related features, e-signatures, and faxing",
+        "summary": "Dropbox's updated terms add new rules: Dropbox can access, store, and scan your files to provide features like OCR and previews, and this permission now extends to affiliates and trusted third parties. The terms also add e-signature and fax service rules, a clearer statement that third-party integrations are not Dropbox's responsibility, and broader grounds for suspending accounts without notice, including when Dropbox \"reasonably believes\" a violation occurred. Users cannot export their files after suspension or termination, and U.S. users' arbitration clause now covers claims \"arising out of\" the terms.",
+        "severity": "major",
+        "categories": [
+          "your_content",
+          "data_sharing",
+          "account",
+          "legal"
+        ],
+        "what_you_can_do": "Non-U.S. and U.S. users can opt out of mandatory arbitration by submitting the opt-out form within 30 days of first registering or agreeing to these Terms (the text links to the form).",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "dropbox",
+      "doc": "terms",
+      "date": "2025-01-09",
+      "source": "archive",
+      "changed_words": 414,
+      "hunks": [
+        {
+          "removed": [
+            "Posted: January 17, 2023"
+          ],
+          "added": [
+            "Posted: January 7, 2025"
+          ],
+          "context_before": [
+            "Dropbox Terms of Service"
+          ],
+          "context_after": [
+            "You can see your previous Terms here."
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [
+            "Thanks for using Dropbox! Our mission is to create a more enlightened way of working, and help you and those you work with stay coordinated. We do so by providing an intuitive, unified platform and suite of apps and services that keep your content safe, accessible and in sync. These terms of service (“Terms”) cover your use and access to our services, client software and websites (\"Services\"). If you reside outside of the United States of America, Canada and Mexico (“North America”) your agreement is with Dropbox International Unlimited Company. If you reside in North America your agreement is with Dropbox, Inc. Our Privacy Policy explains how we collect and use your information while our Acceptable Use Policy outlines your responsibilities when using our Services. By using our Services, you’re agreeing to be bound by these Terms, our Privacy Policy, and Acceptable Use Policy."
+          ],
+          "added": [
+            "Thanks for using Dropbox! Our mission is to create a more enlightened way of working, and help you and those you work with stay coordinated. We do so by providing an intuitive, unified platform and suite of apps and services that keep your content safe, accessible and in sync. These terms of service (“Terms”) cover your use and access to our services, client software and websites (\"Services\"). If you reside outside of the United States of America, Canada and Mexico (“North America”) your agreement is with Dropbox International Unlimited Company. If you reside in North America your agreement is with Dropbox, Inc. Our Privacy Policy explains how we collect and use your information while our Acceptable Use Policy outlines your responsibilities when using our Services. If you are a member of a paid multi-user team (or a trial of a paid multi-user team) where an admin has control of your account (\"Dropbox Team\"), your team will also be bound to the Dropbox Services Agreement or another agreement between Dropbox and your team, and you will continue to remain subject to these Terms. By using our Services, you’re agreeing to be bound by these Terms, our Privacy Policy, and Acceptable Use Policy."
+          ],
+          "context_before": [
+            "You can see your previous Terms here."
+          ],
+          "context_after": [
+            "Your Stuff & Your Permissions"
+          ],
+          "changed_words": 57
+        },
+        {
+          "removed": [
+            "When you use our Services, you provide us with things like your files, content, messages, contacts, and so on (“Your Stuff”). Your Stuff is yours. These Terms don’t give us any rights to Your Stuff except for the limited rights that enable us to offer the Services."
+          ],
+          "added": [
+            "When you use our Services, you provide us with things like your files, content, messages, contacts, connected services, and so on (“Your Stuff”). Your Stuff is yours. These Terms don’t give us any rights to Your Stuff except for the limited rights that enable us to offer the Services."
+          ],
+          "context_before": [
+            "Your Stuff & Your Permissions"
+          ],
+          "context_after": [
+            "You may need to register for an account to access the Services, and we may create an account for you so that you can interact with the Services."
+          ],
+          "changed_words": 2
+        },
+        {
+          "removed": [
+            "By using a part of the Services that facilitates electronic signatures, you agree to do business electronically and to use electronic records and signatures. There may be laws where you reside governing what types of documents and transactions are appropriate for such signatures. It’s your responsibility to ensure that the electronic signature functionality provided by the Services is appropriate for your scenario. If the Services include sample documents (like a template NDA), these documents are for informational purposes only."
+          ],
+          "added": [
+            "By using a part of the Services that facilitates electronic signatures, you agree to do business electronically and to use electronic records and signatures. There may be laws where you reside governing what types of documents and transactions are appropriate for such signatures. It’s your responsibility to ensure that the electronic signature functionality provided by the Services is appropriate for your scenario.",
+            "Templates and Forms",
+            "The Services may include sample templates and forms (“Templates”). Templates are for informational purposes only. We are not attorneys or a law firm, and our Templates are not a substitute for the advice or services of an attorney. You acknowledge that Dropbox is not providing you with legal advice or acting as your attorney or agent, and you assume full responsibility for any outcomes or costs associated with your use of our Templates.",
+            "Dropbox does not claim that documents based on the Templates are complete and suitable for use in all situations and jurisdictions. You should consult with an attorney about your specific situation before relying on the Templates for any contract, agreement or transaction. You hereby acknowledge that Dropbox is not a party to any agreement that you enter into as a result of the use of any document that you create or use through the Services. Use of the Services and any document (including any document based on the Templates) does not constitute an attorney-client relationship, joint venture or partnership between Dropbox and any user or third party. Communications between you and Dropbox are governed by these Terms and our Privacy Policy but are not protected by the attorney-client privilege or as work product.",
+            "We hope you’re satisfied with the Templates. If you have any concerns, please click here for more information and instructions on how to contact us.",
+            "The disclaimers of warranties and limitations of liability below do not apply to consumers in North Carolina when using the Templates."
+          ],
+          "context_before": [
+            "Electronic Signatures"
+          ],
+          "context_after": [
+            "Fax Services"
+          ],
+          "changed_words": 256
+        },
+        {
+          "removed": [
+            "Email address. If you sign up for a Dropbox account with an email address provisioned by your organization, your organization may be able to block your use of Dropbox until you transition to an account on a Dropbox Standard, Advanced, Enterprise, Education, or other team (collectively, “Dropbox Team”) or you associate your Dropbox account with a personal email address."
+          ],
+          "added": [
+            "Email address. If you sign up for a Dropbox account with an email address provisioned by your organization, your organization may be able to block your use of Dropbox until you transition to an account on a Dropbox Team or you associate your Dropbox account with a personal email address."
+          ],
+          "context_before": [
+            "Dropbox Teams"
+          ],
+          "context_after": [
+            "Using Dropbox Teams. If you join a Dropbox Team, you must use it in compliance with your organization’s terms and policies. Please note that Dropbox Team accounts are subject to your organization's control. Your administrators may be able to access, disclose, restrict, or remove information in or from your Dropbox Team account. They may also be able to restrict or terminate your access to a Dropbox Team account. If you convert an existing Dropbox account into part of a Dropbox Team, your administrators may prevent you from later disassociating your account from the Dropbox Team."
+          ],
+          "changed_words": 11
+        },
+        {
+          "removed": [
+            "Judicial Forum for Disputes. You and Dropbox agree that any judicial proceeding to resolve claims relating to these Terms or the Services will be brought in the federal or state courts of San Francisco County, California, subject to the mandatory arbitration provisions below. Both you and Dropbox consent to venue and personal jurisdiction in such courts. If you reside in a country (for example, a member state of the European Union) with laws that give consumers the right to bring disputes in their local courts, this paragraph doesn’t affect those requirements."
+          ],
+          "added": [
+            "Judicial Forum for Disputes. You and Dropbox agree that any judicial proceeding to resolve claims relating to these Terms or the Services will be brought in the federal or state courts of San Francisco County, California, subject to the mandatory arbitration provisions below. Both you and Dropbox consent to venue and personal jurisdiction in such courts. If you reside in a country (for example, a member state of the European Union) with laws that give consumers the right to bring disputes in their local courts, this paragraph doesn’t affect those requirements. The venue and exclusive jurisdiction provision above does not apply to North Carolina consumers with respect to claims relating to or arising out of use of the Templates."
+          ],
+          "context_before": [
+            "Let’s Try to Sort Things Out First. We want to address your concerns without needing a formal legal case. Before filing a claim against Dropbox, you agree to try to resolve the dispute informally by sending us a written Notice of Dispute at dispute-notice@dropbox.com that includes your name, a detailed description of the dispute, and the relief you seek. We’ll try to resolve the dispute informally by contacting you via email. If a dispute is not resolved within 60 days after submission, you or Dropbox may bring a formal proceeding. If you reside in the EU, the European Commission provides for an online dispute resolution platform, which you can access here: https://ec.europa.eu/consumers/odr."
+          ],
+          "context_after": [
+            "IF YOU’RE A U.S. RESIDENT, YOU ALSO AGREE TO THE FOLLOWING MANDATORY ARBITRATION PROVISIONS:"
+          ],
+          "changed_words": 28
+        },
+        {
+          "removed": [
+            "Arbitration Procedures. The American Arbitration Association (AAA) will administer the arbitration under its Consumer Arbitration Rules. The AAA’s rules and filing instructions are available at www.adr.org or by calling 1-800-778-7879. The arbitration will be held in the United States county where you live or work, San Francisco (CA), or any other location we agree to."
+          ],
+          "added": [
+            "Arbitration Procedures. The American Arbitration Association (AAA) will administer the arbitration under its Consumer Arbitration Rules. The AAA’s rules and filing instructions are available at www.adr.org or by calling 1-800-778-7879. The arbitration will be held in the United States county where you live or work, San Francisco (CA), or any other location we agree to. For North Carolina consumers, for claims relating to or arising out of use of the Templates, the arbitration will be held in North Carolina or any other location we agree to."
+          ],
+          "context_before": [
+            "Opt out of Agreement to Arbitrate. You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms. However, if you agreed to a previous version of these Terms that allowed you to opt out of arbitration, your previous choice to opt out or not opt out remains binding."
+          ],
+          "context_after": [
+            "Arbitration Fees and Incentives. The AAA rules will govern payment of all arbitration fees. For individual arbitration of non-frivolous claims less than $75,000 for which you timely provided Dropbox with a Notice of Dispute, Dropbox will reimburse arbitration filing fees at the conclusion of the arbitration and will pay other arbitration fees. For all other claims, the costs and fees of arbitration shall be allocated in accordance with the arbitration provider’s rules, including rules regarding frivolous or improper claims. If you receive an arbitration award that is more favorable than any offer we make to resolve the claim, we will pay you $1,000 in addition to the award. Dropbox will not seek its attorneys' fees and costs in arbitration unless the arbitrator determines that your claim is frivolous or brought for an improper purpose."
+          ],
+          "changed_words": 31
+        },
+        {
+          "removed": [
+            "Exceptions to Agreement to Arbitrate. Either you or Dropbox may assert claims, if they qualify, in small claims court in San Francisco (CA) or any United States county where you live or work. Either party may bring a lawsuit solely for injunctive relief to stop unauthorized use or abuse of the Services, or intellectual property infringement (for example, trademark, trade secret, copyright, or patent rights) without first engaging in arbitration or the informal dispute-resolution process described above. If the agreement to arbitrate is found not to apply to you or your claim, you agree to the exclusive jurisdiction of the state and federal courts in San Francisco County, California to resolve your claim."
+          ],
+          "added": [
+            "Exceptions to Agreement to Arbitrate. Either you or Dropbox may assert claims, if they qualify, in small claims court in San Francisco (CA) or any United States county where you live or work. Either party may bring a lawsuit solely for injunctive relief to stop unauthorized use or abuse of the Services, or intellectual property infringement (for example, trademark, trade secret, copyright, or patent rights) without first engaging in arbitration or the informal dispute-resolution process described above. If the agreement to arbitrate is found not to apply to you or your claim, you agree to the exclusive jurisdiction of the state and federal courts in San Francisco County, California to resolve your claim. This exclusive jurisdiction provision does not apply to North Carolina consumers with respect to claims relating to or arising out of use of the Templates."
+          ],
+          "context_before": [
+            "Arbitration Fees and Incentives. The AAA rules will govern payment of all arbitration fees. For individual arbitration of non-frivolous claims less than $75,000 for which you timely provided Dropbox with a Notice of Dispute, Dropbox will reimburse arbitration filing fees at the conclusion of the arbitration and will pay other arbitration fees. For all other claims, the costs and fees of arbitration shall be allocated in accordance with the arbitration provider’s rules, including rules regarding frivolous or improper claims. If you receive an arbitration award that is more favorable than any offer we make to resolve the claim, we will pay you $1,000 in addition to the award. Dropbox will not seek its attorneys' fees and costs in arbitration unless the arbitrator determines that your claim is frivolous or brought for an improper purpose."
+          ],
+          "context_after": [
+            "NO CLASS OR REPRESENTATIVE ACTIONS. You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action. Class arbitrations, class actions, private attorney general actions, and consolidation with other arbitrations aren’t allowed."
+          ],
+          "changed_words": 25
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20241202214525/https://www.dropbox.com/terms",
+      "archive_after": "https://web.archive.org/web/20250109194858/https://www.dropbox.com/terms",
+      "ai": {
+        "headline": "Dropbox updates its Terms with team account, e-signature template, and North Carolina rules",
+        "summary": "Dropbox's Terms of Service, posted January 7, 2025 (previously January 17, 2023), add a paragraph saying team members are also bound by their organization's agreement with Dropbox, and add a disclaimer that Dropbox's e-signature sample templates are not legal advice. The Terms also add special carve-outs for North Carolina consumers using those templates, and the connected services you share with Dropbox are now listed as part of \"Your Stuff.\"",
+        "severity": "moderate",
+        "categories": [
+          "your_content",
+          "account",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "dropbox",
+      "doc": "terms",
+      "date": "2026-10-01",
+      "source": "archive",
+      "changed_words": 18,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Dropbox’s Terms of Service will be changing effective January 1, 2027. Click here to review the new terms."
+          ],
+          "context_before": [],
+          "context_after": [
+            "For users with a separate DocSend or Dropbox Sign account, the DocSend Terms of Service can be found here, and the Dropbox Sign Terms of Service can be found here."
+          ],
+          "changed_words": 18
+        }
+      ],
+      "archive_before": "https://web.archive.org/web/20260901095308/https://www.dropbox.com/terms",
+      "archive_after": "https://web.archive.org/web/20261001070459/https://www.dropbox.com/terms",
+      "ai": {
+        "headline": "Dropbox announces its Terms of Service will change January 1, 2027",
+        "summary": "Dropbox says its Terms of Service will be changing effective January 1, 2027, and links to the new terms. The text provided does not show what the new terms say, so the actual impact on users is not yet known.",
+        "severity": "minor",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ],
+  "versions": [
+    {
+      "date": "2023-01-04",
+      "words": 3339,
+      "archive": "https://web.archive.org/web/20230104200956/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-02-03",
+      "words": 3297,
+      "archive": "https://web.archive.org/web/20230203043851/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-03-06",
+      "words": 3297,
+      "archive": "https://web.archive.org/web/20230306013607/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-04-01",
+      "words": 3297,
+      "archive": "https://web.archive.org/web/20230401005620/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-05-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20230501144644/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-06-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20230601002537/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-07-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20230701002345/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-08-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20230801001801/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-09-07",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20230907072708/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-10-04",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20231004084640/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-11-12",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20231112211808/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2023-12-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20231201152759/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-01-02",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240102005915/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-02-04",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240204001344/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-03-07",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240307044934/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-04-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240401004501/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-05-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240501085538/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-06-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240601000305/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-07-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240701044022/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-08-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240801022749/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-09-01",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20240901070013/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-10-02",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20241002172445/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-11-02",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20241102131839/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2024-12-02",
+      "words": 3731,
+      "archive": "https://web.archive.org/web/20241202214525/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-01-09",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250109194858/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-02-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250201090953/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-03-04",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250304012331/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-04-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250401030222/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-05-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250501003624/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-06-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250601000950/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-07-02",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250702055552/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-08-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250801030310/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-09-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20250901015123/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-10-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20251001000811/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2025-12-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20251201014344/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-01-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260101011220/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-02-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260201001950/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-03-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260301002735/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-04-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260401030447/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-05-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260501005739/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-06-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260601100253/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-07-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260701075255/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-08-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260801101305/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-09-01",
+      "words": 4103,
+      "archive": "https://web.archive.org/web/20260901095308/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-10-01",
+      "words": 4121,
+      "archive": "https://web.archive.org/web/20261001070459/https://www.dropbox.com/terms"
+    },
+    {
+      "date": "2026-11-01",
+      "words": 4121,
+      "archive": "https://web.archive.org/web/20261101154939/https://www.dropbox.com/terms"
+    }
+  ]
+}
