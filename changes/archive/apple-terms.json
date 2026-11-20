@@ -357,7 +357,19 @@
         }
       ],
       "archive_before": "https://web.archive.org/web/20230901023159/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
-      "archive_after": "https://web.archive.org/web/20231004181226/https://www.apple.com/legal/internet-services/itunes/us/terms.html"
+      "archive_after": "https://web.archive.org/web/20231004181226/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
+      "ai": {
+        "headline": "Apple restructures Media Services Terms and adds some new usage rules",
+        "summary": "Apple reorganized its Media Services Terms into lettered sections with a table of contents, mostly moving existing wording around and rewording it lightly. The substantive additions are a ban on scraping, copying, or measuring Content and Services, and a clarification that Apple may filter submissions automatically and by human review, which users should be aware of.",
+        "severity": "moderate",
+        "categories": [
+          "your_content",
+          "account",
+          "your_rights"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
     },
     {
       "company": "apple",
@@ -747,7 +759,19 @@
         }
       ],
       "archive_before": "https://web.archive.org/web/20240901101103/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
-      "archive_after": "https://web.archive.org/web/20241001082538/https://www.apple.com/legal/internet-services/itunes/us/terms.html"
+      "archive_after": "https://web.archive.org/web/20241001082538/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
+      "ai": {
+        "headline": "Apple adds accessibility section and Shazam to its Terms of Service",
+        "summary": "Apple's Terms of Service now list Apple Sports and Shazam among its services and add a new section pointing to accessibility feature information. It also replaces \"Apple ID\" with \"Apple Account\" throughout, adds Apple Services Pte. Ltd. as a seller for some users in parts of Asia (effective October 26, 2024), and clarifies that Apple may stop making purchased content available if it loses the right from the content provider. Most other changes are renumbering of sections and wording updates, not new user rules.",
+        "severity": "minor",
+        "categories": [
+          "legal",
+          "account",
+          "your_content"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
     },
     {
       "company": "apple",
@@ -1188,7 +1212,18 @@
         }
       ],
       "archive_before": "https://web.archive.org/web/20250901060004/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
-      "archive_after": "https://web.archive.org/web/20251001003923/https://www.apple.com/legal/internet-services/itunes/us/terms.html"
+      "archive_after": "https://web.archive.org/web/20251001003923/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
+      "ai": {
+        "headline": "Apple updates its Terms, adds Subscriptions and Reseller Membership wording",
+        "summary": "Apple's Terms now call paid subscriptions \"Subscriptions\" instead of \"Paid Subscriptions,\" add Apple Games to the list of services, and replace \"Carrier Membership\" with \"Reseller Membership\" so any reseller, not just a wireless carrier, can sell Apple service memberships. Most other changes are reformatting, updated addresses for some Apple entities, and a new Singapore-based Apple entity for certain Asian and Pacific countries.",
+        "severity": "moderate",
+        "categories": [
+          "account",
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
     },
     {
       "company": "apple",
@@ -1329,7 +1364,19 @@
         }
       ],
       "archive_before": "https://web.archive.org/web/20260904224509/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
-      "archive_after": "https://web.archive.org/web/20261002001943/https://www.apple.com/legal/internet-services/itunes/us/terms.html"
+      "archive_after": "https://web.archive.org/web/20261002001943/https://www.apple.com/legal/internet-services/itunes/us/terms.html",
+      "ai": {
+        "headline": "Apple bans using its Services and Content to train AI models",
+        "summary": "Apple's terms now prohibit using its Services, Content, or their outputs to train, fine-tune, or improve any AI model or other software. Other changes include new wording on subscription commitments, free trials tied to Apple One bundles, season pass and warranty text, and a new copyright contact page.",
+        "severity": "major",
+        "categories": [
+          "your_content",
+          "legal",
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
     }
   ],
   "versions": [

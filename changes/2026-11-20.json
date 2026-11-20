@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-20",
+  "changes": [
+    {
+      "company": "snapchat",
+      "doc": "privacy",
+      "date": "2026-11-20",
+      "source": "daily",
+      "file": "policies/snapchat/privacy.txt",
+      "changed_words": 1,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Privacy"
+          ],
+          "context_before": [],
+          "context_after": [
+            "Privacy Policy"
+          ],
+          "changed_words": 1
+        }
+      ],
+      "ai": {
+        "headline": "Snapchat adds a \"Privacy\" heading to its Privacy Policy page",
+        "summary": "Snapchat added the word \"Privacy\" above the existing \"Privacy Policy\" title. This is only a label change and does not alter what the company does with users' data or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "venmo",
+      "doc": "privacy",
+      "date": "2026-11-20",
+      "source": "daily",
+      "file": "policies/venmo/privacy.txt",
+      "changed_words": 31,
+      "hunks": [
+        {
+          "removed": [
+            "Privacy Statement",
+            "User Agreement",
+            "Venmo Long Form Disclosure",
+            "Licenses",
+            "Consent",
+            "Cookies",
+            "Helpful Information",
+            "Approved Business Account Addendum",
+            "Mastercard Cardholder Agreement",
+            "Venmo Mastercard Privacy Policy",
+            "Cryptocurrency Terms & Conditions",
+            "Open Source Attribution"
+          ],
+          "added": [],
+          "context_before": [
+            "Venmo Legal Agreements"
+          ],
+          "context_after": [
+            "DATE EFFECTIVE: November 17, 2025"
+          ],
+          "changed_words": 31
+        }
+      ],
+      "ai": {
+        "headline": "Venmo removes its list of legal agreement links from its privacy page",
+        "summary": "Venmo's privacy page no longer shows a list of related legal documents, such as the User Agreement, Cookies policy, and Cryptocurrency Terms. The text provided shows only removed links and no new rules, so this appears to be a page layout change rather than a change to how your data is handled.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "venmo",
+      "doc": "terms",
+      "date": "2026-11-20",
+      "source": "daily",
+      "file": "policies/venmo/terms.txt",
+      "changed_words": 31,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Privacy Statement",
+            "User Agreement",
+            "Venmo Long Form Disclosure",
+            "Licenses",
+            "Consent",
+            "Cookies",
+            "Helpful Information",
+            "Approved Business Account Addendum",
+            "Mastercard Cardholder Agreement",
+            "Venmo Mastercard Privacy Policy",
+            "Cryptocurrency Terms & Conditions",
+            "Open Source Attribution"
+          ],
+          "context_before": [
+            "Venmo Legal Agreements"
+          ],
+          "context_after": [
+            "User Agreement"
+          ],
+          "changed_words": 31
+        }
+      ],
+      "ai": {
+        "headline": "Venmo's legal agreements page gets a new list of linked documents",
+        "summary": "Venmo's legal agreements page now lists a set of linked documents, including the Privacy Statement, User Agreement, Cryptocurrency Terms, and others. The only change shown is this list of links, with no new rules or changes to what happens to users' data, money, or rights.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ]
+}
