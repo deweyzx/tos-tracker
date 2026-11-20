@@ -177,6 +177,15 @@ def last_copy_words(company, doc):
     return len(path.read_text(encoding="utf-8").split()) if path.exists() else None
 
 
+def read_page(url, uses_browser, browser, last_words):
+    """Download and clean one page. Returns (text, reason it looks wrong or None); text is None if the download failed."""
+    html = browser.fetch(url) if uses_browser else fetch_page(url)
+    if html is None:
+        return None, "the download failed"
+    text = normalize(extract_text(html))
+    return text, looks_blocked(text, last_words)
+
+
 def main(browser=None):
     sources = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
     print(f"Checking {len(sources)} policy pages...\n")
@@ -186,16 +195,20 @@ def main(browser=None):
         for source in sources:
             uses_browser = source.get("browser", False)
             print(f"- {source['company']} / {source['doc']}" + ("  (in a browser)" if uses_browser else ""))
-            html = browser.fetch(source["url"]) if uses_browser else fetch_page(source["url"])
-            if html is None:
+            last_words = last_copy_words(source["company"], source["doc"]) if uses_browser else None
+            text, reason = read_page(source["url"], uses_browser, browser, last_words)
+            # Some sites (Amazon) show an empty "Page Not Found" on a browser's first
+            # visit and the real page on the next, so a browser page gets one more try.
+            if reason and uses_browser:
+                print(f"  ! {reason}, trying once more")
+                time.sleep(DELAY_SECONDS)
+                text, reason = read_page(source["url"], uses_browser, browser, last_words)
+            if text is None:
                 continue
-
-            text = normalize(extract_text(html))
             word_count = len(text.split())
 
             # Browser pages also get the wall check against our last copy; plain pages only
             # need enough words (a page that needs JavaScript comes back nearly empty).
-            reason = looks_blocked(text, last_copy_words(source["company"], source["doc"]) if uses_browser else None)
             if reason:
                 hint = "" if uses_browser else ' (if it needs JavaScript, add "browser": true in sources.json)'
                 print(f"  ! {reason}: this doesn't look like the policy, skipping{hint}")

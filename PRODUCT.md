@@ -12,7 +12,7 @@ Everyday people who use big tech apps (Spotify, Discord, Google, TikTok, Meta, O
 
 ## Product Purpose
 
-ToS Tracker reads the privacy policies and terms of service of 12 companies (17 pages) every morning, detects real wording changes (not formatting or date stamps), and explains each change in plain English with the exact text that was removed and added. Past changes back to 2023 are rebuilt from Internet Archive copies.
+ToS Tracker reads the privacy policies and terms of service of 38 companies (75 pages) every morning, detects real wording changes (not formatting or date stamps), and explains each change in plain English with the exact text that was removed and added. Past changes back to 2023 are rebuilt from Internet Archive copies.
 
 Success in a visitor's first 30 seconds: they see what changed recently, can tell fresh and major changes apart at a glance, and can open one to read the exact before/after wording and the summary.
 

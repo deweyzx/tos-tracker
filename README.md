@@ -8,7 +8,7 @@ Companies update their policies all the time, often quietly, and the changes can
 
 ## What it tracks
 
-17 policy pages across 12 companies, including Spotify, Discord, Reddit, OpenAI, Anthropic, Google, TikTok, Snapchat, Zoom, X, Meta, and Apple. The full list is in [`sources.json`](sources.json).
+75 policy pages across 38 companies: the big platforms (Google, Meta, Apple, Microsoft, Amazon, X, TikTok, Snapchat, Reddit, LinkedIn, Pinterest, Discord, Telegram), AI companies (OpenAI, Anthropic, Perplexity, Character.AI), shopping (Temu, Shein, eBay, Walmart), and everyday apps from Netflix and Spotify to Uber, Airbnb, Roblox and Duolingo. The full list is in [`sources.json`](sources.json).
 
 Every saved version lives in [`policies/`](policies/), and this repo's commit history is a timestamped record of every change.
 

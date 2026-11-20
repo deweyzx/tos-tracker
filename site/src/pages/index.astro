@@ -29,7 +29,8 @@ const majors = changes.filter((c) => c.severity === "major").length;
 const summarized = changes.filter(rated).length;
 // Topic filters only help once enough changes have summaries; until then they'd hide almost everything.
 const cats = summarized >= 10 ? Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]) : [];
-const unreadable = companies.filter((c) => policies.some((p) => p.company === c.id && !p.readable)).map((c) => c.name);
+// Pages the tracker can't read itself, named one by one ("Reddit's Privacy Policy"), since a company's other page may be fine.
+const unreadable = policies.filter((p) => !p.readable).map((p) => `${companies.find((c) => c.id === p.company)?.name}'s ${p.name}`);
 const listNames = (names) => names.length < 2 ? names.join("") : `${names.slice(0, -1).join(", ")} and ${names.at(-1)}`;
 
 // "Found this month": the newest changes, so the Overview answers "what changed recently?"

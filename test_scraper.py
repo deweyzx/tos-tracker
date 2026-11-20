@@ -85,13 +85,38 @@ with tempfile.TemporaryDirectory() as tmp:
         scraper.main(browser=browser)
 
         check("plain pages are downloaded without the browser", plain_asked == ["https://plain.example/privacy"])
-        check("browser pages go through the browser", browser.asked == ["https://js.example/privacy", "https://wall.example/terms"])
+        # the wall page is tried twice (one retry), then skipped
+        check("browser pages go through the browser", browser.asked == ["https://js.example/privacy", "https://wall.example/terms", "https://wall.example/terms"])
         check("a page read in the browser is saved", Path("policies/jsco/privacy.txt").exists())
         check("a plain page is saved", Path("policies/plainco/privacy.txt").exists())
         check("a login wall does not replace the last good copy", Path("policies/wallco/terms.txt").read_text(encoding="utf-8") == POLICY)
         check("the browser is closed at the end", browser.closed)
     finally:
         scraper.fetch_page, scraper.DELAY_SECONDS = real_fetch, real_delay
+        os.chdir(start_dir)
+
+class FirstVisitFails(FakeBrowser):
+    """Like Amazon: an empty page on the first visit, the real one on the next."""
+
+    def fetch(self, url):
+        self.asked.append(url)
+        return page("Page Not Found") if len(self.asked) == 1 else page(POLICY)
+
+
+print("\nA browser page that fails once:")
+with tempfile.TemporaryDirectory() as tmp:
+    os.chdir(tmp)
+    try:
+        Path("sources.json").write_text(json.dumps([
+            {"company": "shopco", "doc": "privacy", "url": "https://shop.example/privacy", "browser": True},
+        ]), encoding="utf-8")
+        scraper.DELAY_SECONDS = 0
+        browser = FirstVisitFails({})
+        scraper.main(browser=browser)
+        check("it is tried a second time", len(browser.asked) == 2)
+        check("the real copy from the second try is saved", Path("policies/shopco/privacy.txt").exists())
+    finally:
+        scraper.DELAY_SECONDS = real_delay
         os.chdir(start_dir)
 
 print(f"\n{passed} passed, {failed} failed")

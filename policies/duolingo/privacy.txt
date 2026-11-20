@@ -1,0 +1,167 @@
+Privacy Policy
+This Privacy Policy was last revised on May 26, 2026.
+General
+At Duolingo, we care about your personal information, so we have prepared this Privacy Policy to explain how we collect, use, and share it. This Privacy Policy applies to Duolingo websites, mobile apps, and related services (“Service”). By using the Service, you agree with Duolingo’s collection, use, and sharing of your personal information in accordance with the terms of this Privacy Policy.
+Certain Duolingo services are subject to additional or different terms. For example, when you register for or take the Duolingo English Test, you are also subject to the Supplemental Privacy Terms for the Duolingo English Test.
+Please note that Duolingo is constantly testing and improving our product features. Any features discussed in this Privacy Policy may not be available to all users or in all jurisdictions.
+Information We Collect
+When you use the Service, Duolingo may collect the following personal information about you.
+a. Account Registration
+To register for a Duolingo account, you may provide us with a username, your age and email address. In some countries, you may also provide us with your phone number.
+You may also register for a Duolingo account using certain social logins, such as Google and Facebook. If you register for Duolingo using a social login, Duolingo may receive information about you from your social login provider, including your email address and contacts. If you try to log in with a password when you have registered using a social login, we may remind you to log in using the social provider instead.
+You can manage your Duolingo account and social logins within the app Settings.
+b. Profile & Public Profile Information
+After you register for your Duolingo account, a profile page will be created for you (“Profile”). Your Profile will be populated by information you submit, such as your name, bio, and profile picture (“Public Profile Information”) and your username. Your age, phone number, and email address are not included in your public Profile and are not considered Public Profile Information under this Privacy Policy. Other Duolingo users may be able to search for your Profile using your name, username, email address, or phone number.
+Your Profile will also include information about your learning progress, such as the languages you are learning, your learning statistics, and your achievements. Moreover, your Profile will show a list of your followers and the users you follow. We call users that follow each other “Friends”.
+By default, your Profile is public, and visible to other Duolingo users and anyone else on the Internet. In addition, your Public Profile Information may be publicly visible. If your Profile is public, third-party websites or web scrapers may be able to read, collect, and use your public information for their own purposes. However, you can set your Profile to private in your Settings.
+You may be able to submit comments, likes, reactions, and celebrations (“Kudos”) that will supplement other users’ Profiles and other users may be able to submit Kudos that will supplement your Profile. Any Kudos you submit is considered Public Profile Information under this Privacy Policy. You can delete Kudos you submit or Kudos that other users submit to your Profile.
+Duolingo may scan or review any Public Profile Information, or share your Public Profile Information with a third-party content moderation service provider, to ensure compliance with our Community Guidelines. Duolingo may restrict or delete Public Profile Information if it violates our Community Guidelines or for any other reason.
+c. AI Features & Video Call
+Duolingo uses Artificial Intelligence (“AI”) to help create lessons, matches, and other content within the app, based on users’ learning activity. For example, AI might be used to tailor a Spanish lesson to include more words that a user is struggling with, or play a chess match in real-time to adapt to a user’s moves.
+Duolingo may offer a Video Call feature where you can have an AI-powered spoken conversation with a Duolingo character to practice the language you are learning. Duolingo may also offer other AI-powered features that allow you to send text or audio messages to AI chat companions in a conversational format.
+When you interact with Video Call or other AI-enabled features, the text and audio you submit may be shared with AI vendors such as OpenAI and Google. Duolingo’s agreements with these AI vendors mean they are not permitted to use any personal information for their own purposes. Additionally, Duolingo may generate, record, and store audio recordings or transcripts of the text and audio you submit, and use these recordings or transcripts for product improvement and personalization purposes, including training and running Duolingo’s own artificial intelligence models. Please do not submit any personal, sensitive, or confidential information when using Video Call or other AI features.
+Duolingo may also offer a video Math Tutor feature where you can have an AI-powered spoken conversation with a Duolingo character to work on a math problem. Notwithstanding anything else in this section, when you use the Math Tutor feature, your audio may be shared only with Apple for purposes of speech recognition and conversion into a text transcript and is then immediately deleted. Duolingo may retain, use, and share with AI vendors the text transcript as described above.
+d. Speaking Activities
+Some activities, including Video Call, involve you speaking into the Duolingo app. To recognize speech, your audio may be sent to a third-party provider such as Google, Apple, or Amazon Web Services. Additionally, Duolingo may collect and analyze your speech to help us understand the effectiveness of our lessons and to improve or personalize the product. You may skip speaking activities. You may also choose not to share your audio with us for product improvement purposes within the app Settings. We will not use your audio recordings to develop any voice cloning technology.
+e. Contact Sync Feature
+Duolingo has a Contact Sync feature, which allows you to find your contacts who also use Duolingo. If you use Contact Sync, you will provide your phone number and give the Duolingo app permission to access the contacts stored on your phone, including the phone number, name, photo, and other information stored in that contact for the purpose of identifying your contacts who also use Duolingo and recommending them as users you may wish to engage with.
+If you use the Contact Sync feature, Duolingo will not store your contacts’ phone numbers, but only an encrypted “hash” of them. This hash is an alternative code to the actual phone number and can be used only to match the hash of other users’ numbers. The hashing process securely strips away the real phone number, so Duolingo cannot use the hashes to identify your contacts’ real phone numbers, contact your contacts, or share their information with anyone else. This hashing process applies only to your contacts’ phone numbers and not yours.
+If you have submitted your phone number to Duolingo, whether through Contact Sync or some other way (such as adding the phone number to your profile, using it to register, or using it to activate other product features), other Duolingo users who have your phone number in their contacts may be able to locate your Profile using Contact Sync and be recommended your profile to follow.
+You can disable the Contact Sync feature and your sharing of contacts with Duolingo by accessing the Social Accounts section of the app Settings. This will also instruct Duolingo to automatically delete any previously shared information about your contacts.
+f. Activity Data & IP Addresses
+When you use the Service, we may generate data about your use of the Service, which may include your browser and device data, log data, and IP address. We will also generate data regarding your engagement in educational activities on the Service.
+We may recommend other Duolingo users for you to follow, and for other users to follow you, based on a shared IP address such as other users on the same WiFi network as you, or if other users share your device. We will retain your IP address for no more than thirty (30) days, unless exceptional circumstances require longer retention.
+If you purchase a Duolingo subscription and submit a payment method to Duolingo, Duolingo may retain your IP address for longer solely for purposes of payment processing and fraud prevention.
+g. FullStory & Session Replay
+When you use Duolingo in our app or on our website, some of your activity will be logged by services called FullStory and Session Replay. You can disable both FullStory and Session Replay activity recording by using the Tracking toggle within the app Settings. FullStory and Session Replay are disabled for Child Users.
+FullStory and Session Replay capture and analyze your activity and provide us with data and a video session replay of your activity to help us make the Duolingo experience better. They record usage patterns (e.g., clicks, mouse movements, scrolling, and typing), tech specs (e.g., browser, device type, operating system, viewfinder size, script errors, and IP address), navigation (e.g., pages visited, referrers, URL parameters, and session duration), and learning activity (e.g., session progress and answers).
+Session Replay does not record email addresses, phone numbers, user-uploaded profile images, or passwords.
+FullStory does not record usernames, names, profile images, email addresses, profile locations or bios, or passwords.
+h. Cookies
+When you access the Duolingo website, we store certain data from your browser using cookies. A cookie is a piece of data stored on the user’s computer tied to data about the user. We use session ID cookies to confirm that users are logged in. If you do not want your data to be collected by cookies, there is a simple procedure in most browsers that allows you to deny or accept the cookie feature. However, cookies may be necessary to provide you with certain features available on the website (e.g., customized information).
+You can see a list of all cookies used at Duolingo on our Cookie List page and manage your cookies in the Privacy Preference Center. Please note that our cookies include Targeting Cookies from Google, Meta, Amazon, and other companies, which these companies may use to track your activities across multiple websites to deliver personalized advertising to you.
+i. Google Analytics
+We use Google Analytics, which is a web analytics tool that helps us understand how users engage with our website. Like many services, Google Analytics uses first-party cookies to track user interactions, as in our case, where they are used to collect information about how users use our site. This information is used to compile reports and to help us improve our site. These reports disclose website trends without identifying individual visitors. You can opt out of Google Analytics by installing Google’s browser add-on available here.
+How We Process Your Information
+Duolingo may process your personal information according to the following legal bases: to provide products or services you request, to promote Duolingo’s legitimate interests, to comply with legal obligations, and with your consent. In particular, Duolingo may process and share your personal information in the following ways:
+a. Providing and improving the Service
+Duolingo will process your personal information to provide and improve the Service. For example, we will use the information you provide to maintain your Profile and learning progress, display your Profile to other users (unless you make it private), personalize learning content, detect and fix bugs, perform research, and provide customer service to you.
+Duolingo may share personal information with third parties that help us provide or improve the Service, including hosting providers such as Amazon Web Services, search engine providers such as Google, analytics providers such as Crashlytics, support providers such as ZenDesk, and payment processors such as Stripe. Duolingo may also share your information with third-party vendors that support product features such as AI, speech recognition, and content moderation.
+If you redeem a promotion code to gain a Duolingo subscription, we may share data regarding your usage of Duolingo with the organization that provided the promotion code to you.
+b. Communicating with you
+Duolingo will use the email address or phone number you provide to send you the following types of messages:
+Messages to support the Duolingo teaching methodology and reinforce your learning, such as learning tips, reminders to practice, and progress reports.
+Notifications about friend requests and your friends’ activity on Duolingo.
+Notifications of messages and nudges from your friends.
+Announcements regarding changes to the Service or products.
+Announcements of new Duolingo products, services, offers, or research opportunities.
+You may opt-out of receiving non-essential messages within the app Settings.
+Essential messages to support the operation of the Service such as password reset emails.
+c. Complying with law and preventing harmful activities
+Duolingo may process and share personal information if necessary to comply with legal requests, such as subpoenas or court orders. Duolingo may share personal information when we believe it is necessary to comply with law, to protect our interests or property, to prevent fraud or other illegal activity, to assist law enforcement, or to prevent imminent harm. This may include sharing information with other companies, lawyers, agents, or government agencies.
+d. Personalized advertising
+Duolingo may process and share your personal information for the purpose of providing you with personalized advertising. To provide personalized advertising, we may work with a variety of marketing analytics service providers, website analysis firms, and third-party advertising networks, such as Unity, Meta, LiftOff, Pangle, Moloco, and Google. These third-party advertising service providers collect and use personal information about your visits to and use of the Service, as well as other websites, in order to serve you with advertisements and content tailored to meet your preferences and likely interests, better understand ad effectiveness, and for market research purposes.
+You can opt out of receiving personalized advertising within the app Settings. In addition, your mobile devices may offer settings that let you make choices about the collection, use, and transfer of mobile app information for personalized ads (for example, Apple iOS’ Advertising ID and Google Android’s Advertising ID). Users in certain jurisdictions (including the European Union and United Kingdom) are opted out of personalized advertising by default, but may opt in.
+Please note that opting out of personalized advertising does not prevent the display of all advertisements to you. Certain Duolingo subscriptions may offer an ad-free experience.
+e. Anonymous information
+Duolingo may anonymize your personal information, and use this de-identified data for any purpose, such as better understanding learning trends and training artificial intelligence models. Such information is not considered personal information since it cannot identify any individual.
+Your Data Subject Rights
+You also have the following rights in relation to the personal information we hold about you, in addition to any other rights required by applicable law:
+Know what personal information we have collected about you.
+Access a copy of the personal information that we hold about you.
+Know what personal information about you we have shared with third parties.
+Opt out of the sharing of your personal information with third parties.
+Object to our processing of your personal information.
+Request that we limit our use of your sensitive personal information to what is necessary to perform the services you requested.
+Not be discriminated against for exercising your data subject rights.
+Request that we delete any personal information we have collected from you.
+Request that we correct any inaccurate personal information about you.
+Export the personal information you have provided to Duolingo in a format that can be transferred electronically to a third party.
+Withdraw any consent you previously gave us to process your personal information.
+Delete your Duolingo account by following the instructions in the Service.
+You may update or correct your information, and exercise certain opt-out rights, in your Settings page. You may request to access or erase your personal information and delete your account at the Duolingo Data Vault. To make another privacy-related request, please send an email to privacy@duolingo.com.
+Please note that these rights are not absolute and Duolingo may refuse requests to exercise data subject rights if there is a legitimate reason, such as if we cannot authenticate your identity, if the request could violate the rights of a third party or applicable law, or if the request could interfere with a Duolingo service or prevent us from delivering a service you requested.
+You may also have the right to make a GDPR complaint to the relevant Supervisory Authority. Here is a list of EEA Supervisory Authorities, and a link to the UK Supervisory Authority.
+Data Retention
+To ensure your account stays operational, Duolingo will generally retain your personal information until your account is deleted. However, Duolingo may retain certain information longer if necessary to provide our Service, defend our legitimate interests or those of third parties, comply with legal requirements, resolve or defend ourselves in disputes, investigate misuse or disruption of the Service, or perform agreements. We may also retain anonymous data indefinitely.
+Child Users
+We know that children deserve extra privacy protection, and each country has different rules on how children should be treated depending on their age. That’s why children who use Duolingo get a slightly different experience when using the app. Duolingo treats Child Users (meaning users under the age of 13 in the United States or another age of digital consent in their country) differently to ensure their parents are in control and we only collect the bare minimum information we need to make Duolingo work.
+a. Registration
+Child Users are permitted to create a Duolingo account, but instead of using an email address, we ask them to register using a username that is not tied to their real name. We do not collect their name, email address, phone number, or any other personal information.
+The first time Child Users log out, to ensure they do not forget their details we will ask them to provide their parent’s email address. We will then send an email to the parent describing Duolingo’s privacy practices regarding Child Users, including what personal information we collect and how we use, share, and protect that personal information. The email also explains how parents can request to access, change, or delete information about their child.
+b. Special Treatment
+All Child Users receive the following special treatment when using Duolingo:
+Lessons are made age-appropriate by removing mature words.
+Advertisements are non-personalized and set to family-safe content.
+Third-party behavioral tracking is disabled.
+Third-party analytics are disabled.
+Promotional emails are disabled.
+Child Users’ speech data is not shared with Duolingo for product improvement purposes.
+Child Users have a limited set of social features enabled:
+Child Users cannot submit their real name or any pictures to their Profile, but are represented only by a letter avatar or cartoon avatar they can create from preset options.
+The Contact Sync feature is disabled for Child Users.
+Child Users may follow and be followed by other users.
+Child Users can search for other users, or be searched for by other users, but only by providing an exact username or a referral link.
+Duolingo may suggest following other Child Users who already follow the Child User or have mutual followers with them, but non-Child Users will not be suggested to Child Users, and Child Users will not be suggested to non-Child Users.
+Child Users’ Profiles are visible from the profiles of users they follow or who follow them.
+Child Users can only send or receive canned comments to or from Friends; they cannot send or receive user-written comments.
+Child Users can like and celebrate other users’ achievements.
+Interactive features between users, such as nudges, challenges, and quests, are only enabled for Child Users with their followers and users they follow.
+Friends, followers, and other users can be blocked, reported, or unfollowed.
+Social features can be disabled within the app Settings.
+Child Users have access to leaderboards but receive the following special treatment:
+The Child User’s username will be replaced with a random fake name to all other users in the leaderboard. For example, the Child User could appear as “John Smith” instead of their real username to other users.
+Other leaderboard users cannot view the Child User’s Profile or follow the Child User from leaderboards.
+Child Users will only see avatars of other users instead of profile pictures in their leaderboard.
+Child Users will see sanitized names on their leaderboard; names that have profane or obscene words will be replaced with a fake name for Child Users.
+The leaderboards feature can be disabled within the app Settings.
+c. Family Plans
+Child Users may join paid Duolingo Family Plans. If a Child User joins a paid Duolingo Family Plan, their profile will be visible to other members of the same Duolingo Family Plan.
+d. All Users under 16
+In addition to the above, all users under the age of 16 receive the following special treatment:
+Advertisements are set to non-personalised.
+Third-party behavioral tracking is disabled.
+Third-party analytics are disabled.
+e. Assistance
+Parents may remove their child’s age restrictions by emailing us at privacy@duolingo.com. Additionally, parents can report any abuse to us at abuse@duolingo.com
+f. COPPA
+With regards to the Children’s Online Privacy Protection Act (“COPPA”), Duolingo collects personal information from children under the age of 13 for the sole purpose of performing internal operations of the Service. If we discover that we have unknowingly collected additional personal information from these children, we will delete it. If you believe this to be the case, please contact us at privacy@duolingo.com.
+Duolingo ABC
+Duolingo ABC is designed to be set up by parents and will ask you to provide your child’s age. This information is kept anonymously for research purposes and not tied to your or your child’s personal information in any way. Duolingo ABC does not collect any personal information from children.
+You can choose whether to enable speaking exercises for your child on Duolingo ABC. Duolingo ABC speech data is stored on your phone and uses Apple’s speech recognition service to convert voice into text. No speech data is shared with Duolingo.
+As a parent, you also have the option of providing your email address so that Duolingo may send you information about product updates and ask you about participating in product research. If you do provide your email address, you can unsubscribe any time by emailing literacy-feedback@duolingo.com or by clicking the unsubscribe link in any Duolingo ABC emails. Your Duolingo ABC data is backed up into Apple’s iCloud, which allows you to synchronize and restore the data onto another Apple device.
+Duolingo for Schools
+Duolingo for Schools allows learners to join virtual classrooms where fellow users act as teachers to manage their students’ accounts, assign XP targets and track assignment progress. If you give your email address to a teacher they may send you an invitation to their classroom. You’ll see the teacher’s name and their classroom name on the invitation. If you accept an invitation to join a classroom, teachers can see your name and email address, can reset your password, can send you login links, and can log in as you to help manage your account. Be sure to only join classrooms of teachers you know.
+Teachers can email you learning assignments, and can see your learning progress, such as what lessons you studied, how long you spent on a lesson and how many XP you earned. To withdraw consent and remove all teacher control and their access to your data you can leave a classroom at any time by accessing the Duolingo for Schools section within the app Settings.
+For more information about Duolingo for Schools and help articles, please visit our help center.
+Do Not Track
+The Service is not designed to respond to “do not track” signals sent by some browsers.
+Links to Third-Party Websites
+The Service may contain links to other websites. Duolingo is not responsible for the content or privacy practices of other websites, including any personal or financial information collected by third-party payment processors. We encourage users to be aware of the privacy policies of other websites they visit. This Privacy Policy applies only to information collected by Duolingo. Any time you click on a link (including advertising banners) or submit your personal information to a third-party website, you will be subject to that third party’s privacy policies.
+Privacy Policy Updates
+We may update our Privacy Policy to reflect changes to our information practices. If we do this and the changes are material, we will notify you by email to describe the changes, and we will indicate the date these terms were last revised at the bottom of the Privacy Policy.
+Data Transfer
+Duolingo is based in the United States and processes data in the United States, which may not provide equivalent levels of data protection as your home jurisdiction. Duolingo may transfer the data of users outside the United States to the United States.
+a. Data Privacy Framework (DPF)
+Duolingo complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce. Duolingo has certified to the U.S. Department of Commerce that it adheres to the EU-U.S. Data Privacy Framework Principles (EU-U.S. DPF Principles) with regard to the processing of personal data received from the European Union in reliance on the EU-U.S. DPF and from the United Kingdom (and Gibraltar) in reliance on the UK Extension to the EU-U.S. DPF. Duolingo has certified to the U.S. Department of Commerce that it adheres to the Swiss-U.S. Data Privacy Framework Principles (Swiss-U.S. DPF Principles) with regard to the processing of personal data received from Switzerland in reliance on the Swiss-U.S. DPF. If there is any conflict between the terms in this privacy policy and the EU-U.S. DPF Principles and/or the Swiss-U.S. DPF Principles, the Principles shall govern. To learn more about the Data Privacy Framework (DPF) program, and to view our certification, please visit https://www.dataprivacyframework.gov/.
+In compliance with the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Duolingo commits to resolve DPF Principles-related complaints about our collection and use of your personal information. EU and UK and Swiss individuals with inquiries or complaints regarding our handling of personal data received in reliance on the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF should first contact Duolingo at: privacy@duolingo.com.
+In compliance with the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF, Duolingo commits to cooperate and comply respectively with the advice of the panel established by the EU data protection authorities (DPAs) and the UK Information Commissioner’s Office (ICO) and the Gibraltar Regulatory Authority (GRA) and the Swiss Federal Data Protection and Information Commissioner (FDPIC) with regard to unresolved complaints concerning our handling of personal data received in reliance on the EU-U.S. DPF and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF. Individuals have the possibility, under certain conditions, to invoke binding arbitration for complaints regarding DPF compliance not resolved by any of the other DPF mechanisms. See Annex I of the DPF Principles for additional information: https://www.dataprivacyframework.gov/framework-article/ANNEX-I-introduction.
+Duolingo has responsibility for the processing of personal information it receives under the DPF Principles and subsequently transfers to a third party acting as an agent on its behalf. Duolingo shall remain liable under the DPF Principles if its agent processes such personal information in a manner inconsistent with the DPF Principles, unless Duolingo proves that it is not responsible for the event giving rise to the damage.
+The Federal Trade Commission has jurisdiction over Duolingo’s compliance with the EU-U.S. Data Privacy Framework (EU-U.S. DPF) and the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF). Duolingo may disclose personal information in response to lawful requests by US public authorities, including to meet national security or law enforcement requirements.
+Supplemental Terms in Certain Jurisdictions
+In some jurisdictions, the Service may be subject to supplemental privacy policies or local laws. For users in those jurisdictions, the applicable supplemental privacy policies and local laws will take precedence over this Privacy Policy to the extent they conflict.
+Contact Us
+Duolingo, Inc. is the data controller of your data for the purposes of the General Data Protection Regulation (“GDPR”) and any relevant local legislation. Duolingo’s headquarters are located within the United States at:
+Duolingo, Inc.
+5900 Penn Ave.
+Pittsburgh, PA 15206
+United States of America
+Phone: +1-412-567-6602
+Duolingo, Inc. is also a registered Data Controller with the UK Information Commissioner's Office (ICO), number ZA294891, at the address:
+Duolingo, Inc.
+141 Wardour Street
+London
+W1F 0UT
+United Kingdom
+For all data privacy inquiries and any questions or concerns you have about this Privacy Policy, please contact our Data Protection Officer at privacy@duolingo.com.
+For all support inquiries, please go to https://duolingo.com/help.

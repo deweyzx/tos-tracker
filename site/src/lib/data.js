@@ -14,7 +14,10 @@ const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf-8");
 const exists = (p) => fs.existsSync(path.join(ROOT, p));
 
 // Names that don't capitalize the simple way.
-const NAMES = { openai: "OpenAI", tiktok: "TikTok", x: "X" };
+const NAMES = {
+  openai: "OpenAI", tiktok: "TikTok", x: "X", linkedin: "LinkedIn", ebay: "eBay",
+  github: "GitHub", doordash: "DoorDash", characterai: "Character.AI",
+};
 export const companyName = (id) => NAMES[id] ?? id.charAt(0).toUpperCase() + id.slice(1);
 
 // What people type when they mean a company: its products and old names.
@@ -31,6 +34,16 @@ export const ALIASES = {
   spotify: ["Podcasts"],
   zoom: ["Zoom Meetings"],
   reddit: ["Subreddits"],
+  amazon: ["Prime Video", "Alexa", "Kindle", "Audible", "Ring", "Whole Foods"],
+  microsoft: ["Windows", "Xbox", "Outlook", "Copilot", "Bing", "Teams", "Office", "Skype", "Minecraft"],
+  uber: ["Uber Eats"],
+  steam: ["Valve"],
+  characterai: ["Character AI", "c.ai"],
+  perplexity: ["Comet"],
+  grammarly: ["Superhuman"],
+  github: ["GitHub Copilot"],
+  linkedin: ["LinkedIn Learning"],
+  temu: ["PDD"],
 };
 
 const DOCS = { privacy: "Privacy Policy", terms: "Terms of Service" };

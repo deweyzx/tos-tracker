@@ -7,7 +7,7 @@ import "../styles/site.css";
 import { loadData } from "../lib/data.js";
 
 // The default description says only what the site does today (no alerts yet: see PRODUCT.md).
-const { title = "ToS Tracker", description = "See what changed in the privacy policies and terms of service of 12 big tech companies, word for word, with a plain-English summary of each change.", home = false } = Astro.props;
+const { title = "ToS Tracker", description = `See what changed in the privacy policies and terms of service of ${loadData().companies.length} big companies, from Google and Meta to Temu and Shein, word for word, with a plain-English summary of each change.`, home = false } = Astro.props;
 // Absolute URLs for link previews (LinkedIn, Slack, iMessage need the full address).
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 const shareImage = new URL(`${import.meta.env.BASE_URL.replace(/\/$/, "")}/og.png`, Astro.site).href;
