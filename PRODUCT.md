@@ -31,7 +31,7 @@ Every change is shown word for word next to its AI summary, with links to the ar
 
 - Tabs: Overview, Latest (all changes by month, filterable), Companies (with pins saved in the browser), History (policy length over time). One page per change with the exact wording.
 - Some sites (Reddit, Meta) need a real browser to scrape; the site says so instead of hiding it.
-- Email alerts do not exist yet (planned). Do not show signup forms or buttons for them until they work.
+- Email alerts are built (Buttondown) but only switched on when the BUTTONDOWN_USERNAME variable and BUTTONDOWN_API_KEY secret are set. The sign-up form appears only then; never show a form that doesn't work. Feeds (all changes, and one per company) always work.
 - No server: everything is prebuilt HTML plus a small script.
 
 ## Brand Commitments

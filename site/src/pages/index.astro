@@ -5,6 +5,9 @@ import { loadData, CATEGORY_LABELS, whenFound } from "../lib/data.js";
 
 const data = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+// The sign-up form only appears once Buttondown is set up (pages.yml passes the
+// BUTTONDOWN_USERNAME repository variable), so the site never offers alerts that don't work.
+const emailList = import.meta.env.PUBLIC_BUTTONDOWN_USERNAME || "";
 const { featured: f, changes, companies, policies, categoryCounts, historyPending, noArchive, charts } = data;
 
 const fmt = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
@@ -110,6 +113,21 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
         <div><dt>Pages it can read today</dt><dd>{readable} of {policies.length}</dd></div>
       </dl>
       {unreadable.length > 0 && <p class="meter-note">{listNames(unreadable)} {unreadable.length === 1 ? "blocks" : "block"} automated readers, so {unreadable.length === 1 ? "it isn't" : "they aren't"} checked daily. {unreadable.length === 1 ? "Its" : "Their"} history still comes from the Internet Archive.</p>}
+      <div class="alerts" id="alerts">
+        <h3>{emailList ? "Get alerts" : "Follow changes"}</h3>
+        {emailList && (
+          <form class="signup" action={`https://buttondown.com/api/emails/embed-subscribe/${emailList}`} method="post" target="_blank">
+            <label for="alert-email">One email on days a policy really changes, never for small edits like a new date.</label>
+            <div class="signup-row">
+              <input id="alert-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              <input type="hidden" name="embed" value="1" />
+              <button class="cta" type="submit">Sign up</button>
+            </div>
+            <p class="fine">You'll get an email to confirm. Every alert has an unsubscribe link.</p>
+          </form>
+        )}
+        <p class="fine">{emailList ? "Or follow" : "Follow"} the <a href={`${base}/feed.xml`}>feed of every change</a> in any feed reader. Each company has its own feed too: pick a company in Latest to find it.</p>
+      </div>
     </aside>
 
     {newest.length > 0 && (
@@ -140,7 +158,7 @@ const olderCount = months.filter((m) => m.older).reduce((n, m) => n + m.items.le
           </ul>
         </div>
       </div>
-      <p class="filter-note" id="filterNote" hidden><span id="filterText"></span><button type="button" id="clearFilter">Show all changes</button></p>
+      <p class="filter-note" id="filterNote" hidden><span id="filterText"></span><a id="coFeed" hidden>Feed</a><button type="button" id="clearFilter">Show all changes</button></p>
       {months.map((m) => (
         <div class={m.older ? "month-group older" : "month-group"}>
           <h3 class="month">{m.label}</h3>

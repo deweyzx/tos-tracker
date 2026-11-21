@@ -52,6 +52,11 @@ jobs:
       - name: Build the site from sources.json, policies/ and changes/
         working-directory: site
         run: npm run build
+        env:
+          # The email sign-up form only appears once this repository variable is set
+          # (Settings > Secrets and variables > Actions > Variables), so the site never
+          # offers alerts that don't work yet.
+          PUBLIC_BUTTONDOWN_USERNAME: ${{ vars.BUTTONDOWN_USERNAME }}
 
       - name: Package it for GitHub Pages
         uses: actions/upload-pages-artifact@v5

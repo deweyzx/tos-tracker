@@ -364,6 +364,12 @@ function applyFilter(f) {
     note.hidden = f === "all";
     const co = f.startsWith("co:") ? DATA.companies.find((c) => c.id === f.slice(3)) : null;
     $("#filterText").textContent = co ? `Showing ${co.name} only.` : f === "major" ? "Showing major changes only." : `Showing ${o.childNodes[1].textContent.trim()} only.`;
+    // a company's own feed, for following just that company
+    const feedLink = $("#coFeed");
+    if (feedLink) {
+      feedLink.hidden = !co;
+      if (co) { feedLink.href = `${DATA.base}/feed/${co.id}.xml`; feedLink.textContent = `${co.name}'s feed`; }
+    }
   }
   // keep the filter in the address, so Back and shared links return to it
   if (HOME && $("#main")?.dataset.view === "latest") {

@@ -43,7 +43,8 @@ sources.json ──> scraper.py ──> policies/<company>/<doc>.txt ──> Git
 - [x] Automatic daily runs with GitHub Actions (tests run first, results committed by a bot)
 - [x] Historical backfill from the Internet Archive's Wayback Machine (monthly snapshots since 2023, with archive links)
 - [x] Public website with a change feed, before/after views, and policy history charts
-- [ ] Email/RSS alerts
+- [x] Feeds: one Atom feed of every change (`/feed.xml`) and one per company (`/feed/<company>.xml`)
+- [ ] Email alerts: built (`notify.py`, sends through Buttondown), switched on once a Buttondown account is connected (see below)
 - [x] Browser-based scraping for JavaScript-heavy sites: Meta works (Playwright, `"browser": true` in `sources.json`); Reddit blocks automated browsers, so it stays archive-only
 
 ## Run it yourself
@@ -58,6 +59,8 @@ python summarize.py         # AI summaries (needs an Anthropic API key in .env, 
 python test_detect_changes.py   # run the automated tests
 python test_summarize.py
 python test_backfill.py
+python test_notify.py
+python notify.py 2026-11-20 --dry-run   # show the alert email for a day, send nothing
 python backfill.py          # rebuild past history from the Wayback Machine (slow; cached)
 
 cd site && npm install && npm run dev   # preview the website locally (needs Node.js 22)
@@ -76,6 +79,18 @@ Nothing is hard-coded: the tracker and the website both read from [`sources.json
 4. Commit and push. The website rebuilds itself, and the daily check watches the new page from the next morning on.
 
 The site turns the ID into a display name by capitalizing the first letter (`netflix` becomes "Netflix"). For names with unusual capitalization, add them to `NAMES` in [`site/src/lib/data.js`](site/src/lib/data.js).
+
+### Switch on email alerts
+
+The daily check emails subscribers on days a policy really changes (not for small edits). [Buttondown](https://buttondown.com) keeps the list, sends confirmations and handles unsubscribes; it's free up to 100 subscribers. Until both settings below exist, nothing is sent and the site shows only the feed link, never a sign-up form that doesn't work.
+
+1. Make a Buttondown account and confirm your email address. Your username is in your newsletter's address (`buttondown.com/<username>`).
+2. In Buttondown, copy your API key (Settings > API).
+3. On GitHub: **Settings > Secrets and variables > Actions**.
+   - **Secrets** tab > New repository secret: `BUTTONDOWN_API_KEY` = the key.
+   - **Variables** tab > New repository variable: `BUTTONDOWN_USERNAME` = your username.
+4. **Actions > Publish website > Run workflow.** The sign-up form appears under "How it works".
+5. Sign up yourself to test it. The next day with a real change, the daily check sends the email (check the "Email subscribers" step in its log).
 
 ## About
 

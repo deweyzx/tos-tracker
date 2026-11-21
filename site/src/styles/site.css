@@ -129,6 +129,16 @@ kbd{font:700 11px var(--ui);padding:2px 6px;border-radius:2px;color:var(--soft);
 .facts dt{color:var(--soft)}
 .facts dd{margin:0;color:var(--strong);font-weight:650;text-align:right}
 .meter-note{margin:12px 0 0;font-size:13px;line-height:1.5;color:var(--soft)}
+/* Alerts: email sign-up (only once Buttondown is set up) and the feeds */
+.alerts{margin-top:20px;padding-top:14px;border-top:1px solid var(--edge-hi)}
+.alerts h3{margin:0 0 8px;font-size:16px;font-weight:760;font-stretch:80%;color:var(--strong)}
+.alerts label{display:block;font-size:15px;line-height:1.5;color:var(--text)}
+.signup-row{display:flex;gap:8px;margin-top:10px}
+.signup-row input{flex:1;min-width:0;height:40px;padding:0 12px;border:1.5px solid var(--edge-hi);border-radius:3px;background:#fff;font:500 15px var(--ui);color:var(--strong)}
+.signup-row input:focus-visible{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--ink)}
+.alerts .fine{margin:10px 0 0;font-size:13px;line-height:1.5;color:var(--soft)}
+.alerts .fine a,.filter-note a{color:var(--accent);font-weight:650;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}
+@media (max-width:640px){.signup-row input,.signup-row .cta{height:44px}}
 
 /* ---------- lists of changes ---------- */
 .list{grid-column:1/-1;display:flex;flex-direction:column}
