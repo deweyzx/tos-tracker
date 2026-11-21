@@ -4816,7 +4816,18 @@
         }
       ],
       "archive_before": "https://web.archive.org/web/20260701153410/https://www.canva.com/policies/terms-of-use/",
-      "archive_after": "https://web.archive.org/web/20260802125035/https://www.canva.com/policies/terms-of-use/"
+      "archive_after": "https://web.archive.org/web/20260802125035/https://www.canva.com/policies/terms-of-use/",
+      "ai": {
+        "headline": "Canva updates its Terms of Use effective 20 July 2026, mostly with minor wording and reseller changes",
+        "summary": "Canva's Terms of Use now list an effective date of 20 July 2026 instead of 26 June 2026. The main substantive change is that when you buy Canva through a authorized reseller, Canva's Indirect Master Services Agreement now applies to your use, instead of the reseller-specific billing wording that was removed. The other edits are a typo fix, a wording tweak on licensed content, and a link to the new agreement in the policies list.",
+        "severity": "minor",
+        "categories": [
+          "legal",
+          "account"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
     },
     {
       "company": "canva",

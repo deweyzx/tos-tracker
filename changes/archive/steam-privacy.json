@@ -1372,7 +1372,17 @@
         }
       ],
       "archive_before": "https://web.archive.org/web/20260806221924/https://store.steampowered.com/privacy_agreement/",
-      "archive_after": "https://web.archive.org/web/20260901090538/https://store.steampowered.com/privacy_agreement/"
+      "archive_after": "https://web.archive.org/web/20260901090538/https://store.steampowered.com/privacy_agreement/",
+      "ai": {
+        "headline": "Steam updates EU data protection representative's address and name",
+        "summary": "Steam's privacy policy now lists RIVACY GmbH in Hamburg, Germany, as its EU representative for data protection questions, replacing Valve GmbH i.L. This is a contact detail change and does not alter how your data is used.",
+        "severity": "minor",
+        "categories": [
+          "other"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
     }
   ],
   "versions": [

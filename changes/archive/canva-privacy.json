@@ -2906,7 +2906,18 @@
         }
       ],
       "archive_before": "https://web.archive.org/web/20250702052839/https://www.canva.com/policies/privacy-policy/",
-      "archive_after": "https://web.archive.org/web/20250801190933/https://www.canva.com/policies/privacy-policy/"
+      "archive_after": "https://web.archive.org/web/20250801190933/https://www.canva.com/policies/privacy-policy/",
+      "ai": {
+        "headline": "Canva updates its Privacy Policy date and clarifies team and admin account wording",
+        "summary": "Canva updated the \"last updated\" date to July 14, 2025, and made several wording changes: team content now explicitly includes content shared to a Team, and admin-controlled accounts are described as \"controlled\" by an admin entity rather than \"transferred\" to it, with advance notice before control passes. Some document links were also swapped in the terms list. Most of these edits clarify existing wording, though the admin wording change is a little more precise about when an employer takes control.",
+        "severity": "minor",
+        "categories": [
+          "account",
+          "your_content"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
     },
     {
       "company": "canva",
