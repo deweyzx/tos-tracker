@@ -24,7 +24,7 @@
   {"company": "github",      "doc": "privacy",  "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"},
   {"company": "github",      "doc": "terms",    "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"},
   {"company": "google",      "doc": "privacy",  "url": "https://policies.google.com/privacy", "archive_must_contain": "U.S. state law requirements"},
-  {"company": "google",      "doc": "terms",    "url": "https://policies.google.com/terms"},
+  {"company": "google",      "doc": "terms",    "url": "https://policies.google.com/terms", "archive_must_contain": "Country version: United States"},
   {"company": "grammarly",   "doc": "privacy",  "url": "https://www.grammarly.com/privacy-policy"},
   {"company": "grammarly",   "doc": "terms",    "url": "https://www.grammarly.com/terms"},
   {"company": "linkedin",    "doc": "privacy",  "url": "https://www.linkedin.com/legal/privacy-policy"},
