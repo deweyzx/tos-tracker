@@ -4,7 +4,7 @@
   {"company": "amazon",      "doc": "privacy",  "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ", "browser": true},
   {"company": "amazon",      "doc": "terms",    "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM", "browser": true},
   {"company": "anthropic",   "doc": "privacy",  "url": "https://www.anthropic.com/legal/privacy"},
-  {"company": "anthropic",   "doc": "terms",    "url": "https://www.anthropic.com/legal/consumer-terms"},
+  {"company": "anthropic",   "doc": "terms",    "url": "https://www.anthropic.com/legal/consumer-terms", "archive_must_contain": "Anthropic, PBC"},
   {"company": "apple",       "doc": "privacy",  "url": "https://www.apple.com/legal/privacy/en-ww/"},
   {"company": "apple",       "doc": "terms",    "url": "https://www.apple.com/legal/internet-services/itunes/us/terms.html"},
   {"company": "canva",       "doc": "privacy",  "url": "https://www.canva.com/policies/privacy-policy/"},
