@@ -31,7 +31,7 @@ Post illegal pornographic content on publicly viewable Telegram channels, bots, 
 Engage in activities that are recognized as illegal in the majority of countries. This includes child abuse, selling or offering illegal goods and services (drugs, firearms, forged documents), etc.
 We reserve the right to update these Terms of Service later.
 Users in EU countries, the United Kingdom and Australia must be at least 18 years old to sign up.
-If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Stars, Telegram Premium, Telegram Business, Bot Users, Mini App Users, Content Creators, Telegram Gateway API, Telegram API Developers, and Bot Developers.
+If you access certain optional features and services on the Telegram platform, you will be additionally bound by their specific terms – such as the Terms of Service for Telegram Stars, Telegram Premium, Telegram Business, Bot Users, Mini App Users, Gram Wallet, Content Creators, Telegram Gateway API, Telegram API Developers, and Bot Developers.
 Telegram additionally prohibits data scraping as part of its Content Licensing and AI Scraping Terms, which apply to all users, businesses, and third-party services accessing the platform.
 Terms of Service for Telegram Stars
 Telegram users can acquire Telegram Stars, which are used to purchase digital goods and services from bots and mini-apps inside the Telegram app. Should you wish to use Telegram Stars, you in turn accept the Terms of Service for Telegram Stars.
