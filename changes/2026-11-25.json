@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-25",
+  "changes": [
+    {
+      "company": "meta",
+      "doc": "privacy",
+      "date": "2026-11-25",
+      "source": "daily",
+      "file": "policies/meta/privacy.txt",
+      "changed_words": 51,
+      "hunks": [
+        {
+          "removed": [],
+          "added": [
+            "Read the United States Regional Privacy Notice for more details about how we handle Personal Information and how to exercise your rights."
+          ],
+          "context_before": [
+            "What is the Privacy Policy and what does it cover?"
+          ],
+          "context_after": [
+            "Highlights"
+          ],
+          "changed_words": 22
+        },
+        {
+          "removed": [],
+          "added": [
+            "Privacy notice for United States residents",
+            "You can learn more about the consumer privacy rights that may be available to you by reviewing the United States Regional Privacy Notice."
+          ],
+          "context_before": [
+            "We'll notify you before we make material changes to this Policy. You’ll have the opportunity to review the revised Policy before you choose to continue using our Products."
+          ],
+          "context_after": [
+            "How to contact Meta with questions"
+          ],
+          "changed_words": 29
+        }
+      ],
+      "ai": {
+        "headline": "Meta adds a United States privacy notice with consumer rights details",
+        "summary": "Meta's privacy policy now points US users to a separate United States Regional Privacy Notice, which explains how personal information is handled and what consumer privacy rights may be available. The change only adds references and links to that notice; the text provided does not show any new rules about data use.",
+        "severity": "minor",
+        "categories": [
+          "your_rights",
+          "legal"
+        ],
+        "what_you_can_do": "Read the United States Regional Privacy Notice to see which consumer privacy rights may apply to you.",
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "meta",
+      "doc": "terms",
+      "date": "2026-11-25",
+      "source": "daily",
+      "file": "policies/meta/terms.txt",
+      "changed_words": 227,
+      "hunks": [
+        {
+          "removed": [
+            "We work constantly to improve our services and develop new features to make our Products better for you and our community. As a result, we may need to update these Terms from time to time to accurately reflect our services and practices, to promote a safe and secure experience on our Products and services, and/or to comply with applicable law. We will only make any changes if the provisions are no longer appropriate or if they are incomplete, and only if the changes are reasonable and take due account of your interests or if the changes are required for safety and security purposes or to comply with applicable law.",
+            "We will notify you (for example, by email or through our Products) at least 30 days before we make changes to these Terms and give you an opportunity to review them before they go into effect, unless changes are required by law. Once any updated Terms are in effect, you will be bound by them if you continue to access or use our Products.",
+            "We hope that you will continue using our Products, but if you do not agree to our updated Terms, or wish to terminate your agreement to this contract, you can delete your account at any time and you must also stop accessing, or using Facebook and the other Meta Products."
+          ],
+          "added": [
+            "We work constantly to improve our services and develop new features to make our Products better for you and our community. As a result, we may need to update these Terms from time to time to accurately reflect our services and practices, to promote a safe and secure experience on our Products and services, and/or to comply with applicable law. Unless otherwise required by law, we will notify you before we make changes to these Terms and give you an opportunity to review them before they go into effect. Once any updated Terms are in effect, you will be bound by them if you continue to access or use our Products.",
+            "We hope that you will continue using our Products, but if you do not agree to our updated Terms or wish to terminate your agreement to this contract, you can delete your account at any time and you must also stop accessing, or using Facebook and the other Meta Products."
+          ],
+          "context_before": [
+            "4.1 Updating our Terms"
+          ],
+          "context_after": [
+            "4.2 Account suspension or termination"
+          ],
+          "changed_words": 76
+        },
+        {
+          "removed": [
+            "We work hard to provide the best Products we can and to specify clear guidelines for everyone who uses them. Our Products, however, are provided \"as is,\" and to the extent permissible by law, we make no guarantees that they always will be safe, secure, or error-free, or that they will function without disruptions, delays, or imperfections. To the extent permitted by law, we also DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. We do not control or direct what people and others do or say, and we are not responsible for their actions or conduct (whether online or offline) or any content they share (including offensive, inappropriate, obscene, unlawful, and other objectionable content).",
+            "We cannot predict when issues might arise with our Products. Accordingly, our liability shall be limited to the fullest extent permitted by applicable law. To the fullest extent permitted by applicable law under no circumstance will we be liable to you for any lost profits, revenues, information, or data, or consequential, special, indirect, exemplary, punitive, or incidental damages arising out of or related to these Terms or the Meta Products (however caused and on any theory of liability, including negligence), even if we have been advised of the possibility of such damages."
+          ],
+          "added": [
+            "We work hard to provide the best Products we can and to specify clear guidelines for everyone who uses them. Our Products, however, are provided \"as is,\" and we make no guarantees that they always will be safe, secure, or error-free, or that they will function without disruptions, delays, or imperfections. To the extent permitted by law, we also DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. We do not control or direct what people and others do or say, and we are not responsible for their actions or conduct (whether online or offline) or any content they share (including offensive, inappropriate, obscene, unlawful, and other objectionable content).",
+            "We cannot predict when issues might arise with our Products. Accordingly, our liability shall be limited to the fullest extent permitted by applicable law, and under no circumstance will we be liable to you for any lost profits, revenues, information, or data, or consequential, special, indirect, exemplary, punitive, or incidental damages arising out of or related to these Terms or the Meta Products (however caused and on any theory of liability, including negligence), even if we have been advised of the possibility of such damages. Our aggregate liability arising out of or relating to these Terms or the Meta Products will not exceed the greater of $100 or the amount you have paid us in the past twelve months."
+          ],
+          "context_before": [
+            "4.3 Limits on liability"
+          ],
+          "context_after": [
+            "4.4 Disputes"
+          ],
+          "changed_words": 51
+        },
+        {
+          "removed": [
+            "If you are a consumer, or where required by applicable law, the laws of the country in which you reside will apply to any claim, cause of action, or dispute you have against us that arises out of or relates to these Terms or the Meta Products, and you may resolve your claim in any competent court in that country that has jurisdiction over the claim. In all other cases, and for any claim, cause of action, or dispute that Meta files against you, you and Meta agree that any such claim, cause of action or dispute must be resolved exclusively in the U.S. District Court for the Northern District of California or a state court located in San Mateo County. You also agree that you submit to the personal jurisdiction of either of these courts for the purpose of litigating any such claim, and that the laws of the State of California will govern these Terms and any claim, cause of action, or dispute without regard to conflict of law provisions. Without prejudice to the foregoing, you agree that, in its sole discretion, Meta may bring any claim, cause of action, or dispute we have against you in any competent court in the country in which you reside that has jurisdiction over the claim."
+          ],
+          "added": [
+            "You and Meta each agree that any claim, cause of action, or dispute between us that arises out of or relates to these Terms or your access or use of the Meta Products shall be resolved exclusively in the U.S. District Court for the Northern District of California or a state court located in San Mateo County. You also agree to submit to the personal jurisdiction of either of these courts for the purpose of litigating any such claim, and that the laws of the State of California will govern these Terms and any claim, cause of action, or dispute without regard to conflict of law provisions. Without prejudice to the foregoing, you agree that, in its sole discretion, Meta may bring any claim, cause of action, or dispute we have against you in any competent court in the country in which you reside that has jurisdiction over the claim."
+          ],
+          "context_before": [
+            "We try to provide clear rules so that we can limit or hopefully avoid disputes between you and us. If a dispute does arise, however, it's useful to know up front where it can be resolved and what laws will apply."
+          ],
+          "context_after": [
+            "4.5 Miscellaneous"
+          ],
+          "changed_words": 95
+        },
+        {
+          "removed": [
+            "No Third-party Beneficiaries Terms: These Terms do not confer any third-party beneficiary rights. All of our rights and obligations under these Terms are freely assignable by us in connection with a merger, acquisition, or sale of assets, or by operation of law or otherwise.",
+            "User Name Change: We may change the username for your account in certain circumstances (for example, if someone else claims the username and it appears unrelated to the name you use in everyday life)."
+          ],
+          "added": [
+            "No Third-party Beneficiaries: These Terms do not confer any third-party beneficiary rights. All of our rights and obligations under these Terms are freely assignable by us in connection with a merger, acquisition, or sale of assets, or by operation of law or otherwise.",
+            "User Name Change: We may need to change the username for your account in certain circumstances (for example, if someone else claims the username and it appears unrelated to the name you use in everyday life)."
+          ],
+          "context_before": [
+            "Legacy Contact: You may designate a person (called a legacy contact) to manage your account if it is memorialized. If you enable it in your settings, only your legacy contact or a person who you have identified in a valid will or similar legal document expressing clear consent to disclose your content to that person upon death or incapacity will be able to seek limited disclosure of information from your account after it is memorialized."
+          ],
+          "context_after": [
+            "Feedback: We always appreciate your feedback and other suggestions about our products and services. But we may use feedback and other suggestions without any restriction or obligation to compensate you, and we are under no obligation to keep them confidential."
+          ],
+          "changed_words": 5
+        }
+      ],
+      "ai": {
+        "headline": "Meta drops its 30-day advance notice promise for Terms changes",
+        "summary": "Meta removed its promise to notify users at least 30 days before changing the Terms, and now says it will notify users before changes, unless the law requires otherwise. Users still get a chance to review changes before they take effect, but the notice period is no longer fixed at 30 days.",
+        "severity": "moderate",
+        "categories": [
+          "legal"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    },
+    {
+      "company": "shein",
+      "doc": "privacy",
+      "date": "2026-11-25",
+      "source": "daily",
+      "file": "policies/shein/privacy.txt",
+      "changed_words": 527,
+      "hunks": [
+        {
+          "removed": [
+            "Retention Criteria: Communications that are associated with an account will be retained for the life of the account, plus a reasonable period thereafter to satisfy legal obligations (ex: financial reporting, warranty, etc.)."
+          ],
+          "added": [
+            "Retention Criteria: Content that is associated with an account will be retained for the life of the account, plus a reasonable period thereafter to satisfy legal obligations (ex: financial reporting, warranty, etc.)."
+          ],
+          "context_before": [
+            "Used for Targeted Advertising: No"
+          ],
+          "context_after": [
+            "Payment Card and Financial Information, such as credit or debit card numbers, financial account numbers, or other financial data to process payments, refunds, or other financial transactions"
+          ],
+          "changed_words": 4
+        },
+        {
+          "removed": [],
+          "added": [
+            "Sensitive Personal Information. Some information we collect is considered \"sensitive\" under certain state laws, including government-issued identifiers (such as Social Security, taxpayer identification, and passport numbers), account log-in credentials, and financial account information. We do not use or disclose sensitive personal information to infer characteristics about you or for purposes other than those permitted by applicable law, and we do not sell or share it."
+          ],
+          "context_before": [
+            "We do not knowingly collect protected classifications about our users, biometric information, or education-related information. For clarity, the device security configuration status indicator described above reflects only whether biometric authentication is enabled on your device as a device security setting - it does not constitute biometric information and no biometric data, templates, or identifiers are collected. When communicating with us by email or through forms on our Services, or when you publicly share content through our Services, we ask that you please do not send us any sensitive information pertaining to yourself or to others."
+          ],
+          "context_after": [
+            "2. How Do We Use Personal Information?"
+          ],
+          "changed_words": 65
+        },
+        {
+          "removed": [],
+          "added": [
+            "Photos submitted with your reviews, which we may select using automated tools (for example, to identify photos that show the item being worn) and display on the product page, including alongside the main product images. This selection does not use facial recognition to identify anyone in the photo."
+          ],
+          "context_before": [
+            "Photographs, customer reviews, and other feedback you upload to our Services in accordance with our Terms and Conditions, to provide product advice and to allow you to voluntarily show other potential customers what items may look like when worn or to relate experiences with sellers on our Services."
+          ],
+          "context_after": [
+            "To undertake marketing, advertising or other promotional activities"
+          ],
+          "changed_words": 48
+        },
+        {
+          "removed": [],
+          "added": [
+            "Browsing, search, and purchase activity on our Services, to infer your product preferences and personalize the products we recommend to you."
+          ],
+          "context_before": [
+            "Preferences, Behavior Data, and Inferences, including collection of your \"like\" records and votes when prompted as to your preference between two items, used by us to recommend clothing sizes or styles, personalization, or to provide fit prediction services for you."
+          ],
+          "context_after": [
+            "Commercial Information to share within and across our corporate organization for our business administration and improvement needs."
+          ],
+          "changed_words": 21
+        },
+        {
+          "removed": [],
+          "added": [
+            "Large Language Models. We, and service providers acting on our behalf, use communications with our customer service team and virtual assistant to train and improve the large language models that power our virtual assistant. We do not use sensitive personal information for this purpose, and we do not sell personal data for the purpose of training large language models."
+          ],
+          "context_before": [
+            "We may use your personal information for a new or secondary purpose if disclosed to you prior to you providing us your personal information or which is reasonably necessary to provide the Services or other related products and/or services requested, with your consent or upon your direction."
+          ],
+          "context_after": [
+            "3. When Do We Share Personal Data?"
+          ],
+          "changed_words": 59
+        },
+        {
+          "removed": [
+            "Website hosting services (including cloud storage), mobile app or software optimization services, customer relationship management software, email service providers, or system maintenance services."
+          ],
+          "added": [
+            "Website hosting services (including cloud storage), mobile app or software optimization services, artificial intelligence services (such as evaluating review photos and supporting our virtual assistant), customer relationship management software, email service providers, or system maintenance services."
+          ],
+          "context_before": [
+            "IT system and software service provider"
+          ],
+          "context_after": [
+            "Payment service provider"
+          ],
+          "changed_words": 13
+        },
+        {
+          "removed": [],
+          "added": [
+            "H. Intellectual Property Complaints. If you submit an intellectual property complaint, we may share your name, company name, contact information, and the details of your complaint with the seller or user whose content is the subject of the complaint, as reasonably necessary to investigate and resolve it."
+          ],
+          "context_before": [
+            "G. Corporate Transactions. We may disclose personal information—including account information, Wallet balance or points information—to a buyer, prospective buyer, corporate affiliate, or other successors in the event of a merger, divestiture, restructuring, reorganization, dissolution, or sale or transfer of some or all of our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding in which personal information held by us about our Services users is among the assets transferred. You acknowledge and agree to our assignment or transfer of rights to your personal information."
+          ],
+          "context_after": [
+            "Please note that we may disclose, without restriction, aggregated or anonymized information about the users of our Services, which is information that does not identify any specific individual."
+          ],
+          "changed_words": 47
+        },
+        {
+          "removed": [
+            "5.How Does SHEIN Secure Your Personal Information?"
+          ],
+          "added": [
+            "5. How Does SHEIN Secure Your Personal Information?"
+          ],
+          "context_before": [
+            "H. Location Information. You may be able to adjust the settings of your device so that information about your physical location is not sent to us or third parties by (a) disabling location services within the device settings; or (b) denying certain websites or mobile applications permission to access location information by changing the relevant preferences and permissions in your mobile device or browser settings."
+          ],
+          "context_after": [
+            "We maintain reasonable physical, electronic, and procedural safeguards designed to guard your personal data from unauthorized processing, use or disclosure. Our security measures include industry-standard physical, technical, and administrative measures to prevent unauthorized access to or disclosure of your information. We also require our service providers to provide privacy and security controls to protect data shared with them in order to perform services."
+          ],
+          "changed_words": 3
+        },
+        {
+          "removed": [],
+          "added": [
+            "Opt-Out Preference Signals (Global Privacy Control) - We treat opt-out preference signals sent by your browser or browser extension, such as the Global Privacy Control (“GPC”), as a valid request to opt out of the sale and sharing of your personal information and of targeted advertising for that browser or device and, if you are logged in, for your SHEIN account."
+          ],
+          "context_before": [
+            "6.2 Right to Opt Out of “Sale”/Sharing/Targeted Advertising -We do not sell our users’ information to third parties as that term is generally understood. However, making certain identifiers available to third parties may be considered a “sale” or “sharing” under certain laws. When you visit our website, we may share some personal identifiers such as cookies and other tracking technologies for analytics and to personalize your experience with targeted ads as described herein. In the previous 12 months, we may have shared identifiers and inferences about you with our partners, third parties, and affiliates in such a way that, under such privacy laws, may be interpreted as “selling” or “sharing”. Please see the \"Cookies and Other Tracking Technologies\" section above for a description of opting out of cookies and controlling browser settings. If you would like to opt-out of the “sale”/”sharing” of such personal information, targeted advertising, or marketing profiles, you can control such access to your data by clicking the “Do Not Sell or Share My Personal Information”/ “Manage Cookies” link on the bottom of the webpage, or in the Settings menu in your mobile app."
+          ],
+          "context_after": [
+            "6.3 Unsubscribe from Our Marketing Communications -If you do not want us to use your email account to send you marketing emails or non-transactional promotional materials, please directly click on the unsubscribe link at the bottom of any of our marketing email messages to you or contact us at our dedicated Privacy Center​. If you previously consented to receive text messages (SMS) and mobile notifications, you can reply “STOP” to any SMS (text) message to cancel or contact us at our dedicated Privacy Center​. If you wish to stop push notifications or alerts to your mobile device through our app, you can stop these notifications by changing the settings on your mobile device."
+          ],
+          "changed_words": 61
+        },
+        {
+          "removed": [
+            "6.5 Requests from Authorized Agents/Third Parties-For the protection of your account and the security of your data, only you or a person you formally authorize to act on your behalf may make a privacy request related to your personal information. If you use an authorized agent to submit such a request, we will require written proof that the authorized agent has been authorized to act on your behalf, which we obtain in the request verification process. Third parties may submit requests on a data subject's behalf; however, requests will still need to be directed to the data subject themselves for verification and authorization to proceed."
+          ],
+          "added": [
+            "6.5 Requests from Authorized Agents/Third Parties-For the protection of your account and the security of your data, only you or a person you formally authorize to act on your behalf may make a privacy request related to your personal information. If you use an authorized agent to submit such a request, we will require written proof that the authorized agent has been authorized to act on your behalf, which we obtain in the request verification process. Third parties may submit requests on a data subject's behalf; however, requests will still need to be directed to the data subject themselves for verification and authorization to proceed. For requests to opt out of the sale or sharing of personal information or targeted advertising, we may ask your authorized agent for proof of authorization, but we will not require you to verify your identity."
+          ],
+          "context_before": [
+            "6.4 Objection to Processing/Unauthorized Account Creation (Unbind) -If someone has created a SHEIN account using your email address without your authorization, you can \"unbind\" the account from your email address. To process this request, please submit a request in the Privacy Center under the \"Object to Processing\" option and enter \"unbind\" in the \"Additional Comments\"/”Detailed Description” field."
+          ],
+          "context_after": [
+            "6.6 Right Against Discrimination -You have the right not to be discriminated against for exercising any of the rights described in this section. We will not discriminate against you for exercising any of the rights described herein."
+          ],
+          "changed_words": 36
+        },
+        {
+          "removed": [
+            "6.7 Account Verification -SHEIN is legally obligated to verify the identity of a requester to ensure that personal information from your account can only be accessed and released to duly authorized parties. To verify your request, we will send a verification email to the e-mail address you provide. Once you click the verification link, we will be able to proceed with processing the request based on the verified email address. However, if your account is associated with an email address other than the one provided for verification, we will be unable to fulfill your request and will require you to resubmit your request using your email address associated with your account. We may not accommodate a data subject request if we believe the change would violate any legal requirement or pose an unacceptable risk to the privacy or security of our customers."
+          ],
+          "added": [
+            "6.7 Account Verification -SHEIN is legally obligated to verify the identity of a requester for requests to access, correct, or delete personal information to ensure that personal information from your account can only be accessed and released to duly authorized parties. To verify your request, we will send a verification email to the e-mail address you provide. Once you click the verification link, we will be able to proceed with processing the request based on the verified email address. However, if your account is associated with an email address other than the one provided for verification, we will be unable to fulfill your request and will require you to resubmit your request using your email address associated with your account. We may not accommodate a data subject request if we believe the change would violate any legal requirement or pose an unacceptable risk to the privacy or security of our customers. Requests to opt out of the sale or sharing of personal information or targeted advertising do not require verification."
+          ],
+          "context_before": [
+            "6.6 Right Against Discrimination -You have the right not to be discriminated against for exercising any of the rights described in this section. We will not discriminate against you for exercising any of the rights described herein."
+          ],
+          "context_after": [
+            "6.8 Lodging Complaints - If you believe we have infringed or violated your privacy rights, please contact us at privacy@sheingroup.com so that we may attempt to resolve any issues to your satisfaction."
+          ],
+          "changed_words": 28
+        },
+        {
+          "removed": [
+            "6.10 Automated Decision-Making - Some states grant rights to request that businesses not engage in certain types of automated decision making about you. Because SHEIN does not use automated decision making that is subject to this right, we do not accept requests to opt out of automated decision making."
+          ],
+          "added": [
+            "6.10 Automated Decision-Making and Profiling - Some states grant rights to request that businesses not engage in certain types of automated decision making or profiling about you. Because SHEIN does not use automated decision making or profiling that is subject to these rights, these rights do not currently apply to our processing."
+          ],
+          "context_before": [
+            "6.9 Appeal - If you would like to appeal any decision made by the company relative to your privacy rights, please directly reply to the correspondence received from the company relating to the decision."
+          ],
+          "context_after": [
+            "6.11 Self-Service Tools -In addition to the SHEIN Privacy Rights Request Center options described above, SHEIN voluntarily offers a variety of self-service tools, where you can learn more about the data in your record, export your profile information, make corrections, change your password, and request to have your account deleted. Because the self-service tools are accessible through a customer’s “My Profile” feature, they are only accessible to current account holders; all other persons should submit a DSR through the “SHEIN Privacy Rights Request Center” link in the Privacy Center. You can find more information about the self-service tools available to account holders here [Additional Self-Service Tools​]."
+          ],
+          "changed_words": 25
+        },
+        {
+          "removed": [
+            "7.2 Children’s Data - In order to use this site, you must be at least 18 years old. SHEIN doesn’t sell products for purchase by children. We may sell children's products for purchase by adults. If you're under 18, you may use SHEIN only with the involvement of a parent or guardian."
+          ],
+          "added": [
+            "7.2 Children’s Data - In order to use this site, you must be at least 18 years old. SHEIN doesn’t sell products for purchase by children. We may sell children's products for purchase by adults. If you're under 18, you may use SHEIN only with the involvement of a parent or guardian. We do not have actual knowledge that we sell or share the personal information of consumers under 16 years of age."
+          ],
+          "context_before": [
+            "7.1 Third Party Websites - Our Services may contain links to third-party sites. This Policy does not apply to those third-party sites. We recommend that you read the privacy statements of any other sites that you visit as we are not responsible for the privacy practices of those sites."
+          ],
+          "context_after": [
+            "If you are under 18. SHEIN may process some of your personal data:"
+          ],
+          "changed_words": 21
+        },
+        {
+          "removed": [],
+          "added": [
+            "8.4 Connecticut, Delaware, and Minnesota - Residents of these states may request a list of the specific third parties to which we have disclosed their personal data (in Connecticut, the third parties to which we have sold their personal data). To make a request, contact us through our Privacy Center or at privacy@sheingroup.com​.",
+            "8.5 Rhode Island - The third parties to which we have sold or may sell customers’ personally identifiable information are identified in our Privacy Settings Center, available through the “Do Not Sell or Share My Personal Information”/“Manage Cookies” link in our Site footer."
+          ],
+          "context_before": [
+            "8.3 Oregon - Upon reasonable request by email to privacy@sheingroup.com and verification that you are a resident of the State of Oregon, we will provide you with a list of specific “third parties” (as such term is defined per ORS 646A.570(20)), other than natural persons, to whom SHEIN has disclosed personal information relating to Oregon consumers, excluding consumers, controllers, processors, or affiliates of SHEIN or its processors and except where such disclosure would require disclosure of SHEIN’s trade secrets, as defined in ORS 646.461."
+          ],
+          "context_after": [
+            "9. Contact Us"
+          ],
+          "changed_words": 96
+        }
+      ],
+      "ai": {
+        "headline": "SHEIN now uses customer service chats and virtual assistant messages to train AI",
+        "summary": "SHEIN and its service providers will use communications with its customer service team and virtual assistant to train and improve the large language models behind the virtual assistant. Sensitive personal information is excluded from this use, and personal data is not sold for it.",
+        "severity": "major",
+        "categories": [
+          "ai_training",
+          "data_collection"
+        ],
+        "what_you_can_do": null,
+        "model": "claude-haiku-5-5"
+      }
+    }
+  ]
+}
